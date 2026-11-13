@@ -115,6 +115,7 @@ RELATIES = [
     (6, 'Estuaire Expertises SARL', ['tegenexpert'], 'FR', '76600', 'Le Havre', 'Quai de Southampton 3', 'fr', [('Claire Morel', 'Expert maritime')]),
     (7, 'Nordlicht Schiffsmakler GmbH', ['makelaar'], 'DE', '20457', 'Hamburg', 'Am Sandtorkai 7', 'de', []),
     (8, 'Scheldester Chartering BV', ['bevrachter', 'opdrachtgever'], 'NL', '3072', 'Rotterdam', 'Wilhelminakade 50', 'en', [('Eva de Vries', 'Chartering manager')]),
+    (9, 'Ankerpunt Scheepsherstel NV', ['hersteller'], 'BE', '2030', 'Antwerpen', 'Droogdokkenweg 3', 'nl', [('Bart Willems', 'Estimator')]),
 ]
 REL = {}
 for k, naam, rollen, land, pc, gem, straat, taal, contacten in RELATIES:
@@ -347,6 +348,29 @@ sql.append(f"delete from berekeningen.gebeurtenissen where id in ({', '.join(lit
 for k, dag, uur, minuut, soort, opm in GEBEURTENISSEN:
     sql.append(rij('berekeningen.gebeurtenissen', dict(id=vid(f'gebeurtenis/{k}'), dossier_id=vid('dossier/10'), op=om(dag, uur, minuut), soort=soort,
                omschrijving=opm, bron='kantoor', created_at=om(dag, uur, minuut))))
+
+# ── Schade (D8, D10) voor HQ-2026-0003, de schade aan ruim 3 van de KAAIMEEUW: twee claims (één met een stap in het verloop) en een begroting
+#    zonder akkoord. Eerst alles van dat dossier weg (ook wat een proef in de browser er zette); dan vaste id's. ──
+D3 = vid('dossier/3')
+sql.append(f"delete from dossiers.claim_stappen where claim_id in (select id from dossiers.claims where dossier_id = {lit(D3)});")
+for t in ['claims', 'begroting_akkoorden', 'begroting_posten', 'begrotingen']:
+    sql.append(f"delete from dossiers.{t} where dossier_id = {lit(D3)};")
+CLAIMS = [(1, 'Damage to tank top and hatch coaming, hold 3', REL[2], None, 'HM-2026-4471', 'PV-26-0193', 48500, None, 'in_behandeling', -1),
+          (2, 'Cargo claim from receivers, wetted cargo in hold 3', None, REL[3], 'PI-2026-118', None, 12800, None, 'aangemeld', 0)]
+for k, oms, verz, pi, polis, claimnr, geclaimd, erkend, status, dag in CLAIMS:
+    sql.append(rij('dossiers.claims', dict(id=vid(f'claim/{k}'), dossier_id=D3, omschrijving=oms, verzekeraar_id=verz, pi_club_id=pi, polisnummer=polis,
+               claimnummer=claimnr, geclaimd=geclaimd, erkend=erkend, uitgekeerd=None, status=status, aangemeld=(VANDAAG + dt.timedelta(days=dag)).isoformat(),
+               afgewikkeld=None, opmerking=None, created_at=om(dag, 10))))
+sql.append(rij('dossiers.claim_stappen', dict(id=vid('claimstap/1'), claim_id=vid('claim/1'), status='in_behandeling', datum=VANDAAG.isoformat(),
+           opmerking='Survey report requested by the insurer', door=SURVEYOR_NAAM, op=om(0, 9))))
+POSTEN = [(1, 'Tank top plating renewal, hold 3, frames 112 to 118', 'vervanging', REL[9], 'Q-2611-07', 22400, 21000, 0),
+          (2, 'Hatch coaming fairing and welding', 'herstel', REL[9], 'Q-2611-07', 9600, None, 0),
+          (3, 'Gas freeing and cleaning of hold 3', 'derden', None, None, 3150, None, 0),
+          (4, 'Hatch cover rubber packing', 'vervanging', REL[9], 'Q-2611-08', 4800, None, 30)]
+for k, oms, cat, herst, offerte, ger, aanv, afs in POSTEN:
+    sql.append(rij('dossiers.begroting_posten', dict(id=vid(f'begrotingpost/{k}'), dossier_id=D3, volgorde=k, omschrijving=oms, categorie=cat,
+               hersteller_id=herst, offertenummer=offerte, offerte_bijlage_id=None, geraamd=ger, aanvaard=aanv, afschrijving=afs, opmerking=None,
+               created_at=om(0, 11, k))))
 
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:

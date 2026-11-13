@@ -28,6 +28,7 @@ Eén rapportsjabloon: de versies per taal en het Word-document zelf.
 - Wat per soort survey verschilt, zet u als **markering**: tekst tussen dubbele accolades, letterlijk getypt, zoals `{{velden}}` of `{{rubriek:conclusie}}`. Het paneel **Markeringen** toont welke dit sjabloon mag gebruiken. Een eigen veld (`{{veld:…}}`) kan enkel in een sjabloon voor één soort survey.
 - Een getalveld kan in een andere eenheid in het rapport komen: `{{veld:hoeveelheid:LT}}` toont het veld hoeveelheid in long ton. De eenheden zijn `t`, `kg`, `LT`, `ST`, `m3`, `L` en `bbl`. Tussen gewicht en volume kan dat niet zonder dichtheid: zo'n markering weigert Quaymark bij het bewaren.
 - `{{tijdlijn}}` zet de statement of facts in het rapport: de samenvatting en de gebeurtenissen. Zonder gebeurtenissen blijft er niets staan.
+- `{{schadebegroting}}` zet de schadebegroting in het rapport: de posten met hun geraamde en aanvaarde bedrag, de afschrijving en het netto bedrag, de totalen, de voorgestelde reserve en het akkoord als dat er is. Zonder posten blijft er niets staan.
 - Het sjabloon **Statement of facts** bepaalt het uitzicht van dat document, in de vier talen.
 - Het sjabloon **Factuur** bepaalt het uitzicht van de facturen en creditnota's, in de vier talen. De betaal-QR komt op de plaats van het veld BetaalQr. Zie [Facturen](facturen.md).
 - **Bewaren als nieuwe versie** controleert het document en de markeringen. Een onbekende markering wordt geweigerd met de reden erbij. **Controleren** kijkt enkel naar de velden, niet naar de markeringen.

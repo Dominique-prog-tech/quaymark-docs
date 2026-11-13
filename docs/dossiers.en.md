@@ -82,6 +82,19 @@ There are three letters and five certificates. Each certificate has its own line
 
 If a quantity is in another unit than the customer asks for, for example metric tonnes while the charter party uses long tons, **Convert** converts it (tonne, kilogram, long ton, short ton, cubic metre, litre, barrel). From volume to weight, Quaymark asks for the density. The converted quantity is added as a new line below the original.
 
+### Damage
+
+The **Damage** tab follows up a damage file: the **claims** and the **damage estimate**.
+
+![Damage of HQ-2026-0003 with Claims, Damage estimate, Recommended reserve and Record agreement](images/dossier-schade-en.png "Damage")
+
+- A file can have **several claims**, for example one with the hull insurer and one with the P&I club. **Add claim** opens a page of its own with the insurer or P&I club, the policy and claim number, the notification date and the claimed, agreed and paid amount. Agreed may not exceed claimed, paid may not exceed agreed.
+- **Change status** on the claim adds a step to the **history**: notified, in progress, agreed, disputed, settled or rejected, with a date and a comment. A step is kept; settled or rejected also sets the settlement date. A claim with a history can no longer be deleted.
+- The **damage estimate** consists of items: description, category (repair, replacement, labour, third parties, other), repairer, quotation number and the quotation as an attachment of the file. Per item the **estimated** and **accepted** amount and the **new for old** deduction in percent. Net = the accepted amount (otherwise the estimated) minus the deduction. Amounts excluding VAT, in the currency of the file.
+- **Recommended reserve**: if you leave it empty, the net total applies.
+- **Record agreement** fixes the estimate as it is, with whom the agreement was made (for example the insurer and the counter-expert). After that, no item can be added or changed. **Withdraw agreement** allows it again and asks for a reason; both the agreement and the withdrawal are kept.
+- In the report the estimate comes with the marker `{{schadebegroting}}` (see [Templates](sjablonen.md)).
+
 ### Timeline
 
 The **Timeline** tab is the statement of facts of the file: the events of the port call, in the office's time. With **Add event** you choose the time, the event (arrived at roads, NOR tendered, NOR accepted, all fast, hatches opened, commenced and completed loading or discharging, stoppage, resumed, hatches closed, documents on board, sailed or other) and a note. An event can be changed afterwards; the history keeps who changed what.
@@ -117,6 +130,15 @@ On the **Time and expenses** tab you record the **time entries** (who, from when
 ### Delete
 
 **Delete** moves the file to the recycle bin.
+
+## Claims
+
+The **Claims** screen in the menu shows the claims of all files, with their file, insurer, amounts and status.
+
+![The Claims list with the Also closed choice](images/claims-en.png "The Claims list")
+
+- By default you only see the **open** claims. Tick **Also closed** for settled and rejected claims.
+- Double-click a row to open the claim. A new claim is made in the file, on the **Damage** tab.
 
 ## See also
 

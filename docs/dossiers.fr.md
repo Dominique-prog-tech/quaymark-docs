@@ -82,6 +82,19 @@ Il y a trois lettres et cinq certificats. Chaque certificat a ses propres lignes
 
 Si une quantité est exprimée dans une autre unité que celle demandée par le client, par exemple en tonnes métriques alors que la charte-partie utilise la long ton, **Convertir** la convertit (tonne, kilogramme, long ton, short ton, mètre cube, litre, baril). D'un volume vers un poids, Quaymark demande la densité. La quantité convertie s'ajoute comme nouvelle ligne sous l'originale.
 
+### Dommages
+
+L'onglet **Dommages** assure le suivi d'un dossier de sinistre : les **réclamations** et l'**estimation des dommages**.
+
+![Dommages de HQ-2026-0003 avec Réclamations, Estimation des dommages, Réserve proposée et Enregistrer l'accord](images/dossier-schade-fr.png "Dommages")
+
+- Un dossier peut avoir **plusieurs réclamations**, par exemple une auprès de l'assureur corps et une auprès du P&I club. **Ajouter une réclamation** ouvre une page propre avec l'assureur ou le P&I club, le numéro de police et de réclamation, la date de déclaration et les montants réclamé, reconnu et payé. Le reconnu ne peut dépasser le réclamé, le payé ne peut dépasser le reconnu.
+- **Changer le statut** sur la réclamation ajoute une étape à l'**historique** : déclarée, en cours, reconnue, contestée, réglée ou rejetée, avec une date et un commentaire. Une étape reste conservée ; réglée ou rejetée fixe aussi la date de règlement. Une réclamation avec un historique ne peut plus être supprimée.
+- L'**estimation des dommages** se compose de postes : description, catégorie (réparation, remplacement, main-d'œuvre, tiers, autre), réparateur, numéro de devis et le devis en pièce jointe du dossier. Par poste, le montant **estimé** et **accepté** et la **dépréciation** du neuf pour vieux en pour cent. Net = le montant accepté (sinon l'estimé) moins la dépréciation. Montants hors TVA, dans la devise du dossier.
+- **Réserve proposée** : si vous la laissez vide, le total net s'applique.
+- **Enregistrer l'accord** fige l'estimation telle qu'elle est, avec la partie avec qui l'accord a été conclu (par exemple l'assureur et le contre-expert). Ensuite, plus aucun poste ne peut être ajouté ou modifié. **Retirer l'accord** le permet à nouveau et demande un motif ; l'accord et le retrait restent tous deux conservés.
+- Dans le rapport, l'estimation vient avec le marqueur `{{schadebegroting}}` (voir [Modèles](sjablonen.md)).
+
 ### Chronologie
 
 L'onglet **Chronologie** est le statement of facts du dossier : les événements de l'escale, à l'heure du site. Avec **Ajouter un événement**, vous choisissez le moment, l'événement (arrivée en rade, NOR remise, NOR acceptée, amarré, panneaux ouverts, début et fin du chargement ou déchargement, interruption, reprise, panneaux fermés, documents à bord, départ ou autre) et une remarque. Un événement peut être modifié par la suite ; l'historique garde qui a modifié quoi.
@@ -117,6 +130,15 @@ Dans l'onglet **Temps et frais**, vous encodez les **prestations** (qui, de quan
 ### Supprimer
 
 **Supprimer** déplace le dossier vers la corbeille.
+
+## Réclamations
+
+L'écran **Réclamations** du menu affiche les réclamations de tous les dossiers, avec leur dossier, assureur, montants et statut.
+
+![La liste Réclamations avec le choix Aussi clôturées](images/claims-fr.png "La liste Réclamations")
+
+- Par défaut, seules les réclamations **ouvertes** s'affichent. Cochez **Aussi clôturées** pour les réclamations réglées et rejetées.
+- Double-cliquez sur une ligne pour ouvrir la réclamation. Une nouvelle réclamation se crée dans le dossier, onglet **Dommages**.
 
 ## Voir aussi
 

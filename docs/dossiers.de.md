@@ -82,6 +82,19 @@ Es gibt drei Schreiben und fünf Bescheinigungen. Jede Bescheinigung hat ihre ei
 
 Steht eine Menge in einer anderen Einheit, als der Kunde verlangt, zum Beispiel in metrischen Tonnen, während die Charterpartie Long Tons verwendet, rechnet **Umrechnen** sie um (Tonne, Kilogramm, Long Ton, Short Ton, Kubikmeter, Liter, Barrel). Von Volumen in Gewicht fragt Quaymark nach der Dichte. Die umgerechnete Menge kommt als neue Zeile unter die ursprüngliche.
 
+### Schaden
+
+Die Registerkarte **Schaden** begleitet eine Schadensakte: die **Ansprüche** und die **Schadenschätzung**.
+
+![Schaden von HQ-2026-0003 mit Ansprüche, Schadenschätzung, Empfohlene Reserve und Einigung festhalten](images/dossier-schade-de.png "Schaden")
+
+- Eine Akte kann **mehrere Ansprüche** haben, zum Beispiel einen beim Kaskoversicherer und einen beim P&I-Club. **Anspruch hinzufügen** öffnet eine eigene Seite mit dem Versicherer oder P&I-Club, der Policen- und Anspruchsnummer, dem Meldedatum und dem geforderten, anerkannten und ausgezahlten Betrag. Anerkannt darf nicht höher sein als gefordert, ausgezahlt nicht höher als anerkannt.
+- **Status ändern** beim Anspruch fügt dem **Verlauf** einen Schritt hinzu: gemeldet, in Bearbeitung, anerkannt, bestritten, erledigt oder abgelehnt, mit Datum und Bemerkung. Ein Schritt bleibt erhalten; erledigt oder abgelehnt setzt auch das Erledigungsdatum. Ein Anspruch mit Verlauf lässt sich nicht mehr löschen.
+- Die **Schadenschätzung** besteht aus Posten: Beschreibung, Kategorie (Reparatur, Ersatz, Arbeit, Dritte, Andere), Reparaturbetrieb, Angebotsnummer und das Angebot als Anhang der Akte. Pro Posten der **geschätzte** und der **akzeptierte** Betrag und der **Abzug neu für alt** in Prozent. Netto = der akzeptierte Betrag (sonst der geschätzte) abzüglich des Abzugs. Beträge ohne MwSt., in der Währung der Akte.
+- **Empfohlene Reserve**: Lassen Sie sie leer, gilt die Nettosumme.
+- **Einigung festhalten** legt die Schätzung so fest, wie sie ist, mit wem die Einigung erzielt wurde (zum Beispiel Versicherer und Gegengutachter). Danach lässt sich kein Posten mehr hinzufügen oder ändern. **Einigung zurückziehen** erlaubt das wieder und fragt nach einem Grund; Einigung und Rücknahme bleiben beide erhalten.
+- Im Bericht steht die Schätzung mit der Markierung `{{schadebegroting}}` (siehe [Vorlagen](sjablonen.md)).
+
 ### Zeitablauf
 
 Die Registerkarte **Zeitablauf** ist das Statement of Facts der Akte: die Ereignisse des Hafenaufenthalts, in der Zeit der Niederlassung. Mit **Ereignis hinzufügen** wählen Sie den Zeitpunkt, das Ereignis (Ankunft auf Reede, NOR übergeben, NOR angenommen, festgemacht, Luken geöffnet, Beginn und Ende der Beladung oder Löschung, Unterbrechung, Wiederaufnahme, Luken geschlossen, Dokumente an Bord, Abfahrt oder andere) und eine Bemerkung. Ein Ereignis lässt sich nachträglich ändern; der Verlauf hält fest, wer was geändert hat.
@@ -117,6 +130,15 @@ In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, v
 ### Löschen
 
 **Löschen** verschiebt die Akte in den Papierkorb.
+
+## Ansprüche
+
+Der Bildschirm **Ansprüche** im Menü zeigt die Ansprüche aller Akten, mit Akte, Versicherer, Beträgen und Status.
+
+![Liste der Ansprüche mit Auch abgeschlossene](images/claims-de.png "Die Liste Ansprüche")
+
+- Standardmäßig sehen Sie nur die **offenen** Ansprüche. Haken Sie **Auch abgeschlossene** an für erledigte und abgelehnte Ansprüche.
+- Doppelklicken Sie auf eine Zeile, um den Anspruch zu öffnen. Einen neuen Anspruch legen Sie in der Akte an, auf der Registerkarte **Schaden**.
 
 ## Siehe auch
 

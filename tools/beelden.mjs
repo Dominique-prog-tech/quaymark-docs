@@ -78,6 +78,8 @@ const SCHOTEN = () => [
   { naam: 'schip', route: '/schepen', verwacht: Q('aantal_ruimen'), na: async p => openRij(p, 'KAAIMEEUW') },
   { naam: 'schip-ruimen', route: '/schepen', verwacht: /Aft hold, smaller hatch/,
     na: async p => { await openRij(p, 'KAAIMEEUW'); await p.getByText(Q('ruimen_tanks')).first().click(); await p.waitForLoadState('networkidle'); } },
+  { naam: 'dossier-schade', route: '/dossiers', hoogte: 1250, verwacht: /Hatch cover rubber packing/, na: dossier('HQ-2026-0003', 'schade') },
+  { naam: 'claims', route: '/claims', verwacht: /Cargo claim from receivers/, magKortZijn: 'twee open claims' },
   { naam: 'dossier-tijdlijn', route: '/dossiers', hoogte: 1100, verwacht: /Conveyor breakdown/, na: dossier('ZB-2026-0003', 'tijdlijn') },
   { naam: 'soorten-survey', route: '/beheer/survey-types', verwacht: Q('surveytype_nieuw') },
   { naam: 'vestigingen', route: '/beheer/vestigingen', verwacht: Q('vestiging_nieuw'), magKortZijn: 'twee vestigingen' },

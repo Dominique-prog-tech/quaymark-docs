@@ -82,6 +82,19 @@ Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen rege
 
 Staat een hoeveelheid in een andere eenheid dan de klant vraagt, bijvoorbeeld in metrische ton terwijl de charterpartij long ton gebruikt, dan rekent **Omrekenen** ze om (ton, kilogram, long ton, short ton, kubieke meter, liter, vat). Van een volume naar een gewicht vraagt Quaymark de dichtheid. De omgerekende hoeveelheid komt als nieuwe regel onder de oorspronkelijke.
 
+### Schade
+
+Het tabblad **Schade** volgt een schadedossier op: de **claims** en de **schadebegroting**.
+
+![Schade van HQ-2026-0003 met Claims, Schadebegroting, Voorgestelde reserve en Akkoord vastleggen](images/dossier-schade.png "Schade")
+
+- Een dossier kan **meerdere claims** hebben, bijvoorbeeld een bij de rompverzekeraar en een bij de P&I-club. **Claim toevoegen** opent een eigen pagina met de verzekeraar of P&I-club, het polis- en claimnummer, de datum van aanmelding en het geclaimde, erkende en uitgekeerde bedrag. Erkend mag niet hoger zijn dan geclaimd, uitgekeerd niet hoger dan erkend.
+- **Status wijzigen** op de claim zet een nieuwe stap in het **verloop**: aangemeld, in behandeling, erkend, betwist, afgewikkeld of afgewezen, met een datum en een opmerking. Een stap blijft bewaard; afgewikkeld of afgewezen zet ook de datum van afwikkeling. Een claim met verloop kunt u niet meer verwijderen.
+- De **schadebegroting** bestaat uit posten: omschrijving, categorie (herstel, vervanging, arbeid, derden, andere), hersteller, offertenummer en de offerte als bijlage van het dossier. Per post het **geraamde** en het **aanvaarde** bedrag en de **afschrijving** nieuw voor oud in procent. Netto = het aanvaarde bedrag (anders het geraamde) min de afschrijving. Bedragen zonder btw, in de munt van het dossier.
+- **Voorgestelde reserve**: laat u ze leeg, dan geldt het netto totaal.
+- **Akkoord vastleggen** legt de begroting vast zoals ze is, met wie het akkoord gesloten werd (bijvoorbeeld de verzekeraar en de tegenexpert). Daarna kunt u geen post meer toevoegen of wijzigen. **Akkoord intrekken** maakt dat weer mogelijk en vraagt een reden; akkoord en intrekking blijven allebei bewaard.
+- In het rapport komt de begroting met de markering `{{schadebegroting}}` (zie [Sjablonen](sjablonen.md)).
+
 ### Tijdlijn
 
 Het tabblad **Tijdlijn** is de statement of facts van het dossier: de gebeurtenissen van de aanloop, in de tijd van de vestiging. Met **Gebeurtenis toevoegen** kiest u het tijdstip, de gebeurtenis (aankomst op de rede, NOR ingediend, NOR aanvaard, aangemeerd, luiken open, start en einde laden of lossen, onderbreking, hervatting, luiken dicht, documenten aan boord, vertrek of andere) en een opmerking. Een gebeurtenis kunt u achteraf wijzigen; de historiek houdt bij wie wat wijzigde.
@@ -117,6 +130,15 @@ Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer to
 ### Verwijderen
 
 **Verwijderen** verplaatst het dossier naar de prullenbak.
+
+## Claims
+
+Het scherm **Claims** in het menu toont de claims van alle dossiers, met hun dossier, verzekeraar, bedragen en status.
+
+![De lijst Claims met de keuze Ook afgesloten](images/claims.png "De lijst Claims")
+
+- Standaard ziet u enkel de **open** claims. Vink **Ook afgesloten** aan voor de afgewikkelde en afgewezen claims.
+- Dubbelklik op een rij om de claim te openen. Een nieuwe claim maakt u in het dossier, op het tabblad **Schade**.
 
 ## Zie ook
 
