@@ -24,6 +24,10 @@ A surveyor can have an own **Hourly rate**. It takes precedence over the hourly 
 
 A surcharge as a percentage for **weekends**, **public holidays** and **nights**. The night runs from **Night from** to **Night until** (by default from 20:00 to 06:00). If more than one surcharge applies, the highest counts; they are not added up.
 
+## Framework agreements
+
+A principal with its own agreements gets its rates on the relation record, Framework agreements tab. They take precedence over this rate card, including over a surveyor's rate. → [Framework agreements](relaties.md#framework-agreements)
+
 ## See also
 
 - [Files](dossiers.md)

@@ -24,6 +24,10 @@ Un expert peut avoir son propre **Tarif horaire**. Il prime sur le tarif horaire
 
 Un supplément en pourcentage pour le **week-end**, un **jour férié** et la **nuit**. La nuit va de **Nuit à partir de** à **Nuit jusqu'à** (par défaut de 20:00 à 06:00). S'il y a plusieurs suppléments, le plus élevé s'applique ; ils ne s'additionnent pas.
 
+## Accords-cadres
+
+Un donneur d'ordre avec ses propres accords reçoit ses tarifs sur la fiche de la relation, onglet Accords-cadres. Ils priment sur cette grille, y compris sur le tarif d'un expert. → [Accords-cadres](relaties.md#accords-cadres)
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

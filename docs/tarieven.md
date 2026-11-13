@@ -24,6 +24,10 @@ Een surveyor kan een eigen **Uurtarief** hebben. Dat gaat voor op het uurtarief 
 
 Een toeslag in procent voor het **weekend**, een **feestdag** en de **nacht**. De nacht loopt van **Nacht vanaf** tot **Nacht tot** (standaard van 20:00 tot 06:00). Geldt er meer dan één toeslag, dan telt de hoogste; ze worden niet opgeteld.
 
+## Raamafspraken
+
+Een opdrachtgever met eigen afspraken krijgt zijn tarieven op de relatiefiche, tabblad Raamafspraken. Die gaan voor op deze kaart, ook op het tarief van een surveyor. → [Raamafspraken](relaties.md#raamafspraken)
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

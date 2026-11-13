@@ -49,6 +49,18 @@ Ce que la personne de contact voit dans le portail :
 - **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF. Pas un brouillon. Le portail n'indique pas si une facture est payée.
 - Pas d'expert, d'heures, de frais, de constatations ni de photos : ils figurent dans le rapport.
 
+## Accords-cadres
+
+Avec un donneur d'ordre régulier, un bureau convient souvent de tarifs propres. Vous les enregistrez dans l'onglet **Accords-cadres** (visible avec le droit de consulter les factures).
+
+- **Nouvel accord-cadre** : choisissez **Valable du** et éventuellement **Valable jusqu'au**, et indiquez par type d'expertise un **forfait** ou un **tarif horaire**. À côté de chaque champ figure ce que le bureau facture sans accord. Une ligne vide suit la grille tarifaire du bureau.
+- Ce qui ne figure pas dans l'accord suit la [grille tarifaire du bureau](tarieven.md), de même que les suppléments de week-end, de jour férié et de nuit.
+- Le **tarif horaire de l'accord prime** sur le tarif propre d'un expert : le donneur d'ordre paie ce qui est convenu, quel que soit l'expert.
+- Un dossier suit l'accord en vigueur à la **date de la mission**. Ainsi, le tarif d'un dossier en cours ne change pas lorsqu'un nouvel accord entre en vigueur.
+- Deux accords d'un même donneur d'ordre ne peuvent pas se chevaucher.
+- La proposition de facture, l'estimation dans l'onglet **Temps et frais** et l'écran d'accueil calculent avec l'accord. La proposition de facture l'indique aussi.
+- Seule la personne qui gère les tarifs peut modifier ou supprimer un accord.
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

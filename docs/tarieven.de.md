@@ -24,6 +24,10 @@ Ein Sachverständiger kann einen eigenen **Stundensatz** haben. Er gilt vor dem 
 
 Ein Zuschlag in Prozent für das **Wochenende**, einen **Feiertag** und die **Nacht**. Die Nacht läuft von **Nacht ab** bis **Nacht bis** (standardmäßig von 20:00 bis 06:00). Gilt mehr als ein Zuschlag, zählt der höchste; sie werden nicht addiert.
 
+## Rahmenvereinbarungen
+
+Ein Auftraggeber mit eigenen Vereinbarungen erhält seine Tarife im Datensatz der Beziehung, Registerkarte Rahmenvereinbarungen. Sie gehen dieser Tabelle vor, auch dem Tarif eines Besichtigers. → [Rahmenvereinbarungen](relaties.md#rahmenvereinbarungen)
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

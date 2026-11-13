@@ -49,6 +49,18 @@ Wat de contactpersoon in het portaal ziet:
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
 - Geen surveyor, uren, kosten, vaststellingen of foto's: die staan in het rapport.
 
+## Raamafspraken
+
+Met een vaste opdrachtgever spreekt een bureau vaak eigen tarieven af. Op het tabblad **Raamafspraken** (zichtbaar met het recht om facturen te bekijken) legt u die vast.
+
+- **Nieuwe raamafspraak**: kies **Geldig van** en eventueel **Geldig tot**, en vul per soort survey een **forfait** of een **uurtarief** in. Naast elk veld staat wat het bureau zonder afspraak rekent. Een lege regel volgt de tariefkaart van het bureau.
+- Wat niet in de afspraak staat, volgt de [tariefkaart van het bureau](tarieven.md); de toeslagen voor weekend, feestdag en nacht ook.
+- Het **uurtarief van de afspraak gaat voor** op het eigen uurtarief van een surveyor: de opdrachtgever betaalt wat afgesproken is, welke surveyor ook gaat.
+- Een dossier volgt de afspraak die gold op de **datum van de opdracht**. Zo verandert het tarief van een lopend dossier niet als een nieuwe afspraak ingaat.
+- Twee afspraken van dezelfde opdrachtgever mogen elkaar niet overlappen.
+- Het factuurvoorstel, de raming op het tabblad **Tijd en kosten** en het startscherm rekenen met de afspraak. Het factuurvoorstel zegt het ook.
+- Wijzigen en verwijderen kan wie de tarieven beheert.
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

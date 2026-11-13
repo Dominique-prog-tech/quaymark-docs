@@ -49,6 +49,18 @@ What the contact person sees in the portal:
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.
 - No surveyor, hours, costs, findings or photos: those are in the report.
 
+## Framework agreements
+
+With a regular principal, an office often agrees its own rates. You record them on the **Framework agreements** tab (visible with the right to view invoices).
+
+- **New framework agreement**: choose **Valid from** and optionally **Valid until**, and fill in a **flat fee** or an **hourly rate** per survey type. Next to each field is what the office charges without an agreement. An empty line follows the office's rate card.
+- Anything not in the agreement follows the [office's rate card](tarieven.md), as do the weekend, public holiday and night surcharges.
+- The **agreement's hourly rate takes precedence** over a surveyor's own hourly rate: the principal pays what was agreed, whichever surveyor goes.
+- A file follows the agreement that applied on the **date of the assignment**. So the rate of an ongoing file does not change when a new agreement starts.
+- Two agreements of the same principal may not overlap.
+- The invoice proposal, the estimate on the **Time and expenses** tab and the home screen calculate with the agreement. The invoice proposal also says so.
+- Whoever manages the rates can change or delete an agreement.
+
 ## See also
 
 - [Files](dossiers.md)

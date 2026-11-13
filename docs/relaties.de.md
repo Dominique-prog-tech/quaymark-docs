@@ -49,6 +49,18 @@ Was die Kontaktperson im Portal sieht:
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
 - Kein Besichtiger, keine Stunden, Kosten, Feststellungen oder Fotos: Diese stehen im Bericht.
 
+## Rahmenvereinbarungen
+
+Mit einem festen Auftraggeber vereinbart ein Büro oft eigene Tarife. Auf der Registerkarte **Rahmenvereinbarungen** (sichtbar mit dem Recht, Rechnungen anzusehen) halten Sie sie fest.
+
+- **Neue Rahmenvereinbarung**: Wählen Sie **Gültig ab** und gegebenenfalls **Gültig bis**, und geben Sie je Besichtigungsart eine **Pauschale** oder einen **Stundensatz** ein. Neben jedem Feld steht, was das Büro ohne Vereinbarung berechnet. Eine leere Zeile folgt der Tariftabelle des Büros.
+- Was nicht in der Vereinbarung steht, folgt der [Tariftabelle des Büros](tarieven.md), ebenso die Zuschläge für Wochenende, Feiertag und Nacht.
+- Der **Stundensatz der Vereinbarung geht vor** dem eigenen Stundensatz eines Besichtigers: Der Auftraggeber zahlt, was vereinbart ist, welcher Besichtiger auch geht.
+- Eine Akte folgt der Vereinbarung, die am **Datum des Auftrags** galt. So ändert sich der Tarif einer laufenden Akte nicht, wenn eine neue Vereinbarung beginnt.
+- Zwei Vereinbarungen desselben Auftraggebers dürfen sich nicht überschneiden.
+- Der Rechnungsvorschlag, die Schätzung auf der Registerkarte **Zeit und Kosten** und der Startbildschirm rechnen mit der Vereinbarung. Der Rechnungsvorschlag weist auch darauf hin.
+- Ändern und löschen kann, wer die Tarife verwaltet.
+
 ## Siehe auch
 
 - [Akten](dossiers.md)
