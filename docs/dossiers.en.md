@@ -58,6 +58,17 @@ On the **Report** tab you write the text of the report per section, with simple 
 
 **Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. Save the sections first: a version only takes saved text.
 
+### Four-eyes review
+
+For a survey type with **Four-eyes review** ticked (see [Survey types](soorten-survey.md)), a report can only be issued after a second surveyor has approved it. The Report tab then shows the **Four-eyes review** block.
+
+![The Four-eyes review block on the Report tab of ZB-2026-0002, with Review requested by Demo Surveyor](images/dossier-vier-ogen-en.png "Four-eyes review")
+
+- **Request review** puts the report forward to a colleague, with a note if you like. On the home screen it then appears under **Awaiting review**.
+- A colleague with the right to issue reports may approve, but not the surveyor of the file and not the one who requested the review. They look at the **Preview (PDF)** and choose **Approve**, or **Send back** with what needs to change.
+- An approval applies to the report as it was at that moment. If anything that goes into the report changes afterwards (a section text, a field, a hidden photo, the template), it lapses and you request a new review. The block says so, and **Issue report** only reappears after a new approval.
+- Every step is kept, with who, when and the fingerprint of the content that was approved or sent back.
+
 ### Propose a draft
 
 **Propose a draft** (Report tab) has the AI write a proposal per section from the file data: findings, checklist, fields and conditions. Photos and your own text are not sent. Each proposal appears under its section; you choose **Take over**, **Add at the end** or **Ignore**, then save as usual. It runs on your office's AI key and only if the administrator allows it in the ADM One portal.

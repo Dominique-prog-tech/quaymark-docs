@@ -58,6 +58,17 @@ Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec 
 
 **Émettre le rapport** (onglet Rapport, à partir du statut Rapport) fige le rapport comme version 1, avec son empreinte (SHA-256) : il ne change plus jamais. Corriger = **Émettre une nouvelle version**, avec un motif. **Envoyer** envoie une version émise en PDF au donneur d'ordre ; le mail est conservé dans le journal. Enregistrez d'abord les rubriques : une version ne reprend que le texte enregistré.
 
+### Double contrôle
+
+Pour un type d'expertise avec la case **Double contrôle** cochée (voir [Types d'expertise](soorten-survey.md)), un rapport ne peut être émis qu'après l'approbation d'un second expert. L'onglet Rapport affiche alors le bloc **Double contrôle**.
+
+![Le bloc Double contrôle dans l'onglet Rapport de ZB-2026-0002, avec Relecture demandée par Demo Surveyor](images/dossier-vier-ogen-fr.png "Double contrôle")
+
+- **Demander une relecture** soumet le rapport à un collègue, avec une remarque si vous le souhaitez. Sur l'écran d'accueil, il apparaît alors sous **En attente de relecture**.
+- Peut approuver un collègue ayant le droit d'émettre des rapports, mais pas l'expert du dossier ni celui qui a demandé la relecture. Il consulte l'**Aperçu (PDF)** et choisit **Approuver**, ou **Renvoyer** avec ce qu'il faut adapter.
+- Une approbation vaut pour le rapport tel qu'il était à ce moment. Si quelque chose qui figure dans le rapport change ensuite (un texte de rubrique, un champ, une photo masquée, le modèle), elle tombe et vous demandez une nouvelle relecture. Le bloc l'indique, et **Émettre le rapport** ne réapparaît qu'après une nouvelle approbation.
+- Chaque étape est conservée, avec qui, quand et l'empreinte du contenu approuvé ou renvoyé.
+
 ### Proposer un projet
 
 **Proposer un projet** (onglet Rapport) fait rédiger par l'IA une proposition par rubrique à partir des données du dossier : constatations, check-list, champs et circonstances. Les photos et votre propre texte ne sont pas transmis. Chaque proposition figure sous sa rubrique ; vous choisissez **Reprendre**, **Ajouter à la fin** ou **Ignorer**, puis vous enregistrez comme d'habitude. Cela utilise la clé IA de votre bureau et seulement si l'administrateur l'autorise dans le portail ADM One.

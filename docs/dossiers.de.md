@@ -58,6 +58,17 @@ In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnit
 
 **Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**, mit Begründung. **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.
 
+### Vier-Augen-Prinzip
+
+Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besichtigungsarten](soorten-survey.md)) lässt sich ein Bericht erst herausgeben, nachdem ein zweiter Besichtiger ihn freigegeben hat. Die Registerkarte Bericht zeigt dann den Block **Vier-Augen-Prinzip**.
+
+![Vier-Augen-Prinzip im Bericht von ZB-2026-0002, mit Prüfung angefordert von Demo Surveyor](images/dossier-vier-ogen-de.png "Vier-Augen-Prinzip")
+
+- **Prüfung anfordern** legt den Bericht einem Kollegen vor, auf Wunsch mit einem Hinweis. Auf dem Startbildschirm steht er dann unter **Wartet auf Prüfung**.
+- Freigeben darf ein Kollege mit dem Recht, Berichte herauszugeben, aber nicht der Besichtiger der Akte und nicht, wer die Prüfung angefordert hat. Er sieht die **Vorschau (PDF)** an und wählt **Freigeben** oder **Zurückweisen** mit dem, was geändert werden muss.
+- Eine Freigabe gilt für den Bericht, wie er in diesem Moment war. Ändert sich danach etwas, das in den Bericht kommt (ein Abschnittstext, ein Feld, ein ausgeblendetes Foto, die Vorlage), verfällt sie, und Sie fordern erneut eine Prüfung an. Der Block sagt es, und **Bericht herausgeben** erscheint erst nach einer neuen Freigabe wieder.
+- Jeder Schritt bleibt erhalten, mit wer, wann und dem Fingerabdruck des freigegebenen oder zurückgewiesenen Inhalts.
+
 ### Entwurf vorschlagen
 
 **Entwurf vorschlagen** (Registerkarte Bericht) lässt die KI je Abschnitt einen Vorschlag aus den Daten der Akte schreiben: Feststellungen, Checkliste, Felder und Umstände. Fotos und Ihr eigener Text werden nicht übermittelt. Jeder Vorschlag steht unter seinem Abschnitt; Sie wählen **Übernehmen**, **Am Ende hinzufügen** oder **Ignorieren** und speichern dann wie gewohnt. Es läuft über den KI-Schlüssel Ihres Büros und nur, wenn der Administrator es im ADM One-Portal erlaubt.

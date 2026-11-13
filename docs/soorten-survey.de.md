@@ -23,6 +23,7 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Besichtigungsart
 Eine Besichtigungsart: was in der Akte erfasst wird und was der Besichtiger vor Ort abarbeitet.
 
 - **Allgemein**: Code, Standard-Berichtssprache, Reihenfolge in den Listen, aktiv, und der Name in den vier Sprachen. Der Code steht fest, sobald Akten diese Art verwenden.
+- **Vier-Augen-Prinzip**: Angehakt wird ein Bericht dieser Art erst nach der Freigabe durch einen zweiten Besichtiger herausgegeben. Siehe [Akten](dossiers.md#vier-augen-prinzip).
 - **Felder**: die Daten, die eine Akte dieser Art zusätzlich zu den festen Feldern erhält. Ein Feld hat einen **Schlüssel** (Kleinbuchstaben, Ziffern und _, fest, weil Feld-App und Berichte darauf verweisen), eine Art (Text, Zahl, Datum, Ja/Nein, Auswahl oder Tabelle), eine Bezeichnung in vier Sprachen, eine Einheit und ob es Pflicht ist. Eine **Tabelle** hat Spalten und gegebenenfalls feste Zeilen, zum Beispiel eine Zeile pro Laderaum.
 - **Checkliste**: die Punkte, die der Besichtiger vor Ort beantwortet, jeweils mit Schlüssel, Bezeichnung und ob eine Antwort oder ein Foto Pflicht ist.
 - **Abschnitte**: die Textblöcke des Berichts (Einleitung, Befunde, Schlussfolgerung …). Der Besichtiger schreibt sie in der Registerkarte Bericht der Akte; eine Berichtsvorlage zeigt sie mit der Markierung in der Spalte daneben. Eine neue Besichtigungsart startet mit den fünf Standardabschnitten.

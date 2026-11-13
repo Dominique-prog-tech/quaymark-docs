@@ -23,6 +23,7 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Types d'expertise
 Un type d'expertise : ce qui est saisi dans le dossier et ce que l'expert vérifie sur place.
 
 - **Général** : code, langue par défaut du rapport, ordre dans les listes, actif, et le nom dans les quatre langues. Le code est fixé dès que des dossiers utilisent ce type.
+- **Double contrôle** : coché, un rapport de ce type n'est émis qu'après l'approbation d'un second expert. Voir [Dossiers](dossiers.md#double-controle).
 - **Champs** : les données qu'un dossier de ce type reçoit en plus des champs fixes. Un champ a une **clé** (minuscules, chiffres et _, fixe car l'application mobile et les rapports y font référence), un type (texte, nombre, date, oui/non, choix ou tableau), un libellé en quatre langues, une unité et un caractère obligatoire ou non. Un **tableau** a des colonnes et éventuellement des lignes fixes, par exemple une ligne par cale.
 - **Check-list** : les points auxquels l'expert répond sur place, chacun avec une clé, un libellé, et l'obligation ou non d'une réponse ou d'une photo.
 - **Rubriques** : les blocs de texte du rapport (introduction, observations, conclusion …). L'expert les rédige dans l'onglet Rapport du dossier ; un modèle de rapport les affiche avec le marqueur de la colonne voisine. Un nouveau type d'expertise démarre avec les cinq rubriques standard.

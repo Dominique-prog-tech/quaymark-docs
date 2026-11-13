@@ -10,6 +10,7 @@ Die Startseite Ihres Büros.
 
 - **Akten nach Status** zählt die offenen Akten: neu, geplant, in Bearbeitung und in Berichterstellung. Ein Klick auf eine Kachel öffnet die Liste der Akten.
 - **Rechnungsstellung** (wenn Sie Rechnungen ansehen dürfen): was noch **abzurechnen** ist, als Schätzung pro Akte aus den offenen Leistungen, den weiterzuberechnenden Kosten und der Pauschale abgeschlossener Akten, und der **Umsatz** dieses Jahres pro Auftraggeber und pro Besichtigungsart. Ein Klick auf eine Akte öffnet ihre Zeit und Kosten.
+- **Wartet auf Prüfung** (wenn Sie Berichte herausgeben dürfen): die Berichte, für die ein Kollege eine Prüfung angefordert hat. Ein Klick auf die Akte öffnet sie.
 - Das **Menü links** zeigt die Bildschirme, auf die Sie Zugriff haben. Unter **Einstellungen** steht, was der Administrator des Büros einrichtet: Besichtigungsarten, Niederlassungen, Häfen, Standardordner, Kategorien und Orte.
 - Oben rechts: die **Feedback-Schaltfläche**, diese **Hilfe** und Ihre Einstellungen (Sprache, Anzeige).
 - Die **Versionsnummer** unten im Menü öffnet „Was ist neu“.

@@ -93,7 +93,7 @@ for t in ['dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'do
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
-eigen_relaties = ', '.join(lit(vid(f'relatie/{k}')) for k in range(1, 9))
+eigen_relaties = ', '.join(lit(vid(f'relatie/{k}')) for k in range(1, 10))
 sql.append(f'delete from relaties.contactpersonen where relatie_id in ({eigen_relaties});')
 sql.append(f'delete from relaties.relaties where id in ({eigen_relaties});')
 sql.append(f"delete from dossiers.schepen where id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 7))});")
@@ -118,6 +118,8 @@ RELATIES = [
     (9, 'Ankerpunt Scheepsherstel NV', ['hersteller'], 'BE', '2030', 'Antwerpen', 'Droogdokkenweg 3', 'nl', [('Bart Willems', 'Estimator')]),
 ]
 REL = {}
+# De opkuis bovenaan wist relatie 1 tot 9: groeit deze lijst, dan moet die grens mee (anders botst een tweede run op de primaire sleutel).
+assert len(RELATIES) <= 9, 'Vergroot de opkuis van de relaties (range bovenaan).'
 for k, naam, rollen, land, pc, gem, straat, taal, contacten in RELATIES:
     REL[k] = vid(f'relatie/{k}')
     dom = naam.split()[0].lower()
@@ -371,6 +373,14 @@ for k, oms, cat, herst, offerte, ger, aanv, afs in POSTEN:
     sql.append(rij('dossiers.begroting_posten', dict(id=vid(f'begrotingpost/{k}'), dossier_id=D3, volgorde=k, omschrijving=oms, categorie=cat,
                hersteller_id=herst, offertenummer=offerte, offerte_bijlage_id=None, geraamd=ger, aanvaard=aanv, afschrijving=afs, opmerking=None,
                created_at=om(0, 11, k))))
+
+# ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
+#    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──
+D5 = vid('dossier/5')
+sql.append("update dossiers.survey_types set vier_ogen = true where code = 'off_hire';")
+sql.append(f"delete from rapporten.rapport_reviews where dossier_id = {lit(D5)};")
+sql.append(rij('rapporten.rapport_reviews', dict(id=vid('review/1'), dossier_id=D5, stap='gevraagd', vingerafdruk=hashlib.sha256(b'qm-demo/review/1').hexdigest(), door_id=SURVEYOR_ID,
+           door_naam=SURVEYOR_NAAM, op=om(0, 9, 30), opmerking='Off-hire report ready, new damage in hold 2 added.')))
 
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:

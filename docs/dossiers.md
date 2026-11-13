@@ -58,6 +58,17 @@ Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met 
 
 **Rapport uitgeven** (tabblad Rapport, vanaf de status Rapportage) legt het rapport vast als versie 1, met zijn vingerafdruk (SHA-256): het verandert daarna nooit meer. Iets rechtzetten = **Nieuwe versie uitgeven**, met een reden. **Verzenden** stuurt een uitgegeven versie als PDF naar de opdrachtgever; de mail komt in het journaal. Bewaar eerst de rubrieken: een versie neemt enkel bewaarde tekst.
 
+### Vier-ogen
+
+Bij een soort survey met het vinkje **Vier-ogen** (zie [Soorten survey](soorten-survey.md)) kan een rapport pas uitgegeven worden nadat een tweede surveyor het goedkeurde. Het tabblad Rapport toont dan het blok **Vier-ogen**.
+
+![Het blok Vier-ogen op het tabblad Rapport van ZB-2026-0002, met Review gevraagd door Demo Surveyor](images/dossier-vier-ogen.png "Vier-ogen")
+
+- **Review vragen** zet het rapport klaar voor een collega, met een opmerking als u wil. Op het startscherm staat het dan onder **Wacht op review**.
+- Goedkeuren mag een collega met het recht om rapporten uit te geven, maar niet de surveyor van het dossier en niet wie de review vroeg. Hij bekijkt het **Voorbeeld (PDF)** en kiest **Goedkeuren**, of **Terugsturen** met wat er aangepast moet worden.
+- Een goedkeuring geldt voor het rapport zoals het op dat moment was. Wijzigt er daarna iets dat in het rapport komt (een rubriektekst, een veld, een verborgen foto, het sjabloon), dan vervalt ze en vraagt u opnieuw een review. Het blok zegt het, en **Rapport uitgeven** verschijnt pas weer na een nieuwe goedkeuring.
+- Elke stap blijft bewaard, met wie, wanneer en de vingerafdruk van de inhoud die goedgekeurd of teruggestuurd werd.
+
 ### Ontwerp voorstellen
 
 **Ontwerp voorstellen** (tabblad Rapport) laat de AI per rubriek een voorstel schrijven uit de gegevens van het dossier: vaststellingen, checklist, velden en omstandigheden. Foto's en uw eigen tekst gaan niet mee. Elk voorstel staat onder zijn rubriek; u kiest **Overnemen**, **Achteraan toevoegen** of **Negeren**, en bewaart daarna zoals altijd. Het loopt op de AI-sleutel van uw bureau en enkel als de beheerder het in het portaal van ADM One toestaat.
