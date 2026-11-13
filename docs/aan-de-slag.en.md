@@ -9,6 +9,7 @@ The home page of your office.
 ![The start screen with the Files by status tiles](images/startscherm-en.png "The start screen")
 
 - **Files by status** counts the open files: new, scheduled, in progress and reporting. A click on a tile opens the list of files.
+- **Invoicing** (for those who may view invoices): what is still **to invoice**, as an estimate per file from the open time entries, the rechargeable expenses and the fixed fee of completed files, and this year's **revenue** per principal and per survey type. A click on a file opens its time and expenses.
 - The **menu on the left** shows the screens you have access to. Under **Settings** is what the office administrator sets up: survey types, offices, ports, standard folders, categories and locations.
 - Top right: the **feedback button**, this **help** and your preferences (language, display).
 - The **version number** at the bottom of the menu opens "What's new".

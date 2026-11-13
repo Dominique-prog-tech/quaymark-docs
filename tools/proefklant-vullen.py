@@ -326,7 +326,7 @@ REGELS = [dict(omschrijving='Fixed fee: Bunker survey', aantal=1, eenheid='C62',
 sql.append(f"delete from financieel.facturen where id = {lit(KLAD)} and status = 'klad';")
 sql.append(rij('financieel.facturen', dict(id=KLAD, soort='factuur', status='klad', nummer=None, vestiging_id=HQ, dossier_id=vid('dossier/9'),
            klant_id=SCHELDEMOND, datum=VANDAAG, vervaldatum=None, taal='en', munt='EUR', referentie='SB-2026-118', opmerking=None,
-           gecorrigeerde_factuur_id=None, regels=REGELS, totaal_excl=488.50, btw=102.59, totaal_incl=591.09, mededeling=None, verkoper=None, koper=None,
+           gecorrigeerde_factuur_id=None, forfait=True, regels=REGELS, totaal_excl=488.50, btw=102.59, totaal_incl=591.09, mededeling=None, verkoper=None, koper=None,
            iban=None, bic=None, pdf_storage_key=None, pdf_sha256=None, pdf_grootte=None, momentopname=None, momentopname_sha256=None,
            uitgegeven_op=None, uitgegeven_door=None, created_at=om(0))))
 

@@ -9,6 +9,7 @@ La page d'accueil de votre bureau.
 ![L'écran d'accueil avec les tuiles Dossiers par statut](images/startscherm-fr.png "L'écran d'accueil")
 
 - **Dossiers par statut** compte les dossiers ouverts : nouveaux, planifiés, en cours et en rapport. Un clic sur une tuile ouvre la liste des dossiers.
+- **Facturation** (pour qui peut voir les factures) : ce qui reste **à facturer**, en estimation par dossier à partir des prestations ouvertes, des frais à refacturer et du forfait des dossiers terminés, et le **chiffre d'affaires** de l'année par donneur d'ordre et par type d'expertise. Un clic sur un dossier ouvre ses temps et frais.
 - Le **menu de gauche** affiche les écrans auxquels vous avez accès. Sous **Paramètres** se trouve ce que l'administrateur du bureau configure : types d'expertise, sites, ports, répertoires standard, catégories et emplacements.
 - En haut à droite : le bouton de **retour d'information**, cette **aide** et vos préférences (langue, affichage).
 - Le **numéro de version** en bas du menu ouvre « Quoi de neuf ».
