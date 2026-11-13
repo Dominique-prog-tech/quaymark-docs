@@ -72,6 +72,12 @@ Ist die Akte mit einer vorigen Akte **verknüpft** (z. B. die On-Hire zu einer O
 
 **Neues Schreiben** und **Neue Bescheinigung** (Registerkarte Bericht) erstellen ein Standardschreiben oder eine Bescheinigung in der Sprache der Akte. **Vorschau (PDF)** zeigt es zuerst; **Herausgeben** legt es mit seinem Fingerabdruck fest. Eine Bescheinigung erhält dann eine Nummer aus der Reihe der Niederlassung (C-HQ-2026-0001). Ersetzen Sie in einem Schreiben jedes Feld in [eckigen Klammern]: sonst ist Herausgeben nicht möglich.
 
+Es gibt drei Schreiben und fünf Bescheinigungen. Jede Bescheinigung hat ihre eigenen Zeilen:
+
+- **Mengenbescheinigung**, **Gewichtsbescheinigung** und **On-Hire-/Off-Hire-Bescheinigung**: eine Beschreibung, eine Menge und eine Einheit. Ein ausgefülltes Zahlenfeld der Akte übernehmen Sie mit **Aus einem Feld der Akte übernehmen**.
+- **Bescheinigung über die Laderaumbesichtigung**: je Laderaum eine **Feststellung** und das **Urteil**: geeignet oder nicht geeignet für die Übernahme der angegebenen Ladung. Das Urteil ist nie vorausgefüllt. Auf dieser Bescheinigung wird die Notice of Readiness (NOR) des Kapitäns angenommen oder abgelehnt.
+- **Qualitätsbescheinigung**: die Ergebnisse einer Analyse, mit je Zeile **Parameter**, **Methode**, **Ergebnis**, **Einheit** und **Spezifikation** (der Grenzwert). Darüber tragen Sie die **Probenahme** (wo und wann), das **Labor** und den **Laborbericht** ein.
+
 ![Protestschreiben zu HQ-2026-0003 mit Vorschau (PDF) und Herausgeben](images/dossier-brief-de.png "Ein neues Schreiben")
 
 ### Beweispaket

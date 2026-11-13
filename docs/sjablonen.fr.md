@@ -15,7 +15,7 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Modèles**.
 - Chaque bureau démarre avec un modèle **général** dans les quatre langues. Il vaut pour chaque type d'expertise. Ajoutez-y votre logo et votre charte graphique.
 - Le rapport d'un type d'expertise doit avoir une autre présentation ? Créez un modèle avec **Nouveau modèle de document** et choisissez le type d'expertise. Ce modèle prime sur le modèle général, par langue : sans document français, un rapport en français prend le modèle général français.
 - La colonne **Documents** montre la version actuelle par langue. Une langue manquante saute ainsi aux yeux.
-- Les trois **lettres types** (protestation, réserves, invitation à une expertise contradictoire) et les trois **certificats** (quantité, poids, on-hire/off-hire) ont chacun un modèle, indépendant du type d'expertise. L'expert rédige le texte de chaque lettre ; la déclaration d'un certificat figure dans le modèle.
+- Les trois **lettres types** (protestation, réserves, invitation à une expertise contradictoire) et les cinq **certificats** (quantité, poids, on-hire/off-hire, inspection des cales, qualité) ont chacun un modèle, indépendant du type d'expertise. L'expert rédige le texte de chaque lettre ; la déclaration d'un certificat figure dans le modèle.
 
 ![La liste Modèles avec la colonne Pour le type d'expertise](images/sjablonen-fr.png "Les modèles")
 

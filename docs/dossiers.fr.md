@@ -72,6 +72,12 @@ Si le dossier est **lié** à un dossier précédent (p. ex. l'on-hire d'un off-
 
 **Nouvelle lettre** et **Nouveau certificat** (onglet Rapport) créent une lettre type ou un certificat dans la langue du dossier. **Aperçu (PDF)** le montre d'abord ; **Émettre** le fige avec son empreinte. Un certificat reçoit alors un numéro de la série de l'établissement (C-HQ-2026-0001). Remplacez dans une lettre chaque champ entre [crochets] : sinon l'émission est impossible.
 
+Il y a trois lettres et cinq certificats. Chaque certificat a ses propres lignes :
+
+- **Certificat de quantité**, **Certificat de poids** et **Certificat on-hire/off-hire** : une description, une quantité et une unité. Un champ numérique rempli du dossier se reprend avec **Reprendre d'un champ du dossier**.
+- **Certificat d'inspection des cales** : une **Constatation** par cale, et l'**Avis** : aptes ou non aptes au chargement de la cargaison mentionnée. L'avis n'est jamais prérempli. C'est sur ce certificat que la notice of readiness (NOR) du capitaine est acceptée ou refusée.
+- **Certificat de qualité** : les résultats d'une analyse, avec par ligne le **Paramètre**, la **Méthode**, le **Résultat**, l'**Unité** et la **Spécification** (la valeur limite). Au-dessus, vous indiquez l'**Échantillonnage** (où et quand), le **Laboratoire** et le **Rapport du laboratoire**.
+
 ![Une nouvelle lettre de protestation pour HQ-2026-0003 avec Aperçu (PDF) et Émettre](images/dossier-brief-fr.png "Une nouvelle lettre")
 
 ### Dossier de preuves

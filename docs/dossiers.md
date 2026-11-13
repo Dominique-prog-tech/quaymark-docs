@@ -72,6 +72,12 @@ Is het dossier **gekoppeld** aan een vorig dossier (bv. de on-hire bij een off-h
 
 **Nieuwe brief** en **Nieuw certificaat** (tabblad Rapport) maken een standaardbrief of certificaat in de taal van het dossier. **Voorbeeld (PDF)** toont het eerst; **Uitgeven** legt het vast met zijn vingerafdruk. Een certificaat krijgt dan een nummer uit de reeks van de vestiging (C-HQ-2026-0001). Vervang in een brief elk invulvak tussen [rechte haken]: anders kan uitgeven niet.
 
+Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen regels:
+
+- **Certificaat van hoeveelheid**, **Certificaat van gewicht** en het **On-hire/off-hire-certificaat**: een omschrijving, een hoeveelheid en een eenheid. Een ingevuld getalveld van het dossier neemt u over met **Overnemen uit een veld van het dossier**.
+- **Certificaat van ruimkeuring**: per ruim een **Bevinding**, en het **Oordeel**: geschikt of niet geschikt om de vermelde lading te laden. Het oordeel staat nooit vooraf ingevuld. Op dit certificaat wordt de notice of readiness (NOR) van de kapitein aanvaard of geweigerd.
+- **Certificaat van kwaliteit**: de resultaten van een analyse, met per regel de **Parameter**, de **Methode**, het **Resultaat**, de **Eenheid** en de **Specificatie** (de grenswaarde). Daarboven vult u de **Staalname** (waar en wanneer), het **Labo** en het **Verslag van het labo** in.
+
 ![Een nieuwe protestbrief bij HQ-2026-0003 met Voorbeeld (PDF) en Uitgeven](images/dossier-brief.png "Een nieuwe brief")
 
 ### Bewijspakket

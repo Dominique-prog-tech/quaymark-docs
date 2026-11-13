@@ -72,6 +72,12 @@ If the file is **linked** to a previous file (e.g. the on-hire of an off-hire), 
 
 **New letter** and **New certificate** (Report tab) create a standard letter or certificate in the language of the file. **Preview (PDF)** shows it first; **Issue** fixes it with its fingerprint. A certificate then gets a number from the branch's series (C-HQ-2026-0001). In a letter, replace every field in [square brackets]: otherwise issuing is not possible.
 
+There are three letters and five certificates. Each certificate has its own lines:
+
+- **Certificate of quantity**, **Certificate of weight** and **On-hire/off-hire certificate**: a description, a quantity and a unit. A filled-in number field of the file can be taken over with **Take from a field of the file**.
+- **Hold inspection certificate**: a **Finding** per hold, and the **Conclusion**: fit or not fit to load the cargo stated. The conclusion is never filled in beforehand. This is the certificate on which the master's notice of readiness (NOR) is accepted or rejected.
+- **Certificate of quality**: the results of an analysis, with per line the **Parameter**, the **Method**, the **Result**, the **Unit** and the **Specification** (the limit). Above them you fill in the **Sampling** (where and when), the **Laboratory** and the **Laboratory report**.
+
 ![A new letter of protest for HQ-2026-0003 with Preview (PDF) and Issue](images/dossier-brief-en.png "A new letter")
 
 ### Evidence package

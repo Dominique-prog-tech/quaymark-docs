@@ -15,7 +15,7 @@ Klik in het menu links op **Instellingen** en dan op **Sjablonen**.
 - Elk bureau start met een **algemeen** sjabloon in de vier talen. Het geldt voor elke soort survey. Zet er uw logo en huisstijl in.
 - Moet het rapport van één soort survey er anders uitzien? Maak met **Nieuw documentsjabloon** een sjabloon en kies de soort survey. Dat sjabloon gaat voor het algemene, per taal: zonder Frans document neemt een Frans rapport het algemene Franse.
 - De kolom **Documenten** toont per taal de huidige versie. Een ontbrekende taal valt zo op.
-- De drie **standaardbrieven** (protest, voorbehoud, uitnodiging tot gezamenlijke survey) en de drie **certificaten** (hoeveelheid, gewicht, on-hire/off-hire) hebben elk één sjabloon, los van de soort survey. De tekst van een brief schrijft de surveyor per brief; de verklaring van een certificaat staat in het sjabloon.
+- De drie **standaardbrieven** (protest, voorbehoud, uitnodiging tot gezamenlijke survey) en de vijf **certificaten** (hoeveelheid, gewicht, on-hire/off-hire, ruimkeuring, kwaliteit) hebben elk één sjabloon, los van de soort survey. De tekst van een brief schrijft de surveyor per brief; de verklaring van een certificaat staat in het sjabloon.
 
 ![De lijst Sjablonen met de kolom Voor soort survey](images/sjablonen.png "De sjablonen")
 

@@ -15,7 +15,7 @@ In the menu on the left, click **Settings**, then **Templates**.
 - Each office starts with a **general** template in the four languages. It applies to every survey type. Add your logo and house style to it.
 - Should the report of one survey type look different? Create a template with **New document template** and choose the survey type. That template takes precedence over the general one, per language: without a French document, a French report uses the general French one.
 - The **Documents** column shows the current version per language, so a missing language stands out.
-- The three **standard letters** (protest, reservation, invitation to a joint survey) and the three **certificates** (quantity, weight, on-hire/off-hire) each have one template, regardless of the survey type. The surveyor writes the text of each letter; the statement of a certificate is in the template.
+- The three **standard letters** (protest, reservation, invitation to a joint survey) and the five **certificates** (quantity, weight, on-hire/off-hire, hold inspection, quality) each have one template, regardless of the survey type. The surveyor writes the text of each letter; the statement of a certificate is in the template.
 
 ![The Templates list with the For survey type column](images/sjablonen-en.png "The templates")
 
