@@ -39,11 +39,13 @@ Een opdrachtgever kan zijn dossiers zelf volgen in het klantenportaal. U geeft d
 - **Uitnodigen**: kies de contactpersoon en klik op **Uitnodigen**. De contactpersoon krijgt een mail, in de taal van de contactpersoon of anders die van de relatie, met een link om zelf een wachtwoord te kiezen. De link is 7 dagen geldig. Bij de eerste aanmelding stelt de contactpersoon tweestapsverificatie in: zonder komt niemand in het portaal.
 - **Status**: *Uitgenodigd* (nog geen wachtwoord), *Actief* of *Uitgeschakeld*, en of tweestapsverificatie aan staat. **Opnieuw uitnodigen** stuurt een nieuwe link; de vorige vervalt.
 - **Toegang intrekken** kan altijd. Is de contactpersoon op dat moment aangemeld, dan stopt die sessie binnen vijf minuten.
+- **Meldingen per mail aan de portaalgebruikers** staat standaard aan: een mail bij een beslissing over een aanvraag, bij plannen of verplaatsen, en bij een uitgegeven rapport, brief, certificaat of factuur. Zet het hier uit voor deze relatie; elke gebruiker kan het ook zelf uitzetten. → [Aanvragen](aanvragen.md#meldingen-aan-de-opdrachtgever)
 
 Wat de contactpersoon in het portaal ziet:
 
 - **Mijn dossiers**: de dossiers waarin deze relatie opdrachtgever is, met soort survey, schip, haven, de eigen referentie, de status en wanneer het werk gepland is. Een dossier in de prullenbak niet.
 - Per dossier de **uitgegeven** rapportversies en de uitgegeven brieven en certificaten, als PDF. Een voorbeeld of een klad nooit. Elk bestand wordt eerst nagerekend tegen zijn vingerafdruk.
+- **Nieuwe opdracht**: een opdracht indienen, met bijlagen. Ze komt als aanvraag bij het bureau en staat onder **Mijn aanvragen** tot het bureau beslist. → [Aanvragen](aanvragen.md)
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
 - Geen surveyor, uren, kosten, vaststellingen of foto's: die staan in het rapport.
 

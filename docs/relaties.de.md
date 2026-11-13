@@ -39,11 +39,13 @@ Ein Auftraggeber kann seine Akten im Kundenportal selbst verfolgen. Dazu geben S
 - **Einladen**: Wählen Sie die Kontaktperson und klicken Sie auf **Einladen**. Sie erhält eine E-Mail, in ihrer Sprache oder sonst der der Beziehung, mit einem Link, um ihr Passwort selbst zu wählen. Der Link ist 7 Tage gültig. Bei der ersten Anmeldung richtet sie die Zwei-Faktor-Authentifizierung ein: ohne sie kommt niemand ins Portal.
 - **Status**: *Eingeladen* (noch kein Passwort), *Aktiv* oder *Deaktiviert*, und ob die Zwei-Faktor-Authentifizierung aktiv ist. **Erneut einladen** sendet einen neuen Link; der vorige verfällt.
 - **Zugang entziehen** ist jederzeit möglich. Ist die Kontaktperson in diesem Moment angemeldet, endet diese Sitzung innerhalb von fünf Minuten.
+- **E-Mail-Benachrichtigungen an die Portalbenutzer** ist standardmäßig aktiv: eine E-Mail bei einer Entscheidung über eine Anfrage, beim Planen oder Verschieben und bei einem ausgestellten Bericht, Brief, Zertifikat oder einer Rechnung. Schalten Sie es hier für diese Beziehung aus; jeder Benutzer kann es auch selbst ausschalten. → [Anfragen](aanvragen.md#benachrichtigungen-an-den-auftraggeber)
 
 Was die Kontaktperson im Portal sieht:
 
 - **Meine Akten**: die Akten, in denen diese Beziehung Auftraggeber ist, mit Besichtigungsart, Schiff, Hafen, der eigenen Referenz, dem Status und wann die Arbeit geplant ist. Keine Akte im Papierkorb.
 - Je Akte die **ausgestellten** Berichtsversionen und die ausgestellten Briefe und Zertifikate, als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
+- **Neuer Auftrag**: einen Auftrag senden, mit Anhängen. Er geht als Anfrage an das Büro und steht unter **Meine Anfragen**, bis das Büro entscheidet. → [Anfragen](aanvragen.md)
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
 - Kein Besichtiger, keine Stunden, Kosten, Feststellungen oder Fotos: Diese stehen im Bericht.
 
