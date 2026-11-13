@@ -10,6 +10,8 @@ Toutes les factures et notes de crédit du bureau. Une facture se crée en gén�
 
 Cliquez sur **Factures** dans le menu de gauche. La liste montre les plus récentes en haut, avec le statut : **Brouillon**, **Émise** ou **Créditée**. Chaque utilisateur du bureau voit les factures ; les établir et les émettre demande un droit distinct.
 
+![Factures avec Nouvelle facture et un Brouillon pour HQ-2026-0007](images/facturen-fr.png "Les factures")
+
 ## Proposer une facture depuis un dossier
 
 1. Ouvrez le dossier et choisissez l'onglet **Temps et frais**.
@@ -25,7 +27,9 @@ Ce qui figure déjà sur une autre facture n'est pas repris. Les tarifs viennent
 
 ## Adapter le brouillon
 
-Un brouillon n'a pas encore de numéro et se modifie librement : client, établissement, date, langue, référence et lignes. **Ajouter une ligne** ajoute une ligne.
+Un brouillon n'a pas encore de numéro et se modifie librement : client, site, date, langue, référence et lignes. **Ajouter une ligne** ajoute une ligne.
+
+![Un Brouillon avec Client, Site, Lignes et Ajouter une ligne](images/factuur-fr.png "Un brouillon de facture")
 
 La **TVA** est proposée selon le client :
 
@@ -42,11 +46,11 @@ Si nécessaire, adaptez-la par ligne. La mention légale qui accompagne l'autoli
 
 Cliquez sur **Émettre** et confirmez. La facture reçoit alors :
 
-- son **numéro**, par établissement et par année (F-HQ-2026-0001) ;
+- son **numéro**, par site et par année (F-HQ-2026-0001) ;
 - son **échéance** selon le délai de paiement du bureau ;
 - une **communication structurée** et un **QR de paiement** qu'une application bancaire peut scanner.
 
-Le PDF est figé avec son empreinte (SHA-256). La facture ne peut ensuite plus être modifiée ni supprimée. Une facture ne peut pas être datée dans le futur, ni avant la dernière facture émise du même établissement.
+Le PDF est figé avec son empreinte (SHA-256). La facture ne peut ensuite plus être modifiée ni supprimée. Une facture ne peut pas être datée dans le futur, ni avant la dernière facture émise du même site.
 
 ## Envoyer via Peppol
 

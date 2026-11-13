@@ -10,6 +10,8 @@ All invoices and credit notes of the office. An invoice is usually made from the
 
 Click **Invoices** in the menu on the left. The list shows the newest first, with the status: **Draft**, **Issued** or **Credited**. Every user of the office sees the invoices; drafting and issuing them requires a separate permission.
 
+![Invoices with New invoice and a Draft for HQ-2026-0007](images/facturen-en.png "The invoices")
+
 ## Proposing an invoice from a file
 
 1. Open the file and choose the **Time and expenses** tab.
@@ -25,7 +27,9 @@ Anything already on another invoice is left out. The rates come from [Rates](tar
 
 ## Adjusting the draft
 
-A draft has no number yet and can be changed freely: customer, branch, date, language, reference and lines. **Add line** adds a line.
+A draft has no number yet and can be changed freely: customer, office, date, language, reference and lines. **Add line** adds a line.
+
+![A Draft with Customer, Office, Lines and Add line](images/factuur-en.png "A draft invoice")
 
 **VAT** is proposed according to the customer:
 
@@ -42,11 +46,11 @@ If needed, adjust it per line. The legal statement for reverse charge or outside
 
 Click **Issue** and confirm. The invoice then gets:
 
-- its **number**, per branch and per year (F-HQ-2026-0001);
+- its **number**, per office and per year (F-HQ-2026-0001);
 - its **due date** according to the office's payment term;
 - a **structured payment reference** and a **payment QR code** a banking app can scan.
 
-The PDF is recorded with its fingerprint (SHA-256). After that the invoice can no longer be changed or deleted. An invoice cannot be dated in the future, nor earlier than the last issued invoice of the same branch.
+The PDF is recorded with its fingerprint (SHA-256). After that the invoice can no longer be changed or deleted. An invoice cannot be dated in the future, nor earlier than the last issued invoice of the same office.
 
 ## Sending via Peppol
 

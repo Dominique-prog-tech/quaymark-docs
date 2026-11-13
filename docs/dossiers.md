@@ -80,6 +80,14 @@ Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen rege
 
 ![Een nieuwe protestbrief bij HQ-2026-0003 met Voorbeeld (PDF) en Uitgeven](images/dossier-brief.png "Een nieuwe brief")
 
+Staat een hoeveelheid in een andere eenheid dan de klant vraagt, bijvoorbeeld in metrische ton terwijl de charterpartij long ton gebruikt, dan rekent **Omrekenen** ze om (ton, kilogram, long ton, short ton, kubieke meter, liter, vat). Van een volume naar een gewicht vraagt Quaymark de dichtheid. De omgerekende hoeveelheid komt als nieuwe regel onder de oorspronkelijke.
+
+### Tijd en kosten
+
+Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer tot wanneer, in de tijd van de vestiging) en de **kosten** (reis, verblijf, labo, derden) van het dossier, met het bewijsstuk uit de bijlagen. Een kost op **Doorrekenen** komt op de factuur. **Factuur voorstellen** maakt er een klad-factuur van; zie [Facturen](facturen.md). Wat op een factuur staat, ligt vast.
+
+![Tijd en kosten van ZB-2026-0003 met Factuur voorstellen, Prestaties en Kosten](images/dossier-tijd-kosten.png "Tijd en kosten")
+
 ### Bewijspakket
 
 **Bewijspakket (ZIP)** geeft één ZIP om zonder Quaymark na te trekken: de originele foto's van het toestel (ook verborgen foto's, met de reden), een manifest, de uitgegeven rapporten en een LEESMIJ met de commando's (`shasum`, `certutil`). Elk bestand wordt bij het inpakken nagerekend; klopt er één niet meer, dan komt er geen pakket. De vingerafdruk van het pakket staat daarna op het tabblad en in het journaal.
@@ -91,6 +99,10 @@ Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen rege
 ### Kopiëren
 
 **Kopiëren** maakt een nieuw dossier met dezelfde opdracht (schip, opdrachtgever, soort, haven), zonder vaststellingen, antwoorden en gegevens van de survey, en koppelt het aan dit dossier.
+
+### Juridisch blokkeren
+
+**Juridisch blokkeren** (enkel de beheerder) houdt een dossier vast voor een geschil of een vordering. Geef een reden. Zolang het dossier geblokkeerd is, kan het niet naar de prullenbak, en worden zijn documenten, bijlagen, notities en taken niet verwijderd. Bewerken blijft mogen. **Blokkering opheffen** vraagt ook een reden; het venster toont wie wanneer blokkeerde of ophief.
 
 ### Verwijderen
 

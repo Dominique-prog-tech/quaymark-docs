@@ -286,6 +286,50 @@ sql.append(f"delete from planning.afwezigheden where id = {lit(vid('afwezigheid/
 sql.append(rij('planning.afwezigheden', dict(id=vid('afwezigheid/1'), gebruiker_id=SURVEYOR_ID, van=maandag, tot=maandag, soort='opleiding',
            opmerking='IIMS refresher', created_at=om(-7), archived_on_utc=None)))
 
+# ── Facturatie (8a tot 8c, 13/11/2026): de gegevens van het bureau, de tarieven, tijd en kosten op ZB-2026-0003 (nog niet gefactureerd: zo kan
+#    "Factuur voorstellen" op het beeld), en een KLAD-factuur voor HQ-2026-0007. Een uitgegeven factuur maakt dit script NIET: die heeft een PDF met
+#    haar SHA-256 nodig, en die komt enkel uit de app. ──
+sql.append("""insert into financieel.bureaugegevens (id, naam, btwnummer, straat, postcode, gemeente, land, email, telefoon, iban, bic, betaaltermijn, factuurvoet)
+values (1, NULL, 'BE 0123.456.749', 'Noordkaai 12', '2000', 'Antwerpen', 'BE', 'facturatie@noordkaai.example', NULL, 'BE68 5390 0754 7034', NULL, 30, NULL)
+on conflict (id) do update set btwnummer = excluded.btwnummer, straat = excluded.straat, postcode = excluded.postcode, gemeente = excluded.gemeente,
+  land = excluded.land, email = excluded.email, iban = excluded.iban, betaaltermijn = excluded.betaaltermijn;""")
+# Per soort survey een forfait OF een uurtarief (verzonnen bedragen, zonder btw).
+TARIEVEN = {'damage': (None, 110), 'condition': (None, 110), 'sampling': (None, 95), 'lashing': (None, 95), 'draft': (650, None),
+            'bunker': (450, None), 'hatch_cover': (850, None), 'on_hire': (520, None), 'off_hire': (520, None), 'pre_loading': (480, None)}
+for code, (forfait, uur) in TARIEVEN.items():
+    if code not in SOORT:
+        raise SystemExit(f'⛔ De soort survey {code} bestaat niet in de app. Gestopt; niets geschreven.')
+    sql.append(f"insert into financieel.tarieven_soort (survey_type_id, forfait, uurtarief) values ({lit(SOORT[code])}, {lit(forfait)}, {lit(uur)}) "
+               "on conflict (survey_type_id) do update set forfait = excluded.forfait, uurtarief = excluded.uurtarief;")
+sql.append(f"insert into financieel.tarieven_surveyor (gebruiker_id, uurtarief) values ({lit(SURVEYOR_ID)}, 125) on conflict (gebruiker_id) do update set uurtarief = 125;")
+sql.append("insert into financieel.toeslagen (id, weekend, feestdag, nacht, nacht_van, nacht_tot) values (1, 50, 100, 25, '20:00', '06:00') "
+           "on conflict (id) do update set weekend = 50, feestdag = 100, nacht = 25, nacht_van = '20:00', nacht_tot = '06:00';")
+STAALNAME = vid('dossier/10')
+gisteren, vandaag = VANDAAG - dt.timedelta(days=1), VANDAAG
+PRESTATIES = [(1, gisteren, '08:00', '12:30', 'Sampling during loading, holds 1 to 3'), (2, vandaag, '07:00', '10:15', 'Sampling holds 4 to 6, sealing of samples')]
+KOSTEN = [(1, 'reis', 'Mileage Antwerp to Ghent return, 112 km', 47.04, True), (2, 'labo', 'Laboratory analysis, 6 samples', 390.00, True),
+          (3, 'andere', 'Parking at the terminal', 12.00, False)]
+sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'prestatie/{k}')) for k, *_ in PRESTATIES)});")
+sql.append(f"delete from financieel.kosten where id in ({', '.join(lit(vid(f'kost/{k}')) for k, *_ in KOSTEN)});")
+for k, dag, van, tot, oms in PRESTATIES:
+    sql.append(rij('financieel.prestaties', dict(id=vid(f'prestatie/{k}'), dossier_id=STAALNAME, gebruiker_id=SURVEYOR_ID, van=f'{dag}T{van}:00',
+               tot=f'{dag}T{tot}:00', omschrijving=oms, factuur_id=None, created_at=om(-1))))
+for k, soort, oms, bedrag, door in KOSTEN:
+    sql.append(rij('financieel.kosten', dict(id=vid(f'kost/{k}'), dossier_id=STAALNAME, datum=VANDAAG, soort=soort, omschrijving=oms, bedrag=bedrag,
+               doorrekenen=door, bijlage_id=None, factuur_id=None, created_at=om(-1))))
+if not SCHELDEMOND:
+    raise SystemExit('⛔ De relatie Scheldemond Bevrachting NV bestaat niet (de opdrachtgever van HQ-2026-0007). Gestopt; niets geschreven.')
+KLAD = vid('factuur/klad-1')
+# De regels zoals de app ze bewaart (JSON, camelCase). Forfait bunker survey + een kost; 21 %: 488,50 + 102,59 = 591,09 (één afronding per tarief).
+REGELS = [dict(omschrijving='Fixed fee: Bunker survey', aantal=1, eenheid='C62', eenheidsprijs=450.00, btwCategorie='S', btwProcent=21),
+          dict(omschrijving='Travel: Mileage Antwerp port, 26 km', aantal=1, eenheid='C62', eenheidsprijs=38.50, btwCategorie='S', btwProcent=21)]
+sql.append(f"delete from financieel.facturen where id = {lit(KLAD)} and status = 'klad';")
+sql.append(rij('financieel.facturen', dict(id=KLAD, soort='factuur', status='klad', nummer=None, vestiging_id=HQ, dossier_id=vid('dossier/9'),
+           klant_id=SCHELDEMOND, datum=VANDAAG, vervaldatum=None, taal='en', munt='EUR', referentie='SB-2026-118', opmerking=None,
+           gecorrigeerde_factuur_id=None, regels=REGELS, totaal_excl=488.50, btw=102.59, totaal_incl=591.09, mededeling=None, verkoper=None, koper=None,
+           iban=None, bic=None, pdf_storage_key=None, pdf_sha256=None, pdf_grootte=None, momentopname=None, momentopname_sha256=None,
+           uitgegeven_op=None, uitgegeven_door=None, created_at=om(0))))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"
@@ -297,5 +341,5 @@ sql.append('commit;')
 q('\n'.join(sql))
 tel = q("select (select count(*) from dossiers.dossiers) || ' dossiers, ' || (select count(*) from relaties.relaties) || ' relaties, ' || "
         "(select count(*) from dossiers.schepen) || ' schepen, ' || (select count(*) from dossiers.vaststellingen) || ' vaststellingen, ' || "
-        "(select count(*) from dossiers.bewijsstukken) || ' bewijsstukken'")
+        "(select count(*) from dossiers.bewijsstukken) || ' bewijsstukken, ' || (select count(*) from financieel.facturen) || ' facturen'")
 print(f'✅ qm-demo gevuld ({VANDAAG}): {tel}.')

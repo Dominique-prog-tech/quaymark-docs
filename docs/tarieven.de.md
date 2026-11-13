@@ -10,6 +10,8 @@ Die Tarife, mit denen Quaymark eine Rechnung vorschlägt. Beträge ohne MwSt., i
 
 Klicken Sie im Menü links unter **Einstellungen** auf **Tarife**. Nur der Administrator des Büros sieht diesen Bildschirm.
 
+![Tarife mit Pro Besichtigungsart, Pro Sachverständigen und Zuschläge](images/tarieven-de.png "Die Tarife")
+
 ## Pro Besichtigungsart
 
 Jede Besichtigungsart erhält eine **Pauschale** (einen festen Betrag pro Akte) oder einen **Stundensatz**, nicht beides. Lassen Sie beide leer für eine Art, die Sie nicht nach einem festen Tarif abrechnen.

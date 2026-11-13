@@ -10,6 +10,8 @@ Les données de votre bureau. Elles figurent sur chaque facture et note de créd
 
 Cliquez sur **Données du bureau** sous **Paramètres** dans le menu de gauche. Seul l'administrateur du bureau voit cet écran.
 
+![Données du bureau avec Dénomination légale, Numéro de TVA et IBAN](images/bureaugegevens-fr.png "Les données du bureau")
+
 ## Ce que vous complétez
 
 - **Dénomination légale** : le nom sur la facture. Vide signifie : le nom sous lequel le bureau figure dans Quaymark.

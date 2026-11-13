@@ -10,6 +10,8 @@ Les tarifs avec lesquels Quaymark propose une facture. Montants hors TVA, dans l
 
 Cliquez sur **Tarifs** sous **Paramètres** dans le menu de gauche. Seul l'administrateur du bureau voit cet écran.
 
+![Tarifs avec Par type d'expertise, Par expert et Suppléments](images/tarieven-fr.png "Les tarifs")
+
 ## Par type d'expertise
 
 Chaque type d'expertise reçoit un **Forfait** (un montant fixe par dossier) ou un **Tarif horaire**, pas les deux. Laissez les deux vides pour un type que vous ne facturez pas selon un tarif fixe.

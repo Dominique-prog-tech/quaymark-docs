@@ -10,6 +10,8 @@ The rates Quaymark uses to propose an invoice. Amounts excluding VAT, in the cur
 
 Click **Rates** under **Settings** in the menu on the left. Only the office administrator sees this screen.
 
+![Rates with Per survey type, Per surveyor and Surcharges](images/tarieven-en.png "The rates")
+
 ## Per survey type
 
 Each survey type gets a **Fixed fee** (a fixed amount per file) or an **Hourly rate**, not both. Leave both empty for a type you do not charge at a fixed rate.

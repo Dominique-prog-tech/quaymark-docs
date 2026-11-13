@@ -80,6 +80,14 @@ There are three letters and five certificates. Each certificate has its own line
 
 ![A new letter of protest for HQ-2026-0003 with Preview (PDF) and Issue](images/dossier-brief-en.png "A new letter")
 
+If a quantity is in another unit than the customer asks for, for example metric tonnes while the charter party uses long tons, **Convert** converts it (tonne, kilogram, long ton, short ton, cubic metre, litre, barrel). From volume to weight, Quaymark asks for the density. The converted quantity is added as a new line below the original.
+
+### Time and expenses
+
+On the **Time and expenses** tab you record the **time entries** (who, from when to when, in the office's time) and the **expenses** (travel, accommodation, laboratory, third parties) of the file, with the receipt from the attachments. An expense marked **Recharge** goes on the invoice. **Propose invoice** turns them into a draft invoice; see [Invoices](facturen.md). Anything on an invoice is fixed.
+
+![Time and expenses of ZB-2026-0003 with Propose invoice, Time entries and Expenses](images/dossier-tijd-kosten-en.png "Time and expenses")
+
 ### Evidence package
 
 **Evidence package (ZIP)** gives one ZIP to verify without Quaymark: the original photos from the device (hidden photos too, with the reason), a manifest, the issued reports and a README with the commands (`shasum`, `certutil`). Every file is re-checked while packing; if one no longer matches, no package is made. The fingerprint of the package then appears on the tab and in the journal.
@@ -91,6 +99,10 @@ There are three letters and five certificates. Each certificate has its own line
 ### Copy
 
 **Copy** creates a new file with the same instruction (vessel, principal, survey type, port), without findings, answers or survey particulars, and links it to this file.
+
+### Legal hold
+
+**Place on legal hold** (administrator only) keeps a file for a dispute or a claim. Give a reason. While the file is on hold, it cannot go to the recycle bin, and its documents, attachments, notes and tasks are not deleted. Editing remains possible. **Lift legal hold** also asks for a reason; the window shows who placed or lifted the hold, and when.
 
 ### Delete
 

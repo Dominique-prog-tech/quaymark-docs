@@ -26,6 +26,8 @@ One report template: the versions per language and the Word document itself.
 - One tab per language with the versions. **Edit document** opens the document in the editor; **Restore this version** creates a new version with the content of an old one, nothing is deleted.
 - In the editor you place the fixed data (vessel, file number, principal …) via the fields tab, and a table with rows (attendance, findings, checklist) with the **Insert table …** button.
 - What differs per survey type goes in as a **marker**: text between double braces, typed literally, such as `{{velden}}` or `{{rubriek:conclusie}}`. The **Markers** panel shows which ones this template may use. A custom field (`{{veld:…}}`) only works in a template for one survey type.
+- A number field can appear in another unit in the report: `{{veld:hoeveelheid:LT}}` shows the field hoeveelheid in long tons. The units are `t`, `kg`, `LT`, `ST`, `m3`, `L` and `bbl`. Between weight and volume this is not possible without a density: Quaymark refuses such a marker when you save.
+- The **Invoice** template determines the look of invoices and credit notes, in the four languages. The payment QR code takes the place of the BetaalQr field. See [Invoices](facturen.md).
 - **Save as new version** checks the document and the markers. An unknown marker is refused, with the reason. **Check** only looks at the fields, not at the markers.
 
 ## See also

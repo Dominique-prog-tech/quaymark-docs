@@ -10,6 +10,8 @@ De gegevens van uw bureau zelf. Ze staan op elke factuur en creditnota; de naam 
 
 Klik in het menu links onder **Instellingen** op **Bureaugegevens**. Enkel de beheerder van het bureau ziet dit scherm.
 
+![Bureaugegevens met Wettelijke naam, Btw-nummer en IBAN](images/bureaugegevens.png "De bureaugegevens")
+
 ## Wat u invult
 
 - **Wettelijke naam**: de naam op de factuur. Leeg betekent: de naam waaronder het bureau in Quaymark staat.

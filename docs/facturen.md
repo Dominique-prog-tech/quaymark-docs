@@ -10,6 +10,8 @@ Alle facturen en creditnota's van het bureau. Een factuur maakt u meestal vanuit
 
 Klik in het menu links op **Facturen**. De lijst toont de nieuwste bovenaan, met de status: **Klad**, **Uitgegeven** of **Gecrediteerd**. Elke gebruiker van het bureau ziet de facturen; opmaken en uitgeven vraagt een apart recht.
 
+![Facturen met Nieuwe factuur en een Klad voor HQ-2026-0007](images/facturen.png "De facturen")
+
 ## Een factuur voorstellen uit een dossier
 
 1. Open het dossier en kies het tabblad **Tijd en kosten**.
@@ -26,6 +28,8 @@ Wat al op een andere factuur staat, telt niet mee. De tarieven komen uit [Tariev
 ## Het klad aanpassen
 
 Een klad heeft nog geen nummer en kunt u vrij aanpassen: klant, vestiging, datum, taal, referentie en de regels. Met **Regel toevoegen** zet u er een regel bij.
+
+![Een Klad met Klant, Vestiging, Regels en Regel toevoegen](images/factuur.png "Een klad-factuur")
 
 De **btw** is voorgesteld volgens de klant:
 

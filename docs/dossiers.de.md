@@ -80,6 +80,14 @@ Es gibt drei Schreiben und fünf Bescheinigungen. Jede Bescheinigung hat ihre ei
 
 ![Protestschreiben zu HQ-2026-0003 mit Vorschau (PDF) und Herausgeben](images/dossier-brief-de.png "Ein neues Schreiben")
 
+Steht eine Menge in einer anderen Einheit, als der Kunde verlangt, zum Beispiel in metrischen Tonnen, während die Charterpartie Long Tons verwendet, rechnet **Umrechnen** sie um (Tonne, Kilogramm, Long Ton, Short Ton, Kubikmeter, Liter, Barrel). Von Volumen in Gewicht fragt Quaymark nach der Dichte. Die umgerechnete Menge kommt als neue Zeile unter die ursprüngliche.
+
+### Zeit und Kosten
+
+In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, von wann bis wann, in der Zeit der Niederlassung) und die **Kosten** (Reise, Unterkunft, Labor, Dritte) der Akte, mit dem Beleg aus den Anhängen. Kosten auf **Weiterberechnen** kommen auf die Rechnung. **Rechnung vorschlagen** macht daraus einen Rechnungsentwurf; siehe [Rechnungen](facturen.md). Was auf einer Rechnung steht, steht fest.
+
+![Zeit und Kosten von ZB-2026-0003 mit Rechnung vorschlagen, Leistungen und Kosten](images/dossier-tijd-kosten-de.png "Zeit und Kosten")
+
 ### Beweispaket
 
 **Beweispaket (ZIP)** liefert ein ZIP zur Prüfung ohne Quaymark: die Originalfotos des Geräts (auch ausgeblendete, mit Grund), ein Manifest, die herausgegebenen Berichte und ein LIESMICH mit den Befehlen (`shasum`, `certutil`). Jede Datei wird beim Packen nachgeprüft; stimmt eine nicht mehr, entsteht kein Paket. Der Fingerabdruck des Pakets steht danach in der Registerkarte und im Journal.
@@ -91,6 +99,10 @@ Es gibt drei Schreiben und fünf Bescheinigungen. Jede Bescheinigung hat ihre ei
 ### Kopieren
 
 **Kopieren** legt eine neue Akte mit demselben Auftrag an (Schiff, Auftraggeber, Art, Hafen), ohne Feststellungen, Antworten und Besichtigungsdaten, und verknüpft sie mit dieser Akte.
+
+### Rechtlich sperren
+
+**Rechtlich sperren** (nur der Administrator) hält eine Akte für einen Streitfall oder eine Forderung fest. Geben Sie eine Begründung an. Solange die Akte gesperrt ist, kann sie nicht in den Papierkorb, und ihre Dokumente, Anhänge, Notizen und Aufgaben werden nicht gelöscht. Bearbeiten bleibt möglich. **Sperre aufheben** verlangt ebenfalls eine Begründung; das Fenster zeigt, wer wann gesperrt oder aufgehoben hat.
 
 ### Löschen
 

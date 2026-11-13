@@ -10,6 +10,8 @@ De tarieven waarmee Quaymark een factuur voorstelt. Bedragen zonder btw, in de m
 
 Klik in het menu links onder **Instellingen** op **Tarieven**. Enkel de beheerder van het bureau ziet dit scherm.
 
+![Tarieven met Per soort survey, Per surveyor en Toeslagen](images/tarieven.png "De tarieven")
+
 ## Per soort survey
 
 Elke soort survey krijgt een **Forfait** (een vast bedrag per dossier) óf een **Uurtarief**, niet beide. Laat beide leeg voor een soort die u niet volgens een vast tarief aanrekent.

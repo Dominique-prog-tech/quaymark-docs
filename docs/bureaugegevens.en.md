@@ -10,6 +10,8 @@ Your own company details. They appear on every invoice and credit note; the name
 
 Click **Company details** under **Settings** in the menu on the left. Only the office's administrator sees this screen.
 
+![Company details with Legal name, VAT number and IBAN](images/bureaugegevens-en.png "The company details")
+
 ## What you fill in
 
 - **Legal name**: the name on the invoice. Empty means: the name under which the office is registered in Quaymark.

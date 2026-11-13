@@ -6,9 +6,11 @@ description: "Die Daten des Büros: Firmenname, Adresse, USt-IdNr., IBAN und Zah
 
 Die Daten Ihres Büros. Sie stehen auf jeder Rechnung und Gutschrift; Name und Adresse auch in den Berichten.
 
-## Den Bildschirm öffnen
+## Bildschirm öffnen
 
 Klicken Sie im Menü links unter **Einstellungen** auf **Firmendaten**. Nur der Administrator des Büros sieht diesen Bildschirm.
+
+![Firmendaten mit Firmenname, USt-IdNr. und IBAN](images/bureaugegevens-de.png "Die Firmendaten")
 
 ## Was Sie eintragen
 

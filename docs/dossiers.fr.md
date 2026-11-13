@@ -80,6 +80,14 @@ Il y a trois lettres et cinq certificats. Chaque certificat a ses propres lignes
 
 ![Une nouvelle lettre de protestation pour HQ-2026-0003 avec Aperçu (PDF) et Émettre](images/dossier-brief-fr.png "Une nouvelle lettre")
 
+Si une quantité est exprimée dans une autre unité que celle demandée par le client, par exemple en tonnes métriques alors que la charte-partie utilise la long ton, **Convertir** la convertit (tonne, kilogramme, long ton, short ton, mètre cube, litre, baril). D'un volume vers un poids, Quaymark demande la densité. La quantité convertie s'ajoute comme nouvelle ligne sous l'originale.
+
+### Temps et frais
+
+Dans l'onglet **Temps et frais**, vous encodez les **prestations** (qui, de quand à quand, à l'heure du site) et les **frais** (déplacement, séjour, laboratoire, tiers) du dossier, avec le justificatif tiré des pièces jointes. Un frais marqué **Refacturer** figure sur la facture. **Proposer une facture** en fait un brouillon de facture ; voir [Factures](facturen.md). Ce qui figure sur une facture est figé.
+
+![Temps et frais de ZB-2026-0003 avec Proposer une facture, Prestations et Frais](images/dossier-tijd-kosten-fr.png "Temps et frais")
+
 ### Dossier de preuves
 
 **Dossier de preuves (ZIP)** fournit un ZIP à vérifier sans Quaymark : les photos originales de l'appareil (y compris les photos masquées, avec le motif), un manifeste, les rapports émis et un LISEZMOI avec les commandes (`shasum`, `certutil`). Chaque fichier est revérifié à l'emballage ; si l'un ne correspond plus, aucun dossier n'est créé. L'empreinte du dossier figure ensuite dans l'onglet et dans le journal.
@@ -91,6 +99,10 @@ Il y a trois lettres et cinq certificats. Chaque certificat a ses propres lignes
 ### Copier
 
 **Copier** crée un nouveau dossier avec la même mission (navire, donneur d'ordre, type, port), sans constatations, réponses ni données d'expertise, et le lie à ce dossier.
+
+### Bloquer juridiquement
+
+**Bloquer juridiquement** (administrateur seulement) conserve un dossier pour un litige ou une réclamation. Indiquez un motif. Tant que le dossier est bloqué, il ne peut pas aller à la corbeille, et ses documents, pièces jointes, notes et tâches ne sont pas supprimés. La modification reste possible. **Lever le blocage** demande aussi un motif ; la fenêtre montre qui a bloqué ou levé, et quand.
 
 ### Supprimer
 

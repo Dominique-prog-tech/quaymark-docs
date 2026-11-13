@@ -6,9 +6,11 @@ description: "Rechnungen und Gutschriften: eine Rechnung aus einer Akte vorschla
 
 Alle Rechnungen und Gutschriften des Büros. Eine Rechnung erstellen Sie meist aus der Akte, aus der Zeit und den Kosten, die darauf erfasst sind.
 
-## Den Bildschirm öffnen
+## Bildschirm öffnen
 
 Klicken Sie im Menü links auf **Rechnungen**. Die Liste zeigt die neuesten oben, mit dem Status: **Entwurf**, **Ausgestellt** oder **Gutgeschrieben**. Jeder Benutzer des Büros sieht die Rechnungen; Erstellen und Ausstellen erfordert ein eigenes Recht.
+
+![Rechnungen mit Neue Rechnung und einem Entwurf für HQ-2026-0007](images/facturen-de.png "Die Rechnungen")
 
 ## Eine Rechnung aus einer Akte vorschlagen
 
@@ -26,6 +28,8 @@ Was bereits auf einer anderen Rechnung steht, zählt nicht mit. Die Tarife komme
 ## Den Entwurf anpassen
 
 Ein Entwurf hat noch keine Nummer und lässt sich frei ändern: Kunde, Niederlassung, Datum, Sprache, Referenz und Zeilen. **Zeile hinzufügen** fügt eine Zeile hinzu.
+
+![Ein Entwurf mit Kunde, Niederlassung, Zeilen und Zeile hinzufügen](images/factuur-de.png "Ein Rechnungsentwurf")
 
 Die **MwSt.** wird nach dem Kunden vorgeschlagen:
 
