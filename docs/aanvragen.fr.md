@@ -20,6 +20,7 @@ Cliquez sur **Demandes** dans le menu de gauche. S'il y a des demandes en attent
 À gauche figure ce que le donneur d'ordre a rempli : qui a envoyé la demande, le type d'expertise, le navire, le port et le terminal, la date souhaitée, la référence, la description et les pièces jointes (par exemple la lettre de mission ou le plan de chargement).
 
 - **Accepter** : choisissez le site, le navire, l'expert, la date et la langue du rapport. Pour le navire, Quaymark propose un navire existant si le numéro IMO, le numéro ENI ou le nom correspond ; sinon un nouveau navire à partir des données de la demande. La date souhaitée est déjà remplie. Quaymark crée alors le dossier, copie les pièces jointes dans l'onglet **Documents** et envoie un e-mail au donneur d'ordre.
+- Si le bureau travaille avec ce navire pour un autre donneur d'ordre et que ce donneur d'ordre y est partie, un avertissement apparaît au-dessus d'**Accepter**. → [Conflits d'intérêts](dossiers.md#conflits-dinterets)
 - **Refuser** demande un motif. Le donneur d'ordre le voit dans le portail et dans l'e-mail.
 - Décider demande le droit de modifier les dossiers. Une demande n'est traitée qu'une seule fois : si deux collègues cliquent en même temps, le second est averti que la décision est déjà prise.
 

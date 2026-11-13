@@ -162,6 +162,15 @@ On the **Time and expenses** tab you record the **time entries** (who, from when
 
 **Delete** moves the file to the recycle bin.
 
+## Conflicts of interest
+
+A surveyor may not act for both parties. Quaymark warns at the top of the file if the office works, in another file with **the same vessel** or **the same claim or policy number**, for another principal, and that principal is a party in this file (or your principal is a party in the other one). Open files count, and files closed in the last twelve months; cancelled files do not.
+
+- The header then shows **Conflict of interest?**, and the top of the file lists the other files with their principal.
+- If it is not a conflict, click **No conflict** and explain why (for example: different damage, both parties informed). This is kept with your name and the time, and cannot be changed. It is the proof of independence a principal or an accreditation may ask for.
+- The work is not blocked: the warning stays until it is justified.
+- On a request from the client portal too, Quaymark warns before you accept it. → [Requests](aanvragen.md#request)
+
 ## Claims
 
 The **Claims** screen in the menu shows the claims of all files, with their file, insurer, amounts and status.

@@ -20,6 +20,7 @@ Klik in het menu links op **Aanvragen**. Wachten er aanvragen, dan meldt het sta
 Links staat wat de opdrachtgever invulde: wie de aanvraag indiende, de soort survey, het schip, de haven en terminal, de gewenste datum, de referentie, de omschrijving en de bijlagen (bijvoorbeeld de opdrachtbrief of het stuwplan).
 
 - **Aanvaarden**: kies de vestiging, het schip, de surveyor, het tijdstip en de taal van het rapport. Bij het schip stelt Quaymark een bestaand schip voor als het IMO-nummer, het ENI-nummer of de naam overeenkomt; anders een nieuw schip uit de gegevens van de aanvraag. Het gewenste tijdstip staat al ingevuld. Quaymark maakt dan het dossier, kopieert de bijlagen naar het tabblad **Documenten** en stuurt de opdrachtgever een mail.
+- Werkt het bureau met dit schip voor een andere opdrachtgever, en is deze opdrachtgever daar partij, dan staat er een waarschuwing boven **Aanvaarden**. → [Belangenconflicten](dossiers.md#belangenconflicten)
 - **Weigeren** vraagt een reden. De opdrachtgever ziet die in het portaal en in de mail.
 - Beslissen kan met het recht om dossiers te bewerken. Over een aanvraag wordt maar één keer beslist: klikken twee collega's tegelijk, dan krijgt de tweede de melding dat er al beslist is.
 

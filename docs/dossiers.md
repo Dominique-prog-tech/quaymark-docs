@@ -162,6 +162,15 @@ Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer to
 
 **Verwijderen** verplaatst het dossier naar de prullenbak.
 
+## Belangenconflicten
+
+Een surveyor mag niet voor beide partijen optreden. Quaymark waarschuwt bovenaan het dossier als het bureau in een ander dossier met **hetzelfde schip** of **hetzelfde claim- of polisnummer** werkt voor een andere opdrachtgever, én die opdrachtgever partij is in dit dossier (of uw opdrachtgever partij is in het andere). Open dossiers tellen mee, en dossiers die in de laatste twaalf maanden afgesloten werden; geannuleerde niet.
+
+- In de kop staat dan **Belangenconflict?**, en bovenaan het dossier de andere dossiers met hun opdrachtgever.
+- Is het geen conflict, klik dan op **Geen conflict** en leg uit waarom (bijvoorbeeld: andere schade, beide partijen op de hoogte). Dat wordt bewaard met uw naam en het tijdstip, en kan niet gewijzigd worden. Het is het bewijs van onafhankelijkheid dat een opdrachtgever of een accreditatie kan vragen.
+- Het werk wordt niet tegengehouden: de waarschuwing blijft staan tot ze verantwoord is.
+- Ook op een aanvraag uit het klantenportaal waarschuwt Quaymark al vóór het aanvaarden. → [Aanvragen](aanvragen.md#aanvraag)
+
 ## Claims
 
 Het scherm **Claims** in het menu toont de claims van alle dossiers, met hun dossier, verzekeraar, bedragen en status.

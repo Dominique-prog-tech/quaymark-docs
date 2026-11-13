@@ -162,6 +162,15 @@ In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, v
 
 **Löschen** verschiebt die Akte in den Papierkorb.
 
+## Interessenkonflikte
+
+Ein Besichtiger darf nicht für beide Parteien tätig sein. Quaymark warnt oben in der Akte, wenn das Büro in einer anderen Akte mit **demselben Schiff** oder **derselben Anspruchs- oder Policennummer** für einen anderen Auftraggeber arbeitet und dieser Auftraggeber Partei in dieser Akte ist (oder Ihr Auftraggeber Partei in der anderen). Offene Akten zählen, ebenso in den letzten zwölf Monaten abgeschlossene; stornierte nicht.
+
+- Die Kopfzeile zeigt dann **Interessenkonflikt?**, und oben in der Akte stehen die anderen Akten mit ihrem Auftraggeber.
+- Liegt kein Konflikt vor, klicken Sie auf **Kein Konflikt** und erklären Sie warum (zum Beispiel: anderer Schaden, beide Parteien informiert). Das wird mit Ihrem Namen und der Uhrzeit gespeichert und kann nicht geändert werden. Es ist der Nachweis der Unabhängigkeit, den ein Auftraggeber oder eine Akkreditierung verlangen kann.
+- Die Arbeit wird nicht blockiert: Die Warnung bleibt, bis sie begründet ist.
+- Auch bei einer Anfrage aus dem Kundenportal warnt Quaymark schon vor dem Annehmen. → [Anfragen](aanvragen.md#anfrage)
+
 ## Ansprüche
 
 Der Bildschirm **Ansprüche** im Menü zeigt die Ansprüche aller Akten, mit Akte, Versicherer, Beträgen und Status.

@@ -162,6 +162,15 @@ Dans l'onglet **Temps et frais**, vous encodez les **prestations** (qui, de quan
 
 **Supprimer** déplace le dossier vers la corbeille.
 
+## Conflits d'intérêts
+
+Un expert ne peut pas intervenir pour les deux parties. Quaymark avertit en haut du dossier si le bureau travaille, dans un autre dossier avec **le même navire** ou **le même numéro de réclamation ou de police**, pour un autre donneur d'ordre, et que ce donneur d'ordre est partie dans ce dossier (ou que votre donneur d'ordre est partie dans l'autre). Les dossiers ouverts comptent, ainsi que ceux clôturés au cours des douze derniers mois ; les dossiers annulés non.
+
+- L'en-tête affiche alors **Conflit d'intérêts ?**, et le haut du dossier les autres dossiers avec leur donneur d'ordre.
+- S'il n'y a pas de conflit, cliquez sur **Pas de conflit** et expliquez pourquoi (par exemple : autre dommage, les deux parties informées). C'est conservé avec votre nom et l'heure, et ne peut pas être modifié. C'est la preuve d'indépendance qu'un donneur d'ordre ou une accréditation peut demander.
+- Le travail n'est pas bloqué : l'avertissement reste affiché jusqu'à sa justification.
+- Sur une demande du portail client aussi, Quaymark avertit dès avant l'acceptation. → [Demandes](aanvragen.md#demande)
+
 ## Réclamations
 
 L'écran **Réclamations** du menu affiche les réclamations de tous les dossiers, avec leur dossier, assureur, montants et statut.
