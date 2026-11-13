@@ -14,6 +14,15 @@ De **sessie van Quaymark** (`adm-quaymark`), volgens de vlootafspraak dat het we
 door de sessie van die app. **De content-hub leest deze handleiding als bron voor www.quaymark.eu**: wat hier staat, mag
 daar gebruikt worden. Wat niet waar is, verspreidt zich dus.
 
+**De app leest deze repo ook** (sinds 13/11/2026, deploy-poort categorie A):
+- de **zijlade** linkt per scherm naar een pagina hier (`adm-quaymark/.../Help/QuaymarkHelpProvider.cs`). Een pagina hernoemen of
+  verplaatsen breekt die link: `HandleidingTests` in de app wordt rood;
+- de **AI-hulp-assistent** antwoordt uit een kopie van `docs/**/*.md` die met de app meereist. Na een wijziging hier: in de app
+  `bash dev/sync-handleiding.sh` en de bundel committen. Productie kent een nieuwe pagina pas na de volgende uitrol van de app;
+- **`gepubliceerde-paden.txt`** = wat er online stond bij de vorige release (punt 4, redirects: de site is indexeerbaar). Een pagina die
+  verdwijnt, krijgt een omleiding. Werk de lijst bij als LAATSTE stap van een release, ná de poort van de app:
+  `(cd docs && find . -name '*.md' | sed 's|^\./||' | sort) > gepubliceerde-paden.txt`.
+
 ## De bron
 - **De app:** `~/projects/adm-quaymark`. Lees het scherm (`.razor`) en zijn teksten (`Teksten/QText.cs`) vóór je een pagina
   schrijft. Verzin geen functie: wat de app niet bevestigt, krijgt `[TODO: bevestigen]`.
