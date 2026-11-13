@@ -106,6 +106,26 @@ The **Damage** tab follows up a damage file: the **claims** and the **damage est
 - **Record agreement** fixes the estimate as it is, with whom the agreement was made (for example the insurer and the counter-expert). After that, no item can be added or changed. **Withdraw agreement** allows it again and asks for a reason; both the agreement and the withdrawal are kept.
 - In the report the estimate comes with the marker `{{schadebegroting}}` (see [Templates](sjablonen.md)).
 
+### Draft survey
+
+For a survey type with **Draft survey** ticked (see [Survey types](soorten-survey.md)), the file gets the **Draft survey** tab: the initial survey (before loading or discharging) and the final survey (after), side by side, and the weight of the cargo.
+
+![Draft survey of HQ-2026-0004 with Initial survey, Final survey and the result Loaded](images/dossier-draft-en.png "Draft survey")
+
+**Initial survey** and **Final survey** each open a page of their own. Enter:
+
+- the six **drafts**: forward, midships and aft, port and starboard;
+- the **vessel**: the LBP and the distances of the draft marks from the perpendiculars (forward and midships positive when the mark is aft of the perpendicular or midships, aft positive when the mark is forward of the aft perpendicular);
+- the **water**: the density of the dock water (hydrometer) and the density the tables are made for (usually 1.025);
+- the **hydrostatic values**: once the drafts are entered, Quaymark shows the mean draft (quarter mean) at which you read from the vessel's tables the displacement, TPC, LCF (from midships, positive aft) and the MTC half a metre above and below;
+- the **deductibles**: ballast, fresh water, bunkers, lube oil and other, in tonnes; optionally the lightship, for the constant.
+
+![The initial survey of HQ-2026-0004 with the calculation beside it](images/dossier-draft-meting-en.png "A measurement")
+
+The **calculation** beside it follows every change: the drafts at the perpendiculars, the trim, the deflection, the quarter mean, the first and second trim correction, the density correction, the deductibles and the net displacement. A final survey takes over the vessel and the water from the initial survey. The difference in net displacement between initial and final is the weight of the cargo: loaded if it increased, discharged if it decreased.
+
+**Draft survey report (PDF)** shows the document; **Issue draft survey report** (once both measurements are complete) records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. In the report the draft survey comes with the marker `{{draftsurvey}}` (see [Templates](sjablonen.md)).
+
 ### Timeline
 
 The **Timeline** tab is the statement of facts of the file: the events of the port call, in the office's time. With **Add event** you choose the time, the event (arrived at roads, NOR tendered, NOR accepted, all fast, hatches opened, commenced and completed loading or discharging, stoppage, resumed, hatches closed, documents on board, sailed or other) and a note. An event can be changed afterwards; the history keeps who changed what.

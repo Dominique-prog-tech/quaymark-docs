@@ -91,7 +91,7 @@ eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
-          'berekeningen.gebeurtenissen', 'financieel.kosten']:
+          'berekeningen.gebeurtenissen', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
 # Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
@@ -451,6 +451,23 @@ sql.append(f"delete from dossiers.claim_stappen where claim_id = {lit(vid('claim
 sql.append(rij('dossiers.claims', dict(id=vid('claim/11'), dossier_id=D11, omschrijving='Cargo claim, wet bags', verzekeraar_id=REL[2], pi_club_id=None,
            polisnummer='CG-2017-88', claimnummer=None, geclaimd=21400, erkend=15800, uitgekeerd=15800, status='afgewikkeld', aangemeld='2018-02-14',
            afgewikkeld='2018-09-30', opmerking=None, created_at=dt.datetime(2018, 2, 14, 9, 0, tzinfo=dt.timezone.utc))))
+
+# ── Draft survey (B1) voor HQ-2026-0004 (de draft survey van de POLDERWIND): begin in ballast, eind geladen. Dezelfde verzonnen cijfers als de
+#    tests in de app (DraftsurveyTests), dus het beeld toont 49.706,221 t. ──
+D6 = vid('dossier/6')
+SCHIP_DRAFT = dict(lbp=215.0, afstandVoor=3.10, afstandMidden=1.20, afstandAchter=6.40, densiteit=1.012, tabelDensiteit=1.025)
+DRAFTS = [('begin', dict(voorBb=5.40, voorSb=5.44, middenBb=6.02, middenSb=6.08, achterBb=6.78, achterSb=6.82, waterverplaatsing=38650.0, tpc=61.20, lcf=-2.85,
+                        mtcPlus=870.5, mtcMin=852.3, opmerking='Swell 0.3 m, drafts read from launch',
+                        aftrek=[dict(soort='ballast', omschrijving=None, ton=9820.0), dict(soort='zoetwater', omschrijving=None, ton=210.5),
+                                dict(soort='brandstof', omschrijving='HFO + MGO', ton=1045.3)])),
+          ('eind', dict(voorBb=11.82, voorSb=11.86, middenBb=11.95, middenSb=11.99, achterBb=12.08, achterSb=12.12, waterverplaatsing=79310.0, tpc=69.85, lcf=1.10,
+                       mtcPlus=1012.4, mtcMin=1001.9, opmerking=None,
+                       aftrek=[dict(soort='ballast', omschrijving=None, ton=620.0), dict(soort='zoetwater', omschrijving=None, ton=198.0),
+                               dict(soort='brandstof', omschrijving='HFO + MGO', ton=812.6)]))]
+for soort, m in DRAFTS:
+    meting = {**SCHIP_DRAFT, **m, 'lichtschip': None}
+    sql.append(rij('berekeningen.draft_metingen', dict(id=vid(f'draft/6/{soort}'), dossier_id=D6, soort=soort, meting=meting,
+               gewijzigd_op=om(1 if soort == 'begin' else 2, 9), gewijzigd_door=SURVEYOR_NAAM, created_at=om(1, 9))))
 
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:

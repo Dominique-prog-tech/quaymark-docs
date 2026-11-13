@@ -106,6 +106,26 @@ Die Registerkarte **Schaden** begleitet eine Schadensakte: die **Ansprüche** un
 - **Einigung festhalten** legt die Schätzung so fest, wie sie ist, mit wem die Einigung erzielt wurde (zum Beispiel Versicherer und Gegengutachter). Danach lässt sich kein Posten mehr hinzufügen oder ändern. **Einigung zurückziehen** erlaubt das wieder und fragt nach einem Grund; Einigung und Rücknahme bleiben beide erhalten.
 - Im Bericht steht die Schätzung mit der Markierung `{{schadebegroting}}` (siehe [Vorlagen](sjablonen.md)).
 
+### Draft Survey
+
+Bei einer Besichtigungsart mit angehaktem **Draft Survey** (siehe [Besichtigungsarten](soorten-survey.md)) erhält die Akte die Registerkarte **Draft Survey**: die Anfangsmessung (vor dem Laden oder Löschen) und die Endmessung (danach), nebeneinander, und das Gewicht der Ladung.
+
+![Draft Survey von HQ-2026-0004 mit Anfangsmessung, Endmessung und Geladen](images/dossier-draft-de.png "Draft Survey")
+
+**Anfangsmessung** und **Endmessung** öffnen je eine eigene Seite. Geben Sie ein:
+
+- die sechs **Tiefgänge**: vorn, Mitte und achtern, an Backbord und Steuerbord;
+- das **Schiff**: die LBP und die Abstände der Tiefgangsmarken zu den Loten (vorn und Mitte positiv, wenn die Marke hinter dem Lot oder Mittschiffs liegt, achtern positiv, wenn die Marke vor dem hinteren Lot liegt);
+- das **Wasser**: die Dichte des Hafenwassers (Aräometer) und die Dichte, für die die Tabellen gelten (meist 1,025);
+- die **hydrostatischen Werte**: Sobald die Tiefgänge eingegeben sind, zeigt Quaymark den mittleren Tiefgang (Quarter Mean), bei dem Sie aus den Tabellen des Schiffs die Verdrängung, TPC, LCF (ab Mittschiffs, positiv achtern) und den MTC einen halben Meter darüber und darunter ablesen;
+- die **Abzüge**: Ballast, Frischwasser, Bunker, Schmieröl und Andere, in Tonnen; optional das Leerschiff, für die Konstante.
+
+![Die Anfangsmessung von HQ-2026-0004 mit der Berechnung daneben](images/dossier-draft-meting-de.png "Eine Messung")
+
+Die **Berechnung** daneben folgt jeder Änderung: die Tiefgänge an den Loten, der Trimm, die Durchbiegung, der Quarter Mean, die erste und zweite Trimmkorrektur, die Dichtekorrektur, die Abzüge und die Nettoverdrängung. Eine Endmessung übernimmt Schiff und Wasser von der Anfangsmessung. Der Unterschied der Nettoverdrängung zwischen Anfang und Ende ist das Gewicht der Ladung: geladen, wenn sie gestiegen, gelöscht, wenn sie gesunken ist.
+
+**Draft Survey Report (PDF)** zeigt das Dokument; **Draft Survey Report herausgeben** (sobald beide Messungen vollständig sind) hält es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Im Bericht steht der Draft Survey mit der Markierung `{{draftsurvey}}` (siehe [Vorlagen](sjablonen.md)).
+
 ### Zeitablauf
 
 Die Registerkarte **Zeitablauf** ist das Statement of Facts der Akte: die Ereignisse des Hafenaufenthalts, in der Zeit der Niederlassung. Mit **Ereignis hinzufügen** wählen Sie den Zeitpunkt, das Ereignis (Ankunft auf Reede, NOR übergeben, NOR angenommen, festgemacht, Luken geöffnet, Beginn und Ende der Beladung oder Löschung, Unterbrechung, Wiederaufnahme, Luken geschlossen, Dokumente an Bord, Abfahrt oder andere) und eine Bemerkung. Ein Ereignis lässt sich nachträglich ändern; der Verlauf hält fest, wer was geändert hat.

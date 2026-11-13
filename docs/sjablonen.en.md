@@ -29,7 +29,9 @@ One report template: the versions per language and the Word document itself.
 - A number field can appear in another unit in the report: `{{veld:hoeveelheid:LT}}` shows the field hoeveelheid in long tons. The units are `t`, `kg`, `LT`, `ST`, `m3`, `L` and `bbl`. Between weight and volume this is not possible without a density: Quaymark refuses such a marker when you save.
 - `{{tijdlijn}}` puts the statement of facts in the report: the summary and the events. Without events, nothing remains.
 - `{{schadebegroting}}` puts the damage estimate in the report: the items with their estimated and accepted amount, the deduction and the net amount, the totals, the recommended reserve and the agreement if there is one. Without items, nothing remains.
+- `{{draftsurvey}}` puts the draft survey in the report: the result and the table with initial and final survey. Without a measurement, nothing remains.
 - The **Statement of facts** template determines the look of that document, in the four languages.
+- The **Draft survey report** template determines the look of that document, in the four languages.
 - The **Invoice** template determines the look of invoices and credit notes, in the four languages. The payment QR code takes the place of the BetaalQr field. See [Invoices](facturen.md).
 - **Save as new version** checks the document and the markers. An unknown marker is refused, with the reason. **Check** only looks at the fields, not at the markers.
 

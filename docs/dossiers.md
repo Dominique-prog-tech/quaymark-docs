@@ -106,6 +106,26 @@ Het tabblad **Schade** volgt een schadedossier op: de **claims** en de **schadeb
 - **Akkoord vastleggen** legt de begroting vast zoals ze is, met wie het akkoord gesloten werd (bijvoorbeeld de verzekeraar en de tegenexpert). Daarna kunt u geen post meer toevoegen of wijzigen. **Akkoord intrekken** maakt dat weer mogelijk en vraagt een reden; akkoord en intrekking blijven allebei bewaard.
 - In het rapport komt de begroting met de markering `{{schadebegroting}}` (zie [Sjablonen](sjablonen.md)).
 
+### Draft survey
+
+Bij een soort survey met het vinkje **Draft survey** (zie [Soorten survey](soorten-survey.md)) krijgt het dossier het tabblad **Draft survey**: de beginmeting (vóór het laden of lossen) en de eindmeting (erna), naast elkaar, en het gewicht van de lading.
+
+![Draft survey van HQ-2026-0004 met Beginmeting, Eindmeting en het resultaat Geladen](images/dossier-draft.png "Draft survey")
+
+**Beginmeting** en **Eindmeting** openen elk een eigen pagina. Vul in:
+
+- de zes **diepgangen**: voor, midden en achter, aan bakboord en stuurboord;
+- het **schip**: de LBP en de afstanden van de diepgangmerken tot de loodlijnen (voor en midden positief als het merk achter de loodlijn of midscheeps staat, achter positief als het merk voor de achterloodlijn staat);
+- het **water**: de densiteit van het dokwater (hydrometer) en de densiteit waarvoor de tabellen gelden (meestal 1,025);
+- de **hydrostatische waarden**: zodra de diepgangen ingevuld zijn, toont Quaymark de gemiddelde diepgang (quarter mean) waarbij u uit de tabellen van het schip de waterverplaatsing, TPC, LCF (vanaf midscheeps, positief achter) en de MTC een halve meter erboven en eronder afleest;
+- de **aftrek**: ballast, zoetwater, brandstof, smeerolie en andere, in ton; optioneel het lichtschip, voor de constante.
+
+![De beginmeting van HQ-2026-0004 met de berekening ernaast](images/dossier-draft-meting.png "Een meting")
+
+De **berekening** ernaast volgt elke wijziging: de diepgangen aan de loodlijnen, de trim, de doorbuiging, de quarter mean, de eerste en tweede trimcorrectie, de correctie voor de densiteit, de aftrek en de netto waterverplaatsing. Een eindmeting neemt het schip en het water van de beginmeting over. Het verschil van de netto waterverplaatsing tussen begin en eind is het gewicht van de lading: geladen als het meer werd, gelost als het minder werd.
+
+**Draft survey report (PDF)** toont het document; **Draft survey report uitgeven** (als beide metingen volledig zijn) legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. In het rapport komt de draft survey met de markering `{{draftsurvey}}` (zie [Sjablonen](sjablonen.md)).
+
 ### Tijdlijn
 
 Het tabblad **Tijdlijn** is de statement of facts van het dossier: de gebeurtenissen van de aanloop, in de tijd van de vestiging. Met **Gebeurtenis toevoegen** kiest u het tijdstip, de gebeurtenis (aankomst op de rede, NOR ingediend, NOR aanvaard, aangemeerd, luiken open, start en einde laden of lossen, onderbreking, hervatting, luiken dicht, documenten aan boord, vertrek of andere) en een opmerking. Een gebeurtenis kunt u achteraf wijzigen; de historiek houdt bij wie wat wijzigde.

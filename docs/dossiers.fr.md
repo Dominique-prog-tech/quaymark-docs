@@ -106,6 +106,26 @@ L'onglet **Dommages** assure le suivi d'un dossier de sinistre : les **réclamat
 - **Enregistrer l'accord** fige l'estimation telle qu'elle est, avec la partie avec qui l'accord a été conclu (par exemple l'assureur et le contre-expert). Ensuite, plus aucun poste ne peut être ajouté ou modifié. **Retirer l'accord** le permet à nouveau et demande un motif ; l'accord et le retrait restent tous deux conservés.
 - Dans le rapport, l'estimation vient avec le marqueur `{{schadebegroting}}` (voir [Modèles](sjablonen.md)).
 
+### Draft survey
+
+Pour un type d'expertise avec la case **Draft survey** cochée (voir [Types d'expertise](soorten-survey.md)), le dossier reçoit l'onglet **Draft survey** : la mesure initiale (avant le chargement ou le déchargement) et la mesure finale (après), côte à côte, et le poids de la cargaison.
+
+![Draft survey de HQ-2026-0004 avec Mesure initiale, Mesure finale et le résultat Chargé](images/dossier-draft-fr.png "Draft survey")
+
+**Mesure initiale** et **Mesure finale** ouvrent chacune une page propre. Saisissez :
+
+- les six **tirants d'eau** : avant, milieu et arrière, à bâbord et à tribord ;
+- le **navire** : la LBP et les distances des marques de tirant d'eau aux perpendiculaires (avant et milieu positifs si la marque est en arrière de la perpendiculaire ou du maître-couple, arrière positif si la marque est en avant de la perpendiculaire arrière) ;
+- l'**eau** : la densité de l'eau du bassin (hydromètre) et la densité des tables (généralement 1,025) ;
+- les **valeurs hydrostatiques** : dès que les tirants d'eau sont saisis, Quaymark affiche le tirant moyen (quarter mean) auquel vous relevez dans les tables du navire le déplacement, le TPC, le LCF (depuis le maître-couple, positif vers l'arrière) et le MTC un demi-mètre au-dessus et en dessous ;
+- les **déductions** : ballast, eau douce, combustible, huile de graissage et autres, en tonnes ; facultativement le navire lège, pour la constante.
+
+![La mesure initiale de HQ-2026-0004 avec le calcul à côté](images/dossier-draft-meting-fr.png "Une mesure")
+
+Le **calcul** à côté suit chaque modification : les tirants d'eau aux perpendiculaires, l'assiette, la flexion, le quarter mean, la première et la seconde correction d'assiette, la correction de densité, les déductions et le déplacement net. Une mesure finale reprend le navire et l'eau de la mesure initiale. La différence du déplacement net entre le début et la fin est le poids de la cargaison : chargée s'il a augmenté, déchargée s'il a diminué.
+
+**Draft survey report (PDF)** affiche le document ; **Émettre le draft survey report** (lorsque les deux mesures sont complètes) le fige avec son empreinte, avec les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Dans le rapport, la draft survey vient avec le marqueur `{{draftsurvey}}` (voir [Modèles](sjablonen.md)).
+
 ### Chronologie
 
 L'onglet **Chronologie** est le statement of facts du dossier : les événements de l'escale, à l'heure du site. Avec **Ajouter un événement**, vous choisissez le moment, l'événement (arrivée en rade, NOR remise, NOR acceptée, amarré, panneaux ouverts, début et fin du chargement ou déchargement, interruption, reprise, panneaux fermés, documents à bord, départ ou autre) et une remarque. Un événement peut être modifié par la suite ; l'historique garde qui a modifié quoi.
