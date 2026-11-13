@@ -86,7 +86,7 @@ een recept in dat script (naam, route, merkteken) + een verwijzing in elke taalv
 |---|---|---|
 | ~~De uitrol bij een push~~ | ✅ gedaan 13/11/2026 | repo publiek, Pages aan (GitHub Actions, `docs.quaymark.eu`), `push` op main |
 | ~~`robots.txt` open + sitemap~~ | ✅ gedaan 13/11/2026 | `Allow: /` en de `Sitemap:`-regel |
-| Plausible (bezoekcijfers) | zodra Dominique de site in Plausible aanmaakte | `plausible-init.js` staat er al; de regel met `pa-<code>.js` erbij in `mkdocs.yml` (zie de uitleg daar) |
+| Plausible (bezoekcijfers) | ⏸️ **bewust uit** (Dominique, 13/11/2026): het Business-abonnement zit aan 10 sites, een elfde vraagt Enterprise. Niet opnieuw voorstellen tot er ruimte is | `plausible-init.js` staat er al (zet enkel een wachtrij klaar, stuurt niets); de regel met `pa-<code>.js` erbij in `mkdocs.yml` (zie de uitleg daar) |
 | ~~De beelden en de beeldcontrole~~ | ✅ aan sinds 13/11/2026 | zie "De beelden"; `MIN_PAGINAS` verhogen bij elke beeldronde |
 | Een pagina over de veldapp | wanneer de veldapp aan klanten gaat | bron: `~/projects/adm-quaymark-flutter` en `adm-quaymark/docs/ontwerp-laag-4.md` |
 | Films en de pagina "Video's" | bij de eerste film | de gedeelde filmhook, de filmcontrole, `extra.bunny_library` |
