@@ -231,7 +231,9 @@ nav:
   - relaties.md
   - schepen.md
   - planning.md
+  - facturen.md
   - Instellingen:
+      - bureaugegevens.md
       - soorten-survey.md
       - vestigingen.md
       - havens.md
