@@ -49,6 +49,14 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  # Plausible Analytics — cookieloos, geen persoonsgegevens, EU-hosting; dus geen toestemmingsbanner (zoals cleanops-docs).
+  # ⚠️ Het script van de site ZELF ontbreekt nog: dat maakt Dominique aan in Plausible (een eigen site voor docs.quaymark.eu, NIET
+  # het script van een andere site overnemen, anders tellen de bezoeken daar). Zet dan de regel
+  #   - https://plausible.io/js/pa-<code van de site>.js
+  # VÓÓR plausible-init.js. Zonder die regel meet deze init niets, en doet ze ook niets.
+  - javascripts/plausible-init.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details

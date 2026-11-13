@@ -1,5 +1,19 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Dicht zolang de handleiding in opbouw is (13/11/2026), zoals de andere vier handleidingen deden. Openzetten = `Allow: /`
-# + `Sitemap: https://docs.quaymark.eu/sitemap.xml`, op Dominiques woord, bij het live zetten (zie CLAUDE.md).
+Sitemap: https://docs.quaymark.eu/sitemap.xml
+
+# Indexering aangezet op 13/11/2026, bij het live zetten, op Dominiques woord ("Ja, live zetten"). Zoals cleanops-docs.
+#
+# Waarom het nu al mag: elk scherm van de app heeft zijn pagina, in vier talen (nl, fr, en, de), met beelden uit de verzonnen
+# proefklant; site_url is gezet, elke gebouwde pagina draagt een eigen omschrijving (gemeten: 76 van 76) en de talen zijn met
+# hreflang aan elkaar geknoopt. De handleiding is ook de bron voor www.quaymark.eu (content-hub). De sitemap maakt mkdocs zelf.
+#
+# ⚠️ Dit is geen beveiliging: de site is publiek, dit regelt enkel of zoekmachines haar vinden.
+#
+# ⚠️ WAT DIT VAN ONS VRAAGT:
+# - Een geïndexeerd adres dat verhuist, wordt een 404 in de zoekresultaten: bij het hernoemen of verplaatsen van een pagina
+#   hoort een omleiding, niet enkel een nieuwe naam.
+# - Beelden komen ALTIJD uit de proefklant qm-demo (tools/beelden.mjs weigert een ander bureau): een geïndexeerd beeld is niet
+#   terug te nemen. Niets van de oorspronkelijke klant (ADR-57, punt 10).
+# - Een nieuwe pagina krijgt een eigen `description:` in haar kopblok, in de vier talen.

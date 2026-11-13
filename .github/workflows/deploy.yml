@@ -1,10 +1,13 @@
 name: Deploy MkDocs
 
-# NOG NIET LIVE (13/11/2026): de uitrol start enkel met de hand (workflow_dispatch), zoals bij credimatch-docs vóór het live zetten.
-# Live zetten, op Dominiques woord: repo publiek, Pages aan (bron: GitHub Actions, domein docs.quaymark.eu), en hieronder
-# `push: branches: [main]` erbij. robots.txt blijft DICHT tot de lancering. Zie CLAUDE.md.
+# ✅ LIVE sinds 13/11/2026, op Dominiques woord ("Ja, live zetten"): repo publiek, Pages aan (bron: GitHub Actions, domein
+# docs.quaymark.eu), en de uitrol bij elke push naar main, zoals bij de andere handleidingen. Elke push BOUWT de site strikt
+# (een dode link of een dood anker laat de bouw falen). robots.txt staat open. Zie CLAUDE.md.
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
