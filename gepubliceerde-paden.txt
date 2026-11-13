@@ -2,6 +2,10 @@ aan-de-slag.de.md
 aan-de-slag.en.md
 aan-de-slag.fr.md
 aan-de-slag.md
+aanvragen.de.md
+aanvragen.en.md
+aanvragen.fr.md
+aanvragen.md
 bevoegdheden.de.md
 bevoegdheden.en.md
 bevoegdheden.fr.md
@@ -42,6 +46,10 @@ hoe/index.de.md
 hoe/index.en.md
 hoe/index.fr.md
 hoe/index.md
+hoe/klantenportaal.de.md
+hoe/klantenportaal.en.md
+hoe/klantenportaal.fr.md
+hoe/klantenportaal.md
 hoe/logo-in-rapport.de.md
 hoe/logo-in-rapport.en.md
 hoe/logo-in-rapport.fr.md
@@ -66,6 +74,10 @@ index.de.md
 index.en.md
 index.fr.md
 index.md
+offertes.de.md
+offertes.en.md
+offertes.fr.md
+offertes.md
 planning.de.md
 planning.en.md
 planning.fr.md
@@ -102,3 +114,7 @@ vestigingen.de.md
 vestigingen.en.md
 vestigingen.fr.md
 vestigingen.md
+wachtdiensten.de.md
+wachtdiensten.en.md
+wachtdiensten.fr.md
+wachtdiensten.md
