@@ -43,9 +43,9 @@ constatations sur place à valeur probante, lettres, certificats et dossier de p
 
     ---
 
-    La liste de travail du bureau : la mission, les constatations et la check-list, le rapport, les lettres et certificats.
+    La liste de travail du bureau : la mission, les constatations et la check-list, le rapport, les lettres et certificats. Le planning montre qui fait quoi, et quand.
 
-    [Dossiers](dossiers.md)
+    [Dossiers](dossiers.md) · [Planning](planning.md)
 
 -   :material-ferry: **Relations et navires**
 

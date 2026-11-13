@@ -43,9 +43,9 @@ on-site findings with evidential value, letters, certificates and the evidence p
 
     ---
 
-    The office's work list: the instruction, findings and checklist, the report, letters and certificates.
+    The office's work list: the instruction, findings and checklist, the report, letters and certificates. The schedule shows who does what, and when.
 
-    [Files](dossiers.md)
+    [Files](dossiers.md) · [Schedule](planning.md)
 
 -   :material-ferry: **Relations and vessels**
 

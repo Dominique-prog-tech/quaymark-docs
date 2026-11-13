@@ -9,6 +9,7 @@ Kurze Antworten auf die Fragen, die bei der Arbeit wiederkehren. Jeder Schritt v
 ## Akten
 
 - [Wie lege ich eine neue Akte an?](nieuw-dossier.md)
+- [Wie plane ich eine Akte ein?](dossier-plannen.md)
 - [Wie gebe ich einen Bericht heraus und stelle ihn dem Auftraggeber zu?](rapport-uitgeven.md)
 - [Wie vergleiche ich ein Off-Hire mit dem On-Hire?](off-hire-vergelijken.md)
 

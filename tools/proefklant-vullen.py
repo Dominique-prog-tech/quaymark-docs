@@ -280,6 +280,12 @@ for i, (naam, rubriek, html) in enumerate([
     ('Conclusion — further survey', 'conclusie', '<p>A further survey is recommended once the repairs have been completed.</p>')], 1):
     sql.append(rij('rapporten.standaardteksten', dict(id=vid(f'standaardtekst/{i}'), naam=naam, taal='en', rubriek=rubriek, html=html, actief=True)))
 
+# ── Een afwezigheid voor de planning (P1, 13/11/2026): een opleidingsdag op de maandag van deze week, zodat de werkweek op het beeld ze toont. ──
+maandag = VANDAAG - dt.timedelta(days=VANDAAG.weekday())
+sql.append(f"delete from planning.afwezigheden where id = {lit(vid('afwezigheid/1'))};")
+sql.append(rij('planning.afwezigheden', dict(id=vid('afwezigheid/1'), gebruiker_id=SURVEYOR_ID, van=maandag, tot=maandag, soort='opleiding',
+           opmerking='IIMS refresher', created_at=om(-7), archived_on_utc=None)))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"

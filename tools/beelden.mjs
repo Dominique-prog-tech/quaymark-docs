@@ -69,6 +69,7 @@ const SCHOTEN = () => [
   { naam: 'relaties-lijst', route: '/relaties', verwacht: /Estuaire Expertises SARL/ },
   { naam: 'relatie', route: '/relaties', verwacht: Q('adres_contact'), na: async p => openRij(p, 'Kaaimeeuw Rederij NV') },
   { naam: 'schepen-lijst', route: '/schepen', verwacht: /JOHANNA-W/ },
+  { naam: 'planning', route: '/planning?weergave=werkweek', verwacht: Q('te_plannen_uitleg') },
   { naam: 'schip', route: '/schepen', verwacht: Q('aantal_ruimen'), na: async p => openRij(p, 'KAAIMEEUW') },
   { naam: 'soorten-survey', route: '/beheer/survey-types', verwacht: Q('surveytype_nieuw') },
   { naam: 'vestigingen', route: '/beheer/vestigingen', verwacht: Q('vestiging_nieuw'), magKortZijn: 'twee vestigingen' },

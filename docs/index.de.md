@@ -43,9 +43,9 @@ Akten, Feststellungen vor Ort mit Beweiskraft, Schreiben, Bescheinigungen und da
 
     ---
 
-    Die Arbeitsliste des Büros: der Auftrag, Feststellungen und Checkliste, der Bericht, Schreiben und Bescheinigungen.
+    Die Arbeitsliste des Büros: der Auftrag, Feststellungen und Checkliste, der Bericht, Schreiben und Bescheinigungen. Die Planung zeigt, wer was macht, und wann.
 
-    [Akten](dossiers.md)
+    [Akten](dossiers.md) · [Planung](planning.md)
 
 -   :material-ferry: **Beziehungen und Schiffe**
 

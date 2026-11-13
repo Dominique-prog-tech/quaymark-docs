@@ -221,6 +221,7 @@ nav:
   - Hoe doe ik…?:
       - hoe/index.md
       - hoe/nieuw-dossier.md
+      - hoe/dossier-plannen.md
       - hoe/rapport-uitgeven.md
       - hoe/off-hire-vergelijken.md
       - hoe/protestbrief.md
@@ -229,6 +230,7 @@ nav:
   - dossiers.md
   - relaties.md
   - schepen.md
+  - planning.md
   - Instellingen:
       - soorten-survey.md
       - vestigingen.md

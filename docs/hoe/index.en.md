@@ -9,6 +9,7 @@ Short answers to the questions that come up in daily work. Each step links to th
 ## Files
 
 - [How do I create a new file?](nieuw-dossier.md)
+- [How do I schedule a file?](dossier-plannen.md)
 - [How do I issue a report and deliver it to the principal?](rapport-uitgeven.md)
 - [How do I compare an off-hire with the on-hire?](off-hire-vergelijken.md)
 

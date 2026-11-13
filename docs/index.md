@@ -43,9 +43,9 @@ uitgegeven rapport: dossiers, vaststellingen ter plaatse met bewijswaarde, briev
 
     ---
 
-    De werklijst van het bureau: de opdracht, vaststellingen en checklist, het rapport, brieven en certificaten.
+    De werklijst van het bureau: de opdracht, vaststellingen en checklist, het rapport, brieven en certificaten. De planning toont wie wat doet, en wanneer.
 
-    [Dossiers](dossiers.md)
+    [Dossiers](dossiers.md) · [Planning](planning.md)
 
 -   :material-ferry: **Relaties en schepen**
 

@@ -9,6 +9,7 @@ Korte antwoorden op de vragen die bij het werk terugkomen. Elke stap verwijst na
 ## Dossiers
 
 - [Hoe maak ik een nieuw dossier aan?](nieuw-dossier.md)
+- [Hoe plan ik een dossier in?](dossier-plannen.md)
 - [Hoe geef ik een rapport uit en bezorg ik het aan de opdrachtgever?](rapport-uitgeven.md)
 - [Hoe vergelijk ik een off-hire met de on-hire?](off-hire-vergelijken.md)
 
