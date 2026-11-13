@@ -48,6 +48,18 @@ Klik op **Uitgeven** en bevestig. De factuur krijgt dan:
 
 De PDF wordt vastgelegd met haar vingerafdruk (SHA-256). Daarna kan de factuur niet meer gewijzigd of verwijderd worden. Een factuur mag niet in de toekomst liggen, en niet vroeger dan de laatst uitgegeven factuur van dezelfde vestiging.
 
+## Versturen via Peppol
+
+Een uitgegeven factuur of creditnota kunt u elektronisch naar de boekhouding van de klant sturen met **Via Peppol versturen**. Quaymark kijkt eerst na of de klant op het Peppol-netwerk staat. Daarvoor is zijn btw-nummer nodig: vul het in op zijn [relatiefiche](relaties.md).
+
+Elke poging staat in het blok **Peppol** van de factuur:
+
+- **Aanvaard**: de factuur is vertrokken. Met **Status opvragen** ziet u of ze afgeleverd is.
+- **Geweigerd**: de reden staat erbij. Zet ze recht en verstuur opnieuw.
+- **Onbekend**: er kwam geen duidelijk antwoord. De factuur kan vertrokken zijn. Vraag de status op, of verstuur gerust opnieuw: dezelfde factuur vertrekt geen twee keer.
+
+Staat de klant niet op Peppol, dan bezorgt u de PDF op een andere manier.
+
 ## Corrigeren met een creditnota
 
 Een fout op een uitgegeven factuur zet u recht met **Creditnota maken**. Er komt een klad-creditnota voor het volledige bedrag. Pas na het uitgeven van de creditnota is de factuur gecrediteerd, en komen haar prestaties en kosten weer vrij voor een nieuwe factuur.

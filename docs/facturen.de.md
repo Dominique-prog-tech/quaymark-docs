@@ -48,6 +48,18 @@ Klicken Sie auf **Ausstellen** und bestätigen Sie. Die Rechnung erhält dann:
 
 Die PDF wird mit ihrem Fingerabdruck (SHA-256) festgelegt. Danach kann die Rechnung nicht mehr geändert oder gelöscht werden. Eine Rechnung darf nicht in der Zukunft liegen und nicht vor der zuletzt ausgestellten Rechnung derselben Niederlassung.
 
+## Über Peppol senden
+
+Eine ausgestellte Rechnung oder Gutschrift können Sie mit **Über Peppol senden** elektronisch an die Buchhaltung des Kunden schicken. Quaymark prüft zuerst, ob der Kunde im Peppol-Netzwerk ist. Dafür ist seine USt-IdNr. nötig: Tragen Sie sie in seiner [Beziehungskarte](relaties.md) ein.
+
+Jeder Versuch steht im Block **Peppol** der Rechnung:
+
+- **Angenommen**: Die Rechnung ist verschickt. **Status abfragen** zeigt, ob sie zugestellt wurde.
+- **Abgelehnt**: Der Grund steht dabei. Beheben Sie ihn und senden Sie erneut.
+- **Unbekannt**: Es kam keine klare Antwort. Die Rechnung ist vielleicht verschickt. Fragen Sie den Status ab oder senden Sie einfach erneut: Dieselbe Rechnung geht nie zweimal raus.
+
+Ist der Kunde nicht bei Peppol, stellen Sie die PDF auf anderem Weg zu.
+
 ## Mit einer Gutschrift korrigieren
 
 Einen Fehler auf einer ausgestellten Rechnung korrigieren Sie mit **Gutschrift erstellen**. Es entsteht ein Gutschriftentwurf über den vollen Betrag. Erst nach dessen Ausstellung ist die Rechnung gutgeschrieben, und ihre Leistungen und Kosten werden für eine neue Rechnung wieder frei.

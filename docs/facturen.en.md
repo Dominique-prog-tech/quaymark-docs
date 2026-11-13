@@ -48,6 +48,18 @@ Click **Issue** and confirm. The invoice then gets:
 
 The PDF is recorded with its fingerprint (SHA-256). After that the invoice can no longer be changed or deleted. An invoice cannot be dated in the future, nor earlier than the last issued invoice of the same branch.
 
+## Sending via Peppol
+
+An issued invoice or credit note can be sent electronically to the customer's accounting with **Send via Peppol**. Quaymark first checks that the customer is on the Peppol network. Their VAT number is needed for that: fill it in on their [relation record](relaties.md).
+
+Every attempt is listed in the **Peppol** block of the invoice:
+
+- **Accepted**: the invoice has been sent. **Check status** shows whether it was delivered.
+- **Refused**: the reason is shown. Correct it and send again.
+- **Unknown**: no clear answer came back. The invoice may have been sent. Check the status, or simply send again: the same invoice is never sent twice.
+
+If the customer is not on Peppol, deliver the PDF another way.
+
 ## Correcting with a credit note
 
 An error on an issued invoice is corrected with **Create credit note**. A draft credit note is created for the full amount. Only once it is issued is the invoice credited, and are its time entries and expenses released for a new invoice.

@@ -48,6 +48,18 @@ Cliquez sur **Émettre** et confirmez. La facture reçoit alors :
 
 Le PDF est figé avec son empreinte (SHA-256). La facture ne peut ensuite plus être modifiée ni supprimée. Une facture ne peut pas être datée dans le futur, ni avant la dernière facture émise du même établissement.
 
+## Envoyer via Peppol
+
+Une facture ou une note de crédit émise peut être envoyée par voie électronique à la comptabilité du client avec **Envoyer via Peppol**. Quaymark vérifie d'abord que le client est sur le réseau Peppol. Son numéro de TVA est nécessaire : complétez-le sur sa [fiche relation](relaties.md).
+
+Chaque tentative figure dans le bloc **Peppol** de la facture :
+
+- **Acceptée** : la facture est partie. **Demander le statut** indique si elle a été livrée.
+- **Refusée** : la raison est indiquée. Corrigez-la et renvoyez.
+- **Inconnu** : pas de réponse claire. La facture est peut-être partie. Demandez le statut, ou renvoyez sans crainte : la même facture ne part pas deux fois.
+
+Si le client n'est pas sur Peppol, transmettez le PDF autrement.
+
 ## Corriger par une note de crédit
 
 Une erreur sur une facture émise se corrige avec **Créer une note de crédit**. Un brouillon de note de crédit est créé pour le montant total. Ce n'est qu'après son émission que la facture est créditée et que ses prestations et frais sont libérés pour une nouvelle facture.
