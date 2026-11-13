@@ -82,7 +82,14 @@ een recept in dat script (naam, route, merkteken) + een verwijzing in elke taalv
 | Een pagina over de veldapp | wanneer de veldapp aan klanten gaat | bron: `~/projects/adm-quaymark-flutter` en `adm-quaymark/docs/ontwerp-laag-4.md` |
 | Films en de pagina "Video's" | bij de eerste film | de gedeelde filmhook, de filmcontrole, `extra.bunny_library` |
 
-## Live zetten (op Dominiques woord)
+## Live zetten — ✅ gedaan op 13/11/2026
+Repo publiek, Pages aan (GitHub Actions, `docs.quaymark.eu`), DNS bij Cloudflare (`docs` CNAME naar `dominique-prog-tech.github.io`,
+**grijze wolk**), HTTPS afgedwongen (Let's Encrypt). Eerste uitrol: run 43410768972 op `a9d6d58`.
+⚠️ **Het certificaat kwam pas na het opnieuw instellen van het adres.** Tien minuten na de DNS stond `https_certificate` nog op leeg; het adres
+in Pages weghalen en opnieuw zetten (`gh api -X PUT repos/…/pages -F cname=null`, daarna `-f cname=docs.quaymark.eu`) gaf binnen een minuut
+`approved`. Pas daarna kan `https_enforced` aan.
+
+De stappen, voor een volgende handleiding:
 0. De repo op GitHub aanmaken (`Dominique-prog-tech/quaymark-docs`) — **eerst vragen**.
 1. De repo **publiek** zetten (zoals de andere handleidingen; GitHub Pages op een gratis account vraagt dat).
 2. **Pages** aan: *Settings > Pages > Source: GitHub Actions*. Het geheim `ADM_APPKIT_LEZEN` toevoegen (de checkout van adm-appkit).
