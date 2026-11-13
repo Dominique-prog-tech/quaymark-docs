@@ -87,12 +87,15 @@ PIONEER = q("select id from dossiers.schepen where naam = 'NOORDKAAI PIONEER'") 
 
 sql = ['begin;']
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
-eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 11)] + [vid('dossier/zb1')]
+eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
-          'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten']:
+          'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
+          'berekeningen.gebeurtenissen', 'financieel.kosten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
+# Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
+sql.append(f'delete from dossiers.verwijderregister where dossier_id in ({lijst});')
 eigen_relaties = ', '.join(lit(vid(f'relatie/{k}')) for k in range(1, 10))
 sql.append(f'delete from relaties.contactpersonen where relatie_id in ({eigen_relaties});')
 sql.append(f'delete from relaties.relaties where id in ({eigen_relaties});')
@@ -171,6 +174,12 @@ DOSSIERS = [
      {'product': 'VLSFO', 'hoeveelheid': '640', 'temperatuur': '41'}, None),
     ('10', ZB, 'ZB-2026-0003', 'sampling', 6, 2, 'BEGNE', 'Rodenhuizedok', 'in_uitvoering', 0,
      {'lading': 'Wheat', 'aantal_stalen': '6', 'labo': 'Demo Lab Gent'}, None),
+    # Q3: drie OUDE afgesloten dossiers. 0042 en 0117 zijn hun bewaartermijn (BE: 7 jaar) voorbij; 2017-0008 ook, maar is juridisch geblokkeerd en
+    # mag dus nooit op de lijst "Termijn verstreken" komen. De afsluitdatum zet een update verder (de lus kent die kolom niet).
+    ('11', HQ, 'HQ-2018-0042', 'damage', 3, 2, 'BEANR', 'Kaai 869', 'afgesloten', -3165,
+     {'oorzaak': 'Heavy weather during sea passage', 'lading': 'Bagged rice'}, 'Heavy weather damage to cargo in hold 2'),
+    ('12', HQ, 'HQ-2019-0117', 'condition', 4, 3, 'BEGNE', 'Kluizendok', 'afgesloten', -2700, {'doel': 'P&I', 'weer': None}, 'P&I condition survey'),
+    ('13', HQ, 'HQ-2017-0008', 'damage', 1, 2, 'BEANR', 'Kaai 730', 'afgesloten', -3400, {'oorzaak': 'Collision with quay'}, 'Quay contact, claim in court'),
 ]
 # ⚠️ Een ongeldige code geeft in de app GEEN fout, enkel een leeg keuzevak (gezien op het eerste beeld, 13/11/2026: "Calm" in plaats van
 # "kalm"). Daarom de codes uit de app zelf (Omstandigheden in Dossiers.cs, de keuzes per veld in de databank) en weigeren wat er niet in staat.
@@ -206,6 +215,7 @@ for k, vest, nr, soort, schip, opdr, haven, terminal, status, dagen, velden, oms
         datum_opdracht=VANDAAG + dt.timedelta(days=min(dagen, 0) - 2), gepland_op=om(dagen, 9 if int(k) % 2 else 14),
         status=status, taal='en', munt='EUR', omschrijving=omschr, velden=velden, created_at=NU - dt.timedelta(days=max(2 - dagen, 1)),
         archived_on_utc=None, surveyor_id=SURVEYOR_ID,
+        afgesloten_op=(VANDAAG + dt.timedelta(days=dagen)) if status == 'afgesloten' else None,
         aanwezigen=[{'naam': 'Capt. R. Lindqvist', 'functie': 'Master', 'partij': None}, {'naam': 'K. Mertens', 'functie': 'Terminal operations', 'partij': None}]
         if k in ('3', '5') else [],
         gekoppeld_dossier_id=DOS.get('4') if k == '5' else None,
@@ -228,8 +238,9 @@ VASTSTELLINGEN = [
     ('5', 'b', 'ruim', '1', 'scheur', 'matig', 'Crack in the hold ladder lower platform, hold 1.', 'gang-langs-ruimen.jpg', 8.8, 51.3332, 3.2049),
     ('5', 'c', 'dek', None, 'corrosie', 'matig', 'Corrosion on main deck around the forward mooring area, increased.', 'dek-op-zee.jpg', 9.2, 51.3331, 3.2052),
     ('5', 'd', 'ruim', '2', 'corrosie', 'gering', 'Coating breakdown on the hold side plating, hold 2.', 'roestige-plaat.jpg', 9.6, 51.3333, 3.2050),
+    ('11', 'a', 'ruim', '2', 'vervuiling', 'matig', 'Wet and mouldy bags in the top tiers of hold 2.', 'laadruim.jpg', 10.0, 51.2801, 4.3205),
 ]
-DAG = {'3': -1, '4': -41, '5': -2}
+DAG = {'3': -1, '4': -41, '5': -2, '11': -3166}
 VS = {}
 for k, s, plaats, nummer, cat, ernst, omschr, foto, uur, lat, lon in VASTSTELLINGEN:
     vs = VS[(k, s)] = vid(f'vaststelling/{k}/{s}')
@@ -400,6 +411,46 @@ for k, soort, nummer, uit, vervalt, opm in BEVOEGDHEDEN:
                uitgereikt=uit.isoformat(), vervalt=vervalt.isoformat() if vervalt else None, opmerking=opm, created_at=om(-30), archived_on_utc=None)))
 sql.append("""update dossiers.survey_types set vereiste_certificaten = '["iims"]' where code = 'damage';""")
 sql.append("""update dossiers.survey_types set vereiste_certificaten = '["gasvrij"]' where code = 'sampling';""")
+
+# ── Q3: de oude dossiers. Afsluitdatum, en voor HQ-2018-0042 van elke module iets (een uitgegeven rapport met PDF, een notitie, een bijlage, een
+#    kost met haar bonnetje, een gebeurtenis, een claim): zo toont een proef dat het wissen overal iets wist, en dat het bonnetje van de kost blijft. ──
+for k, af in [('11', dt.date(2018, 3, 15)), ('12', dt.date(2019, 6, 20)), ('13', dt.date(2017, 1, 10))]:
+    sql.append(f"update dossiers.dossiers set afgesloten_op = {lit(af)} where id = {lit(vid(f'dossier/{k}'))};")
+sql.append(rij('dossiers.blokkeringen', dict(id=vid('blokkering/13'), dossier_id=vid('dossier/13'), geblokkeerd=True, reden='Claim before the commercial court',
+           gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM, op=om(-400))))
+D11 = vid('dossier/11')
+def bestand(sleutel, inhoud):
+    doel = OPSLAG / sleutel
+    doel.parent.mkdir(parents=True, exist_ok=True)
+    doel.write_bytes(inhoud)
+    return hashlib.sha256(inhoud).hexdigest(), len(inhoud)
+pdf = b'%PDF-1.4\n% Quaymark demo: rapport HQ-2018-0042 versie 1 (verzonnen)\n%%EOF\n'
+sha, grootte = bestand(f"bureau-{TENANT_N}/rapporten/{D11.replace('-', '')}/HQ-2018-0042 - Report version 1.pdf", pdf)
+sql.append(rij('rapporten.rapportversies', dict(id=vid('rapportversie/11'), dossier_id=D11, nummer=1, taal='en',
+           pdf_storage_key=f"bureau-{TENANT_N}/rapporten/{D11.replace('-', '')}/HQ-2018-0042 - Report version 1.pdf", pdf_sha256=sha, pdf_grootte=grootte,
+           momentopname='{}', momentopname_sha256=hashlib.sha256(b'{}').hexdigest(), sjabloon_versie_id=None, reden=None, vorige_id=None,
+           door_id=SURVEYOR_ID, door_naam=SURVEYOR_NAAM, uitgegeven_op=dt.datetime(2018, 3, 14, 15, 0, tzinfo=dt.timezone.utc))))
+sql.append(f"delete from journaal.adm_log_entries where owner_id = {lit(D11)}; delete from journaal.adm_attachments where owner_id = {lit(D11)};")
+sql.append(rij('journaal.adm_log_entries', dict(id=vid('notitie/11'), herkomst=None, kind='Notitie', owner_type='dossier', owner_id=D11, owner_ref=None,
+           owner_label='HQ-2018-0042', subject='Telephone call', body='Receivers confirm the bags were sold as damaged cargo.', type_code=None,
+           occurred_at_utc=dt.datetime(2018, 2, 20, 10, 0, tzinfo=dt.timezone.utc), alleen_datum=False, legacy_source=None, legacy_id=None, archived_on_utc=None,
+           created_at_utc=dt.datetime(2018, 2, 20, 10, 0, tzinfo=dt.timezone.utc), created_by_user_id=SURVEYOR_ID, created_by_ref=None, modified_at_utc=None,
+           modified_by_user_id=None)))
+for nr, naam, inhoud in [(1, 'stowage-plan.txt', b'Stowage plan (demo, invented).'), (2, 'taxi-receipt.txt', b'Taxi receipt 2018-02-12, EUR 46.00 (demo, invented).')]:
+    sleutel = f"bureau-{TENANT_N}/bijlagen/{vid(f'bijlage/11/{nr}').replace('-', '')}_{naam}"
+    _, g = bestand(sleutel, inhoud)
+    sql.append(rij('journaal.adm_attachments', dict(id=vid(f'bijlage/11/{nr}'), owner_type='dossier', owner_id=D11, owner_ref=None, file_name=naam,
+               content_type='text/plain', size_bytes=g, storage_key=sleutel, description=None, category=None, folder_id=None, visible_to_customer=False,
+               legacy_source=None, legacy_id=None, archived_on_utc=None, created_at_utc=dt.datetime(2018, 2, 12, 12, 0, tzinfo=dt.timezone.utc),
+               created_by_user_id=SURVEYOR_ID, created_by_name=SURVEYOR_NAAM)))
+sql.append(rij('financieel.kosten', dict(id=vid('kost/11'), dossier_id=D11, datum=dt.date(2018, 2, 12), soort='reis', omschrijving='Taxi to Kaai 869',
+           bedrag=46, doorrekenen=True, bijlage_id=vid('bijlage/11/2'), factuur_id=None, created_at=dt.datetime(2018, 2, 12, 12, 0, tzinfo=dt.timezone.utc))))
+sql.append(rij('berekeningen.gebeurtenissen', dict(id=vid('gebeurtenis/11'), dossier_id=D11, op=dt.datetime(2018, 2, 11, 6, 0, tzinfo=dt.timezone.utc),
+           soort='aangemeerd', omschrijving='Kaai 869', bron='kantoor', created_at=dt.datetime(2018, 2, 11, 6, 0, tzinfo=dt.timezone.utc))))
+sql.append(f"delete from dossiers.claim_stappen where claim_id = {lit(vid('claim/11'))}; delete from dossiers.claims where dossier_id = {lit(D11)};")
+sql.append(rij('dossiers.claims', dict(id=vid('claim/11'), dossier_id=D11, omschrijving='Cargo claim, wet bags', verzekeraar_id=REL[2], pi_club_id=None,
+           polisnummer='CG-2017-88', claimnummer=None, geclaimd=21400, erkend=15800, uitgekeerd=15800, status='afgewikkeld', aangemeld='2018-02-14',
+           afgewikkeld='2018-09-30', opmerking=None, created_at=dt.datetime(2018, 2, 14, 9, 0, tzinfo=dt.timezone.utc))))
 
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:

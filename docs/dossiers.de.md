@@ -136,7 +136,7 @@ In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, v
 
 ### Rechtlich sperren
 
-**Rechtlich sperren** (nur der Administrator) hält eine Akte für einen Streitfall oder eine Forderung fest. Geben Sie eine Begründung an. Solange die Akte gesperrt ist, kann sie nicht in den Papierkorb, und ihre Dokumente, Anhänge, Notizen und Aufgaben werden nicht gelöscht. Bearbeiten bleibt möglich. **Sperre aufheben** verlangt ebenfalls eine Begründung; das Fenster zeigt, wer wann gesperrt oder aufgehoben hat.
+**Rechtlich sperren** (nur der Administrator) hält eine Akte für einen Streitfall oder eine Forderung fest. Geben Sie eine Begründung an. Solange die Akte gesperrt ist, kann sie nicht in den Papierkorb, und ihre Dokumente, Anhänge, Notizen und Aufgaben werden nicht gelöscht. Bearbeiten bleibt möglich. **Sperre aufheben** verlangt ebenfalls eine Begründung; das Fenster zeigt, wer wann gesperrt oder aufgehoben hat. Eine gesperrte Akte wird auch nach ihrer [Aufbewahrungsfrist](bewaartermijnen.md) nicht gelöscht.
 
 ### Löschen
 

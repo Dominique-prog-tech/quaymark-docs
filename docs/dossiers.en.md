@@ -136,7 +136,7 @@ On the **Time and expenses** tab you record the **time entries** (who, from when
 
 ### Legal hold
 
-**Place on legal hold** (administrator only) keeps a file for a dispute or a claim. Give a reason. While the file is on hold, it cannot go to the recycle bin, and its documents, attachments, notes and tasks are not deleted. Editing remains possible. **Lift legal hold** also asks for a reason; the window shows who placed or lifted the hold, and when.
+**Place on legal hold** (administrator only) keeps a file for a dispute or a claim. Give a reason. While the file is on hold, it cannot go to the recycle bin, and its documents, attachments, notes and tasks are not deleted. Editing remains possible. **Lift legal hold** also asks for a reason; the window shows who placed or lifted the hold, and when. A file on hold is not deleted after its [retention period](bewaartermijnen.md) either.
 
 ### Delete
 

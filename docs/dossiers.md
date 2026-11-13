@@ -136,7 +136,7 @@ Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer to
 
 ### Juridisch blokkeren
 
-**Juridisch blokkeren** (enkel de beheerder) houdt een dossier vast voor een geschil of een vordering. Geef een reden. Zolang het dossier geblokkeerd is, kan het niet naar de prullenbak, en worden zijn documenten, bijlagen, notities en taken niet verwijderd. Bewerken blijft mogen. **Blokkering opheffen** vraagt ook een reden; het venster toont wie wanneer blokkeerde of ophief.
+**Juridisch blokkeren** (enkel de beheerder) houdt een dossier vast voor een geschil of een vordering. Geef een reden. Zolang het dossier geblokkeerd is, kan het niet naar de prullenbak, en worden zijn documenten, bijlagen, notities en taken niet verwijderd. Bewerken blijft mogen. **Blokkering opheffen** vraagt ook een reden; het venster toont wie wanneer blokkeerde of ophief. Een geblokkeerd dossier wordt ook na zijn [bewaartermijn](bewaartermijnen.md) niet verwijderd.
 
 ### Verwijderen
 
