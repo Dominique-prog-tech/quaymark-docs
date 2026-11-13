@@ -16,6 +16,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Niederlassungen*
 - Die **Zeitzone** bestimmt, in welcher Zeit eine geplante Besichtigung angezeigt und erfasst wird. Ein Büro in Dünkirchen plant in französischer Zeit, auch wenn die Akte in Antwerpen eingeplant wird.
 - Doppelklicken Sie auf eine Zeile, um sie zu bearbeiten; **Neue Niederlassung** fügt eine hinzu. Eine Niederlassung, die nicht mehr verwendet wird, setzen Sie auf **inaktiv**.
 
+![Niederlassungen mit Neue Niederlassung](images/vestigingen-de.png "Die Niederlassungen")
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

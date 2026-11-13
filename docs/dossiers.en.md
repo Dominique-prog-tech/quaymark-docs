@@ -17,9 +17,13 @@ In the menu on the left, click **Files**.
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.
 - The export button downloads the list as a file.
 
+![The Files list with the Status choice and the New file button](images/dossiers-lijst-en.png "The Files list")
+
 ## File
 
 One instruction: what was asked, where and when, and what the surveyor finds on site.
+
+![File HQ-2026-0003 on the General tab, with Instruction, Place and planning, Conditions and attendance](images/dossier-en.png "A file")
 
 - **Instruction**: office, survey type, principal, surveyor, reference, date, status and report language. The **file number** (office code, year, sequence number) is assigned the first time you save; after that the office is fixed.
 - **Place and planning**: vessel, port, terminal or berth, the scheduled moment (in the office's time zone), currency and description.
@@ -32,6 +36,8 @@ A saved file has tabs: **Parties** (relations with their role and reference), **
 
 A **finding** is added, never changed or deleted. You correct a mistake with **Correct** and a reason: the old version stays visible, struck through. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
 
+![The Findings tab per location on board, with photo, Severity, Not in report and Correct](images/dossier-vaststellingen-en.png "Findings with their photo")
+
 ### Photos in the report
 
 **Leave out of report** under a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. Photos get a running number in the report, and the findings table lists those numbers.
@@ -40,9 +46,13 @@ A **finding** is added, never changed or deleted. You correct a mistake with **C
 
 The **checklist** shows the latest answer per item (OK, not OK, n/a), by whom and when. Every answer is kept under **Previous answers**. **Not OK** proposes a finding. On site, the surveyor answers in the field app.
 
+![The Checklist tab with the latest answer per item](images/dossier-checklist-en.png "The checklist")
+
 ### Report
 
 On the **Report** tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. If the report template does not show a section, the tab says so.
+
+![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
 
 ### Issuing and sending the report
 
@@ -56,9 +66,13 @@ On the **Report** tab you write the text of the report per section, with simple 
 
 If the file is **linked** to a previous file (e.g. the on-hire of an off-hire), the Findings tab shows per location what that file found there. Give your judgement per finding: **Already existed** or **New**. The report shows the comparison per location on board, with the photo numbers and your judgement; without a judgement, nothing is added.
 
+![The findings of off-hire ZB-2026-0002 against ZB-2026-0001, with Already existed and New](images/dossier-vergelijking-en.png "The comparison with a previous file")
+
 ### Letters and certificates
 
 **New letter** and **New certificate** (Report tab) create a standard letter or certificate in the language of the file. **Preview (PDF)** shows it first; **Issue** fixes it with its fingerprint. A certificate then gets a number from the branch's series (C-HQ-2026-0001). In a letter, replace every field in [square brackets]: otherwise issuing is not possible.
+
+![A new letter of protest for HQ-2026-0003 with Preview (PDF) and Issue](images/dossier-brief-en.png "A new letter")
 
 ### Evidence package
 

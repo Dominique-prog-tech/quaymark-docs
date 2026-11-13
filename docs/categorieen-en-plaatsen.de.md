@@ -17,6 +17,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Kategorien und O
 - Jeder Wert hat einen **Code**, eine Reihenfolge, einen Namen in den vier Sprachen und ob er aktiv ist. Ein bereits in einer Feststellung verwendeter Code steht fest. Setzen Sie einen nicht mehr verwendeten Wert auf **inaktiv**.
 - Doppelklicken Sie auf eine Zeile, um sie zu bearbeiten; **Neuer Wert** fügt einen hinzu.
 
+![Mängelkategorien und Orte an Bord](images/categorieen-en-plaatsen-de.png "Kategorien und Orte")
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

@@ -16,6 +16,8 @@ In the menu on the left, click **Settings**, then **Standard folders**.
 - **Drag** a folder to change the order or to put it inside another folder.
 - Existing files and vessels do not change. Add the folders there with **Insert standard folders** on the Documents tab; folders that are already there are not duplicated.
 
+![The Standard folders For files and For vessels](images/standaardmappen-en.png "The standard folders")
+
 ## See also
 
 - [Files](dossiers.md)

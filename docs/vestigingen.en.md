@@ -16,6 +16,8 @@ In the menu on the left, click **Settings**, then **Offices**.
 - The **time zone** determines in which time a scheduled survey is shown and entered. An office in Dunkirk plans in French time, even if the file is scheduled from Antwerp.
 - Double-click a row to edit it; **New office** adds one. Set an office that is no longer used to **inactive**.
 
+![The Offices list with the New office button](images/vestigingen-en.png "The offices")
+
 ## See also
 
 - [Files](dossiers.md)

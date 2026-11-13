@@ -6,6 +6,8 @@ description: "Die Startseite Ihres Büros."
 
 Die Startseite Ihres Büros.
 
+![Startseite mit Akten nach Status](images/startscherm-de.png "Die Startseite")
+
 - **Akten nach Status** zählt die offenen Akten: neu, geplant, in Bearbeitung und in Berichterstellung. Ein Klick auf eine Kachel öffnet die Liste der Akten.
 - Das **Menü links** zeigt die Bildschirme, auf die Sie Zugriff haben. Unter **Einstellungen** steht, was der Administrator des Büros einrichtet: Besichtigungsarten, Niederlassungen, Häfen, Standardordner, Kategorien und Orte.
 - Oben rechts: die **Feedback-Schaltfläche**, diese **Hilfe** und Ihre Einstellungen (Sprache, Anzeige).

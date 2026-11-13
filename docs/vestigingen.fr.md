@@ -16,6 +16,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Sites**.
 - Le **fuseau horaire** détermine dans quelle heure une expertise planifiée est affichée et saisie. Un bureau à Dunkerque planifie à l'heure française, même si le dossier est planifié à Anvers.
 - Double-cliquez sur une ligne pour la modifier ; **Nouveau site** en ajoute un. Un site qui n'est plus utilisé passe en **non actif**.
 
+![La liste Sites avec le bouton Nouveau site](images/vestigingen-fr.png "Les sites")
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

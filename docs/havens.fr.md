@@ -16,6 +16,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Ports**.
 - Double-cliquez sur une ligne pour la modifier ; **Nouveau port** en ajoute un.
 - Un port ne peut pas être supprimé, car d'anciens dossiers y renvoient. Passez un port que vous ne desservez pas en **non actif** : il disparaît alors de la liste de choix.
 
+![La liste Ports avec leur LOCODE et le bouton Nouveau port](images/havens-fr.png "Les ports")
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

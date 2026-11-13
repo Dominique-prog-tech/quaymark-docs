@@ -17,6 +17,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Standardtexte**.
 - Formatierung: fett, kursiv, unterstrichen und Aufzählungen. Mehr zeigt der Bericht nicht.
 - Einen Text, den Sie nicht mehr verwenden, setzen Sie auf **nicht aktiv**. Was schon in eine Akte eingefügt wurde, bleibt dort.
 
+![Standardtexte mit Neuer Standardtext](images/standaardteksten-de.png "Die Standardtexte")
+
 ## Siehe auch
 
 - [Vorlagen](sjablonen.md)

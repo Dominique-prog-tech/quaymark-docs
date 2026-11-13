@@ -16,6 +16,8 @@ Klik in het menu links op **Instellingen** en dan op **Vestigingen**.
 - De **tijdzone** bepaalt in welke tijd een geplande survey getoond en ingevoerd wordt. Een kantoor in Duinkerke plant in Franse tijd, ook als het dossier in Antwerpen ingepland wordt.
 - Dubbelklik op een rij om ze te bewerken; **Nieuwe vestiging** voegt er een toe. Een vestiging die niet meer gebruikt wordt, zet u op **niet actief**.
 
+![De lijst Vestigingen met de knop Nieuwe vestiging](images/vestigingen.png "De vestigingen")
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

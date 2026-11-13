@@ -16,9 +16,13 @@ Klicken Sie im Menü links auf **Beziehungen**.
 - Das **Suchfeld** sucht nach Name, Rolle, Ort, Land, Unternehmensnummer und E-Mail.
 - Doppelklicken Sie auf eine Zeile, um den **Datensatz** zu öffnen; der Pfeil am Zeilenanfang öffnet ihn in einem neuen Tab. **Neue Beziehung** legt einen an.
 
+![Liste der Beziehungen mit Rollen und Neue Beziehung](images/relaties-lijst-de.png "Die Liste der Beziehungen")
+
 ## Beziehung
 
 Die Daten einer Beziehung.
+
+![Kaaimeeuw Rederij NV mit Identität, Adresse und Kontakt und Ansprechpartner](images/relatie-de.png "Eine Beziehung")
 
 - **Identität**: Art (Unternehmen oder Person), Name, Unternehmens- oder USt-Nummer, Rollen, Sprache und aktiv. Eine Unternehmensnummer kommt pro Land nur einmal vor.
 - **In der ZDU suchen** ergänzt Name und Adresse aus der belgischen Zentralen Datenbank der Unternehmen. Das funktioniert nur für belgische Unternehmen.

@@ -46,11 +46,9 @@ jobs:
       # Staat elk beeld uit de bron ook als <img> in de gebouwde site? Bij Nimble en CreditSoft verdwenen op 19/10/2026 alle
       # schermafdrukken bij het bouwen (selectolax 1.0.1, zie requirements.txt) terwijl alle stappen groen bleven. Deze mag de
       # uitrol TEGENHOUDEN.
-      # ⚠️ NOG UIT (13/11/2026): er staat nog geen enkel beeld in, en de controle eist een bodem (MIN_PAGINAS) — met 0 beelden
-      # houdt ze dus elke uitrol tegen. Aanzetten bij de eerste beeldronde (stap 3, beelden.mjs op qm-demo), samen met het
-      # getal in tools/check-beelden.py. Zo deed CrediMatch het ook.
-      # - name: Beelden controleren (bron tegen gebouwde site)
-      #   run: python3 tools/check-beelden.py site
+      # Aan sinds de eerste beeldronde (13/11/2026: 76 beelden op 44 pagina's, vier talen).
+      - name: Beelden controleren (bron tegen gebouwde site)
+        run: python3 tools/check-beelden.py site
       # Nog niet aan, en waarom (zie CLAUDE.md): de gedeelde filmhook en de filmcontrole uit adm-appkit vanaf de eerste
       # film. Het meelezen van adm-appkit (geheim ADM_APPKIT_LEZEN) staat er sinds 07/11/2026 al, voor zoeken per taal.
       - uses: actions/upload-pages-artifact@v3

@@ -16,9 +16,13 @@ Dans le menu de gauche, cliquez sur **Relations**.
 - Le **champ de recherche** cherche sur le nom, le rôle, la commune, le pays, le numéro d'entreprise et l'e-mail.
 - Double-cliquez sur une ligne pour ouvrir la **fiche** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouvelle relation** en crée une.
 
+![La liste Relations avec leurs Rôles et le bouton Nouvelle relation](images/relaties-lijst-fr.png "La liste Relations")
+
 ## Relation
 
 Les données d'une relation.
+
+![La relation Kaaimeeuw Rederij NV : Identité, Adresse et contact, et l'onglet Personnes de contact](images/relatie-fr.png "Une relation")
 
 - **Identité** : type (entreprise ou personne), nom, numéro d'entreprise ou de TVA, rôles, langue et actif. Un numéro d'entreprise n'apparaît qu'une fois par pays.
 - **Rechercher dans la BCE** complète le nom et l'adresse depuis la Banque-Carrefour des Entreprises. Cela ne fonctionne que pour les entreprises belges.

@@ -16,6 +16,8 @@ Klik in het menu links op **Instellingen** en dan op **Standaardmappen**.
 - **Sleep** een map om de volgorde te wijzigen of om ze in een andere map te zetten.
 - Bestaande dossiers en schepen veranderen niet. Daar voegt u de mappen toe met **Standaardmappen invoegen** op het tabblad Documenten; mappen die er al staan, worden niet verdubbeld.
 
+![De Standaardmappen Voor dossiers en Voor schepen](images/standaardmappen.png "De standaardmappen")
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

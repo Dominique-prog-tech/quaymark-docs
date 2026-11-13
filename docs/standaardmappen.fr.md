@@ -16,6 +16,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Répertoires stan
 - **Faites glisser** un répertoire pour changer l'ordre ou le placer dans un autre répertoire.
 - Les dossiers et navires existants ne changent pas. Ajoutez-y les répertoires avec **Insérer les répertoires standard** dans l'onglet Documents ; les répertoires déjà présents ne sont pas dédoublés.
 
+![Les Répertoires standard Pour les dossiers et Pour les navires](images/standaardmappen-fr.png "Les répertoires standard")
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

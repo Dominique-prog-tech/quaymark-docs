@@ -16,9 +16,13 @@ Klicken Sie im Menü links auf **Schiffe**.
 - Das **Suchfeld** sucht nach Name, Nummer, Art, Schiffstyp, Flagge und Baujahr.
 - Doppelklicken Sie auf eine Zeile, um den **Datensatz** zu öffnen; der Pfeil am Zeilenanfang öffnet ihn in einem neuen Tab. **Neues Schiff** legt einen an.
 
+![Liste der Schiffe mit Neues Schiff](images/schepen-lijst-de.png "Die Liste der Schiffe")
+
 ## Schiff
 
 Die Daten eines Schiffs.
+
+![Schiff KAAIMEEUW mit Merkmale](images/schip-de.png "Ein Schiff")
 
 - **Schiff**: Art (See- oder Binnenschifffahrt), Name, IMO-Nummer, ENI-Nummer und Flagge. Ein Seeschiff hat eine **IMO-Nummer** (7 Ziffern, die letzte ist eine Prüfziffer), ein Binnenschiff eine **ENI-Nummer** (8 Ziffern). Jede Nummer kommt nur einmal vor, auch im Papierkorb.
 - **Merkmale**: Schiffstyp, Klassifikationsgesellschaft, Baujahr, Bruttoraumzahl, Tragfähigkeit, Anzahl Laderäume und Anzahl Tanks. Die Anzahl Laderäume oder Tanks bestimmt, wie viele leere Zeilen eine Tabelle pro Laderaum oder Tank in einer Akte erhält.

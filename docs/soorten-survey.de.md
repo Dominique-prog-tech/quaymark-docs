@@ -16,6 +16,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Besichtigungsart
 - Doppelklicken Sie auf eine Zeile, um die Art zu öffnen. **Neue Besichtigungsart** legt eine an.
 - Eine Art kann nicht gelöscht werden, weil ältere Akten darauf verweisen. Setzen Sie eine Art, die Sie nicht mehr anbieten, auf **inaktiv**.
 
+![Besichtigungsarten mit Neue Besichtigungsart](images/soorten-survey-de.png "Die Besichtigungsarten")
+
 ## Besichtigungsart
 
 Eine Besichtigungsart: was in der Akte erfasst wird und was der Besichtiger vor Ort abarbeitet.

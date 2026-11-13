@@ -16,6 +16,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Types d'expertise
 - Double-cliquez sur une ligne pour ouvrir le type. **Nouveau type d'expertise** en crée un.
 - Un type ne peut pas être supprimé, car d'anciens dossiers y renvoient. Passez un type que vous ne proposez plus en **non actif**.
 
+![La liste Types d'expertise avec le bouton Nouveau type d'expertise](images/soorten-survey-fr.png "Les types d'expertise")
+
 ## Type d'expertise
 
 Un type d'expertise : ce qui est saisi dans le dossier et ce que l'expert vérifie sur place.

@@ -6,6 +6,8 @@ description: "The home page of your office."
 
 The home page of your office.
 
+![The start screen with the Files by status tiles](images/startscherm-en.png "The start screen")
+
 - **Files by status** counts the open files: new, scheduled, in progress and reporting. A click on a tile opens the list of files.
 - The **menu on the left** shows the screens you have access to. Under **Settings** is what the office administrator sets up: survey types, offices, ports, standard folders, categories and locations.
 - Top right: the **feedback button**, this **help** and your preferences (language, display).

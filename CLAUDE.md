@@ -50,14 +50,35 @@ De `nav:` volgt het menu van de app (`adm-quaymark/src/Host/Quaymark.Host.Web/Na
 **zonder titel**: dan neemt elke taal de eigen kop (`# …`) van de pagina, en hoeft een schermnaam niet nog eens in
 `nav_translations`. Enkel de **secties** (Home, Hoe doe ik…?, Instellingen) staan daar, in fr, en en de.
 
+## De beelden (sinds 13/11/2026)
+Gegenereerd, in de vier talen, zoals bij CrediMatch: `tools/beelden.mjs` op de gedeelde kern (`adm-appkit/tools/beeldgenerator`). Een nieuw beeld =
+een recept in dat script (naam, route, merkteken) + een verwijzing in elke taalversie van de pagina (`beeld.png`, `beeld-fr.png`, `-en`, `-de`).
+1. De preview `quaymark-web` draait (`http://127.0.0.1:6445`, gestart vanuit de app-sessie).
+2. `python3 tools/proefklant-vullen.py` vult de **verzonnen proefklant `qm-demo`**, op de dag van de beelden (de planning staat t.o.v. vandaag).
+   Rechtstreeks in de lokale databank, met vaste id's: opnieuw draaien vervangt enkel wat het script zelf maakte. Het weigert een code die de app
+   niet kent (een ongeldige code geeft in de app geen fout, enkel een leeg vak — zo gebeurd bij de eerste ronde).
+3. `BEELDEN_WACHTWOORD="$(dotnet user-secrets list --project ~/projects/adm-quaymark/src/Host/Quaymark.Host.Web | sed -n 's/^Proef:Surveyor:Wachtwoord = //p')" node tools/beelden.mjs [stuk,stuk]`.
+   De proefsurveyor `surveyor.demo` (Tenant-beheerder) meldt zich aan; het wachtwoord staat in geen enkel bestand van deze repo.
+- **De foto's** zijn vrije foto's (CC0) in `tools/demofotos/`, met hun bron in `BRONNEN.md`. Ze tonen niet de schepen of de schade die de demo
+  noemt. De 50 proeffoto's in `adm-quaymark/tools/proef-rapport` hebben geen gekende herkomst: **nooit** gebruiken.
+- **De teksten in de demodossiers zijn Engels** (de gangbare taal van surveyrapporten): zo passen ze bij de beelden in de vier talen.
+- Het script weigert: een ander bureau (grendel op het register én op de vestiging Zeebrugge), een scherm zonder het merkteken van het recept, een
+  foutmelding of de foutbalk van Blazor, een scherm in een andere taal, een afwijkende beeldvorm. Een merkteken is een gegeven uit de demo, of een
+  tekst van het scherm in de vier talen, gelezen uit `QText.cs`.
+- De **alt-tekst** draagt de schermwoorden met een hoofdletter: die worden nagekeken. In het Duits draagt ELK zelfstandig naamwoord een hoofdletter,
+  dus daar enkel woorden die op het scherm staan.
+- ⚠️ **Herneem ALLE beelden na een blok werk** (schrijfregels §4): de zijbalk staat op elk beeld. Een andere hoogte = het beeld eerst weghalen
+  (de vormgrendel weigert terecht te overschrijven).
+- ⚠️ **Kijk ernaar.** Op 13/11/2026 toonde de eerste ronde twee dingen die elke controle groen liet: lege keuzevakken (Weer, Zee, Zicht) door een
+  verkeerde code in het vulscript, en een derde wit onder de vaststellingen.
+
 ## Wat er bewust nog NIET aan staat (13/11/2026), en wanneer het aangaat
 | Wat | Wanneer | Hoe (zie `credimatch-docs`) |
 |---|---|---|
 | De uitrol bij een push | bij het live zetten | `deploy.yml` staat op `workflow_dispatch`: `push: branches: [main]` erbij |
 | `robots.txt` open + sitemap | bij het live zetten | `Allow: /` en de `Sitemap:`-regel (nu `Disallow: /`) |
 | Plausible (bezoekcijfers) | bij het live zetten | eigen site in Plausible voor `docs.quaymark.eu`; NIET het script van een andere site overnemen |
-| De beeldcontrole | bij de eerste beeldronde | de stap staat uitgeschreven in `deploy.yml`; `MIN_PAGINAS` in `tools/check-beelden.py` meten (pagina's × 4 talen) en invullen |
-| De beelden | stap 3 | `tools/beelden.mjs` op de gedeelde kern (`adm-appkit/tools/beeldgenerator`), op `qm-demo`, in de vier talen |
+| ~~De beelden en de beeldcontrole~~ | ✅ aan sinds 13/11/2026 | zie "De beelden"; `MIN_PAGINAS` verhogen bij elke beeldronde |
 | Een pagina over de veldapp | wanneer de veldapp aan klanten gaat | bron: `~/projects/adm-quaymark-flutter` en `adm-quaymark/docs/ontwerp-laag-4.md` |
 | Films en de pagina "Video's" | bij de eerste film | de gedeelde filmhook, de filmcontrole, `extra.bunny_library` |
 

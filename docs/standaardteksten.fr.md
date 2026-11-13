@@ -17,6 +17,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Textes standard**
 - Mise en forme : gras, italique, souligné et listes. Le rapport n'en affiche pas davantage.
 - Un texte que vous n'utilisez plus passe en **non actif**. Ce qui a déjà été inséré dans un dossier y reste.
 
+![La liste Textes standard avec le bouton Nouveau texte standard](images/standaardteksten-fr.png "Les textes standard")
+
 ## Voir aussi
 
 - [Modèles](sjablonen.md)

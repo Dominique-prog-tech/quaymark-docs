@@ -16,6 +16,8 @@ In the menu on the left, click **Settings**, then **Ports**.
 - Double-click a row to edit it; **New port** adds one.
 - A port cannot be deleted, because older files refer to it. Set a port you do not serve to **inactive**: it then disappears from the choice list.
 
+![The Ports list with their LOCODE and the New port button](images/havens-en.png "The ports")
+
 ## See also
 
 - [Files](dossiers.md)

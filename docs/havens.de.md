@@ -16,6 +16,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Häfen**.
 - Doppelklicken Sie auf eine Zeile, um sie zu bearbeiten; **Neuer Hafen** fügt einen hinzu.
 - Ein Hafen kann nicht gelöscht werden, weil ältere Akten darauf verweisen. Setzen Sie einen Hafen, den Sie nicht bedienen, auf **inaktiv**: er verschwindet dann aus der Auswahlliste.
 
+![Häfen mit LOCODE und Neuer Hafen](images/havens-de.png "Die Häfen")
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

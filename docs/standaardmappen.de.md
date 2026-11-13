@@ -16,6 +16,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Standardordner**
 - **Ziehen** Sie einen Ordner, um die Reihenfolge zu ändern oder ihn in einen anderen Ordner zu setzen.
 - Bestehende Akten und Schiffe ändern sich nicht. Dort fügen Sie die Ordner mit **Standardordner einfügen** in der Registerkarte Dokumente hinzu; bereits vorhandene Ordner werden nicht verdoppelt.
 
+![Standardordner Für Akten und Für Schiffe](images/standaardmappen-de.png "Die Standardordner")
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

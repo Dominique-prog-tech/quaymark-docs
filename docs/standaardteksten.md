@@ -17,6 +17,8 @@ Klik in het menu links op **Instellingen** en dan op **Standaardteksten**.
 - Opmaak: vet, cursief, onderstreept en opsommingen. Meer toont het rapport niet.
 - Een tekst die u niet meer gebruikt, zet u op **niet actief**. Wat al in een dossier ingevoegd werd, blijft daar staan.
 
+![De lijst Standaardteksten met de knop Nieuwe standaardtekst](images/standaardteksten.png "De standaardteksten")
+
 ## Zie ook
 
 - [Sjablonen](sjablonen.md)

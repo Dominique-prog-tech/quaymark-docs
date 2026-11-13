@@ -17,6 +17,8 @@ In the menu on the left, click **Settings**, then **Templates**.
 - The **Documents** column shows the current version per language, so a missing language stands out.
 - The three **standard letters** (protest, reservation, invitation to a joint survey) and the three **certificates** (quantity, weight, on-hire/off-hire) each have one template, regardless of the survey type. The surveyor writes the text of each letter; the statement of a certificate is in the template.
 
+![The Templates list with the For survey type column](images/sjablonen-en.png "The templates")
+
 ## Report template
 
 One report template: the versions per language and the Word document itself.

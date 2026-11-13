@@ -17,9 +17,13 @@ Klicken Sie im Menü links auf **Akten**.
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 
+![Liste der Akten mit Status und Neue Akte](images/dossiers-lijst-de.png "Die Liste der Akten")
+
 ## Akte
 
 Ein Auftrag: was verlangt wird, wo und wann, und was der Besichtiger vor Ort feststellt.
+
+![Akte HQ-2026-0003 mit Allgemein, Auftrag, Ort und Planung, Umstände und Anwesende](images/dossier-de.png "Eine Akte")
 
 - **Auftrag**: Niederlassung, Besichtigungsart, Auftraggeber, Besichtiger, Referenz, Datum, Status und Berichtssprache. Die **Aktennummer** (Niederlassungscode, Jahr, laufende Nummer) wird beim ersten Speichern vergeben; danach steht die Niederlassung fest.
 - **Ort und Planung**: Schiff, Hafen, Terminal oder Kai, der geplante Zeitpunkt (in der Zeitzone der Niederlassung), Währung und Beschreibung.
@@ -32,6 +36,8 @@ Eine gespeicherte Akte hat Registerkarten: **Parteien** (Beziehungen mit Rolle u
 
 Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat.
 
+![Feststellungen je Ort mit Berichtigen und Aus dem Bericht nehmen](images/dossier-vaststellingen-de.png "Feststellungen mit Foto")
+
 ### Fotos im Bericht
 
 **Aus dem Bericht nehmen** unter einem Foto lässt es im Fotoanhang des Berichts weg, mit einer Begründung. Das Foto bleibt als Beweis gespeichert; **Wieder in den Bericht** setzt es zurück. Die Fotos erhalten im Bericht eine fortlaufende Nummer, und die Tabelle der Feststellungen nennt diese Nummern.
@@ -40,9 +46,13 @@ Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Feh
 
 Die **Checkliste** zeigt pro Punkt die letzte Antwort (in Ordnung, nicht in Ordnung, entfällt), von wem und wann. Jede Antwort bleibt unter **Frühere Antworten** erhalten. **Nicht in Ordnung** schlägt eine Feststellung vor. Vor Ort antwortet der Besichtiger in der Feld-App.
 
+![Checkliste mit der letzten Antwort](images/dossier-checklist-de.png "Die Checkliste")
+
 ### Bericht
 
 In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
+
+![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
 
 ### Bericht herausgeben und senden
 
@@ -56,9 +66,13 @@ In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnit
 
 Ist die Akte mit einer vorigen Akte **verknüpft** (z. B. die On-Hire zu einer Off-Hire), zeigt die Registerkarte Feststellungen je Ort, was jene Akte dort festgestellt hat. Geben Sie je Feststellung Ihre Beurteilung: **Bestand bereits** oder **Neu**. Der Bericht zeigt den Vergleich je Ort an Bord, mit den Fotonummern und Ihrer Beurteilung; ohne Beurteilung steht nichts dabei.
 
+![Feststellungen von ZB-2026-0002 gegenüber ZB-2026-0001 mit Bestand bereits und Neu](images/dossier-vergelijking-de.png "Der Vergleich mit einer vorigen Akte")
+
 ### Schreiben und Bescheinigungen
 
 **Neues Schreiben** und **Neue Bescheinigung** (Registerkarte Bericht) erstellen ein Standardschreiben oder eine Bescheinigung in der Sprache der Akte. **Vorschau (PDF)** zeigt es zuerst; **Herausgeben** legt es mit seinem Fingerabdruck fest. Eine Bescheinigung erhält dann eine Nummer aus der Reihe der Niederlassung (C-HQ-2026-0001). Ersetzen Sie in einem Schreiben jedes Feld in [eckigen Klammern]: sonst ist Herausgeben nicht möglich.
+
+![Protestschreiben zu HQ-2026-0003 mit Vorschau (PDF) und Herausgeben](images/dossier-brief-de.png "Ein neues Schreiben")
 
 ### Beweispaket
 

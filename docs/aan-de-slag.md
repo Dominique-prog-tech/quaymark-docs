@@ -6,6 +6,8 @@ description: "De startpagina van uw bureau."
 
 De startpagina van uw bureau.
 
+![Het startscherm met de tegels Dossiers per status](images/startscherm.png "Het startscherm")
+
 - **Dossiers per status** telt de open dossiers: nieuw, gepland, in uitvoering en in rapportage. Een klik op een tegel opent de lijst van de dossiers.
 - Het **menu links** toont de schermen waartoe u toegang hebt. Onder **Instellingen** staat wat de beheerder van het bureau instelt: soorten survey, vestigingen, havens, standaardmappen, categorieën en plaatsen.
 - Rechtsboven: de **feedbackknop**, deze **hulp** en uw voorkeuren (taal, weergave).

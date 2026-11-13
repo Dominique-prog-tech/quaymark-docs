@@ -6,6 +6,8 @@ description: "La page d'accueil de votre bureau."
 
 La page d'accueil de votre bureau.
 
+![L'écran d'accueil avec les tuiles Dossiers par statut](images/startscherm-fr.png "L'écran d'accueil")
+
 - **Dossiers par statut** compte les dossiers ouverts : nouveaux, planifiés, en cours et en rapport. Un clic sur une tuile ouvre la liste des dossiers.
 - Le **menu de gauche** affiche les écrans auxquels vous avez accès. Sous **Paramètres** se trouve ce que l'administrateur du bureau configure : types d'expertise, sites, ports, répertoires standard, catégories et emplacements.
 - En haut à droite : le bouton de **retour d'information**, cette **aide** et vos préférences (langue, affichage).

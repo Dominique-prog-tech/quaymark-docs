@@ -17,9 +17,13 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.
 - Le bouton d'export télécharge la liste sous forme de fichier.
 
+![La liste Dossiers avec le choix Statut et le bouton Nouveau dossier](images/dossiers-lijst-fr.png "La liste Dossiers")
+
 ## Dossier
 
 Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur place.
+
+![Le dossier HQ-2026-0003 sur l'onglet Général, avec Mission, Lieu et planning, Conditions et présents](images/dossier-fr.png "Un dossier")
 
 - **Mission** : site, type d'expertise, donneur d'ordre, expert, référence, date, statut et langue du rapport. Le **numéro de dossier** (code du site, année, numéro d'ordre) est attribué au premier enregistrement ; le site est ensuite fixé.
 - **Lieu et planning** : navire, port, terminal ou quai, le moment prévu (dans le fuseau horaire du site), devise et description.
@@ -32,6 +36,8 @@ Un dossier enregistré a des onglets : **Parties** (relations avec leur rôle et
 
 Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier** et un motif : l'ancienne version reste visible, barrée. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
 
+![L'onglet Constatations par emplacement à bord, avec photo, Gravité, Retirer du rapport et Rectifier](images/dossier-vaststellingen-fr.png "Les constatations et leur photo")
+
 ### Photos dans le rapport
 
 **Retirer du rapport** sous une photo l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
@@ -40,9 +46,13 @@ Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se
 
 La **check-list** affiche pour chaque point la dernière réponse (conforme, non conforme, s.o.), par qui et quand. Chaque réponse reste conservée sous **Réponses précédentes**. **Non conforme** propose une constatation. Sur place, l'expert répond dans l'application mobile.
 
+![L'onglet Check-list avec la dernière réponse par point](images/dossier-checklist-fr.png "La check-list")
+
 ### Rapport
 
 Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
+
+![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
 
 ### Émettre et envoyer le rapport
 
@@ -56,9 +66,13 @@ Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec 
 
 Si le dossier est **lié** à un dossier précédent (p. ex. l'on-hire d'un off-hire), l'onglet Constatations montre par emplacement ce que ce dossier y a constaté. Donnez votre appréciation par constatation : **Existait déjà** ou **Nouveau**. Le rapport montre la comparaison par emplacement à bord, avec les numéros de photo et votre appréciation ; sans appréciation, rien n'est ajouté.
 
+![Les constatations de l'off-hire ZB-2026-0002 face à ZB-2026-0001, avec Existait déjà et Nouveau](images/dossier-vergelijking-fr.png "La comparaison avec un dossier précédent")
+
 ### Lettres et certificats
 
 **Nouvelle lettre** et **Nouveau certificat** (onglet Rapport) créent une lettre type ou un certificat dans la langue du dossier. **Aperçu (PDF)** le montre d'abord ; **Émettre** le fige avec son empreinte. Un certificat reçoit alors un numéro de la série de l'établissement (C-HQ-2026-0001). Remplacez dans une lettre chaque champ entre [crochets] : sinon l'émission est impossible.
+
+![Une nouvelle lettre de protestation pour HQ-2026-0003 avec Aperçu (PDF) et Émettre](images/dossier-brief-fr.png "Une nouvelle lettre")
 
 ### Dossier de preuves
 

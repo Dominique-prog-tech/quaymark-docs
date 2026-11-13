@@ -17,6 +17,8 @@ Klik in het menu links op **Instellingen** en dan op **Categorieën en plaatsen*
 - Elke waarde heeft een **code**, een volgorde, een naam in de vier talen en of ze actief is. Een code die al in een vaststelling staat, ligt vast. Zet een waarde die u niet meer gebruikt op **niet actief**.
 - Dubbelklik op een rij om ze te bewerken; **Nieuwe waarde** voegt er een toe.
 
+![De lijsten Categorieën van gebreken en Plaatsen aan boord](images/categorieen-en-plaatsen.png "Categorieën en plaatsen")
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

@@ -17,6 +17,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Modèles**.
 - La colonne **Documents** montre la version actuelle par langue. Une langue manquante saute ainsi aux yeux.
 - Les trois **lettres types** (protestation, réserves, invitation à une expertise contradictoire) et les trois **certificats** (quantité, poids, on-hire/off-hire) ont chacun un modèle, indépendant du type d'expertise. L'expert rédige le texte de chaque lettre ; la déclaration d'un certificat figure dans le modèle.
 
+![La liste Modèles avec la colonne Pour le type d'expertise](images/sjablonen-fr.png "Les modèles")
+
 ## Modèle de rapport
 
 Un modèle de rapport : les versions par langue et le document Word lui-même.

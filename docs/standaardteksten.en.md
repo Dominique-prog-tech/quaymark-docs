@@ -17,6 +17,8 @@ In the menu on the left, click **Settings**, then **Standard texts**.
 - Formatting: bold, italic, underline and lists. The report shows nothing more.
 - Set a text you no longer use to **inactive**. What was already inserted into a file stays there.
 
+![The Standard texts list with the New standard text button](images/standaardteksten-en.png "The standard texts")
+
 ## See also
 
 - [Templates](sjablonen.md)

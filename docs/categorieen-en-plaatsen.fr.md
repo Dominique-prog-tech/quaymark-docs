@@ -17,6 +17,8 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Catégories et em
 - Chaque valeur a un **code**, un ordre, un nom dans les quatre langues et un statut actif ou non. Un code déjà utilisé dans une constatation est fixé. Passez une valeur que vous n'utilisez plus en **non active**.
 - Double-cliquez sur une ligne pour la modifier ; **Nouvelle valeur** en ajoute une.
 
+![Les listes Catégories de défauts et Emplacements à bord](images/categorieen-en-plaatsen-fr.png "Catégories et emplacements")
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

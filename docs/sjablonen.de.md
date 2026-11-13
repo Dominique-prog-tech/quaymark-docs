@@ -17,6 +17,8 @@ Klicken Sie im Menü links auf **Einstellungen** und dann auf **Vorlagen**.
 - Die Spalte **Dokumente** zeigt pro Sprache die aktuelle Version. Eine fehlende Sprache fällt so auf.
 - Die drei **Standardschreiben** (Protest, Vorbehalt, Einladung zur gemeinsamen Besichtigung) und die drei **Bescheinigungen** (Menge, Gewicht, On-Hire/Off-Hire) haben je eine Vorlage, unabhängig von der Besichtigungsart. Den Text eines Schreibens verfasst der Sachverständige; die Erklärung einer Bescheinigung steht in der Vorlage.
 
+![Vorlagen mit Für Besichtigungsart](images/sjablonen-de.png "Die Vorlagen")
+
 ## Berichtsvorlage
 
 Eine Berichtsvorlage: die Versionen pro Sprache und das Word-Dokument selbst.

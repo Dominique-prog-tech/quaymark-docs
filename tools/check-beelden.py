@@ -43,10 +43,7 @@ SITE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "site")
 # (daar 100, gemeten 106 op 26/10/2026). ⚠️ Bij CrediMatch staat er op 31/10/2026 nog GEEN enkel beeld: deze controle
 # draait daarom nog niet in deploy.yml. Zet ze erin bij de eerste schermafdruk, en verhoog dit getal bij elke beeldronde.
 # Zakt het daaronder, dan is de zeef stuk — of zijn er echt pagina's weg, en dan hoort iemand dat te weten.
-# Quaymark (13/11/2026): nog GEEN beeld, en de stap staat daarom uit in deploy.yml. De 18 hieronder is die van CrediMatch en
-# is BEWUST blijven staan: wie de stap aanzet zonder dit getal te meten, krijgt rood in plaats van een bodem die niets bewaakt.
-# Bij de eerste beeldronde: meten (vier talen, dus pagina's × 4) en hier invullen.
-MIN_PAGINAS = 18   # CrediMatch, 2/11/2026 — voor Quaymark nog te meten.
+MIN_PAGINAS = 44   # Quaymark, gemeten op 13/11/2026: 11 pagina's × 4 talen (76 beelden). Verhogen bij elke beeldronde.
 
 MD_BEELD = re.compile(r"!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]+src=\"([^\"]+)\"")
 HTML_BEELD = re.compile(r"<img[^>]+src=\"([^\"]+)\"")
@@ -61,8 +58,10 @@ def html_voor(md: pathlib.Path) -> pathlib.Path:
     """docs/crm/relations.fr.md → site/fr/crm/relations/index.html (i18n `suffix`, directory-URL's)."""
     stam = md.relative_to(BRON).with_suffix("")
     taal = ""
-    if stam.suffix == ".fr":
-        taal, stam = "fr", stam.with_suffix("")
+    # Quaymark is VIERtalig: de versie van credimatch-docs kende enkel ".fr" en meldde zo elke Engelse en Duitse pagina als "niet gebouwd"
+    # (gemeten 13/11/2026: 22 van 44, telkens en en de). Faalde luid, dus geen stille terugval — maar een gat in de constructie.
+    if stam.suffix in (".fr", ".en", ".de"):
+        taal, stam = stam.suffix[1:], stam.with_suffix("")
     delen = list(stam.parts)
     if delen[-1] == "index":
         delen = delen[:-1]

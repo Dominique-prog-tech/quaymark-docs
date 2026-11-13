@@ -16,9 +16,13 @@ In the menu on the left, click **Relations**.
 - The **search box** searches name, role, city, country, company number and email.
 - Double-click a row to open the **record**; the arrow at the start of the row opens it in a new tab. **New relation** creates one.
 
+![The Relations list with their Roles and the New relation button](images/relaties-lijst-en.png "The Relations list")
+
 ## Relation
 
 The details of one relation.
+
+![The relation Kaaimeeuw Rederij NV: Identity, Address and contact, and the Contacts tab](images/relatie-en.png "A relation")
 
 - **Identity**: kind (company or person), name, company or VAT number, roles, language and active. A company number occurs only once per country.
 - **Look up in the CBE** fills in the name and address from the Belgian Crossroads Bank for Enterprises. This only works for Belgian companies.

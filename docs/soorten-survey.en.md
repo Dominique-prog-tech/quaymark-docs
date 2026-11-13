@@ -16,6 +16,8 @@ In the menu on the left, click **Settings**, then **Survey types**.
 - Double-click a row to open the type. **New survey type** creates one.
 - A type cannot be deleted, because older files refer to it. Set a type you no longer offer to **inactive**.
 
+![The Survey types list with the New survey type button](images/soorten-survey-en.png "The survey types")
+
 ## Survey type
 
 One survey type: what is entered in the file and what the surveyor goes through on site.

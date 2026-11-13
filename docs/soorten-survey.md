@@ -16,6 +16,8 @@ Klik in het menu links op **Instellingen** en dan op **Soorten survey**.
 - Dubbelklik op een rij om de soort te openen. **Nieuw soort survey** maakt er een aan.
 - Een soort verwijderen kan niet, want oude dossiers verwijzen ernaar. Zet een soort die u niet meer aanbiedt op **niet actief**.
 
+![De lijst Soorten survey met de knop Nieuw soort survey](images/soorten-survey.png "De soorten survey")
+
 ## Soort survey
 
 Eén soort survey: wat er in het dossier ingevuld wordt en wat de surveyor ter plaatse afloopt.

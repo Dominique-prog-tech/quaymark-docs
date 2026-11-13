@@ -16,9 +16,13 @@ Klik in het menu links op **Relaties**.
 - Het **zoekvak** zoekt op naam, rol, gemeente, land, ondernemingsnummer en e-mail.
 - Dubbelklik op een rij om de **fiche** te openen; met het pijltje vooraan de rij opent ze in een nieuw tabblad. **Nieuwe relatie** maakt er een aan.
 
+![De lijst Relaties met hun Rollen en de knop Nieuwe relatie](images/relaties-lijst.png "De lijst Relaties")
+
 ## Relatie
 
 De gegevens van één relatie.
+
+![De relatie Kaaimeeuw Rederij NV: Identiteit, Adres en contact, en het tabblad Contactpersonen](images/relatie.png "Een relatie")
 
 - **Identiteit**: soort (bedrijf of persoon), naam, ondernemingsnummer of btw-nummer, rollen, taal en actief. Een ondernemingsnummer komt per land maar één keer voor.
 - **Opzoeken in de KBO** vult naam en adres aan uit de Kruispuntbank van Ondernemingen. Dat werkt enkel voor Belgische ondernemingen.

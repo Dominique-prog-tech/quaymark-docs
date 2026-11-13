@@ -17,6 +17,8 @@ Klik in het menu links op **Instellingen** en dan op **Sjablonen**.
 - De kolom **Documenten** toont per taal de huidige versie. Een ontbrekende taal valt zo op.
 - De drie **standaardbrieven** (protest, voorbehoud, uitnodiging tot gezamenlijke survey) en de drie **certificaten** (hoeveelheid, gewicht, on-hire/off-hire) hebben elk één sjabloon, los van de soort survey. De tekst van een brief schrijft de surveyor per brief; de verklaring van een certificaat staat in het sjabloon.
 
+![De lijst Sjablonen met de kolom Voor soort survey](images/sjablonen.png "De sjablonen")
+
 ## Rapportsjabloon
 
 Eén rapportsjabloon: de versies per taal en het Word-document zelf.

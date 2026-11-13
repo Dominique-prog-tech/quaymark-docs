@@ -16,6 +16,8 @@ Klik in het menu links op **Instellingen** en dan op **Havens**.
 - Dubbelklik op een rij om ze te bewerken; **Nieuwe haven** voegt er een toe.
 - Een haven verwijderen kan niet, want oude dossiers verwijzen ernaar. Zet een haven die u niet bedient op **niet actief**: ze verdwijnt dan uit de keuzelijst.
 
+![De lijst Havens met hun LOCODE en de knop Nieuwe haven](images/havens.png "De havens")
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)
