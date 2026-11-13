@@ -30,6 +30,21 @@ Les données d'un navire.
 
 Un navire enregistré a l'onglet **Documents** (plans, certificats, tables, en répertoires) et le journal. Ces documents apparaissent aussi dans chaque dossier du navire, sous **Du navire**. **Supprimer** déplace le navire vers la corbeille.
 
+## Cales et citernes
+
+L'onglet **Cales et citernes** conserve par navire les cales et citernes, pour qu'une visite suivante les réutilise :
+
+![Cales et citernes du KAAIMEEUW avec Préremplir depuis les nombres, Capacité et Table de jaugeage](images/schip-ruimen-fr.png "Cales et citernes")
+
+- un **Nom** (Cale 1, Citerne 3P) et un **Type** : cale, citerne à cargaison, ballast, soute à combustible ou autre ;
+- la **Capacité** avec son unité (m³, L, bbl, t, kg, LT ou ST) ;
+- la **Table de jaugeage** : une pièce jointe du navire (onglet Documents), par exemple la table d'une citerne ;
+- une **Remarque**.
+
+**Préremplir depuis les nombres** crée Cale 1 jusqu'au nombre de cales, et Citerne 1 jusqu'au nombre de citernes, tels qu'indiqués dans l'onglet Général. Un nom qui existe déjà est ignoré. Les flèches font monter ou descendre une cale ou citerne d'une place.
+
+Un certificat d'inspection des cales sur un dossier de ce navire reçoit directement une ligne par cale.
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

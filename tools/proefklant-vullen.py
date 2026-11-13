@@ -330,6 +330,24 @@ sql.append(rij('financieel.facturen', dict(id=KLAD, soort='factuur', status='kla
            iban=None, bic=None, pdf_storage_key=None, pdf_sha256=None, pdf_grootte=None, momentopname=None, momentopname_sha256=None,
            uitgegeven_op=None, uitgegeven_door=None, created_at=om(0))))
 
+# ── Ruimen en tanks (B5) van de KAAIMEEUW, en een tijdlijn (B3) voor ZB-2026-0003, de staalname tijdens het laden. Vaste id's. ──
+KAAIMEEUW = vid('schip/1')
+RUIMEN = [(1, 'Hold 1', 'ruim', 9850.0, 'Grain capacity'), (2, 'Hold 2', 'ruim', 12400.0, None), (3, 'Hold 3', 'ruim', 12400.0, None),
+          (4, 'Hold 4', 'ruim', 12400.0, None), (5, 'Hold 5', 'ruim', 10900.0, 'Aft hold, smaller hatch')]
+sql.append(f"delete from berekeningen.compartimenten where id in ({', '.join(lit(vid(f'compartiment/{k}')) for k, *_ in RUIMEN)});")
+for k, naam, soort, cap, opm in RUIMEN:
+    sql.append(rij('berekeningen.compartimenten', dict(id=vid(f'compartiment/{k}'), schip_id=KAAIMEEUW, naam=naam, soort=soort, volgorde=k, capaciteit=cap,
+               eenheid='m³', peiltabel_id=None, opmerking=opm, created_at=om(-30))))
+# Tijden t.o.v. vandaag, in Brusselse tijd (om() rekent naar UTC). Gisteren aangekomen, vandaag nog aan het laden.
+GEBEURTENISSEN = [(1, -1, 5, 40, 'aankomst', 'Anchored at Ghent roads'), (2, -1, 6, 10, 'nor_ingediend', 'NOR tendered by e-mail'),
+                  (3, -1, 9, 0, 'nor_aanvaard', None), (4, -1, 11, 30, 'aangemeerd', 'Rodenhuizedok, port side alongside'),
+                  (5, -1, 12, 15, 'luiken_open', None), (6, -1, 13, 0, 'start_laden', 'Shore conveyor'), (7, -1, 18, 20, 'onderbreking', 'Rain'),
+                  (8, -1, 20, 5, 'hervatting', None), (9, 0, 7, 0, 'onderbreking', 'Conveyor breakdown'), (10, 0, 8, 30, 'hervatting', None)]
+sql.append(f"delete from berekeningen.gebeurtenissen where id in ({', '.join(lit(vid(f'gebeurtenis/{k}')) for k, *_ in GEBEURTENISSEN)});")
+for k, dag, uur, minuut, soort, opm in GEBEURTENISSEN:
+    sql.append(rij('berekeningen.gebeurtenissen', dict(id=vid(f'gebeurtenis/{k}'), dossier_id=vid('dossier/10'), op=om(dag, uur, minuut), soort=soort,
+               omschrijving=opm, bron='kantoor', created_at=om(dag, uur, minuut))))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"

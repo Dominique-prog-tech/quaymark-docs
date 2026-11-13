@@ -30,6 +30,21 @@ The details of one vessel.
 
 A saved vessel has the **Documents** tab (plans, certificates, tables, in folders) and the journal. These documents also appear on every file of the vessel, under **From the vessel**. **Delete** moves the vessel to the recycle bin.
 
+## Holds and tanks
+
+The **Holds and tanks** tab keeps the holds and tanks per vessel, so that a next visit reuses them:
+
+![Holds and tanks of the KAAIMEEUW with Prefill from the counts, Capacity and Sounding table](images/schip-ruimen-en.png "Holds and tanks")
+
+- a **Name** (Hold 1, Tank 3P) and a **Type**: hold, cargo tank, ballast tank, fuel tank or other;
+- the **Capacity** with its unit (m³, L, bbl, t, kg, LT or ST);
+- the **Sounding table**: an attachment of the vessel (Documents tab), for example the sounding table of a tank;
+- a **Note**.
+
+**Prefill from the counts** creates Hold 1 up to the number of holds, and Tank 1 up to the number of tanks, as filled in on the General tab. A name that already exists is skipped. The arrows move a hold or tank one place up or down.
+
+A hold inspection certificate on a file of this vessel immediately gets one line per hold.
+
 ## See also
 
 - [Files](dossiers.md)

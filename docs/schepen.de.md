@@ -30,6 +30,21 @@ Die Daten eines Schiffs.
 
 Ein gespeichertes Schiff hat die Registerkarte **Dokumente** (Pläne, Zertifikate, Tabellen, in Ordnern) und das Journal. Diese Dokumente erscheinen auch in jeder Akte des Schiffs, unter **Vom Schiff**. **Löschen** verschiebt das Schiff in den Papierkorb.
 
+## Laderäume und Tanks
+
+Die Registerkarte **Laderäume und Tanks** führt pro Schiff die Laderäume und Tanks, damit ein nächster Besuch sie wiederverwendet:
+
+![Laderäume und Tanks der KAAIMEEUW mit Aus den Anzahlen vorausfüllen, Kapazität und Peiltabelle](images/schip-ruimen-de.png "Laderäume und Tanks")
+
+- ein **Name** (Laderaum 1, Tank 3P) und eine **Art**: Laderaum, Ladetank, Ballasttank, Brennstofftank oder andere;
+- die **Kapazität** mit ihrer Einheit (m³, L, bbl, t, kg, LT oder ST);
+- die **Peiltabelle**: ein Anhang des Schiffs (Registerkarte Dokumente), zum Beispiel die Peiltabelle eines Tanks;
+- eine **Bemerkung**.
+
+**Aus den Anzahlen vorausfüllen** legt Laderaum 1 bis zur Anzahl Laderäume und Tank 1 bis zur Anzahl Tanks an, wie in der Registerkarte Allgemein eingetragen. Ein bereits vorhandener Name wird übersprungen. Die Pfeile setzen einen Laderaum oder Tank eine Stelle höher oder tiefer.
+
+Eine Laderaumbescheinigung in einer Akte dieses Schiffs erhält sofort eine Zeile pro Laderaum.
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

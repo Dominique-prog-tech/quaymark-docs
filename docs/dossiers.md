@@ -82,6 +82,16 @@ Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen rege
 
 Staat een hoeveelheid in een andere eenheid dan de klant vraagt, bijvoorbeeld in metrische ton terwijl de charterpartij long ton gebruikt, dan rekent **Omrekenen** ze om (ton, kilogram, long ton, short ton, kubieke meter, liter, vat). Van een volume naar een gewicht vraagt Quaymark de dichtheid. De omgerekende hoeveelheid komt als nieuwe regel onder de oorspronkelijke.
 
+### Tijdlijn
+
+Het tabblad **Tijdlijn** is de statement of facts van het dossier: de gebeurtenissen van de aanloop, in de tijd van de vestiging. Met **Gebeurtenis toevoegen** kiest u het tijdstip, de gebeurtenis (aankomst op de rede, NOR ingediend, NOR aanvaard, aangemeerd, luiken open, start en einde laden of lossen, onderbreking, hervatting, luiken dicht, documenten aan boord, vertrek of andere) en een opmerking. Een gebeurtenis kunt u achteraf wijzigen; de historiek houdt bij wie wat wijzigde.
+
+![Tijdlijn van ZB-2026-0003 met Gebeurtenis toevoegen, Van NOR tot start en Statement of facts uitgeven](images/dossier-tijdlijn.png "De tijdlijn")
+
+Bovenaan rekenen de tegels van de samenvatting: de tijd van de NOR tot de start, de duur van het laden of lossen, de onderbrekingen (van een onderbreking tot haar hervatting), de netto werktijd en het verblijf in de haven. Ontbreekt er een gebeurtenis voor een duur, dan staat er een streepje, geen nul.
+
+**Statement of facts (PDF)** toont het document; **Statement of facts uitgeven** legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. In het rapport komt de tijdlijn met de markering `{{tijdlijn}}` (zie [Sjablonen](sjablonen.md)).
+
 ### Tijd en kosten
 
 Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer tot wanneer, in de tijd van de vestiging) en de **kosten** (reis, verblijf, labo, derden) van het dossier, met het bewijsstuk uit de bijlagen. Een kost op **Doorrekenen** komt op de factuur. **Factuur voorstellen** maakt er een klad-factuur van; zie [Facturen](facturen.md). Wat op een factuur staat, ligt vast.

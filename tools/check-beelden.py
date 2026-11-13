@@ -43,7 +43,7 @@ SITE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "site")
 # (daar 100, gemeten 106 op 26/10/2026). ⚠️ Bij CrediMatch staat er op 31/10/2026 nog GEEN enkel beeld: deze controle
 # draait daarom nog niet in deploy.yml. Zet ze erin bij de eerste schermafdruk, en verhoog dit getal bij elke beeldronde.
 # Zakt het daaronder, dan is de zeef stuk — of zijn er echt pagina's weg, en dan hoort iemand dat te weten.
-MIN_PAGINAS = 60   # Quaymark, 13/11/2026: 15 pagina's × 4 talen (100 beelden, met facturen, tarieven en bureaugegevens). Verhogen bij elke beeldronde.
+MIN_PAGINAS = 60   # Quaymark, 13/11/2026: 15 pagina's × 4 talen (108 beelden, met ruimen en tijdlijn). Verhogen bij elke beeldronde.
 
 MD_BEELD = re.compile(r"!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]+src=\"([^\"]+)\"")
 HTML_BEELD = re.compile(r"<img[^>]+src=\"([^\"]+)\"")

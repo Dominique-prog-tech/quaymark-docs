@@ -30,6 +30,21 @@ De gegevens van één schip.
 
 Een bewaard schip heeft het tabblad **Documenten** (plannen, certificaten, tabellen, in mappen) en het journaal. Die documenten verschijnen ook op elk dossier van het schip, onder **Van het schip**. **Verwijderen** verplaatst het schip naar de prullenbak.
 
+## Ruimen en tanks
+
+Het tabblad **Ruimen en tanks** houdt per schip de ruimen en tanks bij, zodat een volgend bezoek ze hergebruikt:
+
+![Ruimen en tanks van de KAAIMEEUW met Voorvullen uit de aantallen, Capaciteit en Peiltabel](images/schip-ruimen.png "Ruimen en tanks")
+
+- een **Naam** (Ruim 1, Tank 3P) en een **Soort**: ruim, ladingtank, ballasttank, brandstoftank of andere;
+- de **Capaciteit** met haar eenheid (m³, L, bbl, t, kg, LT of ST);
+- de **Peiltabel**: een bijlage van het schip (tabblad Documenten), bijvoorbeeld de sounding table van een tank;
+- een **Opmerking**.
+
+**Voorvullen uit de aantallen** maakt Ruim 1 tot het aantal ruimen, en Tank 1 tot het aantal tanks, zoals ingevuld op het tabblad Algemeen. Een naam die al bestaat, slaat het over. De pijlen zetten een ruim of tank een plaats hoger of lager.
+
+Een certificaat van ruimkeuring op een dossier van dit schip krijgt meteen een regel per ruim.
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)
