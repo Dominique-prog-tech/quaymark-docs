@@ -1,0 +1,230 @@
+# Opgezet op 13/11/2026 vanuit de adm-quaymark-sessie, op Dominiques vraag ("aligneren met de andere standaardpakketten":
+# CleanOps, Nimble, CreditSoft). Voorbeeld: credimatch-docs, zoals de vlootafspraak zegt (adm-appkit/docs/docs-site-vormgeving.md).
+# VIER talen (nl, fr, en, de; ADR-57 punt 4): de eerste handleiding van de vloot met meer dan twee. Wat er bewust nog NIET aan
+# staat, en wanneer het aangaat: CLAUDE.md.
+site_name: Quaymark Documentatie
+site_description: Officiële handleiding voor Quaymark
+site_author: Dominique
+site_url: https://docs.quaymark.eu/
+copyright: >
+  Quaymark &copy; 2026 — eigendom van
+  <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
+  Alle rechten voorbehouden. · <a href="https://www.quaymark.eu/">quaymark.eu</a>
+
+theme:
+  name: material
+  # Eigen sjabloonstukken: de deelkoppen (Open Graph) in overrides/main.html.
+  custom_dir: overrides
+  language: nl
+  logo: images/logo.svg
+  favicon: images/logo.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: white
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Schakel naar donkere modus
+    - scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Schakel naar lichte modus
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    # De overzichtspagina van "Hoe doe ik…?" (hoe/index.md) IS de sectie: klik op de sectienaam = het overzicht.
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  # Iconen (:material-…:) voor het kaartraster op de onthaalpagina.
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Een dode link of een dood anker laat de bouw FALEN in plaats van online te komen: de uitrol bouwt met --strict.
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+plugins:
+  - search:
+      lang:
+        - nl
+        - fr
+        - en
+        - de
+  # Klik op een schermafbeelding = schermvullend openen. Staat vóór `i18n`: die plugin bouwt per taal een aparte
+  # pagina, en glightbox moet op elke gebouwde pagina passeren.
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - twemoji
+        - emojione
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      # false — en dat is geen smaak: met true gooit de plugin Franse zoekregels weg waarvan de titel gelijk is aan de
+      # Nederlandse (een naam die in beide talen hetzelfde is, of een vergeten nav_translations), en hun secties linkten
+      # dan naar /undefined. De hook zoeken_per_taal.py (bij hooks:) WEIGERT te bouwen met true.
+      # Zie adm-appkit/docs/docs-site-vormgeving.md, "Zoeken per taal" (07/11/2026).
+      reconfigure_search: false
+      languages:
+        - locale: nl
+          default: true
+          name: Nederlands
+          build: true
+          site_name: Quaymark Documentatie
+          site_description: Officiële handleiding voor Quaymark
+        - locale: fr
+          name: Français
+          build: true
+          site_name: Documentation Quaymark
+          site_description: Manuel officiel de Quaymark
+          copyright: >
+            Quaymark &copy; 2026 — propriété d'<a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>. Tous droits réservés. · <a href="https://www.quaymark.eu/fr/">quaymark.eu</a>
+          theme:
+            language: fr
+            palette:
+              - scheme: default
+                primary: white
+                accent: light blue
+                toggle:
+                  icon: material/brightness-7
+                  name: Passer en mode sombre
+              - scheme: slate
+                primary: black
+                accent: light blue
+                toggle:
+                  icon: material/brightness-4
+                  name: Passer en mode clair
+          nav_translations:
+            "Home": "Accueil"
+            "Hoe doe ik…?": "Comment faire… ?"
+            "Instellingen": "Paramètres"
+        - locale: en
+          name: English
+          build: true
+          site_name: Quaymark Documentation
+          site_description: Official Quaymark manual
+          copyright: >
+            Quaymark &copy; 2026 — property of <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>. All rights reserved. · <a href="https://www.quaymark.eu/en/">quaymark.eu</a>
+          theme:
+            language: en
+            palette:
+              - scheme: default
+                primary: white
+                accent: light blue
+                toggle:
+                  icon: material/brightness-7
+                  name: Switch to dark mode
+              - scheme: slate
+                primary: black
+                accent: light blue
+                toggle:
+                  icon: material/brightness-4
+                  name: Switch to light mode
+          nav_translations:
+            "Home": "Home"
+            "Hoe doe ik…?": "How do I…?"
+            "Instellingen": "Settings"
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: Quaymark Dokumentation
+          site_description: Offizielles Handbuch für Quaymark
+          copyright: >
+            Quaymark &copy; 2026 — Eigentum von <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>. Alle Rechte vorbehalten. · <a href="https://www.quaymark.eu/de/">quaymark.eu</a>
+          theme:
+            language: de
+            palette:
+              - scheme: default
+                primary: white
+                accent: light blue
+                toggle:
+                  icon: material/brightness-7
+                  name: Zum dunklen Modus wechseln
+              - scheme: slate
+                primary: black
+                accent: light blue
+                toggle:
+                  icon: material/brightness-4
+                  name: Zum hellen Modus wechseln
+          nav_translations:
+            "Home": "Startseite"
+            "Hoe doe ik…?": "Wie mache ich…?"
+            "Instellingen": "Einstellungen"
+
+hooks:
+  # Zoeken per taal (07/11/2026): elke taal zoekt enkel in haar eigen pagina's (hier vier: nl, fr, en, de).
+  # Zonder deze hook voegt mkdocs-static-i18n beide talen samen tot één index. Gedeeld door de vier handleidingen;
+  # woont in adm-appkit/tools/docs-site (lokaal via de symlink _appkit, in de uitrol via de checkout in deploy.yml).
+  - _appkit/tools/docs-site/zoeken_per_taal.py
+
+extra:
+  generator: false
+
+# Alleen KLARE pagina's staan hier: de handleiding groeit mee per scherm. De volgorde volgt het menu van de app
+# (adm-quaymark, Navigation/NavCatalogus.cs). Pagina's zonder titel hier nemen hun eigen kop (# …) in elke taal: zo hoeft een
+# schermnaam niet nog eens in nav_translations, en kan hij er ook niet van afwijken. Enkel de secties staan daar.
+nav:
+  - Home: index.md
+  - aan-de-slag.md
+  - Hoe doe ik…?:
+      - hoe/index.md
+      - hoe/nieuw-dossier.md
+      - hoe/rapport-uitgeven.md
+      - hoe/off-hire-vergelijken.md
+      - hoe/protestbrief.md
+      - hoe/bewijspakket.md
+      - hoe/logo-in-rapport.md
+  - dossiers.md
+  - relaties.md
+  - schepen.md
+  - Instellingen:
+      - soorten-survey.md
+      - vestigingen.md
+      - havens.md
+      - standaardmappen.md
+      - categorieen-en-plaatsen.md
+      - sjablonen.md
+      - standaardteksten.md

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Dicht zolang de handleiding in opbouw is (13/11/2026), zoals de andere vier handleidingen deden. Openzetten = `Allow: /`
+# + `Sitemap: https://docs.quaymark.eu/sitemap.xml`, op Dominiques woord, bij het live zetten (zie CLAUDE.md).

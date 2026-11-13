@@ -1,0 +1,11 @@
+.venv/
+site/
+__pycache__/
+.DS_Store
+*.pyc
+Thumbs.db
+
+# Films (adm-appkit/tools/filmgenerator): opnames en stemcache horen niet in git; films-uitslag.json WEL.
+tools/.films-uit/
+tools/.films-stem/
+_appkit
