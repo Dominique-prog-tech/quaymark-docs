@@ -31,6 +31,22 @@ Die Daten einer Beziehung.
 
 Eine gespeicherte Beziehung hat die Registerkarte **Ansprechpartner** (Name, Funktion, E-Mail, Telefon, Sprache) und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf. **Löschen** verschiebt die Beziehung in den Papierkorb.
 
+## Kundenportal
+
+Ein Auftraggeber kann seine Akten im Kundenportal selbst verfolgen. Dazu geben Sie einer Kontaktperson der Beziehung Zugang. Die Registerkarte **Kundenportal** auf dem Datensatz sehen Sie nur mit dem Recht, das Kundenportal zu verwalten; standardmäßig hat nur der Administrator dieses Recht.
+
+- **Wer**: eine Kontaktperson mit einer E-Mail-Adresse. Steht die Person noch nicht dabei, fügen Sie sie zuerst auf der Registerkarte **Ansprechpartner** hinzu.
+- **Einladen**: Wählen Sie die Kontaktperson und klicken Sie auf **Einladen**. Sie erhält eine E-Mail, in ihrer Sprache oder sonst der der Beziehung, mit einem Link, um ihr Passwort selbst zu wählen. Der Link ist 7 Tage gültig. Bei der ersten Anmeldung richtet sie die Zwei-Faktor-Authentifizierung ein: ohne sie kommt niemand ins Portal.
+- **Status**: *Eingeladen* (noch kein Passwort), *Aktiv* oder *Deaktiviert*, und ob die Zwei-Faktor-Authentifizierung aktiv ist. **Erneut einladen** sendet einen neuen Link; der vorige verfällt.
+- **Zugang entziehen** ist jederzeit möglich. Ist die Kontaktperson in diesem Moment angemeldet, endet diese Sitzung innerhalb von fünf Minuten.
+
+Was die Kontaktperson im Portal sieht:
+
+- **Meine Akten**: die Akten, in denen diese Beziehung Auftraggeber ist, mit Besichtigungsart, Schiff, Hafen, der eigenen Referenz, dem Status und wann die Arbeit geplant ist. Keine Akte im Papierkorb.
+- Je Akte die **ausgestellten** Berichtsversionen und die ausgestellten Briefe und Zertifikate, als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
+- **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
+- Kein Besichtiger, keine Stunden, Kosten, Feststellungen oder Fotos: Diese stehen im Bericht.
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

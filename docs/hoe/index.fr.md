@@ -13,6 +13,10 @@ Des réponses courtes aux questions qui reviennent dans le travail. Chaque étap
 - [Comment émettre un rapport et le remettre au donneur d'ordre ?](rapport-uitgeven.md)
 - [Comment comparer un off-hire à l'on-hire ?](off-hire-vergelijken.md)
 
+## Relations
+
+- [Comment donner accès au portail client à un donneur d'ordre ?](klantenportaal.md)
+
 ## Lettres et preuves
 
 - [Comment rédiger une lettre de protestation ?](protestbrief.md)

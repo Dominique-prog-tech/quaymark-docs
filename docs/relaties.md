@@ -31,6 +31,22 @@ De gegevens van één relatie.
 
 Een bewaarde relatie heeft het tabblad **Contactpersonen** (naam, functie, e-mail, telefoon, taal) en het journaal met notities, taken, bijlagen en historiek. **Verwijderen** verplaatst de relatie naar de prullenbak.
 
+## Klantenportaal
+
+Een opdrachtgever kan zijn dossiers zelf volgen in het klantenportaal. U geeft daarvoor een contactpersoon van de relatie toegang. Het tabblad **Klantenportaal** op de fiche ziet u enkel met het recht om het klantenportaal te beheren; standaard heeft enkel de beheerder dat recht.
+
+- **Wie**: een contactpersoon met één e-mailadres. Staat de persoon er nog niet bij, voeg die dan eerst toe op het tabblad **Contactpersonen**.
+- **Uitnodigen**: kies de contactpersoon en klik op **Uitnodigen**. De contactpersoon krijgt een mail, in de taal van de contactpersoon of anders die van de relatie, met een link om zelf een wachtwoord te kiezen. De link is 7 dagen geldig. Bij de eerste aanmelding stelt de contactpersoon tweestapsverificatie in: zonder komt niemand in het portaal.
+- **Status**: *Uitgenodigd* (nog geen wachtwoord), *Actief* of *Uitgeschakeld*, en of tweestapsverificatie aan staat. **Opnieuw uitnodigen** stuurt een nieuwe link; de vorige vervalt.
+- **Toegang intrekken** kan altijd. Is de contactpersoon op dat moment aangemeld, dan stopt die sessie binnen vijf minuten.
+
+Wat de contactpersoon in het portaal ziet:
+
+- **Mijn dossiers**: de dossiers waarin deze relatie opdrachtgever is, met soort survey, schip, haven, de eigen referentie, de status en wanneer het werk gepland is. Een dossier in de prullenbak niet.
+- Per dossier de **uitgegeven** rapportversies en de uitgegeven brieven en certificaten, als PDF. Een voorbeeld of een klad nooit. Elk bestand wordt eerst nagerekend tegen zijn vingerafdruk.
+- **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
+- Geen surveyor, uren, kosten, vaststellingen of foto's: die staan in het rapport.
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

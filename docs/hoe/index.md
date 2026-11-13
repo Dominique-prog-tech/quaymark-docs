@@ -13,6 +13,10 @@ Korte antwoorden op de vragen die bij het werk terugkomen. Elke stap verwijst na
 - [Hoe geef ik een rapport uit en bezorg ik het aan de opdrachtgever?](rapport-uitgeven.md)
 - [Hoe vergelijk ik een off-hire met de on-hire?](off-hire-vergelijken.md)
 
+## Relaties
+
+- [Hoe geef ik een opdrachtgever toegang tot het klantenportaal?](klantenportaal.md)
+
 ## Brieven en bewijs
 
 - [Hoe maak ik een protestbrief?](protestbrief.md)

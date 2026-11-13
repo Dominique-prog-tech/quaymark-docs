@@ -31,6 +31,22 @@ Les données d'une relation.
 
 Une relation enregistrée a l'onglet **Personnes de contact** (nom, fonction, e-mail, téléphone, langue) et le journal avec notes, tâches, pièces jointes et historique. **Supprimer** déplace la relation vers la corbeille.
 
+## Portail client
+
+Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail client. Pour cela, vous donnez accès à une personne de contact de la relation. Vous ne voyez l'onglet **Portail client** de la fiche qu'avec le droit de gérer le portail client ; par défaut, seul l'administrateur a ce droit.
+
+- **Qui** : une personne de contact avec une seule adresse e-mail. Si la personne n'y figure pas encore, ajoutez-la d'abord dans l'onglet **Personnes de contact**.
+- **Inviter** : choisissez la personne de contact et cliquez sur **Inviter**. Elle reçoit un e-mail, dans sa langue ou à défaut celle de la relation, avec un lien pour choisir elle-même son mot de passe. Le lien est valable 7 jours. À la première connexion, elle active la vérification en deux étapes : sans elle, personne n'entre dans le portail.
+- **Statut** : *Invité* (pas encore de mot de passe), *Actif* ou *Désactivé*, et si la vérification en deux étapes est activée. **Inviter à nouveau** envoie un nouveau lien ; le précédent expire.
+- **Retirer l'accès** est toujours possible. Si la personne de contact est connectée à ce moment-là, cette session s'arrête dans les cinq minutes.
+
+Ce que la personne de contact voit dans le portail :
+
+- **Mes dossiers** : les dossiers dont cette relation est donneur d'ordre, avec le type d'expertise, le navire, le port, sa propre référence, le statut et la date prévue des travaux. Pas un dossier dans la corbeille.
+- Pour chaque dossier, les versions **émises** du rapport et les lettres et certificats émis, en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
+- **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF. Pas un brouillon. Le portail n'indique pas si une facture est payée.
+- Pas d'expert, d'heures, de frais, de constatations ni de photos : ils figurent dans le rapport.
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

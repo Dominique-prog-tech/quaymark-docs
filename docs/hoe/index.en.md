@@ -13,6 +13,10 @@ Short answers to the questions that come up in daily work. Each step links to th
 - [How do I issue a report and deliver it to the principal?](rapport-uitgeven.md)
 - [How do I compare an off-hire with the on-hire?](off-hire-vergelijken.md)
 
+## Relations
+
+- [How do I give a principal access to the client portal?](klantenportaal.md)
+
 ## Letters and evidence
 
 - [How do I write a letter of protest?](protestbrief.md)

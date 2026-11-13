@@ -13,6 +13,10 @@ Kurze Antworten auf die Fragen, die bei der Arbeit wiederkehren. Jeder Schritt v
 - [Wie gebe ich einen Bericht heraus und stelle ihn dem Auftraggeber zu?](rapport-uitgeven.md)
 - [Wie vergleiche ich ein Off-Hire mit dem On-Hire?](off-hire-vergelijken.md)
 
+## Beziehungen
+
+- [Wie gebe ich einem Auftraggeber Zugang zum Kundenportal?](klantenportaal.md)
+
 ## Schreiben und Beweise
 
 - [Wie erstelle ich ein Protestschreiben?](protestbrief.md)

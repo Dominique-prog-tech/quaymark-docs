@@ -31,6 +31,22 @@ The details of one relation.
 
 A saved relation has the **Contacts** tab (name, position, email, phone, language) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin.
 
+## Client portal
+
+A principal can follow their own files in the client portal. To allow this, you give a contact person of the relation access. You only see the **Client portal** tab on the record with the right to manage the client portal; by default only the administrator has that right.
+
+- **Who**: a contact person with one email address. If the person is not listed yet, first add them on the **Contacts** tab.
+- **Invite**: choose the contact person and click **Invite**. The contact person receives an email, in their own language or otherwise that of the relation, with a link to choose a password. The link is valid for 7 days. At the first sign-in the contact person sets up two-step verification: without it, nobody gets into the portal.
+- **Status**: *Invited* (no password yet), *Active* or *Disabled*, and whether two-step verification is on. **Invite again** sends a new link; the previous one expires.
+- **Revoke access** is always possible. If the contact person is signed in at that moment, that session ends within five minutes.
+
+What the contact person sees in the portal:
+
+- **My files**: the files in which this relation is the principal, with survey type, vessel, port, their own reference, the status and when the work is scheduled. Not a file in the recycle bin.
+- For each file, the **issued** report versions and the issued letters and certificates, as PDF. Never a preview or a draft. Every file is first checked against its fingerprint.
+- **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.
+- No surveyor, hours, costs, findings or photos: those are in the report.
+
 ## See also
 
 - [Files](dossiers.md)
