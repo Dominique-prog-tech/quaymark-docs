@@ -81,6 +81,7 @@ const SCHOTEN = () => [
   { naam: 'dossier-schade', route: '/dossiers', hoogte: 1250, verwacht: /Hatch cover rubber packing/, na: dossier('HQ-2026-0003', 'schade') },
   { naam: 'claims', route: '/claims', verwacht: /Cargo claim from receivers/, magKortZijn: 'twee open claims' },
   { naam: 'dossier-vier-ogen', route: '/dossiers', hoogte: 1100, verwacht: /new damage in hold 2 added/, na: dossier('ZB-2026-0002', 'rapport') },
+  { naam: 'bevoegdheden', route: '/bevoegdheden', verwacht: /IIMS-2022-0417/ },
   { naam: 'dossier-tijdlijn', route: '/dossiers', hoogte: 1100, verwacht: /Conveyor breakdown/, na: dossier('ZB-2026-0003', 'tijdlijn') },
   { naam: 'soorten-survey', route: '/beheer/survey-types', verwacht: Q('surveytype_nieuw') },
   { naam: 'vestigingen', route: '/beheer/vestigingen', verwacht: Q('vestiging_nieuw'), magKortZijn: 'twee vestigingen' },

@@ -24,6 +24,7 @@ Eén soort survey: wat er in het dossier ingevuld wordt en wat de surveyor ter p
 
 - **Algemeen**: code, standaardtaal van het rapport, volgorde in de lijsten, actief, en de naam in de vier talen. De code ligt vast zodra er dossiers met deze soort bestaan.
 - **Vier-ogen**: aangevinkt, dan wordt een rapport van deze soort pas uitgegeven na de goedkeuring van een tweede surveyor. Zie [Dossiers](dossiers.md#vier-ogen).
+- **Vereiste bevoegdheden**: de bevoegdheden die de surveyor geldig moet hebben (bijvoorbeeld IIMS of ADR). Planning en dossier waarschuwen als dat niet zo is. Zie [Bevoegdheden](bevoegdheden.md).
 - **Velden**: de gegevens die een dossier van deze soort bovenop de vaste velden krijgt. Een veld heeft een **sleutel** (kleine letters, cijfers en _, ligt vast omdat de veldapp en de rapporten ernaar verwijzen), een soort (tekst, getal, datum, ja/nee, keuze of tabel), een label in vier talen, een eenheid en of het verplicht is. Een **tabel** heeft kolommen en eventueel vaste rijen, bijvoorbeeld één rij per ruim.
 - **Checklist**: de punten die de surveyor ter plaatse beantwoordt, elk met een sleutel, een label, en of een antwoord of een foto verplicht is.
 - **Rubrieken**: de tekstblokken van het rapport (inleiding, bevindingen, conclusie …). De surveyor schrijft ze op het tabblad Rapport van het dossier; een rapportsjabloon toont ze met de markering in de kolom ernaast. Een nieuw soort survey start met de vijf standaardrubrieken.

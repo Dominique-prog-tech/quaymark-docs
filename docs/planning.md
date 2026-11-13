@@ -42,6 +42,8 @@ De wettelijke feestdagen van het land van uw vestigingen staan er vanzelf, boven
 
 Valt een dossier op een afwezigheid van de surveyor, op een feestdag of over een ander dossier van dezelfde surveyor, dan mag het: een schip wacht niet op een feestdag, en twee korte opdrachten in dezelfde haven gaan samen. Het blok kleurt dan rood, en de planning zegt waarom.
 
+Vraagt het soort survey een bevoegdheid die de surveyor op die dag niet geldig heeft, dan waarschuwt de planning op dezelfde manier. Zie [Bevoegdheden](bevoegdheden.md).
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

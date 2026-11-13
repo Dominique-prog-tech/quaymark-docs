@@ -42,6 +42,8 @@ Les jours fériés légaux du pays de vos établissements y figurent d'office, e
 
 Si un dossier tombe sur une absence de l'expert, un jour férié ou un autre dossier du même expert, c'est permis : un navire n'attend pas la fin d'un jour férié, et deux courtes missions dans le même port vont ensemble. Le bloc devient alors rouge, et le planning indique pourquoi.
 
+Si le type d'expertise exige une habilitation que l'expert n'a pas de valide ce jour-là, le planning avertit de la même manière. Voir [Habilitations](bevoegdheden.md).
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

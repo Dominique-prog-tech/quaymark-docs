@@ -42,6 +42,8 @@ Die gesetzlichen Feiertage des Landes Ihrer Niederlassungen erscheinen von selbs
 
 Fällt eine Akte auf eine Abwesenheit des Sachverständigen, einen Feiertag oder eine andere Akte desselben Sachverständigen, ist das erlaubt: Ein Schiff wartet nicht auf das Ende eines Feiertags, und zwei kurze Aufträge im selben Hafen passen zusammen. Der Block wird dann rot, und die Planung sagt warum.
 
+Verlangt die Besichtigungsart eine Qualifikation, die der Besichtiger an diesem Tag nicht gültig hat, warnt die Planung auf dieselbe Weise. Siehe [Qualifikationen](bevoegdheden.md).
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

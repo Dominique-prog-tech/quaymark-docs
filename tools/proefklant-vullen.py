@@ -382,6 +382,25 @@ sql.append(f"delete from rapporten.rapport_reviews where dossier_id = {lit(D5)};
 sql.append(rij('rapporten.rapport_reviews', dict(id=vid('review/1'), dossier_id=D5, stap='gevraagd', vingerafdruk=hashlib.sha256(b'qm-demo/review/1').hexdigest(), door_id=SURVEYOR_ID,
            door_naam=SURVEYOR_NAAM, op=om(0, 9, 30), opmerking='Off-hire report ready, new damage in hold 2 added.')))
 
+# ── Bevoegdheden (P5): drie soorten, drie bevoegdheden van de proefsurveyor (geldig, vervalt binnenkort, vervallen), en vereisten bij twee soorten
+#    survey. De staalname van vandaag (ZB-2026-0003) vraagt "gasvrij", dat vervallen is: de planning en het dossier tonen de waarschuwing. ──
+SOORTEN_BEV = [(1, 'iims', ('IIMS-lidmaatschap', 'Membre IIMS', 'IIMS membership', 'IIMS-Mitgliedschaft')),
+               (2, 'adr', ('ADR-veiligheidsadviseur', 'Conseiller sécurité ADR', 'ADR safety adviser', 'ADR-Gefahrgutbeauftragter')),
+               (3, 'gasvrij', ('Gasvrij verklaren', 'Certificat de dégazage', 'Gas-free certification', 'Gasfreiheitsbescheinigung'))]
+sql.append(f"delete from planning.certificaten where gebruiker_id = {lit(SURVEYOR_ID)};")
+sql.append(f"delete from planning.certificaatsoorten where id in ({', '.join(lit(vid(f'certificaatsoort/{k}')) for k, *_ in SOORTEN_BEV)});")
+for k, code, (nl, fr, en, de) in SOORTEN_BEV:
+    sql.append(rij('planning.certificaatsoorten', dict(id=vid(f'certificaatsoort/{k}'), code=code, naam={'nl': nl, 'fr': fr, 'en': en, 'de': de},
+               actief=True, volgorde=k * 10)))
+BEVOEGDHEDEN = [(1, 'iims', 'IIMS-2022-0417', VANDAAG - dt.timedelta(days=1400), None, None),
+                (2, 'adr', 'ADR-BE-58213', VANDAAG - dt.timedelta(days=1795), VANDAAG + dt.timedelta(days=31), 'Herhalingsexamen ingepland'),
+                (3, 'gasvrij', 'GF-2023-112', VANDAAG - dt.timedelta(days=1100), VANDAAG - dt.timedelta(days=44), None)]
+for k, soort, nummer, uit, vervalt, opm in BEVOEGDHEDEN:
+    sql.append(rij('planning.certificaten', dict(id=vid(f'certificaat/{k}'), gebruiker_id=SURVEYOR_ID, soort=soort, nummer=nummer,
+               uitgereikt=uit.isoformat(), vervalt=vervalt.isoformat() if vervalt else None, opmerking=opm, created_at=om(-30), archived_on_utc=None)))
+sql.append("""update dossiers.survey_types set vereiste_certificaten = '["iims"]' where code = 'damage';""")
+sql.append("""update dossiers.survey_types set vereiste_certificaten = '["gasvrij"]' where code = 'sampling';""")
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"

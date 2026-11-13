@@ -42,6 +42,8 @@ The public holidays of the country of your offices appear automatically, at the 
 
 If a file falls on an absence of the surveyor, a public holiday or another file of the same surveyor, that is allowed: a vessel does not wait for a holiday to end, and two short jobs in the same port go together. The block then turns red, and the schedule says why.
 
+If the survey type requires a qualification the surveyor does not hold validly on that day, the schedule warns in the same way. See [Qualifications](bevoegdheden.md).
+
 ## See also
 
 - [Files](dossiers.md)
