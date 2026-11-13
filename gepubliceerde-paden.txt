@@ -2,6 +2,14 @@ aan-de-slag.de.md
 aan-de-slag.en.md
 aan-de-slag.fr.md
 aan-de-slag.md
+bevoegdheden.de.md
+bevoegdheden.en.md
+bevoegdheden.fr.md
+bevoegdheden.md
+bewaartermijnen.de.md
+bewaartermijnen.en.md
+bewaartermijnen.fr.md
+bewaartermijnen.md
 bureaugegevens.de.md
 bureaugegevens.en.md
 bureaugegevens.fr.md
