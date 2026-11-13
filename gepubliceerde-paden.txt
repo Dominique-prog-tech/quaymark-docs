@@ -2,6 +2,10 @@ aan-de-slag.de.md
 aan-de-slag.en.md
 aan-de-slag.fr.md
 aan-de-slag.md
+bureaugegevens.de.md
+bureaugegevens.en.md
+bureaugegevens.fr.md
+bureaugegevens.md
 categorieen-en-plaatsen.de.md
 categorieen-en-plaatsen.en.md
 categorieen-en-plaatsen.fr.md
@@ -10,6 +14,10 @@ dossiers.de.md
 dossiers.en.md
 dossiers.fr.md
 dossiers.md
+facturen.de.md
+facturen.en.md
+facturen.fr.md
+facturen.md
 havens.de.md
 havens.en.md
 havens.fr.md
@@ -18,6 +26,10 @@ hoe/bewijspakket.de.md
 hoe/bewijspakket.en.md
 hoe/bewijspakket.fr.md
 hoe/bewijspakket.md
+hoe/dossier-plannen.de.md
+hoe/dossier-plannen.en.md
+hoe/dossier-plannen.fr.md
+hoe/dossier-plannen.md
 hoe/index.de.md
 hoe/index.en.md
 hoe/index.fr.md
@@ -46,6 +58,10 @@ index.de.md
 index.en.md
 index.fr.md
 index.md
+planning.de.md
+planning.en.md
+planning.fr.md
+planning.md
 relaties.de.md
 relaties.en.md
 relaties.fr.md
@@ -70,6 +86,10 @@ standaardteksten.de.md
 standaardteksten.en.md
 standaardteksten.fr.md
 standaardteksten.md
+tarieven.de.md
+tarieven.en.md
+tarieven.fr.md
+tarieven.md
 vestigingen.de.md
 vestigingen.en.md
 vestigingen.fr.md
