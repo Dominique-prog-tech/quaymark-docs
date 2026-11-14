@@ -126,3 +126,7 @@ wachtdiensten.de.md
 wachtdiensten.en.md
 wachtdiensten.fr.md
 wachtdiensten.md
+woordenlijst.de.md
+woordenlijst.en.md
+woordenlijst.fr.md
+woordenlijst.md
