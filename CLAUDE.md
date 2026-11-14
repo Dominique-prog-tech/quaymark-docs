@@ -55,9 +55,14 @@ Beslist door Dominique op 12/11/2026 (voorstel: `content-hub/rapporten/handleidi
 - Een nieuwe taakpagina: in `hoe/index*.md` (vier talen) én in de `nav:`.
 
 ## De navigatie
-De `nav:` volgt het menu van de app (`adm-quaymark/src/Host/Quaymark.Host.Web/Navigation/NavCatalogus.cs`). Pagina's staan er
-**zonder titel**: dan neemt elke taal de eigen kop (`# …`) van de pagina, en hoeft een schermnaam niet nog eens in
-`nav_translations`. Enkel de **secties** (Home, Hoe doe ik…?, Instellingen) staan daar, in fr, en en de.
+De `nav:` staat **in groepen** (sinds 14/11/2026, op Dominiques vraag: vijftien tabbladen pasten niet meer in de bovenbalk),
+zoals `nimble-docs`: Home · Aan de slag · Hoe doe ik…? · Opdrachten en dossiers · Planning en personeel · Facturatie ·
+Instellingen. De groepen volgen de domeinen van het masterplan (D, P, F); binnen een groep de volgorde van het menu van de
+app (`adm-quaymark/src/Host/Quaymark.Host.Web/Navigation/NavCatalogus.cs`). **Een nieuwe pagina gaat in de groep van haar
+domein, niet als eigen tabblad.** De bestanden zijn NIET verplaatst: de groep staat enkel in de `nav:`, dus de adressen (en de
+links vanuit de zijlade) blijven gelijk. Pagina's staan er **zonder titel**: dan neemt elke taal de eigen kop (`# …`) van de
+pagina, en hoeft een schermnaam niet nog eens in `nav_translations`. Enkel de **secties** (Home en de groepen) staan daar, in
+fr, en en de.
 
 ## De beelden (sinds 13/11/2026)
 Gegenereerd, in de vier talen, zoals bij CrediMatch: `tools/beelden.mjs` op de gedeelde kern (`adm-appkit/tools/beeldgenerator`). Een nieuw beeld =

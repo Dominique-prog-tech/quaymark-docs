@@ -150,6 +150,9 @@ plugins:
             "Home": "Accueil"
             "Hoe doe ik…?": "Comment faire… ?"
             "Instellingen": "Paramètres"
+            "Opdrachten en dossiers": "Missions et dossiers"
+            "Planning en personeel": "Planning et personnel"
+            "Facturatie": "Facturation"
         - locale: en
           name: English
           build: true
@@ -176,6 +179,9 @@ plugins:
             "Home": "Home"
             "Hoe doe ik…?": "How do I…?"
             "Instellingen": "Settings"
+            "Opdrachten en dossiers": "Assignments and files"
+            "Planning en personeel": "Scheduling and staff"
+            "Facturatie": "Invoicing"
         - locale: de
           name: Deutsch
           build: true
@@ -202,6 +208,9 @@ plugins:
             "Home": "Startseite"
             "Hoe doe ik…?": "Wie mache ich…?"
             "Instellingen": "Einstellungen"
+            "Opdrachten en dossiers": "Aufträge und Akten"
+            "Planning en personeel": "Planung und Personal"
+            "Facturatie": "Abrechnung"
 
 hooks:
   # Zoeken per taal (07/11/2026): elke taal zoekt enkel in haar eigen pagina's (hier vier: nl, fr, en, de).
@@ -212,9 +221,14 @@ hooks:
 extra:
   generator: false
 
-# Alleen KLARE pagina's staan hier: de handleiding groeit mee per scherm. De volgorde volgt het menu van de app
-# (adm-quaymark, Navigation/NavCatalogus.cs). Pagina's zonder titel hier nemen hun eigen kop (# …) in elke taal: zo hoeft een
-# schermnaam niet nog eens in nav_translations, en kan hij er ook niet van afwijken. Enkel de secties staan daar.
+# Alleen KLARE pagina's staan hier: de handleiding groeit mee per scherm. Pagina's zonder titel hier nemen hun eigen kop (# …)
+# in elke taal: zo hoeft een schermnaam niet nog eens in nav_translations, en kan hij er ook niet van afwijken. Enkel de
+# secties staan daar.
+# In GROEPEN sinds 14/11/2026 (op Dominiques vraag: vijftien tabbladen pasten niet meer in de bovenbalk). De groepen volgen
+# de domeinen van het masterplan (adm-quaymark/docs/masterplan.md: D, P, F), binnen een groep de volgorde van het menu van
+# de app (Navigation/NavCatalogus.cs). Zoals nimble-docs: de bestanden zijn NIET verplaatst, dus de adressen blijven gelijk
+# en de links vanuit de zijlade van de app (QuaymarkHelpProvider.Handleidingpagina) werken nog. Een nieuwe pagina gaat in
+# de groep van haar domein, niet als eigen tabblad.
 nav:
   - Home: index.md
   - aan-de-slag.md
@@ -228,17 +242,20 @@ nav:
       - hoe/bewijspakket.md
       - hoe/klantenportaal.md
       - hoe/logo-in-rapport.md
-  - dossiers.md
-  - opdrachtbevestiging.md
-  - aanvragen.md
-  - relaties.md
-  - schepen.md
-  - planning.md
-  - wachtdiensten.md
-  - bevoegdheden.md
-  - offertes.md
-  - facturen.md
-  - betalingen.md
+  - Opdrachten en dossiers:
+      - aanvragen.md
+      - opdrachtbevestiging.md
+      - dossiers.md
+      - relaties.md
+      - schepen.md
+  - Planning en personeel:
+      - planning.md
+      - wachtdiensten.md
+      - bevoegdheden.md
+  - Facturatie:
+      - offertes.md
+      - facturen.md
+      - betalingen.md
   - Instellingen:
       - bureaugegevens.md
       - soorten-survey.md
