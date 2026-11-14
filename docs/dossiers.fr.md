@@ -136,7 +136,7 @@ Si le dossier est **lié** à un dossier précédent (p. ex. l'on-hire d'un off-
 
 Il y a trois lettres et cinq certificats. Chaque certificat a ses propres lignes :
 
-- **Certificat de quantité**, **Certificat de poids** et **Certificat on-hire/off-hire** : une description, une quantité et une unité. Un champ numérique rempli du dossier se reprend avec **Reprendre d'un champ du dossier**.
+- **Certificat de quantité**, **Certificat de poids** et **Certificat on-hire/off-hire** : une description, une quantité et une unité. Un champ numérique rempli du dossier se reprend avec **Reprendre d'un champ du dossier**. Pour une expertise de soutes, **De l'expertise de soutes** reprend la quantité livrée par produit.
 - **Certificat d'inspection des cales** : une **Constatation** par cale, et l'**Avis** : aptes ou non aptes au chargement de la cargaison mentionnée. L'avis n'est jamais prérempli. C'est sur ce certificat que la notice of readiness (NOR) du capitaine est acceptée ou refusée.
 - **Certificat de qualité** : les résultats d'une analyse, avec par ligne le **Paramètre**, la **Méthode**, le **Résultat**, l'**Unité** et la **Spécification** (la valeur limite). Au-dessus, vous indiquez l'**Échantillonnage** (où et quand), le **Laboratoire** et le **Rapport du laboratoire**.
 
@@ -176,6 +176,24 @@ Pour un type d'expertise avec la case **Draft survey** cochée (voir [Types d'ex
 Le **calcul** à côté suit chaque modification : les tirants d'eau aux perpendiculaires, l'assiette, la flexion, le quarter mean, la première et la seconde correction d'assiette, la correction de densité, les déductions et le déplacement net. Une mesure finale reprend le navire et l'eau de la mesure initiale. La différence du déplacement net entre le début et la fin est le poids de la cargaison : chargée s'il a augmenté, déchargée s'il a diminué.
 
 **Draft survey report (PDF)** affiche le document ; **Émettre le draft survey report** (lorsque les deux mesures sont complètes) le fige avec son empreinte, avec les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Dans le rapport, la draft survey vient avec le marqueur `{{draftsurvey}}` (voir [Modèles](sjablonen.md)).
+
+### Expertise de soutes
+
+Pour un type d'expertise avec la case **Expertise de soutes** (voir [Types d'expertise](soorten-survey.md)), le dossier reçoit l'onglet **Soutes**. Vous sondez chaque soute du navire avant et après le soutage ; Quaymark calcule le poids et compare la livraison au bon de livraison (BDN).
+
+![Soutes de HQ-2026-0007 avec le résultat par produit, le bon de livraison et les sondages](images/dossier-bunker-fr.png "Soutes")
+
+- **Sondages avant** et **Sondages après** ouvrent une page avec une ligne par soute : produit, méthode (sondage ou creux), la valeur mesurée, la correction d'assiette et de gîte de la table, le **volume** que vous relevez dans la table de jaugeage au sondage corrigé, et la température. Les soutes viennent du navire (onglet Cales et citernes) ; ajoutez-y une soute manquante.
+- La **densité à 15 °C** vient du bon de livraison du produit. Si une soute diffère (par exemple une valeur de labo propre), indiquez-la sur cette soute.
+- Quaymark calcule par soute le **VCF** selon ASTM D1250 table 54B, le volume à 15 °C et le poids dans l'air (volume à 15 °C × (densité − 0,0011)). Si vous utilisez un VCF de votre propre table, indiquez-le avec un motif ; il reçoit un astérisque dans le rapport.
+- **Enregistrer** ajoute un nouveau sondage par soute modifiée. Le précédent est conservé, avec qui et quand.
+- Par produit, l'onglet montre avant, après et la quantité **livrée**, et face au bon de livraison l'écart en tonnes et en pourcentage. Si une soute n'est sondée qu'à un seul moment, l'onglet le dit : le livré n'est alors pas correct pour ce produit.
+
+![Les sondages après le soutage de HQ-2026-0007, une ligne par soute](images/dossier-bunker-peilingen-fr.png "Sondages")
+
+Sur place, l'expert sonde dans l'application de terrain : l'icône carburant en haut du dossier montre les soutes par moment, avec une estimation en tonnes. Il y ajoute une soute que le navire n'avait pas encore. Sans réseau, les sondages attendent sur l'appareil.
+
+Dans le rapport, `{{bunker}}` place le résultat et le tableau par soute (voir [Modèles](sjablonen.md)). Sur le **certificat de quantité**, **De l'expertise de soutes** reprend la quantité livrée par produit.
 
 ### Chronologie
 

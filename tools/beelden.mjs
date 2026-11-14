@@ -89,6 +89,9 @@ const SCHOTEN = () => [
   { naam: 'dossier-draft', route: '/dossiers', hoogte: 1250, verwacht: /49[.,\u202f\u00a0]706/, na: dossier('HQ-2026-0004', 'draft') },
   { naam: 'dossier-draft-meting', route: '/dossiers', hoogte: 1500, verwacht: Q('draft_berekening'),
     na: async p => { await openRij(p, 'HQ-2026-0004'); const u = new URL(p.url()); await p.goto(`${u.origin}${u.pathname}/draft/begin`); await p.waitForLoadState('networkidle'); } },
+  // HQ-2026-0007 is afgesloten en staat dus niet in de standaardlijst: rechtstreeks, met de vaste id van het vulscript (vid('dossier/9')).
+  { naam: 'dossier-bunker', route: '/dossiers/7b7debda-ae44-5311-802e-00d5758aec05?tab=bunker', hoogte: 1700, verwacht: /FO 3 C/ },
+  { naam: 'dossier-bunker-peilingen', route: '/dossiers/7b7debda-ae44-5311-802e-00d5758aec05/bunker/na', hoogte: 900, verwacht: Q('bunker_peilingen_uitleg') },
   { naam: 'dossier-tijdlijn', route: '/dossiers', hoogte: 1100, verwacht: /Conveyor breakdown/, na: dossier('ZB-2026-0003', 'tijdlijn') },
   { naam: 'soorten-survey', route: '/beheer/survey-types', verwacht: Q('surveytype_nieuw') },
   { naam: 'vestigingen', route: '/beheer/vestigingen', verwacht: Q('vestiging_nieuw'), magKortZijn: 'twee vestigingen' },

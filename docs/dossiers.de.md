@@ -136,7 +136,7 @@ Ist die Akte mit einer vorigen Akte **verknüpft** (z. B. die On-Hire zu einer O
 
 Es gibt drei Schreiben und fünf Bescheinigungen. Jede Bescheinigung hat ihre eigenen Zeilen:
 
-- **Mengenbescheinigung**, **Gewichtsbescheinigung** und **On-Hire-/Off-Hire-Bescheinigung**: eine Beschreibung, eine Menge und eine Einheit. Ein ausgefülltes Zahlenfeld der Akte übernehmen Sie mit **Aus einem Feld der Akte übernehmen**.
+- **Mengenbescheinigung**, **Gewichtsbescheinigung** und **On-Hire-/Off-Hire-Bescheinigung**: eine Beschreibung, eine Menge und eine Einheit. Ein ausgefülltes Zahlenfeld der Akte übernehmen Sie mit **Aus einem Feld der Akte übernehmen**. Bei einer Bunkerbesichtigung übernimmt **Aus der Bunkerbesichtigung** die gelieferte Menge je Produkt.
 - **Bescheinigung über die Laderaumbesichtigung**: je Laderaum eine **Feststellung** und das **Urteil**: geeignet oder nicht geeignet für die Übernahme der angegebenen Ladung. Das Urteil ist nie vorausgefüllt. Auf dieser Bescheinigung wird die Notice of Readiness (NOR) des Kapitäns angenommen oder abgelehnt.
 - **Qualitätsbescheinigung**: die Ergebnisse einer Analyse, mit je Zeile **Parameter**, **Methode**, **Ergebnis**, **Einheit** und **Spezifikation** (der Grenzwert). Darüber tragen Sie die **Probenahme** (wo und wann), das **Labor** und den **Laborbericht** ein.
 
@@ -176,6 +176,24 @@ Bei einer Besichtigungsart mit angehaktem **Draft Survey** (siehe [Besichtigungs
 Die **Berechnung** daneben folgt jeder Änderung: die Tiefgänge an den Loten, der Trimm, die Durchbiegung, der Quarter Mean, die erste und zweite Trimmkorrektur, die Dichtekorrektur, die Abzüge und die Nettoverdrängung. Eine Endmessung übernimmt Schiff und Wasser von der Anfangsmessung. Der Unterschied der Nettoverdrängung zwischen Anfang und Ende ist das Gewicht der Ladung: geladen, wenn sie gestiegen, gelöscht, wenn sie gesunken ist.
 
 **Draft Survey Report (PDF)** zeigt das Dokument; **Draft Survey Report herausgeben** (sobald beide Messungen vollständig sind) hält es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Im Bericht steht der Draft Survey mit der Markierung `{{draftsurvey}}` (siehe [Vorlagen](sjablonen.md)).
+
+### Bunkerbesichtigung
+
+Bei einer Besichtigungsart mit dem Haken **Bunkerbesichtigung** (siehe [Besichtigungsarten](soorten-survey.md)) erhält die Akte die Registerkarte **Bunker**. Sie peilen jeden Brennstofftank des Schiffes vor und nach dem Bunkern; Quaymark berechnet das Gewicht und vergleicht die Lieferung mit dem Lieferschein (BDN).
+
+![Bunker von HQ-2026-0007 mit Produkt, Lieferschein (BDN) und Peilungen vorher und nachher](images/dossier-bunker-de.png "Bunker")
+
+- **Peilungen vorher** und **Peilungen nachher** öffnen eine Seite mit einer Zeile je Brennstofftank: Produkt, Methode (Peilung oder Leerraum), der gemessene Wert, die Trimm- und Krängungskorrektur aus der Tabelle, das **Volumen**, das Sie bei der korrigierten Peilung in der Peiltabelle ablesen, und die Temperatur. Die Tanks kommen vom Schiff (Registerkarte Laderäume und Tanks); einen fehlenden Tank fügen Sie dort hinzu.
+- Die **Dichte bei 15 °C** kommt vom Lieferschein dieses Produkts. Weicht ein Tank ab (zum Beispiel ein eigener Laborwert), geben Sie sie bei diesem Tank ein.
+- Quaymark berechnet je Tank den **VCF** nach ASTM D1250 Tabelle 54B, das Volumen bei 15 °C und das Gewicht in Luft (Volumen bei 15 °C × (Dichte − 0,0011)). Nutzen Sie einen VCF aus einer eigenen Tabelle, geben Sie ihn mit Grund ein; im Bericht erhält er ein Sternchen.
+- **Speichern** fügt je geändertem Tank eine neue Peilung hinzu. Die vorige bleibt erhalten, mit wer und wann.
+- Je Produkt zeigt die Registerkarte vorher, nachher und die **gelieferte** Menge, und gegenüber dem Lieferschein die Differenz in Tonnen und Prozent. Ist ein Tank nur zu einem Zeitpunkt gepeilt, sagt die Registerkarte es: Die gelieferte Menge stimmt dann für dieses Produkt nicht.
+
+![Bunkerbesichtigung · Nachher von HQ-2026-0007 mit Tank, Volumen (m³) und Temp. (°C)](images/dossier-bunker-peilingen-de.png "Peilungen")
+
+Vor Ort peilt der Sachverständige in der Außendienst-App: Das Brennstoffsymbol oben in der Akte zeigt die Tanks je Zeitpunkt, mit einer Schätzung in Tonnen. Einen Tank, den das Schiff noch nicht hatte, fügt er dort hinzu. Ohne Verbindung warten die Peilungen auf dem Gerät.
+
+Im Bericht setzt `{{bunker}}` das Ergebnis und die Tabelle je Tank (siehe [Vorlagen](sjablonen.md)). Auf der **Mengenbescheinigung** übernimmt **Aus der Bunkerbesichtigung** die gelieferte Menge je Produkt.
 
 ### Zeitablauf
 

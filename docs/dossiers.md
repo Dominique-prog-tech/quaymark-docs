@@ -136,7 +136,7 @@ Is het dossier **gekoppeld** aan een vorig dossier (bv. de on-hire bij een off-h
 
 Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen regels:
 
-- **Certificaat van hoeveelheid**, **Certificaat van gewicht** en het **On-hire/off-hire-certificaat**: een omschrijving, een hoeveelheid en een eenheid. Een ingevuld getalveld van het dossier neemt u over met **Overnemen uit een veld van het dossier**.
+- **Certificaat van hoeveelheid**, **Certificaat van gewicht** en het **On-hire/off-hire-certificaat**: een omschrijving, een hoeveelheid en een eenheid. Een ingevuld getalveld van het dossier neemt u over met **Overnemen uit een veld van het dossier**. Bij een bunker survey neemt **Uit de bunker survey** de geleverde hoeveelheid per product over.
 - **Certificaat van ruimkeuring**: per ruim een **Bevinding**, en het **Oordeel**: geschikt of niet geschikt om de vermelde lading te laden. Het oordeel staat nooit vooraf ingevuld. Op dit certificaat wordt de notice of readiness (NOR) van de kapitein aanvaard of geweigerd.
 - **Certificaat van kwaliteit**: de resultaten van een analyse, met per regel de **Parameter**, de **Methode**, het **Resultaat**, de **Eenheid** en de **Specificatie** (de grenswaarde). Daarboven vult u de **Staalname** (waar en wanneer), het **Labo** en het **Verslag van het labo** in.
 
@@ -176,6 +176,24 @@ Bij een soort survey met het vinkje **Draft survey** (zie [Soorten survey](soort
 De **berekening** ernaast volgt elke wijziging: de diepgangen aan de loodlijnen, de trim, de doorbuiging, de quarter mean, de eerste en tweede trimcorrectie, de correctie voor de densiteit, de aftrek en de netto waterverplaatsing. Een eindmeting neemt het schip en het water van de beginmeting over. Het verschil van de netto waterverplaatsing tussen begin en eind is het gewicht van de lading: geladen als het meer werd, gelost als het minder werd.
 
 **Draft survey report (PDF)** toont het document; **Draft survey report uitgeven** (als beide metingen volledig zijn) legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. In het rapport komt de draft survey met de markering `{{draftsurvey}}` (zie [Sjablonen](sjablonen.md)).
+
+### Bunker survey
+
+Bij een soort survey met het vinkje **Bunker survey** (zie [Soorten survey](soorten-survey.md)) krijgt het dossier het tabblad **Bunker**. U peilt elke brandstoftank van het schip vóór en na het bunkeren; Quaymark rekent het gewicht uit en vergelijkt de levering met de leveringsbon (BDN).
+
+![Bunker van HQ-2026-0007 met het resultaat per product, de leveringsbon en de peilingen](images/dossier-bunker.png "Bunker")
+
+- **Peilingen vóór** en **Peilingen na** openen een pagina met een rij per brandstoftank: product, methode (peiling of ullage), de gemeten waarde, de correctie voor trim en slagzij uit de tabel, het **volume** dat u bij de gecorrigeerde peiling in de peiltabel afleest, en de temperatuur. De tanks komen van het schip (tabblad Ruimen en tanks); een ontbrekende tank voegt u daar toe.
+- De **densiteit bij 15 °C** komt van de leveringsbon van dat product. Wijkt een tank af (bijvoorbeeld een eigen labowaarde), vul ze dan bij die tank in.
+- Quaymark rekent per tank de **VCF** volgens ASTM D1250 tabel 54B, het volume bij 15 °C en het gewicht in lucht (volume bij 15 °C × (densiteit − 0,0011)). Gebruikt u een VCF uit een eigen tabel, vul die dan in, met een reden; in het rapport krijgt ze een sterretje.
+- **Bewaren** voegt per gewijzigde tank een nieuwe peiling toe. De vorige blijft bewaard, met wie en wanneer.
+- Per product toont het tabblad vóór, na en de **geleverde** hoeveelheid, en tegenover de leveringsbon het verschil in ton en procent. Is een tank maar op één moment gepeild, dan zegt het tabblad dat: het geleverde klopt dan niet voor dat product.
+
+![De peilingen na het bunkeren van HQ-2026-0007, een rij per tank](images/dossier-bunker-peilingen.png "Peilingen")
+
+Ter plaatse peilt de surveyor in de veldapp: het brandstoficoon bovenaan het dossier toont de tanks per moment, met een schatting in ton. Een tank die het schip nog niet had, voegt hij daar toe. Zonder bereik wachten de peilingen op het toestel.
+
+In het rapport zet `{{bunker}}` het resultaat en de tabel per tank (zie [Sjablonen](sjablonen.md)). Op het **certificaat van hoeveelheid** neemt **Uit de bunker survey** de geleverde hoeveelheid per product over.
 
 ### Tijdlijn
 

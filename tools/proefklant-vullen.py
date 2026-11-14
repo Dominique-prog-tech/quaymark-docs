@@ -92,7 +92,7 @@ lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
-          'berekeningen.gebeurtenissen', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
+          'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
 # Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
@@ -370,6 +370,29 @@ sql.append(f"delete from berekeningen.gebeurtenissen where id in ({', '.join(lit
 for k, dag, uur, minuut, soort, opm in GEBEURTENISSEN:
     sql.append(rij('berekeningen.gebeurtenissen', dict(id=vid(f'gebeurtenis/{k}'), dossier_id=vid('dossier/10'), op=om(dag, uur, minuut), soort=soort,
                omschrijving=opm, bron='kantoor', created_at=om(dag, uur, minuut))))
+
+# ── Bunker survey (B2, 14/11/2026) voor HQ-2026-0007 (VLSFO op de NOORDKAAI PIONEER): vier brandstoftanks op het schip, een leveringsbon voor VLSFO
+#    (de MGO-tank heeft zijn eigen densiteit) en peilingen vóór en na. Verzonnen cijfers; geleverd ≈ 639 t tegenover 640 t op de bon. ──
+PIONEER_ID = SCHIP['pioneer']
+TANKS = [('fo1', 'FO 1 P', 1), ('fo2', 'FO 2 S', 2), ('fo3', 'FO 3 C', 3), ('do1', 'DO 1', 4)]
+sql.append(f"delete from berekeningen.compartimenten where id in ({', '.join(lit(vid(f'compartiment/{k}')) for k, *_ in TANKS)});")
+for k, naam, volgorde in TANKS:
+    sql.append(rij('berekeningen.compartimenten', dict(id=vid(f'compartiment/{k}'), schip_id=PIONEER_ID, naam=naam, soort='brandstoftank', volgorde=100 + volgorde,
+               capaciteit=None, eenheid=None, peiltabel_id=None, opmerking=None, created_at=om(-30))))
+D9 = DOS['9']
+sql.append(rij('berekeningen.bunker_bdns', dict(id=vid('bdn/vlsfo'), dossier_id=D9, product='vlsfo', nummer='BDN-26-0458', bunkerboot='Verzonnen Bunkerboot 7',
+           hoeveelheid=640.0, densiteit=991.2, opmerking=None, created_at=om(-12, 7))))
+PEILINGEN = [('voor', 'fo1', 'vlsfo', 112.0, -1.5, 85.420, 38.0, None, 8, 10), ('voor', 'fo2', 'vlsfo', 118.5, -1.5, 92.110, 38.0, None, 8, 20),
+             ('voor', 'fo3', 'vlsfo', 21.0, -0.5, 12.300, 35.0, None, 8, 30), ('voor', 'do1', 'mgo', 96.0, 0.0, 48.600, 28.0, 851.5, 8, 40),
+             ('na', 'fo1', 'vlsfo', 395.0, -1.5, 312.880, 44.0, None, 15, 10), ('na', 'fo2', 'vlsfo', 401.0, -1.5, 318.450, 44.0, None, 15, 20),
+             ('na', 'fo3', 'vlsfo', 287.0, -0.5, 218.000, 42.0, None, 15, 30), ('na', 'do1', 'mgo', 96.0, 0.0, 48.600, 29.0, 851.5, 15, 40)]
+for n, (moment, tank, product, waarde, corr, volume, temp, rho, uur, minuut) in enumerate(PEILINGEN):
+    op = om(-12, uur, minuut)
+    naam = next(t[1] for t in TANKS if t[0] == tank)
+    sql.append(rij('berekeningen.bunker_peilingen', dict(id=vid(f'peiling/{n}'), klant_id=vid(f'klant/peiling/{n}'), dossier_id=D9, moment=moment,
+               tank_id=vid(f'compartiment/{tank}'), tank_naam=naam, product=product, methode='peiling', waarde=waarde, correctie=corr, volume=volume,
+               temperatuur=temp, densiteit=rho, vcf=None, vcf_reden=None, opmerking=None, gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
+               opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=3), toestel=TOESTEL)))
 
 # ── Schade (D8, D10) voor HQ-2026-0003, de schade aan ruim 3 van de KAAIMEEUW: twee claims (één met een stap in het verloop) en een begroting
 #    zonder akkoord. Eerst alles van dat dossier weg (ook wat een proef in de browser er zette); dan vaste id's. ──

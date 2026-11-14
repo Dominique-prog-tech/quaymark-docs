@@ -136,7 +136,7 @@ If the file is **linked** to a previous file (e.g. the on-hire of an off-hire), 
 
 There are three letters and five certificates. Each certificate has its own lines:
 
-- **Certificate of quantity**, **Certificate of weight** and **On-hire/off-hire certificate**: a description, a quantity and a unit. A filled-in number field of the file can be taken over with **Take from a field of the file**.
+- **Certificate of quantity**, **Certificate of weight** and **On-hire/off-hire certificate**: a description, a quantity and a unit. A filled-in number field of the file can be taken over with **Take from a field of the file**. For a bunker survey, **From the bunker survey** takes over the delivered quantity per product.
 - **Hold inspection certificate**: a **Finding** per hold, and the **Conclusion**: fit or not fit to load the cargo stated. The conclusion is never filled in beforehand. This is the certificate on which the master's notice of readiness (NOR) is accepted or rejected.
 - **Certificate of quality**: the results of an analysis, with per line the **Parameter**, the **Method**, the **Result**, the **Unit** and the **Specification** (the limit). Above them you fill in the **Sampling** (where and when), the **Laboratory** and the **Laboratory report**.
 
@@ -176,6 +176,24 @@ For a survey type with **Draft survey** ticked (see [Survey types](soorten-surve
 The **calculation** beside it follows every change: the drafts at the perpendiculars, the trim, the deflection, the quarter mean, the first and second trim correction, the density correction, the deductibles and the net displacement. A final survey takes over the vessel and the water from the initial survey. The difference in net displacement between initial and final is the weight of the cargo: loaded if it increased, discharged if it decreased.
 
 **Draft survey report (PDF)** shows the document; **Issue draft survey report** (once both measurements are complete) records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. In the report the draft survey comes with the marker `{{draftsurvey}}` (see [Templates](sjablonen.md)).
+
+### Bunker survey
+
+For a survey type with the **Bunker survey** box ticked (see [Survey types](soorten-survey.md)), the file gets the **Bunkers** tab. You sound every fuel tank of the vessel before and after bunkering; Quaymark calculates the weight and compares the delivery with the delivery note (BDN).
+
+![Bunkers of HQ-2026-0007 with the result per product, the delivery note and the soundings](images/dossier-bunker-en.png "Bunkers")
+
+- **Soundings before** and **Soundings after** open a page with a row per fuel tank: product, method (sounding or ullage), the measured value, the trim and list correction from the table, the **volume** you read from the sounding table at the corrected sounding, and the temperature. The tanks come from the vessel (Holds and tanks tab); add a missing tank there.
+- The **density at 15 °C** comes from the delivery note of that product. If a tank differs (for example your own lab value), fill it in on that tank.
+- Quaymark calculates per tank the **VCF** per ASTM D1250 table 54B, the volume at 15 °C and the weight in air (volume at 15 °C × (density − 0.0011)). If you use a VCF from your own table, fill it in with a reason; it gets an asterisk in the report.
+- **Save** adds a new sounding per changed tank. The previous one is kept, with who and when.
+- Per product the tab shows before, after and the **delivered** quantity, and against the delivery note the difference in tonnes and percent. If a tank was sounded at one stage only, the tab says so: delivered is then not correct for that product.
+
+![The soundings after bunkering of HQ-2026-0007, a row per tank](images/dossier-bunker-peilingen-en.png "Soundings")
+
+On site, the surveyor sounds in the field app: the fuel icon at the top of the file shows the tanks per stage, with an estimate in tonnes. A tank the vessel did not have yet can be added there. Without a connection, the soundings wait on the device.
+
+In the report, `{{bunker}}` places the result and the table per tank (see [Templates](sjablonen.md)). On the **certificate of quantity**, **From the bunker survey** takes over the delivered quantity per product.
 
 ### Timeline
 

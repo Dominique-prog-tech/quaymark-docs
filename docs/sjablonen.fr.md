@@ -30,6 +30,7 @@ Un modèle de rapport : les versions par langue et le document Word lui-même.
 - `{{tijdlijn}}` place le statement of facts dans le rapport : le résumé et les événements. Sans événements, il ne reste rien.
 - `{{schadebegroting}}` place l'estimation des dommages dans le rapport : les postes avec leur montant estimé et accepté, la dépréciation et le montant net, les totaux, la réserve proposée et l'accord s'il existe. Sans postes, il ne reste rien.
 - `{{draftsurvey}}` place la draft survey dans le rapport : le résultat et le tableau avec mesure initiale et finale. Sans mesure, il ne reste rien.
+- `{{bunker}}` place l'expertise de soutes dans le rapport : par produit avant, après, livré et l'écart avec le bon de livraison, et le tableau par soute. Sans sondage, rien ne reste.
 - `{{gezamenlijk}}` place les expertises contradictoires dans le rapport : pour chaque expertise enregistrée, la date, le lieu et la version, la position de chaque partie (qui, quand et le commentaire), et les participants. Sans expertise contradictoire enregistrée, il ne reste rien. Un bureau qui avait déjà un modèle ajoute lui-même le marqueur.
 - Le modèle **Statement of facts** détermine la présentation de ce document, dans les quatre langues.
 - Le modèle **Draft survey report** détermine la présentation de ce document, dans les quatre langues.

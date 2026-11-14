@@ -30,6 +30,7 @@ Eén rapportsjabloon: de versies per taal en het Word-document zelf.
 - `{{tijdlijn}}` zet de statement of facts in het rapport: de samenvatting en de gebeurtenissen. Zonder gebeurtenissen blijft er niets staan.
 - `{{schadebegroting}}` zet de schadebegroting in het rapport: de posten met hun geraamde en aanvaarde bedrag, de afschrijving en het netto bedrag, de totalen, de voorgestelde reserve en het akkoord als dat er is. Zonder posten blijft er niets staan.
 - `{{draftsurvey}}` zet de draft survey in het rapport: het resultaat en de tabel met begin- en eindmeting. Zonder meting blijft er niets staan.
+- `{{bunker}}` zet de bunker survey in het rapport: per product vóór, na, geleverd en het verschil met de leveringsbon, en de tabel per tank. Zonder peiling blijft er niets staan.
 - `{{gezamenlijk}}` zet de gezamenlijke surveys in het rapport: per vastgelegde survey de datum, de plaats en de versie, het standpunt van elke partij (met wie, wanneer en de toelichting), en de deelnemers. Zonder vastgelegde gezamenlijke survey blijft er niets staan. Een bureau dat al een sjabloon had, voegt de markering zelf toe.
 - Het sjabloon **Statement of facts** bepaalt het uitzicht van dat document, in de vier talen.
 - Het sjabloon **Draft survey report** bepaalt het uitzicht van dat document, in de vier talen.
