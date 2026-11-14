@@ -83,6 +83,10 @@ const SCHOTEN = () => [
     na: async p => { await dossier('HQ-2026-0003', 'rapport')(p); await p.locator('[data-spraaknotities]').scrollIntoViewIfNeeded(); await p.waitForTimeout(400); } },
   { naam: 'dossier-gezamenlijk', route: '/dossiers', hoogte: 1100, verwacht: /Hold 3 and hatch cover 3/, na: dossier('HQ-2026-0003', 'gezamenlijk') },
   // V5 (14/11/2026): de handtekeningen (een handtekening en een weigering uit de demodata) en de pagina om te laten tekenen, met een naam ingevuld.
+  // R7 (14/11/2026): het deel Ondertekening op het tabblad Rapport (HQ-2026-0001: versie 2 ondertekend, versie 1 nog te ondertekenen).
+  //    Afgesloten, dus niet in de lijst: een rechtstreekse route (het dossier staat in de proefdatabank, niet in proefklant-vullen.py).
+  { naam: 'rapport-ondertekening', route: '/dossiers/01a1ca92-792f-7ee9-98b6-8e47fcc8571a?tab=rapport', verwacht: Q('laten_ondertekenen'),
+    na: async p => { await p.locator('[data-ondertekening]').evaluate(e => e.scrollIntoView({ block: 'center' })); } },
   { naam: 'dossier-handtekeningen', route: '/dossiers', verwacht: /Capt\. R\. Lindqvist/, na: dossier('HQ-2026-0003', 'handtekeningen') },
   { naam: 'dossier-tekenen', route: '/dossiers', hoogte: 1250, verwacht: Q('teken_hieronder'),
     na: async p => { await openRij(p, 'HQ-2026-0003'); await p.goto(p.url().split('?')[0] + '/tekenen'); await p.waitForLoadState('networkidle');

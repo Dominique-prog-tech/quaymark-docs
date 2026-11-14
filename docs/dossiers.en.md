@@ -115,6 +115,21 @@ The check refuses nothing. If you issue with findings, Quaymark asks **Issue any
 
 **Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. Save the sections first: a version only takes saved text.
 
+### Signing the report
+
+If your office has an OKSign contract in ADM One, you have an issued version signed with a qualified signature, by eID or itsme. This happens in the **Signing (OKSign)** part of the **Report** tab.
+
+1. Click **Have signed** next to the version. The surveyor of the file signs; for a survey type with four-eyes review, whoever approved the report signs too.
+2. Fill in the mobile number of each signatory (OKSign requires it; Quaymark remembers it for next time) and click **Send to OKSign**.
+3. Each signatory sees their own **Sign now** button next to the version. It opens the OKSign signing page.
+4. Once everyone has signed, the signed version comes in by itself (every quarter of an hour, or right away with **Refresh**). The version then shows **Signed**, with **Signed PDF**.
+
+![The Signing (OKSign) part with a signed version and a version still to be signed](images/rapport-ondertekening-en.png "Signing")
+
+The issued version itself does not change. Quaymark adds a signature page at the end with the file number, the version and the fingerprint (SHA-256) of that version, and has the whole signed. The signed PDF gets its own fingerprint and is part of the evidence package. As long as not everyone has signed, you can **Withdraw** the request; you can then have it signed again.
+
+What the principal sees in the client portal depends on the setting **Report in the portal only after signing via OKSign** in the [office details](bureaugegevens.md): off, they see every issued version right away, and the signed one once it exists. On, only once signed, and only then do they get the notification.
+
 ### Four-eyes review
 
 For a survey type with **Four-eyes review** ticked (see [Survey types](soorten-survey.md)), a report can only be issued after a second surveyor has approved it. The Report tab then shows the **Four-eyes review** block.

@@ -115,6 +115,21 @@ De controle weigert niets. Geeft u uit met bevindingen, dan vraagt Quaymark **To
 
 **Rapport uitgeven** (tabblad Rapport, vanaf de status Rapportage) legt het rapport vast als versie 1, met zijn vingerafdruk (SHA-256): het verandert daarna nooit meer. Iets rechtzetten = **Nieuwe versie uitgeven**, met een reden. **Verzenden** stuurt een uitgegeven versie als PDF naar de opdrachtgever; de mail komt in het journaal. Bewaar eerst de rubrieken: een versie neemt enkel bewaarde tekst.
 
+### Rapport ondertekenen
+
+Heeft uw bureau een OKSign-contract in ADM One, dan laat u een uitgegeven versie gekwalificeerd ondertekenen, met eID of itsme. Dat gebeurt in het deel **Ondertekening (OKSign)** op het tabblad **Rapport**.
+
+1. Klik bij de versie op **Laten ondertekenen**. De surveyor van het dossier tekent; bij een soort survey met vier-ogen tekent ook wie het rapport goedkeurde.
+2. Vul per ondertekenaar het gsm-nummer in (OKSign vraagt het; Quaymark onthoudt het voor de volgende keer) en klik op **Versturen naar OKSign**.
+3. Elke ondertekenaar ziet bij de versie zijn eigen knop **Nu tekenen**. Die opent de tekenpagina van OKSign.
+4. Zodra iedereen tekende, komt de getekende versie vanzelf binnen (elk kwartier, of meteen met **Vernieuwen**). De versie staat dan op **Ondertekend**, met **Getekende PDF**.
+
+![Het deel Ondertekening (OKSign) met een ondertekende versie en een versie die nog te ondertekenen is](images/rapport-ondertekening.png "Ondertekening")
+
+De uitgegeven versie zelf verandert niet. Quaymark voegt achteraan een ondertekenblad toe met het dossiernummer, de versie en de vingerafdruk (SHA-256) van die versie, en laat dat geheel tekenen. De getekende PDF krijgt haar eigen vingerafdruk en gaat mee in het bewijspakket. Zolang niet iedereen tekende, kunt u het verzoek **Intrekken**; daarna kunt u opnieuw laten ondertekenen.
+
+Wat de opdrachtgever in het klantenportaal ziet, bepaalt de instelling **Rapport pas in het portaal na ondertekening** in de [bureaugegevens](bureaugegevens.md): staat ze uit, dan ziet hij elke uitgegeven versie meteen, en de getekende zodra die er is. Staat ze aan, dan pas als ze ondertekend is, en dan krijgt hij ook pas dan de melding.
+
 ### Vier-ogen
 
 Bij een soort survey met het vinkje **Vier-ogen** (zie [Soorten survey](soorten-survey.md)) kan een rapport pas uitgegeven worden nadat een tweede surveyor het goedkeurde. Het tabblad Rapport toont dan het blok **Vier-ogen**.

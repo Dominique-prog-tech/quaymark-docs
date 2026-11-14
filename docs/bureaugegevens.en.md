@@ -21,6 +21,7 @@ Click **Company details** under **Settings** in the menu on the left. Only the o
 - **Payment term**: the number of days between the invoice date and the due date.
 - **Reminder after**, **Second reminder after** and **Final notice after**: how many days after the due date the Payments screen suggests that reminder (by default 7, 21 and 35). They are never sent by themselves. → [Payments](betalingen.md)
 - **Text at the bottom of the invoice**, for example the reference to your general terms and conditions.
+- **Client portal**: with **Report in the portal only after signing via OKSign**, the principal only sees an issued report once it has been signed. → [Signing the report](dossiers.md#signing-the-report)
 
 The **country** determines the VAT rate and the rule for foreign customers (see [Invoices](facturen.md)).
 

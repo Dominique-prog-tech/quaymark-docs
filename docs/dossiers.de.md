@@ -115,6 +115,21 @@ Die Prüfung verweigert nichts. Geben Sie mit Befunden heraus, fragt Quaymark **
 
 **Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**, mit Begründung. **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.
 
+### Bericht unterschreiben lassen
+
+Hat Ihr Büro einen OKSign-Vertrag in ADM One, lassen Sie eine herausgegebene Version qualifiziert unterschreiben, mit eID oder itsme. Das geschieht im Teil **Unterzeichnung (OKSign)** der Registerkarte **Bericht**.
+
+1. Klicken Sie bei der Version auf **Unterschreiben lassen**. Der Besichtiger der Akte unterschreibt; bei einer Besichtigungsart mit Vier-Augen-Prinzip unterschreibt auch, wer den Bericht freigegeben hat.
+2. Geben Sie für jeden Unterzeichner die Handynummer ein (OKSign verlangt sie; Quaymark merkt sie sich für das nächste Mal) und klicken Sie auf **An OKSign senden**.
+3. Jeder Unterzeichner sieht bei der Version seine eigene Schaltfläche **Jetzt unterschreiben**. Sie öffnet die Unterschriftsseite von OKSign.
+4. Sobald alle unterschrieben haben, kommt die unterschriebene Version von selbst herein (jede Viertelstunde, oder sofort mit **Aktualisieren**). Die Version steht dann auf **Unterschrieben**, mit **Unterschriebenes PDF**.
+
+![Unterzeichnung mit Unterschrieben und Unterschreiben lassen](images/rapport-ondertekening-de.png "Unterzeichnung")
+
+Die herausgegebene Version selbst ändert sich nicht. Quaymark fügt am Ende ein Unterschriftsblatt mit der Aktennummer, der Version und dem Fingerabdruck (SHA-256) dieser Version hinzu und lässt das Ganze unterschreiben. Das unterschriebene PDF erhält seinen eigenen Fingerabdruck und gehört zum Beweispaket. Solange nicht alle unterschrieben haben, können Sie die Anfrage **Zurückziehen**; danach können Sie erneut unterschreiben lassen.
+
+Was der Auftraggeber im Kundenportal sieht, bestimmt die Einstellung **Bericht erst nach der Unterzeichnung über OKSign im Portal** in den [Firmendaten](bureaugegevens.md): aus, dann sieht er jede herausgegebene Version sofort, und die unterschriebene, sobald es sie gibt. An, erst wenn sie unterschrieben ist, und erst dann erhält er auch die Benachrichtigung.
+
 ### Vier-Augen-Prinzip
 
 Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besichtigungsarten](soorten-survey.md)) lässt sich ein Bericht erst herausgeben, nachdem ein zweiter Besichtiger ihn freigegeben hat. Die Registerkarte Bericht zeigt dann den Block **Vier-Augen-Prinzip**.

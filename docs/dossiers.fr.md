@@ -115,6 +115,21 @@ Le contrôle ne refuse rien. Si vous émettez avec des remarques, Quaymark deman
 
 **Émettre le rapport** (onglet Rapport, à partir du statut Rapport) fige le rapport comme version 1, avec son empreinte (SHA-256) : il ne change plus jamais. Corriger = **Émettre une nouvelle version**, avec un motif. **Envoyer** envoie une version émise en PDF au donneur d'ordre ; le mail est conservé dans le journal. Enregistrez d'abord les rubriques : une version ne reprend que le texte enregistré.
 
+### Faire signer le rapport
+
+Si votre bureau a un contrat OKSign dans ADM One, vous faites signer une version émise avec une signature qualifiée, par eID ou itsme. Cela se fait dans la partie **Signature (OKSign)** de l'onglet **Rapport**.
+
+1. Cliquez sur **Faire signer** à côté de la version. L'expert du dossier signe ; pour un type d'expertise en double contrôle, la personne qui a approuvé le rapport signe aussi.
+2. Indiquez le numéro de GSM de chaque signataire (OKSign l'exige ; Quaymark le retient pour la prochaine fois) et cliquez sur **Envoyer à OKSign**.
+3. Chaque signataire voit à côté de la version son propre bouton **Signer maintenant**. Il ouvre la page de signature d'OKSign.
+4. Dès que tout le monde a signé, la version signée arrive d'elle-même (tous les quarts d'heure, ou tout de suite avec **Actualiser**). La version est alors **Signé**, avec **PDF signé**.
+
+![La partie Signature (OKSign) avec une version signée et une version encore à signer](images/rapport-ondertekening-fr.png "Signature")
+
+La version émise elle-même ne change pas. Quaymark ajoute à la fin une page de signature avec le numéro du dossier, la version et l'empreinte (SHA-256) de cette version, et fait signer l'ensemble. Le PDF signé reçoit sa propre empreinte et fait partie du dossier de preuves. Tant que tout le monde n'a pas signé, vous pouvez **Retirer** la demande ; vous pouvez ensuite refaire signer.
+
+Ce que le donneur d'ordre voit dans le portail client dépend du réglage **Rapport dans le portail seulement après signature via OKSign** dans les [données du bureau](bureaugegevens.md) : désactivé, il voit chaque version émise tout de suite, et la version signée dès qu'elle existe. Activé, seulement une fois signée, et c'est seulement alors qu'il reçoit la notification.
+
 ### Double contrôle
 
 Pour un type d'expertise avec la case **Double contrôle** cochée (voir [Types d'expertise](soorten-survey.md)), un rapport ne peut être émis qu'après l'approbation d'un second expert. L'onglet Rapport affiche alors le bloc **Double contrôle**.

@@ -8,7 +8,8 @@ description: "Van de rubrieken op het tabblad Rapport tot een vastgelegde versie
 2. **Schrijf de rubrieken** op het tabblad **Rapport**, met de standaardteksten van uw bureau of een **ontwerpvoorstel** van de AI, en klik op **Rubrieken bewaren**. → [Rapport](../dossiers.md#rapport) · [Ontwerp voorstellen](../dossiers.md#ontwerp-voorstellen)
 3. **Kijk het rapport na** met **Rapport (PDF)**. Er wordt nog niets bewaard of verzonden. → [Rapport als voorbeeld](../dossiers.md#rapport-als-voorbeeld)
 4. **Klik op Rapport uitgeven.** Het rapport wordt versie 1, met zijn vingerafdruk, en verandert daarna niet meer. → [Rapport uitgeven en verzenden](../dossiers.md#rapport-uitgeven-en-verzenden)
-5. **Klik op Verzenden.** De opdrachtgever krijgt de PDF; de mail komt in het journaal van het dossier.
-6. **Moet er iets rechtgezet worden,** gebruik dan **Nieuwe versie uitgeven** en geef een reden. De vorige versie blijft bewaard.
+5. **Laat het ondertekenen** (heeft uw bureau een OKSign-contract): **Laten ondertekenen** bij de versie; de surveyor tekent met eID of itsme. → [Rapport ondertekenen](../dossiers.md#rapport-ondertekenen)
+6. **Klik op Verzenden.** De opdrachtgever krijgt de PDF; de mail komt in het journaal van het dossier.
+7. **Moet er iets rechtgezet worden,** gebruik dan **Nieuwe versie uitgeven** en geef een reden. De vorige versie blijft bewaard.
 
 Zie ook: [Hoe zet ik ons logo in het rapport?](logo-in-rapport.md)
