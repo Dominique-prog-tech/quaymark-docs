@@ -19,6 +19,7 @@ Click **Company details** under **Settings** in the menu on the left. Only the o
 - **VAT number**. Quaymark checks the check digits of a Belgian number.
 - **IBAN** and **BIC**: the account on the invoice and in the payment QR code.
 - **Payment term**: the number of days between the invoice date and the due date.
+- **Reminder after**, **Second reminder after** and **Final notice after**: how many days after the due date the Payments screen suggests that reminder (by default 7, 21 and 35). They are never sent by themselves. → [Payments](betalingen.md)
 - **Text at the bottom of the invoice**, for example the reference to your general terms and conditions.
 
 The **country** determines the VAT rate and the rule for foreign customers (see [Invoices](facturen.md)).

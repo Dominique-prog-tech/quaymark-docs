@@ -19,6 +19,7 @@ Cliquez sur **Données du bureau** sous **Paramètres** dans le menu de gauche. 
 - **Numéro de TVA**. Quaymark vérifie les chiffres de contrôle d'un numéro belge.
 - **IBAN** et **BIC** : le compte sur la facture et dans le QR de paiement.
 - **Délai de paiement** : le nombre de jours entre la date de facture et l'échéance.
+- **Rappel après**, **Deuxième rappel après** et **Mise en demeure après** : combien de jours après l'échéance l'écran Paiements propose ce rappel (par défaut 7, 21 et 35). Ils ne partent jamais tout seuls. → [Paiements](betalingen.md)
 - **Texte en bas de la facture**, par exemple le renvoi à vos conditions générales.
 
 Le **pays** détermine le taux de TVA et la règle pour les clients étrangers (voir [Factures](facturen.md)).

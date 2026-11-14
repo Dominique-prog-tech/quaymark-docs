@@ -19,6 +19,7 @@ Klicken Sie im Menü links unter **Einstellungen** auf **Firmendaten**. Nur der 
 - **USt-IdNr.** Quaymark prüft die Prüfziffer einer belgischen Nummer.
 - **IBAN** und **BIC**: das Konto auf der Rechnung und im Zahlungs-QR-Code.
 - **Zahlungsziel**: die Anzahl Tage zwischen Rechnungsdatum und Fälligkeit.
+- **Erinnerung nach**, **Zweite Erinnerung nach** und **Mahnung nach**: wie viele Tage nach Fälligkeit die Seite Zahlungen diese Erinnerung vorschlägt (standardmäßig 7, 21 und 35). Sie werden nie von selbst gesendet. → [Zahlungen](betalingen.md)
 - **Text unten auf der Rechnung**, zum Beispiel der Verweis auf Ihre allgemeinen Geschäftsbedingungen.
 
 Das **Land** bestimmt den MwSt.-Satz und die Regel für ausländische Kunden (siehe [Rechnungen](facturen.md)).

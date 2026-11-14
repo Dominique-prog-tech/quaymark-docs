@@ -19,6 +19,7 @@ Klik in het menu links onder **Instellingen** op **Bureaugegevens**. Enkel de be
 - **Btw-nummer**. Quaymark kijkt een Belgisch nummer na op zijn controlegetal.
 - **IBAN** en **BIC**: de rekening op de factuur en in de betaal-QR.
 - **Betaaltermijn**: het aantal dagen tussen de factuurdatum en de vervaldatum.
+- **Herinnering na**, **Tweede herinnering na** en **Aanmaning na**: na hoeveel dagen na de vervaldatum het scherm Betalingen die herinnering voorstelt (standaard 7, 21 en 35). Ze vertrekken nooit vanzelf. → [Betalingen](betalingen.md)
 - **Tekst onderaan de factuur**, bijvoorbeeld de verwijzing naar uw algemene voorwaarden.
 
 Het **land** bepaalt het btw-tarief en de regel voor buitenlandse klanten (zie [Facturen](facturen.md)).
