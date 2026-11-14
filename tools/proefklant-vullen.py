@@ -89,7 +89,7 @@ sql = ['begin;']
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
-for t in ['dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
+for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
@@ -476,6 +476,41 @@ for k, taal, rubriek, tekst, uur, minuut in [
     sql.append(rij('dossiers.spraaknotities', dict(id=vid(f'spraaknotitie/{k}'), klant_id=vid(f'klant/spraaknotitie/{k}'), dossier_id=D3, tekst=tekst,
                taal=taal, rubriek=rubriek, lat_e7=512723500, lon_e7=43390100, nauwkeurigheid_cm=600, gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
                opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=4), toestel=TOESTEL)))
+
+# ── Handtekeningen (V5, 14/11/2026) op HQ-2026-0003: de kapitein tekende op het toestel "voor ontvangst", de terminal weigerde. Verzonnen namen; het
+#    beeld is een getekende krabbel (PIL), bewaard zoals de app het doet (bureau-<tenant>/handtekeningen/<dossier>/<id>_<sha>.png). De momentopname
+#    heeft de vorm van de veldapp (compact JSON) met de vier vaststellingen van het dossier, de plaatsen in het Engels (de taal van het dossier). ──
+from PIL import Image, ImageDraw
+import io, math
+def krabbel():
+    beeld = Image.new('RGB', (600, 200), 'white'); d = ImageDraw.Draw(beeld)
+    punten = [(40 + i * 4.2, 110 - 38 * math.sin(i / 9) * math.exp(-i / 160) - (18 if i % 37 < 6 else 0)) for i in range(120)]
+    d.line(punten, fill='black', width=4, joint='curve')
+    d.line([(80, 150), (420, 140)], fill='black', width=3)
+    uit = io.BytesIO(); beeld.save(uit, 'PNG'); return uit.getvalue()
+PLAATS_EN = {'ruim': 'Hold', 'luik': 'Hatch cover', 'dek': 'Deck'}
+VERKLARING = 'The undersigned acknowledges receipt of the findings below, for receipt only and without admission of liability.'
+for k, naam, functie, reden, uur, minuut in [(1, 'Capt. R. Lindqvist', 'kapitein', None, 11, 5),
+                                             (2, 'L. Verbeke', 'terminal', 'Will only sign after consulting the terminal manager.', 11, 20)]:
+    moment = json.dumps({'v': 1, 'dossier': 'HQ-2026-0003', 'clausule': 'voor_ontvangst', 'verklaring': VERKLARING, 'naam': naam, 'functie': functie,
+                         'vaststellingen': [{'id': VS[('3', s_)], 'plaats': PLAATS_EN[pl], 'plaatsNummer': nr, 'ernst': er, 'omschrijving': om_}
+                                            for (k_, s_, pl, nr, _c, er, om_, *_r) in VASTSTELLINGEN if k_ == '3']},
+                        ensure_ascii=False, separators=(',', ':'))
+    hid = vid(f'handtekening/{k}')
+    op = om(-1, uur, minuut)
+    beeld_sha = sleutel = tekst = None
+    if reden is None:
+        png = krabbel()
+        beeld_sha = hashlib.sha256(png).hexdigest()
+        sleutel = f"bureau-{TENANT_N}/handtekeningen/{D3.replace('-', '')}/{hid.replace('-', '')}_{beeld_sha}.png"
+        (OPSLAG / sleutel).parent.mkdir(parents=True, exist_ok=True)
+        (OPSLAG / sleutel).write_bytes(png)
+        tekst = f"qm1|{beeld_sha}|{op.strftime('%Y-%m-%dT%H:%M:%SZ')}|512723500|43390100|500"
+    sql.append(rij('dossiers.handtekeningen', dict(id=hid, klant_id=vid(f'klant/handtekening/{k}'), dossier_id=D3, naam=naam, functie=functie,
+               partij_id=None, clausule='voor_ontvangst', verklaring=VERKLARING, geweigerd=reden is not None, reden=reden, momentopname=moment,
+               momentopname_sha256=hashlib.sha256(moment.encode()).hexdigest(), beeld_sha256=beeld_sha, storage_key=sleutel, bewijstekst=tekst,
+               lat_e7=512723500, lon_e7=43390100, nauwkeurigheid_cm=500, kanaal='toestel', gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
+               opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=3), toestel=TOESTEL)))
 
 # ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
 #    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──

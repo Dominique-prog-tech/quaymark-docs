@@ -76,6 +76,22 @@ Then each party of a participant who attended gives its position: **agreed**, **
 
 If you change the survey after recording it, record a new version. An answer belongs to the version the party saw: for a new version it answers again.
 
+### Signatures
+
+On site, the surveyor has the master, the chief officer or the terminal sign a statement: in the field app with the signature icon at the top of the file, or at the office on the **Signatures** tab with **Get signature** (for example on a tablet at the counter).
+
+1. Fill in the **Name of the signatory**, choose the **Position** and, if needed, the party on whose behalf they sign.
+2. Choose the **Clause**: **For receipt only, without admission of liability** (default), **Agreed** or **Sighted**. The statement is shown in the language of the file, with the findings at that moment.
+3. Have them sign under **Sign below** (**Clear** wipes the area) and click **Save signature**. If they refuse, tick **Refuses to sign**, fill in the **Reason for refusal** and click **Save refusal**.
+
+![The Get signature page with Statement, Findings at the time of signing and Sign below](images/dossier-tekenen-en.png "Get signature")
+
+A signature is only added, never changed. Quaymark keeps what was signed: the statement and the list of findings at that moment (the **snapshot**, with its fingerprint), the image of the signature with the time and, on the device, the position. A finding added or corrected later does not change a signature already given. In the field app it works without a connection: the signature is sent once there is one.
+
+The **Signatures** tab shows them all, with the image or the refusal. Under **Findings at the time of signing** you find the snapshot, also as a file. In the report they appear with the marker `{{handtekeningen}}` (see [Templates](sjablonen.md)), and they are part of the evidence package.
+
+![The Signatures tab of HQ-2026-0003 with a signature and a refusal](images/dossier-handtekeningen-en.png "The Signatures tab")
+
 ### Report in another language
 
 The texts of the report exist **per language**. At the top of the Report tab you choose the language of the report: clicking a language changes the language of the file and saves it. A tick shows which languages already have text. If you have unsaved text, save the sections first.

@@ -76,6 +76,22 @@ Daarna spreekt elke partij van een aanwezige deelnemer zich uit: **akkoord**, **
 
 Wijzigt u de survey na het vastleggen, leg dan een nieuwe versie vast. Een antwoord hoort bij de versie die de partij zag: op een nieuwe versie antwoordt ze opnieuw.
 
+### Handtekeningen
+
+Ter plaatse laat de surveyor de kapitein, de chief officer of de terminal een verklaring tekenen: in de veldapp met het tekenicoon bovenaan het dossier, of op kantoor op het tabblad **Handtekeningen** met **Laten tekenen** (bijvoorbeeld op een tablet aan de balie).
+
+1. Vul de **Naam van de ondertekenaar** in, kies de **Functie** en eventueel de partij namens wie hij tekent.
+2. Kies de **Clausule**: **Voor ontvangst, zonder erkenning van aansprakelijkheid** (standaard), **Voor akkoord** of **Gezien**. De verklaring staat erbij in de taal van het dossier, met de vaststellingen van dat moment.
+3. Laat tekenen onder **Teken hieronder** (**Opnieuw tekenen** wist het vlak) en klik op **Handtekening bewaren**. Weigert hij, vink dan **Weigert te tekenen** aan, vul de **Reden van de weigering** in en klik op **Weigering bewaren**.
+
+![De pagina Laten tekenen met de verklaring, de vaststellingen en het tekenvlak](images/dossier-tekenen.png "Laten tekenen")
+
+Een handtekening wordt enkel toegevoegd, nooit gewijzigd. Quaymark bewaart wat er getekend werd: de verklaring en de lijst vaststellingen van dat moment (de **momentopname**, met haar vingerafdruk), het beeld van de handtekening met tijd en, op het toestel, de positie. Een vaststelling die later bijkomt of rechtgezet wordt, verandert een gegeven handtekening niet. In de veldapp werkt het zonder bereik: de handtekening vertrekt zodra er verbinding is.
+
+Het tabblad **Handtekeningen** toont ze allemaal, met het beeld of de weigering. Onder **Vaststellingen op het moment van tekenen** staat de momentopname, ook als bestand. In het rapport komen ze met de markering `{{handtekeningen}}` (zie [Sjablonen](sjablonen.md)), en ze gaan mee in het bewijspakket.
+
+![Het tabblad Handtekeningen van HQ-2026-0003 met een handtekening en een weigering](images/dossier-handtekeningen.png "Het tabblad Handtekeningen")
+
 ### Rapport in een andere taal
 
 De teksten van het rapport staan **per taal**. Bovenaan het tabblad Rapport kiest u de taal van het rapport: een klik op een taal wisselt de taal van het dossier en bewaart het. Een vinkje toont welke talen al tekst hebben. Heeft u nog onbewaarde tekst, dan bewaart u eerst de rubrieken.

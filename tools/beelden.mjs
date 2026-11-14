@@ -82,6 +82,11 @@ const SCHOTEN = () => [
   { naam: 'dossier-spraaknotities', route: '/dossiers', hoogte: 1000, verwacht: /Hatch cover 3 rubber packing torn/,
     na: async p => { await dossier('HQ-2026-0003', 'rapport')(p); await p.locator('[data-spraaknotities]').scrollIntoViewIfNeeded(); await p.waitForTimeout(400); } },
   { naam: 'dossier-gezamenlijk', route: '/dossiers', hoogte: 1100, verwacht: /Hold 3 and hatch cover 3/, na: dossier('HQ-2026-0003', 'gezamenlijk') },
+  // V5 (14/11/2026): de handtekeningen (een handtekening en een weigering uit de demodata) en de pagina om te laten tekenen, met een naam ingevuld.
+  { naam: 'dossier-handtekeningen', route: '/dossiers', verwacht: /Capt\. R\. Lindqvist/, na: dossier('HQ-2026-0003', 'handtekeningen') },
+  { naam: 'dossier-tekenen', route: '/dossiers', hoogte: 1250, verwacht: Q('teken_hieronder'),
+    na: async p => { await openRij(p, 'HQ-2026-0003'); await p.goto(p.url().split('?')[0] + '/tekenen'); await p.waitForLoadState('networkidle');
+      await p.locator('[data-tekenen] input').first().fill('Capt. R. Lindqvist'); } },
   { naam: 'dossier-schade', route: '/dossiers', hoogte: 1250, verwacht: /Hatch cover rubber packing/, na: dossier('HQ-2026-0003', 'schade') },
   { naam: 'claims', route: '/claims', verwacht: /Cargo claim from receivers/, magKortZijn: 'twee open claims' },
   { naam: 'dossier-vier-ogen', route: '/dossiers', hoogte: 1100, verwacht: /new damage in hold 2 added/, na: dossier('ZB-2026-0002', 'rapport') },

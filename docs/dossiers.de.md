@@ -76,6 +76,22 @@ Danach äußert sich jede Partei eines anwesenden Teilnehmers: **einverstanden**
 
 Ändern Sie die Besichtigung nach dem Festhalten, halten Sie eine neue Version fest. Eine Antwort gehört zu der Version, die die Partei gesehen hat: Auf eine neue Version antwortet sie erneut.
 
+### Unterschriften
+
+Vor Ort lässt der Besichtiger den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Feld-App mit dem Unterschriftssymbol oben in der Akte, oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
+
+1. Geben Sie den **Name des Unterzeichners** ein, wählen Sie die **Funktion** und gegebenenfalls die Partei, in deren Namen er unterschreibt.
+2. Wählen Sie die **Klausel**: **Zum Empfang, ohne Anerkennung einer Haftung** (Standard), **Einverstanden** oder **Gesehen**. Die Erklärung steht in der Sprache der Akte dabei, mit den Feststellungen dieses Moments.
+3. Lassen Sie unter **Unten unterschreiben** unterschreiben (**Neu unterschreiben** leert die Fläche) und klicken Sie auf **Unterschrift speichern**. Verweigert er, haken Sie **Verweigert die Unterschrift** an, geben den **Grund der Verweigerung** ein und klicken auf **Verweigerung speichern**.
+
+![Unterschreiben lassen mit Erklärung und Feststellungen](images/dossier-tekenen-de.png "Unterschreiben lassen")
+
+Eine Unterschrift wird nur hinzugefügt, nie geändert. Quaymark bewahrt, was unterschrieben wurde: die Erklärung und die Liste der Feststellungen dieses Moments (die **Momentaufnahme**, mit ihrem Fingerabdruck), das Bild der Unterschrift mit der Uhrzeit und, auf dem Gerät, die Position. Eine später hinzugefügte oder berichtigte Feststellung ändert eine gegebene Unterschrift nicht. In der Feld-App funktioniert es ohne Netz: die Unterschrift wird gesendet, sobald eine Verbindung besteht.
+
+Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweigerung. Unter **Feststellungen zum Zeitpunkt der Unterschrift** steht die Momentaufnahme, auch als Datei. Im Bericht erscheinen sie mit der Markierung `{{handtekeningen}}` (siehe [Vorlagen](sjablonen.md)), und sie gehören zum Beweispaket.
+
+![Unterschriften mit Kapitän und Terminal](images/dossier-handtekeningen-de.png "Die Registerkarte Unterschriften")
+
 ### Bericht in einer anderen Sprache
 
 Die Texte des Berichts gibt es **je Sprache**. Oben in der Registerkarte Bericht wählen Sie die Sprache des Berichts: Ein Klick auf eine Sprache ändert die Sprache der Akte und speichert sie. Ein Häkchen zeigt, welche Sprachen schon Text haben. Haben Sie noch ungespeicherten Text, speichern Sie zuerst die Abschnitte.

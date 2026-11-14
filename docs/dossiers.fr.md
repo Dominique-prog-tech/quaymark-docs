@@ -76,6 +76,22 @@ Ensuite, chaque partie d'un participant présent se prononce : **d'accord**, **d
 
 Si vous modifiez l'expertise après l'enregistrement, enregistrez une nouvelle version. Une réponse appartient à la version que la partie a vue : sur une nouvelle version, elle répond à nouveau.
 
+### Signatures
+
+Sur place, l'expert fait signer une déclaration au capitaine, au second capitaine ou au terminal : dans l'application mobile avec l'icône de signature en haut du dossier, ou au bureau dans l'onglet **Signatures** avec **Faire signer** (par exemple sur une tablette au comptoir).
+
+1. Indiquez le **Nom du signataire**, choisissez la **Fonction** et éventuellement la partie au nom de laquelle il signe.
+2. Choisissez la **Clause** : **Pour réception, sans reconnaissance de responsabilité** (par défaut), **Pour accord** ou **Vu**. La déclaration s'affiche dans la langue du dossier, avec les constatations de ce moment.
+3. Faites signer sous **Signez ci-dessous** (**Recommencer** efface la zone) et cliquez sur **Enregistrer la signature**. S'il refuse, cochez **Refuse de signer**, indiquez le **Motif du refus** et cliquez sur **Enregistrer le refus**.
+
+![La page Faire signer avec la déclaration, les constatations et la zone de signature](images/dossier-tekenen-fr.png "Faire signer")
+
+Une signature est uniquement ajoutée, jamais modifiée. Quaymark conserve ce qui a été signé : la déclaration et la liste des constatations de ce moment (l'**instantané**, avec son empreinte), l'image de la signature avec l'heure et, sur l'appareil, la position. Une constatation ajoutée ou rectifiée ensuite ne change pas une signature donnée. Dans l'application mobile, cela fonctionne sans réseau : la signature part dès qu'il y a une connexion.
+
+L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Constatations au moment de la signature** figure l'instantané, aussi en fichier. Dans le rapport, elles apparaissent avec le marqueur `{{handtekeningen}}` (voir [Modèles](sjablonen.md)), et elles font partie du dossier de preuves.
+
+![L'onglet Signatures de HQ-2026-0003 avec une signature et un refus](images/dossier-handtekeningen-fr.png "L'onglet Signatures")
+
 ### Rapport dans une autre langue
 
 Les textes du rapport existent **par langue**. En haut de l'onglet Rapport, vous choisissez la langue du rapport : un clic sur une langue change la langue du dossier et l'enregistre. Une coche indique les langues qui ont déjà du texte. Si vous avez du texte non enregistré, enregistrez d'abord les rubriques.

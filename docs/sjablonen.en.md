@@ -32,6 +32,7 @@ One report template: the versions per language and the Word document itself.
 - `{{draftsurvey}}` puts the draft survey in the report: the result and the table with initial and final survey. Without a measurement, nothing remains.
 - `{{bunker}}` puts the bunker survey in the report: per product before, after, delivered and the difference with the delivery note, and the table per tank. Without a sounding nothing remains.
 - `{{aanbevelingen}}` puts the checklist items with a deficiency in the report, by priority: item, result, finding and recommendation. Without a deficiency nothing remains. The checklist table itself also has a column with the recommendation.
+- `{{handtekeningen}}` puts the signatures taken on site in the report: per signature the clause, the statement, the image (or the refusal with the reason), who and when, and the fingerprint of the snapshot. Without a signature nothing remains.
 - `{{gezamenlijk}}` puts the joint surveys in the report: for each recorded survey the date, the place and the version, the position of each party (who, when and the comments), and the participants. Without a recorded joint survey, nothing remains. An office that already had a template adds the marker itself.
 - The **Statement of facts** template determines the look of that document, in the four languages.
 - The **Draft survey report** template determines the look of that document, in the four languages.
