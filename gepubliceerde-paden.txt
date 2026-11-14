@@ -78,6 +78,10 @@ offertes.de.md
 offertes.en.md
 offertes.fr.md
 offertes.md
+opdrachtbevestiging.de.md
+opdrachtbevestiging.en.md
+opdrachtbevestiging.fr.md
+opdrachtbevestiging.md
 planning.de.md
 planning.en.md
 planning.fr.md
