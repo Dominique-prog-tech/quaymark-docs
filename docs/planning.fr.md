@@ -1,5 +1,5 @@
 ---
-description: "Le planning par expert : planifier les dossiers en les glissant, absences, jours fériés et avertissements."
+description: "Le planning par expert : planifier les dossiers en les glissant, absences, jours fériés, avertissements et votre propre agenda."
 ---
 
 # Planning
@@ -43,6 +43,31 @@ Les jours fériés légaux du pays de vos établissements y figurent d'office, e
 Si un dossier tombe sur une absence de l'expert, un jour férié ou un autre dossier du même expert, c'est permis : un navire n'attend pas la fin d'un jour férié, et deux courtes missions dans le même port vont ensemble. Le bloc devient alors rouge, et le planning indique pourquoi.
 
 Si le type d'expertise exige une habilitation que l'expert n'a pas de valide ce jour-là, le planning avertit de la même manière. Voir [Habilitations](bevoegdheden.md).
+
+## Mon agenda
+
+En haut du planning se trouve le bloc **Mon agenda**. Il place vos propres dossiers planifiés et vos gardes dans votre agenda Google ou Microsoft (Outlook).
+
+1. Cliquez sur **Connecter avec Google** ou **Connecter avec Microsoft**.
+2. Connectez-vous et donnez votre autorisation. Vous revenez ensuite automatiquement au planning.
+3. Votre compte contient maintenant un agenda séparé **Quaymark**.
+
+Ce qu'il contient :
+
+- **Chaque dossier dont vous êtes l'expert**, dès qu'il a une heure, de **Prévu le** à **Prévu jusqu'au** (sans heure de fin, deux heures). Le titre est le numéro et le type d'expertise ; la description mentionne le navire, le port et un lien vers le dossier. Le donneur d'ordre et les montants n'y figurent pas.
+- **Vos gardes**, avec l'implantation.
+- D'un mois en arrière à douze mois en avant. Un dossier clôturé reste ; un dossier annulé ou supprimé disparaît.
+
+Quaymark met votre agenda à jour après chaque modification du planning, d'un dossier ou des gardes. **Mettre à jour** le fait immédiatement. Cela fonctionne dans un seul sens : ce que vous modifiez dans Google ou Outlook sur un rendez-vous de Quaymark ne revient pas, et la mise à jour suivante le rétablit.
+
+Les heures sont en heure belge. Si une implantation se trouve dans un autre fuseau horaire, son heure locale figure dans la description.
+
+Le bloc vous avertit lorsque vous seul pouvez résoudre un problème :
+
+- **Autorisation expirée** : reconnectez-vous avec le bouton du message. D'ici là, votre agenda n'est plus mis à jour.
+- **Votre agenda deviendrait vide** : si vous aviez au moins dix rendez-vous et qu'il n'y en a soudain plus aucun, Quaymark ne le transmet qu'après votre confirmation.
+
+**Déconnecter** vide d'abord l'agenda Quaymark, puis rompt la connexion. Vous supprimez vous-même l'agenda vide dans Google ou Outlook.
 
 ## Voir aussi
 

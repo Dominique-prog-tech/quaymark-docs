@@ -1,5 +1,5 @@
 ---
-description: "Die Planung pro Sachverständigen: Akten durch Ziehen einplanen, Abwesenheiten, Feiertage und Warnungen."
+description: "Die Planung pro Sachverständigen: Akten durch Ziehen einplanen, Abwesenheiten, Feiertage, Warnungen und Ihr eigener Kalender."
 ---
 
 # Planung
@@ -43,6 +43,31 @@ Die gesetzlichen Feiertage des Landes Ihrer Niederlassungen erscheinen von selbs
 Fällt eine Akte auf eine Abwesenheit des Sachverständigen, einen Feiertag oder eine andere Akte desselben Sachverständigen, ist das erlaubt: Ein Schiff wartet nicht auf das Ende eines Feiertags, und zwei kurze Aufträge im selben Hafen passen zusammen. Der Block wird dann rot, und die Planung sagt warum.
 
 Verlangt die Besichtigungsart eine Qualifikation, die der Besichtiger an diesem Tag nicht gültig hat, warnt die Planung auf dieselbe Weise. Siehe [Qualifikationen](bevoegdheden.md).
+
+## Mein Kalender
+
+Oben in der Planung steht der Block **Mein Kalender**. Damit übernehmen Sie Ihre eigenen geplanten Akten und Bereitschaften in Ihren Kalender bei Google oder Microsoft (Outlook).
+
+1. Klicken Sie auf **Mit Google verbinden** oder **Mit Microsoft verbinden**.
+2. Melden Sie sich an und erteilen Sie die Berechtigung. Danach kehren Sie automatisch zur Planung zurück.
+3. In Ihrem Konto steht jetzt ein separater Kalender **Quaymark**.
+
+Was er enthält:
+
+- **Jede Akte, deren Sachverständiger Sie sind**, sobald sie einen Zeitpunkt hat, von **Geplant am** bis **Geplant bis** (ohne Endzeit zwei Stunden). Der Titel ist die Nummer und die Besichtigungsart; die Beschreibung nennt das Schiff, den Hafen und einen Link zur Akte. Auftraggeber und Beträge stehen nicht darin.
+- **Ihre Bereitschaften**, mit der Niederlassung.
+- Von einem Monat zurück bis zwölf Monate voraus. Eine abgeschlossene Akte bleibt; eine stornierte oder gelöschte Akte verschwindet.
+
+Quaymark aktualisiert Ihren Kalender nach jeder Änderung in der Planung, an einer Akte oder bei den Bereitschaften. **Jetzt aktualisieren** tut es sofort. Es funktioniert nur in eine Richtung: Was Sie in Google oder Outlook an einem Termin von Quaymark ändern, kommt nicht zurück, und die nächste Aktualisierung stellt es wieder richtig.
+
+Die Zeiten stehen in belgischer Zeit. Liegt eine Niederlassung in einer anderen Zeitzone, steht ihre Ortszeit in der Beschreibung.
+
+Der Block warnt, wenn nur Sie etwas lösen können:
+
+- **Berechtigung abgelaufen**: Verbinden Sie sich erneut mit der Schaltfläche in der Meldung. Bis dahin wird Ihr Kalender nicht aktualisiert.
+- **Ihr Kalender würde leer**: Hatten Sie mindestens zehn Termine und plötzlich keinen mehr, überträgt Quaymark das erst nach Ihrer Bestätigung.
+
+**Trennen** leert zuerst den Kalender Quaymark und trennt dann die Verbindung. Den leeren Kalender löschen Sie selbst in Google oder Outlook.
 
 ## Siehe auch
 

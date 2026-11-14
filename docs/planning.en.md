@@ -1,5 +1,5 @@
 ---
-description: "The schedule per surveyor: scheduling files by dragging them, absences, public holidays and warnings."
+description: "The schedule per surveyor: scheduling files by dragging them, absences, public holidays, warnings and your own calendar."
 ---
 
 # Schedule
@@ -43,6 +43,31 @@ The public holidays of the country of your offices appear automatically, at the 
 If a file falls on an absence of the surveyor, a public holiday or another file of the same surveyor, that is allowed: a vessel does not wait for a holiday to end, and two short jobs in the same port go together. The block then turns red, and the schedule says why.
 
 If the survey type requires a qualification the surveyor does not hold validly on that day, the schedule warns in the same way. See [Qualifications](bevoegdheden.md).
+
+## My calendar
+
+At the top of the schedule is the **My calendar** block. It puts your own scheduled files and on-call duty in your Google or Microsoft (Outlook) calendar.
+
+1. Click **Connect with Google** or **Connect with Microsoft**.
+2. Sign in and give permission. You then return to the schedule automatically.
+3. Your account now has a separate **Quaymark** calendar.
+
+What it contains:
+
+- **Every file you are the surveyor of**, as soon as it has a time, from **Scheduled for** to **Scheduled until** (without an end time, two hours). The title is the number and the survey type; the description gives the vessel, the port and a link to the file. The principal and amounts are not included.
+- **Your on-call duty**, with the office.
+- From one month back to twelve months ahead. A closed file stays; a cancelled or deleted file disappears.
+
+Quaymark updates your calendar after every change to the schedule, a file or the on-call duty. **Update now** does it straight away. It works one way only: what you change in Google or Outlook on a Quaymark appointment does not come back, and the next update puts it right again.
+
+Times are in Belgian time. If an office is in another time zone, its local time is added to the description.
+
+The block warns you when only you can solve something:
+
+- **Permission expired**: connect again with the button in the message. Until then, your calendar is not updated.
+- **Your calendar would become empty**: if you had at least ten appointments and suddenly have none, Quaymark only sends that after you confirm.
+
+**Disconnect** first empties the Quaymark calendar, then breaks the connection. You delete the empty calendar yourself in Google or Outlook.
 
 ## See also
 

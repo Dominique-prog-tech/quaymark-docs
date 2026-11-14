@@ -1,5 +1,5 @@
 ---
-description: "De planning per surveyor: dossiers inplannen door ze te slepen, afwezigheden, feestdagen en waarschuwingen."
+description: "De planning per surveyor: dossiers inplannen door ze te slepen, afwezigheden, feestdagen, waarschuwingen en uw eigen agenda."
 ---
 
 # Planning
@@ -43,6 +43,31 @@ De wettelijke feestdagen van het land van uw vestigingen staan er vanzelf, boven
 Valt een dossier op een afwezigheid van de surveyor, op een feestdag of over een ander dossier van dezelfde surveyor, dan mag het: een schip wacht niet op een feestdag, en twee korte opdrachten in dezelfde haven gaan samen. Het blok kleurt dan rood, en de planning zegt waarom.
 
 Vraagt het soort survey een bevoegdheid die de surveyor op die dag niet geldig heeft, dan waarschuwt de planning op dezelfde manier. Zie [Bevoegdheden](bevoegdheden.md).
+
+## Mijn agenda
+
+Bovenaan de planning staat het blok **Mijn agenda**. Daarmee zet u uw eigen geplande dossiers en wachtdiensten in uw agenda van Google of Microsoft (Outlook).
+
+1. Klik op **Koppelen met Google** of **Koppelen met Microsoft**.
+2. Meld u aan en geef toestemming. U komt daarna vanzelf terug op de planning.
+3. In uw agenda staat nu een aparte agenda **Quaymark**.
+
+Wat erin staat:
+
+- **Elk dossier waarvan u de surveyor bent**, zodra het een tijdstip heeft, van **Gepland op** tot **Gepland tot** (zonder eindtijd twee uur). De titel is het nummer en het soort survey; de omschrijving noemt het schip, de haven en een link naar het dossier. De opdrachtgever en bedragen staan er niet in.
+- **Uw wachtdiensten**, met de vestiging.
+- Een maand terug tot twaalf maanden vooruit. Een afgesloten dossier blijft staan; een geannuleerd of verwijderd dossier verdwijnt.
+
+Quaymark werkt uw agenda bij na elke wijziging in de planning, op een dossier of in de wachtdiensten. **Nu bijwerken** doet het meteen. Het werkt in één richting: wat u in Google of Outlook aan een afspraak van Quaymark wijzigt, komt niet terug, en de volgende bijwerking zet het weer recht.
+
+De tijden staan in Belgische tijd. Ligt een vestiging in een andere tijdzone, dan staat haar lokale tijd erbij in de omschrijving.
+
+Het blok waarschuwt als iets enkel door u op te lossen is:
+
+- **Toestemming verlopen**: koppel opnieuw met de knop in de melding. Tot dan wordt uw agenda niet bijgewerkt.
+- **Uw agenda zou leeg worden**: had u minstens tien afspraken en zijn het er plots nul, dan stuurt Quaymark dat pas door als u het bevestigt.
+
+**Ontkoppelen** maakt de agenda Quaymark eerst leeg en verbreekt dan de koppeling. De lege agenda zelf verwijdert u in Google of Outlook.
 
 ## Zie ook
 
