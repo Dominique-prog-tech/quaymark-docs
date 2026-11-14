@@ -89,7 +89,8 @@ sql = ['begin;']
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
-for t in ['dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
+for t in ['dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
+          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
@@ -392,6 +393,18 @@ for k, oms, cat, herst, offerte, ger, aanv, afs in POSTEN:
     sql.append(rij('dossiers.begroting_posten', dict(id=vid(f'begrotingpost/{k}'), dossier_id=D3, volgorde=k, omschrijving=oms, categorie=cat,
                hersteller_id=herst, offertenummer=offerte, offerte_bijlage_id=None, geraamd=ger, aanvaard=aanv, afschrijving=afs, opmerking=None,
                created_at=om(0, 11, k))))
+
+# ── Gezamenlijke survey (D6, 14/11/2026) op HQ-2026-0003: de surveyor, de reder, de tegenexpert en de P&I-club samen aan boord, drie vaststellingen
+#    gedeeld. NIET vastgelegd: een vastlegging is een uitgegeven document met PDF en SHA-256, en dat komt enkel uit de app (zoals een factuur).
+#    Deelnemers en vaststellingen als JSON zoals de app ze bewaart (camelCase); partijId = de id van de partij in het dossier. ──
+deelnemers = [dict(naam=SURVEYOR_NAAM, functie='Surveyor', partijId=None, aanwezig=True),
+              dict(naam='Capt. P. Olsen', functie='Master', partijId=None, aanwezig=True),
+              dict(naam='Marc Dewinter', functie='Superintendent', partijId=vid('partij/3/1'), aanwezig=True),
+              dict(naam='Claire Fontaine', functie='Surveyor', partijId=vid('partij/3/6'), aanwezig=True),
+              dict(naam='Erik Janssens', functie="Club correspondent", partijId=vid('partij/3/3'), aanwezig=True)]
+sql.append(rij('dossiers.gezamenlijke_surveys', dict(id=vid('gezamenlijk/1'), dossier_id=D3, op=om(-1, 9), plaats='Hold 3 and hatch cover 3',
+           opmerking='Joint inspection with all interested parties before the start of repairs.', deelnemers=deelnemers,
+           vaststellingen=[VS[('3', 'a')], VS[('3', 'b')], VS[('3', 'c')]], created_at=om(-1, 12), archived_on_utc=None)))
 
 # ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
 #    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──

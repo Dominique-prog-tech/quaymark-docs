@@ -54,6 +54,24 @@ Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met 
 
 ![Het tabblad Rapport met Brieven en certificaten, Bewijspakket en de rubrieken Inleiding en Werkwijze](images/dossier-rapport.png "Het tabblad Rapport")
 
+### Gezamenlijke survey
+
+Op het tabblad **Gezamenlijk** legt u een gezamenlijke survey vast: wie er namens welke partij bij was, en welke vaststellingen u samen deelt.
+
+![Het tabblad Gezamenlijk van HQ-2026-0003 met een gezamenlijke survey, haar deelnemers en de knop Vastleggen](images/dossier-gezamenlijk.png "Het tabblad Gezamenlijk")
+
+1. Klik op **Nieuwe gezamenlijke survey**. Vul de datum en het uur in (in de tijd van de vestiging), de plaats en een opmerking.
+2. Voeg de deelnemers toe. **Eén per partij** zet een rij klaar voor elke partij van het dossier; u vult de naam en de functie in. Wie er namens niemand was (de kapitein, het bureau), laat u zonder partij. Was iemand er toch niet, vink dan **Aanwezig** uit.
+3. Kies de **gedeelde vaststellingen**. Het nummer is dat van het rapport. Bewaar.
+4. Terug op het tabblad: **Vastleggen** maakt het document *Gezamenlijke vaststelling*, met zijn vingerafdruk (SHA-256). Het staat bij de documenten van het dossier en gaat mee in het bewijspakket. **Voorbeeld (PDF)** toont het eerst, zonder iets te bewaren.
+
+Daarna spreekt elke partij van een aanwezige deelnemer zich uit: **akkoord**, **akkoord met voorbehoud** (met een toelichting) of **niet akkoord**.
+
+- **Link versturen** stuurt de partij een link (via ADM One). Ze leest de gezamenlijke vaststelling, kiest haar standpunt en bevestigt met haar naam en een vinkje. Het antwoord komt vanzelf op het tabblad en in het journaal.
+- **Antwoord registreren** legt een antwoord vast dat het bureau anders ontving, bijvoorbeeld op de getekende papieren versie. Voeg die toe als bijlage.
+
+Wijzigt u de survey na het vastleggen, leg dan een nieuwe versie vast. Een antwoord hoort bij de versie die de partij zag: op een nieuwe versie antwoordt ze opnieuw.
+
 ### Rapport in een andere taal
 
 De teksten van het rapport staan **per taal**. Bovenaan het tabblad Rapport kiest u de taal van het rapport: een klik op een taal wisselt de taal van het dossier en bewaart het. Een vinkje toont welke talen al tekst hebben. Heeft u nog onbewaarde tekst, dan bewaart u eerst de rubrieken.

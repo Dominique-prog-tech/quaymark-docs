@@ -30,6 +30,7 @@ Eine Berichtsvorlage: die Versionen pro Sprache und das Word-Dokument selbst.
 - `{{tijdlijn}}` setzt das Statement of Facts in den Bericht: die Zusammenfassung und die Ereignisse. Ohne Ereignisse bleibt nichts stehen.
 - `{{schadebegroting}}` setzt die Schadenschätzung in den Bericht: die Posten mit geschätztem und akzeptiertem Betrag, dem Abzug und dem Nettobetrag, die Summen, die empfohlene Reserve und die Einigung, falls es eine gibt. Ohne Posten bleibt nichts stehen.
 - `{{draftsurvey}}` setzt den Draft Survey in den Bericht: das Ergebnis und die Tabelle mit Anfangs- und Endmessung. Ohne Messung bleibt nichts stehen.
+- `{{gezamenlijk}}` setzt die gemeinsamen Besichtigungen in den Bericht: für jede festgehaltene Besichtigung Datum, Ort und Version, den Standpunkt jeder Partei (wer, wann und die Erläuterung), und die Teilnehmer. Ohne festgehaltene gemeinsame Besichtigung bleibt nichts stehen. Ein Büro, das schon eine Vorlage hatte, fügt die Markierung selbst hinzu.
 - Die Vorlage **Statement of Facts** bestimmt das Aussehen dieses Dokuments, in den vier Sprachen.
 - Die Vorlage **Draft Survey Report** bestimmt das Aussehen dieses Dokuments, in den vier Sprachen.
 - Die Vorlage **Rechnung** bestimmt das Aussehen der Rechnungen und Gutschriften, in den vier Sprachen. Der Zahlungs-QR-Code steht an der Stelle des Feldes BetaalQr. Siehe [Rechnungen](facturen.md).

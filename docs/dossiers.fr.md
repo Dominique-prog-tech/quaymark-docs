@@ -54,6 +54,24 @@ Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec 
 
 ![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
 
+### Expertise contradictoire
+
+Dans l'onglet **Contradictoire**, vous enregistrez une expertise contradictoire : qui était présent pour quelle partie, et quelles constatations vous partagez.
+
+![L'onglet Contradictoire de HQ-2026-0003 avec une expertise contradictoire, ses participants et le bouton Enregistrer](images/dossier-gezamenlijk-fr.png "L'onglet Contradictoire")
+
+1. Cliquez sur **Nouvelle expertise contradictoire**. Indiquez la date et l'heure (dans l'heure de l'implantation), le lieu et une remarque.
+2. Ajoutez les participants. **Un par partie** prépare une ligne pour chaque partie du dossier ; vous indiquez le nom et la fonction. Laissez sans partie ceux qui ne représentaient personne (le capitaine, le bureau). Si quelqu'un n'était finalement pas là, décochez **Présent**.
+3. Choisissez les **constatations partagées**. Le numéro est celui du rapport. Enregistrez.
+4. De retour dans l'onglet : **Enregistrer** crée le document *Constat contradictoire*, avec son empreinte (SHA-256). Il figure parmi les documents du dossier et accompagne le dossier de preuves. **Aperçu (PDF)** le montre d'abord, sans rien enregistrer.
+
+Ensuite, chaque partie d'un participant présent se prononce : **d'accord**, **d'accord sous réserve** (avec un commentaire) ou **pas d'accord**.
+
+- **Envoyer le lien** envoie un lien à la partie (via ADM One). Elle lit le constat contradictoire, choisit sa position et confirme avec son nom et une case à cocher. La réponse apparaît d'elle-même dans l'onglet et dans le journal.
+- **Enregistrer la réponse** consigne une réponse que le bureau a reçue autrement, par exemple sur la version papier signée. Ajoutez-la en pièce jointe.
+
+Si vous modifiez l'expertise après l'enregistrement, enregistrez une nouvelle version. Une réponse appartient à la version que la partie a vue : sur une nouvelle version, elle répond à nouveau.
+
 ### Rapport dans une autre langue
 
 Les textes du rapport existent **par langue**. En haut de l'onglet Rapport, vous choisissez la langue du rapport : un clic sur une langue change la langue du dossier et l'enregistre. Une coche indique les langues qui ont déjà du texte. Si vous avez du texte non enregistré, enregistrez d'abord les rubriques.

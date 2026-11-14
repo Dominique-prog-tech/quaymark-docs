@@ -54,6 +54,24 @@ On the **Report** tab you write the text of the report per section, with simple 
 
 ![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
 
+### Joint survey
+
+On the **Joint survey** tab you record a joint survey: who attended on behalf of which party, and which findings you share.
+
+![The Joint survey tab of HQ-2026-0003 with a joint survey, its attendees and the Record button](images/dossier-gezamenlijk-en.png "The Joint survey tab")
+
+1. Click **New joint survey**. Fill in the date and time (in the office's time), the place and a note.
+2. Add the participants. **One per party** prepares a row for each party of the file; you fill in the name and position. Leave those who represented no one (the master, the office) without a party. If someone did not attend after all, untick **Present**.
+3. Choose the **shared findings**. The number is the one in the report. Save.
+4. Back on the tab: **Record** creates the document *Joint survey statement*, with its fingerprint (SHA-256). It is listed with the documents of the file and goes into the evidence package. **Preview (PDF)** shows it first, without saving anything.
+
+Then each party of a participant who attended gives its position: **agreed**, **agreed with reservation** (with comments) or **not agreed**.
+
+- **Send link** sends the party a link (via ADM One). It reads the joint survey statement, chooses its position and confirms with its name and a tick box. The answer appears on the tab and in the log by itself.
+- **Record answer** records an answer the office received otherwise, for example on the signed paper version. Add it as an attachment.
+
+If you change the survey after recording it, record a new version. An answer belongs to the version the party saw: for a new version it answers again.
+
 ### Report in another language
 
 The texts of the report exist **per language**. At the top of the Report tab you choose the language of the report: clicking a language changes the language of the file and saves it. A tick shows which languages already have text. If you have unsaved text, save the sections first.

@@ -30,6 +30,7 @@ One report template: the versions per language and the Word document itself.
 - `{{tijdlijn}}` puts the statement of facts in the report: the summary and the events. Without events, nothing remains.
 - `{{schadebegroting}}` puts the damage estimate in the report: the items with their estimated and accepted amount, the deduction and the net amount, the totals, the recommended reserve and the agreement if there is one. Without items, nothing remains.
 - `{{draftsurvey}}` puts the draft survey in the report: the result and the table with initial and final survey. Without a measurement, nothing remains.
+- `{{gezamenlijk}}` puts the joint surveys in the report: for each recorded survey the date, the place and the version, the position of each party (who, when and the comments), and the participants. Without a recorded joint survey, nothing remains. An office that already had a template adds the marker itself.
 - The **Statement of facts** template determines the look of that document, in the four languages.
 - The **Draft survey report** template determines the look of that document, in the four languages.
 - The **Invoice** template determines the look of invoices and credit notes, in the four languages. The payment QR code takes the place of the BetaalQr field. See [Invoices](facturen.md).

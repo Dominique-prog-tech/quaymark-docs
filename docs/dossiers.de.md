@@ -54,6 +54,24 @@ In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnit
 
 ![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
 
+### Gemeinsame Besichtigung
+
+In der Registerkarte **Gemeinsam** halten Sie eine gemeinsame Besichtigung fest: wer im Namen welcher Partei dabei war, und welche Feststellungen Sie teilen.
+
+![Die Registerkarte Gemeinsam von HQ-2026-0003 mit einer gemeinsamen Besichtigung, ihren Teilnehmern und der Schaltfläche Festhalten](images/dossier-gezamenlijk-de.png "Die Registerkarte Gemeinsam")
+
+1. Klicken Sie auf **Neue gemeinsame Besichtigung**. Geben Sie Datum und Uhrzeit (in der Zeit der Niederlassung), den Ort und eine Bemerkung ein.
+2. Fügen Sie die Teilnehmer hinzu. **Einer pro Partei** bereitet eine Zeile für jede Partei der Akte vor; Sie ergänzen Name und Funktion. Wer niemanden vertrat (der Kapitän, das Büro), bleibt ohne Partei. War jemand doch nicht da, entfernen Sie das Häkchen bei **Anwesend**.
+3. Wählen Sie die **geteilten Feststellungen**. Die Nummer ist die des Berichts. Speichern Sie.
+4. Zurück in der Registerkarte: **Festhalten** erstellt das Dokument *Gemeinsame Feststellung*, mit seinem Fingerabdruck (SHA-256). Es steht bei den Dokumenten der Akte und kommt in das Beweispaket. **Vorschau (PDF)** zeigt es zuerst, ohne etwas zu speichern.
+
+Danach äußert sich jede Partei eines anwesenden Teilnehmers: **einverstanden**, **einverstanden unter Vorbehalt** (mit einer Erläuterung) oder **nicht einverstanden**.
+
+- **Link senden** schickt der Partei einen Link (über ADM One). Sie liest die gemeinsame Feststellung, wählt ihren Standpunkt und bestätigt mit ihrem Namen und einem Häkchen. Die Antwort erscheint von selbst in der Registerkarte und im Journal.
+- **Antwort erfassen** hält eine Antwort fest, die das Büro auf anderem Weg erhielt, zum Beispiel auf der unterschriebenen Papierversion. Fügen Sie sie als Anhang hinzu.
+
+Ändern Sie die Besichtigung nach dem Festhalten, halten Sie eine neue Version fest. Eine Antwort gehört zu der Version, die die Partei gesehen hat: Auf eine neue Version antwortet sie erneut.
+
 ### Bericht in einer anderen Sprache
 
 Die Texte des Berichts gibt es **je Sprache**. Oben in der Registerkarte Bericht wählen Sie die Sprache des Berichts: Ein Klick auf eine Sprache ändert die Sprache der Akte und speichert sie. Ein Häkchen zeigt, welche Sprachen schon Text haben. Haben Sie noch ungespeicherten Text, speichern Sie zuerst die Abschnitte.
