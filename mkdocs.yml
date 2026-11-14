@@ -243,9 +243,10 @@ nav:
       - hoe/klantenportaal.md
       - hoe/logo-in-rapport.md
   - Opdrachten en dossiers:
+      # Dossiers eerst: een klik op het tabblad opent de eerste pagina van de groep (Dominique, 14/11/2026).
+      - dossiers.md
       - aanvragen.md
       - opdrachtbevestiging.md
-      - dossiers.md
       - relaties.md
       - schepen.md
   - Planning en personeel:
