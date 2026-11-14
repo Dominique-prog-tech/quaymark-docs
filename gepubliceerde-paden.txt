@@ -6,6 +6,10 @@ aanvragen.de.md
 aanvragen.en.md
 aanvragen.fr.md
 aanvragen.md
+betalingen.de.md
+betalingen.en.md
+betalingen.fr.md
+betalingen.md
 bevoegdheden.de.md
 bevoegdheden.en.md
 bevoegdheden.fr.md
