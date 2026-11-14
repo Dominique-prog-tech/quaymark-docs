@@ -171,7 +171,8 @@ DOSSIERS = [
     ('6', HQ, 'HQ-2026-0004', 'draft', 3, 'scheldemond', 'NLRTM', 'EMO terminal', 'gepland', 1,
      {'lading': 'Coal', 'soort_meting': 'initieel', 'densiteit': '1.025'}, None),
     ('7', HQ, 'HQ-2026-0005', 'hatch_cover', 4, 1, 'BEGNE', 'Kluizendok', 'nieuw', 3, {'methode': 'ultrasoon', 'aantal_luiken': '4'}, None),
-    ('8', HQ, 'HQ-2026-0006', 'condition', 5, 3, 'FRDKK', None, 'gepland', 2, {'doel': 'P&I', 'weer': None}, 'P&I condition survey before entry'),
+    # 14/11/2026: vandaag in uitvoering (was gepland over twee dagen), zodat de checklist met een staat per punt en de aanbevelingen ingevuld kunnen zijn.
+    ('8', HQ, 'HQ-2026-0006', 'condition', 5, 3, 'FRDKK', None, 'in_uitvoering', 0, {'doel': 'P&I', 'weer': None}, 'P&I condition survey before entry'),
     ('9', HQ, 'HQ-2026-0007', 'bunker', 'pioneer', 'scheldemond', 'BEANR', 'Kaai 526', 'afgesloten', -12,
      {'product': 'VLSFO', 'hoeveelheid': '640', 'temperatuur': '41'}, None),
     ('10', ZB, 'ZB-2026-0003', 'sampling', 6, 2, 'BEGNE', 'Rodenhuizedok', 'in_uitvoering', 0,
@@ -280,6 +281,43 @@ for k, uitslagen in UITSLAG.items():
                    foto_verplicht=punt.get('fotoVerplicht', False), uitslag=uitslag,
                    opmerking='Packing torn, see findings' if uitslag == 'niet_in_orde' else None,
                    gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM, opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=1), toestel=TOESTEL)))
+
+# ── Conditiesurvey (14/11/2026): de soort krijgt de staat in vier stappen en standaardbevindingen per punt (dezelfde als de startcatalogus van de app), en
+#    HQ-2026-0006 een ingevulde checklist met drie gebreken. Verzonnen, algemeen geformuleerd. ──
+def SB(prio, bev, aanb):
+    return {'bevinding': dict(zip(['nl', 'fr', 'en', 'de'], bev)), 'aanbeveling': dict(zip(['nl', 'fr', 'en', 'de'], aanb)), 'prioriteit': prio}
+BEVINDINGEN = {
+    'romp': [SB('drie_maanden', ['Plaatselijke corrosie en verfschade op de romp.', 'Corrosion locale et dégâts de peinture sur la coque.', 'Local corrosion and paint damage on the hull.', 'Örtliche Korrosion und Farbschäden am Rumpf.'],
+                ['Ontroesten en opnieuw in de verf zetten.', 'Décaper et repeindre.', 'Derust and repaint.', 'Entrosten und neu streichen.']),
+             SB('onmiddellijk', ['Deuk met scheur in de huidbeplating.', 'Enfoncement avec fissure dans le bordé.', 'Indent with crack in the shell plating.', 'Beule mit Riss in der Außenhaut.'],
+                ['Herstellen vóór vertrek en laten keuren door het klassebureau.', 'Réparer avant le départ et faire contrôler par la société de classification.', 'Repair before departure and have it surveyed by class.', 'Vor dem Auslaufen instand setzen und von der Klasse prüfen lassen.'])],
+    'machinekamer': [SB('onderhoud', ['Lichte olielekkage aan de hoofdmotor.', 'Légère fuite d\'huile au moteur principal.', 'Minor oil leakage at the main engine.', 'Leichte Ölleckage am Hauptmotor.'],
+                        ['Lek opsporen en dichtingen vervangen bij het volgende onderhoud.', 'Localiser la fuite et remplacer les joints au prochain entretien.', 'Trace the leak and renew the seals at the next maintenance.', 'Leck suchen und Dichtungen bei der nächsten Wartung erneuern.']),
+                     SB('drie_maanden', ['Bilge vervuild met olie.', 'Cale polluée par des hydrocarbures.', 'Bilge contaminated with oil.', 'Bilge mit Öl verschmutzt.'],
+                        ['Bilge reinigen en de oorzaak wegnemen.', 'Nettoyer la cale et éliminer la cause.', 'Clean the bilge and remove the cause.', 'Bilge reinigen und die Ursache beseitigen.'])],
+    'brug': [SB('drie_maanden', ['Kaarten en publicaties niet bijgewerkt.', 'Cartes et publications non tenues à jour.', 'Charts and publications not up to date.', 'Seekarten und Veröffentlichungen nicht aktuell.'],
+                ['Bijwerken met de laatste berichten aan zeevarenden.', 'Mettre à jour avec les derniers avis aux navigateurs.', 'Update with the latest notices to mariners.', 'Mit den neuesten Nachrichten für Seefahrer aktualisieren.'])],
+    'veiligheid': [SB('onmiddellijk', ['Brandblusser met verlopen keuring.', 'Extincteur dont le contrôle est périmé.', 'Fire extinguisher with expired service.', 'Feuerlöscher mit abgelaufener Prüfung.'],
+                      ['Vervangen of laten keuren vóór vertrek.', 'Remplacer ou faire contrôler avant le départ.', 'Replace or have serviced before departure.', 'Vor dem Auslaufen ersetzen oder prüfen lassen.']),
+                   SB('info', ['Reddingsvest zonder licht.', 'Gilet de sauvetage sans feu.', 'Lifejacket without light.', 'Rettungsweste ohne Licht.'],
+                      ['Licht aanbrengen.', 'Équiper d\'un feu.', 'Fit a light.', 'Licht anbringen.'])],
+}
+conditie = [dict(p, bevindingen=BEVINDINGEN[p['sleutel']]) if p['sleutel'] in BEVINDINGEN else p for p in CHECKLIST['condition']]
+sql.append(f"update dossiers.survey_types set schaal = 'staat', checklist = {lit(conditie)} where code = 'condition';")
+# Antwoorden voor HQ-2026-0006 (vandaag): sleutel → (staat, bevinding, aanbeveling, prioriteit), in het Engels (de taal van het dossier).
+STAAT = {'aanmelding': ('goed', None, None, None), 'documenten': ('redelijk', None, None, None),
+         'romp': ('matig', 'Local corrosion and paint damage on the hull, port side forward.', 'Derust and repaint.', 'drie_maanden'),
+         'machinekamer': ('goed', None, None, None),
+         'brug': ('matig', 'Charts and publications not up to date.', 'Update with the latest notices to mariners.', 'drie_maanden'),
+         'veiligheid': ('slecht', 'Fire extinguisher in the engine room with expired service.', 'Replace or have serviced before departure.', 'onmiddellijk')}
+for i, punt in enumerate(conditie):
+    if punt['sleutel'] not in STAAT: continue
+    staat, bev, aanb, prio = STAAT[punt['sleutel']]
+    op = om(0, 9, 5 * i)
+    sql.append(rij('dossiers.checklist_antwoorden', dict(id=vid(f'antwoord/8/{punt["sleutel"]}'), klant_id=vid(f'klant/antwoord/8/{punt["sleutel"]}'),
+               dossier_id=DOS['8'], sleutel=punt['sleutel'], label=punt['label'], verplicht=punt.get('verplicht', False),
+               foto_verplicht=punt.get('fotoVerplicht', False), uitslag=staat, opmerking=bev, prioriteit=prio, aanbeveling=aanb,
+               gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM, opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=1), toestel=TOESTEL)))
 
 # ── Rubriekteksten van het hoofddossier (tabblad Rapport) en standaardteksten van het bureau. ──
 for sleutel, html in [

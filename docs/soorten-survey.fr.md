@@ -28,10 +28,13 @@ Un type d'expertise : ce qui est saisi dans le dossier et ce que l'expert vérif
 - **Délai de conservation (ans)** : combien de temps un dossier clôturé de ce type est conservé. Vide = le délai du pays du site. Voir [Délais de conservation](bewaartermijnen.md).
 - **Draft survey** : coché, les dossiers de ce type reçoivent l'onglet Draft survey avec mesure initiale et finale. Voir [Dossiers](dossiers.md#draft-survey).
 - **Expertise de soutes** : coché, les dossiers de ce type reçoivent l'onglet Soutes avec les sondages avant et après, le bon de livraison et le calcul en tonnes. Voir [Dossiers](dossiers.md#expertise-de-soutes).
+- **Échelle de la check-list** : **conforme / non conforme / s.o.** pour un contrôle, ou un **état** (bon / correct / médiocre / mauvais / s.o.) pour une expertise d'état. Les réponses existantes restent telles qu'elles ont été données.
 - **Champs** : les données qu'un dossier de ce type reçoit en plus des champs fixes. Un champ a une **clé** (minuscules, chiffres et _, fixe car l'application mobile et les rapports y font référence), un type (texte, nombre, date, oui/non, choix ou tableau), un libellé en quatre langues, une unité et un caractère obligatoire ou non. Un **tableau** a des colonnes et éventuellement des lignes fixes, par exemple une ligne par cale.
-- **Check-list** : les points auxquels l'expert répond sur place, chacun avec une clé, un libellé, et l'obligation ou non d'une réponse ou d'une photo.
+- **Check-list** : les points auxquels l'expert répond sur place, chacun avec une clé, un libellé, et l'obligation ou non d'une réponse ou d'une photo. Le lien **Constats standard** ouvre pour chaque point enregistré les défauts courants, chacun avec un constat, une recommandation et une priorité, en quatre langues. L'expert en insère un d'un geste dans sa réponse ; une réponse donnée ne change pas si vous les modifiez ensuite. Les nouveaux points reçoivent ce lien après **Enregistrer**.
 - **Rubriques** : les blocs de texte du rapport (introduction, observations, conclusion …). L'expert les rédige dans l'onglet Rapport du dossier ; un modèle de rapport les affiche avec le marqueur de la colonne voisine. Un nouveau type d'expertise démarre avec les cinq rubriques standard.
 - La flèche **↑** remonte un champ ou un point d'une place. Les modifications des champs et de la check-list ne comptent qu'après **Enregistrer**.
+
+![La page Constats standard avec les colonnes Constatation, Recommandation et Priorité](images/standaardbevindingen-fr.png "Constats standard")
 
 L'onglet **Historique** montre qui a modifié quoi.
 

@@ -31,6 +31,7 @@ One report template: the versions per language and the Word document itself.
 - `{{schadebegroting}}` puts the damage estimate in the report: the items with their estimated and accepted amount, the deduction and the net amount, the totals, the recommended reserve and the agreement if there is one. Without items, nothing remains.
 - `{{draftsurvey}}` puts the draft survey in the report: the result and the table with initial and final survey. Without a measurement, nothing remains.
 - `{{bunker}}` puts the bunker survey in the report: per product before, after, delivered and the difference with the delivery note, and the table per tank. Without a sounding nothing remains.
+- `{{aanbevelingen}}` puts the checklist items with a deficiency in the report, by priority: item, result, finding and recommendation. Without a deficiency nothing remains. The checklist table itself also has a column with the recommendation.
 - `{{gezamenlijk}}` puts the joint surveys in the report: for each recorded survey the date, the place and the version, the position of each party (who, when and the comments), and the participants. Without a recorded joint survey, nothing remains. An office that already had a template adds the marker itself.
 - The **Statement of facts** template determines the look of that document, in the four languages.
 - The **Draft survey report** template determines the look of that document, in the four languages.

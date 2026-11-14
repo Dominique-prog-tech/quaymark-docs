@@ -44,9 +44,13 @@ Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout z
 
 ### Checklist
 
-De **checklist** toont per punt het laatste antwoord (in orde, niet in orde, n.v.t.), van wie en wanneer. Elk antwoord blijft bewaard onder **Vorige antwoorden**. **Niet in orde** stelt een vaststelling voor. Ter plaatse antwoordt de surveyor in de veldapp.
+De **checklist** toont per punt het laatste antwoord, van wie en wanneer. De soort survey bepaalt de schaal: **In orde**, **Niet in orde** en **N.v.t.** voor een controle, of een staat in vier stappen (**Goed**, **Redelijk**, **Matig**, **Slecht**, en **N.v.t.**) voor een conditiesurvey. Bovenaan staat hoeveel punten een gebrek hebben, per prioriteit.
 
-![Het tabblad Checklist met per punt het laatste antwoord](images/dossier-checklist.png "De checklist")
+Een goed antwoord bewaart u met één klik. Bij een gebrek (**Niet in orde**, **Matig** of **Slecht**) vult u de **Bevinding**, de **Aanbeveling** en de **Prioriteit** in: **Onmiddellijk, vóór vertrek**, **Binnen 3 maanden**, **Bij het volgende onderhoud** of **Ter info**. **Standaardbevinding invoegen** vult de drie velden met een standaardtekst van de soort survey, in de taal van het dossier; pas ze daarna aan. **Nieuwe vaststelling** maakt er een vaststelling van.
+
+Elk antwoord blijft bewaard onder **Vorige antwoorden**. Ter plaatse antwoordt de surveyor in de veldapp, met dezelfde schaal en dezelfde standaardbevindingen. De gebreken komen in het rapport met de markering `{{aanbevelingen}}` (zie [Sjablonen](sjablonen.md)).
+
+![Het tabblad Checklist met een staat per punt en drie gebreken met hun prioriteit](images/dossier-checklist.png "De checklist")
 
 ### Rapport
 

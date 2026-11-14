@@ -28,10 +28,13 @@ One survey type: what is entered in the file and what the surveyor goes through 
 - **Retention period (years)**: how long a closed file of this type is kept. Empty = the period of the office's country. See [Retention periods](bewaartermijnen.md).
 - **Draft survey**: when ticked, files of this type get the Draft survey tab with initial and final survey. See [Files](dossiers.md#draft-survey).
 - **Bunker survey**: when ticked, files of this type get the Bunkers tab with soundings before and after, the delivery note and the calculation to tonnes. See [Files](dossiers.md#bunker-survey).
+- **Checklist scale**: **OK / not OK / n/a** for an inspection, or a **condition** (good / fair / poor / bad / n/a) for a condition survey. Existing answers stay as they were given.
 - **Fields**: the data a file of this type gets on top of the fixed fields. A field has a **key** (lower-case letters, digits and _, fixed because the field app and reports refer to it), a type (text, number, date, yes/no, choice or table), a label in four languages, a unit and whether it is required. A **table** has columns and optionally fixed rows, for example one row per hold.
-- **Checklist**: the items the surveyor answers on site, each with a key, a label, and whether an answer or a photo is required.
+- **Checklist**: the items the surveyor answers on site, each with a key, a label, and whether an answer or a photo is required. The link **Standard findings** opens, per saved item, the common deficiencies, each with a finding, a recommendation and a priority, in four languages. The surveyor inserts one into the answer with a tap; an answer already given does not change when you edit them later. New items get the link after **Save**.
 - **Sections**: the text blocks of the report (introduction, observations, conclusion …). The surveyor writes them on the Report tab of the file; a report template shows them with the marker in the next column. A new survey type starts with the five standard sections.
 - The arrow **↑** moves a field or item up one place. Changes to fields and checklist only count after **Save**.
+
+![The Standard findings page with the columns Finding, Recommendation and Priority](images/standaardbevindingen-en.png "Standard findings")
 
 The **History** tab shows who changed what.
 

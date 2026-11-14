@@ -61,7 +61,8 @@ const SCHOTEN = () => [
   { naam: 'dossiers-lijst', route: '/dossiers', verwacht: /HQ-2026-0005/ },
   { naam: 'dossier', route: '/dossiers', hoogte: 1500, verwacht: Q('aanwezige_toevoegen'), na: dossier('HQ-2026-0003') },
   { naam: 'dossier-vaststellingen', route: '/dossiers', hoogte: 1000, verwacht: /Tank top plating indented/, na: dossier('HQ-2026-0003', 'vaststellingen') },
-  { naam: 'dossier-checklist', route: '/dossiers', verwacht: /Packing torn, see findings/, na: dossier('HQ-2026-0003', 'checklist') },
+  // 14/11/2026: de conditiesurvey (staat per punt, gebreken met prioriteit en aanbeveling) i.p.v. de controle van HQ-2026-0003.
+  { naam: 'dossier-checklist', route: '/dossiers', verwacht: /Fire extinguisher in the engine room/, na: dossier('HQ-2026-0006', 'checklist') },
   { naam: 'dossier-rapport', route: '/dossiers', hoogte: 1500, verwacht: Q('rubrieken_bewaren'), na: dossier('HQ-2026-0003', 'rapport') },
   { naam: 'dossier-vergelijking', route: '/dossiers', hoogte: 1300, verwacht: Q('vergelijking_knop_bestond'), na: dossier('ZB-2026-0002', 'vaststellingen') },
   { naam: 'dossier-brief', route: '/dossiers', verwacht: Q('document_invulvak_uitleg'),
@@ -94,6 +95,8 @@ const SCHOTEN = () => [
   { naam: 'dossier-bunker-peilingen', route: '/dossiers/7b7debda-ae44-5311-802e-00d5758aec05/bunker/na', hoogte: 900, verwacht: Q('bunker_peilingen_uitleg') },
   { naam: 'dossier-tijdlijn', route: '/dossiers', hoogte: 1100, verwacht: /Conveyor breakdown/, na: dossier('ZB-2026-0003', 'tijdlijn') },
   { naam: 'soorten-survey', route: '/beheer/survey-types', verwacht: Q('surveytype_nieuw') },
+  { naam: 'standaardbevindingen', route: '/beheer/survey-types', verwacht: Q('standaardbevinding_nieuw'),
+    na: async p => { await openRij(p, 'condition'); await p.goto(p.url().split('?')[0] + '/bevindingen/romp'); await p.waitForLoadState('networkidle'); } },
   { naam: 'vestigingen', route: '/beheer/vestigingen', verwacht: Q('vestiging_nieuw'), magKortZijn: 'twee vestigingen' },
   { naam: 'havens', route: '/beheer/havens', verwacht: Q('haven_nieuw') },
   { naam: 'standaardmappen', route: '/beheer/standaardmappen', verwacht: Q('standaardmappen_uitleg') },

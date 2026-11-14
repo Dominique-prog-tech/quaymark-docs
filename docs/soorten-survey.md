@@ -28,10 +28,13 @@ Eén soort survey: wat er in het dossier ingevuld wordt en wat de surveyor ter p
 - **Bewaartermijn (jaar)**: hoe lang een afgesloten dossier van deze soort bewaard wordt. Leeg = de termijn van het land van de vestiging. Zie [Bewaartermijnen](bewaartermijnen.md).
 - **Draft survey**: aangevinkt, dan krijgen dossiers van deze soort het tabblad Draft survey met begin- en eindmeting. Zie [Dossiers](dossiers.md#draft-survey).
 - **Bunker survey**: aangevinkt, dan krijgen dossiers van deze soort het tabblad Bunker met peilingen vóór en na, de leveringsbon en de berekening naar ton. Zie [Dossiers](dossiers.md#bunker-survey).
+- **Schaal van de checklist**: **In orde / niet in orde / n.v.t.** voor een controle, of een **staat** (goed / redelijk / matig / slecht / n.v.t.) voor een conditiesurvey. Bestaande antwoorden blijven staan zoals ze gegeven zijn.
 - **Velden**: de gegevens die een dossier van deze soort bovenop de vaste velden krijgt. Een veld heeft een **sleutel** (kleine letters, cijfers en _, ligt vast omdat de veldapp en de rapporten ernaar verwijzen), een soort (tekst, getal, datum, ja/nee, keuze of tabel), een label in vier talen, een eenheid en of het verplicht is. Een **tabel** heeft kolommen en eventueel vaste rijen, bijvoorbeeld één rij per ruim.
-- **Checklist**: de punten die de surveyor ter plaatse beantwoordt, elk met een sleutel, een label, en of een antwoord of een foto verplicht is.
+- **Checklist**: de punten die de surveyor ter plaatse beantwoordt, elk met een sleutel, een label, en of een antwoord of een foto verplicht is. De link **Standaardbevindingen** opent per bewaard punt de gangbare gebreken, elk met een bevinding, een aanbeveling en een prioriteit, in vier talen. De surveyor zet er één met een tik in zijn antwoord; een gegeven antwoord verandert niet als u ze later wijzigt. Nieuwe punten krijgen die link na **Bewaren**.
 - **Rubrieken**: de tekstblokken van het rapport (inleiding, bevindingen, conclusie …). De surveyor schrijft ze op het tabblad Rapport van het dossier; een rapportsjabloon toont ze met de markering in de kolom ernaast. Een nieuw soort survey start met de vijf standaardrubrieken.
 - De pijl **↑** zet een veld of punt een plaats hoger. Wijzigingen aan velden en checklist tellen pas na **Bewaren**.
+
+![De pagina Standaardbevindingen met de kolommen Bevinding, Aanbeveling en Prioriteit](images/standaardbevindingen.png "Standaardbevindingen")
 
 Het tabblad **Historiek** toont wie wat wijzigde.
 

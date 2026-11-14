@@ -44,9 +44,13 @@ Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se
 
 ### Check-list
 
-La **check-list** affiche pour chaque point la dernière réponse (conforme, non conforme, s.o.), par qui et quand. Chaque réponse reste conservée sous **Réponses précédentes**. **Non conforme** propose une constatation. Sur place, l'expert répond dans l'application mobile.
+La **check-list** affiche pour chaque point la dernière réponse, par qui et quand. Le type d'expertise détermine l'échelle : **Conforme**, **Non conforme** et **S.o.** pour un contrôle, ou un état en quatre niveaux (**Bon**, **Correct**, **Médiocre**, **Mauvais**, et **S.o.**) pour une expertise d'état. En haut figure le nombre de points présentant un défaut, par priorité.
 
-![L'onglet Check-list avec la dernière réponse par point](images/dossier-checklist-fr.png "La check-list")
+Une bonne réponse s'enregistre d'un clic. En cas de défaut (**Non conforme**, **Médiocre** ou **Mauvais**), vous complétez la **Constatation**, la **Recommandation** et la **Priorité** : **Immédiat, avant le départ**, **Dans les 3 mois**, **Au prochain entretien** ou **Pour information**. **Insérer un constat standard** remplit les trois champs avec un texte standard du type d'expertise, dans la langue du dossier ; adaptez-les ensuite. **Nouvelle constatation** en fait une constatation.
+
+Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'expert répond dans l'application mobile, avec la même échelle et les mêmes constats standard. Les défauts apparaissent dans le rapport avec le marqueur `{{aanbevelingen}}` (voir [Modèles](sjablonen.md)).
+
+![L'onglet Check-list avec un état par point et trois défauts avec leur priorité](images/dossier-checklist-fr.png "La check-list")
 
 ### Rapport
 

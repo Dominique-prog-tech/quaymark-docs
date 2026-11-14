@@ -44,9 +44,13 @@ Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Feh
 
 ### Checkliste
 
-Die **Checkliste** zeigt pro Punkt die letzte Antwort (in Ordnung, nicht in Ordnung, entfällt), von wem und wann. Jede Antwort bleibt unter **Frühere Antworten** erhalten. **Nicht in Ordnung** schlägt eine Feststellung vor. Vor Ort antwortet der Besichtiger in der Feld-App.
+Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Besichtigungsart bestimmt die Skala: **In Ordnung**, **Nicht in Ordnung** und **Entfällt** für eine Kontrolle, oder ein Zustand in vier Stufen (**Gut**, **Befriedigend**, **Mangelhaft**, **Schlecht**, und **Entfällt**) für eine Zustandsbesichtigung. Oben steht, wie viele Punkte einen Mangel haben, je Priorität.
 
-![Checkliste mit der letzten Antwort](images/dossier-checklist-de.png "Die Checkliste")
+Eine gute Antwort speichern Sie mit einem Klick. Bei einem Mangel (**Nicht in Ordnung**, **Mangelhaft** oder **Schlecht**) füllen Sie die **Feststellung**, die **Empfehlung** und die **Priorität** aus: **Sofort, vor dem Auslaufen**, **Innerhalb von 3 Monaten**, **Bei der nächsten Wartung** oder **Zur Information**. **Standardbefund einfügen** füllt die drei Felder mit einem Standardtext der Besichtigungsart, in der Sprache der Akte; passen Sie sie danach an. **Neue Feststellung** macht daraus eine Feststellung.
+
+Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Besichtiger in der Feld-App, mit derselben Skala und denselben Standardbefunden. Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
+
+![Checkliste mit Gut, Mangelhaft und Schlecht](images/dossier-checklist-de.png "Die Checkliste")
 
 ### Bericht
 

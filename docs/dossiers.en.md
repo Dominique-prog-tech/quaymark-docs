@@ -44,9 +44,13 @@ A **finding** is added, never changed or deleted. You correct a mistake with **C
 
 ### Checklist
 
-The **checklist** shows the latest answer per item (OK, not OK, n/a), by whom and when. Every answer is kept under **Previous answers**. **Not OK** proposes a finding. On site, the surveyor answers in the field app.
+The **checklist** shows the latest answer per item, by whom and when. The survey type sets the scale: **OK**, **Not OK** and **N/a** for an inspection, or a condition in four steps (**Good**, **Fair**, **Poor**, **Bad**, and **N/a**) for a condition survey. At the top you see how many items have a deficiency, per priority.
 
-![The Checklist tab with the latest answer per item](images/dossier-checklist-en.png "The checklist")
+A good answer is saved with one click. For a deficiency (**Not OK**, **Poor** or **Bad**) you fill in the **Finding**, the **Recommendation** and the **Priority**: **Immediate, before departure**, **Within 3 months**, **At the next maintenance** or **For information**. **Insert a standard finding** fills the three fields with a standard text of the survey type, in the language of the file; adjust them afterwards. **New finding** turns it into a finding.
+
+Every answer is kept under **Previous answers**. On site, the surveyor answers in the field app, with the same scale and the same standard findings. The deficiencies appear in the report with the marker `{{aanbevelingen}}` (see [Templates](sjablonen.md)).
+
+![The Checklist tab with a condition per item and three deficiencies with their priority](images/dossier-checklist-en.png "The checklist")
 
 ### Report
 

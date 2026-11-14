@@ -31,6 +31,7 @@ Eine Berichtsvorlage: die Versionen pro Sprache und das Word-Dokument selbst.
 - `{{schadebegroting}}` setzt die Schadenschätzung in den Bericht: die Posten mit geschätztem und akzeptiertem Betrag, dem Abzug und dem Nettobetrag, die Summen, die empfohlene Reserve und die Einigung, falls es eine gibt. Ohne Posten bleibt nichts stehen.
 - `{{draftsurvey}}` setzt den Draft Survey in den Bericht: das Ergebnis und die Tabelle mit Anfangs- und Endmessung. Ohne Messung bleibt nichts stehen.
 - `{{bunker}}` setzt die Bunkerbesichtigung in den Bericht: je Produkt vorher, nachher, geliefert und die Differenz zum Lieferschein, und die Tabelle je Tank. Ohne Peilung bleibt nichts stehen.
+- `{{aanbevelingen}}` setzt die Punkte der Checkliste mit einem Mangel in den Bericht, nach Priorität: Punkt, Ergebnis, Befund und Empfehlung. Ohne Mangel bleibt nichts stehen. Die Tabelle der Checkliste hat auch eine Spalte mit der Empfehlung.
 - `{{gezamenlijk}}` setzt die gemeinsamen Besichtigungen in den Bericht: für jede festgehaltene Besichtigung Datum, Ort und Version, den Standpunkt jeder Partei (wer, wann und die Erläuterung), und die Teilnehmer. Ohne festgehaltene gemeinsame Besichtigung bleibt nichts stehen. Ein Büro, das schon eine Vorlage hatte, fügt die Markierung selbst hinzu.
 - Die Vorlage **Statement of Facts** bestimmt das Aussehen dieses Dokuments, in den vier Sprachen.
 - Die Vorlage **Draft Survey Report** bestimmt das Aussehen dieses Dokuments, in den vier Sprachen.
