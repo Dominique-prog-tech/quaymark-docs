@@ -162,6 +162,23 @@ Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer to
 
 **Verwijderen** verplaatst het dossier naar de prullenbak.
 
+## Uit een document
+
+Komt de opdracht per mail of als pdf binnen, dan vult Quaymark een nieuw dossier voor. Dit kan als het bureau de documentanalyse heeft aangezet in het portaal van ADM One (AI, Documentanalyse); het loopt op de AI-sleutel van het bureau.
+
+1. Klik op **Nieuw dossier**. Bovenaan staat het kader **Uit een document invullen**.
+2. Klik op **Document lezen**. Kies een bestand (pdf, JPEG, PNG of WebP, hoogstens 20 MB), of plak de tekst van de mail.
+3. Klik op **Document lezen**. Na enkele seconden staat het voorstel in het formulier: soort survey, opdrachtgever, referentie, schip, haven, terminal, gepland moment (enkel als de opdracht een dag én een uur noemt), omschrijving en taal van het rapport. Elk ingevuld veld krijgt een ✦ vóór zijn naam.
+4. Kijk alles na en klik op **Bewaren**. Pas dan bestaat het dossier. Het document komt als bijlage bij het dossier.
+
+Wat Quaymark niet kon koppelen, staat in het kader:
+
+- een opdrachtgever die niet bij uw relaties staat: Quaymark maakt hem niet zelf aan. Kies de opdrachtgever of maak de relatie eerst aan. → [Relaties](relaties.md)
+- een schip dat nog niet bestaat: dat wordt aangemaakt bij het bewaren, met de gelezen naam en het IMO- of ENI-nummer. **Niet aanmaken** laat het weg; kiest u zelf een schip, dan geldt dat;
+- een haven die niet bij uw havens staat, of een gewenste dag zonder uur.
+
+Zodra opdrachtgever en schip gekozen zijn, toont het formulier al vóór het bewaren de mogelijke belangenconflicten en welk tarief geldt (de raamafspraak met de opdrachtgever, anders de tarieven van het bureau). Dat geldt voor elk nieuw dossier.
+
 ## Belangenconflicten
 
 Een surveyor mag niet voor beide partijen optreden. Quaymark waarschuwt bovenaan het dossier als het bureau in een ander dossier met **hetzelfde schip** of **hetzelfde claim- of polisnummer** werkt voor een andere opdrachtgever, én die opdrachtgever partij is in dit dossier (of uw opdrachtgever partij is in het andere). Open dossiers tellen mee, en dossiers die in de laatste twaalf maanden afgesloten werden; geannuleerde niet.

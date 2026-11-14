@@ -162,6 +162,23 @@ On the **Time and expenses** tab you record the **time entries** (who, from when
 
 **Delete** moves the file to the recycle bin.
 
+## From a document
+
+If the assignment arrives by email or as a pdf, Quaymark pre-fills a new file. This works if the office has enabled document analysis in the ADM One portal (AI, Document analysis); it runs on the office's AI key.
+
+1. Click **New file**. At the top is the **Fill in from a document** box.
+2. Click **Read document**. Choose a file (pdf, JPEG, PNG or WebP, at most 20 MB), or paste the text of the email.
+3. Click **Read document**. After a few seconds the proposal is in the form: survey type, principal, reference, vessel, port, terminal, scheduled moment (only if the assignment gives a day and a time), description and report language. Every filled-in field gets a ✦ before its name.
+4. Check everything and click **Save**. Only then does the file exist. The document is attached to the file.
+
+What Quaymark could not link is shown in the box:
+
+- a principal who is not among your relations: Quaymark does not create them. Choose the principal or create the relation first. → [Relations](relaties.md)
+- a vessel that does not exist yet: it is created when saving, with the name and the IMO or ENI number that were read. **Do not create** leaves it out; if you choose a vessel yourself, that one applies;
+- a port that is not among your ports, or a requested day without a time.
+
+As soon as principal and vessel are chosen, the form shows, before saving, the possible conflicts of interest and which rate applies (the framework agreement with the principal, otherwise the office's rates). This applies to every new file.
+
 ## Conflicts of interest
 
 A surveyor may not act for both parties. Quaymark warns at the top of the file if the office works, in another file with **the same vessel** or **the same claim or policy number**, for another principal, and that principal is a party in this file (or your principal is a party in the other one). Open files count, and files closed in the last twelve months; cancelled files do not.

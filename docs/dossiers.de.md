@@ -162,6 +162,23 @@ In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, v
 
 **Löschen** verschiebt die Akte in den Papierkorb.
 
+## Aus einem Dokument
+
+Kommt der Auftrag per E-Mail oder als PDF, füllt Quaymark eine neue Akte vor. Das geht, wenn das Büro die Dokumentanalyse im ADM One-Portal aktiviert hat (KI, Dokumentanalyse); es läuft über den KI-Schlüssel des Büros.
+
+1. Klicken Sie auf **Neue Akte**. Oben steht der Rahmen **Aus einem Dokument ausfüllen**.
+2. Klicken Sie auf **Dokument lesen**. Wählen Sie eine Datei (PDF, JPEG, PNG oder WebP, höchstens 20 MB) oder fügen Sie den Text der E-Mail ein.
+3. Klicken Sie auf **Dokument lesen**. Nach einigen Sekunden steht der Vorschlag im Formular: Besichtigungsart, Auftraggeber, Referenz, Schiff, Hafen, Terminal, geplanter Zeitpunkt (nur wenn der Auftrag einen Tag und eine Uhrzeit nennt), Beschreibung und Berichtssprache. Jedes ausgefüllte Feld erhält ein ✦ vor seinem Namen.
+4. Prüfen Sie alles und klicken Sie auf **Speichern**. Erst dann entsteht die Akte. Das Dokument wird der Akte angehängt.
+
+Was Quaymark nicht zuordnen konnte, steht im Rahmen:
+
+- ein Auftraggeber, der nicht unter Ihren Beziehungen ist: Quaymark legt ihn nicht selbst an. Wählen Sie den Auftraggeber oder legen Sie die Beziehung zuerst an. → [Beziehungen](relaties.md)
+- ein Schiff, das es noch nicht gibt: Es wird beim Speichern angelegt, mit dem gelesenen Namen und der IMO- oder ENI-Nummer. **Nicht anlegen** lässt es weg; wählen Sie selbst ein Schiff, gilt dieses;
+- ein Hafen, der nicht unter Ihren Häfen ist, oder ein gewünschter Tag ohne Uhrzeit.
+
+Sobald Auftraggeber und Schiff gewählt sind, zeigt das Formular schon vor dem Speichern die möglichen Interessenkonflikte und welcher Tarif gilt (die Rahmenvereinbarung mit dem Auftraggeber, sonst die Tarife des Büros). Das gilt für jede neue Akte.
+
 ## Interessenkonflikte
 
 Ein Besichtiger darf nicht für beide Parteien tätig sein. Quaymark warnt oben in der Akte, wenn das Büro in einer anderen Akte mit **demselben Schiff** oder **derselben Anspruchs- oder Policennummer** für einen anderen Auftraggeber arbeitet und dieser Auftraggeber Partei in dieser Akte ist (oder Ihr Auftraggeber Partei in der anderen). Offene Akten zählen, ebenso in den letzten zwölf Monaten abgeschlossene; stornierte nicht.
