@@ -62,6 +62,17 @@ S'il existe déjà du texte dans une autre langue, **Traduire depuis …** propo
 
 La traduction utilise la clé IA du bureau et demande son autorisation, comme le projet de rapport. Seuls les textes des rubriques sont traduits : les constatations et les remarques de la check-list restent dans leur langue d'origine.
 
+### Contrôle du rapport
+
+En haut de l'onglet Rapport, le bloc **Contrôle du rapport** compare le rapport au dossier :
+
+- **Heures** : des constatations ou photos en dehors des jours d'expertise (la veille ou le lendemain sont admis), une date du sinistre postérieure à l'expertise, et dans la chronologie une fin avant son début ou un moment dans le futur.
+- **Navire** : un numéro IMO non valable, ou un autre nom de navire (m.v., MV, MT …) ou un autre numéro IMO dans le texte d'une rubrique.
+- **Poids** : un poids dans les champs ou dans le texte qui s'écarte de plus de 0,5 % de la cargaison du draft survey.
+- **Exhaustivité** : des rubriques que le modèle affiche mais qui sont vides (même si elles contiennent du texte dans une autre langue), des champs et points de check-list obligatoires sans réponse, une photo obligatoire manquante, et pour un dossier lié des constatations sans appréciation.
+
+Le contrôle ne refuse rien. Si vous émettez avec des remarques, Quaymark demande **Émettre quand même ?**, et les remarques sont enregistrées avec la version. **Contrôler à nouveau** relance le contrôle, par exemple après une correction.
+
 ### Émettre et envoyer le rapport
 
 **Émettre le rapport** (onglet Rapport, à partir du statut Rapport) fige le rapport comme version 1, avec son empreinte (SHA-256) : il ne change plus jamais. Corriger = **Émettre une nouvelle version**, avec un motif. **Envoyer** envoie une version émise en PDF au donneur d'ordre ; le mail est conservé dans le journal. Enregistrez d'abord les rubriques : une version ne reprend que le texte enregistré.

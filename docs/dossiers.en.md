@@ -62,6 +62,17 @@ If another language already has text, **Translate from …** suggests a translat
 
 Translating uses the office's AI key and asks for its permission, like the draft report. Only the section texts are translated: findings and checklist remarks stay in their original language.
 
+### Report check
+
+At the top of the Report tab, the **Report check** block compares the report with the file:
+
+- **Times**: findings or photos outside the survey days (the day before or after is allowed), a date of damage after the survey, and in the timeline an end before its start or a moment in the future.
+- **Vessel**: an invalid IMO number, or another vessel name (m.v., MV, MT …) or another IMO number in the text of a section.
+- **Weights**: a weight in the fields or in the text that differs by more than 0.5 % from the cargo in the draft survey.
+- **Completeness**: sections the template shows that are empty (also when they have text in another language), required fields and checklist items without an answer, a missing required photo, and for a linked file findings without a verdict.
+
+The check refuses nothing. If you issue with findings, Quaymark asks **Issue anyway?**, and the findings are recorded with the version. **Check again** runs the check again, for example after a correction.
+
 ### Issuing and sending the report
 
 **Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. Save the sections first: a version only takes saved text.

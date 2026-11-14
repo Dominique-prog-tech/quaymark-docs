@@ -62,6 +62,17 @@ Gibt es in einer anderen Sprache schon Text, schlägt **Übersetzen aus …** je
 
 Das Übersetzen verwendet den KI-Schlüssel des Büros und fragt seine Zustimmung ab, wie der Berichtsentwurf. Nur die Abschnittstexte werden übersetzt: Feststellungen und Bemerkungen zur Checkliste bleiben in ihrer Ausgangssprache.
 
+### Berichtsprüfung
+
+Oben in der Registerkarte Bericht vergleicht der Block **Berichtsprüfung** den Bericht mit der Akte:
+
+- **Zeiten**: Feststellungen oder Fotos außerhalb der Besichtigungstage (der Tag davor oder danach ist erlaubt), ein Schadensdatum nach der Besichtigung, und in der Zeitleiste ein Ende vor seinem Beginn oder ein Zeitpunkt in der Zukunft.
+- **Schiff**: eine ungültige IMO-Nummer, oder ein anderer Schiffsname (m.v., MV, MT …) oder eine andere IMO-Nummer im Text eines Abschnitts.
+- **Gewichte**: ein Gewicht in den Feldern oder im Text, das um mehr als 0,5 % von der Ladung aus dem Draft Survey abweicht.
+- **Vollständigkeit**: Abschnitte, die die Vorlage zeigt, die aber leer sind (auch wenn sie in einer anderen Sprache Text haben), Pflichtfelder und Pflichtpunkte der Checkliste ohne Antwort, ein fehlendes Pflichtfoto, und bei einer verknüpften Akte Feststellungen ohne Beurteilung.
+
+Die Prüfung verweigert nichts. Geben Sie mit Befunden heraus, fragt Quaymark **Trotzdem herausgeben?**, und die Befunde werden mit der Version festgehalten. **Erneut prüfen** führt die Prüfung erneut aus, zum Beispiel nach einer Korrektur.
+
 ### Bericht herausgeben und senden
 
 **Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**, mit Begründung. **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.

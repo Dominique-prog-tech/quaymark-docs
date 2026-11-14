@@ -62,6 +62,17 @@ Staat er in een andere taal al tekst, dan stelt **Vertalen uit …** per rubriek
 
 Vertalen gebruikt de AI-sleutel van het bureau en vraagt zijn toestemming, zoals het ontwerpverslag. Enkel de rubriekteksten worden vertaald: vaststellingen en opmerkingen bij de checklist blijven in hun oorspronkelijke taal.
 
+### Controle van het rapport
+
+Bovenaan het tabblad Rapport legt het blok **Controle van het rapport** het rapport naast het dossier:
+
+- **Tijden**: vaststellingen of foto's van buiten de surveydagen (een dag ervoor of erna mag), een datum van schade na de survey, en in de tijdlijn een einde vóór zijn start of een moment in de toekomst.
+- **Schip**: een ongeldig IMO-nummer, of een andere scheepsnaam (m.v., MV, MT …) of een ander IMO-nummer in de tekst van een rubriek.
+- **Gewichten**: een gewicht in de velden of in de tekst dat meer dan 0,5 % afwijkt van de lading uit de draft survey.
+- **Volledigheid**: rubrieken die het sjabloon toont maar leeg zijn (ook als ze in een andere taal wel tekst hebben), verplichte velden en checklistpunten zonder antwoord, een ontbrekende verplichte foto, en bij een gekoppeld dossier vaststellingen zonder oordeel.
+
+De controle weigert niets. Geeft u uit met bevindingen, dan vraagt Quaymark **Toch uitgeven?**, en de bevindingen worden met de versie vastgelegd. **Opnieuw controleren** voert de controle opnieuw uit, bijvoorbeeld nadat u iets rechtzette.
+
 ### Rapport uitgeven en verzenden
 
 **Rapport uitgeven** (tabblad Rapport, vanaf de status Rapportage) legt het rapport vast als versie 1, met zijn vingerafdruk (SHA-256): het verandert daarna nooit meer. Iets rechtzetten = **Nieuwe versie uitgeven**, met een reden. **Verzenden** stuurt een uitgegeven versie als PDF naar de opdrachtgever; de mail komt in het journaal. Bewaar eerst de rubrieken: een versie neemt enkel bewaarde tekst.
