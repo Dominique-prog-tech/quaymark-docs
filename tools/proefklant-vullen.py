@@ -101,6 +101,7 @@ sql.append(f'delete from relaties.contactpersonen where relatie_id in ({eigen_re
 sql.append(f'delete from relaties.relaties where id in ({eigen_relaties});')
 sql.append(f"delete from dossiers.schepen where id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 7))});")
 sql.append(f"delete from rapporten.standaardteksten where id in ({', '.join(lit(vid(f'standaardtekst/{k}')) for k in range(1, 4))});")
+sql.append(f"delete from rapporten.woordenlijst where id in ({', '.join(lit(vid(f'woordterm/{k}')) for k in range(1, 4))});")
 
 # ── Een tweede vestiging. ──
 ZB = vid('vestiging/zb')
@@ -286,13 +287,20 @@ for sleutel, html in [
     ('werkwijze', '<p>The hold was inspected after completion of discharge, in the presence of the master and the terminal representative.</p>'
                   '<ul><li>Visual inspection of tank top, hold sides and hatch coaming</li><li>Measurements of the indentations</li>'
                   '<li>Photographs taken with the Quaymark field app</li></ul>')]:
-    sql.append(rij('rapporten.rubriek_teksten', dict(id=vid(f'rubriek/3/{sleutel}'), dossier_id=DOS['3'], sleutel=sleutel, html=html,
+    sql.append(rij('rapporten.rubriek_teksten', dict(id=vid(f'rubriek/3/{sleutel}'), dossier_id=DOS['3'], sleutel=sleutel, taal='en', html=html,
                gewijzigd_op=om(-1, 16), gewijzigd_door=SURVEYOR_NAAM)))
 for i, (naam, rubriek, html) in enumerate([
     ('Attendance on board', 'inleiding', '<p>The undersigned surveyor attended on board in the presence of the master.</p>'),
     ('Method — visual inspection', 'werkwijze', '<p>The areas concerned were visually inspected and photographed.</p>'),
     ('Conclusion — further survey', 'conclusie', '<p>A further survey is recommended once the repairs have been completed.</p>')], 1):
     sql.append(rij('rapporten.standaardteksten', dict(id=vid(f'standaardtekst/{i}'), naam=naam, taal='en', rubriek=rubriek, html=html, actief=True)))
+
+# ── De woordenlijst van het bureau (R3, 14/11/2026): gangbare vaktermen, geen gegevens van een klant. ──
+for i, (nl, fr, en, de) in enumerate([
+    ('luikhoofd', 'hiloire', 'hatch coaming', 'Süllrand'),
+    ('tanktop', 'plafond de ballast', 'tank top', 'Tankdecke'),
+    ('stuwplan', 'plan de chargement', 'stowage plan', 'Stauplan')], 1):
+    sql.append(rij('rapporten.woordenlijst', dict(id=vid(f'woordterm/{i}'), nl=nl, fr=fr, en=en, de=de, actief=True)))
 
 # ── Een afwezigheid voor de planning (P1, 13/11/2026): een opleidingsdag op de maandag van deze week, zodat de werkweek op het beeld ze toont. ──
 maandag = VANDAAG - dt.timedelta(days=VANDAAG.weekday())

@@ -54,6 +54,14 @@ In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnit
 
 ![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
 
+### Bericht in einer anderen Sprache
+
+Die Texte des Berichts gibt es **je Sprache**. Oben in der Registerkarte Bericht wählen Sie die Sprache des Berichts: Ein Klick auf eine Sprache ändert die Sprache der Akte und speichert sie. Ein Häkchen zeigt, welche Sprachen schon Text haben. Haben Sie noch ungespeicherten Text, speichern Sie zuerst die Abschnitte.
+
+Gibt es in einer anderen Sprache schon Text, schlägt **Übersetzen aus …** je Abschnitt eine Übersetzung vor, neben dem Ausgangstext. Die Formatierung bleibt, und die Begriffe aus dem [Glossar](woordenlijst.md) des Büros gelten als feste Übersetzung. Wählen Sie je Abschnitt **Übernehmen**, **Am Ende hinzufügen** oder **Ignorieren**, dann **Abschnitte speichern**. Nichts kommt von selbst in den Bericht.
+
+Das Übersetzen verwendet den KI-Schlüssel des Büros und fragt seine Zustimmung ab, wie der Berichtsentwurf. Nur die Abschnittstexte werden übersetzt: Feststellungen und Bemerkungen zur Checkliste bleiben in ihrer Ausgangssprache.
+
 ### Bericht herausgeben und senden
 
 **Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**, mit Begründung. **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.

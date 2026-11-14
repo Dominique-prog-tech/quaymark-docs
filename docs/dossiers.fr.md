@@ -54,6 +54,14 @@ Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec 
 
 ![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
 
+### Rapport dans une autre langue
+
+Les textes du rapport existent **par langue**. En haut de l'onglet Rapport, vous choisissez la langue du rapport : un clic sur une langue change la langue du dossier et l'enregistre. Une coche indique les langues qui ont déjà du texte. Si vous avez du texte non enregistré, enregistrez d'abord les rubriques.
+
+S'il existe déjà du texte dans une autre langue, **Traduire depuis …** propose une traduction par rubrique, à côté du texte source. La mise en forme est conservée, et les termes du [glossaire](woordenlijst.md) du bureau servent de traduction imposée. Choisissez par rubrique **Reprendre**, **Ajouter à la fin** ou **Ignorer**, puis **Enregistrer les rubriques**. Rien n'entre automatiquement dans le rapport.
+
+La traduction utilise la clé IA du bureau et demande son autorisation, comme le projet de rapport. Seuls les textes des rubriques sont traduits : les constatations et les remarques de la check-list restent dans leur langue d'origine.
+
 ### Émettre et envoyer le rapport
 
 **Émettre le rapport** (onglet Rapport, à partir du statut Rapport) fige le rapport comme version 1, avec son empreinte (SHA-256) : il ne change plus jamais. Corriger = **Émettre une nouvelle version**, avec un motif. **Envoyer** envoie une version émise en PDF au donneur d'ordre ; le mail est conservé dans le journal. Enregistrez d'abord les rubriques : une version ne reprend que le texte enregistré.

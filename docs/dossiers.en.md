@@ -54,6 +54,14 @@ On the **Report** tab you write the text of the report per section, with simple 
 
 ![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
 
+### Report in another language
+
+The texts of the report exist **per language**. At the top of the Report tab you choose the language of the report: clicking a language changes the language of the file and saves it. A tick shows which languages already have text. If you have unsaved text, save the sections first.
+
+If another language already has text, **Translate from …** suggests a translation per section, next to the source text. The formatting is kept, and the terms in the office's [glossary](woordenlijst.md) are used as fixed translations. Choose **Take over**, **Add at the end** or **Ignore** per section, then **Save sections**. Nothing goes into the report by itself.
+
+Translating uses the office's AI key and asks for its permission, like the draft report. Only the section texts are translated: findings and checklist remarks stay in their original language.
+
 ### Issuing and sending the report
 
 **Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. Save the sections first: a version only takes saved text.

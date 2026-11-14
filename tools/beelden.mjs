@@ -94,6 +94,7 @@ const SCHOTEN = () => [
   { naam: 'categorieen-en-plaatsen', route: '/beheer/keuzelijsten', verwacht: Q('keuzelijsten_uitleg') },
   { naam: 'sjablonen', route: '/beheer/rapportsjablonen', verwacht: Q('rapportsjablonen_uitleg') },
   { naam: 'standaardteksten', route: '/beheer/standaardteksten', verwacht: /Attendance on board/ },
+  { naam: 'woordenlijst', route: '/beheer/woordenlijst', verwacht: /hatch coaming/ },
 ];
 
 const TALEN = [['nl-BE', ''], ['fr-BE', '-fr'], ['en-BE', '-en'], ['de-BE', '-de']];

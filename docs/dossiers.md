@@ -54,6 +54,14 @@ Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met 
 
 ![Het tabblad Rapport met Brieven en certificaten, Bewijspakket en de rubrieken Inleiding en Werkwijze](images/dossier-rapport.png "Het tabblad Rapport")
 
+### Rapport in een andere taal
+
+De teksten van het rapport staan **per taal**. Bovenaan het tabblad Rapport kiest u de taal van het rapport: een klik op een taal wisselt de taal van het dossier en bewaart het. Een vinkje toont welke talen al tekst hebben. Heeft u nog onbewaarde tekst, dan bewaart u eerst de rubrieken.
+
+Staat er in een andere taal al tekst, dan stelt **Vertalen uit …** per rubriek een vertaling voor, naast de brontekst. De opmaak blijft, en de vaktermen uit de [woordenlijst](woordenlijst.md) van het bureau gaan mee als vaste vertaling. Kies per rubriek **Overnemen**, **Achteraan toevoegen** of **Negeren**, en dan **Rubrieken bewaren**. Niets komt vanzelf in het rapport.
+
+Vertalen gebruikt de AI-sleutel van het bureau en vraagt zijn toestemming, zoals het ontwerpverslag. Enkel de rubriekteksten worden vertaald: vaststellingen en opmerkingen bij de checklist blijven in hun oorspronkelijke taal.
+
 ### Rapport uitgeven en verzenden
 
 **Rapport uitgeven** (tabblad Rapport, vanaf de status Rapportage) legt het rapport vast als versie 1, met zijn vingerafdruk (SHA-256): het verandert daarna nooit meer. Iets rechtzetten = **Nieuwe versie uitgeven**, met een reden. **Verzenden** stuurt een uitgegeven versie als PDF naar de opdrachtgever; de mail komt in het journaal. Bewaar eerst de rubrieken: een versie neemt enkel bewaarde tekst.
