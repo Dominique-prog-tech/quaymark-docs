@@ -108,7 +108,21 @@ Pour un type d'expertise avec la case **Double contrôle** cochée (voir [Types 
 
 ### Proposer un projet
 
-**Proposer un projet** (onglet Rapport) fait rédiger par l'IA une proposition par rubrique à partir des données du dossier : constatations, check-list, champs et circonstances. Les photos et votre propre texte ne sont pas transmis. Chaque proposition figure sous sa rubrique ; vous choisissez **Reprendre**, **Ajouter à la fin** ou **Ignorer**, puis vous enregistrez comme d'habitude. Cela utilise la clé IA de votre bureau et seulement si l'administrateur l'autorise dans le portail ADM One.
+**Proposer un projet** (onglet Rapport) fait rédiger par l'IA une proposition par rubrique à partir des données du dossier : constatations, check-list, champs, circonstances et notes vocales. Les photos et votre propre texte ne sont pas transmis. Chaque proposition figure sous sa rubrique ; vous choisissez **Reprendre**, **Ajouter à la fin** ou **Ignorer**, puis vous enregistrez comme d'habitude. Cela utilise la clé IA de votre bureau et seulement si l'administrateur l'autorise dans le portail ADM One.
+
+### Notes vocales
+
+À bord, vous dictez une note au lieu de la taper. Dans l'application de terrain, touchez le **micro** en haut du dossier : l'appareil transcrit la parole aussitôt. Choisissez la langue dans laquelle vous parlez et, si vous le souhaitez, la rubrique du rapport. Corrigez ensuite le texte et enregistrez. Sans réseau, la note attend sur l'appareil, comme une constatation. Seul le texte est envoyé à Quaymark, avec l'heure et le lieu de l'enregistrement ; le son n'est pas conservé. L'onglet **Notes** du dossier montre ce qui est déjà envoyé.
+
+Au bureau, les notes figurent dans l'onglet **Rapport**, au-dessus des rubriques.
+
+![La carte Notes vocales de HQ-2026-0003 avec une note en anglais et une en néerlandais](images/dossier-spraaknotities-fr.png "Notes vocales")
+
+- **Rubrique** : le choix de l'expert, une proposition de l'IA ou votre propre choix. Vous pouvez toujours la modifier.
+- **Ajouter à la rubrique** place le texte à la fin de cette rubrique. Il n'entre dans le rapport qu'après **Enregistrer les rubriques**, et la note reçoit alors la mention *Ajoutée*.
+- **Préparer les notes (IA)** propose une rubrique pour les notes qui n'en ont pas, et traduit dans la langue du rapport ce qui est dans une autre langue. La traduction figure sous l'original ; **Ajouter à la rubrique** prend alors la traduction. Sans IA, vous pouvez **Ajouter l'original**.
+
+Les notes servent aussi à **Proposer un projet** et figurent dans le dossier de preuves, avec l'empreinte du texte.
 
 ### Comparaison avec un dossier précédent
 

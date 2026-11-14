@@ -78,6 +78,8 @@ const SCHOTEN = () => [
   { naam: 'schip', route: '/schepen', verwacht: Q('aantal_ruimen'), na: async p => openRij(p, 'KAAIMEEUW') },
   { naam: 'schip-ruimen', route: '/schepen', verwacht: /Aft hold, smaller hatch/,
     na: async p => { await openRij(p, 'KAAIMEEUW'); await p.getByText(Q('ruimen_tanks')).first().click(); await p.waitForLoadState('networkidle'); } },
+  { naam: 'dossier-spraaknotities', route: '/dossiers', hoogte: 1000, verwacht: /Hatch cover 3 rubber packing torn/,
+    na: async p => { await dossier('HQ-2026-0003', 'rapport')(p); await p.locator('[data-spraaknotities]').scrollIntoViewIfNeeded(); await p.waitForTimeout(400); } },
   { naam: 'dossier-gezamenlijk', route: '/dossiers', hoogte: 1100, verwacht: /Hold 3 and hatch cover 3/, na: dossier('HQ-2026-0003', 'gezamenlijk') },
   { naam: 'dossier-schade', route: '/dossiers', hoogte: 1250, verwacht: /Hatch cover rubber packing/, na: dossier('HQ-2026-0003', 'schade') },
   { naam: 'claims', route: '/claims', verwacht: /Cargo claim from receivers/, magKortZijn: 'twee open claims' },

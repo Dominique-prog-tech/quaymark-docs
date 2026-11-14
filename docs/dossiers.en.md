@@ -108,7 +108,21 @@ For a survey type with **Four-eyes review** ticked (see [Survey types](soorten-s
 
 ### Propose a draft
 
-**Propose a draft** (Report tab) has the AI write a proposal per section from the file data: findings, checklist, fields and conditions. Photos and your own text are not sent. Each proposal appears under its section; you choose **Take over**, **Add at the end** or **Ignore**, then save as usual. It runs on your office's AI key and only if the administrator allows it in the ADM One portal.
+**Propose a draft** (Report tab) has the AI write a proposal per section from the file data: findings, checklist, fields, conditions and voice notes. Photos and your own text are not sent. Each proposal appears under its section; you choose **Take over**, **Add at the end** or **Ignore**, then save as usual. It runs on your office's AI key and only if the administrator allows it in the ADM One portal.
+
+### Voice notes
+
+On board, you dictate a note instead of typing it. In the field app, tap the **microphone** at the top of the file: the device transcribes the speech straight away. Choose the language you speak in and, if you want, the report section. Then correct the text and save. Without a connection, the note waits on the device, like a finding. Only the text goes to Quaymark, with the time and place of the recording; the sound is not kept. The **Notes** tab of the file shows what has already been sent.
+
+At the office, the notes are on the **Report** tab, above the sections.
+
+![The Voice notes card of HQ-2026-0003 with a note in English and one in Dutch](images/dossier-spraaknotities-en.png "Voice notes")
+
+- **Section**: the surveyor's choice, a suggestion from the AI or your own choice. You can always change it.
+- **Add to section** puts the text at the end of that section. It is only in the report after **Save sections**, and the note is then marked *Added*.
+- **Prepare notes (AI)** suggests a section for notes without one, and translates into the report language what is in another language. The translation is shown under the original; **Add to section** then takes the translation. Without AI, you can **Add the original**.
+
+The notes are also used by **Propose a draft** and go into the evidence package, with the fingerprint of the text.
 
 ### Comparison with a previous file
 

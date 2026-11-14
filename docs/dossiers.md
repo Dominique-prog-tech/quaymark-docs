@@ -108,7 +108,21 @@ Bij een soort survey met het vinkje **Vier-ogen** (zie [Soorten survey](soorten-
 
 ### Ontwerp voorstellen
 
-**Ontwerp voorstellen** (tabblad Rapport) laat de AI per rubriek een voorstel schrijven uit de gegevens van het dossier: vaststellingen, checklist, velden en omstandigheden. Foto's en uw eigen tekst gaan niet mee. Elk voorstel staat onder zijn rubriek; u kiest **Overnemen**, **Achteraan toevoegen** of **Negeren**, en bewaart daarna zoals altijd. Het loopt op de AI-sleutel van uw bureau en enkel als de beheerder het in het portaal van ADM One toestaat.
+**Ontwerp voorstellen** (tabblad Rapport) laat de AI per rubriek een voorstel schrijven uit de gegevens van het dossier: vaststellingen, checklist, velden, omstandigheden en spraaknotities. Foto's en uw eigen tekst gaan niet mee. Elk voorstel staat onder zijn rubriek; u kiest **Overnemen**, **Achteraan toevoegen** of **Negeren**, en bewaart daarna zoals altijd. Het loopt op de AI-sleutel van uw bureau en enkel als de beheerder het in het portaal van ADM One toestaat.
+
+### Spraaknotities
+
+Aan boord spreekt u een notitie in, in plaats van te typen. Tik in de veldapp op de **microfoon** bovenaan het dossier: het toestel schrijft de spraak meteen uit. Kies de taal waarin u spreekt en, als u wil, de rubriek van het rapport. Verbeter daarna de tekst en bewaar. Zonder bereik wacht de notitie op het toestel tot er bereik is, zoals een vaststelling. Enkel de tekst gaat naar Quaymark, met het uur en de plaats van de opname; het geluid wordt niet bewaard. Het tabblad **Notities** van het dossier toont wat al verstuurd is.
+
+Op kantoor staan de notities op het tabblad Rapport, boven de rubrieken.
+
+![De kaart Spraaknotities van HQ-2026-0003 met een notitie in het Engels en een in het Nederlands](images/dossier-spraaknotities.png "Spraaknotities")
+
+- **Rubriek**: de keuze van de surveyor, een voorstel van de AI of uw eigen keuze. U kunt ze altijd wijzigen.
+- **Toevoegen aan rubriek** zet de tekst achteraan in die rubriek. Pas na **Rubrieken bewaren** staat ze in het rapport, en krijgt de notitie het merkteken *Toegevoegd*.
+- **Notities voorbereiden (AI)** stelt een rubriek voor bij de notities zonder rubriek, en vertaalt naar de taal van het rapport wat in een andere taal is. De vertaling staat onder het origineel; **Toevoegen aan rubriek** neemt dan de vertaling. Zonder AI kan u **Origineel toevoegen**.
+
+De notities gaan ook mee in **Ontwerp voorstellen** en in het bewijspakket, met de vingerafdruk van de tekst.
 
 ### Vergelijking met een vorig dossier
 

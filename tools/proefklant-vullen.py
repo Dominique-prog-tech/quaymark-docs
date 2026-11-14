@@ -89,7 +89,7 @@ sql = ['begin;']
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
-for t in ['dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
+for t in ['dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
@@ -405,6 +405,16 @@ deelnemers = [dict(naam=SURVEYOR_NAAM, functie='Surveyor', partijId=None, aanwez
 sql.append(rij('dossiers.gezamenlijke_surveys', dict(id=vid('gezamenlijk/1'), dossier_id=D3, op=om(-1, 9), plaats='Hold 3 and hatch cover 3',
            opmerking='Joint inspection with all interested parties before the start of repairs.', deelnemers=deelnemers,
            vaststellingen=[VS[('3', 'a')], VS[('3', 'b')], VS[('3', 'c')]], created_at=om(-1, 12), archived_on_utc=None)))
+
+# ── Spraaknotities (V4, 14/11/2026) op HQ-2026-0003: één in het Engels met een rubriek gekozen op het toestel, één in het Nederlands zonder rubriek (zo
+#    toont het beeld beide standen: klaar om toe te voegen, en "andere taal"). Verzonnen tekst, met tijd en positie zoals het toestel ze zou sturen. ──
+for k, taal, rubriek, tekst, uur, minuut in [
+        (1, 'en', 'bevindingen', 'Hatch cover 3 rubber packing torn over approx. 2 m on the port side; water ingress marks on the tank top below.', 10, 20),
+        (2, 'nl', None, 'De kraanman bevestigt dat de grijper tijdens het lossen tegen het luikhoofd van ruim 3 sloeg.', 10, 45)]:
+    op = om(-1, uur, minuut)
+    sql.append(rij('dossiers.spraaknotities', dict(id=vid(f'spraaknotitie/{k}'), klant_id=vid(f'klant/spraaknotitie/{k}'), dossier_id=D3, tekst=tekst,
+               taal=taal, rubriek=rubriek, lat_e7=512723500, lon_e7=43390100, nauwkeurigheid_cm=600, gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
+               opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=4), toestel=TOESTEL)))
 
 # ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
 #    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──

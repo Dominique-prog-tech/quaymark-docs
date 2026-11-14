@@ -58,7 +58,7 @@ In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnit
 
 In der Registerkarte **Gemeinsam** halten Sie eine gemeinsame Besichtigung fest: wer im Namen welcher Partei dabei war, und welche Feststellungen Sie teilen.
 
-![Die Registerkarte Gemeinsam von HQ-2026-0003 mit einer gemeinsamen Besichtigung, ihren Teilnehmern und der Schaltfläche Festhalten](images/dossier-gezamenlijk-de.png "Die Registerkarte Gemeinsam")
+![Gemeinsam: eine gemeinsame Besichtigung von HQ-2026-0003 mit Teilnehmer und Festhalten](images/dossier-gezamenlijk-de.png "Die Registerkarte Gemeinsam")
 
 1. Klicken Sie auf **Neue gemeinsame Besichtigung**. Geben Sie Datum und Uhrzeit (in der Zeit der Niederlassung), den Ort und eine Bemerkung ein.
 2. Fügen Sie die Teilnehmer hinzu. **Einer pro Partei** bereitet eine Zeile für jede Partei der Akte vor; Sie ergänzen Name und Funktion. Wer niemanden vertrat (der Kapitän, das Büro), bleibt ohne Partei. War jemand doch nicht da, entfernen Sie das Häkchen bei **Anwesend**.
@@ -108,7 +108,21 @@ Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besicht
 
 ### Entwurf vorschlagen
 
-**Entwurf vorschlagen** (Registerkarte Bericht) lässt die KI je Abschnitt einen Vorschlag aus den Daten der Akte schreiben: Feststellungen, Checkliste, Felder und Umstände. Fotos und Ihr eigener Text werden nicht übermittelt. Jeder Vorschlag steht unter seinem Abschnitt; Sie wählen **Übernehmen**, **Am Ende hinzufügen** oder **Ignorieren** und speichern dann wie gewohnt. Es läuft über den KI-Schlüssel Ihres Büros und nur, wenn der Administrator es im ADM One-Portal erlaubt.
+**Entwurf vorschlagen** (Registerkarte Bericht) lässt die KI je Abschnitt einen Vorschlag aus den Daten der Akte schreiben: Feststellungen, Checkliste, Felder, Umstände und Sprachnotizen. Fotos und Ihr eigener Text werden nicht übermittelt. Jeder Vorschlag steht unter seinem Abschnitt; Sie wählen **Übernehmen**, **Am Ende hinzufügen** oder **Ignorieren** und speichern dann wie gewohnt. Es läuft über den KI-Schlüssel Ihres Büros und nur, wenn der Administrator es im ADM One-Portal erlaubt.
+
+### Sprachnotizen
+
+An Bord sprechen Sie eine Notiz ein, statt sie zu tippen. Tippen Sie in der Außendienst-App oben in der Akte auf das **Mikrofon**: Das Gerät schreibt die Sprache sofort um. Wählen Sie die Sprache, in der Sie sprechen, und auf Wunsch den Abschnitt des Berichts. Korrigieren Sie danach den Text und speichern Sie. Ohne Verbindung wartet die Notiz auf dem Gerät, wie eine Feststellung. Nur der Text geht an Quaymark, mit Uhrzeit und Ort der Aufnahme; der Ton wird nicht gespeichert. Die Registerkarte **Notizen** der Akte zeigt, was schon gesendet ist.
+
+Im Büro stehen die Notizen in der Registerkarte **Bericht**, über den Abschnitten.
+
+![Sprachnotizen von HQ-2026-0003 mit einer Notiz auf Englisch und einer auf Niederländisch](images/dossier-spraaknotities-de.png "Sprachnotizen")
+
+- **Abschnitt**: die Wahl des Sachverständigen, ein Vorschlag der KI oder Ihre eigene Wahl. Sie können ihn jederzeit ändern.
+- **Zum Abschnitt hinzufügen** setzt den Text ans Ende dieses Abschnitts. Erst nach **Abschnitte speichern** steht er im Bericht, und die Notiz erhält den Vermerk *Hinzugefügt*.
+- **Notizen vorbereiten (KI)** schlägt für Notizen ohne Abschnitt einen vor und übersetzt in die Berichtssprache, was in einer anderen Sprache ist. Die Übersetzung steht unter dem Original; **Zum Abschnitt hinzufügen** nimmt dann die Übersetzung. Ohne KI können Sie **Original hinzufügen**.
+
+Die Notizen fließen auch in **Entwurf vorschlagen** ein und kommen ins Beweispaket, mit dem Fingerabdruck des Textes.
 
 ### Vergleich mit einer vorigen Akte
 
