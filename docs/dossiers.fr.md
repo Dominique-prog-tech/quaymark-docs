@@ -252,6 +252,8 @@ En haut, les tuiles du résumé calculent : le temps de la NOR au début, la dur
 
 Dans l'onglet **Temps et frais**, vous encodez les **prestations** (qui, de quand à quand, à l'heure du site) et les **frais** (déplacement, séjour, laboratoire, tiers) du dossier, avec le justificatif tiré des pièces jointes. Un frais marqué **Refacturer** figure sur la facture. **Proposer une facture** en fait un brouillon de facture ; voir [Factures](facturen.md). Ce qui figure sur une facture est figé.
 
+Dans l'application terrain, l'expert enregistre son temps dans l'onglet **Temps** du dossier : **Démarrer le chrono** avec un type de travail (**À bord**, **Temps de trajet**, **Temps d'attente**, **Rapport**), et **Arrêter le chrono** ouvre la fenêtre pour vérifier début et fin, avec une remarque. **Saisir du temps** fait de même à la main. Un seul chrono tourne à la fois ; il continue si l'application se ferme. Après l'enregistrement, la prestation apparaît ici, avec le type dans la langue du dossier comme description. Si le chrono a tourné plus de 12 heures, l'application demande d'abord de vérifier.
+
 ![Temps et frais de ZB-2026-0003 avec Proposer une facture, Prestations et Frais](images/dossier-tijd-kosten-fr.png "Temps et frais")
 
 ### Dossier de preuves

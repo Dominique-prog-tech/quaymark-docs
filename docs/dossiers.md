@@ -252,6 +252,8 @@ Bovenaan rekenen de tegels van de samenvatting: de tijd van de NOR tot de start,
 
 Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer tot wanneer, in de tijd van de vestiging) en de **kosten** (reis, verblijf, labo, derden) van het dossier, met het bewijsstuk uit de bijlagen. Een kost op **Doorrekenen** komt op de factuur. **Factuur voorstellen** maakt er een klad-factuur van; zie [Facturen](facturen.md). Wat op een factuur staat, ligt vast.
 
+In de veldapp registreert de surveyor zijn tijd op het tabblad **Tijd** van het dossier: **Start klok** met een soort werk (**Aan boord**, **Reistijd**, **Wachttijd**, **Rapportering**), en **Stop klok** opent het venster om van en tot na te kijken, met een opmerking. **Tijd ingeven** doet hetzelfde met de hand. Er loopt één klok tegelijk; ze loopt door als de app sluit. Na het bewaren verschijnt de prestatie hier, met de soort in de taal van het dossier als omschrijving. Liep de klok meer dan 12 uur, dan vraagt de app eerst na te kijken.
+
 ![Tijd en kosten van ZB-2026-0003 met Factuur voorstellen, Prestaties en Kosten](images/dossier-tijd-kosten.png "Tijd en kosten")
 
 ### Bewijspakket

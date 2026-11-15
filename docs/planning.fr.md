@@ -69,6 +69,10 @@ Le bloc vous avertit lorsque vous seul pouvez résoudre un problème :
 
 **Déconnecter** vide d'abord l'agenda Quaymark, puis rompt la connexion. Vous supprimez vous-même l'agenda vide dans Google ou Outlook.
 
+## Dans l'application terrain
+
+L'expert voit son planning dans l'application terrain, même sans réseau : les dossiers ouverts qui lui sont attribués, par jour (**Antérieur (encore ouvert)**, **Aujourd'hui**, **Demain**, **Cette semaine**, **Plus tard**, **Non planifié**). Chaque dossier indique la plage horaire à l'heure du site, le navire, le port et le terminal. **Itinéraire** ouvre l'application de cartes de l'appareil sur le terminal et le port.
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)

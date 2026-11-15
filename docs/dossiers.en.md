@@ -252,6 +252,8 @@ At the top, the summary tiles calculate: the time from NOR to commencement, the 
 
 On the **Time and expenses** tab you record the **time entries** (who, from when to when, in the office's time) and the **expenses** (travel, accommodation, laboratory, third parties) of the file, with the receipt from the attachments. An expense marked **Recharge** goes on the invoice. **Propose invoice** turns them into a draft invoice; see [Invoices](facturen.md). Anything on an invoice is fixed.
 
+In the field app, the surveyor records their time on the **Time** tab of the file: **Start timer** with a type of work (**On board**, **Travel time**, **Waiting time**, **Reporting**), and **Stop timer** opens the window to check start and end, with a remark. **Record time** does the same by hand. One timer runs at a time; it keeps running if the app closes. After saving, the entry appears here, with the type in the language of the file as description. If the timer ran for more than 12 hours, the app first asks to check.
+
 ![Time and expenses of ZB-2026-0003 with Propose invoice, Time entries and Expenses](images/dossier-tijd-kosten-en.png "Time and expenses")
 
 ### Evidence package

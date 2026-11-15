@@ -69,6 +69,10 @@ The block warns you when only you can solve something:
 
 **Disconnect** first empties the Quaymark calendar, then breaks the connection. You delete the empty calendar yourself in Google or Outlook.
 
+## In the field app
+
+The surveyor sees their schedule in the field app, also without network: the open files assigned to them, per day (**Earlier (still open)**, **Today**, **Tomorrow**, **This week**, **Later**, **Not scheduled**). Each file shows the time slot in the office's time, the vessel, the port and the terminal. **Navigate** opens the device's maps app on the terminal and the port.
+
 ## See also
 
 - [Files](dossiers.md)

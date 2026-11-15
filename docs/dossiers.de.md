@@ -252,6 +252,8 @@ Oben berechnen die Kacheln der Zusammenfassung: die Zeit von der NOR bis zum Beg
 
 In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, von wann bis wann, in der Zeit der Niederlassung) und die **Kosten** (Reise, Unterkunft, Labor, Dritte) der Akte, mit dem Beleg aus den Anhängen. Kosten auf **Weiterberechnen** kommen auf die Rechnung. **Rechnung vorschlagen** macht daraus einen Rechnungsentwurf; siehe [Rechnungen](facturen.md). Was auf einer Rechnung steht, steht fest.
 
+In der Feld-App erfasst der Besichtiger seine Zeit auf der Registerkarte **Zeit** der Akte: **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
+
 ![Zeit und Kosten von ZB-2026-0003 mit Rechnung vorschlagen, Leistungen und Kosten](images/dossier-tijd-kosten-de.png "Zeit und Kosten")
 
 ### Beweispaket
