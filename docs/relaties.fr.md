@@ -47,6 +47,7 @@ Ce que la personne de contact voit dans le portail :
 - Pour chaque dossier, les versions **émises** du rapport et les lettres et certificats émis, en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
 - **Nouvelle mission** : envoyer une mission, avec pièces jointes. Elle arrive au bureau sous forme de demande et figure sous **Mes demandes** jusqu'à la décision du bureau. → [Demandes](aanvragen.md)
 - **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF. Pas un brouillon. Le portail n'indique pas si une facture est payée.
+- **Analyses** : les constatations des rapports de ses dossiers, comptées par terminal, navire, cargaison, type d'expertise, port, catégorie ou emplacement. Un dossier ne compte qu'avec un rapport que le donneur d'ordre voit déjà, et selon l'état de ce rapport. → [Analyses](analyses.md#dans-le-portail-client)
 - Pas d'expert, d'heures, de frais, de constatations ni de photos : ils figurent dans le rapport.
 
 ## Accords-cadres

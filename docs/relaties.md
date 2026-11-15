@@ -47,6 +47,7 @@ Wat de contactpersoon in het portaal ziet:
 - Per dossier de **uitgegeven** rapportversies en de uitgegeven brieven en certificaten, als PDF. Een voorbeeld of een klad nooit. Elk bestand wordt eerst nagerekend tegen zijn vingerafdruk.
 - **Nieuwe opdracht**: een opdracht indienen, met bijlagen. Ze komt als aanvraag bij het bureau en staat onder **Mijn aanvragen** tot het bureau beslist. → [Aanvragen](aanvragen.md)
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
+- **Analyses**: de vaststellingen uit de rapporten van zijn dossiers, geteld per terminal, schip, lading, soort survey, haven, categorie of plaats. Een dossier telt pas mee met een rapport dat de opdrachtgever al ziet, en met de stand van dat rapport. → [Analyses](analyses.md#in-het-klantenportaal)
 - Geen surveyor, uren, kosten, vaststellingen of foto's: die staan in het rapport.
 
 ## Raamafspraken

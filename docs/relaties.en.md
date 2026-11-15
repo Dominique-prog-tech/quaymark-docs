@@ -47,6 +47,7 @@ What the contact person sees in the portal:
 - For each file, the **issued** report versions and the issued letters and certificates, as PDF. Never a preview or a draft. Every file is first checked against its fingerprint.
 - **New assignment**: submit an assignment, with attachments. It reaches the office as a request and appears under **My requests** until the office decides. → [Requests](aanvragen.md)
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.
+- **Analyses**: the findings from the reports on their files, counted by terminal, vessel, cargo, survey type, port, category or location. A file only counts with a report the principal can already see, and as that report stood. → [Analyses](analyses.md#in-the-client-portal)
 - No surveyor, hours, costs, findings or photos: those are in the report.
 
 ## Framework agreements
