@@ -6,6 +6,10 @@ aanvragen.de.md
 aanvragen.en.md
 aanvragen.fr.md
 aanvragen.md
+analyses.de.md
+analyses.en.md
+analyses.fr.md
+analyses.md
 betalingen.de.md
 betalingen.en.md
 betalingen.fr.md
