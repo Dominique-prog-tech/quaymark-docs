@@ -4,7 +4,7 @@ description: "De tarieven van het bureau: forfait of uurtarief per soort survey,
 
 # Tarieven
 
-De tarieven waarmee Quaymark een factuur voorstelt. Bedragen zonder btw, in de munt van het dossier.
+De tarieven waarmee Quaymark een factuur voorstelt. Bedragen zonder btw, in euro. Voor een dossier in een andere munt rekent het voorstel ze om (zie [Facturen](facturen.md#vreemde-munten)).
 
 ## Het scherm openen
 

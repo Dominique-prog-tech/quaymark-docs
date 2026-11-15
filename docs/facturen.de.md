@@ -64,6 +64,17 @@ Jeder Versuch steht im Block **Peppol** der Rechnung:
 
 Ist der Kunde nicht bei Peppol, stellen Sie die PDF auf anderem Weg zu.
 
+## Fremdwährungen
+
+Eine Rechnung erhält die Währung der [Akte](dossiers.md). Ist das nicht der Euro, dann:
+
+- rechnet der **Vorschlag** die [Tarife](tarieven.md), die in Euro geführt werden, zum Referenzkurs der Europäischen Zentralbank (EZB) in die Währung der Akte um. Quaymark nennt den verwendeten Kurs. Kosten erfassen Sie in der Währung der Akte: Sie werden nicht umgerechnet;
+- legt Quaymark beim **Ausstellen** den Kurs des Rechnungsdatums fest: den letzten, den die EZB an diesem Tag oder davor veröffentlicht hat. Auf der Rechnung steht der **Gegenwert in Euro**: netto, die USt. und brutto, mit dem Kurs und seinem Datum;
+- zählt der **Umsatz** auf der Startseite in Euro, zum Kurs jeder Rechnung;
+- kann **Peppol** die Rechnung noch nicht senden. Übermitteln Sie das PDF auf anderem Weg.
+
+Ohne Kurs stellt Quaymark die Rechnung nicht aus und sagt es. Das ist vorerst immer so: Der Kursdienst wird noch angebunden. Bis dahin fakturieren Sie in Euro. Eine Rechnung in Euro ist nicht betroffen.
+
 ## Mit einer Gutschrift korrigieren
 
 Einen Fehler auf einer ausgestellten Rechnung korrigieren Sie mit **Gutschrift erstellen**. Es entsteht ein Gutschriftentwurf über den vollen Betrag. Erst nach dessen Ausstellung ist die Rechnung gutgeschrieben, und ihre Leistungen und Kosten werden für eine neue Rechnung wieder frei.

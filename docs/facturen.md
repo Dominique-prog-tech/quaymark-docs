@@ -64,6 +64,17 @@ Elke poging staat in het blok **Peppol** van de factuur:
 
 Staat de klant niet op Peppol, dan bezorgt u de PDF op een andere manier.
 
+## Vreemde munten
+
+Een factuur krijgt de munt van het [dossier](dossiers.md). Is dat geen euro, dan:
+
+- rekent het **voorstel** de [tarieven](tarieven.md), die in euro staan, om naar de munt van het dossier, met de referentiekoers van de Europese Centrale Bank (ECB). Quaymark meldt welke koers het gebruikte. Kosten tikt u in de munt van het dossier: die worden niet omgerekend;
+- legt Quaymark bij het **uitgeven** de koers van de factuurdatum vast: de laatste die de ECB op of vóór die dag publiceerde. Op de factuur staat de **tegenwaarde in euro**: zonder btw, de btw en met btw, met de koers en haar datum;
+- telt de **omzet** op de startpagina in euro, met de koers van elke factuur;
+- kan **Peppol** de factuur nog niet versturen. Bezorg de PDF op een andere manier.
+
+Is er geen koers, dan geeft Quaymark de factuur niet uit en zegt het. Dat is voorlopig altijd zo: de koersdienst wordt nog aangesloten. Tot dan factureert u in euro. Een factuur in euro merkt hier niets van.
+
 ## Corrigeren met een creditnota
 
 Een fout op een uitgegeven factuur zet u recht met **Creditnota maken**. Er komt een klad-creditnota voor het volledige bedrag. Pas na het uitgeven van de creditnota is de factuur gecrediteerd, en komen haar prestaties en kosten weer vrij voor een nieuwe factuur.

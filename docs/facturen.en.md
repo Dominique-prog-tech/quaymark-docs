@@ -64,6 +64,17 @@ Every attempt is listed in the **Peppol** block of the invoice:
 
 If the customer is not on Peppol, deliver the PDF another way.
 
+## Foreign currencies
+
+An invoice takes the currency of the [file](dossiers.md). If that is not the euro:
+
+- the **proposal** converts the [rates](tarieven.md), which are in euros, into the currency of the file, at the reference rate of the European Central Bank (ECB). Quaymark tells you which rate it used. Costs are entered in the currency of the file: they are not converted;
+- on **issuing**, Quaymark fixes the rate of the invoice date: the last one the ECB published on or before that day. The invoice states the **equivalent in euros**: excluding VAT, the VAT and including VAT, with the rate and its date;
+- the **revenue** on the home page counts in euros, at the rate of each invoice;
+- **Peppol** cannot send the invoice yet. Deliver the PDF another way.
+
+Without a rate, Quaymark does not issue the invoice and says so. For now that is always the case: the rate service is still being connected. Until then, invoice in euros. An invoice in euros is not affected.
+
 ## Correcting with a credit note
 
 An error on an issued invoice is corrected with **Create credit note**. A draft credit note is created for the full amount. Only once it is issued is the invoice credited, and are its time entries and expenses released for a new invoice.

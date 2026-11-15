@@ -4,7 +4,7 @@ description: "Die Tarife des Büros: Pauschale oder Stundensatz pro Besichtigung
 
 # Tarife
 
-Die Tarife, mit denen Quaymark eine Rechnung vorschlägt. Beträge ohne MwSt., in der Währung der Akte.
+Die Tarife, mit denen Quaymark eine Rechnung vorschlägt. Beträge ohne MwSt., in Euro. Für eine Akte in einer anderen Währung rechnet der Vorschlag sie um (siehe [Rechnungen](facturen.md#fremdwahrungen)).
 
 ## Bildschirm öffnen
 

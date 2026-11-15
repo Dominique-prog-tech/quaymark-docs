@@ -4,7 +4,7 @@ description: "Les tarifs du bureau : forfait ou tarif horaire par type d'experti
 
 # Tarifs
 
-Les tarifs avec lesquels Quaymark propose une facture. Montants hors TVA, dans la devise du dossier.
+Les tarifs avec lesquels Quaymark propose une facture. Montants hors TVA, en euros. Pour un dossier dans une autre devise, la proposition les convertit (voir [Factures](facturen.md#devises-etrangeres)).
 
 ## Ouvrir l'écran
 

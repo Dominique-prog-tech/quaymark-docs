@@ -4,7 +4,7 @@ description: "The office's rates: fixed fee or hourly rate per survey type, hour
 
 # Rates
 
-The rates Quaymark uses to propose an invoice. Amounts excluding VAT, in the currency of the file.
+The rates Quaymark uses to propose an invoice. Amounts excluding VAT, in euros. For a file in another currency, the proposal converts them (see [Invoices](facturen.md#foreign-currencies)).
 
 ## Opening the screen
 

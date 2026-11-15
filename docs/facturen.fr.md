@@ -64,6 +64,17 @@ Chaque tentative figure dans le bloc **Peppol** de la facture :
 
 Si le client n'est pas sur Peppol, transmettez le PDF autrement.
 
+## Devises étrangères
+
+Une facture reçoit la devise du [dossier](dossiers.md). Si ce n'est pas l'euro :
+
+- la **proposition** convertit les [tarifs](tarieven.md), exprimés en euros, dans la devise du dossier, au taux de référence de la Banque centrale européenne (BCE). Quaymark indique le taux utilisé. Les frais se saisissent dans la devise du dossier : ils ne sont pas convertis ;
+- à l'**émission**, Quaymark fixe le taux de la date de facture : le dernier publié par la BCE ce jour-là ou avant. La facture mentionne la **contre-valeur en euros** : hors TVA, la TVA et TVA comprise, avec le taux et sa date ;
+- le **chiffre d'affaires** de la page d'accueil compte en euros, au taux de chaque facture ;
+- **Peppol** ne peut pas encore envoyer la facture. Transmettez le PDF autrement.
+
+Sans taux, Quaymark n'émet pas la facture et le signale. C'est pour l'instant toujours le cas : le service de taux doit encore être raccordé. D'ici là, facturez en euros. Une facture en euros n'est pas concernée.
+
 ## Corriger par une note de crédit
 
 Une erreur sur une facture émise se corrige avec **Créer une note de crédit**. Un brouillon de note de crédit est créé pour le montant total. Ce n'est qu'après son émission que la facture est créditée et que ses prestations et frais sont libérés pour une nouvelle facture.
