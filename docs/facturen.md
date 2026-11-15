@@ -73,7 +73,7 @@ Een factuur krijgt de munt van het [dossier](dossiers.md). Is dat geen euro, dan
 - telt de **omzet** op de startpagina in euro, met de koers van elke factuur;
 - kan **Peppol** de factuur nog niet versturen. Bezorg de PDF op een andere manier.
 
-Is er geen koers, dan geeft Quaymark de factuur niet uit en zegt het. Dat is voorlopig altijd zo: de koersdienst wordt nog aangesloten. Tot dan factureert u in euro. Een factuur in euro merkt hier niets van.
+Is er geen koers (de ECB-koers is even niet beschikbaar), dan geeft Quaymark de factuur niet uit en zegt het. Probeer het later opnieuw: Quaymark rekent nooit met een geschatte of oude koers. Een factuur in euro merkt hier niets van.
 
 ## Corrigeren met een creditnota
 

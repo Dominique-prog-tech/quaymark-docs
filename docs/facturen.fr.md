@@ -73,7 +73,7 @@ Une facture reçoit la devise du [dossier](dossiers.md). Si ce n'est pas l'euro 
 - le **chiffre d'affaires** de la page d'accueil compte en euros, au taux de chaque facture ;
 - **Peppol** ne peut pas encore envoyer la facture. Transmettez le PDF autrement.
 
-Sans taux, Quaymark n'émet pas la facture et le signale. C'est pour l'instant toujours le cas : le service de taux doit encore être raccordé. D'ici là, facturez en euros. Une facture en euros n'est pas concernée.
+Sans taux (le taux de la BCE est momentanément indisponible), Quaymark n'émet pas la facture et le signale. Réessayez plus tard : Quaymark ne calcule jamais avec un taux estimé ou ancien. Une facture en euros n'est pas concernée.
 
 ## Corriger par une note de crédit
 

@@ -73,7 +73,7 @@ An invoice takes the currency of the [file](dossiers.md). If that is not the eur
 - the **revenue** on the home page counts in euros, at the rate of each invoice;
 - **Peppol** cannot send the invoice yet. Deliver the PDF another way.
 
-Without a rate, Quaymark does not issue the invoice and says so. For now that is always the case: the rate service is still being connected. Until then, invoice in euros. An invoice in euros is not affected.
+Without a rate (the ECB rate is temporarily unavailable), Quaymark does not issue the invoice and says so. Try again later: Quaymark never calculates with an estimated or old rate. An invoice in euros is not affected.
 
 ## Correcting with a credit note
 

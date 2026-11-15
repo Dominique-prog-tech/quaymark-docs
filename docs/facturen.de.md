@@ -73,7 +73,7 @@ Eine Rechnung erhält die Währung der [Akte](dossiers.md). Ist das nicht der Eu
 - zählt der **Umsatz** auf der Startseite in Euro, zum Kurs jeder Rechnung;
 - kann **Peppol** die Rechnung noch nicht senden. Übermitteln Sie das PDF auf anderem Weg.
 
-Ohne Kurs stellt Quaymark die Rechnung nicht aus und sagt es. Das ist vorerst immer so: Der Kursdienst wird noch angebunden. Bis dahin fakturieren Sie in Euro. Eine Rechnung in Euro ist nicht betroffen.
+Ohne Kurs (der EZB-Kurs ist vorübergehend nicht verfügbar) stellt Quaymark die Rechnung nicht aus und sagt es. Versuchen Sie es später erneut: Quaymark rechnet nie mit einem geschätzten oder alten Kurs. Eine Rechnung in Euro ist nicht betroffen.
 
 ## Mit einer Gutschrift korrigieren
 
