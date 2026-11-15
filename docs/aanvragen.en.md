@@ -4,7 +4,7 @@ description: "Assignments that principals submitted in the client portal: view, 
 
 # Requests
 
-The assignments that principals submitted in the client portal. A request only becomes a file once the office accepts it.
+The assignments that principals submitted in the client portal, or that someone sent through the request form on the office's website. A request only becomes a file once the office accepts it.
 
 ## Opening the screen
 
@@ -14,6 +14,7 @@ Click **Requests** in the menu on the left. If requests are waiting, the home sc
 
 - By default you only see the requests awaiting a decision. Tick **Also accepted or declined** for the rest.
 - Double-click a row to open the request.
+- The **Source** column shows where the request comes from: **Portal** or **Website**. A web request has no principal yet: the **Principal** column then shows who sent it.
 
 ## Request
 
@@ -23,6 +24,27 @@ On the left is what the principal filled in: who submitted the request, the surv
 - If the office works with this vessel for another principal, and this principal is a party there, a warning appears above **Accept**. → [Conflicts of interest](dossiers.md#conflicts-of-interest)
 - **Decline** asks for a reason. The principal sees it in the portal and in the email.
 - Deciding requires the right to edit files. A request is decided only once: if two colleagues click at the same time, the second is told it has already been decided.
+
+## Web form
+
+The company can put a request form on its own website. Whoever fills it in needs no account. The form sends the details to Quaymark, and half a minute later the request appears on this screen, with the **Website** badge and a notification on the bell at the top right.
+
+- **Setting up**: ask ADM-Concept for a website key for your company, and give it to your web developer with the technical explanation at <https://platform.digitalcloud.be/docs/leads-contactformulier>. → [How do I put a request form on our website?](hoe/aanvraagformulier.md)
+- **The fields**: name, email, phone, company, subject and message always come through. If you want Quaymark to fill in the vessel, port or survey type as well, give the fields one of the names below (capitals, accents and spaces do not matter). Everything else, and a value that is not right (a wrong IMO number, a port that is not a UN/LOCODE), goes into the description. Nothing is lost.
+
+| Field | Field name (one of) | Value |
+|---|---|---|
+| Vessel | ship, vessel, schip, navire, Schiff | the name |
+| IMO | imo, IMO number | 7 digits, checked |
+| ENI | eni, ENI number | 8 digits |
+| Port | port, haven, Hafen, locode | UN/LOCODE, e.g. BEANR |
+| Terminal | terminal, quay, berth, kaai, quai | free text |
+| Survey type | survey type, soort survey, type d'expertise, Besichtigungsart | the code or name of a survey type |
+| Preferred date | preferred date, gewenste datum, date souhaitée, Wunschtermin | 20/11/2026 or 2026-11-20 14:30, in the company's time |
+| Reference | reference, referentie, référence, Referenz | the requester's reference |
+
+- **The principal**: when you click **Accept**, you choose the principal. If a relation or contact has the same email address as the requester, that relation is suggested. You can choose another, or **New relation** creates one from the requester's details (a company with the requester as contact, or a person). If the survey type was not recognised, you choose it here as well.
+- **The requester** receives an email when the request is accepted or declined, in the language of the form. That email has no link: they have no access to the portal.
 
 ## Notifications to the principal
 

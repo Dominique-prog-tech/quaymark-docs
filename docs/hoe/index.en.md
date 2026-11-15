@@ -16,6 +16,7 @@ Short answers to the questions that come up in daily work. Each step links to th
 ## Relations
 
 - [How do I give a principal access to the client portal?](klantenportaal.md)
+- [How do I put a request form on our website?](aanvraagformulier.md)
 
 ## Letters and evidence
 

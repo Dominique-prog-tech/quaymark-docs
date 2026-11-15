@@ -16,6 +16,7 @@ Korte antwoorden op de vragen die bij het werk terugkomen. Elke stap verwijst na
 ## Relaties
 
 - [Hoe geef ik een opdrachtgever toegang tot het klantenportaal?](klantenportaal.md)
+- [Hoe zet ik een aanvraagformulier op onze website?](aanvraagformulier.md)
 
 ## Brieven en bewijs
 
