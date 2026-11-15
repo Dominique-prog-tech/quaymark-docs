@@ -10,6 +10,10 @@ analyses.de.md
 analyses.en.md
 analyses.fr.md
 analyses.md
+berichten.de.md
+berichten.en.md
+berichten.fr.md
+berichten.md
 betalingen.de.md
 betalingen.en.md
 betalingen.fr.md
