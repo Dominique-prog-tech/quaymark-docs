@@ -100,6 +100,14 @@ Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweiger
 
 ![Unterschriften mit Kapitän und Terminal](images/dossier-handtekeningen-de.png "Die Registerkarte Unterschriften")
 
+### Bordunterlagen
+
+An Bord erfasst der Besichtiger den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Feld-App, mit dem Dokumentsymbol oben in der Akte. Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
+
+Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest.
+
+![Bordunterlagen von HQ-2026-0003: ein Stauplan und ein Ladungsmanifest](images/dossier-boorddocumenten-de.png "Bordunterlagen")
+
 ### Bericht in einer anderen Sprache
 
 Die Texte des Berichts gibt es **je Sprache**. Oben in der Registerkarte Bericht wählen Sie die Sprache des Berichts: Ein Klick auf eine Sprache ändert die Sprache der Akte und speichert sie. Ein Häkchen zeigt, welche Sprachen schon Text haben. Haben Sie noch ungespeicherten Text, speichern Sie zuerst die Abschnitte.

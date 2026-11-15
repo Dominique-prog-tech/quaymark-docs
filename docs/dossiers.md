@@ -100,6 +100,14 @@ Het tabblad **Handtekeningen** toont ze allemaal, met het beeld of de weigering.
 
 ![Het tabblad Handtekeningen van HQ-2026-0003 met een handtekening en een weigering](images/dossier-handtekeningen.png "Het tabblad Handtekeningen")
 
+### Documenten van boord
+
+Aan boord legt de surveyor het stuwplan, het cargo manifest, het logboek, een leveringsbon of een certificaat vast in de veldapp, met het documenticoon bovenaan het dossier. Hij kiest de soort, fotografeert de pagina's, kiest een pdf of bestand van het toestel, of neemt een korte video op (een foto of pdf hoogstens 50 MB, een video hoogstens 200 MB). Elk bestand wordt bewijs zoals een foto: met de tijd, de plaats en de vingerafdruk (SHA-256) van het moment van toevoegen, en het gaat ook zonder bereik in de wachtrij.
+
+Op kantoor staan ze op het tabblad **Documenten van boord**, met de soort, wie en wanneer. Een foto toont een miniatuur, een pdf opent u, een video speelt in de browser af. Ze worden nooit gewijzigd of verwijderd. Ze komen niet in de fotobijlage van het rapport, wel in het bewijspakket, met hun soort in het manifest.
+
+![Documenten van boord van HQ-2026-0003: een stuwplan en een cargo manifest](images/dossier-boorddocumenten.png "Documenten van boord")
+
 ### Rapport in een andere taal
 
 De teksten van het rapport staan **per taal**. Bovenaan het tabblad Rapport kiest u de taal van het rapport: een klik op een taal wisselt de taal van het dossier en bewaart het. Een vinkje toont welke talen al tekst hebben. Heeft u nog onbewaarde tekst, dan bewaart u eerst de rubrieken.

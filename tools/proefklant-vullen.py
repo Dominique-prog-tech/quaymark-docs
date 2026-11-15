@@ -90,7 +90,7 @@ sql = ['begin;']
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
-          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
+          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
@@ -529,6 +529,43 @@ for k, kant, afzender, naam, dag, uur, minuut, tekst in GESPREK:
     lezer, lezerkant = (SURVEYOR_ID, 'bureau') if kant == 'opdrachtgever' else (KLANT_LEZER, 'opdrachtgever')
     sql.append(rij('dossiers.bericht_lezingen', dict(id=vid(f'lezing/{k}'), bericht_id=bid, dossier_id=D3, lezer_id=lezer, kant=lezerkant,
                op=op + dt.timedelta(minutes=12))))
+
+# ── Documenten van boord (V8, 15/11/2026) op HQ-2026-0003: een stuwplan (een getekende pagina) en een cargo manifest (een pdf), verzonnen. Bewijs zoals
+#    een foto: bewijstekst met tijd en positie, SHA-256, in de map van het bureau. Geen video (dat zou ffmpeg vragen op elke machine die vult). ──
+def stuwplan_png():
+    beeld = Image.new('RGB', (1200, 800), 'white'); d = ImageDraw.Draw(beeld)
+    d.text((40, 30), 'KAAIMEEUW  -  STOWAGE PLAN  -  DEPARTURE CONDITION', fill='black')
+    d.rectangle((60, 120, 1140, 620), outline='black', width=4)
+    for i, (lading, ton) in enumerate([('Steel coils', 610), ('Steel coils', 585), ('Steel coils', 540), ('Steel coils', 595), ('Steel coils', 520)]):
+        x0 = 60 + i * 216
+        d.rectangle((x0, 120, x0 + 216, 620), outline='black', width=2)
+        d.text((x0 + 20, 140), f'HOLD {5 - i}', fill='black')
+        d.text((x0 + 20, 360), lading, fill='black'); d.text((x0 + 20, 390), f'{ton} t', fill='black')
+    d.text((40, 680), 'Total 2,850 t   Draft fwd 8.42 m   aft 8.96 m   Prepared by Chief Officer', fill='black')
+    uit = io.BytesIO(); beeld.save(uit, 'PNG'); return uit.getvalue()
+
+def manifest_pdf():
+    tekst = b"BT /F1 14 Tf 60 780 Td (CARGO MANIFEST - KAAIMEEUW) Tj 0 -24 Td (Steel coils, 2,850 t, 312 pieces) Tj 0 -24 Td (Port of loading: Ghent) Tj ET"
+    inhoud = (b"%PDF-1.4\n1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj\n2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj\n"
+              b"3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 595 842]/Contents 4 0 R/Resources<</Font<</F1<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>>>>>>>endobj\n")
+    inhoud += b"4 0 obj<</Length %d>>stream\n" % len(tekst) + tekst + b"\nendstream endobj\ntrailer<</Root 1 0 R>>\n%%EOF\n"
+    return inhoud
+
+for k, soort, omschr, naam, type_, maak, uur, minuut in [
+        ('1', 'stuwplan', 'Departure condition', 'stowage-plan.png', 'image/png', stuwplan_png, 9, 40),
+        ('2', 'cargo_manifest', 'Steel coils, 2,850 t', 'cargo-manifest.pdf', 'application/pdf', manifest_pdf, 9, 45)]:
+    did = vid(f'boorddocument/{k}')
+    op = om(-1, uur, minuut)
+    sql.append(rij('dossiers.boorddocumenten', dict(id=did, klant_id=vid(f'klant/boorddocument/{k}'), dossier_id=D3, soort=soort, omschrijving=omschr,
+               gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM, opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=2), toestel=TOESTEL)))
+    data = maak(); sha = hashlib.sha256(data).hexdigest(); bid = vid(f'bewijs/boord/{k}')
+    sleutel = f"bureau-{TENANT_N}/bewijs/{D3.replace('-', '')}/{bid.replace('-', '')}_{sha}{os.path.splitext(naam)[1]}"
+    (OPSLAG / sleutel).parent.mkdir(parents=True, exist_ok=True); (OPSLAG / sleutel).write_bytes(data)
+    sql.append(rij('dossiers.bewijsstukken', dict(id=bid, klant_id=vid(f'klant/bewijs/boord/{k}'), dossier_id=D3, vaststelling_id=None,
+               checklist_antwoord_id=None, boorddocument_id=did, sha256=sha, bewijstekst=f"qm1|{sha}|{op.strftime('%Y-%m-%dT%H:%M:%SZ')}|512723500|43390100|500",
+               opgenomen_op=op, lat_e7=512723500, lon_e7=43390100, nauwkeurigheid_cm=500, storage_key=sleutel, bestandsnaam=naam,
+               content_type=type_, grootte=len(data), gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
+               ontvangen_op=op + dt.timedelta(minutes=3), toestel=TOESTEL)))
 
 # ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
 #    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──

@@ -110,6 +110,8 @@ const SCHOTEN = () => [
   //    Afgesloten, dus niet in de lijst: een rechtstreekse route (het dossier staat in de proefdatabank, niet in proefklant-vullen.py).
   { naam: 'rapport-ondertekening', route: '/dossiers/01a1ca92-792f-7ee9-98b6-8e47fcc8571a?tab=rapport', verwacht: Q('laten_ondertekenen'),
     na: async p => { await p.locator('[data-ondertekening]').evaluate(e => e.scrollIntoView({ block: 'center' })); } },
+  // V8 (15/11/2026): de documenten van boord op HQ-2026-0003 (een stuwplan als pagina en een cargo manifest als pdf, verzonnen).
+  { naam: 'dossier-boorddocumenten', route: '/dossiers', hoogte: 900, verwacht: /Departure condition/, na: dossier('HQ-2026-0003', 'boorddocumenten') },
   { naam: 'dossier-handtekeningen', route: '/dossiers', verwacht: /Capt\. R\. Lindqvist/, na: dossier('HQ-2026-0003', 'handtekeningen') },
   { naam: 'dossier-tekenen', route: '/dossiers', hoogte: 1250, verwacht: Q('teken_hieronder'),
     na: async p => { await openRij(p, 'HQ-2026-0003'); await p.goto(p.url().split('?')[0] + '/tekenen'); await p.waitForLoadState('networkidle');

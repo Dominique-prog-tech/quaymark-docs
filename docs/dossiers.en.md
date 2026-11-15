@@ -100,6 +100,14 @@ The **Signatures** tab shows them all, with the image or the refusal. Under **Fi
 
 ![The Signatures tab of HQ-2026-0003 with a signature and a refusal](images/dossier-handtekeningen-en.png "The Signatures tab")
 
+### Board documents
+
+On board, the surveyor records the stowage plan, the cargo manifest, the logbook, a delivery note or a certificate in the field app, with the document icon at the top of the file. They choose the type, photograph the pages, pick a pdf or file from the device, or record a short video (a photo or pdf at most 50 MB, a video at most 200 MB). Each file becomes evidence like a photo: with the time, place and fingerprint (SHA-256) of the moment it was added, and it joins the queue even without network.
+
+At the office they are on the **Board documents** tab, with the type, who and when. A photo shows a thumbnail, a pdf opens, a video plays in the browser. They are never changed or deleted. They do not go into the photo appendix of the report, but they are part of the evidence package, with their type in the manifest.
+
+![Board documents of HQ-2026-0003: a stowage plan and a cargo manifest](images/dossier-boorddocumenten-en.png "Board documents")
+
 ### Report in another language
 
 The texts of the report exist **per language**. At the top of the Report tab you choose the language of the report: clicking a language changes the language of the file and saves it. A tick shows which languages already have text. If you have unsaved text, save the sections first.

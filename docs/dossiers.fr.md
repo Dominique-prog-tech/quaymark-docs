@@ -100,6 +100,14 @@ L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Con
 
 ![L'onglet Signatures de HQ-2026-0003 avec une signature et un refus](images/dossier-handtekeningen-fr.png "L'onglet Signatures")
 
+### Documents de bord
+
+À bord, l'expert enregistre le plan de chargement, le manifeste de cargaison, le journal de bord, un bon de livraison ou un certificat dans l'application terrain, avec l'icône de document en haut du dossier. Il choisit le type, photographie les pages, choisit un pdf ou un fichier de l'appareil, ou filme une courte vidéo (une photo ou un pdf 50 Mo au maximum, une vidéo 200 Mo au maximum). Chaque fichier devient une preuve comme une photo : avec l'heure, le lieu et l'empreinte (SHA-256) du moment de l'ajout, et il entre dans la file d'attente même sans réseau.
+
+Au bureau, ils figurent dans l'onglet **Documents de bord**, avec le type, qui et quand. Une photo montre une miniature, un pdf s'ouvre, une vidéo se lit dans le navigateur. Ils ne sont jamais modifiés ni supprimés. Ils n'entrent pas dans l'annexe photographique du rapport, mais bien dans le dossier de preuves, avec leur type dans le manifeste.
+
+![Documents de bord de HQ-2026-0003 : un plan de chargement et un manifeste de cargaison](images/dossier-boorddocumenten-fr.png "Documents de bord")
+
 ### Rapport dans une autre langue
 
 Les textes du rapport existent **par langue**. En haut de l'onglet Rapport, vous choisissez la langue du rapport : un clic sur une langue change la langue du dossier et l'enregistre. Une coche indique les langues qui ont déjà du texte. Si vous avez du texte non enregistré, enregistrez d'abord les rubriques.
