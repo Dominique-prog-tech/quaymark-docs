@@ -48,6 +48,7 @@ Was die Kontaktperson im Portal sieht:
 - **Neuer Auftrag**: einen Auftrag senden, mit Anhängen. Er geht als Anfrage an das Büro und steht unter **Meine Anfragen**, bis das Büro entscheidet. → [Anfragen](aanvragen.md)
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
 - **Analysen**: die Feststellungen aus den Berichten seiner Akten, gezählt nach Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Kategorie oder Ort. Eine Akte zählt erst mit einem Bericht, den der Auftraggeber bereits sieht, und mit dem Stand dieses Berichts. → [Analysen](analyses.md#im-kundenportal)
+- **Nachrichten** unten auf einer Akte: das Gespräch mit dem Büro, mit Anhängen. Zu einer Nachricht des Büros erhält die Kontaktperson eine E-Mail mit einem Link. → [Nachrichten](berichten.md#was-der-auftraggeber-sieht)
 - Kein Besichtiger, keine Stunden, Kosten, Feststellungen oder Fotos: Diese stehen im Bericht.
 
 ## Rahmenvereinbarungen

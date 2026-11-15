@@ -48,6 +48,7 @@ Wat de contactpersoon in het portaal ziet:
 - **Nieuwe opdracht**: een opdracht indienen, met bijlagen. Ze komt als aanvraag bij het bureau en staat onder **Mijn aanvragen** tot het bureau beslist. → [Aanvragen](aanvragen.md)
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
 - **Analyses**: de vaststellingen uit de rapporten van zijn dossiers, geteld per terminal, schip, lading, soort survey, haven, categorie of plaats. Een dossier telt pas mee met een rapport dat de opdrachtgever al ziet, en met de stand van dat rapport. → [Analyses](analyses.md#in-het-klantenportaal)
+- **Berichten** onderaan een dossier: het gesprek met het bureau, met bijlagen. Bij een bericht van het bureau krijgt de contactpersoon een mail met een link. → [Berichten](berichten.md#wat-de-opdrachtgever-ziet)
 - Geen surveyor, uren, kosten, vaststellingen of foto's: die staan in het rapport.
 
 ## Raamafspraken

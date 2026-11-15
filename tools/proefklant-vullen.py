@@ -90,7 +90,7 @@ sql = ['begin;']
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
-          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
+          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
@@ -511,6 +511,24 @@ for k, naam, functie, reden, uur, minuut in [(1, 'Capt. R. Lindqvist', 'kapitein
                momentopname_sha256=hashlib.sha256(moment.encode()).hexdigest(), beeld_sha256=beeld_sha, storage_key=sleutel, bewijstekst=tekst,
                lat_e7=512723500, lon_e7=43390100, nauwkeurigheid_cm=500, kanaal='toestel', gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
                opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=3), toestel=TOESTEL)))
+
+# ── Berichten (K3, 15/11/2026) op HQ-2026-0003: een vraag van de opdrachtgever (Polderwacht, Sofie De Wilde), het antwoord van de surveyor en een
+#    bedankje. Alles GELEZEN (vaste lezingen): zo toont elk beeld in elke taal hetzelfde, en het belletje blijft stil. Geen bijlagen (geen bestanden nodig). ──
+KLANT_LEZER = vid('portaal/sofie')
+GESPREK = [
+    ('1', 'opdrachtgever', None, 'Sofie De Wilde', -1, 15, 10,
+     'Could you confirm whether the dent in hold 3 also affects the weld seam? Our underwriter is asking before approving the repair estimate.'),
+    ('2', 'bureau', SURVEYOR_ID, SURVEYOR_NAAM, -1, 16, 25,
+     'Yes: the weld seam on the starboard side is deformed over about 40 cm. It is in the findings under Hold 3, with photos 1 and 2. The next version of the report will show the annotated photos.'),
+    ('3', 'opdrachtgever', None, 'Sofie De Wilde', 0, 9, 5, 'Thank you. May we expect the updated report by Friday?'),
+]
+for k, kant, afzender, naam, dag, uur, minuut, tekst in GESPREK:
+    bid = vid(f'bericht/{k}')
+    op = om(dag, uur, minuut)
+    sql.append(rij('dossiers.berichten', dict(id=bid, dossier_id=D3, kant=kant, tekst=tekst, afzender_id=afzender, afzender_naam=naam, op=op)))
+    lezer, lezerkant = (SURVEYOR_ID, 'bureau') if kant == 'opdrachtgever' else (KLANT_LEZER, 'opdrachtgever')
+    sql.append(rij('dossiers.bericht_lezingen', dict(id=vid(f'lezing/{k}'), bericht_id=bid, dossier_id=D3, lezer_id=lezer, kant=lezerkant,
+               op=op + dt.timedelta(minutes=12))))
 
 # ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
 #    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──

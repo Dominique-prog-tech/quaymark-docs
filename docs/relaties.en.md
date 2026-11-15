@@ -48,6 +48,7 @@ What the contact person sees in the portal:
 - **New assignment**: submit an assignment, with attachments. It reaches the office as a request and appears under **My requests** until the office decides. → [Requests](aanvragen.md)
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.
 - **Analyses**: the findings from the reports on their files, counted by terminal, vessel, cargo, survey type, port, category or location. A file only counts with a report the principal can already see, and as that report stood. → [Analyses](analyses.md#in-the-client-portal)
+- **Messages** at the bottom of a file: the conversation with the office, with attachments. For a message from the office, the contact person receives an email with a link. → [Messages](berichten.md#what-the-principal-sees)
 - No surveyor, hours, costs, findings or photos: those are in the report.
 
 ## Framework agreements

@@ -90,6 +90,9 @@ const SCHOTEN = () => [
   { naam: 'schepen-lijst', route: '/schepen', verwacht: /JOHANNA-W/ },
   { naam: 'planning', route: '/planning?weergave=werkweek', verwacht: Q('te_plannen_uitleg') },
   { naam: 'facturen', route: '/facturen', verwacht: /HQ-2026-0007/ },
+  // K3 (15/11/2026): het gesprek op HQ-2026-0003 (verzonnen, alles gelezen) en het overzicht van de gesprekken.
+  { naam: 'berichten', route: '/dossiers', hoogte: 1000, verwacht: /May we expect the updated report/, na: dossier('HQ-2026-0003', 'berichten') },
+  { naam: 'berichten-overzicht', route: '/berichten', hoogte: 700, verwacht: Q('berichten_overzicht_uitleg') },
   // A2 (15/11/2026): analyses per terminal over de laatste twaalf maanden (de standaardperiode). Merkteken: een terminal uit de demo, die pas na het rekenen in grafiek en tabel staat.
   { naam: 'analyses', route: '/analyses', hoogte: 1000, verwacht: /Albert II-dok/ },
   { naam: 'factuur', route: '/facturen', hoogte: 1200, verwacht: Q('factuur_klad_uitleg'), na: async p => openRij(p, 'HQ-2026-0007') },

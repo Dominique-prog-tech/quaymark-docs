@@ -246,6 +246,7 @@ nav:
       # Dossiers eerst: een klik op het tabblad opent de eerste pagina van de groep (Dominique, 14/11/2026).
       - dossiers.md
       - aanvragen.md
+      - berichten.md
       - opdrachtbevestiging.md
       - relaties.md
       - schepen.md
