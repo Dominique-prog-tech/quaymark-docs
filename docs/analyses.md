@@ -34,6 +34,24 @@ De grafiek **Vaststellingen per …** toont per groep het aantal vaststellingen,
 
 De tabel toont elke groep met het aantal dossiers en vaststellingen per ernst. Klik op een rij: onder de tabel verschijnen de dossiers van die groep, met een link naar elk dossier. Exporteer de tabel naar Excel met de knop boven de tabel.
 
+## Vraag het in gewone taal
+
+Rechtsboven staat de knop **Vraag het aan uw gegevens** (een staafjespictogram). Typ er een vraag in, zoals *schade per terminal in Antwerpen dit jaar*, en Quaymark toont een tabel. Op dit scherm staat een kaartje met voorbeelden.
+
+De assistent beantwoordt vier soorten vragen:
+
+- **Schade gegroepeerd**: vaststellingen per terminal, schip, lading, soort survey, haven, opdrachtgever, categorie of plaats, per ernst. Dezelfde getallen als dit scherm.
+- **Dossiers**: een lijst of een telling, op status, opdrachtgever, schip, haven, surveyor, soort survey, vestiging en periode.
+- **Doorlooptijd tot het rapport**: de dagen van opdracht tot het eerste uitgegeven rapport, gemiddeld, mediaan, kortst en langst.
+- **Facturatie**: gefactureerd per opdrachtgever of per maand (zonder btw, creditnota's in mindering), of de openstaande en vervallen facturen.
+
+Goed om te weten:
+
+- Het taalmodel kiest enkel de vraag en de filters; Quaymark rekent zelf. **Uw gegevens gaan niet naar het taalmodel**, enkel uw vraag.
+- U krijgt enkel vragen over wat u mag zien: facturatie enkel met het recht om facturen te bekijken.
+- Vindt een naam niets, dan zegt de tabel dat. Past een naam bij meer dan één opdrachtgever, schip of surveyor, dan toont de tabel de kandidaten: vraag dan preciezer.
+- De assistent werkt met de **eigen AI-sleutel van het bureau**. Vraag ADM-Concept hoe u die instelt.
+
 ## In het klantenportaal
 
 De opdrachtgever ziet in het klantenportaal dezelfde analyses over zijn eigen dossiers, onder **Analyses**, zonder groeperen op opdrachtgever.

@@ -34,6 +34,24 @@ The **Findings by …** chart shows the number of findings per group, stacked by
 
 The table shows each group with the number of files and findings per severity. Click a row: the files in that group appear below the table, with a link to each file. Export the table to Excel with the button above the table.
 
+## Ask in plain language
+
+At the top right is the **Ask your data** button (a bar chart icon). Type a question, such as *damage per terminal in Antwerp this year*, and Quaymark shows a table. This screen shows a card with examples.
+
+The assistant answers four kinds of questions:
+
+- **Damage grouped**: findings per terminal, vessel, cargo, survey type, port, principal, category or location, per severity. The same figures as this screen.
+- **Files**: a list or a count, by status, principal, vessel, port, surveyor, survey type, office and period.
+- **Turnaround to the report**: the days from instruction to the first issued report, as average, median, shortest and longest.
+- **Invoicing**: invoiced per principal or per month (excluding VAT, credit notes deducted), or the open and overdue invoices.
+
+Good to know:
+
+- The language model only chooses the question and the filters; Quaymark does the counting. **Your data does not go to the language model**, only your question.
+- You only get questions about what you may see: invoicing only with the right to view invoices.
+- If a name finds nothing, the table says so. If a name matches more than one principal, vessel or surveyor, the table shows the candidates: then ask more precisely.
+- The assistant works with the **company's own AI key**. Ask ADM-Concept how to set it up.
+
 ## In the client portal
 
 The principal sees the same analyses of their own files in the client portal, under **Analyses**, without grouping by principal.

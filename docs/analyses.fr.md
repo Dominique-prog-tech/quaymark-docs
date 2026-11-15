@@ -34,6 +34,24 @@ Le graphique **Constatations par …** montre par groupe le nombre de constatati
 
 Le tableau montre chaque groupe avec le nombre de dossiers et de constatations par gravité. Cliquez sur une ligne : les dossiers de ce groupe apparaissent sous le tableau, avec un lien vers chaque dossier. Exportez le tableau vers Excel avec le bouton au-dessus du tableau.
 
+## Demandez en langage courant
+
+En haut à droite se trouve le bouton **Interrogez vos données** (une icône de barres). Tapez-y une question, comme *dommages par terminal à Anvers cette année*, et Quaymark affiche un tableau. Cet écran affiche une carte avec des exemples.
+
+L'assistant répond à quatre types de questions :
+
+- **Dommages regroupés** : constatations par terminal, navire, cargaison, type d'expertise, port, donneur d'ordre, catégorie ou emplacement, par gravité. Les mêmes chiffres que cet écran.
+- **Dossiers** : une liste ou un comptage, par statut, donneur d'ordre, navire, port, expert, type d'expertise, site et période.
+- **Délai jusqu'au rapport** : les jours entre la mission et le premier rapport émis, en moyenne, médiane, le plus court et le plus long.
+- **Facturation** : facturé par donneur d'ordre ou par mois (hors TVA, notes de crédit déduites), ou les factures ouvertes et échues.
+
+Bon à savoir :
+
+- Le modèle de langage choisit seulement la question et les filtres ; Quaymark calcule lui-même. **Vos données ne vont pas au modèle de langage**, seulement votre question.
+- Vous ne recevez que des questions sur ce que vous pouvez voir : la facturation seulement avec le droit de voir les factures.
+- Si un nom ne trouve rien, le tableau le dit. Si un nom correspond à plusieurs donneurs d'ordre, navires ou experts, le tableau affiche les candidats : précisez alors.
+- L'assistant fonctionne avec la **clé IA propre du bureau**. Demandez à ADM-Concept comment la configurer.
+
 ## Dans le portail client
 
 Le donneur d'ordre voit dans le portail client les mêmes analyses sur ses propres dossiers, sous **Analyses**, sans regroupement par donneur d'ordre.
