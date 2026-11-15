@@ -30,6 +30,7 @@ Eén rapportsjabloon: de versies per taal en het Word-document zelf.
 - `{{tijdlijn}}` zet de statement of facts in het rapport: de samenvatting en de gebeurtenissen. Zonder gebeurtenissen blijft er niets staan.
 - `{{schadebegroting}}` zet de schadebegroting in het rapport: de posten met hun geraamde en aanvaarde bedrag, de afschrijving en het netto bedrag, de totalen, de voorgestelde reserve en het akkoord als dat er is. Zonder posten blijft er niets staan.
 - `{{draftsurvey}}` zet de draft survey in het rapport: het resultaat en de tabel met begin- en eindmeting. Zonder meting blijft er niets staan.
+- `{{ijkmeting}}` zet de meting op ijkschalen in het rapport: het resultaat en de tabel met de ijkbrief en de metingen vóór en na. Zonder meting blijft er niets staan.
 - `{{bunker}}` zet de bunker survey in het rapport: per product vóór, na, geleverd en het verschil met de leveringsbon, en de tabel per tank. Zonder peiling blijft er niets staan.
 - `{{aanbevelingen}}` zet de punten van de checklist met een gebrek in het rapport, met de prioriteit voorop: punt, uitslag, bevinding en aanbeveling. Zonder gebrek blijft er niets staan. De checklisttabel zelf heeft ook een kolom met de aanbeveling.
 - `{{handtekeningen}}` zet de handtekeningen ter plaatse in het rapport: per handtekening de clausule, de verklaring, het beeld (of de weigering met de reden), wie en wanneer, en de vingerafdruk van de momentopname. Zonder handtekening blijft er niets staan.

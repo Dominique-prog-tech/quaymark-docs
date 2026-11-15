@@ -87,12 +87,12 @@ PIONEER = q("select id from dossiers.schepen where naam = 'NOORDKAAI PIONEER'") 
 
 sql = ['begin;']
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
-eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 14)] + [vid('dossier/zb1')]
+eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 15)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
-          'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'rapporten.documenten']:
+          'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'berekeningen.ijk_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
 # Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
@@ -100,6 +100,7 @@ sql.append(f'delete from dossiers.verwijderregister where dossier_id in ({lijst}
 eigen_relaties = ', '.join(lit(vid(f'relatie/{k}')) for k in range(1, 10))
 sql.append(f'delete from relaties.contactpersonen where relatie_id in ({eigen_relaties});')
 sql.append(f'delete from relaties.relaties where id in ({eigen_relaties});')
+sql.append(f"delete from berekeningen.ijkbrieven where schip_id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 7))});")   # D9
 sql.append(f"delete from dossiers.schepen where id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 7))});")
 sql.append(f"delete from rapporten.standaardteksten where id in ({', '.join(lit(vid(f'standaardtekst/{k}')) for k in range(1, 4))});")
 sql.append(f"delete from rapporten.woordenlijst where id in ({', '.join(lit(vid(f'woordterm/{k}')) for k in range(1, 4))});")
@@ -184,6 +185,13 @@ DOSSIERS = [
     ('12', HQ, 'HQ-2019-0117', 'condition', 4, 3, 'BEGNE', 'Kluizendok', 'afgesloten', -2700, {'doel': 'P&I', 'weer': None}, 'P&I condition survey'),
     ('13', HQ, 'HQ-2017-0008', 'damage', 1, 2, 'BEANR', 'Kaai 730', 'afgesloten', -3400, {'oorzaak': 'Collision with quay'}, 'Quay contact, claim in court'),
 ]
+# D9 (15/11/2026): een meting op ijkschalen op het binnenschip JOHANNA-W. Enkel als het bureau de binnenvaarttypes heeft (de knop in Instellingen,
+# Soorten survey): de catalogus van de app is de enige bron van die soorten, dit script maakt ze niet zelf.
+if 'ijkmeting' in SOORT:
+    DOSSIERS.append(('14', HQ, 'HQ-2026-0008', 'ijkmeting', 6, 2, 'BEANR', 'Kaai 116', 'in_uitvoering', 0,
+                     {'lading': 'Sand', 'handeling': 'laden', 'hoeveelheid_vrachtbrief': '1550'}, 'Loading of sand, gauging before and after'))
+else:
+    print('ℹ️  Geen soort "ijkmeting" in dit bureau: HQ-2026-0008 (meting op ijkschalen) wordt overgeslagen. Klik eerst op "Binnenvaarttypes toevoegen".')
 # ⚠️ Een ongeldige code geeft in de app GEEN fout, enkel een leeg keuzevak (gezien op het eerste beeld, 13/11/2026: "Calm" in plaats van
 # "kalm"). Daarom de codes uit de app zelf (Omstandigheden in Dossiers.cs, de keuzes per veld in de databank) en weigeren wat er niet in staat.
 import re
@@ -660,8 +668,28 @@ for soort, m in DRAFTS:
     sql.append(rij('berekeningen.draft_metingen', dict(id=vid(f'draft/6/{soort}'), dossier_id=D6, soort=soort, meting=meting,
                gewijzigd_op=om(1 if soort == 'begin' else 2, 9), gewijzigd_door=SURVEYOR_NAAM, created_at=om(1, 9))))
 
+# ── D9: de ijkbrief van de JOHANNA-W (verzonnen: 60 tot 360 cm, het laadvermogen per cm loopt op van 10,8 tot 11,9 t) en de metingen vóór en na
+#    het laden van HQ-2026-0008. ──
+IJKTABEL, ton = [dict(inzinking=60, tonnage=560.0)], 560.0
+for cm in range(70, 361, 10):
+    ton = round(ton + (10.8 + (cm - 70) / 290 * 1.1) * 10, 1)
+    IJKTABEL.append(dict(inzinking=cm, tonnage=ton))
+sql.append(rij('berekeningen.ijkbrieven', dict(id=vid('ijkbrief/6'), schip_id=SCHIP[6], nummer='IJK-BE-04471', geldig_tot=dt.date(2031, 6, 30).isoformat(),
+           rijen=IJKTABEL, gewijzigd_op=om(-30, 10), gewijzigd_door=SURVEYOR_NAAM, created_at=om(-30, 10))))
+if 'ijkmeting' in SOORT:
+    D14 = vid('dossier/14')
+    IJK = [('begin', dict(voorBb=78, voorSb=80, middenBb=None, middenSb=None, achterBb=79, achterSb=81, densiteit=1.000, opmerking='Empty, before loading',
+                          aftrek=[dict(soort='ballast', omschrijving=None, ton=0), dict(soort='zoetwater', omschrijving=None, ton=6.0),
+                                  dict(soort='brandstof', omschrijving=None, ton=18.5)])),
+           ('eind', dict(voorBb=214, voorSb=216, middenBb=215, middenSb=216, achterBb=215, achterSb=217, densiteit=1.000, opmerking=None,
+                         aftrek=[dict(soort='ballast', omschrijving=None, ton=0), dict(soort='zoetwater', omschrijving=None, ton=5.5),
+                                 dict(soort='brandstof', omschrijving=None, ton=17.0)]))]
+    for soort, m in IJK:
+        sql.append(rij('berekeningen.ijk_metingen', dict(id=vid(f'ijk/14/{soort}'), dossier_id=D14, soort=soort, meting=m,
+                   gewijzigd_op=om(0, 8 if soort == 'begin' else 15), gewijzigd_door=SURVEYOR_NAAM, created_at=om(0, 8))))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
-for vest, laatste in [(HQ, 7), (ZB, 3)]:
+for vest, laatste in [(HQ, 8 if 'ijkmeting' in SOORT else 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"
     sql.append(f"update dossiers.adm_nummer_tellers set laatste_nummer = greatest(laatste_nummer, {laatste}) where reeks = {lit(reeks)} and jaar = {VANDAAG.year};")
     sql.append(f"insert into dossiers.adm_nummer_tellers (id, reeks, jaar, laatste_nummer) select {lit(vid('teller/' + reeks))}, {lit(reeks)}, {VANDAAG.year}, {laatste} "

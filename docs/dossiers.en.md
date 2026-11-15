@@ -235,6 +235,19 @@ The **calculation** beside it follows every change: the drafts at the perpendicu
 
 **Draft survey report (PDF)** shows the document; **Issue draft survey report** (once both measurements are complete) records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. In the report the draft survey comes with the marker `{{draftsurvey}}` (see [Templates](sjablonen.md)).
 
+### Barge gauging
+
+For a survey type with the **Barge gauging** box ticked (see [Survey types](soorten-survey.md)), the file gets the **Gauging** tab: determining the cargo of an inland vessel with the gauge scales and the vessel's gauging certificate.
+
+![Gauging of HQ-2026-0008 with Before, After and the result Loaded](images/dossier-ijkmeting-en.png "Gauging")
+
+- Before and after loading or discharging, enter the **gauge scales** in cm: fore and aft, port and starboard. With midships there are six; midships is entered as a pair, or not at all.
+- Enter the **density** of the water (the gauging certificate applies to fresh water, 1.000) and the **deductibles**: ballast, fresh water and bunkers, in tonnes.
+- **Save** saves that gauging. The table below shows the mean draught, the displacement per gauging table (calculated proportionally between two lines), after density, the deductibles and the net weight.
+- The difference between before and after is the weight of the cargo: loaded if it increased, discharged if it decreased.
+
+At the top you see the vessel's gauging certificate, with a link to the vessel. If the vessel has no gauging certificate yet, or the mean draught falls outside the gauging table, Quaymark does not calculate and says why. An expired certificate gives a warning. In the report the gauging comes with the placeholder `{{ijkmeting}}` (see [Templates](sjablonen.md)).
+
 ### Bunker survey
 
 For a survey type with the **Bunker survey** box ticked (see [Survey types](soorten-survey.md)), the file gets the **Bunkers** tab. You sound every fuel tank of the vessel before and after bunkering; Quaymark calculates the weight and compares the delivery with the delivery note (BDN).

@@ -45,6 +45,14 @@ Het tabblad **Ruimen en tanks** houdt per schip de ruimen en tanks bij, zodat ee
 
 Een certificaat van ruimkeuring op een dossier van dit schip krijgt meteen een regel per ruim.
 
+## Ijkbrief
+
+Een binnenschip heeft het tabblad **Ijkbrief**: het **nummer**, **Geldig tot** en de **ijktabel**, met bij elke inzinking (cm) de waterverplaatsing (ton). De meting op ijkschalen van een dossier rekent ermee (zie [Dossiers](dossiers.md#meting-op-ijkschalen)).
+
+![Ijkbrief van de JOHANNA-W met Nummer ijkbrief, Geldig tot en de Ijktabel](images/schip-ijkbrief.png "Ijkbrief")
+
+Plak de ijktabel als twee kolommen uit een rekenblad, één regel per inzinking; een kopregel mag. Quaymark leest ze meteen en toont het aantal regels en het bereik, of de regel die niet te lezen is. Inzinking en waterverplaatsing moeten oplopen, anders kan **Bewaren** niet. Een vervallen ijkbrief geeft een waarschuwing, hier en op het tabblad Meting van een dossier.
+
 ## Zie ook
 
 - [Dossiers](dossiers.md)

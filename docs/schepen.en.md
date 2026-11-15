@@ -45,6 +45,14 @@ The **Holds and tanks** tab keeps the holds and tanks per vessel, so that a next
 
 A hold inspection certificate on a file of this vessel immediately gets one line per hold.
 
+## Gauging certificate
+
+An inland vessel has the **Gauging certificate** tab: the **number**, **Valid until** and the **gauging table**, with for each draught (cm) the displacement (tonnes). The gauging in a file calculates with it (see [Files](dossiers.md#barge-gauging)).
+
+![Gauging certificate of the JOHANNA-W with Certificate number, Valid until and the Gauging table](images/schip-ijkbrief-en.png "Gauging certificate")
+
+Paste the gauging table as two columns from a spreadsheet, one line per draught; a header line is allowed. Quaymark reads it at once and shows the number of lines and the range, or the line it cannot read. Draught and displacement must increase, otherwise **Save** is not possible. An expired certificate gives a warning, here and on the Gauging tab of a file.
+
 ## See also
 
 - [Files](dossiers.md)

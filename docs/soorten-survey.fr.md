@@ -12,9 +12,10 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Types d'expertise
 
 ## La liste
 
-- Pour chaque type, vous voyez le code, le nom, le nombre de **champs** et de **points de contrôle**, la langue par défaut du rapport et si le type est actif.
+- Pour chaque type, vous voyez le code, le nom, le nombre de **champs** et de **points de contrôle**, la **navigation**, la langue par défaut du rapport et si le type est actif.
 - Double-cliquez sur une ligne pour ouvrir le type. **Nouveau type d'expertise** en crée un.
 - Un type ne peut pas être supprimé, car d'anciens dossiers y renvoient. Passez un type que vous ne proposez plus en **non actif**.
+- **Ajouter les types fluviaux** ajoute les types pour la navigation intérieure qui n'existent pas encore : jaugeage aux échelles, expertise de valeur, dommages, début et fin d'affrètement. Ce qui existe déjà reste inchangé. Un nouveau bureau les a d'emblée. Pour avoir le jaugeage dans le rapport, ajoutez `{{ijkmeting}}` à votre modèle de rapport (voir [Modèles](sjablonen.md)).
 
 ![La liste Types d'expertise avec le bouton Nouveau type d'expertise](images/soorten-survey-fr.png "Les types d'expertise")
 
@@ -28,6 +29,8 @@ Un type d'expertise : ce qui est saisi dans le dossier et ce que l'expert vérif
 - **Délai de conservation (ans)** : combien de temps un dossier clôturé de ce type est conservé. Vide = le délai du pays du site. Voir [Délais de conservation](bewaartermijnen.md).
 - **Draft survey** : coché, les dossiers de ce type reçoivent l'onglet Draft survey avec mesure initiale et finale. Voir [Dossiers](dossiers.md#draft-survey).
 - **Expertise de soutes** : coché, les dossiers de ce type reçoivent l'onglet Soutes avec les sondages avant et après, le bon de livraison et le calcul en tonnes. Voir [Dossiers](dossiers.md#expertise-de-soutes).
+- **Jaugeage aux échelles** : coché, les dossiers de ce type reçoivent l'onglet Jaugeage avec les échelles avant et après et le certificat de jaugeage du bateau. Voir [Dossiers](dossiers.md#jaugeage-aux-echelles).
+- **Navigation** : maritime, fluviale ou les deux. Dans un dossier, les types qui correspondent au bateau figurent en tête, et le dossier avertit pour un type destiné à l'autre navigation. Il ne refuse pas.
 - **Échelle de la check-list** : **conforme / non conforme / s.o.** pour un contrôle, ou un **état** (bon / correct / médiocre / mauvais / s.o.) pour une expertise d'état. Les réponses existantes restent telles qu'elles ont été données.
 - **Champs** : les données qu'un dossier de ce type reçoit en plus des champs fixes. Un champ a une **clé** (minuscules, chiffres et _, fixe car l'application mobile et les rapports y font référence), un type (texte, nombre, date, oui/non, choix ou tableau), un libellé en quatre langues, une unité et un caractère obligatoire ou non. Un **tableau** a des colonnes et éventuellement des lignes fixes, par exemple une ligne par cale.
 - **Check-list** : les points auxquels l'expert répond sur place, chacun avec une clé, un libellé, et l'obligation ou non d'une réponse ou d'une photo. Le lien **Constats standard** ouvre pour chaque point enregistré les défauts courants, chacun avec un constat, une recommandation et une priorité, en quatre langues. L'expert en insère un d'un geste dans sa réponse ; une réponse donnée ne change pas si vous les modifiez ensuite. Les nouveaux points reçoivent ce lien après **Enregistrer**.

@@ -235,6 +235,19 @@ Le **calcul** à côté suit chaque modification : les tirants d'eau aux perpend
 
 **Draft survey report (PDF)** affiche le document ; **Émettre le draft survey report** (lorsque les deux mesures sont complètes) le fige avec son empreinte, avec les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Dans le rapport, la draft survey vient avec le marqueur `{{draftsurvey}}` (voir [Modèles](sjablonen.md)).
 
+### Jaugeage aux échelles
+
+Pour un type d'expertise avec la case **Jaugeage aux échelles** (voir [Types d'expertise](soorten-survey.md)), le dossier reçoit l'onglet **Jaugeage** : déterminer la cargaison d'un bateau de navigation intérieure avec les échelles de jauge et le certificat de jaugeage du bateau.
+
+![Jaugeage de HQ-2026-0008 avec Avant, Après et le résultat Chargé](images/dossier-ijkmeting-fr.png "Jaugeage")
+
+- Avant et après le chargement ou le déchargement, saisissez les **échelles de jauge**, en cm : avant et arrière, à bâbord et à tribord. Avec le milieu, il y en a six ; le milieu se saisit par paire, ou pas du tout.
+- Saisissez la **densité** de l'eau (le certificat de jaugeage vaut pour l'eau douce, 1,000) et les **déductions** : ballast, eau douce et combustible, en tonnes.
+- **Enregistrer** enregistre ce jaugeage. Le tableau en dessous montre l'enfoncement moyen, le déplacement selon le barème (calculé proportionnellement entre deux lignes), après la densité, les déductions et le poids net.
+- La différence entre avant et après est le poids de la cargaison : chargé si elle a augmenté, déchargé si elle a diminué.
+
+En haut figure le certificat de jaugeage du bateau, avec un lien vers le bateau. Si le bateau n'a pas encore de certificat, ou si l'enfoncement moyen sort du barème, Quaymark ne calcule pas et dit pourquoi. Un certificat expiré donne un avertissement. Dans le rapport, le jaugeage vient avec le repère `{{ijkmeting}}` (voir [Modèles](sjablonen.md)).
+
 ### Expertise de soutes
 
 Pour un type d'expertise avec la case **Expertise de soutes** (voir [Types d'expertise](soorten-survey.md)), le dossier reçoit l'onglet **Soutes**. Vous sondez chaque soute du navire avant et après le soutage ; Quaymark calcule le poids et compare la livraison au bon de livraison (BDN).

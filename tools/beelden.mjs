@@ -102,6 +102,8 @@ const SCHOTEN = () => [
   { naam: 'schip', route: '/schepen', verwacht: Q('aantal_ruimen'), na: async p => openRij(p, 'KAAIMEEUW') },
   { naam: 'schip-ruimen', route: '/schepen', verwacht: /Aft hold, smaller hatch/,
     na: async p => { await openRij(p, 'KAAIMEEUW'); await p.getByText(Q('ruimen_tanks')).first().click(); await p.waitForLoadState('networkidle'); } },
+  { naam: 'schip-ijkbrief', route: '/schepen', hoogte: 1300, verwacht: Q('ijkbrief_uitleg'),
+    na: async p => { await openRij(p, 'JOHANNA-W'); await p.getByText(Q('ijkbrief')).first().click(); await p.waitForLoadState('networkidle'); } },
   { naam: 'dossier-spraaknotities', route: '/dossiers', hoogte: 1000, verwacht: /Hatch cover 3 rubber packing torn/,
     na: async p => { await dossier('HQ-2026-0003', 'rapport')(p); await p.locator('[data-spraaknotities]').scrollIntoViewIfNeeded(); await p.waitForTimeout(400); } },
   { naam: 'dossier-gezamenlijk', route: '/dossiers', hoogte: 1100, verwacht: /Hold 3 and hatch cover 3/, na: dossier('HQ-2026-0003', 'gezamenlijk') },
@@ -125,6 +127,8 @@ const SCHOTEN = () => [
   { naam: 'dossier-draft-meting', route: '/dossiers', hoogte: 1500, verwacht: Q('draft_berekening'),
     na: async p => { await openRij(p, 'HQ-2026-0004'); const u = new URL(p.url()); await p.goto(`${u.origin}${u.pathname}/draft/begin`); await p.waitForLoadState('networkidle'); } },
   // HQ-2026-0007 is afgesloten en staat dus niet in de standaardlijst: rechtstreeks, met de vaste id van het vulscript (vid('dossier/9')).
+  // D9: de meting op ijkschalen van HQ-2026-0008 (JOHANNA-W, binnenvaart). Zelfde verzonnen cijfers als het vulscript: geladen 1.513,455 t.
+  { naam: 'dossier-ijkmeting', route: '/dossiers', hoogte: 1500, verwacht: /1[.,\u202f\u00a0]513[.,]455/, na: dossier('HQ-2026-0008', 'ijkmeting') },
   { naam: 'dossier-bunker', route: '/dossiers/7b7debda-ae44-5311-802e-00d5758aec05?tab=bunker', hoogte: 1700, verwacht: /FO 3 C/ },
   { naam: 'dossier-bunker-peilingen', route: '/dossiers/7b7debda-ae44-5311-802e-00d5758aec05/bunker/na', hoogte: 900, verwacht: Q('bunker_peilingen_uitleg') },
   { naam: 'dossier-tijdlijn', route: '/dossiers', hoogte: 1100, verwacht: /Conveyor breakdown/, na: dossier('ZB-2026-0003', 'tijdlijn') },

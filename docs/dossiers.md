@@ -235,6 +235,19 @@ De **berekening** ernaast volgt elke wijziging: de diepgangen aan de loodlijnen,
 
 **Draft survey report (PDF)** toont het document; **Draft survey report uitgeven** (als beide metingen volledig zijn) legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. In het rapport komt de draft survey met de markering `{{draftsurvey}}` (zie [Sjablonen](sjablonen.md)).
 
+### Meting op ijkschalen
+
+Bij een soort survey met het vinkje **Meting op ijkschalen** (zie [Soorten survey](soorten-survey.md)) krijgt het dossier het tabblad **Meting**: de lading van een binnenschip bepalen met de ijkschalen en de ijkbrief van het schip.
+
+![Meting van HQ-2026-0008 met Vóór, Na en het resultaat Geladen](images/dossier-ijkmeting.png "Meting")
+
+- Vul vóór en na het laden of lossen de **ijkschalen** in, in cm: voor en achter, aan bakboord en stuurboord. Met het midden erbij zijn het er zes; het midden vult u als paar in, of niet.
+- Vul de **densiteit** van het water in (de ijkbrief geldt voor zoet water, 1,000) en de **aftrek**: ballast, zoetwater en brandstof, in ton.
+- **Bewaren** bewaart die meting. De tabel eronder toont de gemiddelde inzinking, de waterverplaatsing volgens de ijktabel (tussen twee regels evenredig berekend), na de densiteit, de aftrek en het netto gewicht.
+- Het verschil tussen vóór en na is het gewicht van de lading: geladen als het meer werd, gelost als het minder werd.
+
+Bovenaan staat de ijkbrief van het schip, met een link naar het schip. Heeft het schip nog geen ijkbrief, of valt de gemiddelde inzinking buiten de ijktabel, dan rekent Quaymark niet en zegt het waarom. Een vervallen ijkbrief geeft een waarschuwing. In het rapport komt de meting met de markering `{{ijkmeting}}` (zie [Sjablonen](sjablonen.md)).
+
 ### Bunker survey
 
 Bij een soort survey met het vinkje **Bunker survey** (zie [Soorten survey](soorten-survey.md)) krijgt het dossier het tabblad **Bunker**. U peilt elke brandstoftank van het schip vóór en na het bunkeren; Quaymark rekent het gewicht uit en vergelijkt de levering met de leveringsbon (BDN).

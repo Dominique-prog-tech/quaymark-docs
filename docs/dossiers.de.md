@@ -235,6 +235,19 @@ Die **Berechnung** daneben folgt jeder Änderung: die Tiefgänge an den Loten, d
 
 **Draft Survey Report (PDF)** zeigt das Dokument; **Draft Survey Report herausgeben** (sobald beide Messungen vollständig sind) hält es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Im Bericht steht der Draft Survey mit der Markierung `{{draftsurvey}}` (siehe [Vorlagen](sjablonen.md)).
 
+### Eichaufnahme
+
+Bei einer Besichtigungsart mit dem Haken **Eichaufnahme** (siehe [Besichtigungsarten](soorten-survey.md)) erhält die Akte die Registerkarte **Eichaufnahme**: die Ladung eines Binnenschiffs mit den Eichskalen und dem Eichschein des Schiffs bestimmen.
+
+![Eichaufnahme von HQ-2026-0008 mit Vorher, Nachher und Geladen](images/dossier-ijkmeting-de.png "Eichaufnahme")
+
+- Tragen Sie vor und nach dem Laden oder Löschen die **Eichskalen** in cm ein: vorne und achtern, an Backbord und Steuerbord. Mit der Mitte sind es sechs; die Mitte wird als Paar eingetragen oder gar nicht.
+- Tragen Sie die **Dichte** des Wassers ein (der Eichschein gilt für Süßwasser, 1,000) und die **Abzüge**: Ballast, Frischwasser und Bunker, in Tonnen.
+- **Speichern** speichert diese Messung. Die Tabelle darunter zeigt die mittlere Eintauchung, die Verdrängung laut Eichtabelle (zwischen zwei Zeilen anteilig berechnet), nach der Dichte, die Abzüge und das Nettogewicht.
+- Der Unterschied zwischen vorher und nachher ist das Gewicht der Ladung: geladen, wenn es mehr wurde, gelöscht, wenn es weniger wurde.
+
+Oben steht der Eichschein des Schiffs, mit einem Link zum Schiff. Hat das Schiff noch keinen Eichschein oder liegt die mittlere Eintauchung außerhalb der Eichtabelle, rechnet Quaymark nicht und sagt warum. Ein abgelaufener Eichschein gibt eine Warnung. Im Bericht erscheint die Eichaufnahme mit dem Platzhalter `{{ijkmeting}}` (siehe [Vorlagen](sjablonen.md)).
+
 ### Bunkerbesichtigung
 
 Bei einer Besichtigungsart mit dem Haken **Bunkerbesichtigung** (siehe [Besichtigungsarten](soorten-survey.md)) erhält die Akte die Registerkarte **Bunker**. Sie peilen jeden Brennstofftank des Schiffes vor und nach dem Bunkern; Quaymark berechnet das Gewicht und vergleicht die Lieferung mit dem Lieferschein (BDN).

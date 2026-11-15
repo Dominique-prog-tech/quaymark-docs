@@ -12,9 +12,10 @@ Klik in het menu links op **Instellingen** en dan op **Soorten survey**.
 
 ## De lijst
 
-- Per soort ziet u de code, de naam, het aantal **velden** en **checklistpunten**, de standaardtaal van het rapport en of de soort actief is.
+- Per soort ziet u de code, de naam, het aantal **velden** en **checklistpunten**, de **vaart**, de standaardtaal van het rapport en of de soort actief is.
 - Dubbelklik op een rij om de soort te openen. **Nieuw soort survey** maakt er een aan.
 - Een soort verwijderen kan niet, want oude dossiers verwijzen ernaar. Zet een soort die u niet meer aanbiedt op **niet actief**.
+- **Binnenvaarttypes toevoegen** voegt de soorten voor de binnenvaart toe die er nog niet zijn: meting op ijkschalen, waardebepaling, schade, aanhuur en afhuur. Wat er al is, blijft zoals het is. Een nieuw bureau heeft ze meteen. Wilt u de meting op ijkschalen in het rapport, zet dan `{{ijkmeting}}` in uw rapportsjabloon (zie [Sjablonen](sjablonen.md)).
 
 ![De lijst Soorten survey met de knop Nieuw soort survey](images/soorten-survey.png "De soorten survey")
 
@@ -28,6 +29,8 @@ Eén soort survey: wat er in het dossier ingevuld wordt en wat de surveyor ter p
 - **Bewaartermijn (jaar)**: hoe lang een afgesloten dossier van deze soort bewaard wordt. Leeg = de termijn van het land van de vestiging. Zie [Bewaartermijnen](bewaartermijnen.md).
 - **Draft survey**: aangevinkt, dan krijgen dossiers van deze soort het tabblad Draft survey met begin- en eindmeting. Zie [Dossiers](dossiers.md#draft-survey).
 - **Bunker survey**: aangevinkt, dan krijgen dossiers van deze soort het tabblad Bunker met peilingen vóór en na, de leveringsbon en de berekening naar ton. Zie [Dossiers](dossiers.md#bunker-survey).
+- **Meting op ijkschalen**: aangevinkt, dan krijgen dossiers van deze soort het tabblad Meting met de ijkschalen vóór en na en de ijkbrief van het binnenschip. Zie [Dossiers](dossiers.md#meting-op-ijkschalen).
+- **Vaart**: zeevaart, binnenvaart of beide. Bij een dossier staan de soorten die bij het schip passen bovenaan, en het dossier waarschuwt bij een soort voor de andere vaart. Het weigert niet.
 - **Schaal van de checklist**: **In orde / niet in orde / n.v.t.** voor een controle, of een **staat** (goed / redelijk / matig / slecht / n.v.t.) voor een conditiesurvey. Bestaande antwoorden blijven staan zoals ze gegeven zijn.
 - **Velden**: de gegevens die een dossier van deze soort bovenop de vaste velden krijgt. Een veld heeft een **sleutel** (kleine letters, cijfers en _, ligt vast omdat de veldapp en de rapporten ernaar verwijzen), een soort (tekst, getal, datum, ja/nee, keuze of tabel), een label in vier talen, een eenheid en of het verplicht is. Een **tabel** heeft kolommen en eventueel vaste rijen, bijvoorbeeld één rij per ruim.
 - **Checklist**: de punten die de surveyor ter plaatse beantwoordt, elk met een sleutel, een label, en of een antwoord of een foto verplicht is. De link **Standaardbevindingen** opent per bewaard punt de gangbare gebreken, elk met een bevinding, een aanbeveling en een prioriteit, in vier talen. De surveyor zet er één met een tik in zijn antwoord; een gegeven antwoord verandert niet als u ze later wijzigt. Nieuwe punten krijgen die link na **Bewaren**.

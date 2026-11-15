@@ -45,6 +45,14 @@ Die Registerkarte **Laderäume und Tanks** führt pro Schiff die Laderäume und 
 
 Eine Laderaumbescheinigung in einer Akte dieses Schiffs erhält sofort eine Zeile pro Laderaum.
 
+## Eichschein
+
+Ein Binnenschiff hat die Registerkarte **Eichschein**: die **Nummer**, **Gültig bis** und die **Eichtabelle**, mit der Verdrängung (Tonnen) zu jeder Eintauchung (cm). Die Eichaufnahme einer Akte rechnet damit (siehe [Akten](dossiers.md#eichaufnahme)).
+
+![Eichschein der JOHANNA-W mit Nummer des Eichscheins, Gültig bis und der Eichtabelle](images/schip-ijkbrief-de.png "Eichschein")
+
+Fügen Sie die Eichtabelle als zwei Spalten aus einer Tabellenkalkulation ein, eine Zeile pro Eintauchung; eine Kopfzeile ist erlaubt. Quaymark liest sie sofort und zeigt die Zahl der Zeilen und den Bereich, oder die Zeile, die nicht lesbar ist. Eintauchung und Verdrängung müssen ansteigen, sonst ist **Speichern** nicht möglich. Ein abgelaufener Eichschein gibt eine Warnung, hier und auf der Registerkarte Eichaufnahme einer Akte.
+
 ## Siehe auch
 
 - [Akten](dossiers.md)

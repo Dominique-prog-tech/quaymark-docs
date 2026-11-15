@@ -45,6 +45,14 @@ L'onglet **Cales et citernes** conserve par navire les cales et citernes, pour q
 
 Un certificat d'inspection des cales sur un dossier de ce navire reçoit directement une ligne par cale.
 
+## Certificat de jaugeage
+
+Un bateau de navigation intérieure a l'onglet **Certificat de jaugeage** : le **numéro**, **Valable jusqu'au** et le **barème de jaugeage**, avec pour chaque enfoncement (cm) le déplacement (tonnes). Le jaugeage d'un dossier calcule avec (voir [Dossiers](dossiers.md#jaugeage-aux-echelles)).
+
+![Certificat de jaugeage du JOHANNA-W avec Numéro du certificat, Valable jusqu'au et le Barème de jaugeage](images/schip-ijkbrief-fr.png "Certificat de jaugeage")
+
+Collez le barème en deux colonnes depuis un tableur, une ligne par enfoncement ; une ligne d'en-tête est permise. Quaymark le lit aussitôt et montre le nombre de lignes et l'étendue, ou la ligne illisible. L'enfoncement et le déplacement doivent être croissants, sinon **Enregistrer** n'est pas possible. Un certificat expiré donne un avertissement, ici et dans l'onglet Jaugeage d'un dossier.
+
 ## Voir aussi
 
 - [Dossiers](dossiers.md)
