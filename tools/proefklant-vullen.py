@@ -698,6 +698,43 @@ if 'ijkmeting' in SOORT:
         sql.append(rij('berekeningen.ijk_metingen', dict(id=vid(f'ijk/14/{soort}'), dossier_id=D14, soort=soort, meting=m,
                    gewijzigd_op=om(0, 8 if soort == 'begin' else 15), gewijzigd_door=SURVEYOR_NAAM, created_at=om(0, 8))))
 
+# ── P7 (15/11/2026): een freelance surveyor, verzonnen. De gebruiker freelancer.demo bestaat lokaal al (in de app gemaakt) of wordt hier gemaakt als kopie
+#    van de proefsurveyor (zelfde testwachtwoord, dus geen nieuw geheim). Enkel de rol Freelancer. Zijn fiche, en in de VORIGE MAAND twee prestaties en een
+#    kost die nog op geen afrekening staan: zo toont het tabblad Afrekeningen een voorstel. Een uitgegeven afrekening maakt dit script NIET (PDF + SHA-256). ──
+FREELANCER = q("select id from control.\"AspNetUsers\" where user_name = 'freelancer.demo'", db='quaymark_control')
+if not FREELANCER:
+    FREELANCER = vid('gebruiker/freelancer')
+    q(f"""insert into control."AspNetUsers" (id, display_name, tenant_id, gebruiker_id, pref_lang, pref_theme, user_name, normalized_user_name, email, normalized_email,
+      email_confirmed, password_hash, security_stamp, concurrency_stamp, phone_number, phone_number_confirmed, two_factor_enabled, lockout_end, lockout_enabled,
+      access_failed_count, pref_accent, pref_size, avatar_content_type, avatar_image)
+    select {lit(FREELANCER)}, 'Fien Freelance (demo)', tenant_id, null, pref_lang, pref_theme, 'freelancer.demo', 'FREELANCER.DEMO', 'freelancer@noordkaai-demo.invalid',
+      'FREELANCER@NOORDKAAI-DEMO.INVALID', true, password_hash, gen_random_uuid()::text, gen_random_uuid()::text, null, false, false, null, true, 0, pref_accent, pref_size, null, null
+    from control."AspNetUsers" where user_name = 'surveyor.demo';""", db='quaymark_control')
+q(f"""delete from control."AspNetUserRoles" where user_id = {lit(FREELANCER)};
+insert into control."AspNetUserRoles" (user_id, role_id) select {lit(FREELANCER)}, id from control."AspNetRoles" where name = 'Freelancer';""", db='quaymark_control')
+if 'Freelancer' not in q(f"select string_agg(r.name, ',') from control.\"AspNetUserRoles\" ur join control.\"AspNetRoles\" r on r.id = ur.role_id where ur.user_id = {lit(FREELANCER)}", db='quaymark_control'):
+    raise SystemExit('⛔ De rol Freelancer bestaat niet in het register: draait de app (0.28.0 of later) al eens lokaal? Gestopt.')
+sql.append(f"""insert into financieel.freelancers (gebruiker_id, code, bedrijfsnaam, ondernemingsnummer, straat, postcode, gemeente, land, iban, uurtarief, btw_regeling,
+  raamakkoord_op, actief, created_at) values ({lit(FREELANCER)}, 'FF', 'Fien Freelance BV', 'BE 0987.654.321', 'Dokweg 12', '8380', 'Zeebrugge', 'BE',
+  'BE71 0961 2345 6769', 55, 'normaal', {lit(dt.date(VANDAAG.year, 1, 2))}, true, {lit(om(-30))})
+on conflict (gebruiker_id) do update set code = excluded.code, bedrijfsnaam = excluded.bedrijfsnaam, ondernemingsnummer = excluded.ondernemingsnummer,
+  straat = excluded.straat, postcode = excluded.postcode, gemeente = excluded.gemeente, land = excluded.land, iban = excluded.iban, uurtarief = excluded.uurtarief,
+  btw_regeling = excluded.btw_regeling, raamakkoord_op = excluded.raamakkoord_op, actief = true;""")
+eerste_vorige = (VANDAAG.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
+FL_DOSSIER = q("select id from dossiers.dossiers where nummer = 'ZB-2026-0001'")
+if not FL_DOSSIER:
+    raise SystemExit('⛔ Het dossier ZB-2026-0001 bestaat niet. Gestopt; niets geschreven.')
+FL_PRESTATIES = [(1, eerste_vorige + dt.timedelta(days=6), '07:30', '11:00', 'On board · Draft survey, initial'), (2, eerste_vorige + dt.timedelta(days=6), '15:00', '17:15', 'On board · Draft survey, final')]
+FL_KOST = vid('freelance/kost/1')
+sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'freelance/prestatie/{k}')) for k, *_ in FL_PRESTATIES)});")
+sql.append(f"delete from financieel.kosten where id = {lit(FL_KOST)};")
+for k, dag, van, tot, oms in FL_PRESTATIES:
+    sql.append(rij('financieel.prestaties', dict(id=vid(f'freelance/prestatie/{k}'), dossier_id=FL_DOSSIER, gebruiker_id=FREELANCER, van=f'{dag}T{van}:00',
+               tot=f'{dag}T{tot}:00', omschrijving=oms, factuur_id=None, afrekening_id=None, created_at=om(-30))))
+sql.append(rij('financieel.kosten', dict(id=FL_KOST, dossier_id=FL_DOSSIER, datum=eerste_vorige + dt.timedelta(days=6), soort='reis',
+           omschrijving='Mileage Bruges to Zeebrugge return, 34 km', bedrag=14.28, doorrekenen=True, bijlage_id=None, factuur_id=None, created_at=om(-30),
+           gebruiker_id=FREELANCER, afrekening_id=None)))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 8 if 'ijkmeting' in SOORT else 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"

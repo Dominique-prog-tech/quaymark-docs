@@ -25,3 +25,4 @@ Des réponses courtes aux questions qui reviennent dans le travail. Chaque étap
 ## Paramètres
 
 - [Comment mettre notre logo dans le rapport ?](logo-in-rapport.md)
+- [Comment régler un freelance ?](freelancer-afrekenen.md)

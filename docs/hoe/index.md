@@ -25,3 +25,4 @@ Korte antwoorden op de vragen die bij het werk terugkomen. Elke stap verwijst na
 ## Instellingen
 
 - [Hoe zet ik ons logo in het rapport?](logo-in-rapport.md)
+- [Hoe reken ik een freelancer af?](freelancer-afrekenen.md)

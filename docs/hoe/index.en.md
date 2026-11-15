@@ -25,3 +25,4 @@ Short answers to the questions that come up in daily work. Each step links to th
 ## Settings
 
 - [How do I put our logo in the report?](logo-in-rapport.md)
+- [How do I settle a freelancer?](freelancer-afrekenen.md)

@@ -25,3 +25,4 @@ Kurze Antworten auf die Fragen, die bei der Arbeit wiederkehren. Jeder Schritt v
 ## Einstellungen
 
 - [Wie setze ich unser Logo in den Bericht?](logo-in-rapport.md)
+- [Wie rechne ich einen Freiberufler ab?](freelancer-afrekenen.md)

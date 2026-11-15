@@ -242,6 +242,7 @@ nav:
       - hoe/bewijspakket.md
       - hoe/klantenportaal.md
       - hoe/logo-in-rapport.md
+      - hoe/freelancer-afrekenen.md
   - Opdrachten en dossiers:
       # Dossiers eerst: een klik op het tabblad opent de eerste pagina van de groep (Dominique, 14/11/2026).
       - dossiers.md
@@ -255,6 +256,8 @@ nav:
       - planning.md
       - wachtdiensten.md
       - bevoegdheden.md
+      - freelancers.md
+      - mijn-werk.md
   - Facturatie:
       - offertes.md
       - facturen.md
