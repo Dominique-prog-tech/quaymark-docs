@@ -48,6 +48,7 @@ Wat de contactpersoon in het portaal ziet:
 - **Nieuwe opdracht**: een opdracht indienen, met bijlagen. Ze komt als aanvraag bij het bureau en staat onder **Mijn aanvragen** tot het bureau beslist. → [Aanvragen](aanvragen.md)
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
 - **Analyses**: de vaststellingen uit de rapporten van zijn dossiers, geteld per terminal, schip, lading, soort survey, haven, categorie of plaats. Een dossier telt pas mee met een rapport dat de opdrachtgever al ziet, en met de stand van dat rapport. → [Analyses](analyses.md#in-het-klantenportaal)
+- Per dossier de **afgesproken datum** voor het rapport, als de raamafspraak een termijn heeft; onder **Analyses** ook hoeveel rapporten op tijd kwamen.
 - **Berichten** onderaan een dossier: het gesprek met het bureau, met bijlagen. Bij een bericht van het bureau krijgt de contactpersoon een mail met een link. → [Berichten](berichten.md#wat-de-opdrachtgever-ziet)
 - Geen surveyor, uren, kosten, vaststellingen of foto's: die staan in het rapport.
 
@@ -60,6 +61,8 @@ Met een vaste opdrachtgever spreekt een bureau vaak eigen tarieven af. Op het ta
 - Het **uurtarief van de afspraak gaat voor** op het eigen uurtarief van een surveyor: de opdrachtgever betaalt wat afgesproken is, welke surveyor ook gaat.
 - Een dossier volgt de afspraak die gold op de **datum van de opdracht**. Zo verandert het tarief van een lopend dossier niet als een nieuwe afspraak ingaat.
 - Twee afspraken van dezelfde opdrachtgever mogen elkaar niet overlappen.
+- Een **termijn** is het aantal werkdagen waarbinnen het eerste rapport uitgegeven moet zijn, gerekend vanaf het einde van de geplande inspectie (zonder planning: de datum van de opdracht). Zaterdag, zondag en de feestdagen van het land van de vestiging tellen niet. De eerste regel, **Alle soorten survey**, geldt voor de hele afspraak; een termijn bij een soort gaat voor. Een afspraak mag ook enkel een termijn hebben, zonder eigen tarieven.
+- Met een termijn toont Quaymark tegen wanneer het rapport er moet zijn: [in de dossierlijst en op het dossier](dossiers.md#termijn-tot-het-rapport), op het belletje van de surveyor, op de [startpagina](aan-de-slag.md) en in de [analyses](analyses.md#termijnen).
 - Het factuurvoorstel, de raming op het tabblad **Tijd en kosten** en het startscherm rekenen met de afspraak. Het factuurvoorstel zegt het ook.
 - Wijzigen en verwijderen kan wie de tarieven beheert.
 

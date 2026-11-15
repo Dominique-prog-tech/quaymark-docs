@@ -48,6 +48,7 @@ What the contact person sees in the portal:
 - **New assignment**: submit an assignment, with attachments. It reaches the office as a request and appears under **My requests** until the office decides. → [Requests](aanvragen.md)
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.
 - **Analyses**: the findings from the reports on their files, counted by terminal, vessel, cargo, survey type, port, category or location. A file only counts with a report the principal can already see, and as that report stood. → [Analyses](analyses.md#in-the-client-portal)
+- Per file the **agreed date** for the report, if the framework agreement has a deadline; under **Analyses** also how many reports came on time.
 - **Messages** at the bottom of a file: the conversation with the office, with attachments. For a message from the office, the contact person receives an email with a link. → [Messages](berichten.md#what-the-principal-sees)
 - No surveyor, hours, costs, findings or photos: those are in the report.
 
@@ -60,6 +61,8 @@ With a regular principal, an office often agrees its own rates. You record them 
 - The **agreement's hourly rate takes precedence** over a surveyor's own hourly rate: the principal pays what was agreed, whichever surveyor goes.
 - A file follows the agreement that applied on the **date of the assignment**. So the rate of an ongoing file does not change when a new agreement starts.
 - Two agreements of the same principal may not overlap.
+- A **deadline** is the number of working days within which the first report must be issued, counted from the end of the planned inspection (without planning: the date of the assignment). Saturday, Sunday and the public holidays of the office's country do not count. The first line, **All survey types**, applies to the whole agreement; a deadline for a type takes precedence. An agreement may also have only a deadline, without its own rates.
+- With a deadline, Quaymark shows when the report is due: [in the file list and on the file](dossiers.md#report-deadline), on the surveyor's bell, on the [home page](aan-de-slag.md) and in the [analyses](analyses.md#deadlines).
 - The invoice proposal, the estimate on the **Time and expenses** tab and the home screen calculate with the agreement. The invoice proposal also says so.
 - Whoever manages the rates can change or delete an agreement.
 

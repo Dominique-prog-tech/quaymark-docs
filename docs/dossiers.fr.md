@@ -16,6 +16,7 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 - Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, planning, statut et les codes scannés (un numéro de conteneur se trouve aussi avec des espaces).
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.
 - Le bouton d'export télécharge la liste sous forme de fichier.
+- La colonne **Rapport pour le** indique la date à laquelle le rapport doit être prêt selon l'accord-cadre, avec l'état. → [Délai jusqu'au rapport](#delai-jusquau-rapport)
 
 ![La liste Dossiers avec le choix Statut et le bouton Nouveau dossier](images/dossiers-lijst-fr.png "La liste Dossiers")
 
@@ -31,6 +32,17 @@ Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur
 - **Données de l'expertise** : les champs propres au type d'expertise choisi. Un champ obligatoire doit être rempli à partir du statut Rapport. Si vous choisissez un autre type, les valeurs des champs inconnus du nouveau type sont perdues à l'enregistrement.
 
 Un dossier enregistré a des onglets : **Parties** (relations avec leur rôle et leur référence), **Documents** (en répertoires), **Du navire** (les documents du navire, en lecture seule), **Constatations**, **Check-list** et le journal avec notes, tâches, pièces jointes et historique.
+
+### Délai jusqu'au rapport
+
+Si l'[accord-cadre](relaties.md#accords-cadres) avec le donneur d'ordre prévoit un délai, le haut du dossier affiche **Rapport pour le** avec la date et l'état :
+
+- **Encore 2 jours ouvrables**, **Aujourd'hui** ou **1 jour ouvrable de retard**, tant qu'il n'y a pas de rapport. Orange à partir du dernier jour ouvrable avant, rouge quand le délai est dépassé.
+- **Dans les délais** ou **… de retard** dès que le premier rapport est émis.
+
+Le délai court à partir de la fin de l'inspection planifiée, en jours ouvrables sans week-end ni jours fériés du pays du site. Si vous replanifiez le dossier, la date suit. Un dossier clôturé ou annulé sans rapport n'a plus de délai.
+
+L'**expert** du dossier reçoit une notification sur la cloche le dernier jour ouvrable avant et quand le délai est dépassé. Si Quaymark ne peut pas récupérer les jours fériés, il compte sans eux et le signale : la date tombe alors plus tôt, jamais plus tard.
 
 ### Constatations
 

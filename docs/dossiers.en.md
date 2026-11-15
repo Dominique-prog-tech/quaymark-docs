@@ -16,6 +16,7 @@ In the menu on the left, click **Files**.
 - The **search box** searches all columns: number, survey type, vessel, principal, port, planning, status and the scanned codes (a container number is also found with spaces).
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.
 - The export button downloads the list as a file.
+- The **Report due** column shows the date by which the report is due under the framework agreement, with its status. → [Report deadline](#report-deadline)
 
 ![The Files list with the Status choice and the New file button](images/dossiers-lijst-en.png "The Files list")
 
@@ -31,6 +32,17 @@ One instruction: what was asked, where and when, and what the surveyor finds on 
 - **Survey particulars**: the fields that belong to the chosen survey type. A required field must be filled in from the status Reporting onwards. If you choose another survey type, the values of fields the new type does not know are lost when you save.
 
 A saved file has tabs: **Parties** (relations with their role and reference), **Documents** (in folders), **From the vessel** (the vessel's documents, read only), **Findings**, **Checklist** and the journal with notes, tasks, attachments and history.
+
+### Report deadline
+
+If the [framework agreement](relaties.md#framework-agreements) with the principal has a deadline, the top of the file shows **Report due** with the date and the status:
+
+- **2 working days left**, **Today** or **1 working day late**, as long as there is no report. Orange from the last working day before, red when the deadline has passed.
+- **On time** or **… late** as soon as the first report is issued.
+
+The deadline runs from the end of the planned inspection, in working days without weekends and public holidays of the office's country. If you replan the file, the date moves with it. A closed or cancelled file without a report no longer has a deadline.
+
+The file's **surveyor** gets a notification on the bell on the last working day before and when the deadline has passed. If Quaymark cannot fetch the public holidays, it counts without them and says so: the date then falls earlier, never later.
 
 ### Findings
 

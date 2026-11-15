@@ -52,9 +52,20 @@ Goed om te weten:
 - Vindt een naam niets, dan zegt de tabel dat. Past een naam bij meer dan één opdrachtgever, schip of surveyor, dan toont de tabel de kandidaten: vraag dan preciezer.
 - De assistent werkt met de **eigen AI-sleutel van het bureau**. Vraag ADM-Concept hoe u die instelt.
 
+## Termijnen
+
+Zijn er raamafspraken met een termijn, dan staan onder de analyse twee tabellen: **per opdrachtgever** en **per soort survey**. Ze tellen de dossiers met een vervaldag in de gekozen periode, voor de gekozen vestiging en soort survey.
+
+- **Met rapport** en **Op tijd**, met het percentage. Enkel dossiers met een rapport tellen in het percentage.
+- **Gemiddeld te laat**: hoeveel werkdagen de te late rapporten gemiddeld te laat waren.
+- **Nu te laat, zonder rapport**: wat de termijn al voorbij is zonder rapport. Dat telt nog niet in het percentage, maar verdwijnt niet.
+
+Met de exportknop haalt u een tabel op als bestand. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
+
 ## In het klantenportaal
 
 De opdrachtgever ziet in het klantenportaal dezelfde analyses over zijn eigen dossiers, onder **Analyses**, zonder groeperen op opdrachtgever.
 
 - Een dossier telt pas mee als zijn rapport voor de opdrachtgever beschikbaar is. Staat in **Bureaugegevens** dat het rapport pas na ondertekening in het portaal komt, dan telt enkel een ondertekende versie. → [Bureaugegevens](bureaugegevens.md)
 - De opdrachtgever ziet de vaststellingen zoals ze in dat rapport stonden. Wat het bureau daarna toevoegt of rechtzet, telt pas mee met de volgende versie van het rapport.
+- Onder de analyse ziet de opdrachtgever per soort survey hoeveel van zijn rapporten **op tijd** kwamen volgens de raamafspraak, over dezelfde dossiers.

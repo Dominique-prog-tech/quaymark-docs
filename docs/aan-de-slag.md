@@ -11,6 +11,7 @@ De startpagina van uw bureau.
 - **Dossiers per status** telt de open dossiers: nieuw, gepland, in uitvoering en in rapportage. Een klik op een tegel opent de lijst van de dossiers.
 - **Facturatie** (wie facturen mag bekijken): wat er nog **te factureren** is, als raming per dossier uit de open prestaties, de door te rekenen kosten en het forfait van afgewerkte dossiers, en de **omzet** van dit jaar per opdrachtgever en per soort survey. Een klik op een dossier opent zijn tijd en kosten.
 - **Wacht op review** (wie rapporten mag uitgeven): de rapporten waarvoor een collega een review vroeg. Een klik op het dossier opent het.
+- **Termijnen** (als het bureau in een raamafspraak een termijn afsprak): de open dossiers zonder rapport waarvan de termijn vandaag of de volgende werkdag vervalt, of al voorbij is, met hun surveyor. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
 - Het **menu links** toont de schermen waartoe u toegang hebt. Onder **Instellingen** staat wat de beheerder van het bureau instelt: soorten survey, vestigingen, havens, standaardmappen, categorieën en plaatsen.
 - Rechtsboven: de **feedbackknop**, deze **hulp** en uw voorkeuren (taal, weergave).
 - Het **versienummer** onderaan het menu opent "Wat is nieuw".

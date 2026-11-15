@@ -48,6 +48,7 @@ Was die Kontaktperson im Portal sieht:
 - **Neuer Auftrag**: einen Auftrag senden, mit Anhängen. Er geht als Anfrage an das Büro und steht unter **Meine Anfragen**, bis das Büro entscheidet. → [Anfragen](aanvragen.md)
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
 - **Analysen**: die Feststellungen aus den Berichten seiner Akten, gezählt nach Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Kategorie oder Ort. Eine Akte zählt erst mit einem Bericht, den der Auftraggeber bereits sieht, und mit dem Stand dieses Berichts. → [Analysen](analyses.md#im-kundenportal)
+- Pro Akte das **vereinbarte Datum** für den Bericht, wenn die Rahmenvereinbarung eine Frist hat; unter **Analysen** auch, wie viele Berichte fristgerecht kamen.
 - **Nachrichten** unten auf einer Akte: das Gespräch mit dem Büro, mit Anhängen. Zu einer Nachricht des Büros erhält die Kontaktperson eine E-Mail mit einem Link. → [Nachrichten](berichten.md#was-der-auftraggeber-sieht)
 - Kein Besichtiger, keine Stunden, Kosten, Feststellungen oder Fotos: Diese stehen im Bericht.
 
@@ -60,6 +61,8 @@ Mit einem festen Auftraggeber vereinbart ein Büro oft eigene Tarife. Auf der Re
 - Der **Stundensatz der Vereinbarung geht vor** dem eigenen Stundensatz eines Besichtigers: Der Auftraggeber zahlt, was vereinbart ist, welcher Besichtiger auch geht.
 - Eine Akte folgt der Vereinbarung, die am **Datum des Auftrags** galt. So ändert sich der Tarif einer laufenden Akte nicht, wenn eine neue Vereinbarung beginnt.
 - Zwei Vereinbarungen desselben Auftraggebers dürfen sich nicht überschneiden.
+- Eine **Frist** ist die Zahl der Arbeitstage, in der der erste Bericht ausgestellt sein muss, gerechnet ab dem Ende der geplanten Besichtigung (ohne Planung: das Datum des Auftrags). Samstag, Sonntag und die Feiertage des Landes der Niederlassung zählen nicht. Die erste Zeile, **Alle Besichtigungsarten**, gilt für die ganze Vereinbarung; eine Frist bei einer Art geht vor. Eine Vereinbarung darf auch nur eine Frist haben, ohne eigene Tarife.
+- Mit einer Frist zeigt Quaymark, bis wann der Bericht vorliegen muss: [in der Aktenliste und auf der Akte](dossiers.md#frist-bis-zum-bericht), auf der Glocke des Besichtigers, auf der [Startseite](aan-de-slag.md) und in den [Analysen](analyses.md#fristen).
 - Der Rechnungsvorschlag, die Schätzung auf der Registerkarte **Zeit und Kosten** und der Startbildschirm rechnen mit der Vereinbarung. Der Rechnungsvorschlag weist auch darauf hin.
 - Ändern und löschen kann, wer die Tarife verwaltet.
 

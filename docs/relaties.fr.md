@@ -48,6 +48,7 @@ Ce que la personne de contact voit dans le portail :
 - **Nouvelle mission** : envoyer une mission, avec pièces jointes. Elle arrive au bureau sous forme de demande et figure sous **Mes demandes** jusqu'à la décision du bureau. → [Demandes](aanvragen.md)
 - **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF. Pas un brouillon. Le portail n'indique pas si une facture est payée.
 - **Analyses** : les constatations des rapports de ses dossiers, comptées par terminal, navire, cargaison, type d'expertise, port, catégorie ou emplacement. Un dossier ne compte qu'avec un rapport que le donneur d'ordre voit déjà, et selon l'état de ce rapport. → [Analyses](analyses.md#dans-le-portail-client)
+- Par dossier, la **date convenue** pour le rapport, si l'accord-cadre prévoit un délai ; sous **Analyses**, aussi combien de rapports sont arrivés dans les délais.
 - **Messages** en bas d'un dossier : la conversation avec le bureau, avec pièces jointes. À chaque message du bureau, la personne de contact reçoit un e-mail avec un lien. → [Messages](berichten.md#ce-que-voit-le-donneur-dordre)
 - Pas d'expert, d'heures, de frais, de constatations ni de photos : ils figurent dans le rapport.
 
@@ -60,6 +61,8 @@ Avec un donneur d'ordre régulier, un bureau convient souvent de tarifs propres.
 - Le **tarif horaire de l'accord prime** sur le tarif propre d'un expert : le donneur d'ordre paie ce qui est convenu, quel que soit l'expert.
 - Un dossier suit l'accord en vigueur à la **date de la mission**. Ainsi, le tarif d'un dossier en cours ne change pas lorsqu'un nouvel accord entre en vigueur.
 - Deux accords d'un même donneur d'ordre ne peuvent pas se chevaucher.
+- Un **délai** est le nombre de jours ouvrables dans lequel le premier rapport doit être émis, compté à partir de la fin de l'inspection planifiée (sans planification : la date de la mission). Le samedi, le dimanche et les jours fériés du pays du site ne comptent pas. La première ligne, **Tous les types d'expertise**, vaut pour tout l'accord ; un délai propre à un type prime. Un accord peut aussi n'avoir qu'un délai, sans tarifs propres.
+- Avec un délai, Quaymark indique pour quand le rapport doit être prêt : [dans la liste des dossiers et sur le dossier](dossiers.md#delai-jusquau-rapport), sur la cloche de l'expert, sur la [page d'accueil](aan-de-slag.md) et dans les [analyses](analyses.md#delais).
 - La proposition de facture, l'estimation dans l'onglet **Temps et frais** et l'écran d'accueil calculent avec l'accord. La proposition de facture l'indique aussi.
 - Seule la personne qui gère les tarifs peut modifier ou supprimer un accord.
 

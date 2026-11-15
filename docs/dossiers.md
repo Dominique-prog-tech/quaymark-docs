@@ -16,6 +16,7 @@ Klik in het menu links op **Dossiers**.
 - Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, planning, status en de gescande codes (een containernummer vindt u ook met spaties).
 - Dubbelklik op een rij om het **dossier** te openen; met het pijltje vooraan de rij opent het in een nieuw tabblad. **Nieuw dossier** maakt er een aan.
 - Met de exportknop haalt u de lijst op als bestand.
+- De kolom **Rapport tegen** toont de datum waarop het rapport er moet zijn volgens de raamafspraak, met de stand. → [Termijn tot het rapport](#termijn-tot-het-rapport)
 
 ![De lijst Dossiers met de keuze Status en de knop Nieuw dossier](images/dossiers-lijst.png "De lijst Dossiers")
 
@@ -31,6 +32,17 @@ Eén opdracht: wat er gevraagd is, waar en wanneer, en wat de surveyor ter plaat
 - **Gegevens van de survey**: de velden die bij het gekozen soort survey horen. Een verplicht veld moet ingevuld zijn vanaf de status Rapportage. Kiest u een ander soort survey, dan gaan bij het bewaren de waarden verloren van velden die het nieuwe soort niet kent.
 
 Een bewaard dossier heeft tabbladen: **Partijen** (relaties met hun rol en referentie), **Documenten** (in mappen), **Van het schip** (de documenten van het schip, alleen lezen), **Vaststellingen**, **Checklist** en het journaal met notities, taken, bijlagen en historiek.
+
+### Termijn tot het rapport
+
+Staat er in de [raamafspraak](relaties.md#raamafspraken) met de opdrachtgever een termijn, dan staat bovenaan het dossier **Rapport tegen** met de datum en de stand:
+
+- **Nog 2 werkdagen**, **Vandaag** of **1 werkdag te laat**, zolang er geen rapport is. Oranje vanaf de laatste werkdag ervoor, rood als de termijn voorbij is.
+- **Op tijd** of **… te laat** zodra het eerste rapport uitgegeven is.
+
+De termijn loopt vanaf het einde van de geplande inspectie, in werkdagen zonder weekend en feestdagen van het land van de vestiging. Plant u het dossier anders in, dan schuift de datum mee. Een afgesloten of geannuleerd dossier zonder rapport heeft geen termijn meer.
+
+De **surveyor** van het dossier krijgt een melding op het belletje op de laatste werkdag ervoor en als de termijn voorbij is. Kan Quaymark de feestdagen niet ophalen, dan telt het zonder en zegt het: de datum valt dan eerder, nooit later.
 
 ### Vaststellingen
 

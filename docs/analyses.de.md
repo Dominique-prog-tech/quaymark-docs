@@ -52,9 +52,20 @@ Gut zu wissen:
 - Findet ein Name nichts, sagt die Tabelle das. Passt ein Name zu mehr als einem Auftraggeber, Schiff oder Besichtiger, zeigt die Tabelle die Kandidaten: Fragen Sie dann genauer.
 - Der Assistent funktioniert mit dem **eigenen KI-Schlüssel des Büros**. Fragen Sie ADM-Concept, wie Sie ihn einrichten.
 
+## Fristen
+
+Gibt es Rahmenvereinbarungen mit einer Frist, stehen unter der Analyse zwei Tabellen: **je Auftraggeber** und **je Besichtigungsart**. Sie zählen die Akten, deren Fälligkeit im gewählten Zeitraum liegt, für die gewählte Niederlassung und Besichtigungsart.
+
+- **Mit Bericht** und **Fristgerecht**, mit dem Prozentsatz. Nur Akten mit Bericht zählen im Prozentsatz.
+- **Durchschnittlich zu spät**: um wie viele Arbeitstage die verspäteten Berichte im Durchschnitt zu spät waren.
+- **Jetzt zu spät, ohne Bericht**: was die Frist ohne Bericht überschritten hat. Das zählt noch nicht im Prozentsatz, verschwindet aber nicht.
+
+Die Export-Schaltfläche lädt eine Tabelle als Datei herunter. → [Frist bis zum Bericht](dossiers.md#frist-bis-zum-bericht)
+
 ## Im Kundenportal
 
 Der Auftraggeber sieht im Kundenportal dieselben Analysen über seine eigenen Akten, unter **Analysen**, ohne Gruppieren nach Auftraggeber.
 
 - Eine Akte zählt erst, wenn ihr Bericht für den Auftraggeber verfügbar ist. Steht in **Firmendaten**, dass der Bericht erst nach der Unterzeichnung ins Portal kommt, zählt nur eine unterschriebene Fassung. → [Firmendaten](bureaugegevens.md)
 - Der Auftraggeber sieht die Feststellungen so, wie sie in diesem Bericht standen. Was das Büro danach hinzufügt oder berichtigt, zählt erst mit der nächsten Fassung des Berichts.
+- Unter der Analyse sieht der Auftraggeber je Besichtigungsart, wie viele seiner Berichte laut Rahmenvereinbarung **fristgerecht** kamen, über dieselben Akten.

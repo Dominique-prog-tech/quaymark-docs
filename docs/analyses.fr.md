@@ -52,9 +52,20 @@ Bon à savoir :
 - Si un nom ne trouve rien, le tableau le dit. Si un nom correspond à plusieurs donneurs d'ordre, navires ou experts, le tableau affiche les candidats : précisez alors.
 - L'assistant fonctionne avec la **clé IA propre du bureau**. Demandez à ADM-Concept comment la configurer.
 
+## Délais
+
+S'il existe des accords-cadres avec un délai, deux tableaux figurent sous l'analyse : **par donneur d'ordre** et **par type d'expertise**. Ils comptent les dossiers dont l'échéance tombe dans la période choisie, pour le site et le type d'expertise choisis.
+
+- **Avec rapport** et **Dans les délais**, avec le pourcentage. Seuls les dossiers avec un rapport comptent dans le pourcentage.
+- **Retard moyen** : de combien de jours ouvrables les rapports en retard l'étaient en moyenne.
+- **En retard, sans rapport** : ce qui a dépassé le délai sans rapport. Cela ne compte pas encore dans le pourcentage, mais ne disparaît pas.
+
+Le bouton d'export télécharge un tableau sous forme de fichier. → [Délai jusqu'au rapport](dossiers.md#delai-jusquau-rapport)
+
 ## Dans le portail client
 
 Le donneur d'ordre voit dans le portail client les mêmes analyses sur ses propres dossiers, sous **Analyses**, sans regroupement par donneur d'ordre.
 
 - Un dossier ne compte que lorsque son rapport est disponible pour le donneur d'ordre. Si **Données du bureau** indique que le rapport n'arrive dans le portail qu'après signature, seule une version signée compte. → [Données du bureau](bureaugegevens.md)
 - Le donneur d'ordre voit les constatations telles qu'elles figuraient dans ce rapport. Ce que le bureau ajoute ou rectifie ensuite ne compte qu'avec la version suivante du rapport.
+- Sous l'analyse, le donneur d'ordre voit par type d'expertise combien de ses rapports sont arrivés **dans les délais** selon l'accord-cadre, sur les mêmes dossiers.

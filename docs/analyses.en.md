@@ -52,9 +52,20 @@ Good to know:
 - If a name finds nothing, the table says so. If a name matches more than one principal, vessel or surveyor, the table shows the candidates: then ask more precisely.
 - The assistant works with the **company's own AI key**. Ask ADM-Concept how to set it up.
 
+## Deadlines
+
+If there are framework agreements with a deadline, two tables appear below the analysis: **per principal** and **per survey type**. They count the files due within the chosen period, for the chosen office and survey type.
+
+- **With report** and **On time**, with the percentage. Only files with a report count in the percentage.
+- **Average delay**: by how many working days the late reports were late on average.
+- **Late now, without report**: what has passed the deadline without a report. That does not count in the percentage yet, but does not disappear.
+
+The export button downloads a table as a file. → [Report deadline](dossiers.md#report-deadline)
+
 ## In the client portal
 
 The principal sees the same analyses of their own files in the client portal, under **Analyses**, without grouping by principal.
 
 - A file only counts once its report is available to the principal. If **Company details** says the report only reaches the portal after signing, only a signed version counts. → [Company details](bureaugegevens.md)
 - The principal sees the findings as they stood in that report. What the office adds or corrects afterwards only counts with the next version of the report.
+- Below the analysis, the principal sees per survey type how many of their reports came **on time** under the framework agreement, over the same files.

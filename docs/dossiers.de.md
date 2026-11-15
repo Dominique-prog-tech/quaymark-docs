@@ -16,6 +16,7 @@ Klicken Sie im Menü links auf **Akten**.
 - Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Planung, Status und die gescannten Codes (eine Containernummer findet man auch mit Leerzeichen).
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
+- Die Spalte **Bericht bis** zeigt das Datum, bis zu dem der Bericht laut Rahmenvereinbarung vorliegen muss, mit dem Stand. → [Frist bis zum Bericht](#frist-bis-zum-bericht)
 
 ![Liste der Akten mit Status und Neue Akte](images/dossiers-lijst-de.png "Die Liste der Akten")
 
@@ -31,6 +32,17 @@ Ein Auftrag: was verlangt wird, wo und wann, und was der Besichtiger vor Ort fes
 - **Besichtigungsdaten**: die Felder der gewählten Besichtigungsart. Ein Pflichtfeld muss ab dem Status Berichterstellung ausgefüllt sein. Wählen Sie eine andere Art, gehen beim Speichern die Werte von Feldern verloren, die die neue Art nicht kennt.
 
 Eine gespeicherte Akte hat Registerkarten: **Parteien** (Beziehungen mit Rolle und Referenz), **Dokumente** (in Ordnern), **Vom Schiff** (die Dokumente des Schiffs, nur lesen), **Feststellungen**, **Checkliste** und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf.
+
+### Frist bis zum Bericht
+
+Steht in der [Rahmenvereinbarung](relaties.md#rahmenvereinbarungen) mit dem Auftraggeber eine Frist, dann steht oben in der Akte **Bericht bis** mit dem Datum und dem Stand:
+
+- **Noch 2 Arbeitstage**, **Heute** oder **1 Arbeitstag zu spät**, solange es keinen Bericht gibt. Orange ab dem letzten Arbeitstag davor, rot, wenn die Frist abgelaufen ist.
+- **Fristgerecht** oder **… zu spät**, sobald der erste Bericht ausgestellt ist.
+
+Die Frist läuft ab dem Ende der geplanten Besichtigung, in Arbeitstagen ohne Wochenende und Feiertage des Landes der Niederlassung. Planen Sie die Akte anders ein, verschiebt sich das Datum mit. Eine abgeschlossene oder stornierte Akte ohne Bericht hat keine Frist mehr.
+
+Der **Besichtiger** der Akte erhält am letzten Arbeitstag davor und nach Ablauf der Frist eine Meldung auf der Glocke. Kann Quaymark die Feiertage nicht abrufen, zählt es ohne sie und sagt es: Das Datum fällt dann früher, nie später.
 
 ### Feststellungen
 
