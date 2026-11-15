@@ -42,6 +42,14 @@ A **finding** is added, never changed or deleted. You correct a mistake with **C
 
 **Leave out of report** under a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. Photos get a running number in the report, and the findings table lists those numbers.
 
+### Annotating photos
+
+**Annotate** under a photo opens it large, with tools: **Arrow**, **Oval**, **Rectangle**, **Freehand**, **Text** and **Dimension** (a line with a label, for example 1,2 m), in red, yellow, white or black. For text and dimensions, first type the text in **Text or dimension**, then click or drag on the photo. **Undo** removes the last shape, **Clear all** all shapes.
+
+![The Annotate page: the Arrow, Oval and Dimension buttons, and on the photo an arrow, an oval, a dimension and a text](images/foto-annoteren-en.png "Annotate")
+
+**Save** creates a new version; the photo gets the label **annotated**. The original stays untouched: Quaymark keeps the shapes and draws its own image from them, with its own fingerprint. The report shows the annotated version; the caption says it is annotated and keeps the fingerprint of the original. **Back to original** puts the original photo back in the report; the annotation is kept as an earlier version. The evidence package contains the original and every version of the annotation, as an image and as shapes.
+
 ### Checklist
 
 The **checklist** shows the latest answer per item, by whom and when. The survey type sets the scale: **OK**, **Not OK** and **N/a** for an inspection, or a condition in four steps (**Good**, **Fair**, **Poor**, **Bad**, and **N/a**) for a condition survey. At the top you see how many items have a deficiency, per priority.

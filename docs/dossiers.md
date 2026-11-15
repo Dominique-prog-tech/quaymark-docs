@@ -42,6 +42,14 @@ Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout z
 
 **Niet in rapport** onder een foto laat die foto weg uit de fotobijlage van het rapport, met een reden. De foto blijft bewaard als bewijs; **Weer in rapport** zet ze terug. De foto's krijgen in het rapport een doorlopend nummer, en de tabel met vaststellingen noemt die nummers.
 
+### Foto's annoteren
+
+**Annoteren** onder een foto opent de foto groot, met gereedschap: **Pijl**, **Ovaal**, **Rechthoek**, **Vrije lijn**, **Tekst** en **Maat** (een lijn met een label, bijvoorbeeld 1,2 m), in rood, geel, wit of zwart. Voor tekst en maat typt u eerst de tekst bij **Tekst of maat** en klikt of sleept u dan op de foto. **Ongedaan maken** haalt de laatste vorm weg, **Alles wissen** alle vormen.
+
+![De pagina Annoteren: de knoppen Pijl, Ovaal en Maat, en op de foto een pijl, een ovaal, een maat en een tekst](images/foto-annoteren.png "Annoteren")
+
+**Bewaren** maakt een nieuwe versie; de foto krijgt het label **geannoteerd**. Het origineel blijft onaangeroerd: Quaymark bewaart de vormen en tekent er een eigen beeld uit, met zijn eigen vingerafdruk. Het rapport toont de geannoteerde versie; het bijschrift zegt dat ze geannoteerd is en houdt de vingerafdruk van het origineel. **Terug naar origineel** zet de originele foto weer in het rapport; de annotatie blijft bewaard als eerdere versie. In het bewijspakket staan het origineel en elke versie van de annotatie, als beeld en als vormen.
+
 ### Checklist
 
 De **checklist** toont per punt het laatste antwoord, van wie en wanneer. De soort survey bepaalt de schaal: **In orde**, **Niet in orde** en **N.v.t.** voor een controle, of een staat in vier stappen (**Goed**, **Redelijk**, **Matig**, **Slecht**, en **N.v.t.**) voor een conditiesurvey. Bovenaan staat hoeveel punten een gebrek hebben, per prioriteit.

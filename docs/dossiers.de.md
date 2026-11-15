@@ -42,6 +42,14 @@ Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Feh
 
 **Aus dem Bericht nehmen** unter einem Foto lässt es im Fotoanhang des Berichts weg, mit einer Begründung. Das Foto bleibt als Beweis gespeichert; **Wieder in den Bericht** setzt es zurück. Die Fotos erhalten im Bericht eine fortlaufende Nummer, und die Tabelle der Feststellungen nennt diese Nummern.
 
+### Fotos annotieren
+
+**Annotieren** unter einem Foto öffnet es groß, mit Werkzeugen: **Pfeil**, **Oval**, **Rechteck**, **Freihand**, **Text** und **Maß** (eine Linie mit einer Beschriftung, zum Beispiel 1,2 m), in Rot, Gelb, Weiß oder Schwarz. Für Text und Maß geben Sie zuerst den Text bei **Text oder Maß** ein und klicken oder ziehen dann auf dem Foto. **Rückgängig machen** entfernt die letzte Form, **Alles löschen** alle Formen.
+
+![Annotieren mit Pfeil, Oval, Maß und Text auf dem Foto, in Rot und Gelb](images/foto-annoteren-de.png "Annotieren")
+
+**Speichern** erstellt eine neue Version; das Foto erhält die Beschriftung **annotiert**. Das Original bleibt unverändert: Quaymark bewahrt die Formen und zeichnet daraus ein eigenes Bild, mit eigenem Fingerabdruck. Der Bericht zeigt die annotierte Version; die Bildunterschrift sagt, dass sie annotiert ist, und behält den Fingerabdruck des Originals. **Zurück zum Original** setzt das Originalfoto wieder in den Bericht; die Annotation bleibt als frühere Version erhalten. Das Beweispaket enthält das Original und jede Version der Annotation, als Bild und als Formen.
+
 ### Checkliste
 
 Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Besichtigungsart bestimmt die Skala: **In Ordnung**, **Nicht in Ordnung** und **Entfällt** für eine Kontrolle, oder ein Zustand in vier Stufen (**Gut**, **Befriedigend**, **Mangelhaft**, **Schlecht**, und **Entfällt**) für eine Zustandsbesichtigung. Oben steht, wie viele Punkte einen Mangel haben, je Priorität.

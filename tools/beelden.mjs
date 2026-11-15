@@ -64,6 +64,24 @@ const SCHOTEN = () => [
   // 14/11/2026: de conditiesurvey (staat per punt, gebreken met prioriteit en aanbeveling) i.p.v. de controle van HQ-2026-0003.
   { naam: 'dossier-checklist', route: '/dossiers', verwacht: /Fire extinguisher in the engine room/, na: dossier('HQ-2026-0006', 'checklist') },
   { naam: 'dossier-rapport', route: '/dossiers', hoogte: 1500, verwacht: Q('rubrieken_bewaren'), na: dossier('HQ-2026-0003', 'rapport') },
+  // V6 (15/11/2026): een foto annoteren (eerste foto van HQ-2026-0003). Vormen tekenen met de muis, NIET bewaren: de proefklant blijft zonder annotatie.
+  { naam: 'foto-annoteren', route: '/dossiers', hoogte: 1250, verwacht: Q('annotatie_wissen'),
+    na: async (p, taal) => {
+      await dossier('HQ-2026-0003', 'vaststellingen')(p);
+      await p.goto(new URL(await p.locator('[data-annoteren]').first().getAttribute('href'), p.url()).toString()); await p.waitForLoadState('networkidle');
+      const doek = p.locator('[data-annoteer-vlak] canvas'); await doek.waitFor({ state: 'visible' }); await p.waitForTimeout(1500);
+      const v = await doek.boundingBox();
+      const sleep = async (van, naar) => { await p.mouse.move(v.x + van[0] * v.width, v.y + van[1] * v.height); await p.mouse.down();
+        await p.mouse.move(v.x + naar[0] * v.width, v.y + naar[1] * v.height, { steps: 12 }); await p.mouse.up(); await p.waitForTimeout(300); };
+      // De keuze gaat via de server naar het tekenvlak: even wachten, anders tekent de muis nog met de vorige vorm.
+      const kies = async sel => { await p.locator(sel).click(); await p.waitForTimeout(500); };
+      const tekst = async t => { const i = p.locator('[data-gereedschap] input').first(); await i.fill(t); await i.press('Tab'); await p.waitForTimeout(500); };
+      await kies('[data-vorm="ovaal"]'); await sleep([0.35, 0.3], [0.65, 0.6]);
+      await kies('[data-vorm="pijl"]'); await sleep([0.12, 0.12], [0.33, 0.33]);
+      await tekst('1,2 m'); await kies('[data-vorm="maat"]'); await sleep([0.2, 0.85], [0.8, 0.85]);
+      await kies('[data-kleur="geel"]'); await tekst({ nl: 'Deuk', fr: 'Enfoncement', en: 'Dent', de: 'Delle' }[taal.slice(0, 2)] ?? 'Dent');
+      await kies('[data-vorm="tekst"]'); await p.mouse.click(v.x + 0.68 * v.width, v.y + 0.25 * v.height); await p.waitForTimeout(500);
+    } },
   { naam: 'dossier-vergelijking', route: '/dossiers', hoogte: 1300, verwacht: Q('vergelijking_knop_bestond'), na: dossier('ZB-2026-0002', 'vaststellingen') },
   { naam: 'dossier-brief', route: '/dossiers', verwacht: Q('document_invulvak_uitleg'),
     na: async p => { await openRij(p, 'HQ-2026-0003'); const u = new URL(p.url()); await p.goto(`${BASIS}${u.pathname}/document/brief_protest`); } },

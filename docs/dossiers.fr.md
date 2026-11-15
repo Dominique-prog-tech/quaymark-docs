@@ -42,6 +42,14 @@ Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se
 
 **Retirer du rapport** sous une photo l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
 
+### Annoter les photos
+
+**Annoter** sous une photo l'ouvre en grand, avec des outils : **Flèche**, **Ovale**, **Rectangle**, **Trait libre**, **Texte** et **Cote** (un trait avec une étiquette, par exemple 1,2 m), en rouge, jaune, blanc ou noir. Pour un texte ou une cote, tapez d'abord le texte dans **Texte ou cote**, puis cliquez ou faites glisser sur la photo. **Annuler** retire la dernière forme, **Tout effacer** toutes les formes.
+
+![La page Annoter : les boutons Flèche, Ovale et Cote, et sur la photo une flèche, un ovale, une cote et un texte](images/foto-annoteren-fr.png "Annoter")
+
+**Enregistrer** crée une nouvelle version ; la photo reçoit l'étiquette **annotée**. L'original reste intact : Quaymark conserve les formes et en dessine une image propre, avec sa propre empreinte. Le rapport montre la version annotée ; la légende indique qu'elle est annotée et garde l'empreinte de l'original. **Revenir à l'original** remet la photo originale dans le rapport ; l'annotation reste conservée comme version antérieure. Le dossier de preuves contient l'original et chaque version de l'annotation, en image et en formes.
+
 ### Check-list
 
 La **check-list** affiche pour chaque point la dernière réponse, par qui et quand. Le type d'expertise détermine l'échelle : **Conforme**, **Non conforme** et **S.o.** pour un contrôle, ou un état en quatre niveaux (**Bon**, **Correct**, **Médiocre**, **Mauvais**, et **S.o.**) pour une expertise d'état. En haut figure le nombre de points présentant un défaut, par priorité.
