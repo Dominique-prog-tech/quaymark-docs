@@ -159,7 +159,14 @@ Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besicht
 
 ### Entwurf vorschlagen
 
-**Entwurf vorschlagen** (Registerkarte Bericht) lässt die KI je Abschnitt einen Vorschlag aus den Daten der Akte schreiben: Feststellungen, Checkliste, Felder, Umstände und Sprachnotizen. Fotos und Ihr eigener Text werden nicht übermittelt. Jeder Vorschlag steht unter seinem Abschnitt; Sie wählen **Übernehmen**, **Am Ende hinzufügen** oder **Ignorieren** und speichern dann wie gewohnt. Es läuft über den KI-Schlüssel Ihres Büros und nur, wenn der Administrator es im ADM One-Portal erlaubt.
+**Entwurf vorschlagen** (Registerkarte Bericht) lässt die KI je Abschnitt einen Vorschlag aus den Daten der Akte schreiben: Feststellungen, Checkliste, Felder, Umstände und Sprachnotizen. Jeder Vorschlag steht unter seinem Abschnitt; Sie wählen **Übernehmen**, **Am Ende hinzufügen** oder **Ignorieren** und speichern dann wie gewohnt. Es läuft über den KI-Schlüssel Ihres Büros und nur, wenn der Administrator es im ADM One-Portal erlaubt.
+
+Zwei Dinge werden übermittelt, damit der Vorschlag genauer wird:
+
+- **Die Fotos der Fotoanlage**, mit ihrer Nummer (höchstens 40). Die KI beschreibt nur, was deutlich zu sehen ist, und darf auf ein Foto verweisen, zum Beispiel „(Foto 3)“. Ausgeblendete Fotos und Bordunterlagen werden nicht übermittelt. Dafür muss der Administrator in ADM One auch **Scans, Fotos und PDFs** erlauben; sonst entsteht der Vorschlag ohne Fotos, und die Registerkarte Bericht sagt das.
+- **Ihre früheren Berichte** derselben Besichtigungsart: die Abschnitte der letzten drei ausgestellten Berichte, nur als Beispiel für Stil und Aufbau. Die KI übernimmt daraus keine Fakten.
+
+Unter der Schaltfläche steht, worauf sich der Vorschlag stützte. Ihr eigener Text in den Abschnitten wird nicht übermittelt.
 
 ### Sprachnotizen
 

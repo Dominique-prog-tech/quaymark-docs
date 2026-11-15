@@ -159,7 +159,14 @@ For a survey type with **Four-eyes review** ticked (see [Survey types](soorten-s
 
 ### Propose a draft
 
-**Propose a draft** (Report tab) has the AI write a proposal per section from the file data: findings, checklist, fields, conditions and voice notes. Photos and your own text are not sent. Each proposal appears under its section; you choose **Take over**, **Add at the end** or **Ignore**, then save as usual. It runs on your office's AI key and only if the administrator allows it in the ADM One portal.
+**Propose a draft** (Report tab) has the AI write a proposal per section from the file data: findings, checklist, fields, conditions and voice notes. Each proposal appears under its section; you choose **Take over**, **Add at the end** or **Ignore**, then save as usual. It runs on your office's AI key and only if the administrator allows it in the ADM One portal.
+
+Two things are sent to make the proposal more accurate:
+
+- **The photos of the photo appendix**, with their number (40 at most). The AI only describes what is clearly visible and may refer to a photo, for example "(photo 3)". Hidden photos and board documents are not sent. For this, the administrator must also allow **Scans, photos and PDFs** in ADM One; otherwise the proposal is made without photos and the Report tab says so.
+- **Your earlier reports** of the same survey type: the sections of the last three issued reports, only as an example of style and structure. The AI takes no facts from them.
+
+Below the button you see what the proposal was based on. Your own text in the sections is not sent.
 
 ### Voice notes
 

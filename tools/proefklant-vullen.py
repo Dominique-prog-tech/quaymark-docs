@@ -607,10 +607,19 @@ def bestand(sleutel, inhoud):
     doel.write_bytes(inhoud)
     return hashlib.sha256(inhoud).hexdigest(), len(inhoud)
 pdf = b'%PDF-1.4\n% Quaymark demo: rapport HQ-2018-0042 versie 1 (verzonnen)\n%%EOF\n'
+# R2: de momentopname zoals de uitgifte ze schrijft (het deel dat het ontwerpverslag leest: taal en rubrieken), zodat de demo eigen historiek heeft.
+MOMENT11 = json.dumps(dict(soort='quaymark-rapport', formaat=1, dossier=dict(id=D11, nummer='HQ-2018-0042'), versie=1, taal='en', rubrieken=dict(
+    inleiding='<p>At the request of the receivers\' underwriters, the undersigned surveyor attended the discharge at Antwerp to ascertain the nature and '
+              'extent of damage to a consignment of bagged cargo.</p>',
+    werkwijze='<p>The cargo was inspected in the hold before discharge and on the quay after discharge. Damaged bags were counted, separated and photographed.</p>',
+    bevindingen='<p>Wet-damaged bags were found in the square of hold 2, below the hatch cover joint.</p>'
+                '<ul><li>Water traces on the underside of the hatch cover</li><li>Caked contents in the affected bags</li></ul>',
+    conclusie='<p>In our opinion the damage was caused by sea water entering through the hatch cover joint during the voyage.</p>')),
+    ensure_ascii=False, separators=(',', ':'))
 sha, grootte = bestand(f"bureau-{TENANT_N}/rapporten/{D11.replace('-', '')}/HQ-2018-0042 - Report version 1.pdf", pdf)
 sql.append(rij('rapporten.rapportversies', dict(id=vid('rapportversie/11'), dossier_id=D11, nummer=1, taal='en',
            pdf_storage_key=f"bureau-{TENANT_N}/rapporten/{D11.replace('-', '')}/HQ-2018-0042 - Report version 1.pdf", pdf_sha256=sha, pdf_grootte=grootte,
-           momentopname='{}', momentopname_sha256=hashlib.sha256(b'{}').hexdigest(), sjabloon_versie_id=None, reden=None, vorige_id=None,
+           momentopname=MOMENT11, momentopname_sha256=hashlib.sha256(MOMENT11.encode()).hexdigest(), sjabloon_versie_id=None, reden=None, vorige_id=None,
            door_id=SURVEYOR_ID, door_naam=SURVEYOR_NAAM, uitgegeven_op=dt.datetime(2018, 3, 14, 15, 0, tzinfo=dt.timezone.utc))))
 sql.append(f"delete from journaal.adm_log_entries where owner_id = {lit(D11)}; delete from journaal.adm_attachments where owner_id = {lit(D11)};")
 sql.append(rij('journaal.adm_log_entries', dict(id=vid('notitie/11'), herkomst=None, kind='Notitie', owner_type='dossier', owner_id=D11, owner_ref=None,

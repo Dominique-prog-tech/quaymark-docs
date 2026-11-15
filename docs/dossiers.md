@@ -159,7 +159,14 @@ Bij een soort survey met het vinkje **Vier-ogen** (zie [Soorten survey](soorten-
 
 ### Ontwerp voorstellen
 
-**Ontwerp voorstellen** (tabblad Rapport) laat de AI per rubriek een voorstel schrijven uit de gegevens van het dossier: vaststellingen, checklist, velden, omstandigheden en spraaknotities. Foto's en uw eigen tekst gaan niet mee. Elk voorstel staat onder zijn rubriek; u kiest **Overnemen**, **Achteraan toevoegen** of **Negeren**, en bewaart daarna zoals altijd. Het loopt op de AI-sleutel van uw bureau en enkel als de beheerder het in het portaal van ADM One toestaat.
+**Ontwerp voorstellen** (tabblad Rapport) laat de AI per rubriek een voorstel schrijven uit de gegevens van het dossier: vaststellingen, checklist, velden, omstandigheden en spraaknotities. Elk voorstel staat onder zijn rubriek; u kiest **Overnemen**, **Achteraan toevoegen** of **Negeren**, en bewaart daarna zoals altijd. Het loopt op de AI-sleutel van uw bureau en enkel als de beheerder het in het portaal van ADM One toestaat.
+
+Twee dingen gaan mee om het voorstel juister te maken:
+
+- **De foto's van de fotobijlage**, met hun nummer (hoogstens 40). De AI beschrijft enkel wat duidelijk te zien is en mag naar een foto verwijzen, bijvoorbeeld "(foto 3)". Verborgen foto's en documenten van boord gaan niet mee. Daarvoor moet de beheerder in ADM One ook **Scans, foto's en pdf's** toestaan; anders gaat het voorstel zonder foto's en zegt het tabblad Rapport dat.
+- **Uw vorige rapporten** van dezelfde soort survey: de rubrieken van de laatste drie uitgegeven rapporten, enkel als voorbeeld van stijl en opbouw. De AI neemt er geen feiten uit over.
+
+Onder de knop staat waarop het voorstel steunde. Uw eigen tekst in de rubrieken gaat niet mee.
 
 ### Spraaknotities
 

@@ -159,7 +159,14 @@ Pour un type d'expertise avec la case **Double contrôle** cochée (voir [Types 
 
 ### Proposer un projet
 
-**Proposer un projet** (onglet Rapport) fait rédiger par l'IA une proposition par rubrique à partir des données du dossier : constatations, check-list, champs, circonstances et notes vocales. Les photos et votre propre texte ne sont pas transmis. Chaque proposition figure sous sa rubrique ; vous choisissez **Reprendre**, **Ajouter à la fin** ou **Ignorer**, puis vous enregistrez comme d'habitude. Cela utilise la clé IA de votre bureau et seulement si l'administrateur l'autorise dans le portail ADM One.
+**Proposer un projet** (onglet Rapport) fait rédiger par l'IA une proposition par rubrique à partir des données du dossier : constatations, check-list, champs, circonstances et notes vocales. Chaque proposition figure sous sa rubrique ; vous choisissez **Reprendre**, **Ajouter à la fin** ou **Ignorer**, puis vous enregistrez comme d'habitude. Cela utilise la clé IA de votre bureau et seulement si l'administrateur l'autorise dans le portail ADM One.
+
+Deux éléments sont transmis pour rendre la proposition plus juste :
+
+- **Les photos de l'annexe photos**, avec leur numéro (40 au maximum). L'IA décrit uniquement ce qui est clairement visible et peut renvoyer à une photo, par exemple « (photo 3) ». Les photos masquées et les documents de bord ne sont pas transmis. Pour cela, l'administrateur doit aussi autoriser **Scans, photos et PDF** dans ADM One ; sinon la proposition est faite sans photos et l'onglet Rapport l'indique.
+- **Vos rapports précédents** du même type d'expertise : les rubriques des trois derniers rapports émis, uniquement comme exemple de style et de structure. L'IA n'en reprend aucun fait.
+
+Sous le bouton figure ce sur quoi la proposition s'est appuyée. Votre propre texte dans les rubriques n'est pas transmis.
 
 ### Notes vocales
 
