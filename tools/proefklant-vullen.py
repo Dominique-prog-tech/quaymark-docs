@@ -90,7 +90,7 @@ sql = ['begin;']
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 15)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
-          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
+          'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.scan_codes', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'berekeningen.ijk_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst});')
@@ -574,6 +574,16 @@ for k, soort, omschr, naam, type_, maak, uur, minuut in [
                opgenomen_op=op, lat_e7=512723500, lon_e7=43390100, nauwkeurigheid_cm=500, storage_key=sleutel, bestandsnaam=naam,
                content_type=type_, grootte=len(data), gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM,
                ontvangen_op=op + dt.timedelta(minutes=3), toestel=TOESTEL)))
+
+# ── V7 (15/11/2026): gescande codes op HQ-2026-0003 (verzonnen): een container bij de deuk in ruim 3 (controlecijfer klopt, het bekende voorbeeld
+#    CSQU3054383), een zegel los aan het dossier, en een met de hand getikte container waarvan het controlecijfer niet klopt (het merkteken). ──
+for nr, soort, code, bron, formaat, vs, klopt, minuut in [(1, 'container', 'CSQU3054383', 'scan', 'qrCode', VS[('3', 'a')], True, 15),
+                                                          (2, 'zegel', 'SL-008812', 'scan', 'code128', None, None, 18),
+                                                          (3, 'container', 'TGHU1234560', 'hand', None, None, False, 22)]:
+    op = om(DAG['3'], 9, minuut)
+    sql.append(rij('dossiers.scan_codes', dict(id=vid(f'code/3/{nr}'), klant_id=vid(f'klant/code/3/{nr}'), dossier_id=DOS['3'], vaststelling_id=vs, soort=soort,
+               code=code, bron=bron, formaat=formaat, controlecijfer_klopt=klopt, lat_e7=512723000, lon_e7=43389000, nauwkeurigheid_cm=600,
+               gebruiker_id=SURVEYOR_ID, gebruiker_naam=SURVEYOR_NAAM, opgenomen_op=op, ontvangen_op=op + dt.timedelta(minutes=1), toestel=TOESTEL)))
 
 # ── Vier-ogen (Q4): de off-hire vraagt een tweede surveyor, en voor ZB-2026-0002 (in rapportage) is een review gevraagd. De vingerafdruk van een
 #    VRAAG beslist niets (enkel een goedkeuring moet de huidige inhoud dragen), dus een vaste hash volstaat. ──

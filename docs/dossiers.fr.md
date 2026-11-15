@@ -13,7 +13,7 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 ## La liste
 
 - Le choix **Statut** au-dessus de la liste affiche par défaut les dossiers **ouverts**. Choisissez **Tous** pour voir aussi les dossiers clôturés et annulés, ou un seul statut.
-- Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, planning et statut.
+- Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, planning, statut et les codes scannés (un numéro de conteneur se trouve aussi avec des espaces).
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.
 - Le bouton d'export télécharge la liste sous forme de fichier.
 
@@ -107,6 +107,19 @@ L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Con
 Au bureau, ils figurent dans l'onglet **Documents de bord**, avec le type, qui et quand. Une photo montre une miniature, un pdf s'ouvre, une vidéo se lit dans le navigateur. Ils ne sont jamais modifiés ni supprimés. Ils n'entrent pas dans l'annexe photographique du rapport, mais bien dans le dossier de preuves, avec leur type dans le manifeste.
 
 ![Documents de bord de HQ-2026-0003 : un plan de chargement et un manifeste de cargaison](images/dossier-boorddocumenten-fr.png "Documents de bord")
+
+### Codes
+
+L'expert scanne des codes-barres et QR dans l'application terrain : l'**icône QR** en haut du dossier. Il choisit le type (conteneur, scellé, échantillon ou autre code) et scanne avec la caméra, fait lire le code depuis une photo ou le saisit. Il peut lier le code à une constatation ou le laisser au dossier. Sans réseau, il attend sur l'appareil.
+
+- Un **numéro de conteneur** (ISO 6346) comporte 4 lettres, la dernière U, J ou Z, et 7 chiffres ; l'application l'écrit en majuscules sans espaces. Si le chiffre de contrôle est faux, l'application avertit et l'expert peut enregistrer quand même : le code reçoit la marque **Incorrect**.
+- Corriger un code scanné en fait un code saisi : la colonne **Source** dit honnêtement comment il est arrivé.
+
+Au bureau, l'onglet **Codes** affiche chaque code avec son type, son chiffre de contrôle, sa constatation, l'heure, la source et qui l'a enregistré. Un code n'est jamais modifié ni supprimé.
+
+![Codes de HQ-2026-0003 avec Chiffre de contrôle, Incorrect et Source](images/dossier-codes-fr.png "Codes")
+
+Dans le rapport, les codes d'une constatation figurent entre parenthèses après sa description ; `{{codes}}` place le tableau complet dans le rapport (voir [Modèles](sjablonen.md)). Dans le paquet de preuves, ils figurent dans `codes/codes.csv` et `codes/codes.json`, chacun avec l'empreinte de sa ligne.
 
 ### Rapport dans une autre langue
 

@@ -13,7 +13,7 @@ Klicken Sie im Menü links auf **Akten**.
 ## Die Liste
 
 - Die Auswahl **Status** über der Liste zeigt standardmäßig die **offenen** Akten. Wählen Sie **Alle**, um auch abgeschlossene und stornierte Akten zu sehen, oder einen einzelnen Status.
-- Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Planung und Status.
+- Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Planung, Status und die gescannten Codes (eine Containernummer findet man auch mit Leerzeichen).
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 
@@ -107,6 +107,19 @@ An Bord erfasst der Besichtiger den Stauplan, das Ladungsmanifest, das Logbuch, 
 Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest.
 
 ![Bordunterlagen von HQ-2026-0003: ein Stauplan und ein Ladungsmanifest](images/dossier-boorddocumenten-de.png "Bordunterlagen")
+
+### Codes
+
+Der Besichtiger scannt in der Feld-App Barcodes und QR-Codes: das **QR-Symbol** oben in der Akte. Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
+
+- Eine **Containernummer** (ISO 6346) besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7 Ziffern; die App schreibt sie in Großbuchstaben ohne Leerzeichen. Stimmt die Prüfziffer nicht, warnt die App, und der Besichtiger darf trotzdem speichern: Der Code erhält die Markierung **Stimmt nicht**.
+- Wer einen gescannten Code korrigiert, macht daraus einen getippten Code: Die Spalte **Quelle** sagt ehrlich, wie er hereinkam.
+
+Im Büro zeigt die Registerkarte **Codes** jeden Code mit Art, Prüfziffer, Feststellung, Zeit, Quelle und wer ihn erfasst hat. Ein Code wird nie geändert oder gelöscht.
+
+![Codes von HQ-2026-0003 mit Prüfziffer, Stimmt nicht und Quelle](images/dossier-codes-de.png "Codes")
+
+Im Bericht stehen die Codes einer Feststellung in Klammern hinter ihrer Beschreibung; `{{codes}}` setzt die vollständige Tabelle in den Bericht (siehe [Vorlagen](sjablonen.md)). Im Beweispaket stehen sie in `codes/codes.csv` und `codes/codes.json`, jeder mit dem Fingerabdruck seiner Zeile.
 
 ### Bericht in einer anderen Sprache
 

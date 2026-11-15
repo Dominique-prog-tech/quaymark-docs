@@ -31,6 +31,7 @@ One report template: the versions per language and the Word document itself.
 - `{{schadebegroting}}` puts the damage estimate in the report: the items with their estimated and accepted amount, the deduction and the net amount, the totals, the recommended reserve and the agreement if there is one. Without items, nothing remains.
 - `{{draftsurvey}}` puts the draft survey in the report: the result and the table with initial and final survey. Without a measurement, nothing remains.
 - `{{ijkmeting}}` puts the barge gauging in the report: the result and the table with the gauging certificate and the readings before and after. Without a gauging, nothing remains.
+- `{{codes}}` puts the scanned codes in the report: type, code, the number of the finding, time, source and check digit. Without codes, nothing remains.
 - `{{bunker}}` puts the bunker survey in the report: per product before, after, delivered and the difference with the delivery note, and the table per tank. Without a sounding nothing remains.
 - `{{aanbevelingen}}` puts the checklist items with a deficiency in the report, by priority: item, result, finding and recommendation. Without a deficiency nothing remains. The checklist table itself also has a column with the recommendation.
 - `{{handtekeningen}}` puts the signatures taken on site in the report: per signature the clause, the statement, the image (or the refusal with the reason), who and when, and the fingerprint of the snapshot. Without a signature nothing remains.

@@ -13,7 +13,7 @@ In the menu on the left, click **Files**.
 ## The list
 
 - The **Status** choice above the list shows the **open** files by default. Choose **All** to include closed and cancelled files as well, or pick one status.
-- The **search box** searches all columns: number, survey type, vessel, principal, port, planning and status.
+- The **search box** searches all columns: number, survey type, vessel, principal, port, planning, status and the scanned codes (a container number is also found with spaces).
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.
 - The export button downloads the list as a file.
 
@@ -107,6 +107,19 @@ On board, the surveyor records the stowage plan, the cargo manifest, the logbook
 At the office they are on the **Board documents** tab, with the type, who and when. A photo shows a thumbnail, a pdf opens, a video plays in the browser. They are never changed or deleted. They do not go into the photo appendix of the report, but they are part of the evidence package, with their type in the manifest.
 
 ![Board documents of HQ-2026-0003: a stowage plan and a cargo manifest](images/dossier-boorddocumenten-en.png "Board documents")
+
+### Codes
+
+The surveyor scans barcodes and QR codes in the field app: the **QR icon** at the top of the file. They choose the type (container, seal, sample or other code) and scan with the camera, have the code read from a photo or type it. They can link the code to a finding or leave it on the file. Without network it waits on the device.
+
+- A **container number** (ISO 6346) is 4 letters, the last U, J or Z, and 7 digits; the app writes it in capitals without spaces. If the check digit is wrong, the app warns and the surveyor may save anyway: the code gets the mark **Incorrect**.
+- Correcting a scanned code makes it a typed code: the **Source** column says honestly how it came in.
+
+At the office, the **Codes** tab shows each code with its type, check digit, finding, time, source and who recorded it. A code is never changed or deleted.
+
+![Codes of HQ-2026-0003 with Check digit, Incorrect and Source](images/dossier-codes-en.png "Codes")
+
+In the report the codes of a finding appear in brackets after its description; `{{codes}}` puts the full table in the report (see [Templates](sjablonen.md)). In the evidence package they are in `codes/codes.csv` and `codes/codes.json`, each with the fingerprint of its line.
 
 ### Report in another language
 

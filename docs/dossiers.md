@@ -13,7 +13,7 @@ Klik in het menu links op **Dossiers**.
 ## De lijst
 
 - De keuze **Status** boven de lijst toont standaard de **open** dossiers. Kies **Alle** om ook afgesloten en geannuleerde dossiers te zien, of één status.
-- Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, planning en status.
+- Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, planning, status en de gescande codes (een containernummer vindt u ook met spaties).
 - Dubbelklik op een rij om het **dossier** te openen; met het pijltje vooraan de rij opent het in een nieuw tabblad. **Nieuw dossier** maakt er een aan.
 - Met de exportknop haalt u de lijst op als bestand.
 
@@ -107,6 +107,19 @@ Aan boord legt de surveyor het stuwplan, het cargo manifest, het logboek, een le
 Op kantoor staan ze op het tabblad **Documenten van boord**, met de soort, wie en wanneer. Een foto toont een miniatuur, een pdf opent u, een video speelt in de browser af. Ze worden nooit gewijzigd of verwijderd. Ze komen niet in de fotobijlage van het rapport, wel in het bewijspakket, met hun soort in het manifest.
 
 ![Documenten van boord van HQ-2026-0003: een stuwplan en een cargo manifest](images/dossier-boorddocumenten.png "Documenten van boord")
+
+### Codes
+
+De surveyor scant in de veldapp barcodes en QR-codes: het **QR-icoon** bovenaan het dossier. Hij kiest de soort (container, zegel, staal of andere code) en scant met de camera, laat de code uit een foto lezen of tikt ze in. Hij kan de code aan een vaststelling koppelen, of los aan het dossier laten. Zonder bereik wacht ze op het toestel.
+
+- Een **containernummer** (ISO 6346) is 4 letters, de laatste U, J of Z, en 7 cijfers; de app schrijft het in hoofdletters zonder spaties. Klopt het controlecijfer niet, dan waarschuwt de app en mag de surveyor toch bewaren: de code krijgt het merkteken **Klopt niet**.
+- Wie een gescande code verbetert, maakt er een getikte code van: de kolom **Bron** zegt eerlijk hoe ze binnenkwam.
+
+Op kantoor toont het tabblad **Codes** elke code met haar soort, controlecijfer, vaststelling, tijd, bron en wie ze vastlegde. Een code wordt nooit gewijzigd of verwijderd.
+
+![Codes van HQ-2026-0003 met Controlecijfer, Klopt niet en Bron](images/dossier-codes.png "Codes")
+
+In het rapport staan de codes van een vaststelling tussen haakjes achter haar omschrijving; `{{codes}}` zet de volledige tabel in het rapport (zie [Sjablonen](sjablonen.md)). In het bewijspakket staan ze in `codes/codes.csv` en `codes/codes.json`, elk met de vingerafdruk van haar regel.
 
 ### Rapport in een andere taal
 
