@@ -301,6 +301,19 @@ At the top, the summary tiles calculate: the time from NOR to commencement, the 
 
 **Statement of facts (PDF)** shows the document; **Issue statement of facts** records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. In the report the timeline comes with the marker `{{tijdlijn}}` (see [Templates](sjablonen.md)).
 
+### Laytime
+
+The **Laytime** tab calculates laytime and demurrage from the timeline, under the terms of the charter party:
+
+- **Allowed time**: a fixed number of hours, or a quantity divided by a rate per day. If the file has a draft survey, Quaymark proposes the quantity.
+- **Counting**: SHINC (every day counts), SHEX (Sundays and holidays excepted) or SSHEX (Saturdays excepted too). The holidays are those of the port's country. An excepted day does not count, even if work was done.
+- **Commencement**: the NOR (tendered or accepted) plus the notice time in hours, or a time you enter yourself. The end is the last end of loading or discharging in the timeline.
+- **Interruptions** from the timeline do not count; tick those that count after all.
+- **Once on demurrage, always on demurrage**: after laytime, every excepted day counts as demurrage. You can untick it.
+- **Demurrage per day** and **despatch per day** (empty = half the demurrage), in the currency you choose.
+
+The result recalculates as you type: allowed, used, demurrage or despatch with the amount, and a table per period with the reason it counts or not. **Save** records the terms. If the NOR or the end is missing from the timeline, Quaymark says so and does not calculate. In the report, laytime appears with the placeholder `{{laytime}}` (see [Templates](sjablonen.md)).
+
 ### Time and expenses
 
 On the **Time and expenses** tab you record the **time entries** (who, from when to when, in the office's time) and the **expenses** (travel, accommodation, laboratory, third parties) of the file, with the receipt from the attachments. An expense marked **Recharge** goes on the invoice. **Propose invoice** turns them into a draft invoice; see [Invoices](facturen.md). Anything on an invoice is fixed.

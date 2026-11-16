@@ -301,6 +301,19 @@ En haut, les tuiles du résumé calculent : le temps de la NOR au début, la dur
 
 **Statement of facts (PDF)** montre le document ; **Émettre le statement of facts** le fige avec son empreinte, parmi les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Dans le rapport, la chronologie vient avec le marqueur `{{tijdlijn}}` (voir [Modèles](sjablonen.md)).
 
+### Laytime
+
+L'onglet **Laytime** calcule le laytime et les surestaries à partir de la chronologie, selon les conditions de la charte-partie :
+
+- **Temps alloué** : un nombre d'heures fixe, ou une quantité divisée par une cadence par jour. Si le dossier a un draft survey, Quaymark propose la quantité.
+- **Décompte** : SHINC (chaque jour compte), SHEX (sans dimanches ni jours fériés) ou SSHEX (sans samedis non plus). Les jours fériés sont ceux du pays du port. Un jour exclu ne compte pas, même si l'on a travaillé.
+- **Début** : le NOR (remis ou accepté) plus le délai en heures, ou un moment que vous saisissez. La fin est la dernière fin de chargement ou de déchargement de la chronologie.
+- Les **interruptions** de la chronologie ne comptent pas ; cochez celles qui comptent quand même.
+- **Une fois en surestaries, toujours en surestaries** : après le laytime, chaque jour exclu compte en surestaries. Vous pouvez le décocher.
+- **Surestaries par jour** et **despatch par jour** (vide = la moitié des surestaries), dans la devise de votre choix.
+
+Le résultat se recalcule pendant la saisie : alloué, utilisé, surestaries ou despatch avec le montant, et un tableau par période avec le motif pour lequel elle compte ou non. **Enregistrer** fixe les conditions. S'il manque le NOR ou la fin dans la chronologie, Quaymark le signale et ne calcule pas. Dans le rapport, le laytime figure avec le repère `{{laytime}}` (voir [Modèles](sjablonen.md)).
+
 ### Temps et frais
 
 Dans l'onglet **Temps et frais**, vous encodez les **prestations** (qui, de quand à quand, à l'heure du site) et les **frais** (déplacement, séjour, laboratoire, tiers) du dossier, avec le justificatif tiré des pièces jointes. Un frais marqué **Refacturer** figure sur la facture. **Proposer une facture** en fait un brouillon de facture ; voir [Factures](facturen.md). Ce qui figure sur une facture est figé.

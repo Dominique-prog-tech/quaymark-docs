@@ -301,6 +301,19 @@ Bovenaan rekenen de tegels van de samenvatting: de tijd van de NOR tot de start,
 
 **Statement of facts (PDF)** toont het document; **Statement of facts uitgeven** legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. In het rapport komt de tijdlijn met de markering `{{tijdlijn}}` (zie [Sjablonen](sjablonen.md)).
 
+### Laytime
+
+Het tabblad **Laytime** rekent laytime en demurrage uit de tijdlijn, volgens de voorwaarden van de charter party:
+
+- **Toegestane tijd**: een vast aantal uren, of een hoeveelheid gedeeld door een tempo per dag. Heeft het dossier een draft survey, dan stelt Quaymark de hoeveelheid voor.
+- **Telwijze**: SHINC (elke dag telt), SHEX (zon- en feestdagen niet) of SSHEX (ook zaterdag niet). De feestdagen zijn die van het land van de haven. Een uitgesloten dag telt niet, ook al werd er gewerkt.
+- **Aanvang**: de NOR (ingediend of aanvaard) plus de wachttijd in uren, of een moment dat u zelf invult. Het einde is het laatste einde van laden of lossen in de tijdlijn.
+- **Onderbrekingen** uit de tijdlijn tellen niet; vink aan wat toch meetelt.
+- **Eens in demurrage, altijd in demurrage**: na de laytime telt elke uitgesloten dag mee als demurrage. Uitvinken kan.
+- **Demurrage per dag** en **despatch per dag** (leeg = de helft van de demurrage), in de munt die u kiest.
+
+De uitkomst rekent mee terwijl u typt: toegestaan, gebruikt, demurrage of despatch met het bedrag, en een tabel per periode met de reden waarom ze wel of niet telt. **Bewaren** legt de voorwaarden vast. Ontbreekt de NOR of het einde in de tijdlijn, dan zegt Quaymark het en rekent het niet. In het rapport komt de laytime met de markering `{{laytime}}` (zie [Sjablonen](sjablonen.md)).
+
 ### Tijd en kosten
 
 Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer tot wanneer, in de tijd van de vestiging) en de **kosten** (reis, verblijf, labo, derden) van het dossier, met het bewijsstuk uit de bijlagen. Een kost op **Doorrekenen** komt op de factuur. **Factuur voorstellen** maakt er een klad-factuur van; zie [Facturen](facturen.md). Wat op een factuur staat, ligt vast.

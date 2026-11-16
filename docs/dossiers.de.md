@@ -301,6 +301,19 @@ Oben berechnen die Kacheln der Zusammenfassung: die Zeit von der NOR bis zum Beg
 
 **Statement of Facts (PDF)** zeigt das Dokument; **Statement of Facts ausstellen** legt es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Im Bericht steht der Zeitablauf mit der Markierung `{{tijdlijn}}` (siehe [Vorlagen](sjablonen.md)).
 
+### Liegezeit
+
+Die Registerkarte **Laytime** berechnet Liegezeit und Liegegeld aus dem Zeitablauf, nach den Bedingungen der Charterpartie:
+
+- **Erlaubte Zeit**: eine feste Stundenzahl oder eine Menge geteilt durch eine Rate pro Tag. Hat die Akte einen Draft Survey, schlägt Quaymark die Menge vor.
+- **Zählweise**: SHINC (jeder Tag zählt), SHEX (ohne Sonn- und Feiertage) oder SSHEX (auch ohne Samstage). Die Feiertage sind die des Landes des Hafens. Ein ausgenommener Tag zählt nicht, auch wenn gearbeitet wurde.
+- **Beginn**: die NOR (übergeben oder angenommen) plus die Wartezeit in Stunden, oder ein Zeitpunkt, den Sie selbst eingeben. Das Ende ist das letzte Ende des Ladens oder Löschens im Zeitablauf.
+- **Unterbrechungen** aus dem Zeitablauf zählen nicht; markieren Sie, was trotzdem zählt.
+- **Einmal Liegegeld, immer Liegegeld**: Nach der Liegezeit zählt jeder ausgenommene Tag als Liegegeld. Sie können es abwählen.
+- **Liegegeld pro Tag** und **Despatch pro Tag** (leer = die Hälfte des Liegegelds), in der Währung Ihrer Wahl.
+
+Das Ergebnis rechnet beim Tippen mit: erlaubt, verbraucht, Liegegeld oder Despatch mit dem Betrag, und eine Tabelle je Zeitraum mit dem Grund, warum er zählt oder nicht. **Speichern** legt die Bedingungen fest. Fehlt die NOR oder das Ende im Zeitablauf, sagt Quaymark es und rechnet nicht. Im Bericht erscheint die Liegezeit mit der Markierung `{{laytime}}` (siehe [Vorlagen](sjablonen.md)).
+
 ### Zeit und Kosten
 
 In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, von wann bis wann, in der Zeit der Niederlassung) und die **Kosten** (Reise, Unterkunft, Labor, Dritte) der Akte, mit dem Beleg aus den Anhängen. Kosten auf **Weiterberechnen** kommen auf die Rechnung. **Rechnung vorschlagen** macht daraus einen Rechnungsentwurf; siehe [Rechnungen](facturen.md). Was auf einer Rechnung steht, steht fest.

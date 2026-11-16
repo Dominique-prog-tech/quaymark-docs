@@ -31,6 +31,7 @@ Eén rapportsjabloon: de versies per taal en het Word-document zelf.
 - `{{schadebegroting}}` zet de schadebegroting in het rapport: de posten met hun geraamde en aanvaarde bedrag, de afschrijving en het netto bedrag, de totalen, de voorgestelde reserve en het akkoord als dat er is. Zonder posten blijft er niets staan.
 - `{{draftsurvey}}` zet de draft survey in het rapport: het resultaat en de tabel met begin- en eindmeting. Zonder meting blijft er niets staan.
 - `{{ijkmeting}}` zet de meting op ijkschalen in het rapport: het resultaat en de tabel met de ijkbrief en de metingen vóór en na. Zonder meting blijft er niets staan.
+- `{{laytime}}` zet de laytime in het rapport: de voorwaarden, de uitkomst en de tabel per periode. Zonder voorwaarden blijft er niets staan; staat de markering nog niet in uw rapportsjabloon, voeg ze dan toe.
 - `{{codes}}` zet de gescande codes in het rapport: soort, code, het nummer van de vaststelling, tijd, bron en controlecijfer. Zonder codes blijft er niets staan.
 - `{{bunker}}` zet de bunker survey in het rapport: per product vóór, na, geleverd en het verschil met de leveringsbon, en de tabel per tank. Zonder peiling blijft er niets staan.
 - `{{aanbevelingen}}` zet de punten van de checklist met een gebrek in het rapport, met de prioriteit voorop: punt, uitslag, bevinding en aanbeveling. Zonder gebrek blijft er niets staan. De checklisttabel zelf heeft ook een kolom met de aanbeveling.

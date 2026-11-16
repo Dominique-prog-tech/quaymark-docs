@@ -31,6 +31,7 @@ Un modèle de rapport : les versions par langue et le document Word lui-même.
 - `{{schadebegroting}}` place l'estimation des dommages dans le rapport : les postes avec leur montant estimé et accepté, la dépréciation et le montant net, les totaux, la réserve proposée et l'accord s'il existe. Sans postes, il ne reste rien.
 - `{{draftsurvey}}` place la draft survey dans le rapport : le résultat et le tableau avec mesure initiale et finale. Sans mesure, il ne reste rien.
 - `{{ijkmeting}}` place le jaugeage aux échelles dans le rapport : le résultat et le tableau avec le certificat de jaugeage et les mesures avant et après. Sans jaugeage, il ne reste rien.
+- `{{laytime}}` place le laytime dans le rapport : les conditions, le résultat et le tableau par période. Sans conditions, rien ne reste ; si le repère ne figure pas encore dans votre modèle de rapport, ajoutez-le.
 - `{{codes}}` place les codes scannés dans le rapport : type, code, numéro de la constatation, heure, source et chiffre de contrôle. Sans codes, il ne reste rien.
 - `{{bunker}}` place l'expertise de soutes dans le rapport : par produit avant, après, livré et l'écart avec le bon de livraison, et le tableau par soute. Sans sondage, rien ne reste.
 - `{{aanbevelingen}}` place les points de la check-list présentant un défaut dans le rapport, par priorité : point, résultat, constat et recommandation. Sans défaut, rien ne reste. Le tableau de la check-list a aussi une colonne avec la recommandation.
