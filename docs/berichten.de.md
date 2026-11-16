@@ -1,10 +1,10 @@
 ---
-description: "Nachrichten pro Akte zwischen Auftraggeber und Büro: im Kundenportal und auf der Akte, mit Anhängen, Lesebestätigung und der Glocke."
+description: "Nachrichten pro Akte zwischen Auftraggeber und Büro: im Auftraggeberportal und auf der Akte, mit Anhängen, Lesebestätigung und der Glocke."
 ---
 
 # Nachrichten
 
-Ein Auftraggeber stellt seine Frage zu einer Akte im Kundenportal, und das Büro antwortet auf der Akte selbst. So bleibt das ganze Gespräch bei der Akte, mit den Anhängen, und nicht in einem Postfach.
+Ein Auftraggeber stellt seine Frage zu einer Akte im Auftraggeberportal, und das Büro antwortet auf der Akte selbst. So bleibt das ganze Gespräch bei der Akte, mit den Anhängen, und nicht in einem Postfach.
 
 ![Nachrichten: das Gespräch mit dem Auftraggeber über diese Akte, mit Gelesen am](images/berichten-de.png "Nachrichten")
 
@@ -31,11 +31,11 @@ Die Glocke oben rechts zeigt eine neue Nachricht eines Auftraggebers dem Besicht
 
 ## Was der Auftraggeber sieht
 
-Im Kundenportal steht das Gespräch unten auf der Seite der Akte, unter **Nachrichten**. Das Büro erscheint dort mit dem Namen des Mitarbeiters und dem Namen des Büros.
+Im Auftraggeberportal steht das Gespräch unten auf der Seite der Akte, unter **Nachrichten**. Das Büro erscheint dort mit dem Namen des Mitarbeiters und dem Namen des Büros.
 
 - Zu jeder Nachricht des Büros erhält der Auftraggeber eine E-Mail mit einem Link zum Portal. Der Text selbst steht nicht in der E-Mail: er bleibt hinter der Anmeldung mit Zwei-Schritt-Verifizierung.
 - Solange der Auftraggeber Ihre vorige Nachricht nicht gelesen hat, erhält er für eine neue Nachricht keine zweite E-Mail.
-- Die E-Mail folgt der Benachrichtigungseinstellung des Auftraggebers. → [Beziehungen](relaties.md#kundenportal)
+- Die E-Mail folgt der Benachrichtigungseinstellung des Auftraggebers. → [Beziehungen](relaties.md#auftraggeberportal)
 
 ## Im Beweispaket
 

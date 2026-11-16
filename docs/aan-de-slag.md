@@ -61,7 +61,7 @@ Onderaan het menu opent **Platformbeheer** alle instellingen van het bureau, als
 
 ## Klantenportaal
 
-**Klantenportaal**, pal boven Afmelden, opent in een nieuw tabblad uw portaal bij ADM Concept: de facturen van uw abonnement, uw tickets en de aankondigingen van Quaymark. Het is iets anders dan het portaal dat uw opdrachtgevers gebruiken.
+**Klantenportaal**, pal boven Afmelden, opent in een nieuw tabblad uw portaal bij ADM Concept: de facturen van uw abonnement, uw tickets en de aankondigingen van Quaymark. Het is iets anders dan het **opdrachtgeversportaal**, waarin uw opdrachtgevers hun dossiers volgen.
 
 ## Wachtwoord wijzigen
 
@@ -85,7 +85,7 @@ Vroeg u een proefversie aan op quaymark.eu, dan krijgt u een eigen omgeving op n
 - U meldt zich aan met de gegevens uit de **welkomstmail** en kiest meteen een eigen wachtwoord.
 - Bij uw eerste aanmelding wordt u de **surveyor** van de voorbeelddossiers: u ziet ze in uw planning, bij de termijnen en in de veldapp.
 - Bovenaan staat tot wanneer de proef loopt.
-- In een proefversie **vertrekt er niets naar buiten**: geen mail, Peppol, ondertekening of uitnodiging voor het klantenportaal. Alles voorbereiden en bekijken kan wel, ook de rapporten als PDF.
+- In een proefversie **vertrekt er niets naar buiten**: geen mail, Peppol, ondertekening of uitnodiging voor het opdrachtgeversportaal. Alles voorbereiden en bekijken kan wel, ook de rapporten als PDF.
 - Na afloop staat de omgeving op **alleen lezen**. Wordt u klant, dan zet ADM Concept uw omgeving opnieuw op, zonder de voorbeeldgegevens. Uw account blijft.
 
 ## Een beperkte omgeving

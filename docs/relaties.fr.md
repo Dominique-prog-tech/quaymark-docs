@@ -31,9 +31,9 @@ Les données d'une relation.
 
 Une relation enregistrée a l'onglet **Personnes de contact** (nom, fonction, e-mail, téléphone, langue) et le journal avec notes, tâches, pièces jointes et historique. **Supprimer** déplace la relation vers la corbeille.
 
-## Portail client
+## Portail des donneurs d'ordre
 
-Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail client. Pour cela, vous donnez accès à une personne de contact de la relation. Vous ne voyez l'onglet **Portail client** de la fiche qu'avec le droit de gérer le portail client ; par défaut, seul l'administrateur a ce droit.
+Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail des donneurs d'ordre. Pour cela, vous donnez accès à une personne de contact de la relation. Vous ne voyez l'onglet **Portail des donneurs d'ordre** de la fiche qu'avec le droit de gérer le portail des donneurs d'ordre ; par défaut, seul l'administrateur a ce droit.
 
 - **Qui** : une personne de contact avec une seule adresse e-mail. Si la personne n'y figure pas encore, ajoutez-la d'abord dans l'onglet **Personnes de contact**.
 - **Inviter** : choisissez la personne de contact et cliquez sur **Inviter**. Elle reçoit un e-mail, dans sa langue ou à défaut celle de la relation, avec un lien pour choisir elle-même son mot de passe. Le lien est valable 7 jours. À la première connexion, elle active la vérification en deux étapes : sans elle, personne n'entre dans le portail.
@@ -47,7 +47,7 @@ Ce que la personne de contact voit dans le portail :
 - Pour chaque dossier, les versions **émises** du rapport et les lettres et certificats émis, en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
 - **Nouvelle mission** : envoyer une mission, avec pièces jointes. Elle arrive au bureau sous forme de demande et figure sous **Mes demandes** jusqu'à la décision du bureau. → [Demandes](aanvragen.md)
 - **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF. Pas un brouillon. Le portail n'indique pas si une facture est payée.
-- **Analyses** : les constatations des rapports de ses dossiers, comptées par terminal, navire, cargaison, type d'expertise, port, catégorie ou emplacement. Un dossier ne compte qu'avec un rapport que le donneur d'ordre voit déjà, et selon l'état de ce rapport. → [Analyses](analyses.md#dans-le-portail-client)
+- **Analyses** : les constatations des rapports de ses dossiers, comptées par terminal, navire, cargaison, type d'expertise, port, catégorie ou emplacement. Un dossier ne compte qu'avec un rapport que le donneur d'ordre voit déjà, et selon l'état de ce rapport. → [Analyses](analyses.md#dans-le-portail-des-donneurs-dordre)
 - Par dossier, la **date convenue** pour le rapport, si l'accord-cadre prévoit un délai ; sous **Analyses**, aussi combien de rapports sont arrivés dans les délais.
 - **Messages** en bas d'un dossier : la conversation avec le bureau, avec pièces jointes. À chaque message du bureau, la personne de contact reçoit un e-mail avec un lien. → [Messages](berichten.md#ce-que-voit-le-donneur-dordre)
 - Pas d'expert, d'heures, de frais, de constatations ni de photos : ils figurent dans le rapport.

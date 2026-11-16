@@ -1,10 +1,10 @@
 ---
-description: "Assignments that principals submitted in the client portal: view, accept or decline."
+description: "Assignments that principals submitted in the principal portal: view, accept or decline."
 ---
 
 # Requests
 
-The assignments that principals submitted in the client portal, or that someone sent through the request form on the office's website. A request only becomes a file once the office accepts it.
+The assignments that principals submitted in the principal portal, or that someone sent through the request form on the office's website. A request only becomes a file once the office accepts it.
 
 ## Opening the screen
 
@@ -48,9 +48,9 @@ The company can put a request form on its own website. Whoever fills it in needs
 
 ## Notifications to the principal
 
-The principal's portal users receive an email when their request is accepted or declined, when a file is scheduled or moved, and when a report, letter, certificate or invoice is issued. The email has no attachment, only a link to the portal. You turn it off per relation on the Client portal tab; each user can also turn it off. Every notification sent appears in the file's journal.
+The principal's portal users receive an email when their request is accepted or declined, when a file is scheduled or moved, and when a report, letter, certificate or invoice is issued. The email has no attachment, only a link to the portal. You turn it off per relation on the Principal portal tab; each user can also turn it off. Every notification sent appears in the file's journal.
 
 ## See also
 
-- [Relations](relaties.md#client-portal)
+- [Relations](relaties.md#principal-portal)
 - [Files](dossiers.md)

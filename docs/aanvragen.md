@@ -1,10 +1,10 @@
 ---
-description: "Opdrachten die opdrachtgevers indienden in het klantenportaal: bekijken, aanvaarden of weigeren."
+description: "Opdrachten die opdrachtgevers indienden in het opdrachtgeversportaal: bekijken, aanvaarden of weigeren."
 ---
 
 # Aanvragen
 
-Opdrachten die opdrachtgevers indienden in het klantenportaal, of iemand via het aanvraagformulier op de website van het bureau. Een aanvraag wordt pas een dossier als het bureau ze aanvaardt.
+Opdrachten die opdrachtgevers indienden in het opdrachtgeversportaal, of iemand via het aanvraagformulier op de website van het bureau. Een aanvraag wordt pas een dossier als het bureau ze aanvaardt.
 
 ## Het scherm openen
 
@@ -48,9 +48,9 @@ Het bureau kan een aanvraagformulier op zijn eigen website zetten. Wie het invul
 
 ## Meldingen aan de opdrachtgever
 
-De portaalgebruikers van de opdrachtgever krijgen een mail als hun aanvraag aanvaard of geweigerd wordt, als een dossier gepland of verplaatst wordt, en als er een rapport, brief, certificaat of factuur uitgegeven wordt. De mail bevat geen bijlage, wel een link naar het portaal. U zet het per relatie uit op het tabblad Klantenportaal; elke gebruiker kan het ook zelf uitzetten. Elke verstuurde melding staat in het journaal van het dossier.
+De portaalgebruikers van de opdrachtgever krijgen een mail als hun aanvraag aanvaard of geweigerd wordt, als een dossier gepland of verplaatst wordt, en als er een rapport, brief, certificaat of factuur uitgegeven wordt. De mail bevat geen bijlage, wel een link naar het portaal. U zet het per relatie uit op het tabblad Opdrachtgeversportaal; elke gebruiker kan het ook zelf uitzetten. Elke verstuurde melding staat in het journaal van het dossier.
 
 ## Zie ook
 
-- [Relaties](relaties.md#klantenportaal)
+- [Relaties](relaties.md#opdrachtgeversportaal)
 - [Dossiers](dossiers.md)

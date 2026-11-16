@@ -1,10 +1,10 @@
 ---
-description: "Le donneur d'ordre confirme la mission et les conditions générales du bureau, par un lien ou dans le portail client ; avec la preuve de qui, quand et quelle version."
+description: "Le donneur d'ordre confirme la mission et les conditions générales du bureau, par un lien ou dans le portail des donneurs d'ordre ; avec la preuve de qui, quand et quelle version."
 ---
 
 # Confirmation de mission
 
-Avec une confirmation de mission, vous établissez que le donneur d'ordre accepte la mission, le tarif et les conditions générales du bureau. Le donneur d'ordre confirme par un lien dans un e-mail, ou dans le portail client.
+Avec une confirmation de mission, vous établissez que le donneur d'ordre accepte la mission, le tarif et les conditions générales du bureau. Le donneur d'ordre confirme par un lien dans un e-mail, ou dans le portail des donneurs d'ordre.
 
 ## Définir les conditions générales
 
@@ -35,23 +35,23 @@ La confirmation décrit la mission : le numéro de dossier, le type d'expertise,
 
 Le lien ouvre une page avec la mission et les conditions générales, en quatre langues. Le donneur d'ordre tape son nom complet, coche qu'il est d'accord et clique sur **Confirmer la mission**. Il peut aussi choisir **Je ne confirme pas cette mission**. Ensuite, le lien ne fonctionne plus.
 
-Si le donneur d'ordre a accès au portail client, il voit la même confirmation dans le dossier et peut aussi y confirmer ou refuser. → [Comment donner accès à un donneur d'ordre ?](hoe/klantenportaal.md)
+Si le donneur d'ordre a accès au portail des donneurs d'ordre, il voit la même confirmation dans le dossier et peut aussi y confirmer ou refuser. → [Comment donner accès à un donneur d'ordre ?](hoe/klantenportaal.md)
 
 ## L'état du dossier
 
 - **Non envoyée** : aucune confirmation n'a encore été envoyée.
 - **Envoyée** : le donneur d'ordre n'a pas encore répondu.
-- **Acceptée** : avec le nom tapé par le donneur d'ordre, l'heure, le canal (par le lien ou dans le portail client) et la version des conditions.
+- **Acceptée** : avec le nom tapé par le donneur d'ordre, l'heure, le canal (par le lien ou dans le portail des donneurs d'ordre) et la version des conditions.
 - **Refusée** : le donneur d'ordre ne confirme pas cette mission. Prenez contact et envoyez au besoin une nouvelle confirmation.
 - **Expirée** : le lien a expiré après 14 jours sans réponse.
 - **Retirée** : le bureau a retiré le lien.
-- **Confirmée par l'offre** ou **Confirmée par la demande** : le dossier est issu d'une offre acceptée par le donneur d'ordre, ou d'une demande dans le portail client. Une confirmation séparée n'est alors pas nécessaire. → [Offres](offertes.md), [Demandes](aanvragen.md)
+- **Confirmée par l'offre** ou **Confirmée par la demande** : le dossier est issu d'une offre acceptée par le donneur d'ordre, ou d'une demande dans le portail des donneurs d'ordre. Une confirmation séparée n'est alors pas nécessaire. → [Offres](offertes.md), [Demandes](aanvragen.md)
 
 Chaque acceptation ou refus apparaît aussi comme note dans le journal du dossier.
 
 ## Ce qui est conservé
 
-Quaymark conserve ce que le donneur d'ordre a vu (la mission et la version des conditions, avec une empreinte), et pour une réponse par le lien le nom, l'heure, l'adresse IP, le navigateur et l'empreinte de la page affichée. Dans le portail client, c'est le compte du donneur d'ordre. Tout cela est uniquement ajouté, jamais modifié. Si un dossier est effacé après son délai de conservation, sa confirmation l'est aussi. → [Délais de conservation](bewaartermijnen.md)
+Quaymark conserve ce que le donneur d'ordre a vu (la mission et la version des conditions, avec une empreinte), et pour une réponse par le lien le nom, l'heure, l'adresse IP, le navigateur et l'empreinte de la page affichée. Dans le portail des donneurs d'ordre, c'est le compte du donneur d'ordre. Tout cela est uniquement ajouté, jamais modifié. Si un dossier est effacé après son délai de conservation, sa confirmation l'est aussi. → [Délais de conservation](bewaartermijnen.md)
 
 ## Émettre un rapport sans confirmation
 

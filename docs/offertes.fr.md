@@ -22,7 +22,7 @@ Cliquez sur **Offres** dans le menu de gauche. Vous voyez les offres avec leur n
 
 ## Accepter ou refuser
 
-- Le donneur d'ordre peut accepter ou refuser l'offre dans le **portail client**, tant qu'elle est valable. → [Portail client](relaties.md#portail-client)
+- Le donneur d'ordre peut accepter ou refuser l'offre dans le **portail des donneurs d'ordre**, tant qu'elle est valable. → [Portail des donneurs d'ordre](relaties.md#portail-des-donneurs-dordre)
 - Si vous avez reçu la réponse par e-mail ou par téléphone, cliquez vous-même sur **Accepter** ou **Refuser**.
 - Accepter crée un **dossier** au statut Nouveau, avec le donneur d'ordre, le type d'expertise, le navire, le port et la référence. Si le navire existe déjà sous le même nom, Quaymark le reprend ; sinon il en crée un nouveau. Vous choisissez ensuite l'expert et la planification dans le dossier.
 - Les lignes de l'offre constituent le **forfait** du dossier : la proposition de facture les reprend, et l'indique.

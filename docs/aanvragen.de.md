@@ -1,10 +1,10 @@
 ---
-description: "Aufträge, die Auftraggeber im Kundenportal gesendet haben: ansehen, annehmen oder ablehnen."
+description: "Aufträge, die Auftraggeber im Auftraggeberportal gesendet haben: ansehen, annehmen oder ablehnen."
 ---
 
 # Anfragen
 
-Die Aufträge, die Auftraggeber im Kundenportal gesendet haben oder die jemand über das Anfrageformular auf der Website des Büros gesendet hat. Eine Anfrage wird erst zur Akte, wenn das Büro sie annimmt.
+Die Aufträge, die Auftraggeber im Auftraggeberportal gesendet haben oder die jemand über das Anfrageformular auf der Website des Büros gesendet hat. Eine Anfrage wird erst zur Akte, wenn das Büro sie annimmt.
 
 ## Bildschirm öffnen
 
@@ -48,9 +48,9 @@ Das Büro kann ein Anfrageformular auf seine eigene Website stellen. Wer es ausf
 
 ## Benachrichtigungen an den Auftraggeber
 
-Die Portalbenutzer des Auftraggebers erhalten eine E-Mail, wenn ihre Anfrage angenommen oder abgelehnt wird, wenn eine Akte geplant oder verschoben wird und wenn ein Bericht, Brief, Zertifikat oder eine Rechnung ausgestellt wird. Die E-Mail enthält keinen Anhang, nur einen Link zum Portal. Sie schalten das pro Beziehung auf der Registerkarte Kundenportal aus; jeder Benutzer kann es auch selbst ausschalten. Jede gesendete Benachrichtigung steht im Journal der Akte.
+Die Portalbenutzer des Auftraggebers erhalten eine E-Mail, wenn ihre Anfrage angenommen oder abgelehnt wird, wenn eine Akte geplant oder verschoben wird und wenn ein Bericht, Brief, Zertifikat oder eine Rechnung ausgestellt wird. Die E-Mail enthält keinen Anhang, nur einen Link zum Portal. Sie schalten das pro Beziehung auf der Registerkarte Auftraggeberportal aus; jeder Benutzer kann es auch selbst ausschalten. Jede gesendete Benachrichtigung steht im Journal der Akte.
 
 ## Siehe auch
 
-- [Beziehungen](relaties.md#kundenportal)
+- [Beziehungen](relaties.md#auftraggeberportal)
 - [Akten](dossiers.md)

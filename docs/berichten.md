@@ -1,10 +1,10 @@
 ---
-description: "Berichten per dossier tussen opdrachtgever en bureau: in het klantenportaal en op het dossier, met bijlagen, gelezen-vinkje en het belletje."
+description: "Berichten per dossier tussen opdrachtgever en bureau: in het opdrachtgeversportaal en op het dossier, met bijlagen, gelezen-vinkje en het belletje."
 ---
 
 # Berichten
 
-Een opdrachtgever stelt zijn vraag over een dossier in het klantenportaal, en het bureau antwoordt op het dossier zelf. Zo staat het hele gesprek bij het dossier, met de bijlagen, en niet in een mailbox.
+Een opdrachtgever stelt zijn vraag over een dossier in het opdrachtgeversportaal, en het bureau antwoordt op het dossier zelf. Zo staat het hele gesprek bij het dossier, met de bijlagen, en niet in een mailbox.
 
 ![Het tabblad Berichten op een dossier: een vraag van de opdrachtgever en het antwoord van het bureau](images/berichten.png "Berichten")
 
@@ -31,11 +31,11 @@ Het belletje rechtsboven toont een nieuw bericht van een opdrachtgever aan de su
 
 ## Wat de opdrachtgever ziet
 
-In het klantenportaal staat het gesprek onderaan de pagina van het dossier, onder **Berichten**. Het bureau verschijnt er met de naam van de medewerker en de naam van het bureau.
+In het opdrachtgeversportaal staat het gesprek onderaan de pagina van het dossier, onder **Berichten**. Het bureau verschijnt er met de naam van de medewerker en de naam van het bureau.
 
 - Bij een bericht van het bureau krijgt de opdrachtgever een mail met een link naar het portaal. De tekst zelf staat niet in de mail: die blijft achter de aanmelding met tweestapsverificatie.
 - Zolang de opdrachtgever uw vorige bericht niet las, krijgt hij voor een nieuw bericht geen tweede mail.
-- De mail volgt de meldingsvoorkeur van de opdrachtgever. → [Relaties](relaties.md#klantenportaal)
+- De mail volgt de meldingsvoorkeur van de opdrachtgever. → [Relaties](relaties.md#opdrachtgeversportaal)
 
 ## In het bewijspakket
 

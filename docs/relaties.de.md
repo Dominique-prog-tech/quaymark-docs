@@ -31,9 +31,9 @@ Die Daten einer Beziehung.
 
 Eine gespeicherte Beziehung hat die Registerkarte **Ansprechpartner** (Name, Funktion, E-Mail, Telefon, Sprache) und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf. **Löschen** verschiebt die Beziehung in den Papierkorb.
 
-## Kundenportal
+## Auftraggeberportal
 
-Ein Auftraggeber kann seine Akten im Kundenportal selbst verfolgen. Dazu geben Sie einer Kontaktperson der Beziehung Zugang. Die Registerkarte **Kundenportal** auf dem Datensatz sehen Sie nur mit dem Recht, das Kundenportal zu verwalten; standardmäßig hat nur der Administrator dieses Recht.
+Ein Auftraggeber kann seine Akten im Auftraggeberportal selbst verfolgen. Dazu geben Sie einer Kontaktperson der Beziehung Zugang. Die Registerkarte **Auftraggeberportal** auf dem Datensatz sehen Sie nur mit dem Recht, das Auftraggeberportal zu verwalten; standardmäßig hat nur der Administrator dieses Recht.
 
 - **Wer**: eine Kontaktperson mit einer E-Mail-Adresse. Steht die Person noch nicht dabei, fügen Sie sie zuerst auf der Registerkarte **Ansprechpartner** hinzu.
 - **Einladen**: Wählen Sie die Kontaktperson und klicken Sie auf **Einladen**. Sie erhält eine E-Mail, in ihrer Sprache oder sonst der der Beziehung, mit einem Link, um ihr Passwort selbst zu wählen. Der Link ist 7 Tage gültig. Bei der ersten Anmeldung richtet sie die Zwei-Faktor-Authentifizierung ein: ohne sie kommt niemand ins Portal.
@@ -47,7 +47,7 @@ Was die Kontaktperson im Portal sieht:
 - Je Akte die **ausgestellten** Berichtsversionen und die ausgestellten Briefe und Zertifikate, als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
 - **Neuer Auftrag**: einen Auftrag senden, mit Anhängen. Er geht als Anfrage an das Büro und steht unter **Meine Anfragen**, bis das Büro entscheidet. → [Anfragen](aanvragen.md)
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
-- **Analysen**: die Feststellungen aus den Berichten seiner Akten, gezählt nach Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Kategorie oder Ort. Eine Akte zählt erst mit einem Bericht, den der Auftraggeber bereits sieht, und mit dem Stand dieses Berichts. → [Analysen](analyses.md#im-kundenportal)
+- **Analysen**: die Feststellungen aus den Berichten seiner Akten, gezählt nach Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Kategorie oder Ort. Eine Akte zählt erst mit einem Bericht, den der Auftraggeber bereits sieht, und mit dem Stand dieses Berichts. → [Analysen](analyses.md#im-auftraggeberportal)
 - Pro Akte das **vereinbarte Datum** für den Bericht, wenn die Rahmenvereinbarung eine Frist hat; unter **Analysen** auch, wie viele Berichte fristgerecht kamen.
 - **Nachrichten** unten auf einer Akte: das Gespräch mit dem Büro, mit Anhängen. Zu einer Nachricht des Büros erhält die Kontaktperson eine E-Mail mit einem Link. → [Nachrichten](berichten.md#was-der-auftraggeber-sieht)
 - Kein Besichtiger, keine Stunden, Kosten, Feststellungen oder Fotos: Diese stehen im Bericht.

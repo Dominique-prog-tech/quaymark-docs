@@ -187,7 +187,7 @@ If your office has an OKSign contract in ADM One, you have an issued version sig
 
 The issued version itself does not change. Quaymark adds a signature page at the end with the file number, the version and the fingerprint (SHA-256) of that version, and has the whole signed. The signed PDF gets its own fingerprint and is part of the evidence package. As long as not everyone has signed, you can **Withdraw** the request; you can then have it signed again.
 
-What the principal sees in the client portal depends on the setting **Report in the portal only after signing via OKSign** in the [office details](bureaugegevens.md): off, they see every issued version right away, and the signed one once it exists. On, only once signed, and only then do they get the notification.
+What the principal sees in the principal portal depends on the setting **Report in the portal only after signing via OKSign** in the [office details](bureaugegevens.md): off, they see every issued version right away, and the signed one once it exists. On, only once signed, and only then do they get the notification.
 
 ### Four-eyes review
 
@@ -384,7 +384,7 @@ A surveyor may not act for both parties. Quaymark warns at the top of the file i
 - The header then shows **Conflict of interest?**, and the top of the file lists the other files with their principal.
 - If it is not a conflict, click **No conflict** and explain why (for example: different damage, both parties informed). This is kept with your name and the time, and cannot be changed. It is the proof of independence a principal or an accreditation may ask for.
 - The work is not blocked: the warning stays until it is justified.
-- On a request from the client portal too, Quaymark warns before you accept it. → [Requests](aanvragen.md#request)
+- On a request from the principal portal too, Quaymark warns before you accept it. → [Requests](aanvragen.md#request)
 
 ## Claims
 

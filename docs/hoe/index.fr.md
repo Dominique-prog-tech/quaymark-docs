@@ -15,7 +15,7 @@ Des réponses courtes aux questions qui reviennent dans le travail. Chaque étap
 
 ## Relations
 
-- [Comment donner accès au portail client à un donneur d'ordre ?](klantenportaal.md)
+- [Comment donner accès au portail des donneurs d'ordre à un donneur d'ordre ?](klantenportaal.md)
 - [Comment placer un formulaire de demande sur notre site web ?](aanvraagformulier.md)
 
 ## Lettres et preuves

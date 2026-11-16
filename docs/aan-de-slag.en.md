@@ -61,7 +61,7 @@ At the bottom of the menu, **Administration** opens all the office's settings, a
 
 ## Customer portal
 
-**Customer portal**, just above Sign out, opens your portal at ADM Concept in a new tab: the invoices of your subscription, your tickets and the Quaymark announcements. It is not the same as the portal your clients use.
+**Customer portal**, just above Sign out, opens your portal at ADM Concept in a new tab: the invoices of your subscription, your tickets and the Quaymark announcements. It is not the same as the **principal portal**, where your principals follow their files.
 
 ## Change password
 
@@ -85,7 +85,7 @@ If you requested a trial version on quaymark.eu, you get your own environment in
 - You sign in with the details from the **welcome email** and choose your own password straight away.
 - At your first sign-in you become the **surveyor** of the sample files: you see them in your planning, in the deadlines and in the field app.
 - The top of the screen shows until when the trial runs.
-- In a trial version **nothing goes out**: no email, Peppol, signing or client portal invitation. You can prepare and view everything, including the reports as PDF.
+- In a trial version **nothing goes out**: no email, Peppol, signing or principal portal invitation. You can prepare and view everything, including the reports as PDF.
 - When it ends, the environment becomes **read-only**. If you become a customer, ADM Concept sets up your environment again, without the sample data. Your account stays.
 
 ## A restricted environment

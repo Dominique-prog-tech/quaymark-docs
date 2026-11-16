@@ -61,7 +61,7 @@ Unten im Menü öffnet **Verwaltung** alle Einstellungen des Büros, als Kacheln
 
 ## Kundenportal
 
-**Kundenportal**, direkt über Abmelden, öffnet in einem neuen Tab Ihr Portal bei ADM Concept: die Rechnungen Ihres Abonnements, Ihre Tickets und die Ankündigungen von Quaymark. Es ist etwas anderes als das Portal, das Ihre Auftraggeber verwenden.
+**Kundenportal**, direkt über Abmelden, öffnet in einem neuen Tab Ihr Portal bei ADM Concept: die Rechnungen Ihres Abonnements, Ihre Tickets und die Ankündigungen von Quaymark. Es ist etwas anderes als das **Auftraggeberportal**, in dem Ihre Auftraggeber ihre Akten verfolgen.
 
 ## Passwort ändern
 
@@ -85,7 +85,7 @@ Haben Sie auf quaymark.eu eine Testversion angefordert, erhalten Sie eine eigene
 - Sie melden sich mit den Daten aus der **Willkommens-E-Mail** an und wählen sofort ein eigenes Passwort.
 - Bei Ihrer ersten Anmeldung werden Sie der **Surveyor** der Beispielakten: Sie sehen sie in Ihrer Planung, bei den Fristen und in der Außendienst-App.
 - Oben steht, bis wann die Testversion läuft.
-- In einer Testversion **geht nichts nach außen**: keine E-Mail, kein Peppol, keine Signatur und keine Einladung zum Kundenportal. Vorbereiten und ansehen können Sie alles, auch die Berichte als PDF.
+- In einer Testversion **geht nichts nach außen**: keine E-Mail, kein Peppol, keine Signatur und keine Einladung zum Auftraggeberportal. Vorbereiten und ansehen können Sie alles, auch die Berichte als PDF.
 - Danach ist die Umgebung **schreibgeschützt**. Werden Sie Kunde, richtet ADM Concept Ihre Umgebung neu ein, ohne die Beispieldaten. Ihr Konto bleibt.
 
 ## Eine eingeschränkte Umgebung

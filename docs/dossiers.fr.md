@@ -187,7 +187,7 @@ Si votre bureau a un contrat OKSign dans ADM One, vous faites signer une version
 
 La version émise elle-même ne change pas. Quaymark ajoute à la fin une page de signature avec le numéro du dossier, la version et l'empreinte (SHA-256) de cette version, et fait signer l'ensemble. Le PDF signé reçoit sa propre empreinte et fait partie du dossier de preuves. Tant que tout le monde n'a pas signé, vous pouvez **Retirer** la demande ; vous pouvez ensuite refaire signer.
 
-Ce que le donneur d'ordre voit dans le portail client dépend du réglage **Rapport dans le portail seulement après signature via OKSign** dans les [données du bureau](bureaugegevens.md) : désactivé, il voit chaque version émise tout de suite, et la version signée dès qu'elle existe. Activé, seulement une fois signée, et c'est seulement alors qu'il reçoit la notification.
+Ce que le donneur d'ordre voit dans le portail des donneurs d'ordre dépend du réglage **Rapport dans le portail seulement après signature via OKSign** dans les [données du bureau](bureaugegevens.md) : désactivé, il voit chaque version émise tout de suite, et la version signée dès qu'elle existe. Activé, seulement une fois signée, et c'est seulement alors qu'il reçoit la notification.
 
 ### Double contrôle
 
@@ -384,7 +384,7 @@ Un expert ne peut pas intervenir pour les deux parties. Quaymark avertit en haut
 - L'en-tête affiche alors **Conflit d'intérêts ?**, et le haut du dossier les autres dossiers avec leur donneur d'ordre.
 - S'il n'y a pas de conflit, cliquez sur **Pas de conflit** et expliquez pourquoi (par exemple : autre dommage, les deux parties informées). C'est conservé avec votre nom et l'heure, et ne peut pas être modifié. C'est la preuve d'indépendance qu'un donneur d'ordre ou une accréditation peut demander.
 - Le travail n'est pas bloqué : l'avertissement reste affiché jusqu'à sa justification.
-- Sur une demande du portail client aussi, Quaymark avertit dès avant l'acceptation. → [Demandes](aanvragen.md#demande)
+- Sur une demande du portail des donneurs d'ordre aussi, Quaymark avertit dès avant l'acceptation. → [Demandes](aanvragen.md#demande)
 
 ## Réclamations
 

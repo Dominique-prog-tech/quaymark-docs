@@ -187,7 +187,7 @@ Hat Ihr Büro einen OKSign-Vertrag in ADM One, lassen Sie eine herausgegebene Ve
 
 Die herausgegebene Version selbst ändert sich nicht. Quaymark fügt am Ende ein Unterschriftsblatt mit der Aktennummer, der Version und dem Fingerabdruck (SHA-256) dieser Version hinzu und lässt das Ganze unterschreiben. Das unterschriebene PDF erhält seinen eigenen Fingerabdruck und gehört zum Beweispaket. Solange nicht alle unterschrieben haben, können Sie die Anfrage **Zurückziehen**; danach können Sie erneut unterschreiben lassen.
 
-Was der Auftraggeber im Kundenportal sieht, bestimmt die Einstellung **Bericht erst nach der Unterzeichnung über OKSign im Portal** in den [Firmendaten](bureaugegevens.md): aus, dann sieht er jede herausgegebene Version sofort, und die unterschriebene, sobald es sie gibt. An, erst wenn sie unterschrieben ist, und erst dann erhält er auch die Benachrichtigung.
+Was der Auftraggeber im Auftraggeberportal sieht, bestimmt die Einstellung **Bericht erst nach der Unterzeichnung über OKSign im Portal** in den [Firmendaten](bureaugegevens.md): aus, dann sieht er jede herausgegebene Version sofort, und die unterschriebene, sobald es sie gibt. An, erst wenn sie unterschrieben ist, und erst dann erhält er auch die Benachrichtigung.
 
 ### Vier-Augen-Prinzip
 
@@ -384,7 +384,7 @@ Ein Besichtiger darf nicht für beide Parteien tätig sein. Quaymark warnt oben 
 - Die Kopfzeile zeigt dann **Interessenkonflikt?**, und oben in der Akte stehen die anderen Akten mit ihrem Auftraggeber.
 - Liegt kein Konflikt vor, klicken Sie auf **Kein Konflikt** und erklären Sie warum (zum Beispiel: anderer Schaden, beide Parteien informiert). Das wird mit Ihrem Namen und der Uhrzeit gespeichert und kann nicht geändert werden. Es ist der Nachweis der Unabhängigkeit, den ein Auftraggeber oder eine Akkreditierung verlangen kann.
 - Die Arbeit wird nicht blockiert: Die Warnung bleibt, bis sie begründet ist.
-- Auch bei einer Anfrage aus dem Kundenportal warnt Quaymark schon vor dem Annehmen. → [Anfragen](aanvragen.md#anfrage)
+- Auch bei einer Anfrage aus dem Auftraggeberportal warnt Quaymark schon vor dem Annehmen. → [Anfragen](aanvragen.md#anfrage)
 
 ## Ansprüche
 

@@ -22,7 +22,7 @@ Click **Quotations** in the menu on the left. You see the quotations with their 
 
 ## Accepting or declining
 
-- The principal can accept or decline the quotation in the **client portal**, as long as it is valid. → [Client portal](relaties.md#client-portal)
+- The principal can accept or decline the quotation in the **principal portal**, as long as it is valid. → [Principal portal](relaties.md#principal-portal)
 - If you received the answer by email or phone, click **Accept** or **Decline** yourself.
 - Accepting creates a **file** with status New, with the principal, the survey type, the vessel, the port and the reference. If the vessel already exists with the same name, Quaymark uses it; otherwise it creates a new one. You then choose the surveyor and the scheduling in the file.
 - The quotation's lines are the file's **flat fee**: the invoice proposal puts them on the invoice, and says so.

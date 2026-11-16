@@ -1,10 +1,10 @@
 ---
-description: "Der Auftraggeber bestätigt den Auftrag und die Allgemeinen Geschäftsbedingungen des Büros, über einen Link oder im Kundenportal; mit dem Nachweis, wer, wann und welche Version."
+description: "Der Auftraggeber bestätigt den Auftrag und die Allgemeinen Geschäftsbedingungen des Büros, über einen Link oder im Auftraggeberportal; mit dem Nachweis, wer, wann und welche Version."
 ---
 
 # Auftragsbestätigung
 
-Mit einer Auftragsbestätigung halten Sie fest, dass der Auftraggeber den Auftrag, den Tarif und die Allgemeinen Geschäftsbedingungen des Büros akzeptiert. Der Auftraggeber bestätigt über einen Link in einer E-Mail oder im Kundenportal.
+Mit einer Auftragsbestätigung halten Sie fest, dass der Auftraggeber den Auftrag, den Tarif und die Allgemeinen Geschäftsbedingungen des Büros akzeptiert. Der Auftraggeber bestätigt über einen Link in einer E-Mail oder im Auftraggeberportal.
 
 ## Die Geschäftsbedingungen einrichten
 
@@ -35,23 +35,23 @@ Die Bestätigung beschreibt den Auftrag: die Aktennummer, die Besichtigungsart, 
 
 Der Link öffnet eine Seite mit dem Auftrag und den Allgemeinen Geschäftsbedingungen, in vier Sprachen. Der Auftraggeber gibt seinen vollständigen Namen ein, hakt an, dass er einverstanden ist, und klickt auf **Auftrag bestätigen**. Er kann auch **Ich bestätige diesen Auftrag nicht** wählen. Danach funktioniert der Link nicht mehr.
 
-Hat der Auftraggeber Zugang zum Kundenportal, sieht er dieselbe Bestätigung bei der Akte und kann auch dort bestätigen oder ablehnen. → [Wie gebe ich einem Auftraggeber Zugang?](hoe/klantenportaal.md)
+Hat der Auftraggeber Zugang zum Auftraggeberportal, sieht er dieselbe Bestätigung bei der Akte und kann auch dort bestätigen oder ablehnen. → [Wie gebe ich einem Auftraggeber Zugang?](hoe/klantenportaal.md)
 
 ## Der Stand der Akte
 
 - **Nicht versendet**: Es wurde noch keine Bestätigung versendet.
 - **Versendet**: Der Auftraggeber hat noch nicht geantwortet.
-- **Angenommen**: mit dem Namen, den der Auftraggeber eingegeben hat, der Uhrzeit, dem Weg (über den Link oder im Kundenportal) und der Version der Bedingungen.
+- **Angenommen**: mit dem Namen, den der Auftraggeber eingegeben hat, der Uhrzeit, dem Weg (über den Link oder im Auftraggeberportal) und der Version der Bedingungen.
 - **Abgelehnt**: Der Auftraggeber bestätigt diesen Auftrag nicht. Nehmen Sie Kontakt auf und senden Sie bei Bedarf eine neue Bestätigung.
 - **Abgelaufen**: Der Link ist nach 14 Tagen ohne Antwort abgelaufen.
 - **Zurückgezogen**: Das Büro hat den Link zurückgezogen.
-- **Durch Angebot bestätigt** oder **Durch Anfrage bestätigt**: Die Akte entstand aus einem Angebot, das der Auftraggeber angenommen hat, oder aus einer Anfrage im Kundenportal. Eine eigene Bestätigung ist dann nicht nötig. → [Angebote](offertes.md), [Anfragen](aanvragen.md)
+- **Durch Angebot bestätigt** oder **Durch Anfrage bestätigt**: Die Akte entstand aus einem Angebot, das der Auftraggeber angenommen hat, oder aus einer Anfrage im Auftraggeberportal. Eine eigene Bestätigung ist dann nicht nötig. → [Angebote](offertes.md), [Anfragen](aanvragen.md)
 
 Jede Annahme oder Ablehnung erscheint auch als Notiz im Journal der Akte.
 
 ## Was gespeichert wird
 
-Quaymark speichert, was der Auftraggeber zu sehen bekam (den Auftrag und die Version der Bedingungen, mit einem Fingerabdruck), und bei einer Antwort über den Link den Namen, die Uhrzeit, die IP-Adresse, den Browser und den Fingerabdruck der angezeigten Seite. Im Kundenportal ist es das Konto des Auftraggebers. All dies wird nur hinzugefügt, nie geändert. Wird eine Akte nach ihrer Aufbewahrungsfrist gelöscht, geht ihre Bestätigung mit. → [Aufbewahrungsfristen](bewaartermijnen.md)
+Quaymark speichert, was der Auftraggeber zu sehen bekam (den Auftrag und die Version der Bedingungen, mit einem Fingerabdruck), und bei einer Antwort über den Link den Namen, die Uhrzeit, die IP-Adresse, den Browser und den Fingerabdruck der angezeigten Seite. Im Auftraggeberportal ist es das Konto des Auftraggebers. All dies wird nur hinzugefügt, nie geändert. Wird eine Akte nach ihrer Aufbewahrungsfrist gelöscht, geht ihre Bestätigung mit. → [Aufbewahrungsfristen](bewaartermijnen.md)
 
 ## Einen Bericht ohne Bestätigung ausgeben
 

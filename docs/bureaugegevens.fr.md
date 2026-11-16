@@ -21,7 +21,7 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Données du 
 - **Délai de paiement** : le nombre de jours entre la date de facture et l'échéance.
 - **Rappel après**, **Deuxième rappel après** et **Mise en demeure après** : combien de jours après l'échéance l'écran Paiements propose ce rappel (par défaut 7, 21 et 35). Ils ne partent jamais tout seuls. → [Paiements](betalingen.md)
 - **Texte en bas de la facture**, par exemple le renvoi à vos conditions générales.
-- **Portail client** : avec **Rapport dans le portail seulement après signature via OKSign**, le donneur d'ordre ne voit un rapport émis qu'une fois signé. → [Faire signer le rapport](dossiers.md#faire-signer-le-rapport)
+- **Portail des donneurs d'ordre** : avec **Rapport dans le portail seulement après signature via OKSign**, le donneur d'ordre ne voit un rapport émis qu'une fois signé. → [Faire signer le rapport](dossiers.md#faire-signer-le-rapport)
 - **Photos dans le rapport** : avec **Date et heure sur les photos du rapport**, chaque photo de l'annexe photos reçoit la date et l'heure dans l'image. Uniquement sur la copie du rapport : l'original reste intact. → [Photos chargées au bureau](dossiers.md#photos-chargees-au-bureau)
 
 Le **pays** détermine le taux de TVA et la règle pour les clients étrangers (voir [Factures](facturen.md)).

@@ -62,9 +62,9 @@ If there are framework agreements with a deadline, two tables appear below the a
 
 The export button downloads a table as a file. → [Report deadline](dossiers.md#report-deadline)
 
-## In the client portal
+## In the principal portal
 
-The principal sees the same analyses of their own files in the client portal, under **Analyses**, without grouping by principal.
+The principal sees the same analyses of their own files in the principal portal, under **Analyses**, without grouping by principal.
 
 - A file only counts once its report is available to the principal. If **Company details** says the report only reaches the portal after signing, only a signed version counts. → [Company details](bureaugegevens.md)
 - The principal sees the findings as they stood in that report. What the office adds or corrects afterwards only counts with the next version of the report.

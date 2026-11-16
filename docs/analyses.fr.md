@@ -62,9 +62,9 @@ S'il existe des accords-cadres avec un délai, deux tableaux figurent sous l'ana
 
 Le bouton d'export télécharge un tableau sous forme de fichier. → [Délai jusqu'au rapport](dossiers.md#delai-jusquau-rapport)
 
-## Dans le portail client
+## Dans le portail des donneurs d'ordre
 
-Le donneur d'ordre voit dans le portail client les mêmes analyses sur ses propres dossiers, sous **Analyses**, sans regroupement par donneur d'ordre.
+Le donneur d'ordre voit dans le portail des donneurs d'ordre les mêmes analyses sur ses propres dossiers, sous **Analyses**, sans regroupement par donneur d'ordre.
 
 - Un dossier ne compte que lorsque son rapport est disponible pour le donneur d'ordre. Si **Données du bureau** indique que le rapport n'arrive dans le portail qu'après signature, seule une version signée compte. → [Données du bureau](bureaugegevens.md)
 - Le donneur d'ordre voit les constatations telles qu'elles figuraient dans ce rapport. Ce que le bureau ajoute ou rectifie ensuite ne compte qu'avec la version suivante du rapport.

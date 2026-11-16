@@ -31,9 +31,9 @@ The details of one relation.
 
 A saved relation has the **Contacts** tab (name, position, email, phone, language) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin.
 
-## Client portal
+## Principal portal
 
-A principal can follow their own files in the client portal. To allow this, you give a contact person of the relation access. You only see the **Client portal** tab on the record with the right to manage the client portal; by default only the administrator has that right.
+A principal can follow their own files in the principal portal. To allow this, you give a contact person of the relation access. You only see the **Principal portal** tab on the record with the right to manage the principal portal; by default only the administrator has that right.
 
 - **Who**: a contact person with one email address. If the person is not listed yet, first add them on the **Contacts** tab.
 - **Invite**: choose the contact person and click **Invite**. The contact person receives an email, in their own language or otherwise that of the relation, with a link to choose a password. The link is valid for 7 days. At the first sign-in the contact person sets up two-step verification: without it, nobody gets into the portal.
@@ -47,7 +47,7 @@ What the contact person sees in the portal:
 - For each file, the **issued** report versions and the issued letters and certificates, as PDF. Never a preview or a draft. Every file is first checked against its fingerprint.
 - **New assignment**: submit an assignment, with attachments. It reaches the office as a request and appears under **My requests** until the office decides. → [Requests](aanvragen.md)
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.
-- **Analyses**: the findings from the reports on their files, counted by terminal, vessel, cargo, survey type, port, category or location. A file only counts with a report the principal can already see, and as that report stood. → [Analyses](analyses.md#in-the-client-portal)
+- **Analyses**: the findings from the reports on their files, counted by terminal, vessel, cargo, survey type, port, category or location. A file only counts with a report the principal can already see, and as that report stood. → [Analyses](analyses.md#in-the-principal-portal)
 - Per file the **agreed date** for the report, if the framework agreement has a deadline; under **Analyses** also how many reports came on time.
 - **Messages** at the bottom of a file: the conversation with the office, with attachments. For a message from the office, the contact person receives an email with a link. → [Messages](berichten.md#what-the-principal-sees)
 - No surveyor, hours, costs, findings or photos: those are in the report.

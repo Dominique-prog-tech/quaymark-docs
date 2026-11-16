@@ -21,7 +21,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Firmenda
 - **Zahlungsziel**: die Anzahl Tage zwischen Rechnungsdatum und Fälligkeit.
 - **Erinnerung nach**, **Zweite Erinnerung nach** und **Mahnung nach**: wie viele Tage nach Fälligkeit die Seite Zahlungen diese Erinnerung vorschlägt (standardmäßig 7, 21 und 35). Sie werden nie von selbst gesendet. → [Zahlungen](betalingen.md)
 - **Text unten auf der Rechnung**, zum Beispiel der Verweis auf Ihre allgemeinen Geschäftsbedingungen.
-- **Kundenportal**: mit **Bericht erst nach der Unterzeichnung über OKSign im Portal** sieht der Auftraggeber einen herausgegebenen Bericht erst, wenn er unterschrieben ist. → [Bericht unterschreiben lassen](dossiers.md#bericht-unterschreiben-lassen)
+- **Auftraggeberportal**: mit **Bericht erst nach der Unterzeichnung über OKSign im Portal** sieht der Auftraggeber einen herausgegebenen Bericht erst, wenn er unterschrieben ist. → [Bericht unterschreiben lassen](dossiers.md#bericht-unterschreiben-lassen)
 - **Fotos im Bericht**: Mit **Datum und Uhrzeit auf den Fotos im Bericht** erhält jedes Foto im Fotoanhang Datum und Uhrzeit im Bild. Nur auf der Kopie im Bericht: Das Original bleibt unverändert. → [Fotos aus dem Büro](dossiers.md#fotos-aus-dem-buro)
 
 Das **Land** bestimmt den MwSt.-Satz und die Regel für ausländische Kunden (siehe [Rechnungen](facturen.md)).

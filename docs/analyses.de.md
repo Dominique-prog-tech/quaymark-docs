@@ -62,9 +62,9 @@ Gibt es Rahmenvereinbarungen mit einer Frist, stehen unter der Analyse zwei Tabe
 
 Die Export-Schaltfläche lädt eine Tabelle als Datei herunter. → [Frist bis zum Bericht](dossiers.md#frist-bis-zum-bericht)
 
-## Im Kundenportal
+## Im Auftraggeberportal
 
-Der Auftraggeber sieht im Kundenportal dieselben Analysen über seine eigenen Akten, unter **Analysen**, ohne Gruppieren nach Auftraggeber.
+Der Auftraggeber sieht im Auftraggeberportal dieselben Analysen über seine eigenen Akten, unter **Analysen**, ohne Gruppieren nach Auftraggeber.
 
 - Eine Akte zählt erst, wenn ihr Bericht für den Auftraggeber verfügbar ist. Steht in **Firmendaten**, dass der Bericht erst nach der Unterzeichnung ins Portal kommt, zählt nur eine unterschriebene Fassung. → [Firmendaten](bureaugegevens.md)
 - Der Auftraggeber sieht die Feststellungen so, wie sie in diesem Bericht standen. Was das Büro danach hinzufügt oder berichtigt, zählt erst mit der nächsten Fassung des Berichts.

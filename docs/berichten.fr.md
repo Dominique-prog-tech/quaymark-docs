@@ -1,10 +1,10 @@
 ---
-description: "Messages par dossier entre donneur d'ordre et bureau : dans le portail client et sur le dossier, avec pièces jointes, accusé de lecture et la cloche."
+description: "Messages par dossier entre donneur d'ordre et bureau : dans le portail des donneurs d'ordre et sur le dossier, avec pièces jointes, accusé de lecture et la cloche."
 ---
 
 # Messages
 
-Un donneur d'ordre pose sa question sur un dossier dans le portail client, et le bureau répond sur le dossier lui-même. Toute la conversation reste ainsi avec le dossier, avec les pièces jointes, et non dans une boîte mail.
+Un donneur d'ordre pose sa question sur un dossier dans le portail des donneurs d'ordre, et le bureau répond sur le dossier lui-même. Toute la conversation reste ainsi avec le dossier, avec les pièces jointes, et non dans une boîte mail.
 
 ![L'onglet Messages d'un dossier : une question du donneur d'ordre et la réponse du bureau](images/berichten-fr.png "Messages")
 
@@ -31,11 +31,11 @@ La cloche en haut à droite montre un nouveau message d'un donneur d'ordre à l'
 
 ## Ce que voit le donneur d'ordre
 
-Dans le portail client, la conversation figure en bas de la page du dossier, sous **Messages**. Le bureau y apparaît avec le nom du collaborateur et le nom du bureau.
+Dans le portail des donneurs d'ordre, la conversation figure en bas de la page du dossier, sous **Messages**. Le bureau y apparaît avec le nom du collaborateur et le nom du bureau.
 
 - À chaque message du bureau, le donneur d'ordre reçoit un e-mail avec un lien vers le portail. Le texte lui-même n'est pas dans l'e-mail : il reste derrière la connexion avec vérification en deux étapes.
 - Tant que le donneur d'ordre n'a pas lu votre message précédent, il ne reçoit pas de second e-mail pour un nouveau message.
-- L'e-mail suit la préférence de notification du donneur d'ordre. → [Relations](relaties.md#portail-client)
+- L'e-mail suit la préférence de notification du donneur d'ordre. → [Relations](relaties.md#portail-des-donneurs-dordre)
 
 ## Dans le dossier de preuves
 

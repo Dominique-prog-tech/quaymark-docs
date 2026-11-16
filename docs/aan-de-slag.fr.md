@@ -61,7 +61,7 @@ En bas du menu, **Administration** ouvre tous les paramètres du bureau, sous fo
 
 ## Portail client
 
-**Portail client**, juste au-dessus de Déconnexion, ouvre dans un nouvel onglet votre portail chez ADM Concept : les factures de votre abonnement, vos tickets et les annonces de Quaymark. C'est autre chose que le portail qu'utilisent vos donneurs d'ordre.
+**Portail client**, juste au-dessus de Déconnexion, ouvre dans un nouvel onglet votre portail chez ADM Concept : les factures de votre abonnement, vos tickets et les annonces de Quaymark. C'est autre chose que le **portail des donneurs d'ordre**, où vos donneurs d'ordre suivent leurs dossiers.
 
 ## Modifier le mot de passe
 
@@ -85,7 +85,7 @@ Si vous avez demandé une version d'essai sur quaymark.eu, vous recevez votre pr
 - Vous vous connectez avec les données de l'**e-mail de bienvenue** et choisissez aussitôt votre propre mot de passe.
 - À votre première connexion, vous devenez le **surveyor** des dossiers d'exemple : vous les voyez dans votre planning, dans les délais et dans l'application de terrain.
 - En haut figure la date de fin de l'essai.
-- Dans une version d'essai, **rien ne part vers l'extérieur** : pas d'e-mail, de Peppol, de signature ni d'invitation au portail client. Vous pouvez tout préparer et consulter, y compris les rapports en PDF.
+- Dans une version d'essai, **rien ne part vers l'extérieur** : pas d'e-mail, de Peppol, de signature ni d'invitation au portail des donneurs d'ordre. Vous pouvez tout préparer et consulter, y compris les rapports en PDF.
 - À la fin, l'environnement passe en **lecture seule**. Si vous devenez client, ADM Concept réinstalle votre environnement, sans les données d'exemple. Votre compte est conservé.
 
 ## Un environnement restreint

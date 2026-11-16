@@ -62,9 +62,9 @@ Zijn er raamafspraken met een termijn, dan staan onder de analyse twee tabellen:
 
 Met de exportknop haalt u een tabel op als bestand. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
 
-## In het klantenportaal
+## In het opdrachtgeversportaal
 
-De opdrachtgever ziet in het klantenportaal dezelfde analyses over zijn eigen dossiers, onder **Analyses**, zonder groeperen op opdrachtgever.
+De opdrachtgever ziet in het opdrachtgeversportaal dezelfde analyses over zijn eigen dossiers, onder **Analyses**, zonder groeperen op opdrachtgever.
 
 - Een dossier telt pas mee als zijn rapport voor de opdrachtgever beschikbaar is. Staat in **Bureaugegevens** dat het rapport pas na ondertekening in het portaal komt, dan telt enkel een ondertekende versie. → [Bureaugegevens](bureaugegevens.md)
 - De opdrachtgever ziet de vaststellingen zoals ze in dat rapport stonden. Wat het bureau daarna toevoegt of rechtzet, telt pas mee met de volgende versie van het rapport.

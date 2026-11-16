@@ -1,10 +1,10 @@
 ---
-description: "The principal confirms the assignment and the office's general terms and conditions, through a link or in the client portal; with proof of who, when and which version."
+description: "The principal confirms the assignment and the office's general terms and conditions, through a link or in the principal portal; with proof of who, when and which version."
 ---
 
 # Order confirmation
 
-With an order confirmation you record that the principal accepts the assignment, the rate and the office's general terms and conditions. The principal confirms through a link in an email, or in the client portal.
+With an order confirmation you record that the principal accepts the assignment, the rate and the office's general terms and conditions. The principal confirms through a link in an email, or in the principal portal.
 
 ## Setting up the terms and conditions
 
@@ -35,23 +35,23 @@ The confirmation describes the assignment: the file number, the survey type, the
 
 The link opens a page with the assignment and the general terms and conditions, in four languages. The principal types their full name, ticks that they agree, and clicks **Confirm the assignment**. They can also choose **I do not confirm this assignment**. After that, the link no longer works.
 
-If the principal has access to the client portal, they see the same confirmation with the file and can also confirm or decline there. → [How do I give a principal access to the client portal?](hoe/klantenportaal.md)
+If the principal has access to the principal portal, they see the same confirmation with the file and can also confirm or decline there. → [How do I give a principal access to the principal portal?](hoe/klantenportaal.md)
 
 ## The status of the file
 
 - **Not sent**: no confirmation has been sent yet.
 - **Sent**: the principal has not replied yet.
-- **Accepted**: with the name the principal typed, the time, the channel (via the link or in the client portal) and the version of the terms.
+- **Accepted**: with the name the principal typed, the time, the channel (via the link or in the principal portal) and the version of the terms.
 - **Declined**: the principal does not confirm this assignment. Get in touch and, if needed, send a new confirmation.
 - **Expired**: the link expired after 14 days without a reply.
 - **Withdrawn**: the office withdrew the link.
-- **Confirmed by quotation** or **Confirmed by request**: the file was created from a quotation the principal accepted, or from a request in the client portal. A separate confirmation is then not needed. → [Quotations](offertes.md), [Requests](aanvragen.md)
+- **Confirmed by quotation** or **Confirmed by request**: the file was created from a quotation the principal accepted, or from a request in the principal portal. A separate confirmation is then not needed. → [Quotations](offertes.md), [Requests](aanvragen.md)
 
 Every acceptance or refusal also appears as a note in the file's journal.
 
 ## What is kept
 
-Quaymark keeps what the principal was shown (the assignment and the version of the terms, with a fingerprint), and for a reply through the link the name, the time, the IP address, the browser and the fingerprint of the page shown. In the client portal, it is the principal's account. All of this is only added, never changed. If a file is deleted after its retention period, its confirmation goes with it. → [Retention periods](bewaartermijnen.md)
+Quaymark keeps what the principal was shown (the assignment and the version of the terms, with a fingerprint), and for a reply through the link the name, the time, the IP address, the browser and the fingerprint of the page shown. In the principal portal, it is the principal's account. All of this is only added, never changed. If a file is deleted after its retention period, its confirmation goes with it. → [Retention periods](bewaartermijnen.md)
 
 ## Issuing a report without a confirmation
 

@@ -22,7 +22,7 @@ Klicken Sie im Menü links auf **Angebote**. Sie sehen die Angebote mit Nummer, 
 
 ## Annehmen oder ablehnen
 
-- Der Auftraggeber kann das Angebot im **Kundenportal** annehmen oder ablehnen, solange es gültig ist. → [Kundenportal](relaties.md#kundenportal)
+- Der Auftraggeber kann das Angebot im **Auftraggeberportal** annehmen oder ablehnen, solange es gültig ist. → [Auftraggeberportal](relaties.md#auftraggeberportal)
 - Haben Sie die Antwort per E-Mail oder Telefon erhalten, klicken Sie selbst auf **Annehmen** oder **Ablehnen**.
 - Annehmen legt eine **Akte** mit dem Status Neu an, mit Auftraggeber, Besichtigungsart, Schiff, Hafen und Referenz. Gibt es das Schiff bereits unter demselben Namen, übernimmt Quaymark es; sonst wird ein neues angelegt. Besichtiger und Planung wählen Sie danach in der Akte.
 - Die Zeilen des Angebots sind die **Pauschale** der Akte: Der Rechnungsvorschlag übernimmt sie und weist darauf hin.

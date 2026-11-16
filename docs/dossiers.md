@@ -187,7 +187,7 @@ Heeft uw bureau een OKSign-contract in ADM One, dan laat u een uitgegeven versie
 
 De uitgegeven versie zelf verandert niet. Quaymark voegt achteraan een ondertekenblad toe met het dossiernummer, de versie en de vingerafdruk (SHA-256) van die versie, en laat dat geheel tekenen. De getekende PDF krijgt haar eigen vingerafdruk en gaat mee in het bewijspakket. Zolang niet iedereen tekende, kunt u het verzoek **Intrekken**; daarna kunt u opnieuw laten ondertekenen.
 
-Wat de opdrachtgever in het klantenportaal ziet, bepaalt de instelling **Rapport pas in het portaal na ondertekening** in de [bureaugegevens](bureaugegevens.md): staat ze uit, dan ziet hij elke uitgegeven versie meteen, en de getekende zodra die er is. Staat ze aan, dan pas als ze ondertekend is, en dan krijgt hij ook pas dan de melding.
+Wat de opdrachtgever in het opdrachtgeversportaal ziet, bepaalt de instelling **Rapport pas in het portaal na ondertekening** in de [bureaugegevens](bureaugegevens.md): staat ze uit, dan ziet hij elke uitgegeven versie meteen, en de getekende zodra die er is. Staat ze aan, dan pas als ze ondertekend is, en dan krijgt hij ook pas dan de melding.
 
 ### Vier-ogen
 
@@ -384,7 +384,7 @@ Een surveyor mag niet voor beide partijen optreden. Quaymark waarschuwt bovenaan
 - In de kop staat dan **Belangenconflict?**, en bovenaan het dossier de andere dossiers met hun opdrachtgever.
 - Is het geen conflict, klik dan op **Geen conflict** en leg uit waarom (bijvoorbeeld: andere schade, beide partijen op de hoogte). Dat wordt bewaard met uw naam en het tijdstip, en kan niet gewijzigd worden. Het is het bewijs van onafhankelijkheid dat een opdrachtgever of een accreditatie kan vragen.
 - Het werk wordt niet tegengehouden: de waarschuwing blijft staan tot ze verantwoord is.
-- Ook op een aanvraag uit het klantenportaal waarschuwt Quaymark al vóór het aanvaarden. → [Aanvragen](aanvragen.md#aanvraag)
+- Ook op een aanvraag uit het opdrachtgeversportaal waarschuwt Quaymark al vóór het aanvaarden. → [Aanvragen](aanvragen.md#aanvraag)
 
 ## Claims
 

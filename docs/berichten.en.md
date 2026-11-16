@@ -1,10 +1,10 @@
 ---
-description: "Messages per file between principal and office: in the client portal and on the file, with attachments, read receipt and the bell."
+description: "Messages per file between principal and office: in the principal portal and on the file, with attachments, read receipt and the bell."
 ---
 
 # Messages
 
-A principal asks their question about a file in the client portal, and the office replies on the file itself. The whole conversation stays with the file, with the attachments, and not in a mailbox.
+A principal asks their question about a file in the principal portal, and the office replies on the file itself. The whole conversation stays with the file, with the attachments, and not in a mailbox.
 
 ![The Messages tab of a file: a question from the principal and the reply from the office](images/berichten-en.png "Messages")
 
@@ -31,11 +31,11 @@ The bell at the top right shows a new message from a principal to the surveyor o
 
 ## What the principal sees
 
-In the client portal the conversation is at the bottom of the file page, under **Messages**. The office appears with the name of the staff member and the name of the office.
+In the principal portal the conversation is at the bottom of the file page, under **Messages**. The office appears with the name of the staff member and the name of the office.
 
 - For each message from the office, the principal receives an email with a link to the portal. The text itself is not in the email: it stays behind the sign-in with two-step verification.
 - As long as the principal has not read your previous message, they receive no second email for a new message.
-- The email follows the principal's notification preference. → [Relations](relaties.md#client-portal)
+- The email follows the principal's notification preference. → [Relations](relaties.md#principal-portal)
 
 ## In the evidence package
 

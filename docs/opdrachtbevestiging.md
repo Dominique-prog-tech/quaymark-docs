@@ -1,10 +1,10 @@
 ---
-description: "De opdrachtgever bevestigt de opdracht en de algemene voorwaarden van het bureau, via een link of in het klantenportaal; met bewijs van wie, wanneer en welke versie."
+description: "De opdrachtgever bevestigt de opdracht en de algemene voorwaarden van het bureau, via een link of in het opdrachtgeversportaal; met bewijs van wie, wanneer en welke versie."
 ---
 
 # Opdrachtbevestiging
 
-Met een opdrachtbevestiging legt u vast dat de opdrachtgever de opdracht, het tarief en de algemene voorwaarden van het bureau aanvaardt. De opdrachtgever bevestigt via een link in een mail, of in het klantenportaal.
+Met een opdrachtbevestiging legt u vast dat de opdrachtgever de opdracht, het tarief en de algemene voorwaarden van het bureau aanvaardt. De opdrachtgever bevestigt via een link in een mail, of in het opdrachtgeversportaal.
 
 ## De algemene voorwaarden instellen
 
@@ -35,23 +35,23 @@ De bevestiging beschrijft de opdracht: het dossiernummer, de soort survey, het s
 
 De link opent een pagina met de opdracht en de algemene voorwaarden, in vier talen. De opdrachtgever typt zijn naam voluit, vinkt aan dat hij akkoord gaat, en klikt op **Opdracht bevestigen**. Hij kan ook kiezen voor **Ik bevestig deze opdracht niet**. Daarna werkt de link niet meer.
 
-Heeft de opdrachtgever toegang tot het klantenportaal, dan ziet hij dezelfde bevestiging bij het dossier en kan hij ook daar bevestigen of weigeren. → [Hoe geef ik een opdrachtgever toegang?](hoe/klantenportaal.md)
+Heeft de opdrachtgever toegang tot het opdrachtgeversportaal, dan ziet hij dezelfde bevestiging bij het dossier en kan hij ook daar bevestigen of weigeren. → [Hoe geef ik een opdrachtgever toegang?](hoe/klantenportaal.md)
 
 ## De stand op het dossier
 
 - **Niet verstuurd**: er is nog geen bevestiging verstuurd.
 - **Verstuurd**: de opdrachtgever heeft nog niet geantwoord.
-- **Aanvaard**: met de naam die de opdrachtgever typte, het tijdstip, de weg (via de link of in het klantenportaal) en de versie van de voorwaarden.
+- **Aanvaard**: met de naam die de opdrachtgever typte, het tijdstip, de weg (via de link of in het opdrachtgeversportaal) en de versie van de voorwaarden.
 - **Geweigerd**: de opdrachtgever bevestigt deze opdracht niet. Neem contact op en verstuur desnoods een nieuwe bevestiging.
 - **Vervallen**: de link is na 14 dagen vervallen zonder antwoord.
 - **Ingetrokken**: het bureau trok de link in.
-- **Bevestigd via offerte** of **Bevestigd via aanvraag**: het dossier ontstond uit een offerte die de opdrachtgever aanvaardde, of uit een aanvraag in het klantenportaal. Een aparte bevestiging is dan niet nodig. → [Offertes](offertes.md), [Aanvragen](aanvragen.md)
+- **Bevestigd via offerte** of **Bevestigd via aanvraag**: het dossier ontstond uit een offerte die de opdrachtgever aanvaardde, of uit een aanvraag in het opdrachtgeversportaal. Een aparte bevestiging is dan niet nodig. → [Offertes](offertes.md), [Aanvragen](aanvragen.md)
 
 Elke aanvaarding of weigering komt ook als notitie in het journaal van het dossier.
 
 ## Wat er bewaard wordt
 
-Quaymark bewaart wat de opdrachtgever te zien kreeg (de opdracht en de versie van de voorwaarden, met een vingerafdruk), en bij een antwoord via de link de naam, het tijdstip, het IP-adres, de browser en de vingerafdruk van de getoonde pagina. In het klantenportaal is dat het account van de opdrachtgever. Dit alles wordt enkel toegevoegd, nooit gewijzigd. Wordt een dossier na zijn bewaartermijn gewist, dan gaat zijn bevestiging mee. → [Bewaartermijnen](bewaartermijnen.md)
+Quaymark bewaart wat de opdrachtgever te zien kreeg (de opdracht en de versie van de voorwaarden, met een vingerafdruk), en bij een antwoord via de link de naam, het tijdstip, het IP-adres, de browser en de vingerafdruk van de getoonde pagina. In het opdrachtgeversportaal is dat het account van de opdrachtgever. Dit alles wordt enkel toegevoegd, nooit gewijzigd. Wordt een dossier na zijn bewaartermijn gewist, dan gaat zijn bevestiging mee. → [Bewaartermijnen](bewaartermijnen.md)
 
 ## Rapport uitgeven zonder bevestiging
 
