@@ -81,7 +81,7 @@ Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **
 
 ### Checkliste
 
-Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Besichtigungsart bestimmt die Skala: **In Ordnung**, **Nicht in Ordnung** und **Entfällt** für eine Kontrolle, oder ein Zustand in vier Stufen (**Gut**, **Befriedigend**, **Mangelhaft**, **Schlecht**, und **Entfällt**) für eine Zustandsbesichtigung. Oben steht, wie viele Punkte einen Mangel haben, je Priorität.
+Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Besichtigungsart bestimmt die Skala: **In Ordnung**, **Nicht in Ordnung** und **Entfällt** für eine Kontrolle, oder ein Zustand in vier Stufen (**Gut**, **Befriedigend**, **Mangelhaft**, **Schlecht**, und **Entfällt**) für eine Zustandsbesichtigung. Oben steht, wie viele Punkte einen Mangel haben, je Priorität. Die Antwort wählen Sie mit den Schaltflächen links vom Punkt. Ein Pflichtpunkt trägt die Kennzeichnung **Pflicht**; sind alle Punkte Pflicht, steht das einmal oben.
 
 Eine gute Antwort speichern Sie mit einem Klick. Bei einem Mangel (**Nicht in Ordnung**, **Mangelhaft** oder **Schlecht**) füllen Sie die **Feststellung**, die **Empfehlung** und die **Priorität** aus: **Sofort, vor dem Auslaufen**, **Innerhalb von 3 Monaten**, **Bei der nächsten Wartung** oder **Zur Information**. **Standardbefund einfügen** füllt die drei Felder mit einem Standardtext der Besichtigungsart, in der Sprache der Akte; passen Sie sie danach an. **Neue Feststellung** macht daraus eine Feststellung.
 

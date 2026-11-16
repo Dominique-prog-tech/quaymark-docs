@@ -81,7 +81,7 @@ Werkt u zonder veldapp, dan zet u de foto's op kantoor bij een vaststelling: **F
 
 ### Checklist
 
-De **checklist** toont per punt het laatste antwoord, van wie en wanneer. De soort survey bepaalt de schaal: **In orde**, **Niet in orde** en **N.v.t.** voor een controle, of een staat in vier stappen (**Goed**, **Redelijk**, **Matig**, **Slecht**, en **N.v.t.**) voor een conditiesurvey. Bovenaan staat hoeveel punten een gebrek hebben, per prioriteit.
+De **checklist** toont per punt het laatste antwoord, van wie en wanneer. De soort survey bepaalt de schaal: **In orde**, **Niet in orde** en **N.v.t.** voor een controle, of een staat in vier stappen (**Goed**, **Redelijk**, **Matig**, **Slecht**, en **N.v.t.**) voor een conditiesurvey. Bovenaan staat hoeveel punten een gebrek hebben, per prioriteit. U kiest het antwoord met de knoppen links van het punt. Een verplicht punt draagt het label **Verplicht**; zijn alle punten verplicht, dan staat dat één keer bovenaan.
 
 Een goed antwoord bewaart u met één klik. Bij een gebrek (**Niet in orde**, **Matig** of **Slecht**) vult u de **Bevinding**, de **Aanbeveling** en de **Prioriteit** in: **Onmiddellijk, vóór vertrek**, **Binnen 3 maanden**, **Bij het volgende onderhoud** of **Ter info**. **Standaardbevinding invoegen** vult de drie velden met een standaardtekst van de soort survey, in de taal van het dossier; pas ze daarna aan. **Nieuwe vaststelling** maakt er een vaststelling van.
 

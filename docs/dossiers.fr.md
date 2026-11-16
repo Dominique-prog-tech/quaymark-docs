@@ -81,7 +81,7 @@ Sans application de terrain, vous ajoutez les photos au bureau à une constatati
 
 ### Check-list
 
-La **check-list** affiche pour chaque point la dernière réponse, par qui et quand. Le type d'expertise détermine l'échelle : **Conforme**, **Non conforme** et **S.o.** pour un contrôle, ou un état en quatre niveaux (**Bon**, **Correct**, **Médiocre**, **Mauvais**, et **S.o.**) pour une expertise d'état. En haut figure le nombre de points présentant un défaut, par priorité.
+La **check-list** affiche pour chaque point la dernière réponse, par qui et quand. Le type d'expertise détermine l'échelle : **Conforme**, **Non conforme** et **S.o.** pour un contrôle, ou un état en quatre niveaux (**Bon**, **Correct**, **Médiocre**, **Mauvais**, et **S.o.**) pour une expertise d'état. En haut figure le nombre de points présentant un défaut, par priorité. Vous choisissez la réponse avec les boutons à gauche du point. Un point obligatoire porte l'étiquette **Obligatoire** ; si tous les points le sont, c'est indiqué une seule fois en haut.
 
 Une bonne réponse s'enregistre d'un clic. En cas de défaut (**Non conforme**, **Médiocre** ou **Mauvais**), vous complétez la **Constatation**, la **Recommandation** et la **Priorité** : **Immédiat, avant le départ**, **Dans les 3 mois**, **Au prochain entretien** ou **Pour information**. **Insérer un constat standard** remplit les trois champs avec un texte standard du type d'expertise, dans la langue du dossier ; adaptez-les ensuite. **Nouvelle constatation** en fait une constatation.
 

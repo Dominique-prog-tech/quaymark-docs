@@ -81,7 +81,7 @@ Working without the field app, you add the photos at the office to a finding: **
 
 ### Checklist
 
-The **checklist** shows the latest answer per item, by whom and when. The survey type sets the scale: **OK**, **Not OK** and **N/a** for an inspection, or a condition in four steps (**Good**, **Fair**, **Poor**, **Bad**, and **N/a**) for a condition survey. At the top you see how many items have a deficiency, per priority.
+The **checklist** shows the latest answer per item, by whom and when. The survey type sets the scale: **OK**, **Not OK** and **N/a** for an inspection, or a condition in four steps (**Good**, **Fair**, **Poor**, **Bad**, and **N/a**) for a condition survey. At the top you see how many items have a deficiency, per priority. You choose the answer with the buttons to the left of the item. A required item carries the label **Required**; if all items are required, this is shown once at the top.
 
 A good answer is saved with one click. For a deficiency (**Not OK**, **Poor** or **Bad**) you fill in the **Finding**, the **Recommendation** and the **Priority**: **Immediate, before departure**, **Within 3 months**, **At the next maintenance** or **For information**. **Insert a standard finding** fills the three fields with a standard text of the survey type, in the language of the file; adjust them afterwards. **New finding** turns it into a finding.
 
