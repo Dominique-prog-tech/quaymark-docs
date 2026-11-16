@@ -31,7 +31,7 @@ Ein Auftrag: was verlangt wird, wo und wann, und was der Besichtiger vor Ort fes
 - **Umstände und Anwesende**: Wetter, See, Sicht, Liegeplatz und wer bei der Besichtigung anwesend war. **Verknüpfte Akte** verweist auf eine frühere Akte desselben Schiffs, zum Beispiel On-hire zu Off-hire. Dieser Block erscheint nach dem ersten Speichern.
 - **Besichtigungsdaten**: die Felder der gewählten Besichtigungsart; der Block erscheint nur, wenn diese Art eigene Felder hat. Ein Pflichtfeld muss ab dem Status Berichterstellung ausgefüllt sein. Wählen Sie eine andere Art, gehen beim Speichern die Werte von Feldern verloren, die die neue Art nicht kennt.
 
-Eine gespeicherte Akte hat Registerkarten: **Parteien** (Beziehungen mit Rolle und Referenz), **Dokumente** (in Ordnern), **Vom Schiff** (die Dokumente des Schiffs, nur lesen), **Feststellungen**, **Checkliste** und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf.
+Eine gespeicherte Akte hat diese Registerkarten: **Parteien**, **Dokumente** (in Ordnern, die des Schiffs und die Dokumente von Bord), **Feldarbeit** (Feststellungen, Checkliste, Schaden, gemeinsame Besichtigung, Unterschriften und Codes), **Berechnungen** (Draft Survey, Eichaufnahme, Bunker, Zeitablauf und Laytime: nur was die Besichtigungsart vorsieht), **Nachrichten**, **Zeit und Kosten**, **Bericht** und das **Journal** (Notizen, Aufgaben, Anhänge und Verlauf). Eine Gruppe zeigt ihre Teile als kleine Registerkarten darunter. Welche Registerkarten eine Akte zeigt, wählt das Büro je Besichtigungsart. → [Besichtigungsarten](soorten-survey.md#besichtigungsart)
 
 ### Arbeitsanweisung und Betriebsstatus
 

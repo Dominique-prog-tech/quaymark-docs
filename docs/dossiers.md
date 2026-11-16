@@ -31,7 +31,7 @@ Eén opdracht: wat er gevraagd is, waar en wanneer, en wat de surveyor ter plaat
 - **Omstandigheden en aanwezigen**: weer, zee, zicht, ligplaats en wie er bij de survey aanwezig was. **Gekoppeld dossier** verwijst naar een eerder dossier van hetzelfde schip, bijvoorbeeld de on-hire bij een off-hire. Dit blok verschijnt na het eerste bewaren.
 - **Gegevens van de survey**: de velden die bij het gekozen soort survey horen; het blok verschijnt enkel als die soort eigen velden heeft. Een verplicht veld moet ingevuld zijn vanaf de status Rapportage. Kiest u een ander soort survey, dan gaan bij het bewaren de waarden verloren van velden die het nieuwe soort niet kent.
 
-Een bewaard dossier heeft tabbladen: **Partijen** (relaties met hun rol en referentie), **Documenten** (in mappen), **Van het schip** (de documenten van het schip, alleen lezen), **Vaststellingen**, **Checklist** en het journaal met notities, taken, bijlagen en historiek.
+Een bewaard dossier heeft deze tabbladen: **Partijen**, **Documenten** (in mappen, die van het schip en de documenten van boord), **Veldwerk** (vaststellingen, checklist, schade, gezamenlijke survey, handtekeningen en codes), **Berekeningen** (draft survey, meting, bunker, tijdlijn en laytime: enkel wat de soort survey heeft), **Berichten**, **Tijd en kosten**, **Rapport** en het **Journaal** (notities, taken, bijlagen en historiek). Een groep toont haar onderdelen als tabjes eronder. Welke tabbladen een dossier toont, kiest het bureau per soort survey. → [Soorten survey](soorten-survey.md#soort-survey)
 
 ### Werkinstructie en operationele status
 

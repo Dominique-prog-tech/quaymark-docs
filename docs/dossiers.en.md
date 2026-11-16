@@ -31,7 +31,7 @@ One instruction: what was asked, where and when, and what the surveyor finds on 
 - **Conditions and attendance**: weather, sea, visibility, berth and who attended the survey. **Linked file** refers to an earlier file of the same vessel, for example the on-hire for an off-hire. This block appears after the first save.
 - **Survey particulars**: the fields that belong to the chosen survey type; the block only appears if that type has its own fields. A required field must be filled in from the status Reporting onwards. If you choose another survey type, the values of fields the new type does not know are lost when you save.
 
-A saved file has tabs: **Parties** (relations with their role and reference), **Documents** (in folders), **From the vessel** (the vessel's documents, read only), **Findings**, **Checklist** and the journal with notes, tasks, attachments and history.
+A saved file has these tabs: **Parties**, **Documents** (in folders, those of the vessel and the documents from on board), **Fieldwork** (findings, checklist, damage, joint survey, signatures and codes), **Calculations** (draft survey, gauging, bunkers, timeline and laytime: only what the survey type has), **Messages**, **Time and expenses**, **Report** and the **Journal** (notes, tasks, attachments and history). A group shows its parts as small tabs below it. The office chooses per survey type which tabs a file shows. → [Survey types](soorten-survey.md#survey-type)
 
 ### Work instructions and operational status
 

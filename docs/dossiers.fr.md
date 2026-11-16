@@ -31,7 +31,7 @@ Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur
 - **Conditions et présents** : temps, mer, visibilité, poste d'amarrage et les personnes présentes lors de l'expertise. **Dossier lié** renvoie à un dossier antérieur du même navire, par exemple l'on-hire d'un off-hire. Ce bloc apparaît après le premier enregistrement.
 - **Données de l'expertise** : les champs propres au type d'expertise choisi ; le bloc n'apparaît que si ce type a des champs propres. Un champ obligatoire doit être rempli à partir du statut Rapport. Si vous choisissez un autre type, les valeurs des champs inconnus du nouveau type sont perdues à l'enregistrement.
 
-Un dossier enregistré a des onglets : **Parties** (relations avec leur rôle et leur référence), **Documents** (en répertoires), **Du navire** (les documents du navire, en lecture seule), **Constatations**, **Check-list** et le journal avec notes, tâches, pièces jointes et historique.
+Un dossier enregistré a ces onglets : **Parties**, **Documents** (dans des répertoires, ceux du navire et les documents de bord), **Travail de terrain** (constatations, check-list, dommages, expertise contradictoire, signatures et codes), **Calculs** (draft survey, jaugeage, soutes, chronologie et laytime : uniquement ce que le type d'expertise prévoit), **Messages**, **Temps et frais**, **Rapport** et le **Journal** (notes, tâches, pièces jointes et historique). Un groupe affiche ses parties sous forme de petits onglets en dessous. Le bureau choisit par type d'expertise les onglets qu'affiche un dossier. → [Types d'expertise](soorten-survey.md#type-dexpertise)
 
 ### Instructions de travail et statut opérationnel
 
