@@ -33,6 +33,11 @@ One instruction: what was asked, where and when, and what the surveyor finds on 
 
 A saved file has tabs: **Parties** (relations with their role and reference), **Documents** (in folders), **From the vessel** (the vessel's documents, read only), **Findings**, **Checklist** and the journal with notes, tasks, attachments and history.
 
+### Work instructions and operational status
+
+- If the survey type has **work instructions**, they appear at the top of the file, with the file's data filled in (ship, port, terminal …). What the file does not know appears between square brackets. → [Survey types](soorten-survey.md#survey-type)
+- **Operational status**: where the assignment stands now, next to the work step: for example awaiting vessel, loading, discharging or on hold. It appears as a badge at the top, after the status in the list ("Reporting · Loading") and in the planning. You manage the list under [Categories and locations](categorieen-en-plaatsen.md).
+
 ### Report deadline
 
 If the [framework agreement](relaties.md#framework-agreements) with the principal has a deadline, the top of the file shows **Report due** with the date and the status:
@@ -53,6 +58,14 @@ A **finding** is added, never changed or deleted. You correct a mistake with **C
 ### Photos in the report
 
 **Leave out of report** under a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. Photos get a running number in the report, and the findings table lists those numbers.
+
+### Photos added at the office
+
+Working without the field app, you add the photos at the office to a finding: **Add photos** next to the finding, or straight after **New finding**. JPEG or PNG, up to 40 at a time.
+
+- The **time taken** and the **GPS** come from the photo itself. The caption in the report then says "according to the camera".
+- Without a time taken, the report says **uploaded on** with the moment of upload.
+- These photos also get a fingerprint and are only ever added. They are weaker evidence than a photo from the field app, though: the time comes from the camera's clock.
 
 ### Annotating photos
 
@@ -77,6 +90,11 @@ Every answer is kept under **Previous answers**. On site, the surveyor answers i
 On the **Report** tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. If the report template does not show a section, the tab says so.
 
 ![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
+
+### Standard sentences and blanks
+
+- A standard text with **Fill in automatically** is ready in an empty section when you open the tab, with the file's data filled in. It is not saved yet: fill in the blanks and choose **Save sections**. → [Standard texts](standaardteksten.md)
+- Text between square brackets, like **[location]**, is a **blank**. While one remains in the report, it is not issued: the screen says in which section. A reference such as [1] does not count.
 
 ### Joint survey
 

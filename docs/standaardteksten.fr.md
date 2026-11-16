@@ -17,6 +17,10 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Textes standard**
 - Mise en forme : gras, italique, souligné et listes. Le rapport n'en affiche pas davantage.
 - Un texte que vous n'utilisez plus passe en **non actif**. Ce qui a déjà été inséré dans un dossier y reste.
 
+- Choisissez un **type d'expertise** pour proposer un texte uniquement pour ce type ; vide = pour chaque type.
+- **Remplir automatiquement** (uniquement avec une rubrique) : le texte est prêt dans cette rubrique si elle est vide dans un dossier de ce type. Un texte pour un type passe avant un texte pour chaque type.
+- Les **repères** deviennent les données du dossier : {{schip}}, {{imo}}, {{haven}}, {{terminal}}, {{opdrachtgever}}, {{referentie}}, {{dossier}}, {{surveyor}}, et {{veld:clé}} pour un champ du type d'expertise (par exemple le numéro de conteneur). Ce que le dossier ne sait pas devient un emplacement à compléter.
+- Un texte entre crochets, comme [lieu], est un **emplacement à compléter** par l'expert. Tant qu'il en reste un, le rapport n'est pas émis. → [Dossiers](dossiers.md#phrases-standard-et-emplacements-a-completer)
 ![La liste Textes standard avec le bouton Nouveau texte standard](images/standaardteksten-fr.png "Les textes standard")
 
 ## Voir aussi

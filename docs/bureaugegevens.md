@@ -22,6 +22,7 @@ Klik in het menu links onder **Instellingen** op **Bureaugegevens**. Enkel de be
 - **Herinnering na**, **Tweede herinnering na** en **Aanmaning na**: na hoeveel dagen na de vervaldatum het scherm Betalingen die herinnering voorstelt (standaard 7, 21 en 35). Ze vertrekken nooit vanzelf. → [Betalingen](betalingen.md)
 - **Tekst onderaan de factuur**, bijvoorbeeld de verwijzing naar uw algemene voorwaarden.
 - **Klantenportaal**: met **Rapport pas in het portaal na ondertekening via OKSign** ziet de opdrachtgever een uitgegeven rapport pas als het ondertekend is. → [Rapport ondertekenen](dossiers.md#rapport-ondertekenen)
+- **Foto's in het rapport**: met **Datum en uur op de foto's in het rapport** krijgt elke foto in de fotobijlage datum en uur in het beeld. Enkel op de kopie in het rapport: het origineel blijft onaangeroerd. → [Foto's van kantoor](dossiers.md#fotos-van-kantoor)
 
 Het **land** bepaalt het btw-tarief en de regel voor buitenlandse klanten (zie [Facturen](facturen.md)).
 

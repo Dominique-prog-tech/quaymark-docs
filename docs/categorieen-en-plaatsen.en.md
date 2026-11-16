@@ -14,6 +14,7 @@ In the menu on the left, click **Settings**, then **Categories and locations**.
 
 - **Defect categories**: what kind of defect it is, for example corrosion or a dent.
 - **Locations on board**: where it is, for example a hold or the deck.
+- **Operational status of a file**: where an assignment stands next to the work step, for example loading, discharging or on hold. → [Files](dossiers.md#work-instructions-and-operational-status)
 - Each value has a **code**, an order, a name in the four languages and whether it is active. A code already used in a finding is fixed. Set a value you no longer use to **inactive**.
 - Double-click a row to edit it; **New value** adds one.
 

@@ -33,6 +33,11 @@ Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur
 
 Un dossier enregistré a des onglets : **Parties** (relations avec leur rôle et leur référence), **Documents** (en répertoires), **Du navire** (les documents du navire, en lecture seule), **Constatations**, **Check-list** et le journal avec notes, tâches, pièces jointes et historique.
 
+### Instructions de travail et statut opérationnel
+
+- Si le type d'expertise a des **instructions de travail**, elles figurent en haut du dossier, avec les données du dossier complétées (navire, port, terminal …). Ce que le dossier ne sait pas figure entre crochets. → [Types d'expertise](soorten-survey.md#type-dexpertise)
+- **Statut opérationnel** : où en est la mission, à côté de l'étape du travail : par exemple en attente du navire, chargement, déchargement ou en suspens. Il figure en badge en haut, après le statut dans la liste (« Rapport · Chargement ») et dans le planning. La liste se gère dans [Catégories et emplacements](categorieen-en-plaatsen.md).
+
 ### Délai jusqu'au rapport
 
 Si l'[accord-cadre](relaties.md#accords-cadres) avec le donneur d'ordre prévoit un délai, le haut du dossier affiche **Rapport pour le** avec la date et l'état :
@@ -53,6 +58,14 @@ Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se
 ### Photos dans le rapport
 
 **Retirer du rapport** sous une photo l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
+
+### Photos chargées au bureau
+
+Sans application de terrain, vous ajoutez les photos au bureau à une constatation : **Ajouter des photos** à côté de la constatation, ou juste après **Nouvelle constatation**. JPEG ou PNG, jusqu'à 40 à la fois.
+
+- L'**heure de prise de vue** et le **GPS** proviennent de la photo. La légende du rapport indique alors « selon l'appareil photo ».
+- Sans heure de prise de vue, le rapport indique **chargée le** avec le moment du chargement.
+- Ces photos reçoivent aussi une empreinte et sont uniquement ajoutées. Elles sont toutefois une preuve plus faible qu'une photo de l'application de terrain : l'heure vient de l'horloge de l'appareil.
 
 ### Annoter les photos
 
@@ -77,6 +90,11 @@ Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'
 Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
 
 ![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
+
+### Phrases standard et emplacements à compléter
+
+- Un texte standard avec **Remplir automatiquement** arrive à l'ouverture de l'onglet dans une rubrique vide, avec les données du dossier. Il n'est pas encore enregistré : complétez les emplacements et choisissez **Enregistrer les rubriques**. → [Textes standard](standaardteksten.md)
+- Un texte entre crochets, comme **[lieu]**, est un **emplacement à compléter**. Tant qu'il en reste un dans le rapport, celui-ci n'est pas émis : l'écran indique la rubrique. Une référence comme [1] ne compte pas.
 
 ### Expertise contradictoire
 

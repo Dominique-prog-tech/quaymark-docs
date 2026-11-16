@@ -33,6 +33,11 @@ Ein Auftrag: was verlangt wird, wo und wann, und was der Besichtiger vor Ort fes
 
 Eine gespeicherte Akte hat Registerkarten: **Parteien** (Beziehungen mit Rolle und Referenz), **Dokumente** (in Ordnern), **Vom Schiff** (die Dokumente des Schiffs, nur lesen), **Feststellungen**, **Checkliste** und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf.
 
+### Arbeitsanweisung und Betriebsstatus
+
+- Hat die Besichtigungsart eine **Arbeitsanweisung**, steht sie oben in der Akte, mit den Daten der Akte ausgefüllt (Schiff, Hafen, Terminal …). Was die Akte nicht weiß, steht in eckigen Klammern. → [Besichtigungsarten](soorten-survey.md#besichtigungsart)
+- **Betriebsstatus**: wo der Auftrag gerade steht, neben dem Arbeitsschritt: zum Beispiel wartet auf das Schiff, Laden, Löschen oder angehalten. Er steht als Badge oben, hinter dem Status in der Liste („Bericht · Laden“) und in der Planung. Die Liste verwalten Sie unter [Kategorien und Orte](categorieen-en-plaatsen.md).
+
 ### Frist bis zum Bericht
 
 Steht in der [Rahmenvereinbarung](relaties.md#rahmenvereinbarungen) mit dem Auftraggeber eine Frist, dann steht oben in der Akte **Bericht bis** mit dem Datum und dem Stand:
@@ -53,6 +58,14 @@ Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Feh
 ### Fotos im Bericht
 
 **Aus dem Bericht nehmen** unter einem Foto lässt es im Fotoanhang des Berichts weg, mit einer Begründung. Das Foto bleibt als Beweis gespeichert; **Wieder in den Bericht** setzt es zurück. Die Fotos erhalten im Bericht eine fortlaufende Nummer, und die Tabelle der Feststellungen nennt diese Nummern.
+
+### Fotos aus dem Büro
+
+Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** neben der Feststellung oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
+
+- **Aufnahmezeit** und **GPS** stammen aus dem Foto selbst. Die Bildunterschrift im Bericht sagt dann „laut Kamera“.
+- Ohne Aufnahmezeit nennt der Bericht **hochgeladen am** mit dem Zeitpunkt des Hochladens.
+- Auch diese Fotos erhalten einen Fingerabdruck und werden nur hinzugefügt. Sie sind aber schwächerer Beweis als ein Foto aus der Außendienst-App: Die Zeit stammt von der Uhr der Kamera.
 
 ### Fotos annotieren
 
@@ -77,6 +90,11 @@ Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der
 In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
 
 ![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
+
+### Standardsätze und offene Stellen
+
+- Ein Standardtext mit **Automatisch einfügen** steht beim Öffnen der Registerkarte in einem leeren Abschnitt bereit, mit den Daten der Akte. Er ist noch nicht gespeichert: Füllen Sie die offenen Stellen aus und wählen Sie **Abschnitte speichern**. → [Standardtexte](standaardteksten.md)
+- Text in eckigen Klammern, wie **[Ort]**, ist eine **offene Stelle**. Solange eine im Bericht steht, wird er nicht ausgegeben: Der Bildschirm nennt den Abschnitt. Ein Verweis wie [1] zählt nicht.
 
 ### Gemeinsame Besichtigung
 

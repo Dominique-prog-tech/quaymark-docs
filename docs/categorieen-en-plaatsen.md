@@ -14,6 +14,7 @@ Klik in het menu links op **Instellingen** en dan op **Categorieën en plaatsen*
 
 - **Categorieën van gebreken**: wat voor gebrek het is, bijvoorbeeld corrosie of een deuk.
 - **Plaatsen aan boord**: waar het zich bevindt, bijvoorbeeld een ruim of het dek.
+- **Operationele status van een dossier**: waar een opdracht staat naast de stap van het werk, bijvoorbeeld laden, lossen of on hold. → [Dossiers](dossiers.md#werkinstructie-en-operationele-status)
 - Elke waarde heeft een **code**, een volgorde, een naam in de vier talen en of ze actief is. Een code die al in een vaststelling staat, ligt vast. Zet een waarde die u niet meer gebruikt op **niet actief**.
 - Dubbelklik op een rij om ze te bewerken; **Nieuwe waarde** voegt er een toe.
 

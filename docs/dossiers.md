@@ -33,6 +33,11 @@ Eén opdracht: wat er gevraagd is, waar en wanneer, en wat de surveyor ter plaat
 
 Een bewaard dossier heeft tabbladen: **Partijen** (relaties met hun rol en referentie), **Documenten** (in mappen), **Van het schip** (de documenten van het schip, alleen lezen), **Vaststellingen**, **Checklist** en het journaal met notities, taken, bijlagen en historiek.
 
+### Werkinstructie en operationele status
+
+- Heeft het soort survey een **werkinstructie**, dan staat ze bovenaan het dossier, met de gegevens van het dossier ingevuld (schip, haven, terminal …). Wat het dossier niet weet, staat tussen rechte haken. → [Soorten survey](soorten-survey.md#soort-survey)
+- **Operationele status**: waar de opdracht nu staat, naast de stap van het werk: bijvoorbeeld wacht op het schip, laden, lossen of on hold. Ze staat als badge bovenaan, achter de status in de lijst ("Rapportage · Laden") en in de planning. De lijst beheert u onder [Categorieën en plaatsen](categorieen-en-plaatsen.md).
+
 ### Termijn tot het rapport
 
 Staat er in de [raamafspraak](relaties.md#raamafspraken) met de opdrachtgever een termijn, dan staat bovenaan het dossier **Rapport tegen** met de datum en de stand:
@@ -53,6 +58,14 @@ Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout z
 ### Foto's in het rapport
 
 **Niet in rapport** onder een foto laat die foto weg uit de fotobijlage van het rapport, met een reden. De foto blijft bewaard als bewijs; **Weer in rapport** zet ze terug. De foto's krijgen in het rapport een doorlopend nummer, en de tabel met vaststellingen noemt die nummers.
+
+### Foto's van kantoor
+
+Werkt u zonder veldapp, dan zet u de foto's op kantoor bij een vaststelling: **Foto's toevoegen** naast de vaststelling, of meteen na **Nieuwe vaststelling**. JPEG of PNG, tot 40 per keer.
+
+- De **opnametijd** en de **GPS** komen uit de foto zelf. Het bijschrift in het rapport zegt dan "volgens de camera".
+- Zonder opnametijd vermeldt het rapport **opgeladen op** met het moment van opladen.
+- Ook deze foto's krijgen een vingerafdruk en worden enkel toegevoegd. Ze zijn wel zwakker bewijs dan een foto uit de veldapp: de tijd komt van de klok van de camera.
 
 ### Foto's annoteren
 
@@ -77,6 +90,11 @@ Elk antwoord blijft bewaard onder **Vorige antwoorden**. Ter plaatse antwoordt d
 Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
 
 ![Het tabblad Rapport met Brieven en certificaten, Bewijspakket en de rubrieken Inleiding en Werkwijze](images/dossier-rapport.png "Het tabblad Rapport")
+
+### Standaardzinnen en open plekken
+
+- Een standaardtekst met **Vanzelf invullen** staat bij het openen van het tabblad in een lege rubriek klaar, met de gegevens van het dossier ingevuld. Ze is nog niet bewaard: vul de open plekken in en kies **Rubrieken bewaren**. → [Standaardteksten](standaardteksten.md)
+- Tekst tussen rechte haken, zoals **[locatie]**, is een **open plek**. Zolang er een in het rapport staat, wordt het niet uitgegeven: het scherm zegt in welke rubriek. Een verwijzing als [1] telt niet.
 
 ### Gezamenlijke survey
 

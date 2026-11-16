@@ -14,6 +14,7 @@ Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Catégories et em
 
 - **Catégories de défauts** : la nature du défaut, par exemple de la corrosion ou une bosse.
 - **Emplacements à bord** : où il se trouve, par exemple une cale ou le pont.
+- **Statut opérationnel d'un dossier** : où en est une mission à côté de l'étape du travail, par exemple chargement, déchargement ou en suspens. → [Dossiers](dossiers.md#instructions-de-travail-et-statut-operationnel)
 - Chaque valeur a un **code**, un ordre, un nom dans les quatre langues et un statut actif ou non. Un code déjà utilisé dans une constatation est fixé. Passez une valeur que vous n'utilisez plus en **non active**.
 - Double-cliquez sur une ligne pour la modifier ; **Nouvelle valeur** en ajoute une.
 
