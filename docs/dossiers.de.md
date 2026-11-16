@@ -87,6 +87,10 @@ Eine gute Antwort speichern Sie mit einem Klick. Bei einem Mangel (**Nicht in Or
 
 Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Besichtiger in der Feld-App, mit derselben Skala und denselben Standardbefunden. Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
 
+Ein zweiter Klick auf eine gute Antwort, die schon dasteht, speichert nichts; bei einem Mangel öffnet er den Befund zum Anpassen. Gibt es für den Punkt schon eine Feststellung, zeigt der Mangel diese statt **Neue Feststellung**. Die letzte Antwort ist die zuletzt gegebene, auch wenn eine Antwort aus der Feld-App erst später eintrifft.
+
+Die Fotos eines Punktes stehen darunter, auch die einer früheren Antwort, und so kommen sie in den Bericht. Mit **⋯** neben einem Foto nehmen Sie es aus dem Bericht oder annotieren es, wie bei einer Feststellung. **Foto Pflicht** wird rot, solange das Foto fehlt. Im Büro fügen Sie Fotos mit **Fotos hinzufügen** unter **⋯** am Ende der Zeile hinzu.
+
 ![Checkliste mit Gut, Mangelhaft und Schlecht](images/dossier-checklist-de.png "Die Checkliste")
 
 ### Bericht

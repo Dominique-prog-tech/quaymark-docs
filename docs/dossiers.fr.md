@@ -87,6 +87,10 @@ Une bonne réponse s'enregistre d'un clic. En cas de défaut (**Non conforme**, 
 
 Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'expert répond dans l'application mobile, avec la même échelle et les mêmes constats standard. Les défauts apparaissent dans le rapport avec le marqueur `{{aanbevelingen}}` (voir [Modèles](sjablonen.md)).
 
+Un deuxième clic sur une bonne réponse déjà enregistrée n'enregistre rien ; sur un défaut, il ouvre le constat pour l'adapter. Si une constatation existe déjà pour le point, le défaut l'affiche, au lieu de **Nouvelle constatation**. La dernière réponse est la dernière donnée, même si une réponse de l'application de terrain arrive plus tard.
+
+Les photos d'un point figurent en dessous, y compris celles d'une réponse précédente, et c'est ainsi qu'elles vont dans le rapport. Avec **⋯** à côté d'une photo, vous la retirez du rapport ou l'annotez, comme pour une constatation. **Photo obligatoire** passe au rouge tant que la photo manque. Au bureau, vous en ajoutez avec **Ajouter des photos** sous **⋯** en fin de ligne.
+
 ![L'onglet Check-list avec un état par point et trois défauts avec leur priorité](images/dossier-checklist-fr.png "La check-list")
 
 ### Rapport

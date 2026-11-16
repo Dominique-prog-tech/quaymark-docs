@@ -87,6 +87,10 @@ Een goed antwoord bewaart u met één klik. Bij een gebrek (**Niet in orde**, **
 
 Elk antwoord blijft bewaard onder **Vorige antwoorden**. Ter plaatse antwoordt de surveyor in de veldapp, met dezelfde schaal en dezelfde standaardbevindingen. De gebreken komen in het rapport met de markering `{{aanbevelingen}}` (zie [Sjablonen](sjablonen.md)).
 
+Een tweede klik op een goed antwoord dat er al staat, bewaart niets; op een gebrek opent hij de bevinding om ze aan te passen. Staat er al een vaststelling voor het punt, dan toont het gebrek die, in plaats van **Nieuwe vaststelling**. Het laatste antwoord is het laatst gegeven antwoord, ook als een antwoord uit de veldapp pas later binnenkomt.
+
+De foto's van een punt staan eronder, ook die bij een vorig antwoord, en zo gaan ze in het rapport. Met **⋯** naast een foto haalt u ze uit het rapport of annoteert u ze, zoals bij een vaststelling. **Foto verplicht** kleurt rood zolang de foto ontbreekt. Op kantoor zet u er foto's bij met **Foto's toevoegen** onder **⋯** achteraan de rij.
+
 ![Het tabblad Checklist met een staat per punt en drie gebreken met hun prioriteit](images/dossier-checklist.png "De checklist")
 
 ### Rapport

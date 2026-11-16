@@ -87,6 +87,10 @@ A good answer is saved with one click. For a deficiency (**Not OK**, **Poor** or
 
 Every answer is kept under **Previous answers**. On site, the surveyor answers in the field app, with the same scale and the same standard findings. The deficiencies appear in the report with the marker `{{aanbevelingen}}` (see [Templates](sjablonen.md)).
 
+A second click on a good answer that is already there saves nothing; on a deficiency, it opens the finding so you can adjust it. If a finding already exists for the item, the deficiency shows it instead of **New finding**. The latest answer is the one given last, even if an answer from the field app arrives later.
+
+The photos of an item appear below it, including those of a previous answer, and that is how they go into the report. With **⋯** next to a photo you leave it out of the report or annotate it, as for a finding. **Photo required** turns red while the photo is missing. At the office you add photos with **Add photos** under **⋯** at the end of the row.
+
 ![The Checklist tab with a condition per item and three deficiencies with their priority](images/dossier-checklist-en.png "The checklist")
 
 ### Report
