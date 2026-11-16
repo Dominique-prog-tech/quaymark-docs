@@ -134,7 +134,7 @@ Vor Ort lässt der Besichtiger den Kapitän, den Ersten Offizier oder das Termin
 
 Eine Unterschrift wird nur hinzugefügt, nie geändert. Quaymark bewahrt, was unterschrieben wurde: die Erklärung und die Liste der Feststellungen dieses Moments (die **Momentaufnahme**, mit ihrem Fingerabdruck), das Bild der Unterschrift mit der Uhrzeit und, auf dem Gerät, die Position. Eine später hinzugefügte oder berichtigte Feststellung ändert eine gegebene Unterschrift nicht. In der Feld-App funktioniert es ohne Netz: die Unterschrift wird gesendet, sobald eine Verbindung besteht.
 
-Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweigerung. Unter **Feststellungen zum Zeitpunkt der Unterschrift** steht die Momentaufnahme, auch als Datei. Im Bericht erscheinen sie mit der Markierung `{{handtekeningen}}` (siehe [Vorlagen](sjablonen.md)), und sie gehören zum Beweispaket.
+Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweigerung. Unter **Feststellungen zum Zeitpunkt der Unterschrift** steht die Momentaufnahme, auch als Datei. Eine seither berichtigte Feststellung steht durchgestrichen, und **Seit der Unterzeichnung** zählt die berichtigten und die neuen: Dann bitten Sie vielleicht um eine neue Unterschrift. Quaymark rechnet den Fingerabdruck von Bild und Momentaufnahme nach; stimmt einer nicht mehr, erscheint eine rote Meldung. Zeigen Sie auf das Bild für Zeitpunkt, GPS-Position und Fingerabdruck. Im Bericht erscheinen sie mit der Markierung `{{handtekeningen}}` (siehe [Vorlagen](sjablonen.md)), und sie gehören zum Beweispaket.
 
 ![Unterschriften mit Kapitän und Terminal](images/dossier-handtekeningen-de.png "Die Registerkarte Unterschriften")
 

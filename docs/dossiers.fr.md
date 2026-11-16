@@ -134,7 +134,7 @@ Sur place, l'expert fait signer une déclaration au capitaine, au second capitai
 
 Une signature est uniquement ajoutée, jamais modifiée. Quaymark conserve ce qui a été signé : la déclaration et la liste des constatations de ce moment (l'**instantané**, avec son empreinte), l'image de la signature avec l'heure et, sur l'appareil, la position. Une constatation ajoutée ou rectifiée ensuite ne change pas une signature donnée. Dans l'application mobile, cela fonctionne sans réseau : la signature part dès qu'il y a une connexion.
 
-L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Constatations au moment de la signature** figure l'instantané, aussi en fichier. Dans le rapport, elles apparaissent avec le marqueur `{{handtekeningen}}` (voir [Modèles](sjablonen.md)), et elles font partie du dossier de preuves.
+L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Constatations au moment de la signature** figure l'instantané, aussi en fichier. Une constatation rectifiée depuis y figure barrée, et **Depuis la signature** compte les rectifiées et les nouvelles : vous demandez alors peut-être une nouvelle signature. Quaymark recalcule l'empreinte de l'image et de l'instantané ; si l'une ne correspond plus, un message rouge l'indique. Survolez l'image pour l'heure, la position GPS et l'empreinte. Dans le rapport, elles apparaissent avec le marqueur `{{handtekeningen}}` (voir [Modèles](sjablonen.md)), et elles font partie du dossier de preuves.
 
 ![L'onglet Signatures de HQ-2026-0003 avec une signature et un refus](images/dossier-handtekeningen-fr.png "L'onglet Signatures")
 

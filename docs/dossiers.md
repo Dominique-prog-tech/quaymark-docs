@@ -134,7 +134,7 @@ Ter plaatse laat de surveyor de kapitein, de chief officer of de terminal een ve
 
 Een handtekening wordt enkel toegevoegd, nooit gewijzigd. Quaymark bewaart wat er getekend werd: de verklaring en de lijst vaststellingen van dat moment (de **momentopname**, met haar vingerafdruk), het beeld van de handtekening met tijd en, op het toestel, de positie. Een vaststelling die later bijkomt of rechtgezet wordt, verandert een gegeven handtekening niet. In de veldapp werkt het zonder bereik: de handtekening vertrekt zodra er verbinding is.
 
-Het tabblad **Handtekeningen** toont ze allemaal, met het beeld of de weigering. Onder **Vaststellingen op het moment van tekenen** staat de momentopname, ook als bestand. In het rapport komen ze met de markering `{{handtekeningen}}` (zie [Sjablonen](sjablonen.md)), en ze gaan mee in het bewijspakket.
+Het tabblad **Handtekeningen** toont ze allemaal, met het beeld of de weigering. Onder **Vaststellingen op het moment van tekenen** staat de momentopname, ook als bestand. Een vaststelling die sindsdien rechtgezet werd, staat er doorgestreept, en **Sinds het tekenen** telt de rechtgezette en de nieuwe: dan vraagt u misschien een nieuwe handtekening. Quaymark rekent de vingerafdruk van het beeld en van de momentopname na; klopt er één niet meer, dan staat er een rode melding. Wijs het beeld aan voor het tijdstip, de GPS-positie en de vingerafdruk. In het rapport komen ze met de markering `{{handtekeningen}}` (zie [Sjablonen](sjablonen.md)), en ze gaan mee in het bewijspakket.
 
 ![Het tabblad Handtekeningen van HQ-2026-0003 met een handtekening en een weigering](images/dossier-handtekeningen.png "Het tabblad Handtekeningen")
 

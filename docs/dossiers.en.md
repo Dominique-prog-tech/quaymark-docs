@@ -134,7 +134,7 @@ On site, the surveyor has the master, the chief officer or the terminal sign a s
 
 A signature is only added, never changed. Quaymark keeps what was signed: the statement and the list of findings at that moment (the **snapshot**, with its fingerprint), the image of the signature with the time and, on the device, the position. A finding added or corrected later does not change a signature already given. In the field app it works without a connection: the signature is sent once there is one.
 
-The **Signatures** tab shows them all, with the image or the refusal. Under **Findings at the time of signing** you find the snapshot, also as a file. In the report they appear with the marker `{{handtekeningen}}` (see [Templates](sjablonen.md)), and they are part of the evidence package.
+The **Signatures** tab shows them all, with the image or the refusal. Under **Findings at the time of signing** you find the snapshot, also as a file. A finding corrected since then is struck through, and **Since signing** counts the corrected and the new ones: you may then ask for a new signature. Quaymark recalculates the fingerprint of the image and of the snapshot; if one no longer matches, a red message says so. Point at the image for the time, GPS position and fingerprint. In the report they appear with the marker `{{handtekeningen}}` (see [Templates](sjablonen.md)), and they are part of the evidence package.
 
 ![The Signatures tab of HQ-2026-0003 with a signature and a refusal](images/dossier-handtekeningen-en.png "The Signatures tab")
 
