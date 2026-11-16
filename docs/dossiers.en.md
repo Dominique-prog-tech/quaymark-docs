@@ -33,6 +33,8 @@ One instruction: what was asked, where and when, and what the surveyor finds on 
 
 A saved file has these tabs: **Parties**, **Documents** (in folders, those of the vessel and the documents from on board), **Fieldwork** (findings, checklist, damage, joint survey, signatures and codes), **Calculations** (draft survey, gauging, bunkers, timeline and laytime: only what the survey type has), **Messages**, **Time and expenses**, **Report** and the **Journal** (notes, tasks, attachments and history). A group shows its parts as small tabs below it. The office chooses per survey type which tabs a file shows. → [Survey types](soorten-survey.md#survey-type)
 
+**Parties**: the relations with their role (owner, P&I club, opposing expert …) and their reference. **Add party** adds one; with **⋯** at the end of a row you edit the role and reference, or delete the party.
+
 ### Work instructions and operational status
 
 - If the survey type has **work instructions**, they appear at the top of the file, with the file's data filled in (ship, port, terminal …). What the file does not know appears between square brackets. → [Survey types](soorten-survey.md#survey-type)

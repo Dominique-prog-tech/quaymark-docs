@@ -33,6 +33,8 @@ Eén opdracht: wat er gevraagd is, waar en wanneer, en wat de surveyor ter plaat
 
 Een bewaard dossier heeft deze tabbladen: **Partijen**, **Documenten** (in mappen, die van het schip en de documenten van boord), **Veldwerk** (vaststellingen, checklist, schade, gezamenlijke survey, handtekeningen en codes), **Berekeningen** (draft survey, meting, bunker, tijdlijn en laytime: enkel wat de soort survey heeft), **Berichten**, **Tijd en kosten**, **Rapport** en het **Journaal** (notities, taken, bijlagen en historiek). Een groep toont haar onderdelen als tabjes eronder. Welke tabbladen een dossier toont, kiest het bureau per soort survey. → [Soorten survey](soorten-survey.md#soort-survey)
 
+**Partijen**: de relaties met hun rol (reder, P&I-club, tegenexpert …) en hun referentie. **Partij toevoegen** voegt er een toe; met **⋯** achteraan een rij bewerkt u rol en referentie, of verwijdert u de partij.
+
 ### Werkinstructie en operationele status
 
 - Heeft het soort survey een **werkinstructie**, dan staat ze bovenaan het dossier, met de gegevens van het dossier ingevuld (schip, haven, terminal …). Wat het dossier niet weet, staat tussen rechte haken. → [Soorten survey](soorten-survey.md#soort-survey)

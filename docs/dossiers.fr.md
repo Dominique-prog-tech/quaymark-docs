@@ -33,6 +33,8 @@ Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur
 
 Un dossier enregistré a ces onglets : **Parties**, **Documents** (dans des répertoires, ceux du navire et les documents de bord), **Travail de terrain** (constatations, check-list, dommages, expertise contradictoire, signatures et codes), **Calculs** (draft survey, jaugeage, soutes, chronologie et laytime : uniquement ce que le type d'expertise prévoit), **Messages**, **Temps et frais**, **Rapport** et le **Journal** (notes, tâches, pièces jointes et historique). Un groupe affiche ses parties sous forme de petits onglets en dessous. Le bureau choisit par type d'expertise les onglets qu'affiche un dossier. → [Types d'expertise](soorten-survey.md#type-dexpertise)
 
+**Parties** : les relations avec leur rôle (armateur, P&I club, contre-expert …) et leur référence. **Ajouter une partie** en ajoute une ; avec **⋯** en fin de ligne, vous modifiez le rôle et la référence, ou supprimez la partie.
+
 ### Instructions de travail et statut opérationnel
 
 - Si le type d'expertise a des **instructions de travail**, elles figurent en haut du dossier, avec les données du dossier complétées (navire, port, terminal …). Ce que le dossier ne sait pas figure entre crochets. → [Types d'expertise](soorten-survey.md#type-dexpertise)

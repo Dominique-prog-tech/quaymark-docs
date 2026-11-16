@@ -33,6 +33,8 @@ Ein Auftrag: was verlangt wird, wo und wann, und was der Besichtiger vor Ort fes
 
 Eine gespeicherte Akte hat diese Registerkarten: **Parteien**, **Dokumente** (in Ordnern, die des Schiffs und die Dokumente von Bord), **Feldarbeit** (Feststellungen, Checkliste, Schaden, gemeinsame Besichtigung, Unterschriften und Codes), **Berechnungen** (Draft Survey, Eichaufnahme, Bunker, Zeitablauf und Laytime: nur was die Besichtigungsart vorsieht), **Nachrichten**, **Zeit und Kosten**, **Bericht** und das **Journal** (Notizen, Aufgaben, Anhänge und Verlauf). Eine Gruppe zeigt ihre Teile als kleine Registerkarten darunter. Welche Registerkarten eine Akte zeigt, wählt das Büro je Besichtigungsart. → [Besichtigungsarten](soorten-survey.md#besichtigungsart)
 
+**Parteien**: die Beziehungen mit ihrer Rolle (Reeder, P&I-Club, Gegengutachter …) und ihrer Referenz. **Partei hinzufügen** fügt eine hinzu; mit **⋯** am Ende einer Zeile bearbeiten Sie Rolle und Referenz oder löschen die Partei.
+
 ### Arbeitsanweisung und Betriebsstatus
 
 - Hat die Besichtigungsart eine **Arbeitsanweisung**, steht sie oben in der Akte, mit den Daten der Akte ausgefüllt (Schiff, Hafen, Terminal …). Was die Akte nicht weiß, steht in eckigen Klammern. → [Besichtigungsarten](soorten-survey.md#besichtigungsart)
