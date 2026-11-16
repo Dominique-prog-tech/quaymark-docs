@@ -115,10 +115,10 @@ Op het tabblad **Gezamenlijk** legt u een gezamenlijke survey vast: wie er namen
 3. Kies de **gedeelde vaststellingen**. Het nummer is dat van het rapport. Bewaar.
 4. Terug op het tabblad: **Vastleggen** maakt het document *Gezamenlijke vaststelling*, met zijn vingerafdruk (SHA-256). Het staat bij de documenten van het dossier en gaat mee in het bewijspakket. **Voorbeeld (PDF)** toont het eerst, zonder iets te bewaren.
 
-Daarna spreekt elke partij van een aanwezige deelnemer zich uit: **akkoord**, **akkoord met voorbehoud** (met een toelichting) of **niet akkoord**.
+Een klik op de titel van een survey opent ze om te bewerken. Daarna spreekt elke partij van een aanwezige deelnemer zich uit: **akkoord**, **akkoord met voorbehoud** (met een toelichting) of **niet akkoord**.
 
-- **Link versturen** stuurt de partij een link (via ADM One). Ze leest de gezamenlijke vaststelling, kiest haar standpunt en bevestigt met haar naam en een vinkje. Het antwoord komt vanzelf op het tabblad en in het journaal.
-- **Antwoord registreren** legt een antwoord vast dat het bureau anders ontving, bijvoorbeeld op de getekende papieren versie. Voeg die toe als bijlage.
+- **Link versturen** (onder **⋯** naast de partij) stuurt de partij een link (via ADM One). Ze leest de gezamenlijke vaststelling, kiest haar standpunt en bevestigt met haar naam en een vinkje. Het antwoord komt vanzelf op het tabblad en in het journaal.
+- **Antwoord registreren** (ook onder **⋯**) legt een antwoord vast dat het bureau anders ontving, bijvoorbeeld op de getekende papieren versie. Voeg die toe als bijlage.
 
 Wijzigt u de survey na het vastleggen, leg dan een nieuwe versie vast. Een antwoord hoort bij de versie die de partij zag: op een nieuwe versie antwoordt ze opnieuw. Het tabblad meldt het zolang de survey verschilt van de laatste vastgelegde versie, en de standpunten volgen de partijen van die versie. Werd een gedeelde vaststelling rechtgezet, dan weigert **Vastleggen** tot u op **Bewerken** de nieuwe versie bewaart; die staat daar al aangevinkt. Bij een afgesloten of geannuleerd dossier komt er geen gezamenlijke survey meer bij en wordt er geen gewijzigd; vastleggen, links versturen en standpunten registreren kan nog.
 

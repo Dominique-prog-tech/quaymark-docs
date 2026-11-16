@@ -115,10 +115,10 @@ On the **Joint survey** tab you record a joint survey: who attended on behalf of
 3. Choose the **shared findings**. The number is the one in the report. Save.
 4. Back on the tab: **Record** creates the document *Joint survey statement*, with its fingerprint (SHA-256). It is listed with the documents of the file and goes into the evidence package. **Preview (PDF)** shows it first, without saving anything.
 
-Then each party of a participant who attended gives its position: **agreed**, **agreed with reservation** (with comments) or **not agreed**.
+Clicking the title of a survey opens it for editing. Then each party of a participant who attended gives its position: **agreed**, **agreed with reservation** (with comments) or **not agreed**.
 
-- **Send link** sends the party a link (via ADM One). It reads the joint survey statement, chooses its position and confirms with its name and a tick box. The answer appears on the tab and in the log by itself.
-- **Record answer** records an answer the office received otherwise, for example on the signed paper version. Add it as an attachment.
+- **Send link** (under **⋯** next to the party) sends the party a link (via ADM One). It reads the joint survey statement, chooses its position and confirms with its name and a tick box. The answer appears on the tab and in the log by itself.
+- **Record answer** (also under **⋯**) records an answer the office received otherwise, for example on the signed paper version. Add it as an attachment.
 
 If you change the survey after recording it, record a new version. An answer belongs to the version the party saw: for a new version it answers again. The tab says so while the survey differs from the last recorded version, and the positions follow the parties of that version. If a shared finding was corrected, **Record** refuses until you save the new version under **Edit**; it is already ticked there. A closed or cancelled file gets no new joint survey and none is changed; recording, sending links and registering positions remain possible.
 

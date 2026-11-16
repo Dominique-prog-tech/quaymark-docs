@@ -115,10 +115,10 @@ Dans l'onglet **Contradictoire**, vous enregistrez une expertise contradictoire 
 3. Choisissez les **constatations partagées**. Le numéro est celui du rapport. Enregistrez.
 4. De retour dans l'onglet : **Enregistrer** crée le document *Constat contradictoire*, avec son empreinte (SHA-256). Il figure parmi les documents du dossier et accompagne le dossier de preuves. **Aperçu (PDF)** le montre d'abord, sans rien enregistrer.
 
-Ensuite, chaque partie d'un participant présent se prononce : **d'accord**, **d'accord sous réserve** (avec un commentaire) ou **pas d'accord**.
+Un clic sur le titre d'une expertise l'ouvre pour la modifier. Ensuite, chaque partie d'un participant présent se prononce : **d'accord**, **d'accord sous réserve** (avec un commentaire) ou **pas d'accord**.
 
-- **Envoyer le lien** envoie un lien à la partie (via ADM One). Elle lit le constat contradictoire, choisit sa position et confirme avec son nom et une case à cocher. La réponse apparaît d'elle-même dans l'onglet et dans le journal.
-- **Enregistrer la réponse** consigne une réponse que le bureau a reçue autrement, par exemple sur la version papier signée. Ajoutez-la en pièce jointe.
+- **Envoyer le lien** (sous **⋯** à côté de la partie) envoie un lien à la partie (via ADM One). Elle lit le constat contradictoire, choisit sa position et confirme avec son nom et une case à cocher. La réponse apparaît d'elle-même dans l'onglet et dans le journal.
+- **Enregistrer la réponse** (aussi sous **⋯**) consigne une réponse que le bureau a reçue autrement, par exemple sur la version papier signée. Ajoutez-la en pièce jointe.
 
 Si vous modifiez l'expertise après l'enregistrement, enregistrez une nouvelle version. Une réponse appartient à la version que la partie a vue : sur une nouvelle version, elle répond à nouveau. L'onglet le signale tant que l'expertise diffère de la dernière version enregistrée, et les positions suivent les parties de cette version. Si une constatation partagée a été rectifiée, **Enregistrer** refuse jusqu'à ce que vous enregistriez la nouvelle version sous **Modifier** ; elle y est déjà cochée. Un dossier clôturé ou annulé ne reçoit plus de nouvelle expertise contradictoire et aucune n'est modifiée ; enregistrer, envoyer des liens et enregistrer des positions reste possible.
 

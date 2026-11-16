@@ -115,10 +115,10 @@ In der Registerkarte **Gemeinsam** halten Sie eine gemeinsame Besichtigung fest:
 3. Wählen Sie die **geteilten Feststellungen**. Die Nummer ist die des Berichts. Speichern Sie.
 4. Zurück in der Registerkarte: **Festhalten** erstellt das Dokument *Gemeinsame Feststellung*, mit seinem Fingerabdruck (SHA-256). Es steht bei den Dokumenten der Akte und kommt in das Beweispaket. **Vorschau (PDF)** zeigt es zuerst, ohne etwas zu speichern.
 
-Danach äußert sich jede Partei eines anwesenden Teilnehmers: **einverstanden**, **einverstanden unter Vorbehalt** (mit einer Erläuterung) oder **nicht einverstanden**.
+Ein Klick auf den Titel einer Besichtigung öffnet sie zum Bearbeiten. Danach äußert sich jede Partei eines anwesenden Teilnehmers: **einverstanden**, **einverstanden unter Vorbehalt** (mit einer Erläuterung) oder **nicht einverstanden**.
 
-- **Link senden** schickt der Partei einen Link (über ADM One). Sie liest die gemeinsame Feststellung, wählt ihren Standpunkt und bestätigt mit ihrem Namen und einem Häkchen. Die Antwort erscheint von selbst in der Registerkarte und im Journal.
-- **Antwort erfassen** hält eine Antwort fest, die das Büro auf anderem Weg erhielt, zum Beispiel auf der unterschriebenen Papierversion. Fügen Sie sie als Anhang hinzu.
+- **Link senden** (unter **⋯** neben der Partei) schickt der Partei einen Link (über ADM One). Sie liest die gemeinsame Feststellung, wählt ihren Standpunkt und bestätigt mit ihrem Namen und einem Häkchen. Die Antwort erscheint von selbst in der Registerkarte und im Journal.
+- **Antwort erfassen** (ebenfalls unter **⋯**) hält eine Antwort fest, die das Büro auf anderem Weg erhielt, zum Beispiel auf der unterschriebenen Papierversion. Fügen Sie sie als Anhang hinzu.
 
 Ändern Sie die Besichtigung nach dem Festhalten, halten Sie eine neue Version fest. Eine Antwort gehört zu der Version, die die Partei gesehen hat: Auf eine neue Version antwortet sie erneut. Der Reiter meldet es, solange die Besichtigung von der zuletzt festgehaltenen Version abweicht, und die Standpunkte folgen den Parteien dieser Version. Wurde eine geteilte Feststellung berichtigt, verweigert **Festhalten**, bis Sie unter **Bearbeiten** die neue Fassung speichern; sie ist dort schon angehakt. Eine abgeschlossene oder stornierte Akte erhält keine neue gemeinsame Besichtigung, und keine wird geändert; Festhalten, Links senden und Standpunkte erfassen bleibt möglich.
 
