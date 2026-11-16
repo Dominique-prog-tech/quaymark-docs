@@ -12,8 +12,8 @@ In the menu on the left, click **Files**.
 
 ## The list
 
-- The **Status** choice above the list shows the **open** files by default. Choose **All** to include closed and cancelled files as well, or pick one status.
-- The **search box** searches all columns: number, survey type, vessel, principal, port, planning, status and the scanned codes (a container number is also found with spaces).
+- The **Status** filter in the toolbar shows the **open** files by default; a status tile on the dashboard opens the list with that status. Choose **All** to include closed and cancelled files as well, or pick one status.
+- The **search box** searches all columns: number, survey type, vessel, principal, port, surveyor, planning, status and the scanned codes (not shown as a column) (a container number is also found with spaces).
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.
 - The export button downloads the list as a file.
 - The **Report due** column shows the date by which the report is due under the framework agreement, with its status. → [Report deadline](#report-deadline)

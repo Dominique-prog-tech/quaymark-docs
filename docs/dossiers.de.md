@@ -12,8 +12,8 @@ Klicken Sie im Menü links auf **Akten**.
 
 ## Die Liste
 
-- Die Auswahl **Status** über der Liste zeigt standardmäßig die **offenen** Akten. Wählen Sie **Alle**, um auch abgeschlossene und stornierte Akten zu sehen, oder einen einzelnen Status.
-- Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Planung, Status und die gescannten Codes (eine Containernummer findet man auch mit Leerzeichen).
+- Der Filter **Status** in der Symbolleiste zeigt standardmäßig die **offenen** Akten; eine Statuskachel auf der Übersicht öffnet die Liste mit diesem Status. Wählen Sie **Alle**, um auch abgeschlossene und stornierte Akten zu sehen, oder einen einzelnen Status.
+- Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Besichtiger, Planung, Status und die gescannten Codes (die nicht als Spalte angezeigt werden) (eine Containernummer findet man auch mit Leerzeichen).
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 - Die Spalte **Bericht bis** zeigt das Datum, bis zu dem der Bericht laut Rahmenvereinbarung vorliegen muss, mit dem Stand. → [Frist bis zum Bericht](#frist-bis-zum-bericht)

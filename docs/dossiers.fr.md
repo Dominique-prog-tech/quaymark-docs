@@ -12,8 +12,8 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 
 ## La liste
 
-- Le choix **Statut** au-dessus de la liste affiche par défaut les dossiers **ouverts**. Choisissez **Tous** pour voir aussi les dossiers clôturés et annulés, ou un seul statut.
-- Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, planning, statut et les codes scannés (un numéro de conteneur se trouve aussi avec des espaces).
+- Le filtre **Statut** dans la barre d'outils affiche par défaut les dossiers **ouverts** ; une tuile de statut du tableau de bord ouvre la liste avec ce statut. Choisissez **Tous** pour voir aussi les dossiers clôturés et annulés, ou un seul statut.
+- Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, expert, planning, statut et les codes scannés (qui ne sont pas affichés en colonne) (un numéro de conteneur se trouve aussi avec des espaces).
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.
 - Le bouton d'export télécharge la liste sous forme de fichier.
 - La colonne **Rapport pour le** indique la date à laquelle le rapport doit être prêt selon l'accord-cadre, avec l'état. → [Délai jusqu'au rapport](#delai-jusquau-rapport)

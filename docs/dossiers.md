@@ -12,8 +12,8 @@ Klik in het menu links op **Dossiers**.
 
 ## De lijst
 
-- De keuze **Status** boven de lijst toont standaard de **open** dossiers. Kies **Alle** om ook afgesloten en geannuleerde dossiers te zien, of één status.
-- Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, planning, status en de gescande codes (een containernummer vindt u ook met spaties).
+- Het filter **Status** in de werkbalk toont standaard de **open** dossiers; een statustegel op het dashboard opent de lijst met die status. Kies **Alle** om ook afgesloten en geannuleerde dossiers te zien, of één status.
+- Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, surveyor, planning, status en de gescande codes (die niet als kolom getoond worden) (een containernummer vindt u ook met spaties).
 - Dubbelklik op een rij om het **dossier** te openen; met het pijltje vooraan de rij opent het in een nieuw tabblad. **Nieuw dossier** maakt er een aan.
 - Met de exportknop haalt u de lijst op als bestand.
 - De kolom **Rapport tegen** toont de datum waarop het rapport er moet zijn volgens de raamafspraak, met de stand. → [Termijn tot het rapport](#termijn-tot-het-rapport)
