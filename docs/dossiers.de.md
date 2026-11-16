@@ -53,7 +53,7 @@ Der **Besichtiger** der Akte erhält am letzten Arbeitstag davor und nach Ablauf
 
 ### Feststellungen
 
-Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat.
+Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** unter **⋯** am Ende der Zeile und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat.
 
 Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Feld-App. Was schon da ist, bleibt sichtbar.
 
@@ -61,11 +61,11 @@ Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: 
 
 ### Fotos im Bericht
 
-**Aus dem Bericht nehmen** unter einem Foto lässt es im Fotoanhang des Berichts weg, mit einer Begründung. Das Foto bleibt als Beweis gespeichert; **Wieder in den Bericht** setzt es zurück. Das geht auch noch bei einer abgeschlossenen Akte. Die Fotos erhalten im Bericht eine fortlaufende Nummer, und die Tabelle der Feststellungen nennt diese Nummern.
+**Aus dem Bericht nehmen** unter **⋯** neben einem Foto lässt es im Fotoanhang des Berichts weg, mit einer Begründung. Das Foto bleibt als Beweis gespeichert; **Wieder in den Bericht** setzt es zurück. Das geht auch noch bei einer abgeschlossenen Akte. Die Fotos erhalten im Bericht eine fortlaufende Nummer, und die Tabelle der Feststellungen nennt diese Nummern.
 
 ### Fotos aus dem Büro
 
-Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** neben der Feststellung oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
+Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** unter **⋯** am Ende der Zeile oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
 
 - **Aufnahmezeit** und **GPS** stammen aus dem Foto selbst. Die Bildunterschrift im Bericht sagt dann „laut Kamera“.
 - Ohne Aufnahmezeit nennt der Bericht **hochgeladen am** mit dem Zeitpunkt des Hochladens.
@@ -73,7 +73,7 @@ Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **
 
 ### Fotos annotieren
 
-**Annotieren** unter einem Foto öffnet es groß, mit Werkzeugen: **Pfeil**, **Oval**, **Rechteck**, **Freihand**, **Text** und **Maß** (eine Linie mit einer Beschriftung, zum Beispiel 1,2 m), in Rot, Gelb, Weiß oder Schwarz. Für Text und Maß geben Sie zuerst den Text bei **Text oder Maß** ein und klicken oder ziehen dann auf dem Foto. **Rückgängig machen** entfernt die letzte Form, **Alles löschen** alle Formen.
+**Annotieren** unter **⋯** neben einem Foto öffnet es groß, mit Werkzeugen: **Pfeil**, **Oval**, **Rechteck**, **Freihand**, **Text** und **Maß** (eine Linie mit einer Beschriftung, zum Beispiel 1,2 m), in Rot, Gelb, Weiß oder Schwarz. Für Text und Maß geben Sie zuerst den Text bei **Text oder Maß** ein und klicken oder ziehen dann auf dem Foto. **Rückgängig machen** entfernt die letzte Form, **Alles löschen** alle Formen.
 
 ![Annotieren mit Pfeil, Oval, Maß und Text auf dem Foto, in Rot und Gelb](images/foto-annoteren-de.png "Annotieren")
 

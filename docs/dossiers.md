@@ -53,7 +53,7 @@ De **surveyor** van het dossier krijgt een melding op het belletje op de laatste
 
 ### Vaststellingen
 
-Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** en een reden: de oude versie blijft doorgestreept staan. Haar foto's gaan mee naar de nieuwe versie, op het scherm en in het rapport. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde.
+Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** onder **⋯** achteraan de rij, met een reden: de oude versie blijft doorgestreept staan. Haar foto's gaan mee naar de nieuwe versie, op het scherm en in het rapport. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde.
 
 Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij: geen vaststellingen, checklistantwoorden, foto's of handtekeningen, ook niet vanuit de veldapp. Wat er al is, blijft zichtbaar.
 
@@ -61,11 +61,11 @@ Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij
 
 ### Foto's in het rapport
 
-**Uit rapport halen** onder een foto laat die foto weg uit de fotobijlage van het rapport, met een reden. De foto blijft bewaard als bewijs en krijgt het label **Niet in rapport**; **Weer in rapport** zet ze terug. Dat kan ook nog bij een afgesloten dossier. De foto's krijgen in het rapport een doorlopend nummer, en de tabel met vaststellingen noemt die nummers.
+**Uit rapport halen** onder **⋯** naast een foto laat die foto weg uit de fotobijlage van het rapport, met een reden. De foto blijft bewaard als bewijs en krijgt het label **Niet in rapport**; **Weer in rapport** zet ze terug. Dat kan ook nog bij een afgesloten dossier. De foto's krijgen in het rapport een doorlopend nummer, en de tabel met vaststellingen noemt die nummers.
 
 ### Foto's van kantoor
 
-Werkt u zonder veldapp, dan zet u de foto's op kantoor bij een vaststelling: **Foto's toevoegen** naast de vaststelling, of meteen na **Nieuwe vaststelling**. JPEG of PNG, tot 40 per keer.
+Werkt u zonder veldapp, dan zet u de foto's op kantoor bij een vaststelling: **Foto's toevoegen** onder **⋯** achteraan de rij, of meteen na **Nieuwe vaststelling**. JPEG of PNG, tot 40 per keer.
 
 - De **opnametijd** en de **GPS** komen uit de foto zelf. Het bijschrift in het rapport zegt dan "volgens de camera".
 - Zonder opnametijd vermeldt het rapport **opgeladen op** met het moment van opladen.
@@ -73,7 +73,7 @@ Werkt u zonder veldapp, dan zet u de foto's op kantoor bij een vaststelling: **F
 
 ### Foto's annoteren
 
-**Annoteren** onder een foto opent de foto groot, met gereedschap: **Pijl**, **Ovaal**, **Rechthoek**, **Vrije lijn**, **Tekst** en **Maat** (een lijn met een label, bijvoorbeeld 1,2 m), in rood, geel, wit of zwart. Voor tekst en maat typt u eerst de tekst bij **Tekst of maat** en klikt of sleept u dan op de foto. **Ongedaan maken** haalt de laatste vorm weg, **Alles wissen** alle vormen.
+**Annoteren** onder **⋯** naast een foto opent de foto groot, met gereedschap: **Pijl**, **Ovaal**, **Rechthoek**, **Vrije lijn**, **Tekst** en **Maat** (een lijn met een label, bijvoorbeeld 1,2 m), in rood, geel, wit of zwart. Voor tekst en maat typt u eerst de tekst bij **Tekst of maat** en klikt of sleept u dan op de foto. **Ongedaan maken** haalt de laatste vorm weg, **Alles wissen** alle vormen.
 
 ![De pagina Annoteren: de knoppen Pijl, Ovaal en Maat, en op de foto een pijl, een ovaal, een maat en een tekst](images/foto-annoteren.png "Annoteren")
 

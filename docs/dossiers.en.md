@@ -53,7 +53,7 @@ The file's **surveyor** gets a notification on the bell on the last working day 
 
 ### Findings
 
-A **finding** is added, never changed or deleted. You correct a mistake with **Correct** and a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
+A **finding** is added, never changed or deleted. You correct a mistake with **Correct** under **⋯** at the end of the row, with a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
 
 A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible.
 
@@ -61,11 +61,11 @@ A **closed** or **cancelled** file receives no more field work: no findings, che
 
 ### Photos in the report
 
-**Leave out of report** under a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. This is still possible in a closed file. Photos get a running number in the report, and the findings table lists those numbers.
+**Leave out of report** under **⋯** next to a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. This is still possible in a closed file. Photos get a running number in the report, and the findings table lists those numbers.
 
 ### Photos added at the office
 
-Working without the field app, you add the photos at the office to a finding: **Add photos** next to the finding, or straight after **New finding**. JPEG or PNG, up to 40 at a time.
+Working without the field app, you add the photos at the office to a finding: **Add photos** under **⋯** at the end of the row, or straight after **New finding**. JPEG or PNG, up to 40 at a time.
 
 - The **time taken** and the **GPS** come from the photo itself. The caption in the report then says "according to the camera".
 - Without a time taken, the report says **uploaded on** with the moment of upload.
@@ -73,7 +73,7 @@ Working without the field app, you add the photos at the office to a finding: **
 
 ### Annotating photos
 
-**Annotate** under a photo opens it large, with tools: **Arrow**, **Oval**, **Rectangle**, **Freehand**, **Text** and **Dimension** (a line with a label, for example 1,2 m), in red, yellow, white or black. For text and dimensions, first type the text in **Text or dimension**, then click or drag on the photo. **Undo** removes the last shape, **Clear all** all shapes.
+**Annotate** under **⋯** next to a photo opens it large, with tools: **Arrow**, **Oval**, **Rectangle**, **Freehand**, **Text** and **Dimension** (a line with a label, for example 1,2 m), in red, yellow, white or black. For text and dimensions, first type the text in **Text or dimension**, then click or drag on the photo. **Undo** removes the last shape, **Clear all** all shapes.
 
 ![The Annotate page: the Arrow, Oval and Dimension buttons, and on the photo an arrow, an oval, a dimension and a text](images/foto-annoteren-en.png "Annotate")
 

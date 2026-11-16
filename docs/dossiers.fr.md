@@ -53,7 +53,7 @@ L'**expert** du dossier reçoit une notification sur la cloche le dernier jour o
 
 ### Constatations
 
-Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier** et un motif : l'ancienne version reste visible, barrée. Ses photos suivent la nouvelle version, à l'écran comme dans le rapport. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
+Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier**, sous **⋯** en fin de ligne, et un motif : l'ancienne version reste visible, barrée. Ses photos suivent la nouvelle version, à l'écran comme dans le rapport. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
 
 Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : ni constatations, ni réponses à la check-list, ni photos, ni signatures, pas même depuis l'application de terrain. Ce qui existe reste visible.
 
@@ -61,11 +61,11 @@ Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : 
 
 ### Photos dans le rapport
 
-**Retirer du rapport** sous une photo l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. C'est encore possible dans un dossier clôturé. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
+**Retirer du rapport**, sous **⋯** à côté d'une photo, l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. C'est encore possible dans un dossier clôturé. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
 
 ### Photos chargées au bureau
 
-Sans application de terrain, vous ajoutez les photos au bureau à une constatation : **Ajouter des photos** à côté de la constatation, ou juste après **Nouvelle constatation**. JPEG ou PNG, jusqu'à 40 à la fois.
+Sans application de terrain, vous ajoutez les photos au bureau à une constatation : **Ajouter des photos** sous **⋯** en fin de ligne, ou juste après **Nouvelle constatation**. JPEG ou PNG, jusqu'à 40 à la fois.
 
 - L'**heure de prise de vue** et le **GPS** proviennent de la photo. La légende du rapport indique alors « selon l'appareil photo ».
 - Sans heure de prise de vue, le rapport indique **chargée le** avec le moment du chargement.
@@ -73,7 +73,7 @@ Sans application de terrain, vous ajoutez les photos au bureau à une constatati
 
 ### Annoter les photos
 
-**Annoter** sous une photo l'ouvre en grand, avec des outils : **Flèche**, **Ovale**, **Rectangle**, **Trait libre**, **Texte** et **Cote** (un trait avec une étiquette, par exemple 1,2 m), en rouge, jaune, blanc ou noir. Pour un texte ou une cote, tapez d'abord le texte dans **Texte ou cote**, puis cliquez ou faites glisser sur la photo. **Annuler** retire la dernière forme, **Tout effacer** toutes les formes.
+**Annoter**, sous **⋯** à côté d'une photo, l'ouvre en grand, avec des outils : **Flèche**, **Ovale**, **Rectangle**, **Trait libre**, **Texte** et **Cote** (un trait avec une étiquette, par exemple 1,2 m), en rouge, jaune, blanc ou noir. Pour un texte ou une cote, tapez d'abord le texte dans **Texte ou cote**, puis cliquez ou faites glisser sur la photo. **Annuler** retire la dernière forme, **Tout effacer** toutes les formes.
 
 ![La page Annoter : les boutons Flèche, Ovale et Cote, et sur la photo une flèche, un ovale, une cote et un texte](images/foto-annoteren-fr.png "Annoter")
 

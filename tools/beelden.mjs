@@ -68,7 +68,7 @@ const SCHOTEN = () => [
   { naam: 'foto-annoteren', route: '/dossiers', hoogte: 1250, verwacht: Q('annotatie_wissen'),
     na: async (p, taal) => {
       await dossier('HQ-2026-0003', 'vaststellingen')(p);
-      await p.goto(new URL(await p.locator('[data-annoteren]').first().getAttribute('href'), p.url()).toString()); await p.waitForLoadState('networkidle');
+      await p.goto(new URL(await p.locator('[data-annoteren]').first().getAttribute('data-annoteren'), p.url()).toString()); await p.waitForLoadState('networkidle');
       const doek = p.locator('[data-annoteer-vlak] canvas'); await doek.waitFor({ state: 'visible' }); await p.waitForTimeout(1500);
       const v = await doek.boundingBox();
       const sleep = async (van, naar) => { await p.mouse.move(v.x + van[0] * v.width, v.y + van[1] * v.height); await p.mouse.down();
