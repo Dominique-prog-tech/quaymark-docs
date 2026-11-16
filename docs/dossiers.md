@@ -53,13 +53,15 @@ De **surveyor** van het dossier krijgt een melding op het belletje op de laatste
 
 ### Vaststellingen
 
-Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** en een reden: de oude versie blijft doorgestreept staan. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde.
+Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** en een reden: de oude versie blijft doorgestreept staan. Haar foto's gaan mee naar de nieuwe versie, op het scherm en in het rapport. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde.
 
-![Het tabblad Vaststellingen per plaats aan boord, met foto, Ernst, Niet in rapport en Rechtzetten](images/dossier-vaststellingen.png "Vaststellingen met hun foto")
+Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij: geen vaststellingen, checklistantwoorden, foto's of handtekeningen, ook niet vanuit de veldapp. Wat er al is, blijft zichtbaar.
+
+![Het tabblad Vaststellingen per plaats aan boord, met foto, Ernst, Uit rapport halen en Rechtzetten](images/dossier-vaststellingen.png "Vaststellingen met hun foto")
 
 ### Foto's in het rapport
 
-**Niet in rapport** onder een foto laat die foto weg uit de fotobijlage van het rapport, met een reden. De foto blijft bewaard als bewijs; **Weer in rapport** zet ze terug. De foto's krijgen in het rapport een doorlopend nummer, en de tabel met vaststellingen noemt die nummers.
+**Uit rapport halen** onder een foto laat die foto weg uit de fotobijlage van het rapport, met een reden. De foto blijft bewaard als bewijs en krijgt het label **Niet in rapport**; **Weer in rapport** zet ze terug. Dat kan ook nog bij een afgesloten dossier. De foto's krijgen in het rapport een doorlopend nummer, en de tabel met vaststellingen noemt die nummers.
 
 ### Foto's van kantoor
 

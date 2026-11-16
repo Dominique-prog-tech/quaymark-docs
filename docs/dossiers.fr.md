@@ -53,13 +53,15 @@ L'**expert** du dossier reçoit une notification sur la cloche le dernier jour o
 
 ### Constatations
 
-Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier** et un motif : l'ancienne version reste visible, barrée. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
+Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier** et un motif : l'ancienne version reste visible, barrée. Ses photos suivent la nouvelle version, à l'écran comme dans le rapport. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
+
+Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : ni constatations, ni réponses à la check-list, ni photos, ni signatures, pas même depuis l'application de terrain. Ce qui existe reste visible.
 
 ![L'onglet Constatations par emplacement à bord, avec photo, Gravité, Retirer du rapport et Rectifier](images/dossier-vaststellingen-fr.png "Les constatations et leur photo")
 
 ### Photos dans le rapport
 
-**Retirer du rapport** sous une photo l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
+**Retirer du rapport** sous une photo l'écarte de l'annexe photographique du rapport, avec un motif. La photo reste conservée comme preuve ; **Remettre dans le rapport** la rétablit. C'est encore possible dans un dossier clôturé. Les photos reçoivent un numéro continu dans le rapport, et le tableau des constatations cite ces numéros.
 
 ### Photos chargées au bureau
 

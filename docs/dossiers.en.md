@@ -53,13 +53,15 @@ The file's **surveyor** gets a notification on the bell on the last working day 
 
 ### Findings
 
-A **finding** is added, never changed or deleted. You correct a mistake with **Correct** and a reason: the old version stays visible, struck through. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
+A **finding** is added, never changed or deleted. You correct a mistake with **Correct** and a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
 
-![The Findings tab per location on board, with photo, Severity, Not in report and Correct](images/dossier-vaststellingen-en.png "Findings with their photo")
+A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible.
+
+![The Findings tab per location on board, with photo, Severity, Leave out of report and Correct](images/dossier-vaststellingen-en.png "Findings with their photo")
 
 ### Photos in the report
 
-**Leave out of report** under a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. Photos get a running number in the report, and the findings table lists those numbers.
+**Leave out of report** under a photo removes it from the report's photo appendix, with a reason. The photo stays stored as evidence; **Show in report again** puts it back. This is still possible in a closed file. Photos get a running number in the report, and the findings table lists those numbers.
 
 ### Photos added at the office
 
