@@ -154,6 +154,8 @@ Der Besichtiger scannt in der Feld-App Barcodes und QR-Codes: das **QR-Symbol** 
 
 - Eine **Containernummer** (ISO 6346) besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7 Ziffern; die App schreibt sie in Großbuchstaben ohne Leerzeichen. Stimmt die Prüfziffer nicht, warnt die App, und der Besichtiger darf trotzdem speichern: Der Code erhält die Markierung **Stimmt nicht**.
 - Wer einen gescannten Code korrigiert, macht daraus einen getippten Code: Die Spalte **Quelle** sagt ehrlich, wie er hereinkam.
+- Im Büro geben Sie einen Code mit **Code hinzufügen** ein (zum Beispiel eine Containernummer aus einem Dokument): Art, Code und gegebenenfalls die Feststellung. Eine Containernummer wird sofort geprüft; eine falsche Prüfziffer warnt, Speichern ist möglich. Die Quelle lautet dann **Von Hand · im Büro**.
+- Ein Code bei einer berichtigten Feststellung steht bei der neuen Fassung, im Reiter und im Bericht.
 
 Im Büro zeigt die Registerkarte **Codes** jeden Code mit Art, Prüfziffer, Feststellung, Zeit, Quelle und wer ihn erfasst hat. Ein Code wird nie geändert oder gelöscht.
 

@@ -154,6 +154,8 @@ The surveyor scans barcodes and QR codes in the field app: the **QR icon** at th
 
 - A **container number** (ISO 6346) is 4 letters, the last U, J or Z, and 7 digits; the app writes it in capitals without spaces. If the check digit is wrong, the app warns and the surveyor may save anyway: the code gets the mark **Incorrect**.
 - Correcting a scanned code makes it a typed code: the **Source** column says honestly how it came in.
+- At the office you type a code with **Add code** (for example a container number from a document): type, code and optionally the finding. A container number is checked at once; a wrong check digit warns, saving is allowed. The source then reads **Typed · at the office**.
+- A code at a corrected finding appears under the new version, on the tab and in the report.
 
 At the office, the **Codes** tab shows each code with its type, check digit, finding, time, source and who recorded it. A code is never changed or deleted.
 

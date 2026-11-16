@@ -154,6 +154,8 @@ De surveyor scant in de veldapp barcodes en QR-codes: het **QR-icoon** bovenaan 
 
 - Een **containernummer** (ISO 6346) is 4 letters, de laatste U, J of Z, en 7 cijfers; de app schrijft het in hoofdletters zonder spaties. Klopt het controlecijfer niet, dan waarschuwt de app en mag de surveyor toch bewaren: de code krijgt het merkteken **Klopt niet**.
 - Wie een gescande code verbetert, maakt er een getikte code van: de kolom **Bron** zegt eerlijk hoe ze binnenkwam.
+- Op kantoor tikt u een code in met **Code toevoegen** (bijvoorbeeld een containernummer uit een document): soort, code en eventueel de vaststelling. Een containernummer wordt meteen gecontroleerd; een fout controlecijfer waarschuwt, bewaren mag. De bron is dan **Met de hand · op kantoor**.
+- Een code bij een rechtgezette vaststelling staat bij de nieuwe versie, op het tabblad en in het rapport.
 
 Op kantoor toont het tabblad **Codes** elke code met haar soort, controlecijfer, vaststelling, tijd, bron en wie ze vastlegde. Een code wordt nooit gewijzigd of verwijderd.
 

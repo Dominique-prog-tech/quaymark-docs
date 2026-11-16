@@ -154,6 +154,8 @@ L'expert scanne des codes-barres et QR dans l'application terrain : l'**icône Q
 
 - Un **numéro de conteneur** (ISO 6346) comporte 4 lettres, la dernière U, J ou Z, et 7 chiffres ; l'application l'écrit en majuscules sans espaces. Si le chiffre de contrôle est faux, l'application avertit et l'expert peut enregistrer quand même : le code reçoit la marque **Incorrect**.
 - Corriger un code scanné en fait un code saisi : la colonne **Source** dit honnêtement comment il est arrivé.
+- Au bureau, vous saisissez un code avec **Ajouter un code** (par exemple un numéro de conteneur tiré d'un document) : type, code et éventuellement la constatation. Un numéro de conteneur est contrôlé aussitôt ; un chiffre de contrôle erroné avertit, l'enregistrement reste possible. La source est alors **Saisi à la main · au bureau**.
+- Un code lié à une constatation rectifiée figure sous la nouvelle version, dans l'onglet et dans le rapport.
 
 Au bureau, l'onglet **Codes** affiche chaque code avec son type, son chiffre de contrôle, sa constatation, l'heure, la source et qui l'a enregistré. Un code n'est jamais modifié ni supprimé.
 
