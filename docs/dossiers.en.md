@@ -144,6 +144,8 @@ On board, the surveyor records the stowage plan, the cargo manifest, the logbook
 
 At the office they are on the **Board documents** tab, with the type, who and when. A photo shows a thumbnail, a pdf opens, a video plays in the browser. They are never changed or deleted. They do not go into the photo appendix of the report, but they are part of the evidence package, with their type in the manifest.
 
+If a document came by e-mail, add it at the office with **Add document**: choose the type, optionally a description, and the files (photos of the pages, a pdf or a video). Up to 50 MB per file, a video up to 200 MB. This is evidence with a fingerprint too; the tab, the evidence package and the evidence data say **at the office**. Point at a file for the time, GPS position and fingerprint.
+
 ![Board documents of HQ-2026-0003: a stowage plan and a cargo manifest](images/dossier-boorddocumenten-en.png "Board documents")
 
 ### Codes

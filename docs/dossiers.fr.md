@@ -144,6 +144,8 @@ L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Con
 
 Au bureau, ils figurent dans l'onglet **Documents de bord**, avec le type, qui et quand. Une photo montre une miniature, un pdf s'ouvre, une vidéo se lit dans le navigateur. Ils ne sont jamais modifiés ni supprimés. Ils n'entrent pas dans l'annexe photographique du rapport, mais bien dans le dossier de preuves, avec leur type dans le manifeste.
 
+Si un document est arrivé par e-mail, ajoutez-le au bureau avec **Ajouter un document** : choisissez le type, éventuellement une description, et les fichiers (photos des pages, un pdf ou une vidéo). Jusqu'à 50 Mo par fichier, une vidéo jusqu'à 200 Mo. C'est aussi une preuve avec une empreinte ; l'onglet, le dossier de preuves et les données de preuve indiquent **au bureau**. Survolez un fichier pour l'heure, la position GPS et l'empreinte.
+
 ![Documents de bord de HQ-2026-0003 : un plan de chargement et un manifeste de cargaison](images/dossier-boorddocumenten-fr.png "Documents de bord")
 
 ### Codes

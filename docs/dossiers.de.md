@@ -144,6 +144,8 @@ An Bord erfasst der Besichtiger den Stauplan, das Ladungsmanifest, das Logbuch, 
 
 Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest.
 
+Kam eine Unterlage per E-Mail, fügen Sie sie im Büro mit **Dokument hinzufügen** hinzu: Wählen Sie die Art, gegebenenfalls eine Beschreibung und die Dateien (Fotos der Seiten, ein PDF oder ein Video). Bis 50 MB pro Datei, ein Video bis 200 MB. Auch das ist ein Nachweis mit Fingerabdruck; Reiter, Beweispaket und Nachweisdaten vermerken **im Büro**. Zeigen Sie auf eine Datei für Zeitpunkt, GPS-Position und Fingerabdruck.
+
 ![Bordunterlagen von HQ-2026-0003: ein Stauplan und ein Ladungsmanifest](images/dossier-boorddocumenten-de.png "Bordunterlagen")
 
 ### Codes

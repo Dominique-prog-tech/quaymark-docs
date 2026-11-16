@@ -144,6 +144,8 @@ Aan boord legt de surveyor het stuwplan, het cargo manifest, het logboek, een le
 
 Op kantoor staan ze op het tabblad **Documenten van boord**, met de soort, wie en wanneer. Een foto toont een miniatuur, een pdf opent u, een video speelt in de browser af. Ze worden nooit gewijzigd of verwijderd. Ze komen niet in de fotobijlage van het rapport, wel in het bewijspakket, met hun soort in het manifest.
 
+Kwam een document per mail, dan voegt u het op kantoor toe met **Document toevoegen**: kies de soort, eventueel een omschrijving, en de bestanden (foto's van de pagina's, een pdf of een video). Tot 50 MB per bestand, een video tot 200 MB. Ook dat is bewijs met een vingerafdruk; het tabblad, het bewijspakket en de bewijsgegevens vermelden **op kantoor**. Wijs een bestand aan voor het tijdstip, de GPS-positie en de vingerafdruk.
+
 ![Documenten van boord van HQ-2026-0003: een stuwplan en een cargo manifest](images/dossier-boorddocumenten.png "Documenten van boord")
 
 ### Codes
