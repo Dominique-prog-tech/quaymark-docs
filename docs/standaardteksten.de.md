@@ -8,7 +8,7 @@ Feste Texte, die ein Besichtiger in der Registerkarte **Bericht** einer Akte in 
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Standardtexte**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Standardtexte**.
 
 ## Felder und Funktionen
 

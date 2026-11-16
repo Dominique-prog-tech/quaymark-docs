@@ -10,7 +10,7 @@ What the company invoices the **principal** does not change: that remains the ra
 
 ## Opening the screen
 
-In the menu on the left, under **Settings**, click **Freelancers**. Only the administrator of the company sees this screen.
+At the bottom of the menu, click **Administration**, then the **Freelancers** tile. Only the administrator of the company sees this screen.
 
 ![Freelancers with Code, Company name, Hourly rate (purchase), VAT scheme and Role](images/freelancers-en.png "The freelancers")
 

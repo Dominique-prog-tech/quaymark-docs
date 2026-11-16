@@ -8,7 +8,7 @@ Die Auswahl bei einer Feststellung, für Ihr Büro.
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Kategorien und Orte**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Kategorien und Orte**.
 
 ## Felder und Funktionen
 

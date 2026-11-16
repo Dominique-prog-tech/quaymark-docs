@@ -12,7 +12,7 @@ The home page of your office.
 - **Invoicing** (for those who may view invoices): what is still **to invoice**, as an estimate per file from the open time entries, the rechargeable expenses and the fixed fee of completed files, and this year's **revenue** per principal and per survey type. A click on a file opens its time and expenses.
 - **Awaiting review** (for those who may issue reports): the reports for which a colleague requested a review. A click on the file opens it.
 - **Deadlines** (if the office agreed a deadline in a framework agreement): the open files without a report whose deadline is today or the next working day, or has already passed, with their surveyor. → [Report deadline](dossiers.md#report-deadline)
-- The **menu on the left** shows the screens you have access to. Under **Settings** is what the office administrator sets up: survey types, offices, ports, standard folders, categories and locations.
+- The **menu on the left** shows the screens you have access to. At the bottom are **Administration** (the office's settings) and **Customer portal** (your invoices and tickets at ADM Concept).
 - Top right: the **feedback button**, this **help** and your preferences (language, display).
 - The **version number** at the bottom of the menu opens "What's new".
 
@@ -23,6 +23,7 @@ Sign in with your **user name or email address** and your password.
 - Lost your password or do not have one yet? Your administrator gives you a **reset link**.
 - You also choose the screen **language** here.
 - If two-factor authentication is on, the next screen asks for a code from your app.
+- If you have a passkey, choose **Sign in with a passkey**: your device asks for your fingerprint, face or PIN, without password and code.
 
 After a number of failed attempts your account is locked for a while. Wait a moment and try again.
 
@@ -41,6 +42,26 @@ With two-factor authentication the application asks, when you sign in, for a **c
 - Scan the **QR code** with an authenticator app.
 - Enter the **code** the app shows to confirm.
 - You can switch it off here later; the screen then first asks for your **password**.
+
+## Passkeys
+
+With a passkey you sign in with the **fingerprint, face or PIN** of your device, instead of password and code.
+
+- You can only add a passkey when **two-factor authentication** is on. Open your preferences at the top right and choose two-factor authentication; under **Passkeys** is **Add a passkey**.
+- Give each passkey a name, for example the name of your laptop. You can rename or remove them later.
+- Password and code keep working, for example on another device.
+- If you switch off two-factor authentication, your passkeys are removed too.
+
+## Administration
+
+At the bottom of the menu, **Administration** opens all the office's settings, as tiles in groups: Office, Surveys and reports, Base data, Access and Data.
+
+- You only see the tiles you have the right for.
+- Hover over a tile for a short explanation; a click opens the screen.
+
+## Customer portal
+
+**Customer portal**, just above Sign out, opens your portal at ADM Concept in a new tab: the invoices of your subscription, your tickets and the Quaymark announcements. It is not the same as the portal your clients use.
 
 ## Change password
 

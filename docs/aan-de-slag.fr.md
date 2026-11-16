@@ -12,7 +12,7 @@ La page d'accueil de votre bureau.
 - **Facturation** (pour qui peut voir les factures) : ce qui reste **à facturer**, en estimation par dossier à partir des prestations ouvertes, des frais à refacturer et du forfait des dossiers terminés, et le **chiffre d'affaires** de l'année par donneur d'ordre et par type d'expertise. Un clic sur un dossier ouvre ses temps et frais.
 - **En attente de relecture** (pour qui peut émettre des rapports) : les rapports pour lesquels un collègue a demandé une relecture. Un clic sur le dossier l'ouvre.
 - **Délais** (si le bureau a convenu un délai dans un accord-cadre) : les dossiers ouverts sans rapport dont le délai expire aujourd'hui ou le jour ouvrable suivant, ou est déjà dépassé, avec leur expert. → [Délai jusqu'au rapport](dossiers.md#delai-jusquau-rapport)
-- Le **menu de gauche** affiche les écrans auxquels vous avez accès. Sous **Paramètres** se trouve ce que l'administrateur du bureau configure : types d'expertise, sites, ports, répertoires standard, catégories et emplacements.
+- Le **menu de gauche** affiche les écrans auxquels vous avez accès. En bas se trouvent **Administration** (les paramètres du bureau) et **Portail client** (vos factures et tickets chez ADM Concept).
 - En haut à droite : le bouton de **retour d'information**, cette **aide** et vos préférences (langue, affichage).
 - Le **numéro de version** en bas du menu ouvre « Quoi de neuf ».
 
@@ -23,6 +23,7 @@ Connectez-vous avec votre **nom d'utilisateur ou adresse e-mail** et votre mot d
 - Mot de passe perdu ou pas encore de mot de passe ? Votre administrateur vous fournit un **lien de réinitialisation**.
 - Vous choisissez ici aussi la **langue** de l'écran.
 - Si la double authentification est activée, l'écran suivant demande un code de votre application.
+- Si vous avez une clé d'accès, choisissez **Se connecter avec une clé d'accès** : votre appareil demande votre empreinte digitale, votre visage ou votre code PIN, sans mot de passe ni code.
 
 Après plusieurs tentatives échouées, votre compte est temporairement bloqué. Patientez un moment et réessayez.
 
@@ -41,6 +42,26 @@ Avec la double authentification, l'application demande à la connexion, en plus 
 - Scannez le **code QR** avec une application d'authentification.
 - Saisissez, pour confirmer, le **code** affiché par l'application.
 - Vous pouvez la désactiver ici plus tard ; l'écran demande alors d'abord votre **mot de passe**.
+
+## Clés d'accès
+
+Avec une clé d'accès, vous vous connectez avec **l'empreinte digitale, le visage ou le code PIN** de votre appareil, au lieu du mot de passe et du code.
+
+- Vous ne pouvez ajouter une clé d'accès que si la **double authentification** est active. Ouvrez vos préférences en haut à droite et choisissez la double authentification ; sous **Clés d'accès** se trouve **Ajouter une clé d'accès**.
+- Donnez un nom à chaque clé d'accès, par exemple le nom de votre ordinateur portable. Vous pouvez les renommer ou les supprimer plus tard.
+- Le mot de passe et le code continuent de fonctionner, par exemple sur un autre appareil.
+- Si vous désactivez la double authentification, vos clés d'accès disparaissent aussi.
+
+## Administration
+
+En bas du menu, **Administration** ouvre tous les paramètres du bureau, sous forme de tuiles par groupe : Bureau, Expertises et rapports, Données de base, Accès et Données.
+
+- Vous ne voyez que les tuiles pour lesquelles vous avez le droit.
+- Survolez une tuile pour une courte explication ; un clic ouvre l'écran.
+
+## Portail client
+
+**Portail client**, juste au-dessus de Déconnexion, ouvre dans un nouvel onglet votre portail chez ADM Concept : les factures de votre abonnement, vos tickets et les annonces de Quaymark. C'est autre chose que le portail qu'utilisent vos donneurs d'ordre.
 
 ## Modifier le mot de passe
 

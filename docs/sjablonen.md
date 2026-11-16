@@ -8,7 +8,7 @@ De Word-documenten waarmee Quaymark de rapporten van het bureau opmaakt, met een
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Sjablonen**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Sjablonen**.
 
 ## De lijst
 

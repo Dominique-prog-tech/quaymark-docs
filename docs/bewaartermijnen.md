@@ -8,7 +8,7 @@ Hoe lang het bureau een afgesloten dossier bewaart, en wat er gebeurt als die te
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Bewaartermijnen**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Bewaartermijnen**.
 
 ![Bewaartermijnen met de termijn per land, Termijn verstreken en het Verwijderregister](images/bewaartermijnen.png "Bewaartermijnen")
 

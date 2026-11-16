@@ -8,7 +8,7 @@ De soorten survey die het bureau aanbiedt. Een nieuw bureau start met een catalo
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Soorten survey**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Soorten survey**.
 
 ## De lijst
 

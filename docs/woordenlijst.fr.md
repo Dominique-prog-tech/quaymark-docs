@@ -8,7 +8,7 @@ Les termes techniques du bureau dans les quatre langues, par exemple *luikhoofd*
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres**, puis sur **Glossaire**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Glossaire**.
 
 ## Champs et fonctions
 

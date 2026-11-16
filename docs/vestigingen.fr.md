@@ -8,7 +8,7 @@ Les bureaux du cabinet. Chaque dossier appartient à un site.
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Sites**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Sites**.
 
 ## Champs et fonctions
 

@@ -8,7 +8,7 @@ Die Häfen, aus denen eine Akte wählt. Ein neues Büro startet mit den großen 
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Häfen**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Häfen**.
 
 ## Felder und Funktionen
 

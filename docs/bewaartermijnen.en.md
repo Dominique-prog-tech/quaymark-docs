@@ -8,7 +8,7 @@ How long the office keeps a closed file, and what happens once that period has p
 
 ## Opening the screen
 
-Click **Settings** in the menu on the left, then **Retention periods**.
+At the bottom of the menu, click **Administration**, then the **Retention periods** tile.
 
 ![Retention periods with the period per country, Period passed and the Deletion register](images/bewaartermijnen-en.png "Retention periods")
 

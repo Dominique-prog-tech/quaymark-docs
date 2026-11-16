@@ -8,7 +8,7 @@ Die Word-Dokumente, mit denen Quaymark die Berichte des Büros gestaltet, mit ei
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Vorlagen**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Vorlagen**.
 
 ## Die Liste
 

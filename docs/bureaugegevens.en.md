@@ -8,7 +8,7 @@ Your own company details. They appear on every invoice and credit note; the name
 
 ## Opening the screen
 
-Click **Company details** under **Settings** in the menu on the left. Only the office's administrator sees this screen.
+At the bottom of the menu, click **Administration**, then the **Company details** tile. Only the office's administrator sees this screen.
 
 ![Company details with Legal name, VAT number and IBAN](images/bureaugegevens-en.png "The company details")
 

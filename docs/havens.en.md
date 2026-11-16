@@ -8,7 +8,7 @@ The ports a file chooses from. A new office starts with the main ports of Belgiu
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Ports**.
+At the bottom of the menu, click **Administration**, then the **Ports** tile.
 
 ## Fields and functions
 

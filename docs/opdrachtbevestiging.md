@@ -8,7 +8,7 @@ Met een opdrachtbevestiging legt u vast dat de opdrachtgever de opdracht, het ta
 
 ## De algemene voorwaarden instellen
 
-Klik in het menu op **Instellingen**, **Algemene voorwaarden**. Dit scherm vraagt het recht om de algemene voorwaarden te beheren (standaard enkel de beheerder).
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Algemene voorwaarden**. Dit scherm vraagt het recht om de algemene voorwaarden te beheren (standaard enkel de beheerder).
 
 1. Klik op **Nieuwe versie**. De tekst van de geldende versie staat al klaar, in vier talen.
 2. Pas de tekst aan. De Nederlandse tekst is verplicht; een taal die u leeg laat, toont de Nederlandse tekst.

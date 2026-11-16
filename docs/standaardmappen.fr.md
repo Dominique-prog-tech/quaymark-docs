@@ -8,7 +8,7 @@ Les répertoires que reçoit chaque nouveau dossier et chaque nouveau navire de 
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Répertoires standard**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Répertoires standard**.
 
 ## Champs et fonctions
 

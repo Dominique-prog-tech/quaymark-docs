@@ -10,7 +10,7 @@ Was das Büro dem **Auftraggeber** in Rechnung stellt, ändert sich nicht: Das b
 
 ## Die Seite öffnen
 
-Klicken Sie im Menü links unter **Einstellungen** auf **Freiberufler**. Nur der Administrator des Büros sieht diese Seite.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Freiberufler**. Nur der Administrator des Büros sieht diese Seite.
 
 ![Freiberufler mit Code, Firmenname, Stundensatz (Einkauf), Umsatzsteuerregelung und Rolle](images/freelancers-de.png "Die Freiberufler")
 

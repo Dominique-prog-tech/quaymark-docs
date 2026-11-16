@@ -8,7 +8,7 @@ Les données de votre bureau. Elles figurent sur chaque facture et note de créd
 
 ## Ouvrir l'écran
 
-Cliquez sur **Données du bureau** sous **Paramètres** dans le menu de gauche. Seul l'administrateur du bureau voit cet écran.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Données du bureau**. Seul l'administrateur du bureau voit cet écran.
 
 ![Données du bureau avec Dénomination légale, Numéro de TVA et IBAN](images/bureaugegevens-fr.png "Les données du bureau")
 

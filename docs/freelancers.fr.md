@@ -10,7 +10,7 @@ Ce que le bureau facture au **donneur d'ordre** ne change pas : c'est toujours l
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, sous **Paramètres**, cliquez sur **Freelances**. Seul l'administrateur du bureau voit cet écran.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Freelances**. Seul l'administrateur du bureau voit cet écran.
 
 ![Freelances avec Code, Nom de l'entreprise, Tarif horaire (achat), Régime de TVA et Rôle](images/freelancers-fr.png "Les freelances")
 

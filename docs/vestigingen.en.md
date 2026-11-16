@@ -8,7 +8,7 @@ The offices of the survey firm. Every file belongs to one office.
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Offices**.
+At the bottom of the menu, click **Administration**, then the **Offices** tile.
 
 ## Fields and functions
 

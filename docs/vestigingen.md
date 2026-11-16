@@ -8,7 +8,7 @@ De kantoren van het bureau. Elk dossier hoort bij één vestiging.
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Vestigingen**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Vestigingen**.
 
 ## Velden en functies
 

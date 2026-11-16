@@ -8,7 +8,7 @@ Mit einer Auftragsbestätigung halten Sie fest, dass der Auftraggeber den Auftra
 
 ## Die Geschäftsbedingungen einrichten
 
-Klicken Sie im Menü auf **Einstellungen**, **Geschäftsbedingungen**. Diese Seite verlangt das Recht, die Allgemeinen Geschäftsbedingungen zu verwalten (standardmäßig nur der Administrator).
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Geschäftsbedingungen**. Diese Seite verlangt das Recht, die Allgemeinen Geschäftsbedingungen zu verwalten (standardmäßig nur der Administrator).
 
 1. Klicken Sie auf **Neue Version**. Der Text der gültigen Version steht bereits da, in vier Sprachen.
 2. Passen Sie den Text an. Der niederländische Text ist Pflicht; eine leer gelassene Sprache zeigt den niederländischen Text.

@@ -8,7 +8,7 @@ The Word documents Quaymark uses to lay out the office's reports, with one docum
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Templates**.
+At the bottom of the menu, click **Administration**, then the **Templates** tile.
 
 ## The list
 

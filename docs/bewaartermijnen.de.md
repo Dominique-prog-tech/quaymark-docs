@@ -8,7 +8,7 @@ Wie lange das Büro eine abgeschlossene Akte aufbewahrt, und was nach Ablauf die
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Aufbewahrungsfristen**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Aufbewahrungsfristen**.
 
 ![Aufbewahrungsfristen mit der Frist pro Land, Frist abgelaufen und dem Löschregister](images/bewaartermijnen-de.png "Aufbewahrungsfristen")
 

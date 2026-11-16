@@ -8,7 +8,7 @@ De mappen die elk nieuw dossier en elk nieuw schip van uw bureau krijgt, onder h
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Standaardmappen**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Standaardmappen**.
 
 ## Velden en functies
 

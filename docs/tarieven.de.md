@@ -8,7 +8,7 @@ Die Tarife, mit denen Quaymark eine Rechnung vorschlägt. Beträge ohne MwSt., i
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links unter **Einstellungen** auf **Tarife**. Nur der Administrator des Büros sieht diesen Bildschirm.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Tarife**. Nur der Administrator des Büros sieht diesen Bildschirm.
 
 ![Tarife mit Pro Besichtigungsart, Pro Sachverständigen und Zuschläge](images/tarieven-de.png "Die Tarife")
 

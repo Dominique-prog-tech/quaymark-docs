@@ -8,7 +8,7 @@ The folders every new file and every new vessel of your office receives, under t
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Standard folders**.
+At the bottom of the menu, click **Administration**, then the **Standard folders** tile.
 
 ## Fields and functions
 

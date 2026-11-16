@@ -8,7 +8,7 @@ Les documents Word avec lesquels Quaymark met en page les rapports du bureau, av
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Modèles**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Modèles**.
 
 ## La liste
 

@@ -8,7 +8,7 @@ Les tarifs avec lesquels Quaymark propose une facture. Montants hors TVA, en eur
 
 ## Ouvrir l'écran
 
-Cliquez sur **Tarifs** sous **Paramètres** dans le menu de gauche. Seul l'administrateur du bureau voit cet écran.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Tarifs**. Seul l'administrateur du bureau voit cet écran.
 
 ![Tarifs avec Par type d'expertise, Par expert et Suppléments](images/tarieven-fr.png "Les tarifs")
 

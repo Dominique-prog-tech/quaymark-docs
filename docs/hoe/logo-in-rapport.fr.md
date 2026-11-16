@@ -4,7 +4,7 @@ description: "Mettre votre logo et votre charte graphique dans le modèle de rap
 
 # Comment mettre notre logo dans le rapport ?
 
-1. **Ouvrez les modèles** avec **Paramètres** et **Modèles**, et ouvrez le modèle **général**. Il vaut pour chaque type d'expertise. → [La liste](../sjablonen.md#la-liste)
+1. **Ouvrez les modèles** avec **Administration** et la tuile **Modèles**, et ouvrez le modèle **général**. Il vaut pour chaque type d'expertise. → [La liste](../sjablonen.md#la-liste)
 2. **Choisissez l'onglet d'une langue** et cliquez sur **Modifier le document**. → [Modèle de rapport](../sjablonen.md#modele-de-rapport)
 3. **Placez votre logo et votre charte graphique** dans le document Word, et enregistrez avec **Enregistrer comme nouvelle version**.
 4. **Répétez l'opération pour chaque langue** dans laquelle vous rédigez des rapports. La colonne **Documents** montre la version actuelle par langue.

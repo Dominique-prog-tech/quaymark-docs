@@ -8,7 +8,7 @@ The choices for a finding, for your office.
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Categories and locations**.
+At the bottom of the menu, click **Administration**, then the **Categories and locations** tile.
 
 ## Fields and functions
 

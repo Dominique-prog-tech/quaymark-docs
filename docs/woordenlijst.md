@@ -8,7 +8,7 @@ De vaktermen van het bureau in de vier talen, bijvoorbeeld *luikhoofd*, *hiloire
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Woordenlijst**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Woordenlijst**.
 
 ## Velden en functies
 

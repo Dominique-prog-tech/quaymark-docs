@@ -8,7 +8,7 @@ De tarieven waarmee Quaymark een factuur voorstelt. Bedragen zonder btw, in euro
 
 ## Het scherm openen
 
-Klik in het menu links onder **Instellingen** op **Tarieven**. Enkel de beheerder van het bureau ziet dit scherm.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Tarieven**. Enkel de beheerder van het bureau ziet dit scherm.
 
 ![Tarieven met Per soort survey, Per surveyor en Toeslagen](images/tarieven.png "De tarieven")
 

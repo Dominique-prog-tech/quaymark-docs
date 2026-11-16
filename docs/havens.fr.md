@@ -8,7 +8,7 @@ Les ports parmi lesquels un dossier choisit. Un nouveau bureau démarre avec les
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Ports**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Ports**.
 
 ## Champs et fonctions
 

@@ -8,7 +8,7 @@ De keuzes bij een vaststelling, voor uw bureau.
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Categorieën en plaatsen**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Categorieën en plaatsen**.
 
 ## Velden en functies
 

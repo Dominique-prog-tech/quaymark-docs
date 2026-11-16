@@ -12,7 +12,7 @@ De startpagina van uw bureau.
 - **Facturatie** (wie facturen mag bekijken): wat er nog **te factureren** is, als raming per dossier uit de open prestaties, de door te rekenen kosten en het forfait van afgewerkte dossiers, en de **omzet** van dit jaar per opdrachtgever en per soort survey. Een klik op een dossier opent zijn tijd en kosten.
 - **Wacht op review** (wie rapporten mag uitgeven): de rapporten waarvoor een collega een review vroeg. Een klik op het dossier opent het.
 - **Termijnen** (als het bureau in een raamafspraak een termijn afsprak): de open dossiers zonder rapport waarvan de termijn vandaag of de volgende werkdag vervalt, of al voorbij is, met hun surveyor. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
-- Het **menu links** toont de schermen waartoe u toegang hebt. Onder **Instellingen** staat wat de beheerder van het bureau instelt: soorten survey, vestigingen, havens, standaardmappen, categorieën en plaatsen.
+- Het **menu links** toont de schermen waartoe u toegang hebt. Onderaan staan **Platformbeheer** (de instellingen van het bureau) en **Klantenportaal** (uw facturen en tickets bij ADM Concept).
 - Rechtsboven: de **feedbackknop**, deze **hulp** en uw voorkeuren (taal, weergave).
 - Het **versienummer** onderaan het menu opent "Wat is nieuw".
 
@@ -23,6 +23,7 @@ Meld u aan met uw **gebruikersnaam of e-mailadres** en uw wachtwoord.
 - Wachtwoord kwijt of nog geen wachtwoord? Uw beheerder bezorgt u een **herstel-link**.
 - U kiest hier ook de **taal** van het scherm.
 - Staat tweestapsverificatie aan, dan vraagt het volgende scherm een code uit uw app.
+- Hebt u een passkey, kies dan **Aanmelden met een passkey**: uw toestel vraagt uw vingerafdruk, gezicht of pincode, zonder wachtwoord en code.
 
 Na een aantal mislukte pogingen wordt uw account tijdelijk geblokkeerd. Wacht even en probeer opnieuw.
 
@@ -41,6 +42,26 @@ Met tweestapsverificatie vraagt de toepassing bij het aanmelden naast uw wachtwo
 - Scan de **QR-code** met een authenticator-app.
 - Vul ter bevestiging de **code** in die de app toont.
 - U kunt het hier later weer uitschakelen; daarvoor vraagt het scherm eerst uw **wachtwoord**.
+
+## Passkeys
+
+Met een passkey meldt u zich aan met de **vingerafdruk, het gezicht of de pincode** van uw toestel, in plaats van wachtwoord en code.
+
+- Een passkey toevoegen kan pas als **tweestapsverificatie** aan staat. Open uw voorkeuren rechtsboven en kies tweestapsverificatie; onder **Passkeys** staat **Passkey toevoegen**.
+- Geef elke passkey een naam, bijvoorbeeld de naam van uw laptop. U kunt ze later hernoemen of verwijderen.
+- Wachtwoord en code blijven werken, bijvoorbeeld op een ander toestel.
+- Schakelt u tweestapsverificatie uit, dan verdwijnen ook uw passkeys.
+
+## Platformbeheer
+
+Onderaan het menu opent **Platformbeheer** alle instellingen van het bureau, als tegels in groepen: Bureau, Surveys en rapporten, Basisgegevens, Toegang en Gegevens.
+
+- U ziet enkel de tegels waarvoor u het recht hebt.
+- Ga met de muis over een tegel voor een korte uitleg; een klik opent het scherm.
+
+## Klantenportaal
+
+**Klantenportaal**, pal boven Afmelden, opent in een nieuw tabblad uw portaal bij ADM Concept: de facturen van uw abonnement, uw tickets en de aankondigingen van Quaymark. Het is iets anders dan het portaal dat uw opdrachtgevers gebruiken.
 
 ## Wachtwoord wijzigen
 

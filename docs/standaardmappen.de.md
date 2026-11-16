@@ -8,7 +8,7 @@ Die Ordner, die jede neue Akte und jedes neue Schiff Ihres Büros unter der Regi
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Standardordner**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Standardordner**.
 
 ## Felder und Funktionen
 

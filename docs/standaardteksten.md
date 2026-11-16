@@ -8,7 +8,7 @@ Vaste teksten die een surveyor op het tabblad **Rapport** van een dossier in een
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Standaardteksten**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Standaardteksten**.
 
 ## Velden en functies
 

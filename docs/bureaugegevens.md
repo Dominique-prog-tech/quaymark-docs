@@ -8,7 +8,7 @@ De gegevens van uw bureau zelf. Ze staan op elke factuur en creditnota; de naam 
 
 ## Het scherm openen
 
-Klik in het menu links onder **Instellingen** op **Bureaugegevens**. Enkel de beheerder van het bureau ziet dit scherm.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Bureaugegevens**. Enkel de beheerder van het bureau ziet dit scherm.
 
 ![Bureaugegevens met Wettelijke naam, Btw-nummer en IBAN](images/bureaugegevens.png "De bureaugegevens")
 

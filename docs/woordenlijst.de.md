@@ -8,7 +8,7 @@ Die Fachbegriffe des Büros in den vier Sprachen, zum Beispiel *luikhoofd*, *hil
 
 ## Den Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Glossar**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Glossar**.
 
 ## Felder und Funktionen
 

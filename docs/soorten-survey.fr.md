@@ -8,7 +8,7 @@ Les types d'expertise proposés par le bureau. Un nouveau bureau démarre avec u
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Types d'expertise**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Types d'expertise**.
 
 ## La liste
 

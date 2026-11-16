@@ -8,7 +8,7 @@ The survey types the office offers. A new office starts with a catalogue that yo
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Survey types**.
+At the bottom of the menu, click **Administration**, then the **Survey types** tile.
 
 ## The list
 

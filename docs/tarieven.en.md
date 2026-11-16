@@ -8,7 +8,7 @@ The rates Quaymark uses to propose an invoice. Amounts excluding VAT, in euros. 
 
 ## Opening the screen
 
-Click **Rates** under **Settings** in the menu on the left. Only the office administrator sees this screen.
+At the bottom of the menu, click **Administration**, then the **Rates** tile. Only the office administrator sees this screen.
 
 ![Rates with Per survey type, Per surveyor and Surcharges](images/tarieven-en.png "The rates")
 

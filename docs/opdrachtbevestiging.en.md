@@ -8,7 +8,7 @@ With an order confirmation you record that the principal accepts the assignment,
 
 ## Setting up the terms and conditions
 
-In the menu, click **Settings**, **Terms and conditions**. This screen needs the right to manage the general terms and conditions (by default only the administrator).
+At the bottom of the menu, click **Administration**, then the **Terms and conditions** tile. This screen needs the right to manage the general terms and conditions (by default only the administrator).
 
 1. Click **New version**. The text of the current version is already filled in, in four languages.
 2. Adjust the text. The Dutch text is required; a language left empty shows the Dutch text.

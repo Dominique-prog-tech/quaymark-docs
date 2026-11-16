@@ -8,7 +8,7 @@ The office's technical terms in the four languages, for example *luikhoofd*, *hi
 
 ## Opening the screen
 
-In the menu on the left, click **Settings** and then **Glossary**.
+At the bottom of the menu, click **Administration**, then the **Glossary** tile.
 
 ## Fields and functions
 

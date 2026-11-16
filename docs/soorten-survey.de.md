@@ -8,7 +8,7 @@ Die Besichtigungsarten, die das Büro anbietet. Ein neues Büro startet mit eine
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Besichtigungsarten**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Besichtigungsarten**.
 
 ## Die Liste
 

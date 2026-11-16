@@ -8,7 +8,7 @@ Combien de temps le bureau conserve un dossier clôturé, et ce qui se passe une
 
 ## Ouvrir l'écran
 
-Cliquez dans le menu de gauche sur **Paramètres**, puis sur **Délais de conservation**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Délais de conservation**.
 
 ![Délais de conservation avec le délai par pays, Délai écoulé et le Registre des suppressions](images/bewaartermijnen-fr.png "Délais de conservation")
 

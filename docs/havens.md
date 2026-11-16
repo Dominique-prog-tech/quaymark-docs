@@ -8,7 +8,7 @@ De havens waaruit een dossier kiest. Een nieuw bureau start met de grote havens 
 
 ## Het scherm openen
 
-Klik in het menu links op **Instellingen** en dan op **Havens**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Havens**.
 
 ## Velden en functies
 

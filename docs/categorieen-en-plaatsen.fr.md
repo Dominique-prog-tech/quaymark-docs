@@ -8,7 +8,7 @@ Les choix d'une constatation, pour votre bureau.
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Catégories et emplacements**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Catégories et lieux**.
 
 ## Champs et fonctions
 

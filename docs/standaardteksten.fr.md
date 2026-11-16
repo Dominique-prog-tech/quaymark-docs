@@ -8,7 +8,7 @@ Des textes fixes que l'expert insère dans une rubrique depuis l'onglet **Rappor
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, cliquez sur **Paramètres** puis sur **Textes standard**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Textes standard**.
 
 ## Champs et fonctions
 

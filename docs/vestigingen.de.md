@@ -8,7 +8,7 @@ Die Niederlassungen des Büros. Jede Akte gehört zu einer Niederlassung.
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Einstellungen** und dann auf **Niederlassungen**.
+Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Niederlassungen**.
 
 ## Felder und Funktionen
 

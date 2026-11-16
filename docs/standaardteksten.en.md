@@ -8,7 +8,7 @@ Fixed texts that a surveyor inserts into a section from the **Report** tab of a 
 
 ## Opening the screen
 
-In the menu on the left, click **Settings**, then **Standard texts**.
+At the bottom of the menu, click **Administration**, then the **Standard texts** tile.
 
 ## Fields and functions
 

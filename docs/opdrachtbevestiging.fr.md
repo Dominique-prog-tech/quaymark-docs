@@ -8,7 +8,7 @@ Avec une confirmation de mission, vous établissez que le donneur d'ordre accept
 
 ## Définir les conditions générales
 
-Dans le menu, cliquez sur **Paramètres**, **Conditions générales**. Cet écran demande le droit de gérer les conditions générales (par défaut, seul l'administrateur).
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Conditions générales**. Cet écran demande le droit de gérer les conditions générales (par défaut, seul l'administrateur).
 
 1. Cliquez sur **Nouvelle version**. Le texte de la version en vigueur est déjà prêt, en quatre langues.
 2. Adaptez le texte. Le texte néerlandais est obligatoire ; une langue laissée vide affiche le texte néerlandais.

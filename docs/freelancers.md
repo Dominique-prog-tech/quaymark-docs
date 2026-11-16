@@ -10,7 +10,7 @@ Wat het bureau de **opdrachtgever** factureert, verandert niet: dat blijft het t
 
 ## Het scherm openen
 
-Klik in het menu links onder **Instellingen** op **Freelancers**. Enkel de beheerder van het bureau ziet dit scherm.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Freelancers**. Enkel de beheerder van het bureau ziet dit scherm.
 
 ![Freelancers met Code, Bedrijfsnaam, Uurtarief (inkoop), Btw-regeling en Rol](images/freelancers.png "De freelancers")
 
