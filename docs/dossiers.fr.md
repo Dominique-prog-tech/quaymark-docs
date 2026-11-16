@@ -120,7 +120,7 @@ Ensuite, chaque partie d'un participant présent se prononce : **d'accord**, **d
 - **Envoyer le lien** envoie un lien à la partie (via ADM One). Elle lit le constat contradictoire, choisit sa position et confirme avec son nom et une case à cocher. La réponse apparaît d'elle-même dans l'onglet et dans le journal.
 - **Enregistrer la réponse** consigne une réponse que le bureau a reçue autrement, par exemple sur la version papier signée. Ajoutez-la en pièce jointe.
 
-Si vous modifiez l'expertise après l'enregistrement, enregistrez une nouvelle version. Une réponse appartient à la version que la partie a vue : sur une nouvelle version, elle répond à nouveau. L'onglet le signale tant que l'expertise diffère de la dernière version enregistrée, et les positions suivent les parties de cette version. Si une constatation partagée a été rectifiée, **Enregistrer** refuse jusqu'à ce que vous enregistriez la nouvelle version sous **Modifier** ; elle y est déjà cochée.
+Si vous modifiez l'expertise après l'enregistrement, enregistrez une nouvelle version. Une réponse appartient à la version que la partie a vue : sur une nouvelle version, elle répond à nouveau. L'onglet le signale tant que l'expertise diffère de la dernière version enregistrée, et les positions suivent les parties de cette version. Si une constatation partagée a été rectifiée, **Enregistrer** refuse jusqu'à ce que vous enregistriez la nouvelle version sous **Modifier** ; elle y est déjà cochée. Un dossier clôturé ou annulé ne reçoit plus de nouvelle expertise contradictoire et aucune n'est modifiée ; enregistrer, envoyer des liens et enregistrer des positions reste possible.
 
 ### Signatures
 

@@ -120,7 +120,7 @@ Danach äußert sich jede Partei eines anwesenden Teilnehmers: **einverstanden**
 - **Link senden** schickt der Partei einen Link (über ADM One). Sie liest die gemeinsame Feststellung, wählt ihren Standpunkt und bestätigt mit ihrem Namen und einem Häkchen. Die Antwort erscheint von selbst in der Registerkarte und im Journal.
 - **Antwort erfassen** hält eine Antwort fest, die das Büro auf anderem Weg erhielt, zum Beispiel auf der unterschriebenen Papierversion. Fügen Sie sie als Anhang hinzu.
 
-Ändern Sie die Besichtigung nach dem Festhalten, halten Sie eine neue Version fest. Eine Antwort gehört zu der Version, die die Partei gesehen hat: Auf eine neue Version antwortet sie erneut. Der Reiter meldet es, solange die Besichtigung von der zuletzt festgehaltenen Version abweicht, und die Standpunkte folgen den Parteien dieser Version. Wurde eine geteilte Feststellung berichtigt, verweigert **Festhalten**, bis Sie unter **Bearbeiten** die neue Fassung speichern; sie ist dort schon angehakt.
+Ändern Sie die Besichtigung nach dem Festhalten, halten Sie eine neue Version fest. Eine Antwort gehört zu der Version, die die Partei gesehen hat: Auf eine neue Version antwortet sie erneut. Der Reiter meldet es, solange die Besichtigung von der zuletzt festgehaltenen Version abweicht, und die Standpunkte folgen den Parteien dieser Version. Wurde eine geteilte Feststellung berichtigt, verweigert **Festhalten**, bis Sie unter **Bearbeiten** die neue Fassung speichern; sie ist dort schon angehakt. Eine abgeschlossene oder stornierte Akte erhält keine neue gemeinsame Besichtigung, und keine wird geändert; Festhalten, Links senden und Standpunkte erfassen bleibt möglich.
 
 ### Unterschriften
 

@@ -120,7 +120,7 @@ Then each party of a participant who attended gives its position: **agreed**, **
 - **Send link** sends the party a link (via ADM One). It reads the joint survey statement, chooses its position and confirms with its name and a tick box. The answer appears on the tab and in the log by itself.
 - **Record answer** records an answer the office received otherwise, for example on the signed paper version. Add it as an attachment.
 
-If you change the survey after recording it, record a new version. An answer belongs to the version the party saw: for a new version it answers again. The tab says so while the survey differs from the last recorded version, and the positions follow the parties of that version. If a shared finding was corrected, **Record** refuses until you save the new version under **Edit**; it is already ticked there.
+If you change the survey after recording it, record a new version. An answer belongs to the version the party saw: for a new version it answers again. The tab says so while the survey differs from the last recorded version, and the positions follow the parties of that version. If a shared finding was corrected, **Record** refuses until you save the new version under **Edit**; it is already ticked there. A closed or cancelled file gets no new joint survey and none is changed; recording, sending links and registering positions remain possible.
 
 ### Signatures
 
