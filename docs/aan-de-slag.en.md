@@ -56,3 +56,23 @@ You arrived here through the **reset link** your administrator created for you.
 - Choose a **new password** and enter it a second time to confirm.
 - Then sign in with that password.
 - The link no longer works? It is only valid for a limited time: ask your administrator for a new one.
+
+## Trial version
+
+If you requested a trial version on quaymark.eu, you get your own environment in the name of your office, filled with fictitious sample data: relations, ships and files with findings and photos.
+
+- You sign in with the details from the **welcome email** and choose your own password straight away.
+- At your first sign-in you become the **surveyor** of the sample files: you see them in your planning, in the deadlines and in the field app.
+- The top of the screen shows until when the trial runs.
+- In a trial version **nothing goes out**: no email, Peppol, signing or client portal invitation. You can prepare and view everything, including the reports as PDF.
+- When it ends, the environment becomes **read-only**. If you become a customer, ADM Concept sets up your environment again, without the sample data. Your account stays.
+
+## A restricted environment
+
+ADM One can restrict your environment. Quaymark respects it and tells you why, when you save or send.
+
+- **Read-only**: you can view everything, but save nothing.
+- **No new work**: you finish ongoing files (findings, reports, time entries), but a new relation, a new file, a quote or an invoice is not possible for now.
+- **Not yet released**: everything works, but nothing goes out until ADM Concept releases the environment.
+
+Questions? Contact ADM Concept.

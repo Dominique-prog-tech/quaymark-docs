@@ -56,3 +56,23 @@ U kwam hier via de **herstel-link** die uw beheerder voor u maakte.
 - Kies een **nieuw wachtwoord** en vul het ter bevestiging een tweede keer in.
 - Daarna meldt u zich aan met dat wachtwoord.
 - Werkt de link niet meer? Hij is maar een beperkte tijd geldig: vraag uw beheerder een nieuwe.
+
+## Proefversie
+
+Vroeg u een proefversie aan op quaymark.eu, dan krijgt u een eigen omgeving op naam van uw bureau, gevuld met verzonnen voorbeeldgegevens: relaties, schepen en dossiers met vaststellingen en foto's.
+
+- U meldt zich aan met de gegevens uit de **welkomstmail** en kiest meteen een eigen wachtwoord.
+- Bij uw eerste aanmelding wordt u de **surveyor** van de voorbeelddossiers: u ziet ze in uw planning, bij de termijnen en in de veldapp.
+- Bovenaan staat tot wanneer de proef loopt.
+- In een proefversie **vertrekt er niets naar buiten**: geen mail, Peppol, ondertekening of uitnodiging voor het klantenportaal. Alles voorbereiden en bekijken kan wel, ook de rapporten als PDF.
+- Na afloop staat de omgeving op **alleen lezen**. Wordt u klant, dan zet ADM Concept uw omgeving opnieuw op, zonder de voorbeeldgegevens. Uw account blijft.
+
+## Een beperkte omgeving
+
+ADM One kan uw omgeving beperken. Quaymark houdt zich daaraan en zegt waarom, bij het bewaren of het versturen.
+
+- **Alleen lezen**: u kunt alles bekijken, maar niets bewaren.
+- **Geen nieuw werk**: lopende dossiers werkt u af (vaststellingen, rapporten, prestaties), maar een nieuwe relatie, een nieuw dossier, een offerte of een factuur kan even niet.
+- **Nog niet vrijgegeven**: alles werkt, maar er vertrekt niets naar buiten tot ADM Concept de omgeving vrijgeeft.
+
+Vragen? Neem contact op met ADM Concept.

@@ -56,3 +56,23 @@ Vous êtes arrivé ici via le **lien de réinitialisation** que votre administra
 - Choisissez un **nouveau mot de passe** et saisissez-le une seconde fois pour confirmer.
 - Connectez-vous ensuite avec ce mot de passe.
 - Le lien ne fonctionne plus ? Il n'est valable qu'un temps limité : demandez-en un nouveau à votre administrateur.
+
+## Version d'essai
+
+Si vous avez demandé une version d'essai sur quaymark.eu, vous recevez votre propre environnement au nom de votre bureau, rempli de données d'exemple fictives : relations, navires et dossiers avec constats et photos.
+
+- Vous vous connectez avec les données de l'**e-mail de bienvenue** et choisissez aussitôt votre propre mot de passe.
+- À votre première connexion, vous devenez le **surveyor** des dossiers d'exemple : vous les voyez dans votre planning, dans les délais et dans l'application de terrain.
+- En haut figure la date de fin de l'essai.
+- Dans une version d'essai, **rien ne part vers l'extérieur** : pas d'e-mail, de Peppol, de signature ni d'invitation au portail client. Vous pouvez tout préparer et consulter, y compris les rapports en PDF.
+- À la fin, l'environnement passe en **lecture seule**. Si vous devenez client, ADM Concept réinstalle votre environnement, sans les données d'exemple. Votre compte est conservé.
+
+## Un environnement restreint
+
+ADM One peut restreindre votre environnement. Quaymark le respecte et vous dit pourquoi, à l'enregistrement ou à l'envoi.
+
+- **Lecture seule** : vous pouvez tout consulter, mais rien enregistrer.
+- **Pas de nouveau travail** : vous terminez les dossiers en cours (constats, rapports, prestations), mais une nouvelle relation, un nouveau dossier, une offre ou une facture n'est pas possible pour l'instant.
+- **Pas encore libéré** : tout fonctionne, mais rien ne part vers l'extérieur tant qu'ADM Concept n'a pas libéré l'environnement.
+
+Des questions ? Contactez ADM Concept.

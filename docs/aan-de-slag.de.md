@@ -56,3 +56,23 @@ Sie sind über den **Link zum Zurücksetzen** hierhergekommen, den Ihr Administr
 - Wählen Sie ein **neues Passwort** und geben Sie es zur Bestätigung ein zweites Mal ein.
 - Danach melden Sie sich mit diesem Passwort an.
 - Der Link funktioniert nicht mehr? Er gilt nur eine begrenzte Zeit: bitten Sie Ihren Administrator um einen neuen.
+
+## Testversion
+
+Haben Sie auf quaymark.eu eine Testversion angefordert, erhalten Sie eine eigene Umgebung auf den Namen Ihres Büros, gefüllt mit erfundenen Beispieldaten: Beziehungen, Schiffe und Akten mit Feststellungen und Fotos.
+
+- Sie melden sich mit den Daten aus der **Willkommens-E-Mail** an und wählen sofort ein eigenes Passwort.
+- Bei Ihrer ersten Anmeldung werden Sie der **Surveyor** der Beispielakten: Sie sehen sie in Ihrer Planung, bei den Fristen und in der Außendienst-App.
+- Oben steht, bis wann die Testversion läuft.
+- In einer Testversion **geht nichts nach außen**: keine E-Mail, kein Peppol, keine Signatur und keine Einladung zum Kundenportal. Vorbereiten und ansehen können Sie alles, auch die Berichte als PDF.
+- Danach ist die Umgebung **schreibgeschützt**. Werden Sie Kunde, richtet ADM Concept Ihre Umgebung neu ein, ohne die Beispieldaten. Ihr Konto bleibt.
+
+## Eine eingeschränkte Umgebung
+
+ADM One kann Ihre Umgebung einschränken. Quaymark hält sich daran und sagt Ihnen beim Speichern oder Senden, warum.
+
+- **Nur lesen**: Sie können alles ansehen, aber nichts speichern.
+- **Keine neue Arbeit**: Laufende Akten schließen Sie ab (Feststellungen, Berichte, Leistungen), aber eine neue Beziehung, eine neue Akte, ein Angebot oder eine Rechnung ist vorerst nicht möglich.
+- **Noch nicht freigegeben**: Alles funktioniert, aber es geht nichts nach außen, bis ADM Concept die Umgebung freigibt.
+
+Fragen? Wenden Sie sich an ADM Concept.
