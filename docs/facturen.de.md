@@ -83,6 +83,13 @@ Einen Fehler auf einer ausgestellten Rechnung korrigieren Sie mit **Gutschrift e
 
 **Neue Rechnung** in der Liste erstellt eine Rechnung ohne Zeit oder Kosten, zum Beispiel für eine Anzahlung.
 
+## Abzurechnen
+
+Die Arbeit jeder Akte, die noch auf keiner Rechnung steht: die offenen Leistungen, die weiterzuberechnenden Kosten und die Pauschale abgeschlossener Akten, als Schätzung ohne MwSt., in der Währung der Akte. Öffnen Sie die Liste mit **Abzurechnen** auf dieser Seite oder mit der Karte **Nicht abgerechnete Arbeit** auf der Übersicht.
+
+- Die größte Schätzung steht oben.
+- Ein Klick auf eine Zeile öffnet die Registerkarte **Zeit und Kosten** der Akte: Dort schlagen Sie die Rechnung vor. → [Eine Rechnung aus einer Akte vorschlagen](#eine-rechnung-aus-einer-akte-vorschlagen)
+
 ## Siehe auch
 
 - [Firmendaten](bureaugegevens.md)

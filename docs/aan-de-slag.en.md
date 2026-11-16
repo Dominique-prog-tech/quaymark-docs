@@ -8,10 +8,14 @@ The **Dashboard** is the home page of your office: the first item in the menu.
 
 ![The start screen with the Files by status tiles](images/startscherm-en.png "The start screen")
 
-- **Files by status** counts the open files: new, scheduled, in progress and reporting. A click on a tile opens the list of files.
-- **Invoicing** (for those who may view invoices): what is still **to invoice**, as an estimate per file from the open time entries, the rechargeable expenses and the fixed fee of completed files, and this year's **revenue** per principal and per survey type. A click on a file opens its time and expenses.
-- **Awaiting review** (for those who may issue reports): the reports for which a colleague requested a review. A click on the file opens it.
-- **Deadlines** (if the office agreed a deadline in a framework agreement): the open files without a report whose deadline is today or the next working day, or has already passed, with their surveyor. → [Report deadline](dossiers.md#report-deadline)
+- **At the top**, the open files by status: new, scheduled, in progress and reporting. A click on a tile opens the list with that status. Those who may view invoices also see what is still **to invoice** (an estimate) and this year's **revenue**.
+- **Needs attention**: cards with the first lines and, at the bottom, a link to the full list.
+    - **Deadlines** (if the office agreed a deadline in a framework agreement): the open files without a report whose deadline falls due today or the next working day, or has passed. → [Report deadline](dossiers.md#report-deadline)
+    - **Requests to decide**: assignments from the principal portal or the web form. → [Requests](aanvragen.md)
+    - **Awaiting review** (for those who may issue reports): the reports for which a colleague requested a review.
+    - **Uninvoiced work** (for those who may view invoices): the largest estimates first. → [To invoice](facturen.md#to-invoice)
+    - **On-call duty**: who is on call now per office, with a red counter if the roster for the next four weeks is not right. → [On-call duty](wachtdiensten.md)
+- **Revenue** (for those who may view invoices): per month, with last year as a line, the largest principals and the share of each survey type. In EUR, excluding VAT.
 - The **menu on the left** shows the screens you have access to. At the bottom are **Administration** (the office's settings) and **Customer portal** (your invoices and tickets at ADM Concept).
 - Top right: the **feedback button**, this **help** and your preferences (language, display).
 - The **version number** at the bottom of the menu opens "What's new".

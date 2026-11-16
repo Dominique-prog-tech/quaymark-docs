@@ -8,10 +8,14 @@ Het **Dashboard** is de startpagina van uw bureau: het eerste item in het menu.
 
 ![Het startscherm met de tegels Dossiers per status](images/startscherm.png "Het startscherm")
 
-- **Dossiers per status** telt de open dossiers: nieuw, gepland, in uitvoering en in rapportage. Een klik op een tegel opent de lijst van de dossiers.
-- **Facturatie** (wie facturen mag bekijken): wat er nog **te factureren** is, als raming per dossier uit de open prestaties, de door te rekenen kosten en het forfait van afgewerkte dossiers, en de **omzet** van dit jaar per opdrachtgever en per soort survey. Een klik op een dossier opent zijn tijd en kosten.
-- **Wacht op review** (wie rapporten mag uitgeven): de rapporten waarvoor een collega een review vroeg. Een klik op het dossier opent het.
-- **Termijnen** (als het bureau in een raamafspraak een termijn afsprak): de open dossiers zonder rapport waarvan de termijn vandaag of de volgende werkdag vervalt, of al voorbij is, met hun surveyor. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
+- **Bovenaan** de open dossiers per status: nieuw, gepland, in uitvoering en in rapportage. Een klik op een tegel opent de lijst met die status. Wie facturen mag bekijken, ziet ook wat er nog **te factureren** is (een raming) en de **omzet** van dit jaar.
+- **Vraagt aandacht**: kaarten met de eerste regels en onderaan een link naar de volledige lijst.
+    - **Termijnen** (als het bureau in een raamafspraak een termijn afsprak): de open dossiers zonder rapport waarvan de termijn vandaag of de volgende werkdag vervalt, of al voorbij is. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
+    - **Aanvragen te beslissen**: opdrachten uit het opdrachtgeversportaal of het webformulier. → [Aanvragen](aanvragen.md)
+    - **Wacht op review** (wie rapporten mag uitgeven): de rapporten waarvoor een collega een review vroeg.
+    - **Niet-gefactureerd werk** (wie facturen mag bekijken): de grootste ramingen eerst. → [Te factureren](facturen.md#te-factureren)
+    - **Wachtdiensten**: wie nu van wacht staat per vestiging, met een rode teller als de rol de komende vier weken niet klopt. → [Wachtdiensten](wachtdiensten.md)
+- **Omzet** (wie facturen mag bekijken): per maand, met vorig jaar als lijn ernaast, de grootste opdrachtgevers en het aandeel van elke soort survey. In EUR, zonder btw.
 - Het **menu links** toont de schermen waartoe u toegang hebt. Onderaan staan **Platformbeheer** (de instellingen van het bureau) en **Klantenportaal** (uw facturen en tickets bij ADM Concept).
 - Rechtsboven: de **feedbackknop**, deze **hulp** en uw voorkeuren (taal, weergave).
 - Het **versienummer** onderaan het menu opent "Wat is nieuw".

@@ -8,10 +8,14 @@ Die **Übersicht** ist die Startseite Ihres Büros: der erste Eintrag im Menü.
 
 ![Startseite mit Akten nach Status](images/startscherm-de.png "Die Startseite")
 
-- **Akten nach Status** zählt die offenen Akten: neu, geplant, in Bearbeitung und in Berichterstellung. Ein Klick auf eine Kachel öffnet die Liste der Akten.
-- **Rechnungsstellung** (wenn Sie Rechnungen ansehen dürfen): was noch **abzurechnen** ist, als Schätzung pro Akte aus den offenen Leistungen, den weiterzuberechnenden Kosten und der Pauschale abgeschlossener Akten, und der **Umsatz** dieses Jahres pro Auftraggeber und pro Besichtigungsart. Ein Klick auf eine Akte öffnet ihre Zeit und Kosten.
-- **Wartet auf Prüfung** (wenn Sie Berichte herausgeben dürfen): die Berichte, für die ein Kollege eine Prüfung angefordert hat. Ein Klick auf die Akte öffnet sie.
-- **Fristen** (wenn das Büro in einer Rahmenvereinbarung eine Frist vereinbart hat): die offenen Akten ohne Bericht, deren Frist heute oder am nächsten Arbeitstag abläuft oder schon abgelaufen ist, mit ihrem Besichtiger. → [Frist bis zum Bericht](dossiers.md#frist-bis-zum-bericht)
+- **Oben** die offenen Akten nach Status: neu, geplant, in Bearbeitung und in Berichterstellung. Ein Klick auf eine Kachel öffnet die Liste mit diesem Status. Wer Rechnungen ansehen darf, sieht auch, was noch **abzurechnen** ist (eine Schätzung), und den **Umsatz** dieses Jahres.
+- **Braucht Aufmerksamkeit**: Karten mit den ersten Zeilen und unten einem Link zur vollständigen Liste.
+    - **Fristen** (wenn das Büro in einer Rahmenvereinbarung eine Frist vereinbart hat): die offenen Akten ohne Bericht, deren Frist heute oder am nächsten Arbeitstag abläuft oder schon abgelaufen ist. → [Frist bis zum Bericht](dossiers.md#frist-bis-zum-bericht)
+    - **Zu entscheidende Anfragen**: Aufträge aus dem Auftraggeberportal oder dem Webformular. → [Anfragen](aanvragen.md)
+    - **Wartet auf Prüfung** (wenn Sie Berichte herausgeben dürfen): die Berichte, für die ein Kollege eine Prüfung angefordert hat.
+    - **Nicht abgerechnete Arbeit** (wenn Sie Rechnungen ansehen dürfen): die größten Schätzungen zuerst. → [Abzurechnen](facturen.md#abzurechnen)
+    - **Bereitschaft**: wer jetzt pro Niederlassung Bereitschaft hat, mit einem roten Zähler, wenn der Plan der nächsten vier Wochen nicht stimmt. → [Bereitschaft](wachtdiensten.md)
+- **Umsatz** (wenn Sie Rechnungen ansehen dürfen): pro Monat, mit dem Vorjahr als Linie, die größten Auftraggeber und der Anteil jeder Besichtigungsart. In EUR, ohne MwSt.
 - Das **Menü links** zeigt die Bildschirme, auf die Sie Zugriff haben. Unten stehen **Verwaltung** (die Einstellungen des Büros) und **Kundenportal** (Ihre Rechnungen und Tickets bei ADM Concept).
 - Oben rechts: die **Feedback-Schaltfläche**, diese **Hilfe** und Ihre Einstellungen (Sprache, Anzeige).
 - Die **Versionsnummer** unten im Menü öffnet „Was ist neu“.
