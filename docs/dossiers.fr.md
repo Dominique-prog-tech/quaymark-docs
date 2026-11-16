@@ -26,10 +26,10 @@ Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur
 
 ![Le dossier HQ-2026-0003 sur l'onglet Général, avec Mission, Lieu et planning, Conditions et présents](images/dossier-fr.png "Un dossier")
 
-- **Mission** : site, type d'expertise, donneur d'ordre, expert, référence, date, statut et langue du rapport. Le **numéro de dossier** (code du site, année, numéro d'ordre) est attribué au premier enregistrement ; le site est ensuite fixé.
+- **Mission** : site, type d'expertise, donneur d'ordre, expert, référence, date, langue du rapport et, après le premier enregistrement, le statut. Un nouveau dossier commence à Nouveau ; avec un expert et un moment prévu, il passe de lui-même à Planifié, et sans eux à nouveau à Nouveau, comme dans le planning. Le **numéro de dossier** (code du site, année, numéro d'ordre) est attribué au premier enregistrement ; le site est ensuite fixé.
 - **Lieu et planning** : navire, port, terminal ou quai, le moment prévu (dans le fuseau horaire du site), devise et description.
-- **Conditions et présents** : temps, mer, visibilité, poste d'amarrage et les personnes présentes lors de l'expertise. **Dossier lié** renvoie à un dossier antérieur du même navire, par exemple l'on-hire d'un off-hire.
-- **Données de l'expertise** : les champs propres au type d'expertise choisi. Un champ obligatoire doit être rempli à partir du statut Rapport. Si vous choisissez un autre type, les valeurs des champs inconnus du nouveau type sont perdues à l'enregistrement.
+- **Conditions et présents** : temps, mer, visibilité, poste d'amarrage et les personnes présentes lors de l'expertise. **Dossier lié** renvoie à un dossier antérieur du même navire, par exemple l'on-hire d'un off-hire. Ce bloc apparaît après le premier enregistrement.
+- **Données de l'expertise** : les champs propres au type d'expertise choisi ; le bloc n'apparaît que si ce type a des champs propres. Un champ obligatoire doit être rempli à partir du statut Rapport. Si vous choisissez un autre type, les valeurs des champs inconnus du nouveau type sont perdues à l'enregistrement.
 
 Un dossier enregistré a des onglets : **Parties** (relations avec leur rôle et leur référence), **Documents** (en répertoires), **Du navire** (les documents du navire, en lecture seule), **Constatations**, **Check-list** et le journal avec notes, tâches, pièces jointes et historique.
 

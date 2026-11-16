@@ -26,10 +26,10 @@ Eén opdracht: wat er gevraagd is, waar en wanneer, en wat de surveyor ter plaat
 
 ![Dossier HQ-2026-0003 op het tabblad Algemeen, met Opdracht, Plaats en planning, Omstandigheden en aanwezigen](images/dossier.png "Een dossier")
 
-- **Opdracht**: vestiging, soort survey, opdrachtgever, surveyor, referentie, datum, status en de taal van het rapport. Het **dossiernummer** (vestigingscode, jaar, volgnummer) wordt toegekend bij het eerste bewaren; daarna ligt de vestiging vast.
+- **Opdracht**: vestiging, soort survey, opdrachtgever, surveyor, referentie, datum, de taal van het rapport en, na het eerste bewaren, de status. Een nieuw dossier begint op Nieuw; met een surveyor én een gepland moment wordt het vanzelf Gepland, en zonder weer Nieuw, zoals op de planning. Het **dossiernummer** (vestigingscode, jaar, volgnummer) wordt toegekend bij het eerste bewaren; daarna ligt de vestiging vast.
 - **Plaats en planning**: schip, haven, terminal of kaai, het geplande moment (in de tijdzone van de vestiging), munt en omschrijving.
-- **Omstandigheden en aanwezigen**: weer, zee, zicht, ligplaats en wie er bij de survey aanwezig was. **Gekoppeld dossier** verwijst naar een eerder dossier van hetzelfde schip, bijvoorbeeld de on-hire bij een off-hire.
-- **Gegevens van de survey**: de velden die bij het gekozen soort survey horen. Een verplicht veld moet ingevuld zijn vanaf de status Rapportage. Kiest u een ander soort survey, dan gaan bij het bewaren de waarden verloren van velden die het nieuwe soort niet kent.
+- **Omstandigheden en aanwezigen**: weer, zee, zicht, ligplaats en wie er bij de survey aanwezig was. **Gekoppeld dossier** verwijst naar een eerder dossier van hetzelfde schip, bijvoorbeeld de on-hire bij een off-hire. Dit blok verschijnt na het eerste bewaren.
+- **Gegevens van de survey**: de velden die bij het gekozen soort survey horen; het blok verschijnt enkel als die soort eigen velden heeft. Een verplicht veld moet ingevuld zijn vanaf de status Rapportage. Kiest u een ander soort survey, dan gaan bij het bewaren de waarden verloren van velden die het nieuwe soort niet kent.
 
 Een bewaard dossier heeft tabbladen: **Partijen** (relaties met hun rol en referentie), **Documenten** (in mappen), **Van het schip** (de documenten van het schip, alleen lezen), **Vaststellingen**, **Checklist** en het journaal met notities, taken, bijlagen en historiek.
 

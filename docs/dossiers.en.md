@@ -26,10 +26,10 @@ One instruction: what was asked, where and when, and what the surveyor finds on 
 
 ![File HQ-2026-0003 on the General tab, with Instruction, Place and planning, Conditions and attendance](images/dossier-en.png "A file")
 
-- **Instruction**: office, survey type, principal, surveyor, reference, date, status and report language. The **file number** (office code, year, sequence number) is assigned the first time you save; after that the office is fixed.
+- **Instruction**: office, survey type, principal, surveyor, reference, date, report language and, after the first save, the status. A new file starts at New; with a surveyor and a scheduled moment it becomes Scheduled by itself, and without them New again, as on the schedule. The **file number** (office code, year, sequence number) is assigned the first time you save; after that the office is fixed.
 - **Place and planning**: vessel, port, terminal or berth, the scheduled moment (in the office's time zone), currency and description.
-- **Conditions and attendance**: weather, sea, visibility, berth and who attended the survey. **Linked file** refers to an earlier file of the same vessel, for example the on-hire for an off-hire.
-- **Survey particulars**: the fields that belong to the chosen survey type. A required field must be filled in from the status Reporting onwards. If you choose another survey type, the values of fields the new type does not know are lost when you save.
+- **Conditions and attendance**: weather, sea, visibility, berth and who attended the survey. **Linked file** refers to an earlier file of the same vessel, for example the on-hire for an off-hire. This block appears after the first save.
+- **Survey particulars**: the fields that belong to the chosen survey type; the block only appears if that type has its own fields. A required field must be filled in from the status Reporting onwards. If you choose another survey type, the values of fields the new type does not know are lost when you save.
 
 A saved file has tabs: **Parties** (relations with their role and reference), **Documents** (in folders), **From the vessel** (the vessel's documents, read only), **Findings**, **Checklist** and the journal with notes, tasks, attachments and history.
 
