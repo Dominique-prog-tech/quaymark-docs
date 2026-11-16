@@ -4,7 +4,7 @@ description: "The home page of your office."
 
 # Getting started
 
-The home page of your office.
+The **Dashboard** is the home page of your office: the first item in the menu.
 
 ![The start screen with the Files by status tiles](images/startscherm-en.png "The start screen")
 

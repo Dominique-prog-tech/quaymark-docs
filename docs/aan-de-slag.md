@@ -4,7 +4,7 @@ description: "De startpagina van uw bureau."
 
 # Aan de slag
 
-De startpagina van uw bureau.
+Het **Dashboard** is de startpagina van uw bureau: het eerste item in het menu.
 
 ![Het startscherm met de tegels Dossiers per status](images/startscherm.png "Het startscherm")
 

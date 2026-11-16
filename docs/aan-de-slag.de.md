@@ -4,7 +4,7 @@ description: "Die Startseite Ihres Büros."
 
 # Erste Schritte
 
-Die Startseite Ihres Büros.
+Die **Übersicht** ist die Startseite Ihres Büros: der erste Eintrag im Menü.
 
 ![Startseite mit Akten nach Status](images/startscherm-de.png "Die Startseite")
 

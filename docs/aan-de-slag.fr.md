@@ -4,7 +4,7 @@ description: "La page d'accueil de votre bureau."
 
 # Premiers pas
 
-La page d'accueil de votre bureau.
+Le **Tableau de bord** est la page d'accueil de votre bureau : le premier élément du menu.
 
 ![L'écran d'accueil avec les tuiles Dossiers par statut](images/startscherm-fr.png "L'écran d'accueil")
 
