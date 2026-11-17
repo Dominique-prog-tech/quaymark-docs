@@ -13,6 +13,7 @@ In the menu on the left, click **Relations**.
 ## The list
 
 - The **Roles** column shows in which capacity a relation appears in your files; one relation can have several roles.
+- The **Active** column shows whether a relation still appears in the selection lists; a dash means inactive.
 - The **search box** searches name, role, city, country, company number and email.
 - Double-click a row to open the **record**; the arrow at the start of the row opens it in a new tab. **New relation** creates one.
 

@@ -13,6 +13,7 @@ Dans le menu de gauche, cliquez sur **Relations**.
 ## La liste
 
 - La colonne **Rôles** indique en quelle qualité une relation apparaît dans vos dossiers ; une relation peut avoir plusieurs rôles.
+- La colonne **Actif** indique si une relation figure encore dans les listes de choix ; un tiret signifie inactive.
 - Le **champ de recherche** cherche sur le nom, le rôle, la commune, le pays, le numéro d'entreprise et l'e-mail.
 - Double-cliquez sur une ligne pour ouvrir la **fiche** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouvelle relation** en crée une.
 
