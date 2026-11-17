@@ -39,7 +39,7 @@ A principal can follow their own files in the principal portal. To allow this, y
 - **Who**: a contact person with one email address. If the person is not listed yet, first add them on the **Contacts** tab.
 - **Invite**: choose the contact person and click **Invite**. The contact person receives an email, in their own language or otherwise that of the relation, with a link to choose a password. The link is valid for 7 days. At the first sign-in the contact person sets up two-step verification: without it, nobody gets into the portal.
 - **Status**: *Invited* (no password yet), *Active* or *Disabled*, and whether two-step verification is on. **Invite again** sends a new link; the previous one expires.
-- **Revoke access** is always possible. If the contact person is signed in at that moment, that session ends within five minutes.
+- **Revoke access** is always possible. If the contact person is signed in at that moment, that session ends within five minutes. Both actions are under **⋯** at the end of the row. If the relation is in the recycle bin, you can no longer invite anyone; revoking access is still possible.
 - **Email notifications to the portal users** is on by default: an email on a decision about a request, when scheduling or moving, and when a report, letter, certificate or invoice is issued. Turn it off here for this relation; each user can also turn it off. → [Requests](aanvragen.md#notifications-to-the-principal)
 
 What the contact person sees in the portal:

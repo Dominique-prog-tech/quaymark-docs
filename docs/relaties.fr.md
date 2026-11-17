@@ -39,7 +39,7 @@ Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail des donneu
 - **Qui** : une personne de contact avec une seule adresse e-mail. Si la personne n'y figure pas encore, ajoutez-la d'abord dans l'onglet **Personnes de contact**.
 - **Inviter** : choisissez la personne de contact et cliquez sur **Inviter**. Elle reçoit un e-mail, dans sa langue ou à défaut celle de la relation, avec un lien pour choisir elle-même son mot de passe. Le lien est valable 7 jours. À la première connexion, elle active la vérification en deux étapes : sans elle, personne n'entre dans le portail.
 - **Statut** : *Invité* (pas encore de mot de passe), *Actif* ou *Désactivé*, et si la vérification en deux étapes est activée. **Inviter à nouveau** envoie un nouveau lien ; le précédent expire.
-- **Retirer l'accès** est toujours possible. Si la personne de contact est connectée à ce moment-là, cette session s'arrête dans les cinq minutes.
+- **Retirer l'accès** est toujours possible. Si la personne de contact est connectée à ce moment-là, cette session s'arrête dans les cinq minutes. Les deux actions se trouvent sous **⋯** en fin de ligne. Si la relation est dans la corbeille, vous ne pouvez plus inviter personne ; retirer un accès reste possible.
 - **Notifications par e-mail aux utilisateurs du portail** est activé par défaut : un e-mail lors d'une décision sur une demande, d'une planification ou d'un déplacement, et lors de l'émission d'un rapport, d'une lettre, d'un certificat ou d'une facture. Désactivez-le ici pour cette relation ; chaque utilisateur peut aussi le désactiver lui-même. → [Demandes](aanvragen.md#notifications-au-donneur-dordre)
 
 Ce que la personne de contact voit dans le portail :

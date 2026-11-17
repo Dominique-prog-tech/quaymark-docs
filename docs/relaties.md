@@ -39,7 +39,7 @@ Een opdrachtgever kan zijn dossiers zelf volgen in het opdrachtgeversportaal. U 
 - **Wie**: een contactpersoon met één e-mailadres. Staat de persoon er nog niet bij, voeg die dan eerst toe op het tabblad **Contactpersonen**.
 - **Uitnodigen**: kies de contactpersoon en klik op **Uitnodigen**. De contactpersoon krijgt een mail, in de taal van de contactpersoon of anders die van de relatie, met een link om zelf een wachtwoord te kiezen. De link is 7 dagen geldig. Bij de eerste aanmelding stelt de contactpersoon tweestapsverificatie in: zonder komt niemand in het portaal.
 - **Status**: *Uitgenodigd* (nog geen wachtwoord), *Actief* of *Uitgeschakeld*, en of tweestapsverificatie aan staat. **Opnieuw uitnodigen** stuurt een nieuwe link; de vorige vervalt.
-- **Toegang intrekken** kan altijd. Is de contactpersoon op dat moment aangemeld, dan stopt die sessie binnen vijf minuten.
+- **Toegang intrekken** kan altijd. Is de contactpersoon op dat moment aangemeld, dan stopt die sessie binnen vijf minuten. Beide handelingen staan onder **⋯** achteraan de rij. Staat de relatie in de prullenbak, dan kunt u niemand meer uitnodigen; intrekken kan wel.
 - **Meldingen per mail aan de portaalgebruikers** staat standaard aan: een mail bij een beslissing over een aanvraag, bij plannen of verplaatsen, en bij een uitgegeven rapport, brief, certificaat of factuur. Zet het hier uit voor deze relatie; elke gebruiker kan het ook zelf uitzetten. → [Aanvragen](aanvragen.md#meldingen-aan-de-opdrachtgever)
 
 Wat de contactpersoon in het portaal ziet:
