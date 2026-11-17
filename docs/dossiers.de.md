@@ -354,6 +354,10 @@ In der Feld-App erfasst der Besichtiger seine Zeit auf der Registerkarte **Zeit*
 
 ![Zeit und Kosten von ZB-2026-0003 mit Rechnung vorschlagen, Leistungen und Kosten](images/dossier-tijd-kosten-de.png "Zeit und Kosten")
 
+### Journal und Verlauf
+
+Das **Journal** einer Akte hat die Registerkarten **Notizen**, **Aufgaben**, **Anhänge** und **Verlauf**. Der Verlauf zeigt, wer was wann geändert hat, mit dem alten und dem neuen Wert. Auch die Bestandteile der Akte stehen darin: Parteien, Zeitablauf, Eichaufnahme, Draft Survey, Laytime, Lieferscheine, Leistungen und Kosten. Bei einer solchen Änderung sagt die erste Zeile, **Bestandteil**, worum es geht, zum Beispiel *Eichaufnahme · Nachher*. Von einer Aufnahme oder den Bedingungen einer Laytime sehen Sie nur, was sich geändert hat. Ein gelöschter Bestandteil bleibt sichtbar, mit *(gelöscht)*. Datum und Uhrzeit stehen in Ihrer eigenen Zeit.
+
 ### Beweispaket
 
 **Beweispaket (ZIP)** liefert ein ZIP zur Prüfung ohne Quaymark: die Originalfotos des Geräts (auch ausgeblendete, mit Grund), ein Manifest, die herausgegebenen Berichte und ein LIESMICH mit den Befehlen (`shasum`, `certutil`). Jede Datei wird beim Packen nachgeprüft; stimmt eine nicht mehr, entsteht kein Paket. Der Fingerabdruck des Pakets steht danach in der Registerkarte und im Journal.

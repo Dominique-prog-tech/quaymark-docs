@@ -354,6 +354,10 @@ In de veldapp registreert de surveyor zijn tijd op het tabblad **Tijd** van het 
 
 ![Tijd en kosten van ZB-2026-0003 met Factuur voorstellen, Prestaties en Kosten](images/dossier-tijd-kosten.png "Tijd en kosten")
 
+### Journaal en historiek
+
+Het **Journaal** van een dossier heeft de tabbladen **Notities**, **Taken**, **Bijlagen** en **Historiek**. De historiek toont wie wat wijzigde en wanneer, met de oude en de nieuwe waarde. Ook de onderdelen van het dossier staan erin: partijen, tijdlijn, meting op ijkschalen, draft survey, laytime, leveringsbonnen, prestaties en kosten. Bij zo'n wijziging zegt de eerste regel, **Onderdeel**, waarover het gaat, bijvoorbeeld *Meting op ijkschalen · Na*. Van een meting of van de voorwaarden van een laytime ziet u enkel wat veranderde. Een verwijderd onderdeel blijft zichtbaar, met *(verwijderd)*. Datums en tijden staan in uw eigen tijd.
+
 ### Bewijspakket
 
 **Bewijspakket (ZIP)** geeft één ZIP om zonder Quaymark na te trekken: de originele foto's van het toestel (ook verborgen foto's, met de reden), een manifest, de uitgegeven rapporten en een LEESMIJ met de commando's (`shasum`, `certutil`). Elk bestand wordt bij het inpakken nagerekend; klopt er één niet meer, dan komt er geen pakket. De vingerafdruk van het pakket staat daarna op het tabblad en in het journaal.

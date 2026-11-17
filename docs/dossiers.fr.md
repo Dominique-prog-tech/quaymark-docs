@@ -354,6 +354,10 @@ Dans l'application terrain, l'expert enregistre son temps dans l'onglet **Temps*
 
 ![Temps et frais de ZB-2026-0003 avec Proposer une facture, Prestations et Frais](images/dossier-tijd-kosten-fr.png "Temps et frais")
 
+### Journal et historique
+
+Le **Journal** d'un dossier a les onglets **Notes**, **Tâches**, **Pièces jointes** et **Historique**. L'historique montre qui a modifié quoi et quand, avec l'ancienne et la nouvelle valeur. Les éléments du dossier y figurent aussi : parties, chronologie, jaugeage aux échelles, draft survey, laytime, bons de livraison, prestations et frais. Pour une telle modification, la première ligne, **Élément**, dit de quoi il s'agit, par exemple *Jaugeage aux échelles · Après*. D'un jaugeage ou des conditions d'un laytime, vous ne voyez que ce qui a changé. Un élément supprimé reste visible, avec *(supprimé)*. Les dates et heures sont à votre heure.
+
 ### Dossier de preuves
 
 **Dossier de preuves (ZIP)** fournit un ZIP à vérifier sans Quaymark : les photos originales de l'appareil (y compris les photos masquées, avec le motif), un manifeste, les rapports émis et un LISEZMOI avec les commandes (`shasum`, `certutil`). Chaque fichier est revérifié à l'emballage ; si l'un ne correspond plus, aucun dossier n'est créé. L'empreinte du dossier figure ensuite dans l'onglet et dans le journal.

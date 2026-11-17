@@ -354,6 +354,10 @@ In the field app, the surveyor records their time on the **Time** tab of the fil
 
 ![Time and expenses of ZB-2026-0003 with Propose invoice, Time entries and Expenses](images/dossier-tijd-kosten-en.png "Time and expenses")
 
+### Journal and history
+
+The **Journal** of a file has the tabs **Notes**, **Tasks**, **Attachments** and **History**. The history shows who changed what and when, with the old and the new value. The parts of the file are in it too: parties, timeline, barge gauging, draft survey, laytime, delivery notes, time entries and expenses. For such a change, the first line, **Part**, says what it is about, for example *Barge gauging · After*. Of a gauging or of the terms of a laytime, you only see what changed. A deleted part stays visible, with *(deleted)*. Dates and times are in your own time.
+
 ### Evidence package
 
 **Evidence package (ZIP)** gives one ZIP to verify without Quaymark: the original photos from the device (hidden photos too, with the reason), a manifest, the issued reports and a README with the commands (`shasum`, `certutil`). Every file is re-checked while packing; if one no longer matches, no package is made. The fingerprint of the package then appears on the tab and in the journal.
