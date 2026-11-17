@@ -39,7 +39,7 @@ The **Holds and tanks** tab keeps the holds and tanks per vessel, so that a next
 
 - a **Name** (Hold 1, Tank 3P) and a **Type**: hold, cargo tank, ballast tank, fuel tank or other;
 - the **Capacity** with its unit (m³, L, bbl, t, kg, LT or ST);
-- the **Sounding table**: an attachment of the vessel (Documents tab), for example the sounding table of a tank;
+- the **Sounding table**: an attachment of the vessel (Documents tab), for example the sounding table of a tank. A click on the name opens it: a PDF in a window, any other file as a download. If the document is in the recycle bin, the list shows **Document no longer available**: restore it or choose another sounding table;
 - a **Note**.
 
 **Prefill from the counts** creates Hold 1 up to the number of holds, and Tank 1 up to the number of tanks, as filled in on the General tab. A name that already exists is skipped. The arrows move a hold or tank one place up or down.

@@ -39,7 +39,7 @@ L'onglet **Cales et citernes** conserve par navire les cales et citernes, pour q
 
 - un **Nom** (Cale 1, Citerne 3P) et un **Type** : cale, citerne à cargaison, ballast, soute à combustible ou autre ;
 - la **Capacité** avec son unité (m³, L, bbl, t, kg, LT ou ST) ;
-- la **Table de jaugeage** : une pièce jointe du navire (onglet Documents), par exemple la table d'une citerne ;
+- la **Table de jaugeage** : une pièce jointe du navire (onglet Documents), par exemple la table d'une citerne. Un clic sur le nom l'ouvre : un PDF dans une fenêtre, un autre fichier en téléchargement. Si le document est dans la corbeille, la liste affiche **Document plus disponible** : restaurez-le ou choisissez une autre table de jaugeage ;
 - une **Remarque**.
 
 **Préremplir depuis les nombres** crée Cale 1 jusqu'au nombre de cales, et Citerne 1 jusqu'au nombre de citernes, tels qu'indiqués dans l'onglet Général. Un nom qui existe déjà est ignoré. Les flèches font monter ou descendre une cale ou citerne d'une place.

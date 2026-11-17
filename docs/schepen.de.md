@@ -39,7 +39,7 @@ Die Registerkarte **Laderäume und Tanks** führt pro Schiff die Laderäume und 
 
 - ein **Name** (Laderaum 1, Tank 3P) und eine **Art**: Laderaum, Ladetank, Ballasttank, Brennstofftank oder andere;
 - die **Kapazität** mit ihrer Einheit (m³, L, bbl, t, kg, LT oder ST);
-- die **Peiltabelle**: ein Anhang des Schiffs (Registerkarte Dokumente), zum Beispiel die Peiltabelle eines Tanks;
+- die **Peiltabelle**: ein Anhang des Schiffs (Registerkarte Dokumente), zum Beispiel die Peiltabelle eines Tanks. Ein Klick auf den Namen öffnet sie: ein PDF in einem Fenster, jede andere Datei als Download. Liegt das Dokument im Papierkorb, zeigt die Liste **Dokument nicht mehr verfügbar**: Stellen Sie es wieder her oder wählen Sie eine andere Peiltabelle;
 - eine **Bemerkung**.
 
 **Aus den Anzahlen vorausfüllen** legt Laderaum 1 bis zur Anzahl Laderäume und Tank 1 bis zur Anzahl Tanks an, wie in der Registerkarte Allgemein eingetragen. Ein bereits vorhandener Name wird übersprungen. Die Pfeile setzen einen Laderaum oder Tank eine Stelle höher oder tiefer.
