@@ -344,7 +344,7 @@ L'onglet **Laytime** calcule le laytime et les surestaries à partir de la chron
 - **Une fois en surestaries, toujours en surestaries** : après le laytime, chaque jour exclu compte en surestaries. Vous pouvez le décocher.
 - **Surestaries par jour** et **despatch par jour** (vide = la moitié des surestaries), dans la devise de votre choix.
 
-Le résultat se recalcule pendant la saisie : alloué, utilisé, surestaries ou despatch avec le montant, et un tableau par période avec le motif pour lequel elle compte ou non. **Enregistrer** fixe les conditions. S'il manque le NOR ou la fin dans la chronologie, Quaymark le signale et ne calcule pas. Dans le rapport, le laytime figure avec le repère `{{laytime}}` (voir [Modèles](sjablonen.md)).
+Le résultat se recalcule pendant la saisie : alloué, utilisé, surestaries ou despatch avec le montant, et un tableau par période avec le motif pour lequel elle compte ou non. **Enregistrer** fixe les conditions. Le rapport calcule avec les conditions enregistrées : si ce que vous avez saisi en diffère, la mention **Non enregistré** apparaît à côté du bouton, et à droite la date et l'auteur du dernier enregistrement. S'il manque le NOR ou la fin dans la chronologie, Quaymark le signale et ne calcule pas. Dans le rapport, le laytime figure avec le repère `{{laytime}}` (voir [Modèles](sjablonen.md)).
 
 ### Temps et frais
 

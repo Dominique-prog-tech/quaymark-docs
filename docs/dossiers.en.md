@@ -344,7 +344,7 @@ The **Laytime** tab calculates laytime and demurrage from the timeline, under th
 - **Once on demurrage, always on demurrage**: after laytime, every excepted day counts as demurrage. You can untick it.
 - **Demurrage per day** and **despatch per day** (empty = half the demurrage), in the currency you choose.
 
-The result recalculates as you type: allowed, used, demurrage or despatch with the amount, and a table per period with the reason it counts or not. **Save** records the terms. If the NOR or the end is missing from the timeline, Quaymark says so and does not calculate. In the report, laytime appears with the placeholder `{{laytime}}` (see [Templates](sjablonen.md)).
+The result recalculates as you type: allowed, used, demurrage or despatch with the amount, and a table per period with the reason it counts or not. **Save** records the terms. The report calculates with the saved terms: if what you typed differs, **Not saved** appears next to the button, and on the right when and by whom they were saved. If the NOR or the end is missing from the timeline, Quaymark says so and does not calculate. In the report, laytime appears with the placeholder `{{laytime}}` (see [Templates](sjablonen.md)).
 
 ### Time and expenses
 

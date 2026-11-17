@@ -344,7 +344,7 @@ Het tabblad **Laytime** rekent laytime en demurrage uit de tijdlijn, volgens de 
 - **Eens in demurrage, altijd in demurrage**: na de laytime telt elke uitgesloten dag mee als demurrage. Uitvinken kan.
 - **Demurrage per dag** en **despatch per dag** (leeg = de helft van de demurrage), in de munt die u kiest.
 
-De uitkomst rekent mee terwijl u typt: toegestaan, gebruikt, demurrage of despatch met het bedrag, en een tabel per periode met de reden waarom ze wel of niet telt. **Bewaren** legt de voorwaarden vast. Ontbreekt de NOR of het einde in de tijdlijn, dan zegt Quaymark het en rekent het niet. In het rapport komt de laytime met de markering `{{laytime}}` (zie [Sjablonen](sjablonen.md)).
+De uitkomst rekent mee terwijl u typt: toegestaan, gebruikt, demurrage of despatch met het bedrag, en een tabel per periode met de reden waarom ze wel of niet telt. **Bewaren** legt de voorwaarden vast. Het rapport rekent met de bewaarde voorwaarden: wijkt wat u intikte daarvan af, dan staat er **Niet bewaard** naast de knop, en rechts wanneer en door wie ze bewaard werden. Ontbreekt de NOR of het einde in de tijdlijn, dan zegt Quaymark het en rekent het niet. In het rapport komt de laytime met de markering `{{laytime}}` (zie [Sjablonen](sjablonen.md)).
 
 ### Tijd en kosten
 

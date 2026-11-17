@@ -344,7 +344,7 @@ Die Registerkarte **Laytime** berechnet Liegezeit und Liegegeld aus dem Zeitabla
 - **Einmal Liegegeld, immer Liegegeld**: Nach der Liegezeit zählt jeder ausgenommene Tag als Liegegeld. Sie können es abwählen.
 - **Liegegeld pro Tag** und **Despatch pro Tag** (leer = die Hälfte des Liegegelds), in der Währung Ihrer Wahl.
 
-Das Ergebnis rechnet beim Tippen mit: erlaubt, verbraucht, Liegegeld oder Despatch mit dem Betrag, und eine Tabelle je Zeitraum mit dem Grund, warum er zählt oder nicht. **Speichern** legt die Bedingungen fest. Fehlt die NOR oder das Ende im Zeitablauf, sagt Quaymark es und rechnet nicht. Im Bericht erscheint die Liegezeit mit der Markierung `{{laytime}}` (siehe [Vorlagen](sjablonen.md)).
+Das Ergebnis rechnet beim Tippen mit: erlaubt, verbraucht, Liegegeld oder Despatch mit dem Betrag, und eine Tabelle je Zeitraum mit dem Grund, warum er zählt oder nicht. **Speichern** legt die Bedingungen fest. Der Bericht rechnet mit den gespeicherten Bedingungen: Weicht Ihre Eingabe davon ab, steht **Nicht gespeichert** neben der Schaltfläche, und rechts, wann und von wem sie gespeichert wurden. Fehlt die NOR oder das Ende im Zeitablauf, sagt Quaymark es und rechnet nicht. Im Bericht erscheint die Liegezeit mit der Markierung `{{laytime}}` (siehe [Vorlagen](sjablonen.md)).
 
 ### Zeit und Kosten
 
