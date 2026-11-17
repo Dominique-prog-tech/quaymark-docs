@@ -18,9 +18,9 @@ Klicken Sie im Menü links auf **Anfragen**. Warten Anfragen, zeigt der Startbil
 
 ## Anfrage
 
-Links steht, was der Auftraggeber ausgefüllt hat: wer die Anfrage gesendet hat, die Besichtigungsart, das Schiff, der Hafen und das Terminal, das gewünschte Datum, die Referenz, die Beschreibung und die Anhänge (zum Beispiel das Auftragsschreiben oder der Stauplan).
+Links steht, was der Auftraggeber ausgefüllt hat: wer die Anfrage gesendet hat, die Besichtigungsart, das Schiff, der Hafen und das Terminal, das gewünschte Datum, die Referenz, die Beschreibung und die Anhänge (zum Beispiel das Auftragsschreiben oder der Stauplan). Ein PDF öffnet sich in einem Fenster, eine andere Datei wird heruntergeladen.
 
-- **Annehmen**: Wählen Sie die Niederlassung, das Schiff, den Besichtiger, den Termin und die Berichtssprache. Beim Schiff schlägt Quaymark ein vorhandenes Schiff vor, wenn IMO-Nummer, ENI-Nummer oder Name übereinstimmen; sonst ein neues Schiff aus den Daten der Anfrage. Der gewünschte Termin ist bereits ausgefüllt. Quaymark legt dann die Akte an, kopiert die Anhänge in die Registerkarte **Dokumente** und sendet dem Auftraggeber eine E-Mail.
+- **Annehmen**: Wählen Sie die Niederlassung, das Schiff, den Besichtiger, den Termin und die Berichtssprache. Beim Schiff schlägt Quaymark ein vorhandenes Schiff vor, wenn IMO-Nummer, ENI-Nummer oder Name übereinstimmen; sonst ein neues Schiff aus den Daten der Anfrage. Der gewünschte Termin ist bereits ausgefüllt. Quaymark legt dann die Akte an, kopiert die Anhänge in die Registerkarte **Dokumente** und sendet dem Auftraggeber eine E-Mail. Fehlt noch etwas (die Niederlassung, oder bei einer Webanfrage der Auftraggeber oder die Besichtigungsart), sagt eine Meldung oben im Formular, was; Quaymark legt dann noch nichts an.
 - Arbeitet das Büro mit diesem Schiff für einen anderen Auftraggeber und ist dieser Auftraggeber dort Partei, erscheint über **Annehmen** eine Warnung. → [Interessenkonflikte](dossiers.md#interessenkonflikte)
 - **Ablehnen** verlangt einen Grund. Der Auftraggeber sieht ihn im Portal und in der E-Mail.
 - Entscheiden erfordert das Recht, Akten zu bearbeiten. Über eine Anfrage wird nur einmal entschieden: Klicken zwei Kollegen gleichzeitig, erfährt der zweite, dass bereits entschieden wurde.
