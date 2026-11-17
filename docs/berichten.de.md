@@ -23,7 +23,7 @@ Hat der Auftraggeber keinen Zugang zum Auftraggeberportal oder nach seiner Einla
 
 ## Die Seite Nachrichten
 
-Klicken Sie im Menü auf **Nachrichten** für jedes Gespräch mit einem Auftraggeber, das neueste zuerst, mit der letzten Nachricht und wie viele für Sie noch **Ungelesen** sind. Ein Klick auf eine Zeile öffnet die Registerkarte Nachrichten der Akte.
+Klicken Sie im Menü auf **Nachrichten** für jedes Gespräch mit einem Auftraggeber, das neueste zuerst, mit der letzten Nachricht und wie viele für Sie noch **Ungelesen** sind. Die Spalte **Status** zeigt **Wartet auf Antwort**, solange die letzte Nachricht vom Auftraggeber kommt, auch wenn sie schon jemand gelesen hat; nach Ihrer Antwort steht dort **Beantwortet**. Ein Klick auf eine Zeile öffnet die Registerkarte Nachrichten der Akte.
 
 ![Die Seite Nachrichten mit jedem Gespräch, der letzten Nachricht und der Zahl der ungelesenen](images/berichten-overzicht-de.png "Nachrichten")
 

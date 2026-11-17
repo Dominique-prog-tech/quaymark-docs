@@ -23,7 +23,7 @@ Heeft de opdrachtgever geen toegang tot het opdrachtgeversportaal, of koos hij n
 
 ## Het scherm Berichten
 
-Klik in het menu op **Berichten** voor elk gesprek met een opdrachtgever, het recentste eerst, met het laatste bericht en hoeveel er voor u nog **Ongelezen** zijn. Een klik op een rij opent het tabblad Berichten van het dossier.
+Klik in het menu op **Berichten** voor elk gesprek met een opdrachtgever, het recentste eerst, met het laatste bericht en hoeveel er voor u nog **Ongelezen** zijn. De kolom **Status** zegt **Wacht op antwoord** zolang het laatste bericht van de opdrachtgever komt, ook als iemand het al las; na uw antwoord staat er **Beantwoord**. Een klik op een rij opent het tabblad Berichten van het dossier.
 
 ![Het scherm Berichten met elk gesprek, het laatste bericht en het aantal ongelezen](images/berichten-overzicht.png "Berichten")
 

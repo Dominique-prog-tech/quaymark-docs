@@ -23,7 +23,7 @@ Si le donneur d'ordre n'a pas accès au portail des donneurs d'ordre, ou n'a pas
 
 ## L'écran Messages
 
-Cliquez dans le menu sur **Messages** pour chaque conversation avec un donneur d'ordre, la plus récente d'abord, avec le dernier message et le nombre encore **Non lus** pour vous. Un clic sur une ligne ouvre l'onglet Messages du dossier.
+Cliquez dans le menu sur **Messages** pour chaque conversation avec un donneur d'ordre, la plus récente d'abord, avec le dernier message et le nombre encore **Non lus** pour vous. La colonne **Statut** indique **En attente de réponse** tant que le dernier message vient du donneur d'ordre, même si quelqu'un l'a déjà lu ; après votre réponse, elle indique **Répondu**. Un clic sur une ligne ouvre l'onglet Messages du dossier.
 
 ![L'écran Messages avec chaque conversation, le dernier message et le nombre de non lus](images/berichten-overzicht-fr.png "Messages")
 

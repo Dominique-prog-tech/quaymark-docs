@@ -23,7 +23,7 @@ If the principal has no access to the principal portal, or has not chosen a pass
 
 ## The Messages screen
 
-Click **Messages** in the menu for every conversation with a principal, the most recent first, with the latest message and how many are still **Unread** for you. A click on a row opens the Messages tab of the file.
+Click **Messages** in the menu for every conversation with a principal, the most recent first, with the latest message and how many are still **Unread** for you. The **Status** column says **Awaiting reply** as long as the latest message comes from the principal, even if someone has already read it; after your reply it says **Replied**. A click on a row opens the Messages tab of the file.
 
 ![The Messages screen with every conversation, the latest message and the number unread](images/berichten-overzicht-en.png "Messages")
 
