@@ -26,7 +26,8 @@ Les données d'un navire.
 
 - **Navire** : type (maritime ou intérieure), nom, numéro OMI, numéro ENI et pavillon. Un navire de mer a un **numéro OMI** (7 chiffres, le dernier est un chiffre de contrôle), un bateau de navigation intérieure un **numéro ENI** (8 chiffres). Chaque numéro n'apparaît qu'une fois, corbeille comprise.
 - **Caractéristiques** : type de navire, société de classification, année de construction, jauge brute, port en lourd, nombre de cales et nombre de soutes. Le nombre de cales ou de soutes détermine combien de lignes vides un tableau par cale ou par soute reçoit dans un dossier.
-- Un navire que vous n'utilisez plus passe en **non actif** : il disparaît de la liste de choix des nouveaux dossiers.
+- Un navire que vous n'utilisez plus passe en **non actif** : il disparaît de la liste de choix des nouveaux dossiers et d'une demande (sauf si le numéro de la demande correspond). La colonne **Actif** de la liste l'indique.
+- Si vous ouvrez un navire qui se trouve dans la corbeille (par exemple depuis un ancien dossier), la fiche l'indique en haut et il ne peut plus qu'être consulté.
 
 Un navire enregistré a l'onglet **Documents** (plans, certificats, tables, en répertoires) et le journal. Ces documents apparaissent aussi dans chaque dossier du navire, sous **Du navire**. **Supprimer** déplace le navire vers la corbeille.
 

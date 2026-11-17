@@ -26,7 +26,8 @@ Die Daten eines Schiffs.
 
 - **Schiff**: Art (See- oder Binnenschifffahrt), Name, IMO-Nummer, ENI-Nummer und Flagge. Ein Seeschiff hat eine **IMO-Nummer** (7 Ziffern, die letzte ist eine Prüfziffer), ein Binnenschiff eine **ENI-Nummer** (8 Ziffern). Jede Nummer kommt nur einmal vor, auch im Papierkorb.
 - **Merkmale**: Schiffstyp, Klassifikationsgesellschaft, Baujahr, Bruttoraumzahl, Tragfähigkeit, Anzahl Laderäume und Anzahl Tanks. Die Anzahl Laderäume oder Tanks bestimmt, wie viele leere Zeilen eine Tabelle pro Laderaum oder Tank in einer Akte erhält.
-- Ein Schiff, das Sie nicht mehr verwenden, setzen Sie auf **inaktiv**: es verschwindet aus der Auswahlliste neuer Akten.
+- Ein Schiff, das Sie nicht mehr verwenden, setzen Sie auf **inaktiv**: es verschwindet aus der Auswahlliste neuer Akten und einer Anfrage (außer wenn die Nummer der Anfrage übereinstimmt). Die Spalte **Aktiv** in der Liste zeigt es.
+- Öffnen Sie ein Schiff, das im Papierkorb liegt (zum Beispiel aus einer alten Akte), sagt der Datensatz das oben, und es kann nur noch angesehen werden.
 
 Ein gespeichertes Schiff hat die Registerkarte **Dokumente** (Pläne, Zertifikate, Tabellen, in Ordnern) und das Journal. Diese Dokumente erscheinen auch in jeder Akte des Schiffs, unter **Vom Schiff**. **Löschen** verschiebt das Schiff in den Papierkorb.
 

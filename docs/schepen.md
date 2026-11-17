@@ -26,7 +26,8 @@ De gegevens van één schip.
 
 - **Schip**: soort (zeevaart of binnenvaart), naam, IMO-nummer, ENI-nummer en vlag. Een zeeschip heeft een **IMO-nummer** (7 cijfers, het laatste is een controlecijfer), een binnenschip een **ENI-nummer** (8 cijfers). Elk nummer komt maar één keer voor, ook in de prullenbak.
 - **Kenmerken**: scheepstype, klassebureau, bouwjaar, brutotonnage, draagvermogen, aantal ruimen en aantal tanks. Het aantal ruimen of tanks bepaalt hoeveel lege rijen een tabel per ruim of tank in een dossier krijgt.
-- Een schip dat u niet meer gebruikt, zet u op **niet actief**: het verdwijnt uit de keuzelijst van nieuwe dossiers.
+- Een schip dat u niet meer gebruikt, zet u op **niet actief**: het verdwijnt uit de keuzelijst van nieuwe dossiers en van een aanvraag (behalve als het nummer van de aanvraag overeenkomt). De kolom **Actief** in de lijst toont het.
+- Opent u een schip dat in de prullenbak staat (bijvoorbeeld vanuit een oud dossier), dan zegt de fiche dat bovenaan en is het enkel nog te lezen.
 
 Een bewaard schip heeft het tabblad **Documenten** (plannen, certificaten, tabellen, in mappen) en het journaal. Die documenten verschijnen ook op elk dossier van het schip, onder **Van het schip**. **Verwijderen** verplaatst het schip naar de prullenbak.
 
