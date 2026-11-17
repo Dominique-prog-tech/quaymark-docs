@@ -27,10 +27,10 @@ De gegevens van één relatie.
 
 - **Identiteit**: soort (bedrijf of persoon), naam, ondernemingsnummer of btw-nummer, rollen, taal en actief. Een ondernemingsnummer komt per land maar één keer voor.
 - **Opzoeken in de KBO** vult naam en adres aan uit de Kruispuntbank van Ondernemingen. Dat werkt enkel voor Belgische ondernemingen.
-- **Adres en contact**: straat, postcode, gemeente, land, e-mail, telefoon en een opmerking.
+- **Adres en contact**: straat, postcode, gemeente, land, e-mail, telefoon en een opmerking. Een e-mailadres dat niet klopt (bijvoorbeeld een komma in plaats van een punt), bewaart Quaymark niet.
 - Een relatie die u niet meer gebruikt, zet u op **niet actief**: ze verdwijnt dan uit de keuzelijsten van nieuwe dossiers, en oude dossiers blijven haar tonen.
 
-Een bewaarde relatie heeft het tabblad **Contactpersonen** (naam, functie, e-mail, telefoon, taal) en het journaal met notities, taken, bijlagen en historiek. **Verwijderen** verplaatst de relatie naar de prullenbak.
+Een bewaarde relatie heeft het tabblad **Contactpersonen** (naam, functie, e-mail, telefoon, taal) en het journaal met notities, taken, bijlagen en historiek. **Verwijderen** verplaatst de relatie naar de prullenbak; daar zet u ze ook terug. Opent u een relatie die in de prullenbak staat (bijvoorbeeld vanuit een oud dossier), dan zegt de fiche dat bovenaan en is ze enkel nog te lezen.
 
 ## Opdrachtgeversportaal
 

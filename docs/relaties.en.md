@@ -27,10 +27,10 @@ The details of one relation.
 
 - **Identity**: kind (company or person), name, company or VAT number, roles, language and active. A company number occurs only once per country.
 - **Look up in the CBE** fills in the name and address from the Belgian Crossroads Bank for Enterprises. This only works for Belgian companies.
-- **Address and contact**: street, postcode, city, country, email, phone and a note.
+- **Address and contact**: street, postcode, city, country, email, phone and a note. Quaymark does not save an email address that is not valid (for example a comma instead of a dot).
 - Set a relation you no longer use to **inactive**: it then disappears from the choice lists of new files, while older files keep showing it.
 
-A saved relation has the **Contacts** tab (name, position, email, phone, language) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin.
+A saved relation has the **Contacts** tab (name, position, email, phone, language) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin; that is also where you restore it. If you open a relation that is in the recycle bin (for example from an old file), the record says so at the top and it can only be viewed.
 
 ## Principal portal
 
