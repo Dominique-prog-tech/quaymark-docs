@@ -30,7 +30,7 @@ The details of one relation.
 - **Address and contact**: street, postcode, city, country, email, phone and a note. Quaymark does not save an email address that is not valid (for example a comma instead of a dot).
 - Set a relation you no longer use to **inactive**: it then disappears from the choice lists of new files, while older files keep showing it.
 
-A saved relation has the **Contacts** tab (name, position, email, phone, language) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin; that is also where you restore it. If you open a relation that is in the recycle bin (for example from an old file), the record says so at the top and it can only be viewed.
+A saved relation has the **Contacts** tab (name, position, email, phone, language; with **⋯** at the end of the row you edit or delete one, and deleting is permanent) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin; that is also where you restore it. If you open a relation that is in the recycle bin (for example from an old file), the record says so at the top and it can only be viewed.
 
 ## Principal portal
 

@@ -30,7 +30,7 @@ Die Daten einer Beziehung.
 - **Adresse und Kontakt**: Straße, Postleitzahl, Ort, Land, E-Mail, Telefon und eine Bemerkung. Eine ungültige E-Mail-Adresse (zum Beispiel ein Komma statt eines Punkts) speichert Quaymark nicht.
 - Eine Beziehung, die Sie nicht mehr verwenden, setzen Sie auf **inaktiv**: sie verschwindet dann aus den Auswahllisten neuer Akten, und ältere Akten zeigen sie weiterhin.
 
-Eine gespeicherte Beziehung hat die Registerkarte **Ansprechpartner** (Name, Funktion, E-Mail, Telefon, Sprache) und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf. **Löschen** verschiebt die Beziehung in den Papierkorb; dort stellen Sie sie auch wieder her. Öffnen Sie eine Beziehung, die im Papierkorb liegt (zum Beispiel aus einer alten Akte), sagt der Datensatz das oben, und sie kann nur noch angesehen werden.
+Eine gespeicherte Beziehung hat die Registerkarte **Ansprechpartner** (Name, Funktion, E-Mail, Telefon, Sprache; mit **⋯** am Zeilenende bearbeiten oder löschen Sie einen, und Löschen ist endgültig) und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf. **Löschen** verschiebt die Beziehung in den Papierkorb; dort stellen Sie sie auch wieder her. Öffnen Sie eine Beziehung, die im Papierkorb liegt (zum Beispiel aus einer alten Akte), sagt der Datensatz das oben, und sie kann nur noch angesehen werden.
 
 ## Auftraggeberportal
 

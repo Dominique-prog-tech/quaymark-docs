@@ -30,7 +30,7 @@ De gegevens van één relatie.
 - **Adres en contact**: straat, postcode, gemeente, land, e-mail, telefoon en een opmerking. Een e-mailadres dat niet klopt (bijvoorbeeld een komma in plaats van een punt), bewaart Quaymark niet.
 - Een relatie die u niet meer gebruikt, zet u op **niet actief**: ze verdwijnt dan uit de keuzelijsten van nieuwe dossiers, en oude dossiers blijven haar tonen.
 
-Een bewaarde relatie heeft het tabblad **Contactpersonen** (naam, functie, e-mail, telefoon, taal) en het journaal met notities, taken, bijlagen en historiek. **Verwijderen** verplaatst de relatie naar de prullenbak; daar zet u ze ook terug. Opent u een relatie die in de prullenbak staat (bijvoorbeeld vanuit een oud dossier), dan zegt de fiche dat bovenaan en is ze enkel nog te lezen.
+Een bewaarde relatie heeft het tabblad **Contactpersonen** (naam, functie, e-mail, telefoon, taal; met **⋯** achteraan de rij bewerkt of verwijdert u er een, en verwijderen is definitief) en het journaal met notities, taken, bijlagen en historiek. **Verwijderen** verplaatst de relatie naar de prullenbak; daar zet u ze ook terug. Opent u een relatie die in de prullenbak staat (bijvoorbeeld vanuit een oud dossier), dan zegt de fiche dat bovenaan en is ze enkel nog te lezen.
 
 ## Opdrachtgeversportaal
 

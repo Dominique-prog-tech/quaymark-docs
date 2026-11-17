@@ -30,7 +30,7 @@ Les données d'une relation.
 - **Adresse et contact** : rue, code postal, commune, pays, e-mail, téléphone et une remarque. Quaymark n'enregistre pas une adresse e-mail incorrecte (par exemple une virgule au lieu d'un point).
 - Une relation que vous n'utilisez plus passe en **non active** : elle disparaît des listes de choix des nouveaux dossiers, et les anciens dossiers continuent à l'afficher.
 
-Une relation enregistrée a l'onglet **Personnes de contact** (nom, fonction, e-mail, téléphone, langue) et le journal avec notes, tâches, pièces jointes et historique. **Supprimer** déplace la relation vers la corbeille ; c'est là aussi que vous la restaurez. Si vous ouvrez une relation qui se trouve dans la corbeille (par exemple depuis un ancien dossier), la fiche l'indique en haut et elle ne peut plus qu'être consultée.
+Une relation enregistrée a l'onglet **Personnes de contact** (nom, fonction, e-mail, téléphone, langue ; avec **⋯** en fin de ligne, vous en modifiez ou supprimez une, et la suppression est définitive) et le journal avec notes, tâches, pièces jointes et historique. **Supprimer** déplace la relation vers la corbeille ; c'est là aussi que vous la restaurez. Si vous ouvrez une relation qui se trouve dans la corbeille (par exemple depuis un ancien dossier), la fiche l'indique en haut et elle ne peut plus qu'être consultée.
 
 ## Portail des donneurs d'ordre
 
