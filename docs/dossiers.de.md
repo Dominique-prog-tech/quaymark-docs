@@ -331,7 +331,7 @@ Die Registerkarte **Zeitablauf** ist das Statement of Facts der Akte: die Ereign
 
 Oben berechnen die Kacheln der Zusammenfassung: die Zeit von der NOR bis zum Beginn, die Dauer der Beladung oder Löschung, die Unterbrechungen (von einer Unterbrechung bis zu ihrer Wiederaufnahme), die Nettoarbeitszeit und die Liegezeit im Hafen. Fehlt ein Ereignis für eine Dauer, steht dort ein Strich, nicht null.
 
-**Statement of Facts (PDF)** zeigt das Dokument; **Statement of Facts ausstellen** legt es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Im Bericht steht der Zeitablauf mit der Markierung `{{tijdlijn}}` (siehe [Vorlagen](sjablonen.md)).
+**Statement of Facts (PDF)** zeigt das Dokument; **Statement of Facts ausstellen** legt es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Nach der Ausgabe zeigt die Registerkarte **Ausgegeben am** mit Datum, Person, PDF und Fingerabdruck; ändern Sie danach ein Ereignis, warnt sie, dass das ausgegebene Statement of Facts andere Zeiten hat. Im Bericht steht der Zeitablauf mit der Markierung `{{tijdlijn}}` (siehe [Vorlagen](sjablonen.md)).
 
 ### Liegezeit
 
