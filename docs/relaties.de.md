@@ -14,7 +14,7 @@ Klicken Sie im Menü links auf **Beziehungen**.
 
 - Die Spalte **Rollen** zeigt, in welcher Eigenschaft eine Beziehung in Ihren Akten vorkommt; eine Beziehung kann mehrere Rollen haben.
 - Die Spalte **Aktiv** zeigt, ob eine Beziehung noch in den Auswahllisten steht; ein Strich bedeutet inaktiv.
-- Das **Suchfeld** sucht nach Name, Rolle, Ort, Land, Unternehmensnummer und E-Mail.
+- Das **Suchfeld** sucht nach Name, Rolle, Ort, Land, Unternehmensnummer, E-Mail und Telefon.
 - Doppelklicken Sie auf eine Zeile, um den **Datensatz** zu öffnen; der Pfeil am Zeilenanfang öffnet ihn in einem neuen Tab. **Neue Beziehung** legt einen an.
 
 ![Liste der Beziehungen mit Rollen und Neue Beziehung](images/relaties-lijst-de.png "Die Liste der Beziehungen")

@@ -14,7 +14,7 @@ Klik in het menu links op **Relaties**.
 
 - De kolom **Rollen** toont in welke hoedanigheid een relatie in uw dossiers voorkomt; één relatie kan meerdere rollen hebben.
 - De kolom **Actief** toont of een relatie nog in de keuzelijsten staat; een streepje betekent niet actief.
-- Het **zoekvak** zoekt op naam, rol, gemeente, land, ondernemingsnummer en e-mail.
+- Het **zoekvak** zoekt op naam, rol, gemeente, land, ondernemingsnummer, e-mail en telefoon.
 - Dubbelklik op een rij om de **fiche** te openen; met het pijltje vooraan de rij opent ze in een nieuw tabblad. **Nieuwe relatie** maakt er een aan.
 
 ![De lijst Relaties met hun Rollen en de knop Nieuwe relatie](images/relaties-lijst.png "De lijst Relaties")
