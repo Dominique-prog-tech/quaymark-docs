@@ -77,7 +77,7 @@ Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **
 
 ![Annotieren mit Pfeil, Oval, Maß und Text auf dem Foto, in Rot und Gelb](images/foto-annoteren-de.png "Annotieren")
 
-**Speichern** erstellt eine neue Version; das Foto erhält die Beschriftung **annotiert**. Das Original bleibt unverändert: Quaymark bewahrt die Formen und zeichnet daraus ein eigenes Bild, mit eigenem Fingerabdruck. Der Bericht zeigt die annotierte Version; die Bildunterschrift sagt, dass sie annotiert ist, und behält den Fingerabdruck des Originals. **Zurück zum Original** setzt das Originalfoto wieder in den Bericht; die Annotation bleibt als frühere Version erhalten. Das Beweispaket enthält das Original und jede Version der Annotation, als Bild und als Formen.
+**Speichern** erstellt eine neue Version; das Foto erhält die Beschriftung **annotiert**. Das Original bleibt unverändert: Quaymark bewahrt die Formen und zeichnet daraus ein eigenes Bild, mit eigenem Fingerabdruck. Der Bericht zeigt die annotierte Version; die Bildunterschrift sagt, dass sie annotiert ist, und behält den Fingerabdruck des Originals. **Zurück zum Original** setzt das Originalfoto wieder in den Bericht; die Annotation bleibt als frühere Version erhalten. Das Beweispaket enthält das Original und jede Version der Annotation, als Bild und als Formen. Hat sich nichts geändert, erstellt Speichern keine Version. Verlassen Sie die Seite mit noch nicht gespeicherten Formen, fragt Quaymark zuerst. Danach kehren Sie zur Registerkarte zurück, von der Sie kamen (Feststellungen oder Checkliste).
 
 ### Checkliste
 

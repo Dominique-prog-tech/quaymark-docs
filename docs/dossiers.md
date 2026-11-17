@@ -77,7 +77,7 @@ Werkt u zonder veldapp, dan zet u de foto's op kantoor bij een vaststelling: **F
 
 ![De pagina Annoteren: de knoppen Pijl, Ovaal en Maat, en op de foto een pijl, een ovaal, een maat en een tekst](images/foto-annoteren.png "Annoteren")
 
-**Bewaren** maakt een nieuwe versie; de foto krijgt het label **geannoteerd**. Het origineel blijft onaangeroerd: Quaymark bewaart de vormen en tekent er een eigen beeld uit, met zijn eigen vingerafdruk. Het rapport toont de geannoteerde versie; het bijschrift zegt dat ze geannoteerd is en houdt de vingerafdruk van het origineel. **Terug naar origineel** zet de originele foto weer in het rapport; de annotatie blijft bewaard als eerdere versie. In het bewijspakket staan het origineel en elke versie van de annotatie, als beeld en als vormen.
+**Bewaren** maakt een nieuwe versie; de foto krijgt het label **geannoteerd**. Het origineel blijft onaangeroerd: Quaymark bewaart de vormen en tekent er een eigen beeld uit, met zijn eigen vingerafdruk. Het rapport toont de geannoteerde versie; het bijschrift zegt dat ze geannoteerd is en houdt de vingerafdruk van het origineel. **Terug naar origineel** zet de originele foto weer in het rapport; de annotatie blijft bewaard als eerdere versie. In het bewijspakket staan het origineel en elke versie van de annotatie, als beeld en als vormen. Is er niets veranderd, dan maakt Bewaren geen versie. Gaat u weg met vormen die nog niet bewaard zijn, dan vraagt Quaymark eerst. Daarna komt u terug op het tabblad waar u vandaan kwam (Vaststellingen of Checklist).
 
 ### Checklist
 

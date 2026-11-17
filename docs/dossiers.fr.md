@@ -77,7 +77,7 @@ Sans application de terrain, vous ajoutez les photos au bureau à une constatati
 
 ![La page Annoter : les boutons Flèche, Ovale et Cote, et sur la photo une flèche, un ovale, une cote et un texte](images/foto-annoteren-fr.png "Annoter")
 
-**Enregistrer** crée une nouvelle version ; la photo reçoit l'étiquette **annotée**. L'original reste intact : Quaymark conserve les formes et en dessine une image propre, avec sa propre empreinte. Le rapport montre la version annotée ; la légende indique qu'elle est annotée et garde l'empreinte de l'original. **Revenir à l'original** remet la photo originale dans le rapport ; l'annotation reste conservée comme version antérieure. Le dossier de preuves contient l'original et chaque version de l'annotation, en image et en formes.
+**Enregistrer** crée une nouvelle version ; la photo reçoit l'étiquette **annotée**. L'original reste intact : Quaymark conserve les formes et en dessine une image propre, avec sa propre empreinte. Le rapport montre la version annotée ; la légende indique qu'elle est annotée et garde l'empreinte de l'original. **Revenir à l'original** remet la photo originale dans le rapport ; l'annotation reste conservée comme version antérieure. Le dossier de preuves contient l'original et chaque version de l'annotation, en image et en formes. Si rien n'a changé, Enregistrer ne crée pas de version. Si vous quittez la page avec des formes non enregistrées, Quaymark vous le demande d'abord. Vous revenez ensuite à l'onglet d'où vous venez (Constatations ou Check-list).
 
 ### Check-list
 

@@ -77,7 +77,7 @@ Working without the field app, you add the photos at the office to a finding: **
 
 ![The Annotate page: the Arrow, Oval and Dimension buttons, and on the photo an arrow, an oval, a dimension and a text](images/foto-annoteren-en.png "Annotate")
 
-**Save** creates a new version; the photo gets the label **annotated**. The original stays untouched: Quaymark keeps the shapes and draws its own image from them, with its own fingerprint. The report shows the annotated version; the caption says it is annotated and keeps the fingerprint of the original. **Back to original** puts the original photo back in the report; the annotation is kept as an earlier version. The evidence package contains the original and every version of the annotation, as an image and as shapes.
+**Save** creates a new version; the photo gets the label **annotated**. The original stays untouched: Quaymark keeps the shapes and draws its own image from them, with its own fingerprint. The report shows the annotated version; the caption says it is annotated and keeps the fingerprint of the original. **Back to original** puts the original photo back in the report; the annotation is kept as an earlier version. The evidence package contains the original and every version of the annotation, as an image and as shapes. If nothing changed, Save creates no version. If you leave with shapes that are not saved yet, Quaymark asks first. You then return to the tab you came from (Findings or Checklist).
 
 ### Checklist
 
