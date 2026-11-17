@@ -95,7 +95,7 @@ Die Fotos eines Punktes stehen darunter, auch die einer früheren Antwort, und s
 
 ### Bericht
 
-In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
+In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Daneben zeigt **Vorschau (PDF)** den Bericht in einem Fenster, und **Bericht (Word)** lädt ihn als Word-Datei herunter, jeweils mit dem gespeicherten Text. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
 
 ![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
 
@@ -184,7 +184,7 @@ Die Prüfung verweigert nichts. Geben Sie mit Befunden heraus, fragt Quaymark **
 
 ### Bericht herausgeben und senden
 
-**Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**, mit Begründung. **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.
+**Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**, mit Begründung. **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Ist die Version unterschrieben, wird das unterschriebene PDF angehängt, wie im Auftraggeberportal; das Fenster sagt, welches PDF hinausgeht, und warnt, wenn Sie eine durch eine neuere ersetzte Version senden. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.
 
 ### Bericht unterschreiben lassen
 

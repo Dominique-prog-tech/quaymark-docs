@@ -95,7 +95,7 @@ The photos of an item appear below it, including those of a previous answer, and
 
 ### Report
 
-On the **Report** tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. If the report template does not show a section, the tab says so.
+On the **Report** tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. Next to it, **Preview (PDF)** shows the report in a window and **Report (Word)** downloads it as a Word file, each time with the saved text. If the report template does not show a section, the tab says so.
 
 ![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
 
@@ -184,7 +184,7 @@ The check refuses nothing. If you issue with findings, Quaymark asks **Issue any
 
 ### Issuing and sending the report
 
-**Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. Save the sections first: a version only takes saved text.
+**Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. If the version is signed, the signed PDF is attached, as in the principal portal; the window says which PDF goes, and warns if you send a version that a newer one superseded. Save the sections first: a version only takes saved text.
 
 ### Signing the report
 

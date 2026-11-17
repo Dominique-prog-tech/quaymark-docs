@@ -95,7 +95,7 @@ Les photos d'un point figurent en dessous, y compris celles d'une réponse préc
 
 ### Rapport
 
-Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
+Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. À côté, **Aperçu (PDF)** montre le rapport dans une fenêtre et **Rapport (Word)** le télécharge en fichier Word, chaque fois avec le texte enregistré. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
 
 ![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
 
@@ -184,7 +184,7 @@ Le contrôle ne refuse rien. Si vous émettez avec des remarques, Quaymark deman
 
 ### Émettre et envoyer le rapport
 
-**Émettre le rapport** (onglet Rapport, à partir du statut Rapport) fige le rapport comme version 1, avec son empreinte (SHA-256) : il ne change plus jamais. Corriger = **Émettre une nouvelle version**, avec un motif. **Envoyer** envoie une version émise en PDF au donneur d'ordre ; le mail est conservé dans le journal. Enregistrez d'abord les rubriques : une version ne reprend que le texte enregistré.
+**Émettre le rapport** (onglet Rapport, à partir du statut Rapport) fige le rapport comme version 1, avec son empreinte (SHA-256) : il ne change plus jamais. Corriger = **Émettre une nouvelle version**, avec un motif. **Envoyer** envoie une version émise en PDF au donneur d'ordre ; le mail est conservé dans le journal. Si la version est signée, le PDF signé est joint, comme dans le portail des donneurs d'ordre ; la fenêtre indique quel PDF part, et avertit si vous envoyez une version remplacée par une plus récente. Enregistrez d'abord les rubriques : une version ne reprend que le texte enregistré.
 
 ### Faire signer le rapport
 

@@ -95,7 +95,7 @@ De foto's van een punt staan eronder, ook die bij een vorig antwoord, en zo gaan
 
 ### Rapport
 
-Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
+Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Ernaast toont **Voorbeeld (PDF)** het rapport in een venster en downloadt **Rapport (Word)** het als Word-bestand, telkens met de bewaarde tekst. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
 
 ![Het tabblad Rapport met Brieven en certificaten, Bewijspakket en de rubrieken Inleiding en Werkwijze](images/dossier-rapport.png "Het tabblad Rapport")
 
@@ -184,7 +184,7 @@ De controle weigert niets. Geeft u uit met bevindingen, dan vraagt Quaymark **To
 
 ### Rapport uitgeven en verzenden
 
-**Rapport uitgeven** (tabblad Rapport, vanaf de status Rapportage) legt het rapport vast als versie 1, met zijn vingerafdruk (SHA-256): het verandert daarna nooit meer. Iets rechtzetten = **Nieuwe versie uitgeven**, met een reden. **Verzenden** stuurt een uitgegeven versie als PDF naar de opdrachtgever; de mail komt in het journaal. Bewaar eerst de rubrieken: een versie neemt enkel bewaarde tekst.
+**Rapport uitgeven** (tabblad Rapport, vanaf de status Rapportage) legt het rapport vast als versie 1, met zijn vingerafdruk (SHA-256): het verandert daarna nooit meer. Iets rechtzetten = **Nieuwe versie uitgeven**, met een reden. **Verzenden** stuurt een uitgegeven versie als PDF naar de opdrachtgever; de mail komt in het journaal. Is de versie getekend, dan gaat de getekende PDF mee, zoals in het opdrachtgeversportaal; het venster zegt welke PDF vertrekt, en waarschuwt als u een versie verstuurt die door een nieuwere vervangen werd. Bewaar eerst de rubrieken: een versie neemt enkel bewaarde tekst.
 
 ### Rapport ondertekenen
 
