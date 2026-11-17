@@ -257,7 +257,7 @@ There are three letters and five certificates. Each certificate has its own line
 
 ![A new letter of protest for HQ-2026-0003 with Preview (PDF) and Issue](images/dossier-brief-en.png "A new letter")
 
-If a quantity is in another unit than the customer asks for, for example metric tonnes while the charter party uses long tons, **Convert** converts it (tonne, kilogram, long ton, short ton, cubic metre, litre, barrel). From volume to weight, Quaymark asks for the density. The converted quantity is added as a new line below the original.
+If a quantity is in another unit than the customer asks for, for example metric tonnes while the charter party uses long tons, **Convert** (under **⋯** next to the row) converts it (tonne, kilogram, long ton, short ton, cubic metre, litre, barrel). From volume to weight, Quaymark asks for the density. The converted quantity is added as a new line below the original.
 
 ### Damage
 
