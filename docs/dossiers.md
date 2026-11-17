@@ -247,6 +247,8 @@ Is het dossier **gekoppeld** aan een vorig dossier (bv. de on-hire bij een off-h
 
 **Nieuwe brief** en **Nieuw certificaat** (tabblad Rapport) maken een standaardbrief of certificaat in de taal van het dossier. **Voorbeeld (PDF)** toont het eerst; **Uitgeven** legt het vast met zijn vingerafdruk. Een certificaat krijgt dan een nummer uit de reeks van de vestiging (C-HQ-2026-0001). Vervang in een brief elk invulvak tussen [rechte haken]: anders kan uitgeven niet.
 
+Kiest u bovenaan een andere soort, dan vult Quaymark onderwerp, tekst en lading opnieuw in; de datum en de geadresseerde blijven. Schreef of wijzigde u zelf iets, dan vraagt Quaymark eerst of dat verloren mag gaan. Een certificaat kan pas vanaf de status In uitvoering: staat het dossier nog op Nieuw of Gepland, dan zegt het scherm dat bovenaan, en het voorbeeld kan al. Een getypte hoeveelheid krijgt de notatie van het dossier (12,500 in het Engels, 12.500 in het Nederlands).
+
 Er zijn drie brieven en vijf certificaten. Elk certificaat heeft zijn eigen regels:
 
 - **Certificaat van hoeveelheid**, **Certificaat van gewicht** en het **On-hire/off-hire-certificaat**: een omschrijving, een hoeveelheid en een eenheid. Een ingevuld getalveld van het dossier neemt u over met **Overnemen uit een veld van het dossier**. Bij een bunker survey neemt **Uit de bunker survey** de geleverde hoeveelheid per product over.

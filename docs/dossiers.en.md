@@ -247,6 +247,8 @@ If the file is **linked** to a previous file (e.g. the on-hire of an off-hire), 
 
 **New letter** and **New certificate** (Report tab) create a standard letter or certificate in the language of the file. **Preview (PDF)** shows it first; **Issue** fixes it with its fingerprint. A certificate then gets a number from the branch's series (C-HQ-2026-0001). In a letter, replace every field in [square brackets]: otherwise issuing is not possible.
 
+If you choose another type at the top, Quaymark fills in the subject, text and cargo again; the date and the addressee stay. If you wrote or changed something yourself, Quaymark first asks whether it may be lost. A certificate is only possible from the status In progress: if the file is still New or Scheduled, the screen says so at the top, and the preview is already possible. A typed quantity takes the notation of the file (12,500 in English, 12.500 in Dutch).
+
 There are three letters and five certificates. Each certificate has its own lines:
 
 - **Certificate of quantity**, **Certificate of weight** and **On-hire/off-hire certificate**: a description, a quantity and a unit. A filled-in number field of the file can be taken over with **Take from a field of the file**. For a bunker survey, **From the bunker survey** takes over the delivered quantity per product.

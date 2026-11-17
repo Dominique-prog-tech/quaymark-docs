@@ -247,6 +247,8 @@ Si le dossier est **lié** à un dossier précédent (p. ex. l'on-hire d'un off-
 
 **Nouvelle lettre** et **Nouveau certificat** (onglet Rapport) créent une lettre type ou un certificat dans la langue du dossier. **Aperçu (PDF)** le montre d'abord ; **Émettre** le fige avec son empreinte. Un certificat reçoit alors un numéro de la série de l'établissement (C-HQ-2026-0001). Remplacez dans une lettre chaque champ entre [crochets] : sinon l'émission est impossible.
 
+Si vous choisissez un autre type en haut, Quaymark remplit à nouveau l'objet, le texte et la cargaison ; la date et le destinataire restent. Si vous avez écrit ou modifié quelque chose vous-même, Quaymark demande d'abord si cela peut être perdu. Un certificat n'est possible qu'à partir du statut En cours : si le dossier est encore Nouveau ou Planifié, l'écran le dit en haut, et l'aperçu est déjà possible. Une quantité saisie prend la notation du dossier (12,500 en anglais, 12 500 en français).
+
 Il y a trois lettres et cinq certificats. Chaque certificat a ses propres lignes :
 
 - **Certificat de quantité**, **Certificat de poids** et **Certificat on-hire/off-hire** : une description, une quantité et une unité. Un champ numérique rempli du dossier se reprend avec **Reprendre d'un champ du dossier**. Pour une expertise de soutes, **De l'expertise de soutes** reprend la quantité livrée par produit.

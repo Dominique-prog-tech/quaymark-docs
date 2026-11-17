@@ -247,6 +247,8 @@ Ist die Akte mit einer vorigen Akte **verknüpft** (z. B. die On-Hire zu einer O
 
 **Neues Schreiben** und **Neue Bescheinigung** (Registerkarte Bericht) erstellen ein Standardschreiben oder eine Bescheinigung in der Sprache der Akte. **Vorschau (PDF)** zeigt es zuerst; **Herausgeben** legt es mit seinem Fingerabdruck fest. Eine Bescheinigung erhält dann eine Nummer aus der Reihe der Niederlassung (C-HQ-2026-0001). Ersetzen Sie in einem Schreiben jedes Feld in [eckigen Klammern]: sonst ist Herausgeben nicht möglich.
 
+Wählen Sie oben eine andere Art, füllt Quaymark Betreff, Text und Ladung neu aus; Datum und Empfänger bleiben. Haben Sie selbst etwas geschrieben oder geändert, fragt Quaymark zuerst, ob es verloren gehen darf. Ein Zertifikat ist erst ab dem Status In Bearbeitung möglich: steht die Akte noch auf Neu oder Geplant, sagt der Bildschirm das oben, und die Vorschau ist schon möglich. Eine eingetippte Menge erhält die Schreibweise der Akte (12,500 auf Englisch, 12.500 auf Deutsch).
+
 Es gibt drei Schreiben und fünf Bescheinigungen. Jede Bescheinigung hat ihre eigenen Zeilen:
 
 - **Mengenbescheinigung**, **Gewichtsbescheinigung** und **On-Hire-/Off-Hire-Bescheinigung**: eine Beschreibung, eine Menge und eine Einheit. Ein ausgefülltes Zahlenfeld der Akte übernehmen Sie mit **Aus einem Feld der Akte übernehmen**. Bei einer Bunkerbesichtigung übernimmt **Aus der Bunkerbesichtigung** die gelieferte Menge je Produkt.
