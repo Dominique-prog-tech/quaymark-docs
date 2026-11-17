@@ -331,7 +331,7 @@ The **Timeline** tab is the statement of facts of the file: the events of the po
 
 At the top, the summary tiles calculate: the time from NOR to commencement, the duration of loading or discharging, the stoppages (from a stoppage to its resumption), the net working time and the time in port. If an event for a duration is missing, a dash is shown, not zero.
 
-**Statement of facts (PDF)** shows the document; **Issue statement of facts** records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. After issue, the tab shows **Issued on** with the date, who, the PDF and the fingerprint; if you then change an event, it warns that the issued statement of facts has different times. In the report the timeline comes with the marker `{{tijdlijn}}` (see [Templates](sjablonen.md)).
+**Statement of facts (PDF)** shows the document in a window; **Issue statement of facts** records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. After issue, the tab shows **Issued on** with the date, who, the PDF and the fingerprint; if you then change an event, it warns that the issued statement of facts has different times. In the report the timeline comes with the marker `{{tijdlijn}}` (see [Templates](sjablonen.md)).
 
 ### Laytime
 

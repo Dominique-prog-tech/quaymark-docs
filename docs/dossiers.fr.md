@@ -331,7 +331,7 @@ L'onglet **Chronologie** est le statement of facts du dossier : les événements
 
 En haut, les tuiles du résumé calculent : le temps de la NOR au début, la durée du chargement ou déchargement, les interruptions (d'une interruption à sa reprise), le temps de travail net et le séjour au port. S'il manque un événement pour une durée, un tiret s'affiche, pas zéro.
 
-**Statement of facts (PDF)** montre le document ; **Émettre le statement of facts** le fige avec son empreinte, parmi les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Après l'émission, l'onglet affiche **Émis le** avec la date, l'auteur, le PDF et l'empreinte ; si vous modifiez ensuite un événement, il avertit que le statement of facts émis contient d'autres heures. Dans le rapport, la chronologie vient avec le marqueur `{{tijdlijn}}` (voir [Modèles](sjablonen.md)).
+**Statement of facts (PDF)** montre le document dans une fenêtre ; **Émettre le statement of facts** le fige avec son empreinte, parmi les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Après l'émission, l'onglet affiche **Émis le** avec la date, l'auteur, le PDF et l'empreinte ; si vous modifiez ensuite un événement, il avertit que le statement of facts émis contient d'autres heures. Dans le rapport, la chronologie vient avec le marqueur `{{tijdlijn}}` (voir [Modèles](sjablonen.md)).
 
 ### Laytime
 

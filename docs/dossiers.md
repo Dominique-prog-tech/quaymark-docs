@@ -331,7 +331,7 @@ Het tabblad **Tijdlijn** is de statement of facts van het dossier: de gebeurteni
 
 Bovenaan rekenen de tegels van de samenvatting: de tijd van de NOR tot de start, de duur van het laden of lossen, de onderbrekingen (van een onderbreking tot haar hervatting), de netto werktijd en het verblijf in de haven. Ontbreekt er een gebeurtenis voor een duur, dan staat er een streepje, geen nul.
 
-**Statement of facts (PDF)** toont het document; **Statement of facts uitgeven** legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. Na de uitgifte toont het tabblad **Uitgegeven op** met de datum, wie, de PDF en de vingerafdruk; wijzigt u daarna een gebeurtenis, dan waarschuwt het dat de uitgegeven statement of facts andere tijden heeft. In het rapport komt de tijdlijn met de markering `{{tijdlijn}}` (zie [Sjablonen](sjablonen.md)).
+**Statement of facts (PDF)** toont het document in een venster; **Statement of facts uitgeven** legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. Na de uitgifte toont het tabblad **Uitgegeven op** met de datum, wie, de PDF en de vingerafdruk; wijzigt u daarna een gebeurtenis, dan waarschuwt het dat de uitgegeven statement of facts andere tijden heeft. In het rapport komt de tijdlijn met de markering `{{tijdlijn}}` (zie [Sjablonen](sjablonen.md)).
 
 ### Laytime
 
