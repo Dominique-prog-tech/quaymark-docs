@@ -290,6 +290,8 @@ The **calculation** beside it follows every change: the drafts at the perpendicu
 
 **Draft survey report (PDF)** shows the document; **Issue draft survey report** (once both measurements are complete) records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. In the report the draft survey comes with the marker `{{draftsurvey}}` (see [Templates](sjablonen.md)).
 
+Each intermediate step is rounded to three decimals, and the next step calculates with that rounded value, as on paper: each line follows from the previous one, and the cargo is exactly the difference of the two net displacements. The notes of the measurements appear below the table. After issuing, the tab shows **Issued on** with the date, who, the PDF and the fingerprint; if you change a measurement afterwards, it warns that the issued report has different figures.
+
 ### Barge gauging
 
 For a survey type with the **Barge gauging** box ticked (see [Survey types](soorten-survey.md)), the file gets the **Gauging** tab: determining the cargo of an inland vessel with the gauge scales and the vessel's gauging certificate.

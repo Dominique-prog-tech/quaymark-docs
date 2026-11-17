@@ -290,6 +290,8 @@ Le **calcul** à côté suit chaque modification : les tirants d'eau aux perpend
 
 **Draft survey report (PDF)** affiche le document ; **Émettre le draft survey report** (lorsque les deux mesures sont complètes) le fige avec son empreinte, avec les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Dans le rapport, la draft survey vient avec le marqueur `{{draftsurvey}}` (voir [Modèles](sjablonen.md)).
 
+Chaque étape intermédiaire est arrondie à trois décimales, et l'étape suivante calcule avec cette valeur arrondie, comme sur papier : chaque ligne découle ainsi de la précédente, et la cargaison est exactement la différence des deux déplacements nets. Les remarques des mesures figurent sous le tableau. Après l'émission, l'onglet affiche **Émis le** avec la date, qui, le PDF et l'empreinte ; si vous modifiez ensuite une mesure, il avertit que le rapport émis contient d'autres chiffres.
+
 ### Jaugeage aux échelles
 
 Pour un type d'expertise avec la case **Jaugeage aux échelles** (voir [Types d'expertise](soorten-survey.md)), le dossier reçoit l'onglet **Jaugeage** : déterminer la cargaison d'un bateau de navigation intérieure avec les échelles de jauge et le certificat de jaugeage du bateau.

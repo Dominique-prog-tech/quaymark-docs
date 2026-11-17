@@ -290,6 +290,8 @@ Die **Berechnung** daneben folgt jeder Änderung: die Tiefgänge an den Loten, d
 
 **Draft Survey Report (PDF)** zeigt das Dokument; **Draft Survey Report herausgeben** (sobald beide Messungen vollständig sind) hält es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Im Bericht steht der Draft Survey mit der Markierung `{{draftsurvey}}` (siehe [Vorlagen](sjablonen.md)).
 
+Jeder Zwischenschritt ist auf drei Dezimalen gerundet, und der nächste Schritt rechnet mit diesem gerundeten Wert, wie auf Papier: So ergibt sich jede Zeile aus der vorigen, und die Ladung ist genau die Differenz der beiden Nettoverdrängungen. Die Bemerkungen der Messungen stehen unter der Tabelle. Nach der Ausgabe zeigt der Reiter **Ausgegeben am** mit Datum, wer, PDF und Fingerabdruck; ändern Sie danach eine Messung, warnt er, dass der ausgegebene Bericht andere Zahlen hat.
+
 ### Eichaufnahme
 
 Bei einer Besichtigungsart mit dem Haken **Eichaufnahme** (siehe [Besichtigungsarten](soorten-survey.md)) erhält die Akte die Registerkarte **Eichaufnahme**: die Ladung eines Binnenschiffs mit den Eichskalen und dem Eichschein des Schiffs bestimmen.

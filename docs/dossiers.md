@@ -290,6 +290,8 @@ De **berekening** ernaast volgt elke wijziging: de diepgangen aan de loodlijnen,
 
 **Draft survey report (PDF)** toont het document; **Draft survey report uitgeven** (als beide metingen volledig zijn) legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. In het rapport komt de draft survey met de markering `{{draftsurvey}}` (zie [Sjablonen](sjablonen.md)).
 
+Elke tussenstap staat afgerond op drie decimalen, en de volgende stap rekent met die afgeronde waarde, zoals op papier: zo telt elke regel op uit de vorige, en is de lading precies het verschil van de twee netto's. De opmerkingen van de metingen staan onder de tabel. Na de uitgifte toont het tabblad **Uitgegeven op** met de datum, wie, de PDF en de vingerafdruk; wijzigt u daarna een meting, dan waarschuwt het dat het uitgegeven report andere cijfers heeft.
+
 ### Meting op ijkschalen
 
 Bij een soort survey met het vinkje **Meting op ijkschalen** (zie [Soorten survey](soorten-survey.md)) krijgt het dossier het tabblad **Meting**: de lading van een binnenschip bepalen met de ijkschalen en de ijkbrief van het schip.
