@@ -85,7 +85,7 @@ Einen Fehler auf einer ausgestellten Rechnung korrigieren Sie mit **Gutschrift e
 
 ## Abzurechnen
 
-Die Arbeit jeder Akte, die noch auf keiner Rechnung steht: die offenen Leistungen, die weiterzuberechnenden Kosten und die Pauschale abgeschlossener Akten, als Schätzung ohne MwSt., in der Währung der Akte. Öffnen Sie die Liste mit **Abzurechnen** auf dieser Seite oder mit der Karte **Nicht abgerechnete Arbeit** auf der Übersicht.
+Die Arbeit jeder Akte, die noch auf keiner Rechnung steht: die offenen Leistungen, die weiterzuberechnenden Kosten und die Pauschale abgeschlossener Akten, als Schätzung ohne MwSt., in der Währung der Akte. Die Schätzung rechnet wie der Rechnungsvorschlag, mit den Zuschlägen für Wochenende, Nacht und die Feiertage des Landes der Niederlassung. Öffnen Sie die Liste mit **Abzurechnen** auf dieser Seite oder mit der Karte **Nicht abgerechnete Arbeit** auf der Übersicht.
 
 - Die größte Schätzung steht oben.
 - Ein Klick auf eine Zeile öffnet die Registerkarte **Zeit und Kosten** der Akte: Dort schlagen Sie die Rechnung vor. → [Eine Rechnung aus einer Akte vorschlagen](#eine-rechnung-aus-einer-akte-vorschlagen)

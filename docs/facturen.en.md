@@ -85,7 +85,7 @@ An error on an issued invoice is corrected with **Create credit note**. A draft 
 
 ## To invoice
 
-The work of each file that is not yet on any invoice: the open time entries, the rechargeable expenses and the fixed fee of completed files, as an estimate excluding VAT, in the currency of the file. Open the list with **To invoice** on this page, or with the **Uninvoiced work** card on the dashboard.
+The work of each file that is not yet on any invoice: the open time entries, the rechargeable expenses and the fixed fee of completed files, as an estimate excluding VAT, in the currency of the file. The estimate calculates like the invoice proposal, with the surcharges for weekend, night and the public holidays of the office's country. Open the list with **To invoice** on this page, or with the **Uninvoiced work** card on the dashboard.
 
 - The largest estimate is at the top.
 - A click on a row opens the file's **Time and expenses** tab: that is where you propose the invoice. → [Proposing an invoice from a file](#proposing-an-invoice-from-a-file)

@@ -85,7 +85,7 @@ Une erreur sur une facture émise se corrige avec **Créer une note de crédit**
 
 ## À facturer
 
-Le travail de chaque dossier qui ne figure encore sur aucune facture : les prestations ouvertes, les frais à refacturer et le forfait des dossiers terminés, en estimation hors TVA, dans la devise du dossier. Ouvrez la liste avec **À facturer** sur cette page, ou avec la carte **Travail non facturé** du tableau de bord.
+Le travail de chaque dossier qui ne figure encore sur aucune facture : les prestations ouvertes, les frais à refacturer et le forfait des dossiers terminés, en estimation hors TVA, dans la devise du dossier. L'estimation calcule comme la proposition de facture, avec les suppléments de week-end, de nuit et des jours fériés du pays du site. Ouvrez la liste avec **À facturer** sur cette page, ou avec la carte **Travail non facturé** du tableau de bord.
 
 - La plus grande estimation est en haut.
 - Un clic sur une ligne ouvre l'onglet **Temps et frais** du dossier : c'est là que vous proposez la facture. → [Proposer une facture depuis un dossier](#proposer-une-facture-depuis-un-dossier)

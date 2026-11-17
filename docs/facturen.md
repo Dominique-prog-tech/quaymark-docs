@@ -85,7 +85,7 @@ Met **Nieuwe factuur** in de lijst maakt u een factuur zonder tijd of kosten, bi
 
 ## Te factureren
 
-Het werk van elk dossier dat nog op geen factuur staat: de open prestaties, de door te rekenen kosten en het forfait van afgewerkte dossiers, als raming zonder btw, in de munt van het dossier. Open de lijst met **Te factureren** op deze pagina, of met de kaart **Niet-gefactureerd werk** op het dashboard.
+Het werk van elk dossier dat nog op geen factuur staat: de open prestaties, de door te rekenen kosten en het forfait van afgewerkte dossiers, als raming zonder btw, in de munt van het dossier. De raming rekent zoals het factuurvoorstel, met de toeslagen voor weekend, nacht en de feestdagen van het land van de vestiging. Open de lijst met **Te factureren** op deze pagina, of met de kaart **Niet-gefactureerd werk** op het dashboard.
 
 - De grootste raming staat bovenaan.
 - Een klik op een rij opent het tabblad **Tijd en kosten** van het dossier: daar stelt u de factuur voor. → [Een factuur voorstellen uit een dossier](#een-factuur-voorstellen-uit-een-dossier)
