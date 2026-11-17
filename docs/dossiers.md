@@ -55,7 +55,7 @@ De **surveyor** van het dossier krijgt een melding op het belletje op de laatste
 
 Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** onder **⋯** achteraan de rij, met een reden: de oude versie blijft doorgestreept staan. Haar foto's gaan mee naar de nieuwe versie, op het scherm en in het rapport. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde.
 
-Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij: geen vaststellingen, checklistantwoorden, foto's of handtekeningen, ook niet vanuit de veldapp. Wat er al is, blijft zichtbaar.
+Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij: geen vaststellingen, checklistantwoorden, foto's of handtekeningen, ook niet vanuit de veldapp. Wat er al is, blijft zichtbaar. Ook de berekeningen (draft survey, meting op ijkschalen, bunker survey, tijdlijn en laytime) zijn dan enkel nog te lezen.
 
 ![Het tabblad Vaststellingen per plaats aan boord, met foto, Ernst, Uit rapport halen en Rechtzetten](images/dossier-vaststellingen.png "Vaststellingen met hun foto")
 
@@ -314,8 +314,8 @@ Bij een soort survey met het vinkje **Bunker survey** (zie [Soorten survey](soor
 - **Peilingen vóór** en **Peilingen na** openen een pagina met een rij per brandstoftank: product, methode (peiling of ullage), de gemeten waarde, de correctie voor trim en slagzij uit de tabel, het **volume** dat u bij de gecorrigeerde peiling in de peiltabel afleest, en de temperatuur. De tanks komen van het schip (tabblad Ruimen en tanks); een ontbrekende tank voegt u daar toe.
 - De **densiteit bij 15 °C** komt van de leveringsbon van dat product. Wijkt een tank af (bijvoorbeeld een eigen labowaarde), vul ze dan bij die tank in.
 - Quaymark rekent per tank de **VCF** volgens ASTM D1250 tabel 54B, het volume bij 15 °C en het gewicht in lucht (volume bij 15 °C × (densiteit − 0,0011)). Gebruikt u een VCF uit een eigen tabel, vul die dan in, met een reden; in het rapport krijgt ze een sterretje.
-- **Bewaren** voegt per gewijzigde tank een nieuwe peiling toe. De vorige blijft bewaard, met wie en wanneer.
-- Per product toont het tabblad vóór, na en de **geleverde** hoeveelheid, en tegenover de leveringsbon het verschil in ton en procent. Is een tank maar op één moment gepeild, dan zegt het tabblad dat: het geleverde klopt dan niet voor dat product.
+- **Bewaren** voegt per gewijzigde tank een nieuwe peiling toe. De vorige blijft bewaard, met wie en wanneer. Weigert Quaymark één tank, dan blijven de tanks die al bewaard zijn bewaard; een tweede keer **Bewaren** voegt enkel nog de geweigerde toe.
+- Per product toont het tabblad vóór, na en de **geleverde** hoeveelheid, en tegenover de leveringsbon het verschil in ton en procent. Is een tank maar op één moment gepeild, dan zegt het tabblad dat: het geleverde klopt dan niet voor dat product. Kwam er niets bij en is er geen leveringsbon voor het product, dan staat er **Geen levering**, met het kleine verschil ernaast: dat komt van de temperatuur of het verbruik.
 
 ![De peilingen na het bunkeren van HQ-2026-0007, een rij per tank](images/dossier-bunker-peilingen.png "Peilingen")
 

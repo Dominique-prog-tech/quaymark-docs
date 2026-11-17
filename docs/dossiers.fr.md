@@ -55,7 +55,7 @@ L'**expert** du dossier reçoit une notification sur la cloche le dernier jour o
 
 Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier**, sous **⋯** en fin de ligne, et un motif : l'ancienne version reste visible, barrée. Ses photos suivent la nouvelle version, à l'écran comme dans le rapport. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
 
-Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : ni constatations, ni réponses à la check-list, ni photos, ni signatures, pas même depuis l'application de terrain. Ce qui existe reste visible.
+Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : ni constatations, ni réponses à la check-list, ni photos, ni signatures, pas même depuis l'application de terrain. Ce qui existe reste visible. Les calculs (draft survey, jaugeage sur échelles, bunker survey, chronologie et laytime) ne peuvent alors plus qu'être consultés.
 
 ![L'onglet Constatations par emplacement à bord, avec photo, Gravité, Retirer du rapport et Rectifier](images/dossier-vaststellingen-fr.png "Les constatations et leur photo")
 
@@ -314,8 +314,8 @@ Pour un type d'expertise avec la case **Expertise de soutes** (voir [Types d'exp
 - **Sondages avant** et **Sondages après** ouvrent une page avec une ligne par soute : produit, méthode (sondage ou creux), la valeur mesurée, la correction d'assiette et de gîte de la table, le **volume** que vous relevez dans la table de jaugeage au sondage corrigé, et la température. Les soutes viennent du navire (onglet Cales et citernes) ; ajoutez-y une soute manquante.
 - La **densité à 15 °C** vient du bon de livraison du produit. Si une soute diffère (par exemple une valeur de labo propre), indiquez-la sur cette soute.
 - Quaymark calcule par soute le **VCF** selon ASTM D1250 table 54B, le volume à 15 °C et le poids dans l'air (volume à 15 °C × (densité − 0,0011)). Si vous utilisez un VCF de votre propre table, indiquez-le avec un motif ; il reçoit un astérisque dans le rapport.
-- **Enregistrer** ajoute un nouveau sondage par soute modifiée. Le précédent est conservé, avec qui et quand.
-- Par produit, l'onglet montre avant, après et la quantité **livrée**, et face au bon de livraison l'écart en tonnes et en pourcentage. Si une soute n'est sondée qu'à un seul moment, l'onglet le dit : le livré n'est alors pas correct pour ce produit.
+- **Enregistrer** ajoute un nouveau sondage par soute modifiée. Le précédent est conservé, avec qui et quand. Si Quaymark refuse une soute, les soutes déjà enregistrées le restent ; un second **Enregistrer** n'ajoute plus que la soute refusée.
+- Par produit, l'onglet montre avant, après et la quantité **livrée**, et face au bon de livraison l'écart en tonnes et en pourcentage. Si une soute n'est sondée qu'à un seul moment, l'onglet le dit : le livré n'est alors pas correct pour ce produit. Si rien n'a été ajouté et qu'il n'y a pas de bon de livraison pour le produit, l'onglet indique **Pas de livraison**, avec le petit écart à côté : il vient de la température ou de la consommation.
 
 ![Les sondages après le soutage de HQ-2026-0007, une ligne par soute](images/dossier-bunker-peilingen-fr.png "Sondages")
 

@@ -55,7 +55,7 @@ Der **Besichtiger** der Akte erhält am letzten Arbeitstag davor und nach Ablauf
 
 Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** unter **⋯** am Ende der Zeile und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat.
 
-Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Feld-App. Was schon da ist, bleibt sichtbar.
+Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Feld-App. Was schon da ist, bleibt sichtbar. Auch die Berechnungen (Draft Survey, Eichaufnahme, Bunker Survey, Zeitleiste und Laytime) können dann nur noch gelesen werden.
 
 ![Feststellungen je Ort mit Berichtigen und Aus dem Bericht nehmen](images/dossier-vaststellingen-de.png "Feststellungen mit Foto")
 
@@ -314,8 +314,8 @@ Bei einer Besichtigungsart mit dem Haken **Bunkerbesichtigung** (siehe [Besichti
 - **Peilungen vorher** und **Peilungen nachher** öffnen eine Seite mit einer Zeile je Brennstofftank: Produkt, Methode (Peilung oder Leerraum), der gemessene Wert, die Trimm- und Krängungskorrektur aus der Tabelle, das **Volumen**, das Sie bei der korrigierten Peilung in der Peiltabelle ablesen, und die Temperatur. Die Tanks kommen vom Schiff (Registerkarte Laderäume und Tanks); einen fehlenden Tank fügen Sie dort hinzu.
 - Die **Dichte bei 15 °C** kommt vom Lieferschein dieses Produkts. Weicht ein Tank ab (zum Beispiel ein eigener Laborwert), geben Sie sie bei diesem Tank ein.
 - Quaymark berechnet je Tank den **VCF** nach ASTM D1250 Tabelle 54B, das Volumen bei 15 °C und das Gewicht in Luft (Volumen bei 15 °C × (Dichte − 0,0011)). Nutzen Sie einen VCF aus einer eigenen Tabelle, geben Sie ihn mit Grund ein; im Bericht erhält er ein Sternchen.
-- **Speichern** fügt je geändertem Tank eine neue Peilung hinzu. Die vorige bleibt erhalten, mit wer und wann.
-- Je Produkt zeigt die Registerkarte vorher, nachher und die **gelieferte** Menge, und gegenüber dem Lieferschein die Differenz in Tonnen und Prozent. Ist ein Tank nur zu einem Zeitpunkt gepeilt, sagt die Registerkarte es: Die gelieferte Menge stimmt dann für dieses Produkt nicht.
+- **Speichern** fügt je geändertem Tank eine neue Peilung hinzu. Die vorige bleibt erhalten, mit wer und wann. Weist Quaymark einen Tank ab, bleiben die schon gespeicherten Tanks gespeichert; ein zweites **Speichern** fügt nur noch den abgewiesenen hinzu.
+- Je Produkt zeigt die Registerkarte vorher, nachher und die **gelieferte** Menge, und gegenüber dem Lieferschein die Differenz in Tonnen und Prozent. Ist ein Tank nur zu einem Zeitpunkt gepeilt, sagt die Registerkarte es: Die gelieferte Menge stimmt dann für dieses Produkt nicht. Ist nichts hinzugekommen und gibt es keinen Lieferschein für das Produkt, steht dort **Keine Lieferung**, mit der kleinen Differenz daneben: Sie kommt von der Temperatur oder dem Verbrauch.
 
 ![Bunkerbesichtigung · Nachher von HQ-2026-0007 mit Tank, Volumen (m³) und Temp. (°C)](images/dossier-bunker-peilingen-de.png "Peilungen")
 

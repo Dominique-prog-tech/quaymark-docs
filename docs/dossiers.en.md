@@ -55,7 +55,7 @@ The file's **surveyor** gets a notification on the bell on the last working day 
 
 A **finding** is added, never changed or deleted. You correct a mistake with **Correct** under **⋯** at the end of the row, with a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
 
-A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible.
+A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible. The calculations (draft survey, gauging on draught scales, bunker survey, timeline and laytime) can then only be viewed.
 
 ![The Findings tab per location on board, with photo, Severity, Leave out of report and Correct](images/dossier-vaststellingen-en.png "Findings with their photo")
 
@@ -314,8 +314,8 @@ For a survey type with the **Bunker survey** box ticked (see [Survey types](soor
 - **Soundings before** and **Soundings after** open a page with a row per fuel tank: product, method (sounding or ullage), the measured value, the trim and list correction from the table, the **volume** you read from the sounding table at the corrected sounding, and the temperature. The tanks come from the vessel (Holds and tanks tab); add a missing tank there.
 - The **density at 15 °C** comes from the delivery note of that product. If a tank differs (for example your own lab value), fill it in on that tank.
 - Quaymark calculates per tank the **VCF** per ASTM D1250 table 54B, the volume at 15 °C and the weight in air (volume at 15 °C × (density − 0.0011)). If you use a VCF from your own table, fill it in with a reason; it gets an asterisk in the report.
-- **Save** adds a new sounding per changed tank. The previous one is kept, with who and when.
-- Per product the tab shows before, after and the **delivered** quantity, and against the delivery note the difference in tonnes and percent. If a tank was sounded at one stage only, the tab says so: delivered is then not correct for that product.
+- **Save** adds a new sounding per changed tank. The previous one is kept, with who and when. If Quaymark refuses one tank, the tanks already saved stay saved; a second **Save** only adds the refused one.
+- Per product the tab shows before, after and the **delivered** quantity, and against the delivery note the difference in tonnes and percent. If a tank was sounded at one stage only, the tab says so: delivered is then not correct for that product. If nothing was added and there is no delivery note for the product, the tab shows **No delivery**, with the small difference next to it: it comes from temperature or consumption.
 
 ![The soundings after bunkering of HQ-2026-0007, a row per tank](images/dossier-bunker-peilingen-en.png "Soundings")
 
