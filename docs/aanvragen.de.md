@@ -1,5 +1,5 @@
 ---
-description: "Aufträge, die Auftraggeber im Auftraggeberportal gesendet haben: ansehen, annehmen oder ablehnen."
+description: "Aufträge aus dem Auftraggeberportal und dem Webformular auf Ihrer Website: ansehen, annehmen oder ablehnen."
 ---
 
 # Anfragen
@@ -12,7 +12,7 @@ Klicken Sie im Menü links auf **Anfragen**. Warten Anfragen, zeigt der Startbil
 
 ## Die Liste
 
-- Standardmäßig sehen Sie nur die Anfragen, die auf eine Entscheidung warten. Aktivieren Sie **Auch angenommene oder abgelehnte** für den Rest.
+- Standardmäßig sehen Sie nur die Anfragen, die auf eine Entscheidung warten. Aktivieren Sie **Auch angenommene oder abgelehnte** für den Rest. Diese Auswahl bleibt erhalten, wenn Sie eine Anfrage öffnen und zur Liste zurückkehren.
 - Doppelklicken Sie auf eine Zeile, um die Anfrage zu öffnen.
 - Die Spalte **Quelle** zeigt, woher die Anfrage kommt: **Portal** oder **Website**. Eine Webanfrage hat noch keinen Auftraggeber: Die Spalte **Auftraggeber** zeigt dann, wer sie gesendet hat.
 

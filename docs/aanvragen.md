@@ -1,5 +1,5 @@
 ---
-description: "Opdrachten die opdrachtgevers indienden in het opdrachtgeversportaal: bekijken, aanvaarden of weigeren."
+description: "Opdrachten uit het opdrachtgeversportaal en het webformulier op uw website: bekijken, aanvaarden of weigeren."
 ---
 
 # Aanvragen
@@ -12,7 +12,7 @@ Klik in het menu links op **Aanvragen**. Wachten er aanvragen, dan meldt het sta
 
 ## De lijst
 
-- Standaard ziet u enkel de aanvragen die op een beslissing wachten. Vink **Ook aanvaard of geweigerd** aan voor de rest.
+- Standaard ziet u enkel de aanvragen die op een beslissing wachten. Vink **Ook aanvaard of geweigerd** aan voor de rest. Die keuze blijft staan als u een aanvraag opent en terugkeert.
 - Dubbelklik op een rij om de aanvraag te openen.
 - De kolom **Bron** zegt waar de aanvraag vandaan komt: **Portaal** of **Website**. Een webaanvraag heeft nog geen opdrachtgever: de kolom **Opdrachtgever** toont dan wie ze indiende.
 

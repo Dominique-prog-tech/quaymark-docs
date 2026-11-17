@@ -1,5 +1,5 @@
 ---
-description: "Assignments that principals submitted in the principal portal: view, accept or decline."
+description: "Assignments from the principal portal and the web form on your website: view, accept or decline."
 ---
 
 # Requests
@@ -12,7 +12,7 @@ Click **Requests** in the menu on the left. If requests are waiting, the home sc
 
 ## The list
 
-- By default you only see the requests awaiting a decision. Tick **Also accepted or declined** for the rest.
+- By default you only see the requests awaiting a decision. Tick **Also accepted or declined** for the rest. This choice stays when you open a request and come back to the list.
 - Double-click a row to open the request.
 - The **Source** column shows where the request comes from: **Portal** or **Website**. A web request has no principal yet: the **Principal** column then shows who sent it.
 

@@ -1,5 +1,5 @@
 ---
-description: "Missions envoyées par les donneurs d'ordre dans le portail des donneurs d'ordre : consulter, accepter ou refuser."
+description: "Missions venant du portail des donneurs d'ordre et du formulaire web de votre site : consulter, accepter ou refuser."
 ---
 
 # Demandes
@@ -12,7 +12,7 @@ Cliquez sur **Demandes** dans le menu de gauche. S'il y a des demandes en attent
 
 ## La liste
 
-- Par défaut, vous ne voyez que les demandes qui attendent une décision. Cochez **Également acceptées ou refusées** pour le reste.
+- Par défaut, vous ne voyez que les demandes qui attendent une décision. Cochez **Également acceptées ou refusées** pour le reste. Ce choix est conservé quand vous ouvrez une demande et revenez à la liste.
 - Double-cliquez sur une ligne pour ouvrir la demande.
 - La colonne **Source** indique d'où vient la demande : **Portail** ou **Site web**. Une demande web n'a pas encore de donneur d'ordre : la colonne **Donneur d'ordre** affiche alors qui l'a envoyée.
 
