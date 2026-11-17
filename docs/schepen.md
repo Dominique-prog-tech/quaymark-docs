@@ -42,7 +42,7 @@ Het tabblad **Ruimen en tanks** houdt per schip de ruimen en tanks bij, zodat ee
 - de **Peiltabel**: een bijlage van het schip (tabblad Documenten), bijvoorbeeld de sounding table van een tank. Een klik op de naam opent ze: een pdf in een venster, een ander bestand als download. Staat het document in de prullenbak, dan toont de lijst **Document niet meer beschikbaar**: zet het terug, of kies een andere peiltabel;
 - een **Opmerking**.
 
-**Voorvullen uit de aantallen** maakt Ruim 1 tot het aantal ruimen, en Tank 1 tot het aantal tanks, zoals ingevuld op het tabblad Algemeen. Een naam die al bestaat, slaat het over. De pijlen zetten een ruim of tank een plaats hoger of lager.
+**Voorvullen uit de aantallen** maakt Ruim 1 tot het aantal ruimen, en Tank 1 tot het aantal tanks, zoals ingevuld op het tabblad Algemeen. Een naam die al bestaat, slaat het over. Onder **⋯** op een regel staan **Bewerken**, **Hoger** en **Lager** (een plaats hoger of lager in de lijst) en **Verwijderen**; een dubbelklik op een regel opent ze ook.
 
 Een certificaat van ruimkeuring op een dossier van dit schip krijgt meteen een regel per ruim.
 

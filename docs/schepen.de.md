@@ -42,7 +42,7 @@ Die Registerkarte **Laderäume und Tanks** führt pro Schiff die Laderäume und 
 - die **Peiltabelle**: ein Anhang des Schiffs (Registerkarte Dokumente), zum Beispiel die Peiltabelle eines Tanks. Ein Klick auf den Namen öffnet sie: ein PDF in einem Fenster, jede andere Datei als Download. Liegt das Dokument im Papierkorb, zeigt die Liste **Dokument nicht mehr verfügbar**: Stellen Sie es wieder her oder wählen Sie eine andere Peiltabelle;
 - eine **Bemerkung**.
 
-**Aus den Anzahlen vorausfüllen** legt Laderaum 1 bis zur Anzahl Laderäume und Tank 1 bis zur Anzahl Tanks an, wie in der Registerkarte Allgemein eingetragen. Ein bereits vorhandener Name wird übersprungen. Die Pfeile setzen einen Laderaum oder Tank eine Stelle höher oder tiefer.
+**Aus den Anzahlen vorausfüllen** legt Laderaum 1 bis zur Anzahl Laderäume und Tank 1 bis zur Anzahl Tanks an, wie in der Registerkarte Allgemein eingetragen. Ein bereits vorhandener Name wird übersprungen. Unter **⋯** in einer Zeile stehen **Bearbeiten**, **Nach oben** und **Nach unten** (eine Stelle höher oder tiefer in der Liste) und **Löschen**; ein Doppelklick auf eine Zeile öffnet sie ebenfalls.
 
 Eine Laderaumbescheinigung in einer Akte dieses Schiffs erhält sofort eine Zeile pro Laderaum.
 

@@ -42,7 +42,7 @@ L'onglet **Cales et citernes** conserve par navire les cales et citernes, pour q
 - la **Table de jaugeage** : une pièce jointe du navire (onglet Documents), par exemple la table d'une citerne. Un clic sur le nom l'ouvre : un PDF dans une fenêtre, un autre fichier en téléchargement. Si le document est dans la corbeille, la liste affiche **Document plus disponible** : restaurez-le ou choisissez une autre table de jaugeage ;
 - une **Remarque**.
 
-**Préremplir depuis les nombres** crée Cale 1 jusqu'au nombre de cales, et Citerne 1 jusqu'au nombre de citernes, tels qu'indiqués dans l'onglet Général. Un nom qui existe déjà est ignoré. Les flèches font monter ou descendre une cale ou citerne d'une place.
+**Préremplir depuis les nombres** crée Cale 1 jusqu'au nombre de cales, et Citerne 1 jusqu'au nombre de citernes, tels qu'indiqués dans l'onglet Général. Un nom qui existe déjà est ignoré. Sous **⋯** sur une ligne se trouvent **Modifier**, **Monter** et **Descendre** (une place plus haut ou plus bas dans la liste) et **Supprimer** ; un double-clic sur une ligne l'ouvre aussi.
 
 Un certificat d'inspection des cales sur un dossier de ce navire reçoit directement une ligne par cale.
 
