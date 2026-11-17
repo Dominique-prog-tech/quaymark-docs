@@ -325,7 +325,7 @@ Dans le rapport, `{{bunker}}` place le résultat et le tableau par soute (voir [
 
 ### Chronologie
 
-L'onglet **Chronologie** est le statement of facts du dossier : les événements de l'escale, à l'heure du site. Avec **Ajouter un événement**, vous choisissez le moment, l'événement (arrivée en rade, NOR remise, NOR acceptée, amarré, panneaux ouverts, début et fin du chargement ou déchargement, interruption, reprise, panneaux fermés, documents à bord, départ ou autre) et une remarque. Un événement peut être modifié par la suite ; l'historique garde qui a modifié quoi.
+L'onglet **Chronologie** est le statement of facts du dossier : les événements de l'escale, à l'heure du site. Avec **Ajouter un événement**, vous choisissez le moment, l'événement (arrivée en rade, NOR remise, NOR acceptée, amarré, panneaux ouverts, début et fin du chargement ou déchargement, interruption, reprise, panneaux fermés, documents à bord, départ ou autre) et une remarque. Un événement peut être modifié ou supprimé par la suite avec **Modifier** ou **Supprimer** sous **⋯** à côté de la ligne ; l'historique garde qui a modifié quoi.
 
 ![Chronologie de ZB-2026-0003 avec Ajouter un événement, De la NOR au début et Émettre le statement of facts](images/dossier-tijdlijn-fr.png "La chronologie")
 

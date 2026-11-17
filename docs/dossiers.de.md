@@ -325,7 +325,7 @@ Im Bericht setzt `{{bunker}}` das Ergebnis und die Tabelle je Tank (siehe [Vorla
 
 ### Zeitablauf
 
-Die Registerkarte **Zeitablauf** ist das Statement of Facts der Akte: die Ereignisse des Hafenaufenthalts, in der Zeit der Niederlassung. Mit **Ereignis hinzufügen** wählen Sie den Zeitpunkt, das Ereignis (Ankunft auf Reede, NOR übergeben, NOR angenommen, festgemacht, Luken geöffnet, Beginn und Ende der Beladung oder Löschung, Unterbrechung, Wiederaufnahme, Luken geschlossen, Dokumente an Bord, Abfahrt oder andere) und eine Bemerkung. Ein Ereignis lässt sich nachträglich ändern; der Verlauf hält fest, wer was geändert hat.
+Die Registerkarte **Zeitablauf** ist das Statement of Facts der Akte: die Ereignisse des Hafenaufenthalts, in der Zeit der Niederlassung. Mit **Ereignis hinzufügen** wählen Sie den Zeitpunkt, das Ereignis (Ankunft auf Reede, NOR übergeben, NOR angenommen, festgemacht, Luken geöffnet, Beginn und Ende der Beladung oder Löschung, Unterbrechung, Wiederaufnahme, Luken geschlossen, Dokumente an Bord, Abfahrt oder andere) und eine Bemerkung. Ein Ereignis lässt sich nachträglich mit **Bearbeiten** oder **Löschen** unter **⋯** neben der Zeile ändern oder löschen; der Verlauf hält fest, wer was geändert hat.
 
 ![Zeitablauf von ZB-2026-0003 mit Ereignis hinzufügen, Von NOR bis Beginn und Statement of Facts ausstellen](images/dossier-tijdlijn-de.png "Der Zeitablauf")
 

@@ -325,7 +325,7 @@ In the report, `{{bunker}}` places the result and the table per tank (see [Templ
 
 ### Timeline
 
-The **Timeline** tab is the statement of facts of the file: the events of the port call, in the office's time. With **Add event** you choose the time, the event (arrived at roads, NOR tendered, NOR accepted, all fast, hatches opened, commenced and completed loading or discharging, stoppage, resumed, hatches closed, documents on board, sailed or other) and a note. An event can be changed afterwards; the history keeps who changed what.
+The **Timeline** tab is the statement of facts of the file: the events of the port call, in the office's time. With **Add event** you choose the time, the event (arrived at roads, NOR tendered, NOR accepted, all fast, hatches opened, commenced and completed loading or discharging, stoppage, resumed, hatches closed, documents on board, sailed or other) and a note. An event can be changed or deleted afterwards with **Edit** or **Delete** under **⋯** next to the row; the history keeps who changed what.
 
 ![Timeline of ZB-2026-0003 with Add event, From NOR to commencement and Issue statement of facts](images/dossier-tijdlijn-en.png "The timeline")
 

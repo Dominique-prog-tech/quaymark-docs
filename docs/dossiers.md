@@ -325,7 +325,7 @@ In het rapport zet `{{bunker}}` het resultaat en de tabel per tank (zie [Sjablon
 
 ### Tijdlijn
 
-Het tabblad **Tijdlijn** is de statement of facts van het dossier: de gebeurtenissen van de aanloop, in de tijd van de vestiging. Met **Gebeurtenis toevoegen** kiest u het tijdstip, de gebeurtenis (aankomst op de rede, NOR ingediend, NOR aanvaard, aangemeerd, luiken open, start en einde laden of lossen, onderbreking, hervatting, luiken dicht, documenten aan boord, vertrek of andere) en een opmerking. Een gebeurtenis kunt u achteraf wijzigen; de historiek houdt bij wie wat wijzigde.
+Het tabblad **Tijdlijn** is de statement of facts van het dossier: de gebeurtenissen van de aanloop, in de tijd van de vestiging. Met **Gebeurtenis toevoegen** kiest u het tijdstip, de gebeurtenis (aankomst op de rede, NOR ingediend, NOR aanvaard, aangemeerd, luiken open, start en einde laden of lossen, onderbreking, hervatting, luiken dicht, documenten aan boord, vertrek of andere) en een opmerking. Een gebeurtenis kunt u achteraf wijzigen of verwijderen met **Bewerken** of **Verwijderen** onder **⋯** naast de regel; de historiek houdt bij wie wat wijzigde.
 
 ![Tijdlijn van ZB-2026-0003 met Gebeurtenis toevoegen, Van NOR tot start en Statement of facts uitgeven](images/dossier-tijdlijn.png "De tijdlijn")
 
