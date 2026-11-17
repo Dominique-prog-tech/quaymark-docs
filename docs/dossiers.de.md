@@ -130,6 +130,8 @@ Vor Ort lässt der Besichtiger den Kapitän, den Ersten Offizier oder das Termin
 2. Wählen Sie die **Klausel**: **Zum Empfang, ohne Anerkennung einer Haftung** (Standard), **Einverstanden** oder **Gesehen**. Die Erklärung steht in der Sprache der Akte dabei, mit den Feststellungen dieses Moments.
 3. Lassen Sie unter **Unten unterschreiben** unterschreiben (**Neu unterschreiben** leert die Fläche) und klicken Sie auf **Unterschrift speichern**. Verweigert er, haken Sie **Verweigert die Unterschrift** an, geben den **Grund der Verweigerung** ein und klicken auf **Verweigerung speichern**.
 
+Verlassen Sie die Seite, nachdem schon unterschrieben oder etwas eingegeben wurde, fragt Quaymark zuerst. Eine abgeschlossene Akte kann nicht mehr unterschrieben werden: die Seite sagt es oben.
+
 ![Unterschreiben lassen mit Erklärung und Feststellungen](images/dossier-tekenen-de.png "Unterschreiben lassen")
 
 Eine Unterschrift wird nur hinzugefügt, nie geändert. Quaymark bewahrt, was unterschrieben wurde: die Erklärung und die Liste der Feststellungen dieses Moments (die **Momentaufnahme**, mit ihrem Fingerabdruck), das Bild der Unterschrift mit der Uhrzeit und, auf dem Gerät, die Position. Eine später hinzugefügte oder berichtigte Feststellung ändert eine gegebene Unterschrift nicht. In der Feld-App funktioniert es ohne Netz: die Unterschrift wird gesendet, sobald eine Verbindung besteht.

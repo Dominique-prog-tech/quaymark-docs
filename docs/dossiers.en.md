@@ -130,6 +130,8 @@ On site, the surveyor has the master, the chief officer or the terminal sign a s
 2. Choose the **Clause**: **For receipt only, without admission of liability** (default), **Agreed** or **Sighted**. The statement is shown in the language of the file, with the findings at that moment.
 3. Have them sign under **Sign below** (**Clear** wipes the area) and click **Save signature**. If they refuse, tick **Refuses to sign**, fill in the **Reason for refusal** and click **Save refusal**.
 
+If you leave after something has been signed or filled in, Quaymark asks first. A closed file can no longer be signed: the page says so at the top.
+
 ![The Get signature page with Statement, Findings at the time of signing and Sign below](images/dossier-tekenen-en.png "Get signature")
 
 A signature is only added, never changed. Quaymark keeps what was signed: the statement and the list of findings at that moment (the **snapshot**, with its fingerprint), the image of the signature with the time and, on the device, the position. A finding added or corrected later does not change a signature already given. In the field app it works without a connection: the signature is sent once there is one.

@@ -130,6 +130,8 @@ Ter plaatse laat de surveyor de kapitein, de chief officer of de terminal een ve
 2. Kies de **Clausule**: **Voor ontvangst, zonder erkenning van aansprakelijkheid** (standaard), **Voor akkoord** of **Gezien**. De verklaring staat erbij in de taal van het dossier, met de vaststellingen van dat moment.
 3. Laat tekenen onder **Teken hieronder** (**Opnieuw tekenen** wist het vlak) en klik op **Handtekening bewaren**. Weigert hij, vink dan **Weigert te tekenen** aan, vul de **Reden van de weigering** in en klik op **Weigering bewaren**.
 
+Gaat u weg terwijl er al getekend of ingevuld is, dan vraagt Quaymark eerst. Bij een afgesloten dossier kan er niet meer getekend worden: de pagina zegt het bovenaan.
+
 ![De pagina Laten tekenen met de verklaring, de vaststellingen en het tekenvlak](images/dossier-tekenen.png "Laten tekenen")
 
 Een handtekening wordt enkel toegevoegd, nooit gewijzigd. Quaymark bewaart wat er getekend werd: de verklaring en de lijst vaststellingen van dat moment (de **momentopname**, met haar vingerafdruk), het beeld van de handtekening met tijd en, op het toestel, de positie. Een vaststelling die later bijkomt of rechtgezet wordt, verandert een gegeven handtekening niet. In de veldapp werkt het zonder bereik: de handtekening vertrekt zodra er verbinding is.

@@ -130,6 +130,8 @@ Sur place, l'expert fait signer une déclaration au capitaine, au second capitai
 2. Choisissez la **Clause** : **Pour réception, sans reconnaissance de responsabilité** (par défaut), **Pour accord** ou **Vu**. La déclaration s'affiche dans la langue du dossier, avec les constatations de ce moment.
 3. Faites signer sous **Signez ci-dessous** (**Recommencer** efface la zone) et cliquez sur **Enregistrer la signature**. S'il refuse, cochez **Refuse de signer**, indiquez le **Motif du refus** et cliquez sur **Enregistrer le refus**.
 
+Si vous quittez la page alors qu'une signature ou une saisie est en cours, Quaymark vous le demande d'abord. Un dossier clôturé ne peut plus être signé : la page l'indique en haut.
+
 ![La page Faire signer avec la déclaration, les constatations et la zone de signature](images/dossier-tekenen-fr.png "Faire signer")
 
 Une signature est uniquement ajoutée, jamais modifiée. Quaymark conserve ce qui a été signé : la déclaration et la liste des constatations de ce moment (l'**instantané**, avec son empreinte), l'image de la signature avec l'heure et, sur l'appareil, la position. Une constatation ajoutée ou rectifiée ensuite ne change pas une signature donnée. Dans l'application mobile, cela fonctionne sans réseau : la signature part dès qu'il y a une connexion.
