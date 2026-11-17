@@ -95,7 +95,7 @@ De foto's van een punt staan eronder, ook die bij een vorig antwoord, en zo gaan
 
 ### Rapport
 
-Op het tabblad **Rapport** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Ernaast toont **Voorbeeld (PDF)** het rapport in een venster en downloadt **Rapport (Word)** het als Word-bestand, telkens met de bewaarde tekst. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
+Het tabblad **Rapport** heeft vier tabjes: **Tekst** (de rubrieken), **Uitgifte** (controle, vier-ogen, versies en ondertekening), **Brieven en certificaten** en **Bewijspakket**. Op het tabje **Tekst** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Ernaast toont **Voorbeeld (PDF)** het rapport in een venster en downloadt **Rapport (Word)** het als Word-bestand, telkens met de bewaarde tekst. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
 
 ![Het tabblad Rapport met Brieven en certificaten, Bewijspakket en de rubrieken Inleiding en Werkwijze](images/dossier-rapport.png "Het tabblad Rapport")
 

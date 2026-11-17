@@ -95,7 +95,7 @@ Les photos d'un point figurent en dessous, y compris celles d'une réponse préc
 
 ### Rapport
 
-Dans l'onglet **Rapport**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. À côté, **Aperçu (PDF)** montre le rapport dans une fenêtre et **Rapport (Word)** le télécharge en fichier Word, chaque fois avec le texte enregistré. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
+L'onglet **Rapport** comporte quatre sous-onglets : **Texte** (les rubriques), **Émission** (contrôle, quatre yeux, versions et signature), **Lettres et certificats** et **Dossier de preuves**. Dans le sous-onglet **Texte**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. À côté, **Aperçu (PDF)** montre le rapport dans une fenêtre et **Rapport (Word)** le télécharge en fichier Word, chaque fois avec le texte enregistré. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
 
 ![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
 

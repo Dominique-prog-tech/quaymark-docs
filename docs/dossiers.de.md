@@ -95,7 +95,7 @@ Die Fotos eines Punktes stehen darunter, auch die einer früheren Antwort, und s
 
 ### Bericht
 
-In der Registerkarte **Bericht** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Daneben zeigt **Vorschau (PDF)** den Bericht in einem Fenster, und **Bericht (Word)** lädt ihn als Word-Datei herunter, jeweils mit dem gespeicherten Text. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
+Die Registerkarte **Bericht** hat vier Unterregister: **Text** (die Abschnitte), **Ausgabe** (Prüfung, Vier-Augen, Versionen und Unterschrift), **Schreiben und Bescheinigungen** und **Beweispaket**. Im Unterregister **Text** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Daneben zeigt **Vorschau (PDF)** den Bericht in einem Fenster, und **Bericht (Word)** lädt ihn als Word-Datei herunter, jeweils mit dem gespeicherten Text. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
 
 ![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
 

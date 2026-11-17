@@ -95,7 +95,7 @@ The photos of an item appear below it, including those of a previous answer, and
 
 ### Report
 
-On the **Report** tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. Next to it, **Preview (PDF)** shows the report in a window and **Report (Word)** downloads it as a Word file, each time with the saved text. If the report template does not show a section, the tab says so.
+The **Report** tab has four sub-tabs: **Text** (the sections), **Issue** (check, four eyes, versions and signing), **Letters and certificates** and **Evidence package**. On the **Text** sub-tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. Next to it, **Preview (PDF)** shows the report in a window and **Report (Word)** downloads it as a Word file, each time with the saved text. If the report template does not show a section, the tab says so.
 
 ![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
 
