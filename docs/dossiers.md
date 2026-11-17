@@ -300,7 +300,7 @@ Bij een soort survey met het vinkje **Meting op ijkschalen** (zie [Soorten surve
 
 - Vul vóór en na het laden of lossen de **ijkschalen** in, in cm: voor en achter, aan bakboord en stuurboord. Met het midden erbij zijn het er zes; het midden vult u als paar in, of niet.
 - Vul de **densiteit** van het water in (de ijkbrief geldt voor zoet water, 1,000) en de **aftrek**: ballast, zoetwater en brandstof, in ton.
-- **Bewaren** bewaart die meting. De tabel eronder toont de gemiddelde inzinking, de waterverplaatsing volgens de ijktabel (tussen twee regels evenredig berekend), na de densiteit, de aftrek en het netto gewicht.
+- **Bewaren** bewaart die meting. De tabel eronder toont de gemiddelde inzinking, de waterverplaatsing volgens de ijktabel (tussen twee regels evenredig berekend), na de densiteit, de aftrek en het netto gewicht. Elke meting heeft haar eigen knop. Wijkt wat u intikte af van wat bewaard is, dan staat er **Niet bewaard** bij de meting; daarnaast staat wanneer en door wie ze bewaard werd. De gemiddelde inzinking staat afgerond op een millimeter en elke tonnage op een kilogram, en de volgende stap rekent met die afgeronde waarde, zoals op papier.
 - Het verschil tussen vóór en na is het gewicht van de lading: geladen als het meer werd, gelost als het minder werd.
 
 Bovenaan staat de ijkbrief van het schip, met een link naar het schip. Heeft het schip nog geen ijkbrief, of valt de gemiddelde inzinking buiten de ijktabel, dan rekent Quaymark niet en zegt het waarom. Een vervallen ijkbrief geeft een waarschuwing. In het rapport komt de meting met de markering `{{ijkmeting}}` (zie [Sjablonen](sjablonen.md)).

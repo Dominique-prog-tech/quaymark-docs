@@ -300,7 +300,7 @@ Bei einer Besichtigungsart mit dem Haken **Eichaufnahme** (siehe [Besichtigungsa
 
 - Tragen Sie vor und nach dem Laden oder Löschen die **Eichskalen** in cm ein: vorne und achtern, an Backbord und Steuerbord. Mit der Mitte sind es sechs; die Mitte wird als Paar eingetragen oder gar nicht.
 - Tragen Sie die **Dichte** des Wassers ein (der Eichschein gilt für Süßwasser, 1,000) und die **Abzüge**: Ballast, Frischwasser und Bunker, in Tonnen.
-- **Speichern** speichert diese Messung. Die Tabelle darunter zeigt die mittlere Eintauchung, die Verdrängung laut Eichtabelle (zwischen zwei Zeilen anteilig berechnet), nach der Dichte, die Abzüge und das Nettogewicht.
+- **Speichern** speichert diese Messung. Die Tabelle darunter zeigt die mittlere Eintauchung, die Verdrängung laut Eichtabelle (zwischen zwei Zeilen anteilig berechnet), nach der Dichte, die Abzüge und das Nettogewicht. Jede Messung hat ihre eigene Schaltfläche. Weicht Ihre Eingabe vom Gespeicherten ab, steht **Nicht gespeichert** bei der Messung; daneben steht, wann und von wem sie gespeichert wurde. Die mittlere Eintauchung wird auf einen Millimeter und jede Tonnage auf ein Kilogramm gerundet, und der nächste Schritt rechnet mit diesem gerundeten Wert, wie auf Papier.
 - Der Unterschied zwischen vorher und nachher ist das Gewicht der Ladung: geladen, wenn es mehr wurde, gelöscht, wenn es weniger wurde.
 
 Oben steht der Eichschein des Schiffs, mit einem Link zum Schiff. Hat das Schiff noch keinen Eichschein oder liegt die mittlere Eintauchung außerhalb der Eichtabelle, rechnet Quaymark nicht und sagt warum. Ein abgelaufener Eichschein gibt eine Warnung. Im Bericht erscheint die Eichaufnahme mit dem Platzhalter `{{ijkmeting}}` (siehe [Vorlagen](sjablonen.md)).
