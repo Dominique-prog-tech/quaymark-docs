@@ -65,7 +65,7 @@ Met een vaste opdrachtgever spreekt een bureau vaak eigen tarieven af. Op het ta
 - Een **termijn** is het aantal werkdagen waarbinnen het eerste rapport uitgegeven moet zijn, gerekend vanaf het einde van de geplande inspectie (zonder planning: de datum van de opdracht). Zaterdag, zondag en de feestdagen van het land van de vestiging tellen niet. De eerste regel, **Alle soorten survey**, geldt voor de hele afspraak; een termijn bij een soort gaat voor. Een afspraak mag ook enkel een termijn hebben, zonder eigen tarieven.
 - Met een termijn toont Quaymark tegen wanneer het rapport er moet zijn: [in de dossierlijst en op het dossier](dossiers.md#termijn-tot-het-rapport), op het belletje van de surveyor, op de [startpagina](aan-de-slag.md) en in de [analyses](analyses.md#termijnen).
 - Het factuurvoorstel, de raming op het tabblad **Tijd en kosten** en het startscherm rekenen met de afspraak. Het factuurvoorstel zegt het ook.
-- Wijzigen en verwijderen kan wie de tarieven beheert.
+- Wijzigen en verwijderen kan wie de tarieven beheert, met **⋯** achteraan de afspraak. Bij een relatie in de prullenbak zijn de afspraken enkel nog te lezen.
 
 ## Zie ook
 

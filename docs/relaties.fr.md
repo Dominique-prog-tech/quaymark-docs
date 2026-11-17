@@ -65,7 +65,7 @@ Avec un donneur d'ordre régulier, un bureau convient souvent de tarifs propres.
 - Un **délai** est le nombre de jours ouvrables dans lequel le premier rapport doit être émis, compté à partir de la fin de l'inspection planifiée (sans planification : la date de la mission). Le samedi, le dimanche et les jours fériés du pays du site ne comptent pas. La première ligne, **Tous les types d'expertise**, vaut pour tout l'accord ; un délai propre à un type prime. Un accord peut aussi n'avoir qu'un délai, sans tarifs propres.
 - Avec un délai, Quaymark indique pour quand le rapport doit être prêt : [dans la liste des dossiers et sur le dossier](dossiers.md#delai-jusquau-rapport), sur la cloche de l'expert, sur la [page d'accueil](aan-de-slag.md) et dans les [analyses](analyses.md#delais).
 - La proposition de facture, l'estimation dans l'onglet **Temps et frais** et l'écran d'accueil calculent avec l'accord. La proposition de facture l'indique aussi.
-- Seule la personne qui gère les tarifs peut modifier ou supprimer un accord.
+- Seule la personne qui gère les tarifs peut modifier ou supprimer un accord, avec **⋯** en fin de ligne. Pour une relation dans la corbeille, les accords ne peuvent plus qu'être consultés.
 
 ## Voir aussi
 

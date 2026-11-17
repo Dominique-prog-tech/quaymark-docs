@@ -65,7 +65,7 @@ Mit einem festen Auftraggeber vereinbart ein Büro oft eigene Tarife. Auf der Re
 - Eine **Frist** ist die Zahl der Arbeitstage, in der der erste Bericht ausgestellt sein muss, gerechnet ab dem Ende der geplanten Besichtigung (ohne Planung: das Datum des Auftrags). Samstag, Sonntag und die Feiertage des Landes der Niederlassung zählen nicht. Die erste Zeile, **Alle Besichtigungsarten**, gilt für die ganze Vereinbarung; eine Frist bei einer Art geht vor. Eine Vereinbarung darf auch nur eine Frist haben, ohne eigene Tarife.
 - Mit einer Frist zeigt Quaymark, bis wann der Bericht vorliegen muss: [in der Aktenliste und auf der Akte](dossiers.md#frist-bis-zum-bericht), auf der Glocke des Besichtigers, auf der [Startseite](aan-de-slag.md) und in den [Analysen](analyses.md#fristen).
 - Der Rechnungsvorschlag, die Schätzung auf der Registerkarte **Zeit und Kosten** und der Startbildschirm rechnen mit der Vereinbarung. Der Rechnungsvorschlag weist auch darauf hin.
-- Ändern und löschen kann, wer die Tarife verwaltet.
+- Ändern und löschen kann, wer die Tarife verwaltet, mit **⋯** am Zeilenende. Bei einer Beziehung im Papierkorb können die Vereinbarungen nur noch angesehen werden.
 
 ## Siehe auch
 

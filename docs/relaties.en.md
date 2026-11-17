@@ -65,7 +65,7 @@ With a regular principal, an office often agrees its own rates. You record them 
 - A **deadline** is the number of working days within which the first report must be issued, counted from the end of the planned inspection (without planning: the date of the assignment). Saturday, Sunday and the public holidays of the office's country do not count. The first line, **All survey types**, applies to the whole agreement; a deadline for a type takes precedence. An agreement may also have only a deadline, without its own rates.
 - With a deadline, Quaymark shows when the report is due: [in the file list and on the file](dossiers.md#report-deadline), on the surveyor's bell, on the [home page](aan-de-slag.md) and in the [analyses](analyses.md#deadlines).
 - The invoice proposal, the estimate on the **Time and expenses** tab and the home screen calculate with the agreement. The invoice proposal also says so.
-- Whoever manages the rates can change or delete an agreement.
+- Whoever manages the rates can change or delete an agreement, with **⋯** at the end of the row. For a relation in the recycle bin, the agreements can only be viewed.
 
 ## See also
 
