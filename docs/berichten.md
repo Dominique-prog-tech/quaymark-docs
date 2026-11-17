@@ -19,6 +19,8 @@ Op elk dossier met een opdrachtgever staat het tabblad **Berichten**. Lezen kan 
 
 Heeft het dossier geen opdrachtgever, dan is er niemand om mee te praten. Kies eerst een opdrachtgever op het tabblad **Algemeen**.
 
+Heeft de opdrachtgever geen toegang tot het opdrachtgeversportaal, of koos hij na zijn uitnodiging nog geen wachtwoord, dan zegt het tabblad dat bovenaan: niemand ziet uw bericht en er vertrekt geen mail. Staan zijn portaalmeldingen uit, dan zegt het tabblad dat hij geen mail krijgt. De link brengt u naar de fiche van de opdrachtgever, waar u de toegang regelt (tabblad **Opdrachtgeversportaal**).
+
 ## Het scherm Berichten
 
 Klik in het menu op **Berichten** voor elk gesprek met een opdrachtgever, het recentste eerst, met het laatste bericht en hoeveel er voor u nog **Ongelezen** zijn. Een klik op een rij opent het tabblad Berichten van het dossier.

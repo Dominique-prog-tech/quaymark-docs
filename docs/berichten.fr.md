@@ -19,6 +19,8 @@ Chaque dossier avec un donneur d'ordre a l'onglet **Messages**. Lire demande le 
 
 Si le dossier n'a pas de donneur d'ordre, il n'y a personne avec qui échanger. Choisissez d'abord un donneur d'ordre dans l'onglet **Général**.
 
+Si le donneur d'ordre n'a pas accès au portail des donneurs d'ordre, ou n'a pas encore choisi de mot de passe après son invitation, l'onglet l'indique en haut : personne ne voit votre message et aucun e-mail n'est envoyé. Si ses notifications du portail sont désactivées, l'onglet indique qu'il ne reçoit pas d'e-mail. Le lien mène à la fiche du donneur d'ordre, où vous réglez l'accès (onglet **Portail des donneurs d'ordre**).
+
 ## L'écran Messages
 
 Cliquez dans le menu sur **Messages** pour chaque conversation avec un donneur d'ordre, la plus récente d'abord, avec le dernier message et le nombre encore **Non lus** pour vous. Un clic sur une ligne ouvre l'onglet Messages du dossier.

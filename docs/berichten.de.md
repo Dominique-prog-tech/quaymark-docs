@@ -19,6 +19,8 @@ Jede Akte mit einem Auftraggeber hat die Registerkarte **Nachrichten**. Lesen er
 
 Hat die Akte keinen Auftraggeber, gibt es niemanden zum Austausch. Wählen Sie zuerst einen Auftraggeber auf der Registerkarte **Allgemein**.
 
+Hat der Auftraggeber keinen Zugang zum Auftraggeberportal oder nach seiner Einladung noch kein Passwort gewählt, sagt der Reiter das oben: Niemand sieht Ihre Nachricht, und es wird keine E-Mail versandt. Sind seine Portalbenachrichtigungen aus, sagt der Reiter, dass er keine E-Mail erhält. Der Link führt zur Akte des Auftraggebers, wo Sie den Zugang regeln (Reiter **Auftraggeberportal**).
+
 ## Die Seite Nachrichten
 
 Klicken Sie im Menü auf **Nachrichten** für jedes Gespräch mit einem Auftraggeber, das neueste zuerst, mit der letzten Nachricht und wie viele für Sie noch **Ungelesen** sind. Ein Klick auf eine Zeile öffnet die Registerkarte Nachrichten der Akte.

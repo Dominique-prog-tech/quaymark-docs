@@ -19,6 +19,8 @@ Every file with a principal has the **Messages** tab. Reading needs the right to
 
 If the file has no principal, there is nobody to talk to. First choose a principal on the **General** tab.
 
+If the principal has no access to the principal portal, or has not chosen a password after the invitation, the tab says so at the top: nobody sees your message and no e-mail is sent. If their portal notifications are off, the tab says they get no e-mail. The link takes you to the principal's record, where you arrange access (**Principal portal** tab).
+
 ## The Messages screen
 
 Click **Messages** in the menu for every conversation with a principal, the most recent first, with the latest message and how many are still **Unread** for you. A click on a row opens the Messages tab of the file.
