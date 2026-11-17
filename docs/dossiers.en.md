@@ -276,7 +276,7 @@ For a survey type with **Draft survey** ticked (see [Survey types](soorten-surve
 
 ![Draft survey of HQ-2026-0004 with Initial survey, Final survey and the result Loaded](images/dossier-draft-en.png "Draft survey")
 
-**Initial survey** and **Final survey** each open a page of their own. Enter:
+Clicking **Initial survey** or **Final survey** in the table header opens the page of that measurement. Enter:
 
 - the six **drafts**: forward, midships and aft, port and starboard;
 - the **vessel**: the LBP and the distances of the draft marks from the perpendiculars (forward and midships positive when the mark is aft of the perpendicular or midships, aft positive when the mark is forward of the aft perpendicular);

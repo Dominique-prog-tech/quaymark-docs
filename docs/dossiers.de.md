@@ -276,7 +276,7 @@ Bei einer Besichtigungsart mit angehaktem **Draft Survey** (siehe [Besichtigungs
 
 ![Draft Survey von HQ-2026-0004 mit Anfangsmessung, Endmessung und Geladen](images/dossier-draft-de.png "Draft Survey")
 
-**Anfangsmessung** und **Endmessung** öffnen je eine eigene Seite. Geben Sie ein:
+Ein Klick auf **Anfangsmessung** oder **Endmessung** im Tabellenkopf öffnet die Seite dieser Messung. Geben Sie ein:
 
 - die sechs **Tiefgänge**: vorn, Mitte und achtern, an Backbord und Steuerbord;
 - das **Schiff**: die LBP und die Abstände der Tiefgangsmarken zu den Loten (vorn und Mitte positiv, wenn die Marke hinter dem Lot oder Mittschiffs liegt, achtern positiv, wenn die Marke vor dem hinteren Lot liegt);

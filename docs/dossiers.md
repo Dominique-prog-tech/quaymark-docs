@@ -276,7 +276,7 @@ Bij een soort survey met het vinkje **Draft survey** (zie [Soorten survey](soort
 
 ![Draft survey van HQ-2026-0004 met Beginmeting, Eindmeting en het resultaat Geladen](images/dossier-draft.png "Draft survey")
 
-**Beginmeting** en **Eindmeting** openen elk een eigen pagina. Vul in:
+Een klik op **Beginmeting** of **Eindmeting** in de kop van de tabel opent de pagina van die meting. Vul in:
 
 - de zes **diepgangen**: voor, midden en achter, aan bakboord en stuurboord;
 - het **schip**: de LBP en de afstanden van de diepgangmerken tot de loodlijnen (voor en midden positief als het merk achter de loodlijn of midscheeps staat, achter positief als het merk voor de achterloodlijn staat);

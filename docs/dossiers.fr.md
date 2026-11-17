@@ -276,7 +276,7 @@ Pour un type d'expertise avec la case **Draft survey** cochée (voir [Types d'ex
 
 ![Draft survey de HQ-2026-0004 avec Mesure initiale, Mesure finale et le résultat Chargé](images/dossier-draft-fr.png "Draft survey")
 
-**Mesure initiale** et **Mesure finale** ouvrent chacune une page propre. Saisissez :
+Un clic sur **Mesure initiale** ou **Mesure finale** dans l'en-tête du tableau ouvre la page de cette mesure. Saisissez :
 
 - les six **tirants d'eau** : avant, milieu et arrière, à bâbord et à tribord ;
 - le **navire** : la LBP et les distances des marques de tirant d'eau aux perpendiculaires (avant et milieu positifs si la marque est en arrière de la perpendiculaire ou du maître-couple, arrière positif si la marque est en avant de la perpendiculaire arrière) ;
