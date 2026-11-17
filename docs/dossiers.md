@@ -311,11 +311,11 @@ Bij een soort survey met het vinkje **Bunker survey** (zie [Soorten survey](soor
 
 ![Bunker van HQ-2026-0007 met het resultaat per product, de leveringsbon en de peilingen](images/dossier-bunker.png "Bunker")
 
-- **Peilingen vóór** en **Peilingen na** openen een pagina met een rij per brandstoftank: product, methode (peiling of ullage), de gemeten waarde, de correctie voor trim en slagzij uit de tabel, het **volume** dat u bij de gecorrigeerde peiling in de peiltabel afleest, en de temperatuur. De tanks komen van het schip (tabblad Ruimen en tanks); een ontbrekende tank voegt u daar toe.
+- **Peilingen vóór** en **Peilingen na** (bij een open dossier, voor wie het mag bewerken) openen een pagina met een rij per brandstoftank: product, methode (peiling of ullage), de gemeten waarde, de correctie voor trim en slagzij uit de tabel, het **volume** dat u bij de gecorrigeerde peiling in de peiltabel afleest, en de temperatuur. De tanks komen van het schip (tabblad Ruimen en tanks); een ontbrekende tank voegt u daar toe.
 - De **densiteit bij 15 °C** komt van de leveringsbon van dat product. Wijkt een tank af (bijvoorbeeld een eigen labowaarde), vul ze dan bij die tank in.
 - Quaymark rekent per tank de **VCF** volgens ASTM D1250 tabel 54B, het volume bij 15 °C en het gewicht in lucht (volume bij 15 °C × (densiteit − 0,0011)). Gebruikt u een VCF uit een eigen tabel, vul die dan in, met een reden; in het rapport krijgt ze een sterretje.
 - **Bewaren** voegt per gewijzigde tank een nieuwe peiling toe. De vorige blijft bewaard, met wie en wanneer. Weigert Quaymark één tank, dan blijven de tanks die al bewaard zijn bewaard; een tweede keer **Bewaren** voegt enkel nog de geweigerde toe.
-- Per product toont het tabblad vóór, na en de **geleverde** hoeveelheid, en tegenover de leveringsbon het verschil in ton en procent. Is een tank maar op één moment gepeild, dan zegt het tabblad dat: het geleverde klopt dan niet voor dat product. Kwam er niets bij en is er geen leveringsbon voor het product, dan staat er **Geen levering**, met het kleine verschil ernaast: dat komt van de temperatuur of het verbruik.
+- Per product toont het tabblad vóór, na en de **geleverde** hoeveelheid, en tegenover de leveringsbon het verschil in ton en procent. Is een tank maar op één moment gepeild, dan zegt het tabblad dat: het geleverde klopt dan niet voor dat product. Kwam er niets bij en is er geen leveringsbon voor het product, dan staat er **Geen levering**, met het kleine verschil ernaast: dat komt van de temperatuur of het verbruik. Onder de leveringsbon staan de peilingen die tellen in één tabel, per tank eerst vóór en dan na.
 
 ![De peilingen na het bunkeren van HQ-2026-0007, een rij per tank](images/dossier-bunker-peilingen.png "Peilingen")
 

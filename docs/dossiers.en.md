@@ -311,11 +311,11 @@ For a survey type with the **Bunker survey** box ticked (see [Survey types](soor
 
 ![Bunkers of HQ-2026-0007 with the result per product, the delivery note and the soundings](images/dossier-bunker-en.png "Bunkers")
 
-- **Soundings before** and **Soundings after** open a page with a row per fuel tank: product, method (sounding or ullage), the measured value, the trim and list correction from the table, the **volume** you read from the sounding table at the corrected sounding, and the temperature. The tanks come from the vessel (Holds and tanks tab); add a missing tank there.
+- **Soundings before** and **Soundings after** (for an open file, if you may edit it) open a page with a row per fuel tank: product, method (sounding or ullage), the measured value, the trim and list correction from the table, the **volume** you read from the sounding table at the corrected sounding, and the temperature. The tanks come from the vessel (Holds and tanks tab); add a missing tank there.
 - The **density at 15 °C** comes from the delivery note of that product. If a tank differs (for example your own lab value), fill it in on that tank.
 - Quaymark calculates per tank the **VCF** per ASTM D1250 table 54B, the volume at 15 °C and the weight in air (volume at 15 °C × (density − 0.0011)). If you use a VCF from your own table, fill it in with a reason; it gets an asterisk in the report.
 - **Save** adds a new sounding per changed tank. The previous one is kept, with who and when. If Quaymark refuses one tank, the tanks already saved stay saved; a second **Save** only adds the refused one.
-- Per product the tab shows before, after and the **delivered** quantity, and against the delivery note the difference in tonnes and percent. If a tank was sounded at one stage only, the tab says so: delivered is then not correct for that product. If nothing was added and there is no delivery note for the product, the tab shows **No delivery**, with the small difference next to it: it comes from temperature or consumption.
+- Per product the tab shows before, after and the **delivered** quantity, and against the delivery note the difference in tonnes and percent. If a tank was sounded at one stage only, the tab says so: delivered is then not correct for that product. If nothing was added and there is no delivery note for the product, the tab shows **No delivery**, with the small difference next to it: it comes from temperature or consumption. Below the delivery note, the soundings that count are in one table, per tank first before and then after.
 
 ![The soundings after bunkering of HQ-2026-0007, a row per tank](images/dossier-bunker-peilingen-en.png "Soundings")
 
