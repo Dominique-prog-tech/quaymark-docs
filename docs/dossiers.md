@@ -415,7 +415,7 @@ Het scherm **Claims** in het menu toont de claims van alle dossiers, met hun dos
 ![De lijst Claims met de keuze Ook afgesloten](images/claims.png "De lijst Claims")
 
 - Standaard ziet u enkel de **open** claims. Vink **Ook afgesloten** aan voor de afgewikkelde en afgewezen claims.
-- Dubbelklik op een rij om de claim te openen. Een nieuwe claim maakt u in het dossier, op het tabblad **Schade**.
+- Dubbelklik op een rij om de claim te openen. De link bovenaan en **Annuleren** brengen u terug naar deze lijst. Een nieuwe claim maakt u in het dossier, op het tabblad **Schade**.
 
 ## Zie ook
 

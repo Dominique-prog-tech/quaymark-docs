@@ -661,6 +661,12 @@ sql.append(f"delete from dossiers.claim_stappen where claim_id = {lit(vid('claim
 sql.append(rij('dossiers.claims', dict(id=vid('claim/11'), dossier_id=D11, omschrijving='Cargo claim, wet bags', verzekeraar_id=REL[2], pi_club_id=None,
            polisnummer='CG-2017-88', claimnummer=None, geclaimd=21400, erkend=15800, uitgekeerd=15800, status='afgewikkeld', aangemeld='2018-02-14',
            afgewikkeld='2018-09-30', opmerking=None, created_at=dt.datetime(2018, 2, 14, 9, 0, tzinfo=dt.timezone.utc))))
+# De status van een claim is die van haar laatste stap: de app zet ze nooit zonder stap (18/11/2026, visuele ronde, rij 48: hier stond 'afgewikkeld'
+# zonder verloop, en de fiche toonde het label Afgewikkeld boven een verloop dat bij Aangemeld ophield).
+for k, (status, datum, opmerking) in enumerate([('erkend', dt.date(2018, 6, 12), 'Insurer agreed EUR 15,800.00 after the joint survey'),
+                                                 ('afgewikkeld', dt.date(2018, 9, 30), 'Paid by the insurer')], 1):
+    sql.append(rij('dossiers.claim_stappen', dict(id=vid(f'claimstap/11/{k}'), claim_id=vid('claim/11'), status=status, datum=datum.isoformat(),
+               opmerking=opmerking, door=SURVEYOR_NAAM, op=dt.datetime(datum.year, datum.month, datum.day, 10, 0, tzinfo=dt.timezone.utc))))
 
 # ── Draft survey (B1) voor HQ-2026-0004 (de draft survey van de POLDERWIND): begin in ballast, eind geladen. Dezelfde verzonnen cijfers als de
 #    tests in de app (DraftsurveyTests), dus het beeld toont 49.706,221 t. ──

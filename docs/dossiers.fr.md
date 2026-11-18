@@ -415,7 +415,7 @@ L'écran **Réclamations** du menu affiche les réclamations de tous les dossier
 ![La liste Réclamations avec le choix Aussi clôturées](images/claims-fr.png "La liste Réclamations")
 
 - Par défaut, seules les réclamations **ouvertes** s'affichent. Cochez **Aussi clôturées** pour les réclamations réglées et rejetées.
-- Double-cliquez sur une ligne pour ouvrir la réclamation. Une nouvelle réclamation se crée dans le dossier, onglet **Dommages**.
+- Double-cliquez sur une ligne pour ouvrir la réclamation. Le lien en haut et **Annuler** vous ramènent à cette liste. Une nouvelle réclamation se crée dans le dossier, onglet **Dommages**.
 
 ## Voir aussi
 

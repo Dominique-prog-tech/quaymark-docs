@@ -415,7 +415,7 @@ Der Bildschirm **Ansprüche** im Menü zeigt die Ansprüche aller Akten, mit Akt
 ![Liste der Ansprüche mit Auch abgeschlossene](images/claims-de.png "Die Liste Ansprüche")
 
 - Standardmäßig sehen Sie nur die **offenen** Ansprüche. Haken Sie **Auch abgeschlossene** an für erledigte und abgelehnte Ansprüche.
-- Doppelklicken Sie auf eine Zeile, um den Anspruch zu öffnen. Einen neuen Anspruch legen Sie in der Akte an, auf der Registerkarte **Schaden**.
+- Doppelklicken Sie auf eine Zeile, um den Anspruch zu öffnen. Der Link oben und **Abbrechen** bringen Sie zu dieser Liste zurück. Einen neuen Anspruch legen Sie in der Akte an, auf der Registerkarte **Schaden**.
 
 ## Siehe auch
 

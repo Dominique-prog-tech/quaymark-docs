@@ -415,7 +415,7 @@ The **Claims** screen in the menu shows the claims of all files, with their file
 ![The Claims list with the Also closed choice](images/claims-en.png "The Claims list")
 
 - By default you only see the **open** claims. Tick **Also closed** for settled and rejected claims.
-- Double-click a row to open the claim. A new claim is made in the file, on the **Damage** tab.
+- Double-click a row to open the claim. The link at the top and **Cancel** take you back to this list. A new claim is made in the file, on the **Damage** tab.
 
 ## See also
 
