@@ -410,7 +410,7 @@ Un expert ne peut pas intervenir pour les deux parties. Quaymark avertit en haut
 
 ## Réclamations
 
-L'écran **Réclamations** du menu affiche les réclamations de tous les dossiers, avec leur dossier, assureur, montants et statut.
+L'écran **Réclamations** du menu affiche les réclamations de tous les dossiers, avec leur dossier, navire, assureur, montants et statut.
 
 ![La liste Réclamations avec le choix Aussi clôturées](images/claims-fr.png "La liste Réclamations")
 

@@ -410,7 +410,7 @@ A surveyor may not act for both parties. Quaymark warns at the top of the file i
 
 ## Claims
 
-The **Claims** screen in the menu shows the claims of all files, with their file, insurer, amounts and status.
+The **Claims** screen in the menu shows the claims of all files, with their file, vessel, insurer, amounts and status.
 
 ![The Claims list with the Also closed choice](images/claims-en.png "The Claims list")
 

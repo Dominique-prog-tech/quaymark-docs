@@ -410,7 +410,7 @@ Ein Besichtiger darf nicht für beide Parteien tätig sein. Quaymark warnt oben 
 
 ## Ansprüche
 
-Der Bildschirm **Ansprüche** im Menü zeigt die Ansprüche aller Akten, mit Akte, Versicherer, Beträgen und Status.
+Der Bildschirm **Ansprüche** im Menü zeigt die Ansprüche aller Akten, mit Akte, Schiff, Versicherer, Beträgen und Status.
 
 ![Liste der Ansprüche mit Auch abgeschlossene](images/claims-de.png "Die Liste Ansprüche")
 

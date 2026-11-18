@@ -410,7 +410,7 @@ Een surveyor mag niet voor beide partijen optreden. Quaymark waarschuwt bovenaan
 
 ## Claims
 
-Het scherm **Claims** in het menu toont de claims van alle dossiers, met hun dossier, verzekeraar, bedragen en status.
+Het scherm **Claims** in het menu toont de claims van alle dossiers, met hun dossier, schip, verzekeraar, bedragen en status.
 
 ![De lijst Claims met de keuze Ook afgesloten](images/claims.png "De lijst Claims")
 
