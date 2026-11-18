@@ -12,7 +12,7 @@ Connectez-vous : Quaymark ouvre directement **Mon travail**. Dans le menu, il fi
 
 ## Mes dossiers
 
-Les dossiers qui vous sont attribués, avec leur statut, l'heure prévue et le port. Vous les ouvrez dans l'application de terrain.
+Les dossiers qui vous sont attribués, avec leur statut sous forme d'étiquette colorée (bleu ce qui reste à faire, orange ce qui est en cours, vert ce qui est terminé), l'heure prévue et le port. Vous les ouvrez dans l'application de terrain.
 
 ## Mon temps
 

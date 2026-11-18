@@ -12,7 +12,7 @@ Meld u aan: Quaymark opent **Mijn werk** meteen. In het menu staat het als **Mij
 
 ## Mijn dossiers
 
-De dossiers die aan u toegewezen zijn, met hun status, het geplande tijdstip en de haven. U opent ze in de veldapp.
+De dossiers die aan u toegewezen zijn, met hun status als gekleurd label (blauw wat nog moet gebeuren, oranje wat loopt, groen wat af is), het geplande tijdstip en de haven. U opent ze in de veldapp.
 
 ## Mijn tijd
 

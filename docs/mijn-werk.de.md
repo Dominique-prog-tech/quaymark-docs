@@ -12,7 +12,7 @@ Melden Sie sich an: Quaymark öffnet **Meine Arbeit** sofort. Im Menü steht sie
 
 ## Meine Akten
 
-Die Ihnen zugewiesenen Akten, mit ihrem Status, dem geplanten Zeitpunkt und dem Hafen. Sie öffnen sie in der Außendienst-App.
+Die Ihnen zugewiesenen Akten, mit ihrem Status als farbigem Etikett (blau, was noch kommt, orange, was läuft, grün, was erledigt ist), dem geplanten Zeitpunkt und dem Hafen. Sie öffnen sie in der Außendienst-App.
 
 ## Meine Zeit
 

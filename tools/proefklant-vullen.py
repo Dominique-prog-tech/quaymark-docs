@@ -743,6 +743,13 @@ eerste_vorige = (VANDAAG.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
 FL_DOSSIER = q("select id from dossiers.dossiers where nummer = 'ZB-2026-0001'")
 if not FL_DOSSIER:
     raise SystemExit('⛔ Het dossier ZB-2026-0001 bestaat niet. Gestopt; niets geschreven.')
+# Zijn eigen dossiers (18/11/2026, visuele ronde rij 55): zonder toonde Mijn werk geen dossier en bleef Kost toevoegen uit, terwijl zijn tijd en kost op
+# ZB-2026-0001 stonden (met surveyor.demo als surveyor). Nu is hij surveyor van ZB-2026-0001 (afgesloten, met zijn werk) en van HQ-2026-0009 (nieuw, komt eraan).
+FL_EIGEN = ['ZB-2026-0001', 'HQ-2026-0009']
+for nr in FL_EIGEN:
+    if not q(f"select id from dossiers.dossiers where nummer = {lit(nr)} and archived_on_utc is null"):
+        raise SystemExit(f'⛔ Het dossier {nr} bestaat niet (of staat in de prullenbak). Gestopt; niets geschreven.')
+sql.append(f"update dossiers.dossiers set surveyor_id = {lit(FREELANCER)} where nummer in ({', '.join(lit(n) for n in FL_EIGEN)});")
 FL_PRESTATIES = [(1, eerste_vorige + dt.timedelta(days=6), '07:30', '11:00', 'On board · Draft survey, initial'), (2, eerste_vorige + dt.timedelta(days=6), '15:00', '17:15', 'On board · Draft survey, final')]
 FL_KOST = vid('freelance/kost/1')
 sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'freelance/prestatie/{k}')) for k, *_ in FL_PRESTATIES)});")

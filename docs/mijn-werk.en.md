@@ -12,7 +12,7 @@ Sign in: Quaymark opens **My work** straight away. In the menu it is listed as *
 
 ## My files
 
-The files assigned to you, with their status, the scheduled time and the port. You open them in the field app.
+The files assigned to you, with their status as a coloured label (blue what is still to come, orange what is in progress, green what is done), the scheduled time and the port. You open them in the field app.
 
 ## My time
 
