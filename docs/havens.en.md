@@ -12,7 +12,7 @@ At the bottom of the menu, click **Administration**, then the **Ports** tile.
 
 ## Fields and functions
 
-- A port has a **UN/LOCODE**: five characters, the country code followed by the place, for example BEANR for Antwerp.
+- A port has a **UN/LOCODE**: five characters, the country code followed by the place, for example BEANR for Antwerp. A file keeps that code: once files use the port, it is fixed. The name and Active can always be changed.
 - Double-click a row to edit it; **New port** adds one.
 - A port cannot be deleted, because older files refer to it. Set a port you do not serve to **inactive**: it then disappears from the choice list.
 

@@ -12,7 +12,7 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Ports**.
 
 ## Champs et fonctions
 
-- Un port a un **UN/LOCODE** : cinq caractères, le code pays suivi du lieu, par exemple BEANR pour Anvers.
+- Un port a un **UN/LOCODE** : cinq caractères, le code pays suivi du lieu, par exemple BEANR pour Anvers. Un dossier conserve ce code : dès que des dossiers utilisent le port, il est fixé. Le nom et Actif restent toujours modifiables.
 - Double-cliquez sur une ligne pour la modifier ; **Nouveau port** en ajoute un.
 - Un port ne peut pas être supprimé, car d'anciens dossiers y renvoient. Passez un port que vous ne desservez pas en **non actif** : il disparaît alors de la liste de choix.
 

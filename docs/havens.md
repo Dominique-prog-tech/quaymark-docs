@@ -12,7 +12,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Havens**.
 
 ## Velden en functies
 
-- Een haven heeft een **UN/LOCODE**: vijf tekens, de landcode gevolgd door de plaats, bijvoorbeeld BEANR voor Antwerpen.
+- Een haven heeft een **UN/LOCODE**: vijf tekens, de landcode gevolgd door de plaats, bijvoorbeeld BEANR voor Antwerpen. Een dossier bewaart die code: zodra er dossiers met de haven zijn, ligt ze vast. De naam en Actief kunt u altijd aanpassen.
 - Dubbelklik op een rij om ze te bewerken; **Nieuwe haven** voegt er een toe.
 - Een haven verwijderen kan niet, want oude dossiers verwijzen ernaar. Zet een haven die u niet bedient op **niet actief**: ze verdwijnt dan uit de keuzelijst.
 
