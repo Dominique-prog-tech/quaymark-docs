@@ -17,7 +17,7 @@ Click **On-call duty** in the menu on the left and choose the office. At the top
 3. Choose the **First handover** (for example Monday 08:00), the **Days per block** (7 for a week) and the **Number of blocks**.
 4. Leave **Replace existing blocks in this period** ticked to overwrite an old rota. A block that runs across the boundary of the new rota stays; Quaymark then reports the overlap.
 
-Each block starts where the previous one ends. When summer or winter time starts, the handover stays at the same hour.
+Each block starts where the previous one ends. When summer or winter time starts, the handover stays at the same hour. The first handover is already set to the end of the last rota, or to the next Monday at 08:00. The list shows every upcoming block, even far ahead, and the week before.
 
 ## Changing blocks
 

@@ -17,7 +17,7 @@ Klik in het menu links op **Wachtdiensten** en kies de vestiging. Bovenaan staat
 3. Kies de **Eerste overdracht** (bijvoorbeeld maandag 08:00), de **Dagen per blok** (7 voor een week) en het **Aantal blokken**.
 4. Laat **Bestaande blokken in deze periode vervangen** aangevinkt om een oude rol te overschrijven. Een blok dat over de grens van de nieuwe rol loopt, blijft staan; dan meldt Quaymark de overlap.
 
-Elk blok begint waar het vorige eindigt. Bij de overgang naar zomer- of wintertijd blijft de overdracht op hetzelfde uur.
+Elk blok begint waar het vorige eindigt. Bij de overgang naar zomer- of wintertijd blijft de overdracht op hetzelfde uur. De eerste overdracht staat al op het einde van de laatste rol, of op de eerstvolgende maandag 08:00. De lijst toont elk komend blok, ook ver vooruit, en de week ervoor.
 
 ## Blokken aanpassen
 

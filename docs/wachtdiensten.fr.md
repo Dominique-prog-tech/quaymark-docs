@@ -17,7 +17,7 @@ Cliquez sur **Gardes** dans le menu de gauche et choisissez le site. En haut fig
 3. Choisissez la **Première relève** (par exemple lundi 08:00), les **Jours par créneau** (7 pour une semaine) et le **Nombre de créneaux**.
 4. Laissez **Remplacer les créneaux existants sur cette période** coché pour écraser un ancien planning. Un créneau qui dépasse la limite du nouveau planning est conservé ; Quaymark signale alors le chevauchement.
 
-Chaque créneau commence là où le précédent se termine. Au passage à l'heure d'été ou d'hiver, la relève reste à la même heure.
+Chaque créneau commence là où le précédent se termine. Au passage à l'heure d'été ou d'hiver, la relève reste à la même heure. La première relève est déjà réglée sur la fin du dernier planning de garde, ou sur le lundi suivant à 08:00. La liste affiche chaque créneau à venir, même lointain, ainsi que la semaine précédente.
 
 ## Modifier les créneaux
 

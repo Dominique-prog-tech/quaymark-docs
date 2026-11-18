@@ -17,7 +17,7 @@ Klicken Sie im Menü links auf **Bereitschaft** und wählen Sie die Niederlassun
 3. Wählen Sie die **Erste Übergabe** (zum Beispiel Montag 08:00), die **Tage pro Block** (7 für eine Woche) und die **Anzahl Blöcke**.
 4. Lassen Sie **Vorhandene Blöcke in diesem Zeitraum ersetzen** aktiviert, um einen alten Plan zu überschreiben. Ein Block, der über die Grenze des neuen Plans hinausreicht, bleibt; Quaymark meldet dann die Überschneidung.
 
-Jeder Block beginnt, wo der vorige endet. Beim Wechsel zur Sommer- oder Winterzeit bleibt die Übergabe zur selben Uhrzeit.
+Jeder Block beginnt, wo der vorige endet. Beim Wechsel zur Sommer- oder Winterzeit bleibt die Übergabe zur selben Uhrzeit. Die erste Übergabe steht bereits auf dem Ende des letzten Dienstplans oder auf dem nächsten Montag um 08:00. Die Liste zeigt jeden kommenden Block, auch weit voraus, und die Woche davor.
 
 ## Blöcke ändern
 
