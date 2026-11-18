@@ -37,7 +37,7 @@ Eén soort survey: wat er in het dossier ingevuld wordt en wat de surveyor ter p
 - **Rubrieken**: de tekstblokken van het rapport (inleiding, bevindingen, conclusie …). De surveyor schrijft ze op het tabblad Rapport van het dossier; een rapportsjabloon toont ze met de markering in de kolom ernaast. Een nieuw soort survey start met de vijf standaardrubrieken.
 - **Werkinstructie** (eigen tabblad): wat de surveyor bij dit soort opdracht doet, één stap per regel, in vier talen. Elk dossier van deze soort toont ze bovenaan, in de taal van de gebruiker, met dezelfde markeringen als de [standaardteksten](standaardteksten.md) ingevuld.
 - **Tabbladen** (eigen tabblad): welke tabbladen een dossier van deze soort toont. Vaststellingen, checklist, schade, gezamenlijk, handtekeningen, documenten van boord, codes, tijdlijn en laytime kunt u uitzetten; laytime rekent op de tijdlijn en verdwijnt mee. Wat er al in stond, blijft bewaard (ook in het rapport en het bewijspakket) en komt terug zodra u het weer aanzet.
-- De pijl **↑** zet een veld of punt een plaats hoger. Wijzigingen aan velden en checklist tellen pas na **Bewaren**.
+- Onder **⋯** naast een veld, punt of rubriek staan **Bewerken**, **Hoger**, **Lager** en **Verwijderen**; dubbelklikken opent het ook. De volgorde van de lijst is die van het dossier, de veldapp en het rapport. Wijzigingen aan velden, checklist en rubrieken tellen pas na **Bewaren**; **Annuleren** zet ze terug.
 
 ![De pagina Standaardbevindingen met de kolommen Bevinding, Aanbeveling en Prioriteit](images/standaardbevindingen.png "Standaardbevindingen")
 

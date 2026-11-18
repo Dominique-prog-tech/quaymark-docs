@@ -37,7 +37,7 @@ Eine Besichtigungsart: was in der Akte erfasst wird und was der Besichtiger vor 
 - **Abschnitte**: die Textblöcke des Berichts (Einleitung, Befunde, Schlussfolgerung …). Der Besichtiger schreibt sie in der Registerkarte Bericht der Akte; eine Berichtsvorlage zeigt sie mit der Markierung in der Spalte daneben. Eine neue Besichtigungsart startet mit den fünf Standardabschnitten.
 - **Arbeitsanweisung** (eigene Registerkarte): was der Surveyor bei dieser Art von Auftrag tut, ein Schritt pro Zeile, in vier Sprachen. Jede Akte dieser Art zeigt sie oben, in der Sprache des Benutzers, mit denselben Markierungen wie die [Standardtexte](standaardteksten.md) ausgefüllt.
 - **Registerkarten** (eigene Registerkarte): welche Registerkarten eine Akte dieser Art zeigt. Feststellungen, Checkliste, Schaden, gemeinsame Besichtigung, Unterschriften, Bordunterlagen, Codes, Zeitablauf und Laytime lassen sich ausschalten; die Laytime wird aus dem Zeitablauf berechnet und verschwindet mit ihm. Was schon darin stand, bleibt gespeichert (auch im Bericht und im Beweispaket) und kehrt zurück, sobald Sie es wieder einschalten.
-- Der Pfeil **↑** setzt ein Feld oder einen Punkt eine Stelle höher. Änderungen an Feldern und Checkliste gelten erst nach **Speichern**.
+- Unter **⋯** neben einem Feld, Punkt oder Abschnitt: **Bearbeiten**, **Nach oben**, **Nach unten** und **Löschen**; ein Doppelklick öffnet es auch. Die Reihenfolge der Liste ist die der Akte, der Feld-App und des Berichts. Änderungen an Feldern, Checkliste und Abschnitten gelten erst nach **Speichern**; **Abbrechen** macht sie rückgängig.
 
 ![Standardbefunde mit Feststellung, Empfehlung und Priorität](images/standaardbevindingen-de.png "Standardbefunde")
 

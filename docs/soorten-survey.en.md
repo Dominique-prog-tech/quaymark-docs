@@ -37,7 +37,7 @@ One survey type: what is entered in the file and what the surveyor goes through 
 - **Sections**: the text blocks of the report (introduction, observations, conclusion …). The surveyor writes them on the Report tab of the file; a report template shows them with the marker in the next column. A new survey type starts with the five standard sections.
 - **Work instructions** (own tab): what the surveyor does for this type of assignment, one step per line, in four languages. Every file of this type shows them at the top, in the user's language, with the same placeholders as the [standard texts](standaardteksten.md) filled in.
 - **Tabs** (own tab): which tabs a file of this type shows. Findings, checklist, damage, joint survey, signatures, board documents, codes, timeline and laytime can be switched off; laytime is calculated from the timeline and disappears with it. What was already there stays saved (also in the report and the evidence package) and returns as soon as you switch it back on.
-- The arrow **↑** moves a field or item up one place. Changes to fields and checklist only count after **Save**.
+- Under **⋯** next to a field, item or section: **Edit**, **Move up**, **Move down** and **Delete**; double-clicking opens it too. The order of the list is that of the file, the field app and the report. Changes to fields, checklist and sections only count after **Save**; **Cancel** undoes them.
 
 ![The Standard findings page with the columns Finding, Recommendation and Priority](images/standaardbevindingen-en.png "Standard findings")
 
