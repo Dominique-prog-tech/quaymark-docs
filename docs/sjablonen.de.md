@@ -41,6 +41,7 @@ Eine Berichtsvorlage: die Versionen pro Sprache und das Word-Dokument selbst.
 - Die Vorlage **Draft Survey Report** bestimmt das Aussehen dieses Dokuments, in den vier Sprachen.
 - Die Vorlage **Rechnung** bestimmt das Aussehen der Rechnungen und Gutschriften, in den vier Sprachen. Der Zahlungs-QR-Code steht an der Stelle des Feldes BetaalQr. Siehe [Rechnungen](facturen.md).
 - **Als neue Version speichern** prüft das Dokument und die Markierungen. Eine unbekannte Markierung wird mit Begründung abgelehnt. **Prüfen** sieht nur die Felder, nicht die Markierungen.
+- Unten zeigt das Feld **Markierungen**, wie viele Abschnitte die gespeicherte Version noch nicht verwendet, mit ihrer Markierung: zum Beispiel einen Abschnitt, den Quaymark später hinzugefügt hat (ein neuer Abschnitt kommt nur in die Vorlage eines neuen Büros von selbst). Eine Markierung ohne Daten hinterlässt nichts im Bericht: Sie hinzuzufügen ist unbedenklich.
 
 ## Siehe auch
 

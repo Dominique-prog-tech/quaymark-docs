@@ -41,6 +41,7 @@ Eén rapportsjabloon: de versies per taal en het Word-document zelf.
 - Het sjabloon **Draft survey report** bepaalt het uitzicht van dat document, in de vier talen.
 - Het sjabloon **Factuur** bepaalt het uitzicht van de facturen en creditnota's, in de vier talen. De betaal-QR komt op de plaats van het veld BetaalQr. Zie [Facturen](facturen.md).
 - **Bewaren als nieuwe versie** controleert het document en de markeringen. Een onbekende markering wordt geweigerd met de reden erbij. **Controleren** kijkt enkel naar de velden, niet naar de markeringen.
+- Onderaan zegt het paneel **Markeringen** hoeveel onderdelen de bewaarde versie nog niet gebruikt, met hun markering: bijvoorbeeld een onderdeel dat Quaymark later toevoegde (een nieuw onderdeel komt enkel vanzelf in het sjabloon van een nieuw bureau). Een markering zonder gegevens laat niets achter in het rapport: toevoegen is veilig.
 
 ## Zie ook
 

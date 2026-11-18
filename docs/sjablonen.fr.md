@@ -41,6 +41,7 @@ Un modèle de rapport : les versions par langue et le document Word lui-même.
 - Le modèle **Draft survey report** détermine la présentation de ce document, dans les quatre langues.
 - Le modèle **Facture** détermine la présentation des factures et notes de crédit, dans les quatre langues. Le QR de paiement prend la place du champ BetaalQr. Voir [Factures](facturen.md).
 - **Enregistrer comme nouvelle version** vérifie le document et les marqueurs. Un marqueur inconnu est refusé, avec la raison. **Vérifier** ne regarde que les champs, pas les marqueurs.
+- En bas, le panneau **Marqueurs** indique combien de parties la version enregistrée n'utilise pas encore, avec leur marqueur : par exemple une partie que Quaymark a ajoutée plus tard (une nouvelle partie n'arrive d'elle-même que dans le modèle d'un nouveau bureau). Un marqueur sans données ne laisse rien dans le rapport : l'ajouter est sans risque.
 
 ## Voir aussi
 

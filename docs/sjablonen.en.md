@@ -41,6 +41,7 @@ One report template: the versions per language and the Word document itself.
 - The **Draft survey report** template determines the look of that document, in the four languages.
 - The **Invoice** template determines the look of invoices and credit notes, in the four languages. The payment QR code takes the place of the BetaalQr field. See [Invoices](facturen.md).
 - **Save as new version** checks the document and the markers. An unknown marker is refused, with the reason. **Check** only looks at the fields, not at the markers.
+- At the bottom, the **Markers** panel says how many sections the saved version does not use yet, with their marker: for example a section Quaymark added later (a new section only arrives by itself in the template of a new office). A marker without data leaves nothing in the report: adding it is safe.
 
 ## See also
 
