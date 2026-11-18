@@ -22,7 +22,7 @@ Chaque créneau commence là où le précédent se termine. Au passage à l'heur
 ## Modifier les créneaux
 
 - **Nouveau créneau** ajoute un créneau (expert, de, à, remarque).
-- Double-cliquez sur un créneau pour le modifier, par exemple pour l'échanger avec un collègue, ou pour le supprimer.
+- Double-cliquez sur un créneau, ou choisissez **Modifier** sous **⋯** sur la ligne, pour le modifier, par exemple pour l'échanger avec un collègue. **Supprimer** se trouve aussi sous **⋯**.
 
 ## Alertes
 

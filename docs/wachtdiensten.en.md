@@ -22,7 +22,7 @@ Each block starts where the previous one ends. When summer or winter time starts
 ## Changing blocks
 
 - **New block** adds a single block (surveyor, from, to, note).
-- Double-click a block to change it, for example to swap with a colleague, or to delete it.
+- Double-click a block, or choose **Edit** under **⋯** on the row, to change it, for example to swap with a colleague. **Delete** is also under **⋯**.
 
 ## Alerts
 

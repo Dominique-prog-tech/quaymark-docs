@@ -22,7 +22,7 @@ Elk blok begint waar het vorige eindigt. Bij de overgang naar zomer- of winterti
 ## Blokken aanpassen
 
 - **Nieuw blok** voegt één blok toe (surveyor, van, tot, opmerking).
-- Dubbelklik op een blok om het aan te passen, bijvoorbeeld om met een collega te ruilen, of om het te verwijderen.
+- Dubbelklik op een blok, of kies **Bewerken** onder **⋯** op de regel, om het aan te passen, bijvoorbeeld om met een collega te ruilen. **Verwijderen** staat ook onder **⋯**.
 
 ## Meldingen
 

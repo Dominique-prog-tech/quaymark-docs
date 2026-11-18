@@ -22,7 +22,7 @@ Jeder Block beginnt, wo der vorige endet. Beim Wechsel zur Sommer- oder Winterze
 ## Blöcke ändern
 
 - **Neuer Block** fügt einen Block hinzu (Besichtiger, von, bis, Bemerkung).
-- Doppelklicken Sie auf einen Block, um ihn zu ändern, zum Beispiel um mit einem Kollegen zu tauschen, oder um ihn zu löschen.
+- Doppelklicken Sie auf einen Block oder wählen Sie **Bearbeiten** unter **⋯** in der Zeile, um ihn zu ändern, zum Beispiel um mit einem Kollegen zu tauschen. **Löschen** steht ebenfalls unter **⋯**.
 
 ## Hinweise
 
