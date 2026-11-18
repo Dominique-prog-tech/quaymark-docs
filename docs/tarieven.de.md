@@ -14,7 +14,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Tarife**
 
 ## Pro Besichtigungsart
 
-Jede Besichtigungsart erhält eine **Pauschale** (einen festen Betrag pro Akte) oder einen **Stundensatz**, nicht beides. Lassen Sie beide leer für eine Art, die Sie nicht nach einem festen Tarif abrechnen.
+Jede Besichtigungsart erhält eine **Pauschale** (einen festen Betrag pro Akte) oder einen **Stundensatz**, nicht beides: Füllen Sie das eine aus, ist das andere in dieser Zeile deaktiviert. Lassen Sie beide leer für eine Art, die Sie nicht nach einem festen Tarif abrechnen.
 
 ## Pro Sachverständigen
 

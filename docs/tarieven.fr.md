@@ -14,7 +14,7 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Tarifs**. Se
 
 ## Par type d'expertise
 
-Chaque type d'expertise reçoit un **Forfait** (un montant fixe par dossier) ou un **Tarif horaire**, pas les deux. Laissez les deux vides pour un type que vous ne facturez pas selon un tarif fixe.
+Chaque type d'expertise reçoit un **Forfait** (un montant fixe par dossier) ou un **Tarif horaire**, pas les deux : si vous remplissez l'un, l'autre est désactivé sur cette ligne. Laissez les deux vides pour un type que vous ne facturez pas selon un tarif fixe.
 
 ## Par expert
 

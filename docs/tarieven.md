@@ -14,7 +14,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Tarieven**. En
 
 ## Per soort survey
 
-Elke soort survey krijgt een **Forfait** (een vast bedrag per dossier) óf een **Uurtarief**, niet beide. Laat beide leeg voor een soort die u niet volgens een vast tarief aanrekent.
+Elke soort survey krijgt een **Forfait** (een vast bedrag per dossier) óf een **Uurtarief**, niet beide: vult u het ene in, dan staat het andere op die regel uit. Laat beide leeg voor een soort die u niet volgens een vast tarief aanrekent.
 
 ## Per surveyor
 

@@ -14,7 +14,7 @@ At the bottom of the menu, click **Administration**, then the **Rates** tile. On
 
 ## Per survey type
 
-Each survey type gets a **Fixed fee** (a fixed amount per file) or an **Hourly rate**, not both. Leave both empty for a type you do not charge at a fixed rate.
+Each survey type gets a **Fixed fee** (a fixed amount per file) or an **Hourly rate**, not both: once you fill in one, the other is switched off on that row. Leave both empty for a type you do not charge at a fixed rate.
 
 ## Per surveyor
 
