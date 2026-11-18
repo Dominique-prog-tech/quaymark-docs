@@ -8,7 +8,7 @@ A quotation to a principal, in the principal's language. Once accepted it become
 
 ## Opening the screen
 
-Click **Quotations** in the menu on the left. You see the quotations with their number, principal, validity, total and status: draft, sent, accepted, declined or expired. Viewing requires the right to view invoices; drafting, sending and deciding require the right to edit invoices.
+Click **Quotations** in the menu on the left. You see the quotations with their number, principal, validity, total and status: draft, sent, accepted, declined or expired. The status is shown as a coloured label, as on the quotation itself and in the principal portal: green accepted, red declined, blue sent, grey draft or expired. Viewing requires the right to view invoices; drafting, sending and deciding require the right to edit invoices.
 
 ## Quotation
 

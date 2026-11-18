@@ -744,6 +744,56 @@ sql.append(rij('financieel.kosten', dict(id=FL_KOST, dossier_id=FL_DOSSIER, datu
            omschrijving='Mileage Bruges to Zeebrugge return, 34 km', bedrag=14.28, doorrekenen=True, bijlage_id=None, factuur_id=None, created_at=om(-30),
            gebruiker_id=FREELANCER, afrekening_id=None)))
 
+# ── Offertes (F7; 18/11/2026, visuele ronde, rij 49): één per toestand, zodat de lijst, de fiche en het portaal iets te tonen hebben. Tot dan had de
+#    proefklant er geen (de enige, van 13/11, verdween toen de demogegevens gewist werden). De aanvaarde hoort bij HQ-2026-0006 (zelfde opdrachtgever,
+#    soort, schip, haven en referentie, zoals Aanvaarden het dossier maakt). Een verstuurde offerte heeft een pdf met haar vingerafdruk; die van de app
+#    komt uit het sjabloon, deze is een verzonnen blad van één pagina (de opmaak meet u op het voorbeeld van een klad). ──
+def een_blad_pdf(regels):
+    def ontsnap(t):
+        return t.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)')
+    tekst = ('BT /F1 14 Tf 60 780 Td ' + ' 0 -24 Td '.join(f'({ontsnap(r)}) Tj' for r in regels) + ' ET').encode('latin-1')
+    inhoud = (b"%PDF-1.4\n1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj\n2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj\n"
+              b"3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 595 842]/Contents 4 0 R/Resources<</Font<</F1<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>>>>>>>endobj\n")
+    return inhoud + b"4 0 obj<</Length %d>>stream\n" % len(tekst) + tekst + b"\nendstream endobj\ntrailer<</Root 1 0 R>>\n%%EOF\n"
+
+
+OFFERTES = [
+    # (sleutel, nummer, status, vestiging, relatie, soort, taal, munt, dag, geldig (dagen na de datum), schip, haven, referentie, regels, dossier, beslist, reden)
+    (1, None, 'klad', HQ, 2, 'damage', 'nl', 'EUR', 0, 30, 'BRAKWATER TRADER', 'BEANR', None,
+     [('Schadesurvey, geraamde uren', 3, 'HUR', 125.00), ('Reiskosten', 1, 'C62', 35.00)], None, None, None),
+    (2, 'O-HQ-2026-0003', 'verstuurd', HQ, 1, 'hatch_cover', 'nl', 'EUR', -3, 30, 'KAAIMEEUW', 'BEGNE', 'KM-OPS-2240',
+     [('Luikdekseltest met ultrasoon, forfait', 1, 'C62', 1450.00)], None, None, None),
+    (3, 'O-HQ-2026-0002', 'aanvaard', HQ, 3, 'condition', 'en', 'EUR', -5, 30, 'DUINROOS', 'FRDKK', 'CL-2026-408',
+     [('Condition survey, fixed fee', 1, 'C62', 980.00)], DOS['8'], ('Mark Jansen', NU - dt.timedelta(days=2)), None),
+    (4, 'O-ZB-2026-0001', 'geweigerd', ZB, 8, 'on_hire', 'en', 'EUR', -20, 30, 'SCHELDESTER', 'BEZEE', 'TC-121',
+     [('On-hire condition survey, fixed fee', 1, 'C62', 1150.00)], None, ('Eva de Vries', om(-15, 11)), 'Price above budget for this charter'),
+    # Verstuurd maar niet meer geldig: de lijst toont Verlopen. In USD (F4: de munt van de offerte).
+    (5, 'O-HQ-2026-0001', 'verstuurd', HQ, 3, 'bunker', 'en', 'USD', -45, 30, 'POLDERWIND', 'BEANR', 'HK/26/0388',
+     [('Bunker survey, estimated hours', 4, 'HUR', 140.00), ('Travel', 1, 'C62', 60.00)], None, None, None),
+]
+sql.append(f"delete from financieel.offertes where id in ({', '.join(lit(vid(f'offerte/{k}')) for k, *_ in OFFERTES)});")
+for k, nummer, status, vest, rel, soort, taal, munt, dag, geldig, schip, haven, ref, regels, dossier, beslist, reden in OFFERTES:
+    datum = VANDAAG + dt.timedelta(days=dag)
+    sleutel = sha = verstuurd = None
+    if nummer:
+        verstuurd = om(dag, 15)
+        totaal = sum(round(a * p, 2) for _, a, _, p in regels)
+        data = een_blad_pdf([f'{"Offerte" if taal == "nl" else "Quotation"} {nummer}', f'{schip}, {haven}', f'Totaal {totaal:,.2f} {munt}'.translate(str.maketrans(',.', '.,')) if taal == 'nl' else f'Total {totaal:,.2f} {munt}',
+                             '(demo, verzonnen)' if taal == 'nl' else '(demo, invented)'])
+        sleutel = f"bureau-{TENANT_N}/offertes/{datum.year}/{vid(f'offerte/{k}').replace('-', '')}_{'Offerte' if taal == 'nl' else 'Quotation'} {nummer}.pdf"
+        sha, _ = bestand(sleutel, data)
+    sql.append(rij('financieel.offertes', dict(id=vid(f'offerte/{k}'), nummer=nummer, relatie_id=REL[rel], vestiging_id=vest, survey_type_id=SOORT[soort],
+               taal=taal, munt=munt, datum=datum, geldig_tot=datum + dt.timedelta(days=geldig), schip_naam=schip, haven_locode=haven, referentie=ref,
+               omschrijving=None, regels=[dict(omschrijving=o, aantal=a, eenheid=e, eenheidsprijs=p) for o, a, e, p in regels], status=status,
+               pdf_storage_key=sleutel, pdf_sha256=sha, verstuurd_op=verstuurd, beslist_op=beslist[1] if beslist else None,
+               beslist_door=beslist[0] if beslist else None, reden=reden, dossier_id=dossier, created_at=om(dag, 10))))
+# De nummerteller van de offertes (Offerteregels.Reeks): de volgende offerte die de app verstuurt, mag niet botsen met deze nummers.
+for vest, laatste in [(HQ, 3), (ZB, 1)]:
+    reeks = f"offerte:{vest.replace('-', '')}"
+    sql.append(f"update financieel.adm_nummer_tellers set laatste_nummer = greatest(laatste_nummer, {laatste}) where reeks = {lit(reeks)} and jaar = {VANDAAG.year};")
+    sql.append(f"insert into financieel.adm_nummer_tellers (id, reeks, jaar, laatste_nummer) select {lit(vid('teller/' + reeks))}, {lit(reeks)}, {VANDAAG.year}, {laatste} "
+               f"where not exists (select 1 from financieel.adm_nummer_tellers where reeks = {lit(reeks)} and jaar = {VANDAAG.year});")
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 8 if 'ijkmeting' in SOORT else 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"
@@ -755,5 +805,6 @@ sql.append('commit;')
 q('\n'.join(sql))
 tel = q("select (select count(*) from dossiers.dossiers) || ' dossiers, ' || (select count(*) from relaties.relaties) || ' relaties, ' || "
         "(select count(*) from dossiers.schepen) || ' schepen, ' || (select count(*) from dossiers.vaststellingen) || ' vaststellingen, ' || "
-        "(select count(*) from dossiers.bewijsstukken) || ' bewijsstukken, ' || (select count(*) from financieel.facturen) || ' facturen'")
+        "(select count(*) from dossiers.bewijsstukken) || ' bewijsstukken, ' || (select count(*) from financieel.facturen) || ' facturen, ' || "
+        "(select count(*) from financieel.offertes) || ' offertes'")
 print(f'✅ qm-demo gevuld ({VANDAAG}): {tel}.')
