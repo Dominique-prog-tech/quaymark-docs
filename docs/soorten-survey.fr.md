@@ -15,7 +15,7 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Types d'expe
 - Pour chaque type, vous voyez le code, le nom, le nombre de **champs** et de **points de contrôle**, la **navigation**, la langue par défaut du rapport et si le type est actif.
 - Double-cliquez sur une ligne pour ouvrir le type. **Nouveau type d'expertise** en crée un.
 - Un type ne peut pas être supprimé, car d'anciens dossiers y renvoient. Passez un type que vous ne proposez plus en **non actif**.
-- **Ajouter les types fluviaux** ajoute les types pour la navigation intérieure qui n'existent pas encore : jaugeage aux échelles, expertise de valeur, dommages, début et fin d'affrètement. Ce qui existe déjà reste inchangé. Un nouveau bureau les a d'emblée. Pour avoir le jaugeage dans le rapport, ajoutez `{{ijkmeting}}` à votre modèle de rapport (voir [Modèles](sjablonen.md)).
+- **Ajouter les types d'expertise fluviale** n'apparaît que s'il en manque un, avec leur nombre entre parenthèses. Le bouton ajoute les types pour la navigation intérieure qui n'existent pas encore : jaugeage aux échelles, expertise de valeur, dommages, début et fin d'affrètement. Ce qui existe déjà reste inchangé. Un nouveau bureau les a d'emblée. Pour avoir le jaugeage dans le rapport, ajoutez `{{ijkmeting}}` à votre modèle de rapport (voir [Modèles](sjablonen.md)).
 
 ![La liste Types d'expertise avec le bouton Nouveau type d'expertise](images/soorten-survey-fr.png "Les types d'expertise")
 

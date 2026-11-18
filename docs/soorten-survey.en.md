@@ -15,7 +15,7 @@ At the bottom of the menu, click **Administration**, then the **Survey types** t
 - For each type you see the code, the name, the number of **fields** and **checklist items**, the **navigation**, the default report language and whether the type is active.
 - Double-click a row to open the type. **New survey type** creates one.
 - A type cannot be deleted, because older files refer to it. Set a type you no longer offer to **inactive**.
-- **Add inland types** adds the survey types for inland vessels that do not exist yet: barge gauging, valuation, damage, on-hire and off-hire. What is already there stays as it is. A new office has them from the start. To show the barge gauging in the report, add `{{ijkmeting}}` to your report template (see [Templates](sjablonen.md)).
+- **Add inland survey types** only appears when one is missing, with the number in brackets. The button adds the survey types for inland vessels that do not exist yet: barge gauging, valuation, damage, on-hire and off-hire. What is already there stays as it is. A new office has them from the start. To show the barge gauging in the report, add `{{ijkmeting}}` to your report template (see [Templates](sjablonen.md)).
 
 ![The Survey types list with the New survey type button](images/soorten-survey-en.png "The survey types")
 

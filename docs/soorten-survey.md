@@ -15,7 +15,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Soorten survey
 - Per soort ziet u de code, de naam, het aantal **velden** en **checklistpunten**, de **vaart**, de standaardtaal van het rapport en of de soort actief is.
 - Dubbelklik op een rij om de soort te openen. **Nieuw soort survey** maakt er een aan.
 - Een soort verwijderen kan niet, want oude dossiers verwijzen ernaar. Zet een soort die u niet meer aanbiedt op **niet actief**.
-- **Binnenvaarttypes toevoegen** voegt de soorten voor de binnenvaart toe die er nog niet zijn: meting op ijkschalen, waardebepaling, schade, aanhuur en afhuur. Wat er al is, blijft zoals het is. Een nieuw bureau heeft ze meteen. Wilt u de meting op ijkschalen in het rapport, zet dan `{{ijkmeting}}` in uw rapportsjabloon (zie [Sjablonen](sjablonen.md)).
+- **Soorten voor de binnenvaart toevoegen** staat er enkel als er een ontbreekt, met het aantal tussen haakjes. De knop voegt de soorten voor de binnenvaart toe die er nog niet zijn: meting op ijkschalen, waardebepaling, schade, aanhuur en afhuur. Wat er al is, blijft zoals het is. Een nieuw bureau heeft ze meteen. Wilt u de meting op ijkschalen in het rapport, zet dan `{{ijkmeting}}` in uw rapportsjabloon (zie [Sjablonen](sjablonen.md)).
 
 ![De lijst Soorten survey met de knop Nieuw soort survey](images/soorten-survey.png "De soorten survey")
 

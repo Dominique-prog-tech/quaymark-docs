@@ -15,7 +15,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Besichti
 - Pro Art sehen Sie den Code, den Namen, die Anzahl **Felder** und **Checklistenpunkte**, die **Schifffahrt**, die Standard-Berichtssprache und ob die Art aktiv ist.
 - Doppelklicken Sie auf eine Zeile, um die Art zu öffnen. **Neue Besichtigungsart** legt eine an.
 - Eine Art kann nicht gelöscht werden, weil ältere Akten darauf verweisen. Setzen Sie eine Art, die Sie nicht mehr anbieten, auf **inaktiv**.
-- **Binnenschiffsarten hinzufügen** fügt die Arten für die Binnenschifffahrt hinzu, die es noch nicht gibt: Eichaufnahme, Wertgutachten, Schaden, On-Hire und Off-Hire. Was schon da ist, bleibt unverändert. Ein neues Büro hat sie von Anfang an. Damit die Eichaufnahme im Bericht erscheint, fügen Sie `{{ijkmeting}}` in Ihre Berichtsvorlage ein (siehe [Vorlagen](sjablonen.md)).
+- **Besichtigungsarten für die Binnenschifffahrt hinzufügen** erscheint nur, wenn eine fehlt, mit der Anzahl in Klammern. Die Schaltfläche fügt die Arten für die Binnenschifffahrt hinzu, die es noch nicht gibt: Eichaufnahme, Wertgutachten, Schaden, On-Hire und Off-Hire. Was schon da ist, bleibt unverändert. Ein neues Büro hat sie von Anfang an. Damit die Eichaufnahme im Bericht erscheint, fügen Sie `{{ijkmeting}}` in Ihre Berichtsvorlage ein (siehe [Vorlagen](sjablonen.md)).
 
 ![Besichtigungsarten mit Neue Besichtigungsart](images/soorten-survey-de.png "Die Besichtigungsarten")
 
