@@ -29,7 +29,7 @@ The details of one vessel.
 - Set a vessel you no longer use to **inactive**: it disappears from the choice list of new files and of a request (unless the number in the request matches). The **Active** column in the list shows it.
 - If you open a vessel that is in the recycle bin (for example from an old file), the record says so at the top and it can only be viewed.
 
-A saved vessel has the **Documents** tab (plans, certificates, tables, in folders) and the journal. These documents also appear on every file of the vessel, under **From the vessel**. **Delete** moves the vessel to the recycle bin.
+A saved vessel has the **Documents** tab (plans, certificates, tables, in folders) and the journal. These documents also appear on every file of the vessel, under **From the vessel**. **Delete** moves the vessel to the recycle bin. A new vessel gets your [standard folders](standaardmappen.md) at once, also when it is created from a file, a request or a quote.
 
 ## Holds and tanks
 

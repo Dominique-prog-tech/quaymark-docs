@@ -14,6 +14,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Standard
 
 - Links die Ordner **für Akten**, rechts die **für Schiffe**. Ein Ordner hat einen Namen in den vier Sprachen.
 - **Ziehen** Sie einen Ordner, um die Reihenfolge zu ändern oder ihn in einen anderen Ordner zu setzen.
+- Eine neue Akte oder ein neues Schiff erhält diese Ordner sofort, wie auch immer sie entstehen: in ihrer Akte, aus einer Anfrage oder einem Angebot, oder ein Schiff aus einer Akte.
 - Bestehende Akten und Schiffe ändern sich nicht. Dort fügen Sie die Ordner mit **Standardordner einfügen** in der Registerkarte Dokumente hinzu; bereits vorhandene Ordner werden nicht verdoppelt.
 
 ![Standardordner Für Akten und Für Schiffe](images/standaardmappen-de.png "Die Standardordner")

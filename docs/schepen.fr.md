@@ -29,7 +29,7 @@ Les données d'un navire.
 - Un navire que vous n'utilisez plus passe en **non actif** : il disparaît de la liste de choix des nouveaux dossiers et d'une demande (sauf si le numéro de la demande correspond). La colonne **Actif** de la liste l'indique.
 - Si vous ouvrez un navire qui se trouve dans la corbeille (par exemple depuis un ancien dossier), la fiche l'indique en haut et il ne peut plus qu'être consulté.
 
-Un navire enregistré a l'onglet **Documents** (plans, certificats, tables, en répertoires) et le journal. Ces documents apparaissent aussi dans chaque dossier du navire, sous **Du navire**. **Supprimer** déplace le navire vers la corbeille.
+Un navire enregistré a l'onglet **Documents** (plans, certificats, tables, en répertoires) et le journal. Ces documents apparaissent aussi dans chaque dossier du navire, sous **Du navire**. **Supprimer** déplace le navire vers la corbeille. Un nouveau navire reçoit aussitôt les [répertoires standard](standaardmappen.md) du bureau, même s'il est créé depuis un dossier, une demande ou une offre.
 
 ## Cales et citernes
 

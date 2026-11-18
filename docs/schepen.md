@@ -29,7 +29,7 @@ De gegevens van één schip.
 - Een schip dat u niet meer gebruikt, zet u op **niet actief**: het verdwijnt uit de keuzelijst van nieuwe dossiers en van een aanvraag (behalve als het nummer van de aanvraag overeenkomt). De kolom **Actief** in de lijst toont het.
 - Opent u een schip dat in de prullenbak staat (bijvoorbeeld vanuit een oud dossier), dan zegt de fiche dat bovenaan en is het enkel nog te lezen.
 
-Een bewaard schip heeft het tabblad **Documenten** (plannen, certificaten, tabellen, in mappen) en het journaal. Die documenten verschijnen ook op elk dossier van het schip, onder **Van het schip**. **Verwijderen** verplaatst het schip naar de prullenbak.
+Een bewaard schip heeft het tabblad **Documenten** (plannen, certificaten, tabellen, in mappen) en het journaal. Die documenten verschijnen ook op elk dossier van het schip, onder **Van het schip**. **Verwijderen** verplaatst het schip naar de prullenbak. Een nieuw schip krijgt meteen de [standaardmappen](standaardmappen.md) van het bureau, ook als het vanuit een dossier, een aanvraag of een offerte ontstaat.
 
 ## Ruimen en tanks
 

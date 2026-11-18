@@ -29,7 +29,7 @@ Die Daten eines Schiffs.
 - Ein Schiff, das Sie nicht mehr verwenden, setzen Sie auf **inaktiv**: es verschwindet aus der Auswahlliste neuer Akten und einer Anfrage (außer wenn die Nummer der Anfrage übereinstimmt). Die Spalte **Aktiv** in der Liste zeigt es.
 - Öffnen Sie ein Schiff, das im Papierkorb liegt (zum Beispiel aus einer alten Akte), sagt der Datensatz das oben, und es kann nur noch angesehen werden.
 
-Ein gespeichertes Schiff hat die Registerkarte **Dokumente** (Pläne, Zertifikate, Tabellen, in Ordnern) und das Journal. Diese Dokumente erscheinen auch in jeder Akte des Schiffs, unter **Vom Schiff**. **Löschen** verschiebt das Schiff in den Papierkorb.
+Ein gespeichertes Schiff hat die Registerkarte **Dokumente** (Pläne, Zertifikate, Tabellen, in Ordnern) und das Journal. Diese Dokumente erscheinen auch in jeder Akte des Schiffs, unter **Vom Schiff**. **Löschen** verschiebt das Schiff in den Papierkorb. Ein neues Schiff erhält sofort die [Standardordner](standaardmappen.md) des Büros, auch wenn es aus einer Akte, einer Anfrage oder einem Angebot entsteht.
 
 ## Laderäume und Tanks
 
