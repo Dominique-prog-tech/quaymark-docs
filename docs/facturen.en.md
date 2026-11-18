@@ -37,7 +37,7 @@ Anything already on another invoice is left out. The rates come from [Rates](tar
 
 ## Adjusting the draft
 
-A draft has no number yet and can be changed freely: customer, office, date, language, reference and lines. **Add line** adds a line.
+A draft has no number yet and can be changed freely: customer, office, date, language, reference and lines. **Add line** adds a line. You choose the **currency** from the same list as on the file. A draft you do not need is discarded with **Delete**, on the right in red.
 
 ![A Draft with Customer, Office, Lines and Add line](images/factuur-en.png "A draft invoice")
 
@@ -79,9 +79,9 @@ If the customer is not on Peppol, deliver the PDF another way.
 An invoice takes the currency of the [file](dossiers.md). If that is not the euro:
 
 - the **proposal** converts the [rates](tarieven.md), which are in euros, into the currency of the file, at the reference rate of the European Central Bank (ECB). Quaymark tells you which rate it used. Costs are entered in the currency of the file: they are not converted;
-- on **issuing**, Quaymark fixes the rate of the invoice date: the last one the ECB published on or before that day. The invoice states the **equivalent in euros**: excluding VAT, the VAT and including VAT, with the rate and its date;
+- on **issuing**, Quaymark fixes the rate of the invoice date: the last one the ECB published on or before that day. The invoice states the **equivalent in euros**: excluding VAT, the VAT and including VAT, with the rate and its date. The rate and the equivalent also appear on the invoice in Quaymark;
 - the **revenue** on the home page counts in euros, at the rate of each invoice;
-- **Peppol** cannot send the invoice yet. Deliver the PDF another way.
+- **Peppol** cannot send the invoice yet: the **Peppol** block says so straight away, without a button. Deliver the PDF another way.
 
 Without a rate (the ECB rate is temporarily unavailable), Quaymark does not issue the invoice and says so. Try again later: Quaymark never calculates with an estimated or old rate. An invoice in euros is not affected.
 

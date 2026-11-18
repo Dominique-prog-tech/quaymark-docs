@@ -37,7 +37,7 @@ Was bereits auf einer anderen Rechnung steht, zählt nicht mit. Die Tarife komme
 
 ## Den Entwurf anpassen
 
-Ein Entwurf hat noch keine Nummer und lässt sich frei ändern: Kunde, Niederlassung, Datum, Sprache, Referenz und Zeilen. **Zeile hinzufügen** fügt eine Zeile hinzu.
+Ein Entwurf hat noch keine Nummer und lässt sich frei ändern: Kunde, Niederlassung, Datum, Sprache, Referenz und Zeilen. **Zeile hinzufügen** fügt eine Zeile hinzu. Die **Währung** wählen Sie aus derselben Liste wie in der Akte. Einen Entwurf, den Sie nicht brauchen, verwerfen Sie mit **Löschen**, rechts in Rot.
 
 ![Ein Entwurf mit Kunde, Niederlassung, Zeilen und Zeile hinzufügen](images/factuur-de.png "Ein Rechnungsentwurf")
 
@@ -79,9 +79,9 @@ Ist der Kunde nicht bei Peppol, stellen Sie die PDF auf anderem Weg zu.
 Eine Rechnung erhält die Währung der [Akte](dossiers.md). Ist das nicht der Euro, dann:
 
 - rechnet der **Vorschlag** die [Tarife](tarieven.md), die in Euro geführt werden, zum Referenzkurs der Europäischen Zentralbank (EZB) in die Währung der Akte um. Quaymark nennt den verwendeten Kurs. Kosten erfassen Sie in der Währung der Akte: Sie werden nicht umgerechnet;
-- legt Quaymark beim **Ausstellen** den Kurs des Rechnungsdatums fest: den letzten, den die EZB an diesem Tag oder davor veröffentlicht hat. Auf der Rechnung steht der **Gegenwert in Euro**: netto, die USt. und brutto, mit dem Kurs und seinem Datum;
+- legt Quaymark beim **Ausstellen** den Kurs des Rechnungsdatums fest: den letzten, den die EZB an diesem Tag oder davor veröffentlicht hat. Auf der Rechnung steht der **Gegenwert in Euro**: netto, die USt. und brutto, mit dem Kurs und seinem Datum. Kurs und Gegenwert stehen auch auf der Rechnung in Quaymark;
 - zählt der **Umsatz** auf der Startseite in Euro, zum Kurs jeder Rechnung;
-- kann **Peppol** die Rechnung noch nicht senden. Übermitteln Sie das PDF auf anderem Weg.
+- kann **Peppol** die Rechnung noch nicht senden: Der Block **Peppol** sagt das sofort, ohne Schaltfläche. Übermitteln Sie das PDF auf anderem Weg.
 
 Ohne Kurs (der EZB-Kurs ist vorübergehend nicht verfügbar) stellt Quaymark die Rechnung nicht aus und sagt es. Versuchen Sie es später erneut: Quaymark rechnet nie mit einem geschätzten oder alten Kurs. Eine Rechnung in Euro ist nicht betroffen.
 

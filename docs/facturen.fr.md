@@ -37,7 +37,7 @@ Ce qui figure déjà sur une autre facture n'est pas repris. Les tarifs viennent
 
 ## Adapter le brouillon
 
-Un brouillon n'a pas encore de numéro et se modifie librement : client, site, date, langue, référence et lignes. **Ajouter une ligne** ajoute une ligne.
+Un brouillon n'a pas encore de numéro et se modifie librement : client, site, date, langue, référence et lignes. **Ajouter une ligne** ajoute une ligne. La **devise** se choisit dans la même liste que sur le dossier. Un brouillon inutile se jette avec **Supprimer**, à droite en rouge.
 
 ![Un Brouillon avec Client, Site, Lignes et Ajouter une ligne](images/factuur-fr.png "Un brouillon de facture")
 
@@ -79,9 +79,9 @@ Si le client n'est pas sur Peppol, transmettez le PDF autrement.
 Une facture reçoit la devise du [dossier](dossiers.md). Si ce n'est pas l'euro :
 
 - la **proposition** convertit les [tarifs](tarieven.md), exprimés en euros, dans la devise du dossier, au taux de référence de la Banque centrale européenne (BCE). Quaymark indique le taux utilisé. Les frais se saisissent dans la devise du dossier : ils ne sont pas convertis ;
-- à l'**émission**, Quaymark fixe le taux de la date de facture : le dernier publié par la BCE ce jour-là ou avant. La facture mentionne la **contre-valeur en euros** : hors TVA, la TVA et TVA comprise, avec le taux et sa date ;
+- à l'**émission**, Quaymark fixe le taux de la date de facture : le dernier publié par la BCE ce jour-là ou avant. La facture mentionne la **contre-valeur en euros** : hors TVA, la TVA et TVA comprise, avec le taux et sa date. Le taux et la contre-valeur figurent aussi sur la facture dans Quaymark ;
 - le **chiffre d'affaires** de la page d'accueil compte en euros, au taux de chaque facture ;
-- **Peppol** ne peut pas encore envoyer la facture. Transmettez le PDF autrement.
+- **Peppol** ne peut pas encore envoyer la facture : le bloc **Peppol** le dit tout de suite, sans bouton. Transmettez le PDF autrement.
 
 Sans taux (le taux de la BCE est momentanément indisponible), Quaymark n'émet pas la facture et le signale. Réessayez plus tard : Quaymark ne calcule jamais avec un taux estimé ou ancien. Une facture en euros n'est pas concernée.
 
