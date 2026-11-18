@@ -8,7 +8,17 @@ All invoices and credit notes of the office. An invoice is usually made from the
 
 ## Opening the screen
 
-Click **Invoices** in the menu on the left. The list shows the newest first, with the status: **Draft**, **Issued** or **Credited**. Every user of the office sees the invoices; drafting and issuing them requires a separate permission.
+Click **Invoices** in the menu on the left. The list shows the newest first. The status appears as a coloured label:
+
+- **Draft**: no number yet, free to change;
+- **Open**: issued and not yet fully paid;
+- **Overdue**: the due date has passed and something is still outstanding;
+- **Paid**: fully paid (see [Payments](betalingen.md));
+- **Credited**: corrected with a credit note.
+
+A credit note itself is **Issued**, with a minus sign before the amount: that way an export adds up to what was actually invoiced. The **Outstanding** column shows what is still to be paid on an invoice. Choose **Unpaid** under **Status** to see only the open and overdue invoices. The same status appears on the invoice itself and on the **Time and expenses** tab of the file.
+
+Every user of the office sees the invoices; drafting and issuing them requires a separate permission.
 
 ![Invoices with New invoice and a Draft for HQ-2026-0007](images/facturen-en.png "The invoices")
 

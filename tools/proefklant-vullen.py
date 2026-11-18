@@ -399,6 +399,16 @@ sql.append(rij('financieel.facturen', dict(id=KLAD, soort='factuur', status='kla
            gecorrigeerde_factuur_id=None, forfait=True, regels=REGELS, totaal_excl=488.50, btw=102.59, totaal_incl=591.09, mededeling=None, verkoper=None, koper=None,
            iban=None, bic=None, pdf_storage_key=None, pdf_sha256=None, pdf_grootte=None, momentopname=None, momentopname_sha256=None,
            uitgegeven_op=None, uitgegeven_door=None, created_at=om(0))))
+# Betalingen (18/11/2026, visuele ronde rij 51): zonder betaling toonde de lijst Facturen nooit Betaald of een deel open. De facturen zelf komen uit de
+# app (zie boven), dus op NUMMER: bestaat de factuur niet, dan komt er geen betaling (geen fout: een verse proefklant heeft nog geen uitgegeven factuur).
+# F-HQ-2026-0002 volledig betaald (haar eigen totaal), F-ZB-2026-0001 voor een deel. Handmatig: zonder verrichting in de bankfeed.
+BETALINGEN = [(1, 'F-HQ-2026-0002', None, -3, 'Bank transfer, full amount'), (2, 'F-ZB-2026-0001', 1000.00, -1, 'Bank transfer, first instalment')]
+sql.append(f"delete from financieel.betalingen where id in ({', '.join(lit(vid(f'betaling/{k}')) for k, *_ in BETALINGEN)});")
+for k, nummer, bedrag, dagen, opm in BETALINGEN:
+    sql.append(f"insert into financieel.betalingen (id, factuur_id, verrichting_id, bedrag, datum, soort, opmerking, door, op, ongedaan_op, ongedaan_door) "
+               f"select {lit(vid(f'betaling/{k}'))}, f.id, NULL, {lit(bedrag) if bedrag is not None else 'f.totaal_incl'}, "
+               f"{lit(VANDAAG + dt.timedelta(days=dagen))}, 'handmatig', {lit(opm)}, {lit(SURVEYOR_NAAM)}, {lit(om(dagen, 10))}, NULL, NULL "
+               f"from financieel.facturen f where f.nummer = {lit(nummer)} and f.status = 'uitgegeven' and f.soort = 'factuur';")
 
 # ── Ruimen en tanks (B5) van de KAAIMEEUW, en een tijdlijn (B3) voor ZB-2026-0003, de staalname tijdens het laden. Vaste id's. ──
 KAAIMEEUW = vid('schip/1')
@@ -806,5 +816,5 @@ q('\n'.join(sql))
 tel = q("select (select count(*) from dossiers.dossiers) || ' dossiers, ' || (select count(*) from relaties.relaties) || ' relaties, ' || "
         "(select count(*) from dossiers.schepen) || ' schepen, ' || (select count(*) from dossiers.vaststellingen) || ' vaststellingen, ' || "
         "(select count(*) from dossiers.bewijsstukken) || ' bewijsstukken, ' || (select count(*) from financieel.facturen) || ' facturen, ' || "
-        "(select count(*) from financieel.offertes) || ' offertes'")
+        "(select count(*) from financieel.offertes) || ' offertes, ' || (select count(*) from financieel.betalingen) || ' betalingen'")
 print(f'✅ qm-demo gevuld ({VANDAAG}): {tel}.')

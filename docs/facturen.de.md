@@ -8,7 +8,17 @@ Alle Rechnungen und Gutschriften des Büros. Eine Rechnung erstellen Sie meist a
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Rechnungen**. Die Liste zeigt die neuesten oben, mit dem Status: **Entwurf**, **Ausgestellt** oder **Gutgeschrieben**. Jeder Benutzer des Büros sieht die Rechnungen; Erstellen und Ausstellen erfordert ein eigenes Recht.
+Klicken Sie im Menü links auf **Rechnungen**. Die Liste zeigt die neuesten oben. Der Status steht als farbiges Etikett:
+
+- **Entwurf**: noch keine Nummer, frei änderbar;
+- **Offen**: ausgestellt und noch nicht vollständig bezahlt;
+- **Überfällig**: das Fälligkeitsdatum ist vorbei und es ist noch etwas offen;
+- **Bezahlt**: vollständig bezahlt (siehe [Zahlungen](betalingen.md));
+- **Gutgeschrieben**: mit einer Gutschrift berichtigt.
+
+Eine Gutschrift selbst steht auf **Ausgestellt**, mit einem Minuszeichen vor dem Betrag: So kommt ein Export auf den tatsächlich berechneten Betrag. Die Spalte **Offen** zeigt, was von einer Rechnung noch zu zahlen ist. Wählen Sie bei **Status** die Option **Unbezahlt**, um nur die offenen und überfälligen Rechnungen zu sehen. Derselbe Status steht auf der Rechnung selbst und auf dem Reiter **Zeit und Kosten** der Akte.
+
+Jeder Benutzer des Büros sieht die Rechnungen; Erstellen und Ausstellen erfordert ein eigenes Recht.
 
 ![Rechnungen mit Neue Rechnung und einem Entwurf für HQ-2026-0007](images/facturen-de.png "Die Rechnungen")
 

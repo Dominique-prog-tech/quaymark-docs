@@ -8,7 +8,17 @@ Alle facturen en creditnota's van het bureau. Een factuur maakt u meestal vanuit
 
 ## Het scherm openen
 
-Klik in het menu links op **Facturen**. De lijst toont de nieuwste bovenaan, met de status: **Klad**, **Uitgegeven** of **Gecrediteerd**. Elke gebruiker van het bureau ziet de facturen; opmaken en uitgeven vraagt een apart recht.
+Klik in het menu links op **Facturen**. De lijst toont de nieuwste bovenaan. De status staat als gekleurd label:
+
+- **Klad**: nog geen nummer, vrij aan te passen;
+- **Open**: uitgegeven en nog niet volledig betaald;
+- **Vervallen**: de vervaldatum is voorbij en er staat nog iets open;
+- **Betaald**: volledig betaald (zie [Betalingen](betalingen.md));
+- **Gecrediteerd**: rechtgezet met een creditnota.
+
+Een creditnota zelf staat op **Uitgegeven**, met een minteken voor het bedrag: zo telt een export op tot wat er werkelijk gefactureerd is. De kolom **Openstaand** toont wat er van een factuur nog betaald moet worden. Kies bij **Status** voor **Nog te betalen** om enkel de open en vervallen facturen te zien. Dezelfde status staat op de factuur zelf en op het tabblad **Tijd en kosten** van het dossier.
+
+Elke gebruiker van het bureau ziet de facturen; opmaken en uitgeven vraagt een apart recht.
 
 ![Facturen met Nieuwe factuur en een Klad voor HQ-2026-0007](images/facturen.png "De facturen")
 

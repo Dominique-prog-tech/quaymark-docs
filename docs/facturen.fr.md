@@ -8,7 +8,17 @@ Toutes les factures et notes de crédit du bureau. Une facture se crée en gén�
 
 ## Ouvrir l'écran
 
-Cliquez sur **Factures** dans le menu de gauche. La liste montre les plus récentes en haut, avec le statut : **Brouillon**, **Émise** ou **Créditée**. Chaque utilisateur du bureau voit les factures ; les établir et les émettre demande un droit distinct.
+Cliquez sur **Factures** dans le menu de gauche. La liste montre les plus récentes en haut. Le statut apparaît sous forme d'étiquette colorée :
+
+- **Brouillon** : pas encore de numéro, librement modifiable ;
+- **Ouverte** : émise et pas encore entièrement payée ;
+- **Échue** : la date d'échéance est passée et il reste un montant dû ;
+- **Payée** : entièrement payée (voir [Paiements](betalingen.md)) ;
+- **Créditée** : corrigée par une note de crédit.
+
+Une note de crédit elle-même est **Émise**, avec un signe moins devant le montant : ainsi, un export totalise ce qui a réellement été facturé. La colonne **Solde dû** montre ce qui reste à payer sur une facture. Choisissez **À payer** dans **Statut** pour ne voir que les factures ouvertes et échues. Le même statut figure sur la facture elle-même et dans l'onglet **Temps et frais** du dossier.
+
+Chaque utilisateur du bureau voit les factures ; les établir et les émettre demande un droit distinct.
 
 ![Factures avec Nouvelle facture et un Brouillon pour HQ-2026-0007](images/facturen-fr.png "Les factures")
 
