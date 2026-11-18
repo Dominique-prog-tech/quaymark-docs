@@ -21,7 +21,7 @@ Klik in het menu links op **Bevoegdheden**.
 
 ## Toevoegen en bewerken
 
-Enkel de beheerder van het bureau voegt bevoegdheden toe, bewerkt of verwijdert ze. **Bevoegdheid toevoegen** vraagt de surveyor, de soort, het nummer, de datum van uitreiking, de vervaldatum en een opmerking. Een verwijderde bevoegdheid gaat naar de prullenbak; de historiek houdt bij wie wat wijzigde.
+Enkel de beheerder van het bureau voegt bevoegdheden toe, bewerkt of verwijdert ze. **Bevoegdheid toevoegen** vraagt de surveyor, de soort, het nummer, de datum van uitreiking, de vervaldatum en een opmerking. Een dubbelklik op een regel opent ze; **Bewerken** en **Verwijderen** staan ook onder **⋯** op de regel. Een verwijderde bevoegdheid gaat naar de prullenbak; de historiek houdt bij wie wat wijzigde.
 
 ## Soorten bevoegdheid
 

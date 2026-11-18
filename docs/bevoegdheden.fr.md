@@ -21,7 +21,7 @@ Cliquez dans le menu de gauche sur **Habilitations**.
 
 ## Ajouter et modifier
 
-Seul l'administrateur du bureau ajoute, modifie ou supprime des habilitations. **Ajouter une habilitation** demande l'expert, le type, le numéro, la date de délivrance, la date d'expiration et une remarque. Une habilitation supprimée va dans la corbeille ; l'historique garde qui a modifié quoi.
+Seul l'administrateur du bureau ajoute, modifie ou supprime des habilitations. **Ajouter une habilitation** demande l'expert, le type, le numéro, la date de délivrance, la date d'expiration et une remarque. Un double-clic sur une ligne l'ouvre ; **Modifier** et **Supprimer** se trouvent aussi sous **⋯** sur la ligne. Une habilitation supprimée va dans la corbeille ; l'historique garde qui a modifié quoi.
 
 ## Types d'habilitation
 

@@ -21,7 +21,7 @@ Click **Qualifications** in the menu on the left.
 
 ## Adding and editing
 
-Only the office administrator adds, edits or deletes qualifications. **Add qualification** asks for the surveyor, the type, the number, the issue date, the expiry date and a note. A deleted qualification goes to the recycle bin; the history keeps track of who changed what.
+Only the office administrator adds, edits or deletes qualifications. **Add qualification** asks for the surveyor, the type, the number, the issue date, the expiry date and a note. A double-click on a row opens it; **Edit** and **Delete** are also under **⋯** on the row. A deleted qualification goes to the recycle bin; the history keeps track of who changed what.
 
 ## Qualification types
 

@@ -21,7 +21,7 @@ Klicken Sie im Menü links auf **Qualifikationen**.
 
 ## Hinzufügen und bearbeiten
 
-Nur der Administrator des Büros fügt Qualifikationen hinzu, bearbeitet oder löscht sie. **Qualifikation hinzufügen** fragt nach dem Besichtiger, der Art, der Nummer, dem Ausstellungsdatum, dem Ablaufdatum und einer Bemerkung. Eine gelöschte Qualifikation geht in den Papierkorb; der Verlauf hält fest, wer was geändert hat.
+Nur der Administrator des Büros fügt Qualifikationen hinzu, bearbeitet oder löscht sie. **Qualifikation hinzufügen** fragt nach dem Besichtiger, der Art, der Nummer, dem Ausstellungsdatum, dem Ablaufdatum und einer Bemerkung. Ein Doppelklick auf eine Zeile öffnet sie; **Bearbeiten** und **Löschen** stehen auch unter **⋯** in der Zeile. Eine gelöschte Qualifikation geht in den Papierkorb; der Verlauf hält fest, wer was geändert hat.
 
 ## Qualifikationsarten
 
