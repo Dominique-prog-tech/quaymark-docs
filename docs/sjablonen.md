@@ -23,9 +23,9 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Sjablonen**.
 
 Eén rapportsjabloon: de versies per taal en het Word-document zelf.
 
-- Per taal een tabblad met de versies. **Document bewerken** opent het document in de editor; **Terugzetten** maakt een nieuwe versie met de inhoud van een oude, er wordt niets gewist.
+- Per taal een tabblad met de versies. **Document bewerken** opent het document in de editor; **Terugzetten** maakt een nieuwe versie met de inhoud van een oude, er wordt niets gewist. **Verwijderen** staat enkel bij een sjabloon voor één soort survey: daarna neemt het algemene het over. Een algemeen sjabloon blijft, want zonder kan Quaymark dat document niet meer maken.
 - In de editor zet u de vaste gegevens (schip, dossiernummer, opdrachtgever …) via het tabblad met de velden, en een tabel met rijen (aanwezigen, vaststellingen, checklist) met de knop **Tabel … invoegen**.
-- Wat per soort survey verschilt, zet u als **markering**: tekst tussen dubbele accolades, letterlijk getypt, zoals `{{velden}}` of `{{rubriek:conclusie}}`. Het paneel **Markeringen** toont welke dit sjabloon mag gebruiken. Een eigen veld (`{{veld:…}}`) kan enkel in een sjabloon voor één soort survey.
+- Wat per soort survey verschilt, zet u als **markering**: tekst tussen dubbele accolades, letterlijk getypt, zoals `{{velden}}` of `{{rubriek:conclusie}}`. Het paneel **Markeringen** toont welke dit sjabloon mag gebruiken. Het staat enkel bij het rapport: brieven, certificaten, de factuur en de offerte vullen geen markeringen in. Een eigen veld (`{{veld:…}}`) kan enkel in een sjabloon voor één soort survey.
 - Een getalveld kan in een andere eenheid in het rapport komen: `{{veld:hoeveelheid:LT}}` toont het veld hoeveelheid in long ton. De eenheden zijn `t`, `kg`, `LT`, `ST`, `m3`, `L` en `bbl`. Tussen gewicht en volume kan dat niet zonder dichtheid: zo'n markering weigert Quaymark bij het bewaren.
 - `{{tijdlijn}}` zet de statement of facts in het rapport: de samenvatting en de gebeurtenissen. Zonder gebeurtenissen blijft er niets staan.
 - `{{schadebegroting}}` zet de schadebegroting in het rapport: de posten met hun geraamde en aanvaarde bedrag, de afschrijving en het netto bedrag, de totalen, de voorgestelde reserve en het akkoord als dat er is. Zonder posten blijft er niets staan.
