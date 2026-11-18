@@ -15,7 +15,7 @@ Cliquez dans le menu de gauche sur **Habilitations**.
 ## La liste
 
 - Chaque ligne est une habilitation d'un expert : le type, le numéro, la date de délivrance et la date d'expiration.
-- Le **statut** indique si elle est **valide**, **expire bientôt** (dans les 60 jours), est **expirée** ou **pas encore valide** (délivrée dans le futur). Sans date d'expiration, une habilitation reste valide.
+- Le **statut** indique si elle est **valide**, **expire bientôt** (dans les 60 jours), est **expirée** ou **pas encore valide** (délivrée dans le futur). Sans date d'expiration, une habilitation reste valide. Si l'expert a déjà une nouvelle habilitation valide du même type qui dure plus longtemps, l'ancienne est **remplacée**.
 - Cochez **Seulement ce qui expire dans les 60 jours ou a expiré** pour ne voir que ce qui demande de l'attention.
 - Le bouton d'export télécharge la liste sous forme de fichier.
 
@@ -25,7 +25,7 @@ Seul l'administrateur du bureau ajoute, modifie ou supprime des habilitations. *
 
 ## Types d'habilitation
 
-Sous la liste, l'administrateur gère les **types** du bureau : un code (minuscules, chiffres et _), le nom dans les quatre langues, actif et l'ordre. Le code est fixé dès qu'une habilitation de ce type existe.
+Sous la liste, l'administrateur gère les **types** du bureau : un code (minuscules, chiffres et _), le nom dans les quatre langues, actif et l'ordre. Le code est fixé dès que le type est enregistré : les habilitations et les types d'expertise y font référence. Une faute de frappe se corrige avec un nouveau type ; désactivez celui qui est erroné.
 
 ## Exigées par type d'expertise
 

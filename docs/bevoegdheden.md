@@ -15,7 +15,7 @@ Klik in het menu links op **Bevoegdheden**.
 ## De lijst
 
 - Elke rij is een bevoegdheid van een surveyor: de soort, het nummer, de datum van uitreiking en de vervaldatum.
-- De **status** zegt of ze **geldig** is, binnen 60 dagen **vervalt**, **vervallen** is of **nog niet geldig** (uitgereikt in de toekomst). Zonder vervaldatum blijft een bevoegdheid geldig.
+- De **status** zegt of ze **geldig** is, binnen 60 dagen **vervalt**, **vervallen** is of **nog niet geldig** (uitgereikt in de toekomst). Zonder vervaldatum blijft een bevoegdheid geldig. Heeft de surveyor al een geldige nieuwe van dezelfde soort die langer loopt, dan staat de oude op **vervangen**.
 - Vink **Enkel wat binnen 60 dagen vervalt of vervallen is** aan om enkel te zien wat aandacht vraagt.
 - Met de exportknop haalt u de lijst op als bestand.
 
@@ -25,7 +25,7 @@ Enkel de beheerder van het bureau voegt bevoegdheden toe, bewerkt of verwijdert 
 
 ## Soorten bevoegdheid
 
-Onder de lijst beheert de beheerder de **soorten** van het bureau: een code (kleine letters, cijfers en _), de naam in vier talen, actief en de volgorde. De code ligt vast zodra er een bevoegdheid van die soort bestaat.
+Onder de lijst beheert de beheerder de **soorten** van het bureau: een code (kleine letters, cijfers en _), de naam in vier talen, actief en de volgorde. De code ligt vast zodra de soort bewaard is: bevoegdheden en soorten survey verwijzen ernaar. Een tikfout herstelt u met een nieuwe soort; zet de foute op niet actief.
 
 ## Vereist per soort survey
 

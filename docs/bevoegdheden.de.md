@@ -15,7 +15,7 @@ Klicken Sie im Menü links auf **Qualifikationen**.
 ## Die Liste
 
 - Jede Zeile ist eine Qualifikation eines Besichtigers: die Art, die Nummer, das Ausstellungs- und das Ablaufdatum.
-- Der **Status** sagt, ob sie **gültig** ist, **bald abläuft** (innerhalb von 60 Tagen), **abgelaufen** oder **noch nicht gültig** ist (in der Zukunft ausgestellt). Ohne Ablaufdatum bleibt eine Qualifikation gültig.
+- Der **Status** sagt, ob sie **gültig** ist, **bald abläuft** (innerhalb von 60 Tagen), **abgelaufen** oder **noch nicht gültig** ist (in der Zukunft ausgestellt). Ohne Ablaufdatum bleibt eine Qualifikation gültig. Hat der Sachverständige bereits eine neue gültige derselben Art, die länger läuft, steht die alte auf **ersetzt**.
 - Haken Sie **Nur was innerhalb von 60 Tagen abläuft oder abgelaufen ist** an, um nur zu sehen, was Aufmerksamkeit braucht.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 
@@ -25,7 +25,7 @@ Nur der Administrator des Büros fügt Qualifikationen hinzu, bearbeitet oder l�
 
 ## Qualifikationsarten
 
-Unter der Liste verwaltet der Administrator die **Arten** des Büros: einen Code (Kleinbuchstaben, Ziffern und _), den Namen in vier Sprachen, aktiv und die Reihenfolge. Der Code steht fest, sobald eine Qualifikation dieser Art existiert.
+Unter der Liste verwaltet der Administrator die **Arten** des Büros: einen Code (Kleinbuchstaben, Ziffern und _), den Namen in vier Sprachen, aktiv und die Reihenfolge. Der Code steht fest, sobald die Art gespeichert ist: Qualifikationen und Besichtigungsarten verweisen darauf. Einen Tippfehler beheben Sie mit einer neuen Art; setzen Sie die falsche auf inaktiv.
 
 ## Verlangt pro Besichtigungsart
 

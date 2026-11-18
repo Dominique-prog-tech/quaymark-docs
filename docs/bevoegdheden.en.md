@@ -15,7 +15,7 @@ Click **Qualifications** in the menu on the left.
 ## The list
 
 - Each row is a qualification of a surveyor: the type, the number, the issue date and the expiry date.
-- The **status** says whether it is **valid**, **expires soon** (within 60 days), has **expired** or is **not yet valid** (issued in the future). Without an expiry date, a qualification stays valid.
+- The **status** says whether it is **valid**, **expires soon** (within 60 days), has **expired** or is **not yet valid** (issued in the future). Without an expiry date, a qualification stays valid. If the surveyor already has a new valid one of the same type that runs longer, the old one is **replaced**.
 - Tick **Only what expires within 60 days or has expired** to see only what needs attention.
 - The export button downloads the list as a file.
 
@@ -25,7 +25,7 @@ Only the office administrator adds, edits or deletes qualifications. **Add quali
 
 ## Qualification types
 
-Below the list, the administrator manages the office's **types**: a code (lower-case letters, digits and _), the name in four languages, active and the order. The code is fixed once a qualification of that type exists.
+Below the list, the administrator manages the office's **types**: a code (lower-case letters, digits and _), the name in four languages, active and the order. The code is fixed once the type is saved: qualifications and survey types refer to it. Fix a typo with a new type and set the wrong one inactive.
 
 ## Required per survey type
 
