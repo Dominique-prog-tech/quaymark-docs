@@ -695,7 +695,9 @@ if 'ijkmeting' in SOORT:
                          aftrek=[dict(soort='ballast', omschrijving=None, ton=0), dict(soort='zoetwater', omschrijving=None, ton=5.5),
                                  dict(soort='brandstof', omschrijving=None, ton=17.0)]))]
     for soort, m in IJK:
+        # 18/11/2026: elke meting bewaart een kopie van de ijkbrief van het moment van bewaren (zonder kopie: "geen gewicht"). Namen zoals de app ze schrijft.
         sql.append(rij('berekeningen.ijk_metingen', dict(id=vid(f'ijk/14/{soort}'), dossier_id=D14, soort=soort, meting=m,
+                   ijkbrief=dict(nummer='IJK-BE-04471', geldigTot=dt.date(2031, 6, 30).isoformat(), rijen=IJKTABEL),
                    gewijzigd_op=om(0, 8 if soort == 'begin' else 15), gewijzigd_door=SURVEYOR_NAAM, created_at=om(0, 8))))
 
 # ── P7 (15/11/2026): een freelance surveyor, verzonnen. De gebruiker freelancer.demo bestaat lokaal al (in de app gemaakt) of wordt hier gemaakt als kopie

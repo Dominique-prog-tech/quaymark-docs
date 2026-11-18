@@ -52,7 +52,7 @@ An inland vessel has the **Gauging certificate** tab: the **number**, **Valid un
 
 ![Gauging certificate of the JOHANNA-W with Certificate number, Valid until and the Gauging table](images/schip-ijkbrief-en.png "Gauging certificate")
 
-Paste the gauging table as two columns from a spreadsheet, one line per draught; a header line is allowed. Quaymark reads it at once and shows the number of lines and the range, or the line it cannot read. Draught and displacement must increase, otherwise **Save** is not possible. An expired certificate gives a warning, here and on the Gauging tab of a file.
+Paste the gauging table as two columns from a spreadsheet, one line per draught; a header line is allowed. Quaymark reads it at once and shows the number of lines and the range, or the line it cannot read. Draught and displacement must increase, otherwise **Save** is not possible. An expired certificate gives a warning here. At the top you see when and by whom the certificate was saved; a change that is not saved yet says **Not saved**. A gauging that is already saved keeps calculating with the certificate of that time: if you change the certificate, no saved gauging changes (see [Files](dossiers.md#barge-gauging)).
 
 ## See also
 

@@ -52,7 +52,7 @@ Ein Binnenschiff hat die Registerkarte **Eichschein**: die **Nummer**, **Gültig
 
 ![Eichschein der JOHANNA-W mit Nummer des Eichscheins, Gültig bis und der Eichtabelle](images/schip-ijkbrief-de.png "Eichschein")
 
-Fügen Sie die Eichtabelle als zwei Spalten aus einer Tabellenkalkulation ein, eine Zeile pro Eintauchung; eine Kopfzeile ist erlaubt. Quaymark liest sie sofort und zeigt die Zahl der Zeilen und den Bereich, oder die Zeile, die nicht lesbar ist. Eintauchung und Verdrängung müssen ansteigen, sonst ist **Speichern** nicht möglich. Ein abgelaufener Eichschein gibt eine Warnung, hier und auf der Registerkarte Eichaufnahme einer Akte.
+Fügen Sie die Eichtabelle als zwei Spalten aus einer Tabellenkalkulation ein, eine Zeile pro Eintauchung; eine Kopfzeile ist erlaubt. Quaymark liest sie sofort und zeigt die Zahl der Zeilen und den Bereich, oder die Zeile, die nicht lesbar ist. Eintauchung und Verdrängung müssen ansteigen, sonst ist **Speichern** nicht möglich. Ein abgelaufener Eichschein gibt hier eine Warnung. Oben steht, wann und von wem der Eichschein gespeichert wurde; eine noch nicht gespeicherte Änderung zeigt **Nicht gespeichert**. Eine bereits gespeicherte Eichaufnahme rechnet weiter mit dem Eichschein von damals: Ändern Sie den Eichschein, ändert sich keine gespeicherte Eichaufnahme (siehe [Akten](dossiers.md#eichaufnahme)).
 
 ## Siehe auch
 
