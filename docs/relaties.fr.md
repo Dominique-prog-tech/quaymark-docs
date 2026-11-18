@@ -45,7 +45,7 @@ Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail des donneu
 Ce que la personne de contact voit dans le portail :
 
 - **Mes dossiers** : les dossiers dont cette relation est donneur d'ordre, avec le type d'expertise, le navire, le port (par son nom, comme dans la liste des ports), sa propre référence, le statut et la date prévue des travaux. Pas un dossier dans la corbeille. À partir de 10 dossiers, un champ de recherche apparaît au-dessus : par numéro, navire, port ou sa propre référence.
-- Pour chaque dossier, les versions **émises** du rapport et les lettres et certificats émis, en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
+- Pour chaque dossier, les versions **émises** du rapport et les lettres et certificats émis avec leur type (par exemple Certificat de quantité), en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
 - **Nouvelle mission** : envoyer une mission, avec pièces jointes. Elle arrive au bureau sous forme de demande et figure sous **Mes demandes** jusqu'à la décision du bureau. → [Demandes](aanvragen.md)
 - **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF. Pas un brouillon. Le portail n'indique pas si une facture est payée.
 - **Analyses** : les constatations des rapports de ses dossiers, comptées par terminal, navire, cargaison, type d'expertise, port, catégorie ou emplacement. Un dossier ne compte qu'avec un rapport que le donneur d'ordre voit déjà, et selon l'état de ce rapport. → [Analyses](analyses.md#dans-le-portail-des-donneurs-dordre)

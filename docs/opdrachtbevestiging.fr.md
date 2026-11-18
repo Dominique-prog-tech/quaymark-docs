@@ -35,7 +35,7 @@ La confirmation décrit la mission : le numéro de dossier, le type d'expertise,
 
 Le lien ouvre une page avec la mission et les conditions générales, en quatre langues. Le donneur d'ordre tape son nom complet, coche qu'il est d'accord et clique sur **Confirmer la mission**. Il peut aussi choisir **Je ne confirme pas cette mission**. Ensuite, le lien ne fonctionne plus.
 
-Si le donneur d'ordre a accès au portail des donneurs d'ordre, il voit la même confirmation dans le dossier et peut aussi y confirmer ou refuser. → [Comment donner accès à un donneur d'ordre ?](hoe/klantenportaal.md)
+Si le donneur d'ordre a accès au portail des donneurs d'ordre, il voit la même confirmation dans le dossier et peut aussi y confirmer ou refuser. Ensuite, le portail indique dans le dossier qui a confirmé ou non, et quand. → [Comment donner accès à un donneur d'ordre ?](hoe/klantenportaal.md)
 
 ## L'état du dossier
 

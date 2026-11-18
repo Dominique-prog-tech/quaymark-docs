@@ -35,7 +35,7 @@ The confirmation describes the assignment: the file number, the survey type, the
 
 The link opens a page with the assignment and the general terms and conditions, in four languages. The principal types their full name, ticks that they agree, and clicks **Confirm the assignment**. They can also choose **I do not confirm this assignment**. After that, the link no longer works.
 
-If the principal has access to the principal portal, they see the same confirmation with the file and can also confirm or decline there. → [How do I give a principal access to the principal portal?](hoe/klantenportaal.md)
+If the principal has access to the principal portal, they see the same confirmation with the file and can also confirm or decline there. Afterwards the portal shows with the file who confirmed or did not confirm, and when. → [How do I give a principal access to the principal portal?](hoe/klantenportaal.md)
 
 ## The status of the file
 

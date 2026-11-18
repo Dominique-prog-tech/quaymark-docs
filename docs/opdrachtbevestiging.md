@@ -35,7 +35,7 @@ De bevestiging beschrijft de opdracht: het dossiernummer, de soort survey, het s
 
 De link opent een pagina met de opdracht en de algemene voorwaarden, in vier talen. De opdrachtgever typt zijn naam voluit, vinkt aan dat hij akkoord gaat, en klikt op **Opdracht bevestigen**. Hij kan ook kiezen voor **Ik bevestig deze opdracht niet**. Daarna werkt de link niet meer.
 
-Heeft de opdrachtgever toegang tot het opdrachtgeversportaal, dan ziet hij dezelfde bevestiging bij het dossier en kan hij ook daar bevestigen of weigeren. → [Hoe geef ik een opdrachtgever toegang?](hoe/klantenportaal.md)
+Heeft de opdrachtgever toegang tot het opdrachtgeversportaal, dan ziet hij dezelfde bevestiging bij het dossier en kan hij ook daar bevestigen of weigeren. Daarna toont het portaal bij het dossier wie bevestigde of niet bevestigde, en wanneer. → [Hoe geef ik een opdrachtgever toegang?](hoe/klantenportaal.md)
 
 ## De stand op het dossier
 

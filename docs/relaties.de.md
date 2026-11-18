@@ -45,7 +45,7 @@ Ein Auftraggeber kann seine Akten im Auftraggeberportal selbst verfolgen. Dazu g
 Was die Kontaktperson im Portal sieht:
 
 - **Meine Akten**: die Akten, in denen diese Beziehung Auftraggeber ist, mit Besichtigungsart, Schiff, Hafen (mit Namen, wie in der Hafenliste), der eigenen Referenz, dem Status und wann die Arbeit geplant ist. Keine Akte im Papierkorb. Ab 10 Akten steht darüber ein Suchfeld: nach Nummer, Schiff, Hafen oder der eigenen Referenz.
-- Je Akte die **ausgestellten** Berichtsversionen und die ausgestellten Briefe und Zertifikate, als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
+- Je Akte die **ausgestellten** Berichtsversionen und die ausgestellten Briefe und Zertifikate mit ihrer Art (zum Beispiel Mengenbescheinigung), als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
 - **Neuer Auftrag**: einen Auftrag senden, mit Anhängen. Er geht als Anfrage an das Büro und steht unter **Meine Anfragen**, bis das Büro entscheidet. → [Anfragen](aanvragen.md)
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
 - **Analysen**: die Feststellungen aus den Berichten seiner Akten, gezählt nach Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Kategorie oder Ort. Eine Akte zählt erst mit einem Bericht, den der Auftraggeber bereits sieht, und mit dem Stand dieses Berichts. → [Analysen](analyses.md#im-auftraggeberportal)

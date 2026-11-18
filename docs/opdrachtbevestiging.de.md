@@ -35,7 +35,7 @@ Die Bestätigung beschreibt den Auftrag: die Aktennummer, die Besichtigungsart, 
 
 Der Link öffnet eine Seite mit dem Auftrag und den Allgemeinen Geschäftsbedingungen, in vier Sprachen. Der Auftraggeber gibt seinen vollständigen Namen ein, hakt an, dass er einverstanden ist, und klickt auf **Auftrag bestätigen**. Er kann auch **Ich bestätige diesen Auftrag nicht** wählen. Danach funktioniert der Link nicht mehr.
 
-Hat der Auftraggeber Zugang zum Auftraggeberportal, sieht er dieselbe Bestätigung bei der Akte und kann auch dort bestätigen oder ablehnen. → [Wie gebe ich einem Auftraggeber Zugang?](hoe/klantenportaal.md)
+Hat der Auftraggeber Zugang zum Auftraggeberportal, sieht er dieselbe Bestätigung bei der Akte und kann auch dort bestätigen oder ablehnen. Danach zeigt das Portal bei der Akte, wer bestätigt oder nicht bestätigt hat, und wann. → [Wie gebe ich einem Auftraggeber Zugang?](hoe/klantenportaal.md)
 
 ## Der Stand der Akte
 
