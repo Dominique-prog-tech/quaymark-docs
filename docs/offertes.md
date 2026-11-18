@@ -12,7 +12,7 @@ Klik in het menu links op **Offertes**. U ziet de offertes met hun nummer, opdra
 
 ## Offerte
 
-- **Nieuwe offerte** maakt een klad. Vul de opdrachtgever, de vestiging, de soort survey, de datum en **Geldig tot** in (standaard dertig dagen), en eventueel het schip, de haven, de referentie en een omschrijving. De taal volgt de opdrachtgever.
+- **Nieuwe offerte** maakt een klad. Vul de opdrachtgever, de vestiging, de soort survey, de datum en **Geldig tot** in (standaard dertig dagen), en eventueel het schip, de haven, de referentie en een omschrijving. De taal volgt de opdrachtgever. De munt kiest u uit EUR, USD of GBP, zoals op het dossier.
 - **Regel uit de tarieven** zet een regel klaar met het forfait van de soort survey, of één uur aan het uurtarief: vul dan het aantal geraamde uren in. Een [raamafspraak](relaties.md#raamafspraken) van de opdrachtgever telt mee. Regels toevoegen, wijzigen en verwijderen kan vrij zolang de offerte een klad is.
 - **Voorbeeld (PDF)** toont de offerte zoals ze vertrekt. De opmaak komt uit het sjabloon "Offerte". → [Sjablonen](sjablonen.md)
 
@@ -23,7 +23,7 @@ Klik in het menu links op **Offertes**. U ziet de offertes met hun nummer, opdra
 ## Aanvaarden of weigeren
 
 - De opdrachtgever kan de offerte aanvaarden of weigeren in het **opdrachtgeversportaal**, zolang ze geldig is. → [Opdrachtgeversportaal](relaties.md#opdrachtgeversportaal)
-- Kreeg u het antwoord per mail of telefoon, dan klikt u zelf op **Aanvaarden** of **Weigeren**.
+- Kreeg u het antwoord per mail of telefoon, dan klikt u zelf op **Aanvaarden** of **Weigeren**. Bij Weigeren kunt u een reden opgeven; die staat daarna op de offerte.
 - Aanvaarden maakt een **dossier** met status Nieuw, met de opdrachtgever, de soort survey, het schip, de haven en de referentie. Bestaat het schip al met dezelfde naam, dan neemt Quaymark dat; anders maakt het een nieuw. De surveyor en de planning kiest u daarna in het dossier.
 - De regels van de offerte zijn het **forfait** van het dossier: het factuurvoorstel zet ze op de factuur, en dat zegt het voorstel ook.
 - Over een offerte wordt maar één keer beslist. Na **Geldig tot** staat ze op verlopen en kan ze niet meer aanvaard worden.

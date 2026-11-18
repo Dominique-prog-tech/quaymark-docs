@@ -12,7 +12,7 @@ Click **Quotations** in the menu on the left. You see the quotations with their 
 
 ## Quotation
 
-- **New quotation** creates a draft. Fill in the principal, the office, the survey type, the date and **Valid until** (thirty days by default), and optionally the vessel, the port, the reference and a description. The language follows the principal.
+- **New quotation** creates a draft. Fill in the principal, the office, the survey type, the date and **Valid until** (thirty days by default), and optionally the vessel, the port, the reference and a description. The language follows the principal. The currency is EUR, USD or GBP, as on the file.
 - **Line from the rates** prepares a line with the flat fee of the survey type, or one hour at the hourly rate: then fill in the number of estimated hours. A [framework agreement](relaties.md#framework-agreements) of the principal is taken into account. Lines can be added, changed and deleted freely while the quotation is a draft.
 - **Preview (PDF)** shows the quotation as it will go out. The layout comes from the "Quotation" template. → [Templates](sjablonen.md)
 
@@ -23,7 +23,7 @@ Click **Quotations** in the menu on the left. You see the quotations with their 
 ## Accepting or declining
 
 - The principal can accept or decline the quotation in the **principal portal**, as long as it is valid. → [Principal portal](relaties.md#principal-portal)
-- If you received the answer by email or phone, click **Accept** or **Decline** yourself.
+- If you received the answer by email or phone, click **Accept** or **Decline** yourself. With Decline you can give a reason; it then appears on the quotation.
 - Accepting creates a **file** with status New, with the principal, the survey type, the vessel, the port and the reference. If the vessel already exists with the same name, Quaymark uses it; otherwise it creates a new one. You then choose the surveyor and the scheduling in the file.
 - The quotation's lines are the file's **flat fee**: the invoice proposal puts them on the invoice, and says so.
 - A quotation is decided only once. After **Valid until** it is expired and can no longer be accepted.
