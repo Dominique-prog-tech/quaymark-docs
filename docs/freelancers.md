@@ -23,8 +23,8 @@ De kolom **Rol Freelancer** heeft een vinkje als de freelancer die rol al heeft,
 Een freelancer is een gebruiker van het bureau. Nodig hem eerst uit op het scherm **Gebruikers**, en klik dan hier op **Nieuwe freelancer**.
 
 - **Gebruiker**: de gebruiker van het bureau. Quaymark stelt een **Bedrijfsnaam** en een **Code** voor uit zijn naam.
-- **Code**: 2 tot 6 hoofdletters of cijfers, uniek in het bureau. Ze staat in het nummer van elke afrekening: *SB-CODE-JAAR-001*.
-- **Bedrijfsnaam**, **Ondernemingsnummer**, **Straat**, **Postcode**, **Gemeente**, **Land** en **IBAN**: zo staat de freelancer als leverancier op de afrekening. Straat, gemeente en IBAN zijn nodig om af te rekenen.
+- **Code**: 2 tot 6 hoofdletters of cijfers, uniek in het bureau. Ze staat in het nummer van elke afrekening: *SB-CODE-JAAR-001*. Na de eerste afrekening ligt ze vast, zodat de nummers één reeks blijven.
+- **Bedrijfsnaam**, **Ondernemingsnummer / btw**, **Straat en nummer**, **Postcode**, **Gemeente**, **Land** en **IBAN**: zo staat de freelancer als leverancier op de afrekening. Het land kiest u uit de lijst. Quaymark controleert het controlegetal van een Belgisch ondernemingsnummer en van het IBAN; een buitenlands ondernemingsnummer kan het niet nakijken. Straat, gemeente en IBAN zijn nodig om af te rekenen.
 - **Uurtarief (inkoop)**: wat het bureau hem per uur betaalt.
 - **Btw-regeling**: *Normaal (21 %)*, *Vrijgesteld (kleine onderneming)* of *Verlegd (medecontractant)*. Bij vrijgesteld en verlegd staat de wettelijke vermelding op de afrekening.
 - **Akkoord autofacturatie op**: de datum waarop de freelancer schriftelijk akkoord ging dat het bureau zijn facturen opmaakt. Zonder die datum, of met een datum na de periode, geeft Quaymark geen afrekening uit.

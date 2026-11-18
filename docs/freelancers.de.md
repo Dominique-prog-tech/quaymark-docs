@@ -23,8 +23,8 @@ Die Spalte **Rolle Freiberufler** zeigt ein Häkchen, wenn der Freiberufler dies
 Ein Freiberufler ist ein Benutzer des Büros. Laden Sie ihn zuerst auf der Seite **Benutzer** ein und klicken Sie dann hier auf **Neuer Freiberufler**.
 
 - **Benutzer**: der Benutzer des Büros. Quaymark schlägt aus seinem Namen einen **Firmennamen** und einen **Code** vor.
-- **Code**: 2 bis 6 Großbuchstaben oder Ziffern, eindeutig im Büro. Er steht in der Nummer jeder Abrechnung: *SB-CODE-JAHR-001*.
-- **Firmenname**, **Unternehmens-/USt-Nummer**, **Straße und Hausnummer**, **Postleitzahl**, **Ort**, **Land** und **IBAN**: So steht der Freiberufler als Leistender auf der Abrechnung. Straße, Ort und IBAN sind zum Abrechnen nötig.
+- **Code**: 2 bis 6 Großbuchstaben oder Ziffern, eindeutig im Büro. Er steht in der Nummer jeder Abrechnung: *SB-CODE-JAHR-001*. Nach der ersten Abrechnung ist er festgelegt, damit die Nummern eine Reihe bleiben.
+- **Firmenname**, **Unternehmens-/USt-Nummer**, **Straße und Hausnummer**, **Postleitzahl**, **Ort**, **Land** und **IBAN**: So steht der Freiberufler als Leistender auf der Abrechnung. Das Land wählen Sie aus der Liste. Quaymark prüft die Prüfziffern einer belgischen Unternehmensnummer und der IBAN; eine ausländische Unternehmensnummer kann es nicht prüfen. Straße, Ort und IBAN sind zum Abrechnen nötig.
 - **Stundensatz (Einkauf)**: was das Büro ihm pro Stunde zahlt.
 - **Umsatzsteuerregelung**: *Regulär (21 %)*, *Befreit (Kleinunternehmer)* oder *Umkehr der Steuerschuld*. Bei befreit und Umkehr steht der gesetzliche Hinweis auf der Abrechnung.
 - **Gutschriftvereinbarung am**: das Datum, an dem der Freiberufler schriftlich zugestimmt hat, dass das Büro seine Rechnungen ausstellt. Ohne dieses Datum oder mit einem Datum nach dem Zeitraum stellt Quaymark keine Abrechnung aus.

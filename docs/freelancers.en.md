@@ -23,8 +23,8 @@ The **Freelancer role** column shows a tick if the freelancer already has that r
 A freelancer is a user of the company. First invite them on the **Users** screen, then click **New freelancer** here.
 
 - **User**: the user of the company. Quaymark suggests a **Company name** and a **Code** from their name.
-- **Code**: 2 to 6 capital letters or digits, unique within the company. It appears in the number of every statement: *SB-CODE-YEAR-001*.
-- **Company name**, **Company / VAT number**, **Street and number**, **Postcode**, **City**, **Country** and **IBAN**: this is how the freelancer appears as supplier on the statement. Street, city and IBAN are required to settle.
+- **Code**: 2 to 6 capital letters or digits, unique within the company. It appears in the number of every statement: *SB-CODE-YEAR-001*. After the first statement it is fixed, so that the numbers remain one series.
+- **Company name**, **Company / VAT number**, **Street and number**, **Postcode**, **City**, **Country** and **IBAN**: this is how the freelancer appears as supplier on the statement. You choose the country from the list. Quaymark checks the check digits of a Belgian company number and of the IBAN; a foreign company number cannot be checked. Street, city and IBAN are required to settle.
 - **Hourly rate (purchase)**: what the company pays them per hour.
 - **VAT scheme**: *Standard (21 %)*, *Exempt (small business)* or *Reverse charge*. For exempt and reverse charge, the legal statement appears on the statement.
 - **Self-billing agreement on**: the date on which the freelancer agreed in writing that the company draws up their invoices. Without this date, or with a date after the period, Quaymark issues no statement.

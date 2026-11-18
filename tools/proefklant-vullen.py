@@ -86,6 +86,17 @@ SCHELDEMOND = q("select id from relaties.relaties where naam = 'Scheldemond Bevr
 PIONEER = q("select id from dossiers.schepen where naam = 'NOORDKAAI PIONEER'") or None
 
 sql = ['begin;']
+# Een prestatie of kost op een afrekening of factuur ligt vast (de app weigert haar te wijzigen of te verwijderen): dit script laat ze dus staan, ook als het
+# de rij zelf maakte. Tot 18/11/2026 wiste het alle kosten van zijn dossiers, ook een afgerekende kost uit de app: de afrekening telde dan een kost die niet
+# meer bestond (SB-FF-2026-001, Parking Zeebrugge 18,50).
+VAST = 'afrekening_id is null and factuur_id is null'
+
+
+def rij_tenzij_vast(tabel, waarden):
+    # Bestaat de rij nog (omdat ze vastligt), dan blijft ze zoals ze is.
+    return rij(tabel, waarden)[:-1] + ' on conflict (id) do nothing;'
+
+
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 15)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
@@ -93,7 +104,7 @@ for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.s
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.scan_codes', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'berekeningen.ijk_metingen', 'rapporten.documenten']:
-    sql.append(f'delete from {t} where dossier_id in ({lijst});')
+    sql.append(f'delete from {t} where dossier_id in ({lijst})' + (f' and {VAST}' if t == 'financieel.kosten' else '') + ';')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
 # Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
 sql.append(f'delete from dossiers.verwijderregister where dossier_id in ({lijst});')
@@ -397,13 +408,13 @@ gisteren, vandaag = VANDAAG - dt.timedelta(days=1), VANDAAG
 PRESTATIES = [(1, gisteren, '08:00', '12:30', 'Sampling during loading, holds 1 to 3'), (2, vandaag, '07:00', '10:15', 'Sampling holds 4 to 6, sealing of samples')]
 KOSTEN = [(1, 'reis', 'Mileage Antwerp to Ghent return, 112 km', 47.04, True), (2, 'labo', 'Laboratory analysis, 6 samples', 390.00, True),
           (3, 'andere', 'Parking at the terminal', 12.00, False)]
-sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'prestatie/{k}')) for k, *_ in PRESTATIES)});")
-sql.append(f"delete from financieel.kosten where id in ({', '.join(lit(vid(f'kost/{k}')) for k, *_ in KOSTEN)});")
+sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'prestatie/{k}')) for k, *_ in PRESTATIES)}) and {VAST};")
+sql.append(f"delete from financieel.kosten where id in ({', '.join(lit(vid(f'kost/{k}')) for k, *_ in KOSTEN)}) and {VAST};")
 for k, dag, van, tot, oms in PRESTATIES:
-    sql.append(rij('financieel.prestaties', dict(id=vid(f'prestatie/{k}'), dossier_id=STAALNAME, gebruiker_id=SURVEYOR_ID, van=f'{dag}T{van}:00',
+    sql.append(rij_tenzij_vast('financieel.prestaties', dict(id=vid(f'prestatie/{k}'), dossier_id=STAALNAME, gebruiker_id=SURVEYOR_ID, van=f'{dag}T{van}:00',
                tot=f'{dag}T{tot}:00', omschrijving=oms, factuur_id=None, created_at=om(-1))))
 for k, soort, oms, bedrag, door in KOSTEN:
-    sql.append(rij('financieel.kosten', dict(id=vid(f'kost/{k}'), dossier_id=STAALNAME, datum=VANDAAG, soort=soort, omschrijving=oms, bedrag=bedrag,
+    sql.append(rij_tenzij_vast('financieel.kosten', dict(id=vid(f'kost/{k}'), dossier_id=STAALNAME, datum=VANDAAG, soort=soort, omschrijving=oms, bedrag=bedrag,
                doorrekenen=door, bijlage_id=None, factuur_id=None, created_at=om(-1))))
 if not SCHELDEMOND:
     raise SystemExit('⛔ De relatie Scheldemond Bevrachting NV bestaat niet (de opdrachtgever van HQ-2026-0007). Gestopt; niets geschreven.')
@@ -681,7 +692,7 @@ for nr, naam, inhoud in [(1, 'stowage-plan.txt', b'Stowage plan (demo, invented)
                content_type='text/plain', size_bytes=g, storage_key=sleutel, description=None, category=None, folder_id=None, visible_to_customer=False,
                legacy_source=None, legacy_id=None, archived_on_utc=None, created_at_utc=dt.datetime(2018, 2, 12, 12, 0, tzinfo=dt.timezone.utc),
                created_by_user_id=SURVEYOR_ID, created_by_name=SURVEYOR_NAAM)))
-sql.append(rij('financieel.kosten', dict(id=vid('kost/11'), dossier_id=D11, datum=dt.date(2018, 2, 12), soort='reis', omschrijving='Taxi to Kaai 869',
+sql.append(rij_tenzij_vast('financieel.kosten', dict(id=vid('kost/11'), dossier_id=D11, datum=dt.date(2018, 2, 12), soort='reis', omschrijving='Taxi to Kaai 869',
            bedrag=46, doorrekenen=True, bijlage_id=vid('bijlage/11/2'), factuur_id=None, created_at=dt.datetime(2018, 2, 12, 12, 0, tzinfo=dt.timezone.utc))))
 sql.append(rij('berekeningen.gebeurtenissen', dict(id=vid('gebeurtenis/11'), dossier_id=D11, op=dt.datetime(2018, 2, 11, 6, 0, tzinfo=dt.timezone.utc),
            soort='aangemeerd', omschrijving='Kaai 869', bron='kantoor', created_at=dt.datetime(2018, 2, 11, 6, 0, tzinfo=dt.timezone.utc))))
@@ -752,7 +763,7 @@ insert into control."AspNetUserRoles" (user_id, role_id) select {lit(FREELANCER)
 if 'Freelancer' not in q(f"select string_agg(r.name, ',') from control.\"AspNetUserRoles\" ur join control.\"AspNetRoles\" r on r.id = ur.role_id where ur.user_id = {lit(FREELANCER)}", db='quaymark_control'):
     raise SystemExit('⛔ De rol Freelancer bestaat niet in het register: draait de app (0.28.0 of later) al eens lokaal? Gestopt.')
 sql.append(f"""insert into financieel.freelancers (gebruiker_id, code, bedrijfsnaam, ondernemingsnummer, straat, postcode, gemeente, land, iban, uurtarief, btw_regeling,
-  raamakkoord_op, actief, created_at) values ({lit(FREELANCER)}, 'FF', 'Fien Freelance BV', 'BE 0987.654.321', 'Dokweg 12', '8380', 'Zeebrugge', 'BE',
+  raamakkoord_op, actief, created_at) values ({lit(FREELANCER)}, 'FF', 'Fien Freelance BV', 'BE 0987.654.394', 'Dokweg 12', '8380', 'Zeebrugge', 'BE',
   'BE71 0961 2345 6769', 55, 'normaal', {lit(dt.date(VANDAAG.year, 1, 2))}, true, {lit(om(-30))})
 on conflict (gebruiker_id) do update set code = excluded.code, bedrijfsnaam = excluded.bedrijfsnaam, ondernemingsnummer = excluded.ondernemingsnummer,
   straat = excluded.straat, postcode = excluded.postcode, gemeente = excluded.gemeente, land = excluded.land, iban = excluded.iban, uurtarief = excluded.uurtarief,
@@ -770,12 +781,12 @@ for nr in FL_EIGEN:
 sql.append(f"update dossiers.dossiers set surveyor_id = {lit(FREELANCER)} where nummer in ({', '.join(lit(n) for n in FL_EIGEN)});")
 FL_PRESTATIES = [(1, eerste_vorige + dt.timedelta(days=6), '07:30', '11:00', 'On board · Draft survey, initial'), (2, eerste_vorige + dt.timedelta(days=6), '15:00', '17:15', 'On board · Draft survey, final')]
 FL_KOST = vid('freelance/kost/1')
-sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'freelance/prestatie/{k}')) for k, *_ in FL_PRESTATIES)});")
-sql.append(f"delete from financieel.kosten where id = {lit(FL_KOST)};")
+sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'freelance/prestatie/{k}')) for k, *_ in FL_PRESTATIES)}) and {VAST};")
+sql.append(f"delete from financieel.kosten where id = {lit(FL_KOST)} and {VAST};")
 for k, dag, van, tot, oms in FL_PRESTATIES:
-    sql.append(rij('financieel.prestaties', dict(id=vid(f'freelance/prestatie/{k}'), dossier_id=FL_DOSSIER, gebruiker_id=FREELANCER, van=f'{dag}T{van}:00',
+    sql.append(rij_tenzij_vast('financieel.prestaties', dict(id=vid(f'freelance/prestatie/{k}'), dossier_id=FL_DOSSIER, gebruiker_id=FREELANCER, van=f'{dag}T{van}:00',
                tot=f'{dag}T{tot}:00', omschrijving=oms, factuur_id=None, afrekening_id=None, created_at=om(-30))))
-sql.append(rij('financieel.kosten', dict(id=FL_KOST, dossier_id=FL_DOSSIER, datum=eerste_vorige + dt.timedelta(days=6), soort='reis',
+sql.append(rij_tenzij_vast('financieel.kosten', dict(id=FL_KOST, dossier_id=FL_DOSSIER, datum=eerste_vorige + dt.timedelta(days=6), soort='reis',
            omschrijving='Mileage Bruges to Zeebrugge return, 34 km', bedrag=14.28, doorrekenen=True, bijlage_id=None, factuur_id=None, created_at=om(-30),
            gebruiker_id=FREELANCER, afrekening_id=None)))
 

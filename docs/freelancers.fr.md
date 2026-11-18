@@ -23,8 +23,8 @@ La colonne **Rôle Freelance** affiche une coche si le freelance a déjà ce rô
 Un freelance est un utilisateur du bureau. Invitez-le d'abord sur l'écran **Utilisateurs**, puis cliquez ici sur **Nouveau freelance**.
 
 - **Utilisateur** : l'utilisateur du bureau. Quaymark propose un **Nom de l'entreprise** et un **Code** à partir de son nom.
-- **Code** : 2 à 6 majuscules ou chiffres, unique dans le bureau. Il figure dans le numéro de chaque décompte : *SB-CODE-ANNÉE-001*.
-- **Nom de l'entreprise**, **Numéro d'entreprise / TVA**, **Rue et numéro**, **Code postal**, **Commune**, **Pays** et **IBAN** : c'est ainsi que le freelance figure comme fournisseur sur le décompte. La rue, la commune et l'IBAN sont nécessaires pour régler.
+- **Code** : 2 à 6 majuscules ou chiffres, unique dans le bureau. Il figure dans le numéro de chaque décompte : *SB-CODE-ANNÉE-001*. Après le premier décompte, il est figé, pour que les numéros restent une seule série.
+- **Nom de l'entreprise**, **Numéro d'entreprise / TVA**, **Rue et numéro**, **Code postal**, **Commune**, **Pays** et **IBAN** : c'est ainsi que le freelance figure comme fournisseur sur le décompte. Vous choisissez le pays dans la liste. Quaymark vérifie les chiffres de contrôle d'un numéro d'entreprise belge et de l'IBAN ; un numéro d'entreprise étranger ne peut pas être vérifié. La rue, la commune et l'IBAN sont nécessaires pour régler.
 - **Tarif horaire (achat)** : ce que le bureau lui paie par heure.
 - **Régime de TVA** : *Normal (21 %)*, *Franchise (petite entreprise)* ou *Autoliquidation (cocontractant)*. En franchise et en autoliquidation, la mention légale figure sur le décompte.
 - **Accord d'autofacturation le** : la date à laquelle le freelance a accepté par écrit que le bureau établisse ses factures. Sans cette date, ou avec une date postérieure à la période, Quaymark n'émet pas de décompte.
