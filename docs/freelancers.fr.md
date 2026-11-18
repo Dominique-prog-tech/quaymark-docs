@@ -16,6 +16,8 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Freelances**
 
 La colonne **Rôle** indique si le freelance a déjà le rôle Freelance.
 
+**Reste à régler** est le montant de son prochain décompte, hors TVA : ses prestations et ses propres frais jusqu'à aujourd'hui qui ne figurent encore sur aucun décompte. Si la colonne **Règlement** affiche quelque chose (*Pas d'accord*, *Données manquantes*, *Pas de tarif horaire* ou *Inactif*), Quaymark n'émet pas de décompte pour lui. Survolez-le : l'explication dit ce qu'il faut compléter sur sa fiche.
+
 ## Ajouter un freelance
 
 Un freelance est un utilisateur du bureau. Invitez-le d'abord sur l'écran **Utilisateurs**, puis cliquez ici sur **Nouveau freelance**.

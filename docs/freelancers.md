@@ -16,6 +16,8 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Freelancers**.
 
 De kolom **Rol** zegt of de freelancer al de rol Freelancer heeft.
 
+**Nog af te rekenen** is wat zijn volgende afrekening zou bedragen, zonder btw: zijn prestaties en eigen kosten tot vandaag die nog op geen afrekening staan. Staat er iets in de kolom **Afrekenen** (*Geen akkoord*, *Gegevens ontbreken*, *Geen uurtarief* of *Niet actief*), dan geeft Quaymark voor hem geen afrekening uit. Wijs het aan: de uitleg zegt wat u op zijn fiche invult.
+
 ## Een freelancer toevoegen
 
 Een freelancer is een gebruiker van het bureau. Nodig hem eerst uit op het scherm **Gebruikers**, en klik dan hier op **Nieuwe freelancer**.

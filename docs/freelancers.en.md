@@ -16,6 +16,8 @@ At the bottom of the menu, click **Administration**, then the **Freelancers** ti
 
 The **Role** column shows whether the freelancer already has the Freelancer role.
 
+**Still to settle** is what their next statement would amount to, excluding VAT: their time entries and own expenses up to today that are not yet on a statement. If the **Settlement** column shows something (*No agreement*, *Details missing*, *No hourly rate* or *Inactive*), Quaymark issues no statement for them. Point at it: the explanation says what to fill in on their record.
+
 ## Adding a freelancer
 
 A freelancer is a user of the company. First invite them on the **Users** screen, then click **New freelancer** here.
@@ -38,7 +40,7 @@ With this role they only see **My work** in the web app, and in the field app th
 
 ## Statements
 
-Open the **Statements** tab on the record and choose a period with **From** and **Until** (by default the previous month). Quaymark shows the proposal: their attendance and own expenses in that period that are not yet on a statement. Hours at their hourly rate, expenses at their amount, with VAT according to their scheme.
+Open the **Statements** tab on the record and choose a period with **From** and **Until** (by default the previous month). Quaymark shows the proposal: their time entries and own expenses in that period that are not yet on a statement. Hours at their hourly rate, expenses at their amount, with VAT according to their scheme.
 
 ![The Statements tab with the proposal and the totals](images/freelancer-afrekening-en.png "A statement")
 
