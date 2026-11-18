@@ -72,7 +72,7 @@ En bas du menu, **Administration** ouvre tous les paramètres du bureau, sous fo
 Ici, vous choisissez un nouveau mot de passe pour votre compte.
 
 - Saisissez d'abord votre **mot de passe actuel**, puis deux fois le **nouveau**.
-- Après la modification, vous restez connecté ; le nouveau mot de passe vaut dès la prochaine connexion.
+- Après la modification, vous restez connecté sur cet appareil ; sur vos autres appareils, vous êtes déconnecté. Reconnectez-vous-y avec le nouveau mot de passe.
 
 ## Définir le mot de passe
 

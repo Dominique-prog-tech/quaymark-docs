@@ -72,7 +72,7 @@ Onderaan het menu opent **Platformbeheer** alle instellingen van het bureau, als
 Hier kiest u een nieuw wachtwoord voor uw account.
 
 - Vul eerst uw **huidige wachtwoord** in, daarna twee keer het **nieuwe**.
-- Na het wijzigen blijft u aangemeld; het nieuwe wachtwoord geldt vanaf de volgende aanmelding.
+- Na het wijzigen blijft u op dit toestel aangemeld; op uw andere toestellen wordt u afgemeld. Daar meldt u zich opnieuw aan met het nieuwe wachtwoord.
 
 ## Wachtwoord instellen
 

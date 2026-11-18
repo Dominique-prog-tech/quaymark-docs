@@ -72,7 +72,7 @@ At the bottom of the menu, **Administration** opens all the office's settings, a
 Here you choose a new password for your account.
 
 - First enter your **current password**, then the **new** one twice.
-- After the change you stay signed in; the new password applies from your next sign-in.
+- After the change you stay signed in on this device; on your other devices you are signed out. Sign in there again with the new password.
 
 ## Set your password
 

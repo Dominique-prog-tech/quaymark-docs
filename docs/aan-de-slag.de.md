@@ -72,7 +72,7 @@ Unten im Menü öffnet **Verwaltung** alle Einstellungen des Büros, als Kacheln
 Hier wählen Sie ein neues Passwort für Ihr Konto.
 
 - Geben Sie zuerst Ihr **aktuelles Passwort** ein, dann zweimal das **neue**.
-- Nach der Änderung bleiben Sie angemeldet; das neue Passwort gilt ab der nächsten Anmeldung.
+- Nach der Änderung bleiben Sie auf diesem Gerät angemeldet; auf Ihren anderen Geräten werden Sie abgemeldet. Melden Sie sich dort mit dem neuen Passwort erneut an.
 
 ## Passwort festlegen
 
