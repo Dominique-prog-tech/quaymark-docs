@@ -14,7 +14,7 @@ Klicken Sie im Menü links auf **Planung**. Sie sehen den heutigen Tag; oben rec
 
 ## Zu planen
 
-Links stehen die offenen Akten ohne Sachverständigen oder ohne Zeitpunkt, mit Nummer, Status, Besichtigungsart, Schiff, Hafen und Sachverständigem (wenn bereits gewählt). Doppelklicken Sie auf eine Karte, um die Akte zu öffnen.
+Links stehen die offenen Akten ohne Sachverständigen oder ohne Zeitpunkt, mit Nummer, Status, Besichtigungsart, Schiff, Hafen und Sachverständigem (wenn bereits gewählt) sowie dem Zeitpunkt, wenn er schon bekannt ist. Doppelklicken Sie auf eine Karte, um die Akte zu öffnen.
 
 ## Eine Akte einplanen
 

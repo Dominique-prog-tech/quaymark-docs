@@ -14,7 +14,7 @@ Click **Schedule** in the menu on the left. You see today; at the top right you 
 
 ## To schedule
 
-On the left are the open files without a surveyor or a time, with their number, status, survey type, vessel, port and surveyor (if already chosen). Double-click a card to open the file.
+On the left are the open files without a surveyor or a time, with their number, status, survey type, vessel, port and surveyor (if already chosen), and the time if it is already known. Double-click a card to open the file.
 
 ## Scheduling a file
 

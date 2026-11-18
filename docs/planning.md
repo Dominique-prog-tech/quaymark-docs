@@ -14,7 +14,7 @@ Klik in het menu links op **Planning**. U ziet de dag van vandaag; rechtsboven k
 
 ## Te plannen
 
-Links staan de open dossiers zonder surveyor of zonder tijdstip, met hun nummer, status, soort survey, schip, haven en surveyor (als die al gekozen is). Dubbelklik op een kaart om het dossier te openen.
+Links staan de open dossiers zonder surveyor of zonder tijdstip, met hun nummer, status, soort survey, schip, haven en surveyor (als die al gekozen is), en het tijdstip als dat al gekend is. Dubbelklik op een kaart om het dossier te openen.
 
 ## Een dossier inplannen
 

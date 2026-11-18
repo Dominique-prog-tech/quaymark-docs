@@ -14,7 +14,7 @@ Cliquez sur **Planning** dans le menu de gauche. Vous voyez le jour même ; en h
 
 ## À planifier
 
-À gauche figurent les dossiers ouverts sans expert ou sans horaire, avec leur numéro, statut, type d'expertise, navire, port et expert (s'il est déjà choisi). Double-cliquez sur une carte pour ouvrir le dossier.
+À gauche figurent les dossiers ouverts sans expert ou sans horaire, avec leur numéro, statut, type d'expertise, navire, port et expert (s'il est déjà choisi), et l'horaire s'il est déjà connu. Double-cliquez sur une carte pour ouvrir le dossier.
 
 ## Planifier un dossier
 
