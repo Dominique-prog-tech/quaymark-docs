@@ -36,7 +36,7 @@ Een freelancer is een gebruiker van het bureau. Nodig hem eerst uit op het scher
 
 Bovenaan de fiche staat of de freelancer de rol al heeft. Klik op **Rol Freelancer geven** en bevestig.
 
-Met die rol ziet hij in de webapp enkel **Mijn werk**, en in de veldapp de dossiers die aan hem toegewezen zijn. Daar legt hij vaststellingen, foto's en zijn tijd vast, zoals elke surveyor. Zijn andere rollen vervallen. Zonder deze rol ziet hij alles wat een medewerker van het bureau ziet. Terugzetten kan op het scherm **Gebruikers**. → [Mijn werk](mijn-werk.md)
+Met die rol ziet hij in de webapp enkel **Mijn werk**, en in de veldapp de dossiers die aan hem toegewezen zijn. Daar legt hij vaststellingen, foto's en zijn tijd vast, zoals elke surveyor. Zijn andere rollen vervallen, en op het scherm **Rollen** staat hij niet bij de gebruikers die u een rol kunt geven. Zonder deze rol ziet hij alles wat een medewerker van het bureau ziet. Terugzetten kan op het scherm **Gebruikers**. → [Mijn werk](mijn-werk.md)
 
 ## Afrekeningen
 

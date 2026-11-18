@@ -36,7 +36,7 @@ A freelancer is a user of the company. First invite them on the **Users** screen
 
 The top of the record shows whether the freelancer already has the role. Click **Give Freelancer role** and confirm.
 
-With this role they only see **My work** in the web app, and in the field app the files assigned to them. There they record findings, photos and their time, like any surveyor. Their other roles are removed. Without this role they see everything a member of staff sees. You can undo this on the **Users** screen. → [My work](mijn-werk.md)
+With this role they only see **My work** in the web app, and in the field app the files assigned to them. There they record findings, photos and their time, like any surveyor. Their other roles are removed, and on the **Roles** screen they are not among the users you can give a role. Without this role they see everything a member of staff sees. You can undo this on the **Users** screen. → [My work](mijn-werk.md)
 
 ## Statements
 

@@ -36,7 +36,7 @@ Ein Freiberufler ist ein Benutzer des Büros. Laden Sie ihn zuerst auf der Seite
 
 Oben im Datenblatt sehen Sie, ob der Freiberufler die Rolle bereits hat. Klicken Sie auf **Rolle Freiberufler geben** und bestätigen Sie.
 
-Mit dieser Rolle sieht er in der Web-App nur **Meine Arbeit** und in der Außendienst-App die ihm zugewiesenen Akten. Dort erfasst er Feststellungen, Fotos und seine Zeit, wie jeder Besichtiger. Seine anderen Rollen entfallen. Ohne diese Rolle sieht er alles, was ein Mitarbeiter des Büros sieht. Zurücksetzen können Sie auf der Seite **Benutzer**. → [Meine Arbeit](mijn-werk.md)
+Mit dieser Rolle sieht er in der Web-App nur **Meine Arbeit** und in der Außendienst-App die ihm zugewiesenen Akten. Dort erfasst er Feststellungen, Fotos und seine Zeit, wie jeder Besichtiger. Seine anderen Rollen entfallen, und auf dem Bildschirm **Rollen** steht er nicht bei den Benutzern, denen Sie eine Rolle geben können. Ohne diese Rolle sieht er alles, was ein Mitarbeiter des Büros sieht. Zurücksetzen können Sie auf der Seite **Benutzer**. → [Meine Arbeit](mijn-werk.md)
 
 ## Abrechnungen
 
