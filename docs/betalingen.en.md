@@ -26,13 +26,14 @@ The receipts that Quaymark did not match itself, with a **Suggestion** where pos
 
 - the reference matches, but the amount does not (a partial payment, or paid too much);
 - the invoice number is in the text of the transfer;
-- the amount is exactly the balance of one invoice of a customer with that name.
+- the amount is exactly the balance of one invoice of a customer with that name;
+- the reference points to an invoice in another currency. Matching is then not possible: record the payment on that invoice with **Record payment**, in the invoice currency, and then set the transaction aside.
 
-**Match** allocates the transaction to the chosen invoice. You can also allocate part of the amount and the rest to another invoice. **Set aside** removes a transaction that is not a customer payment, for example a refund or a transfer between your own accounts.
+**Match** allocates the transaction to the chosen invoice. You can also allocate part of the amount and the rest to another invoice. Matching only works with an invoice in the same currency as the transaction; the **Currency** column shows it. **Set aside** removes a transaction that is not a customer payment, for example a refund or a transfer between your own accounts. Quaymark asks first. With **Also show set aside** you see it again, and **Restore** puts it back under To process.
 
 ## Outstanding
 
-The issued invoices with a balance, oldest due date first, with the days overdue. A credit note on an invoice counts in the balance.
+The issued invoices with a balance, oldest due date first, with the status (**Open** or **Overdue**, as in the [Invoices](facturen.md) list) and the days overdue for an overdue invoice. A credit note on an invoice counts in the balance.
 
 **Record payment** is for a payment not in the bank feed: cash, another account or set off. Say under **Note** how it was paid.
 
@@ -44,7 +45,7 @@ The email goes through ADM One to the address on the invoice (otherwise that of 
 
 ## Processed
 
-The matched payments, with who matched them. **Undo** reverses a wrong match: the payment no longer counts and the transaction returns under To process. The payment stays on record, with who undid it.
+The matched payments, with the customer, the currency, the note and who matched them. A double-click opens the invoice. With more than 200, the list shows the latest 200 and the title says so. **Undo** reverses a wrong match: the payment no longer counts and the transaction returns under To process. The payment stays on record, with who undid it.
 
 ## See also
 

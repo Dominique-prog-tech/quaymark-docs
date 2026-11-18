@@ -26,13 +26,14 @@ De ontvangsten die Quaymark niet zelf afpuntte, met een **Voorstel** waar dat ka
 
 - de mededeling klopt, maar het bedrag niet (een deelbetaling, of te veel betaald);
 - het factuurnummer staat in de tekst van de overschrijving;
-- het bedrag is precies het saldo van één factuur van een klant met die naam.
+- het bedrag is precies het saldo van één factuur van een klant met die naam;
+- de mededeling wijst een factuur in een andere munt aan. Koppelen kan dan niet: registreer de betaling op die factuur met **Betaling registreren**, in de munt van de factuur, en zet de verrichting daarna opzij.
 
-**Koppelen** punt de verrichting af op de gekozen factuur. U kunt ook een deel van het bedrag afpunten en de rest op een andere factuur. **Opzij zetten** haalt een verrichting weg die geen betaling van een klant is, bijvoorbeeld een terugbetaling of een overboeking tussen eigen rekeningen.
+**Koppelen** punt de verrichting af op de gekozen factuur. U kunt ook een deel van het bedrag afpunten en de rest op een andere factuur. Koppelen kan enkel met een factuur in dezelfde munt als de verrichting; de kolom **Munt** toont ze. **Opzij zetten** haalt een verrichting weg die geen betaling van een klant is, bijvoorbeeld een terugbetaling of een overboeking tussen eigen rekeningen. Quaymark vraagt eerst. Met **Ook opzijgezette tonen** ziet u ze terug, en **Terugzetten** brengt ze terug onder Te verwerken.
 
 ## Openstaand
 
-De uitgegeven facturen met een saldo, de oudste vervaldag eerst, met de dagen te laat. Een creditnota op een factuur telt mee in het saldo.
+De uitgegeven facturen met een saldo, de oudste vervaldag eerst, met de status (**Open** of **Vervallen**, zoals in de lijst [Facturen](facturen.md)) en de dagen te laat bij een vervallen factuur. Een creditnota op een factuur telt mee in het saldo.
 
 **Betaling registreren** is voor een betaling die niet in de bankfeed staat: contant, op een andere rekening of verrekend. Zeg bij **Opmerking** hoe er betaald werd.
 
@@ -44,7 +45,7 @@ De mail gaat via ADM One naar het e-mailadres op de factuur (anders dat van de r
 
 ## Verwerkt
 
-De afgepunte betalingen, met wie ze afpuntte. **Ongedaan maken** zet een verkeerde koppeling terug: de betaling telt niet meer mee en de verrichting komt terug onder Te verwerken. De betaling blijft bewaard, met wie ze ongedaan maakte.
+De afgepunte betalingen, met de klant, de munt, de opmerking en wie ze afpuntte. Een dubbelklik opent de factuur. Zijn er meer dan 200, dan toont de lijst de laatste 200 en zegt de titel dat. **Ongedaan maken** zet een verkeerde koppeling terug: de betaling telt niet meer mee en de verrichting komt terug onder Te verwerken. De betaling blijft bewaard, met wie ze ongedaan maakte.
 
 ## Zie ook
 

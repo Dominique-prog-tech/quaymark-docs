@@ -26,13 +26,14 @@ Die Eingänge, die Quaymark nicht selbst zugeordnet hat, mit einem **Vorschlag**
 
 - die Mitteilung stimmt, der Betrag aber nicht (eine Teilzahlung oder zu viel bezahlt);
 - die Rechnungsnummer steht im Text der Überweisung;
-- der Betrag ist genau der Saldo einer einzigen Rechnung eines Kunden mit diesem Namen.
+- der Betrag ist genau der Saldo einer einzigen Rechnung eines Kunden mit diesem Namen;
+- die Mitteilung weist auf eine Rechnung in einer anderen Währung. Zuordnen geht dann nicht: Erfassen Sie die Zahlung auf dieser Rechnung mit **Zahlung erfassen**, in der Rechnungswährung, und legen Sie die Buchung danach beiseite.
 
-**Zuordnen** verbucht die Buchung auf die gewählte Rechnung. Sie können auch einen Teil des Betrags zuordnen und den Rest einer anderen Rechnung. **Beiseitelegen** entfernt eine Buchung, die keine Kundenzahlung ist, zum Beispiel eine Rückzahlung oder eine Überweisung zwischen eigenen Konten.
+**Zuordnen** verbucht die Buchung auf die gewählte Rechnung. Sie können auch einen Teil des Betrags zuordnen und den Rest einer anderen Rechnung. Zuordnen geht nur mit einer Rechnung in derselben Währung wie die Buchung; die Spalte **Währung** zeigt sie. **Beiseitelegen** entfernt eine Buchung, die keine Kundenzahlung ist, zum Beispiel eine Rückzahlung oder eine Überweisung zwischen eigenen Konten. Quaymark fragt zuerst. Mit **Auch beiseitegelegte anzeigen** sehen Sie sie wieder, und **Zurückholen** bringt sie zurück unter Zu bearbeiten.
 
 ## Offen
 
-Die ausgestellten Rechnungen mit einem Saldo, die älteste Fälligkeit zuerst, mit den Tagen Verzug. Eine Gutschrift auf eine Rechnung zählt im Saldo mit.
+Die ausgestellten Rechnungen mit einem Saldo, die älteste Fälligkeit zuerst, mit dem Status (**Offen** oder **Überfällig**, wie in der Liste [Rechnungen](facturen.md)) und den Tagen Verzug bei einer überfälligen Rechnung. Eine Gutschrift auf eine Rechnung zählt im Saldo mit.
 
 **Zahlung erfassen** ist für eine Zahlung, die nicht im Bankfeed steht: bar, auf ein anderes Konto oder verrechnet. Geben Sie unter **Bemerkung** an, wie bezahlt wurde.
 
@@ -44,7 +45,7 @@ Die E-Mail geht über ADM One an die Adresse auf der Rechnung (sonst an die der 
 
 ## Bearbeitet
 
-Die zugeordneten Zahlungen, mit wer sie zugeordnet hat. **Rückgängig machen** macht eine falsche Zuordnung rückgängig: Die Zahlung zählt nicht mehr und die Buchung erscheint wieder unter Zu bearbeiten. Die Zahlung bleibt gespeichert, mit wer sie rückgängig gemacht hat.
+Die zugeordneten Zahlungen, mit dem Kunden, der Währung, der Bemerkung und wer sie zugeordnet hat. Ein Doppelklick öffnet die Rechnung. Bei mehr als 200 zeigt die Liste die letzten 200, und der Titel sagt das. **Rückgängig machen** macht eine falsche Zuordnung rückgängig: Die Zahlung zählt nicht mehr und die Buchung erscheint wieder unter Zu bearbeiten. Die Zahlung bleibt gespeichert, mit wer sie rückgängig gemacht hat.
 
 ## Siehe auch
 
