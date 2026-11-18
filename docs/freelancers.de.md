@@ -14,7 +14,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Freiberu
 
 ![Freiberufler mit Code, Firmenname, Stundensatz (Einkauf), Umsatzsteuerregelung und Rolle](images/freelancers-de.png "Die Freiberufler")
 
-Die Spalte **Rolle** zeigt, ob der Freiberufler bereits die Rolle Freiberufler hat.
+Die Spalte **Rolle Freiberufler** zeigt ein Häkchen, wenn der Freiberufler diese Rolle bereits hat, sonst *Noch nicht*.
 
 **Noch abzurechnen** ist der Betrag seiner nächsten Abrechnung, netto: seine Leistungen und eigenen Kosten bis heute, die noch auf keiner Abrechnung stehen. Steht in der Spalte **Abrechnung** etwas (*Keine Vereinbarung*, *Daten fehlen*, *Kein Stundensatz* oder *Inaktiv*), stellt Quaymark für ihn keine Abrechnung aus. Zeigen Sie darauf: Die Erklärung sagt, was Sie in seinem Datenblatt eintragen.
 

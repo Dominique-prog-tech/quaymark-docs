@@ -14,7 +14,7 @@ At the bottom of the menu, click **Administration**, then the **Freelancers** ti
 
 ![Freelancers with Code, Company name, Hourly rate (purchase), VAT scheme and Role](images/freelancers-en.png "The freelancers")
 
-The **Role** column shows whether the freelancer already has the Freelancer role.
+The **Freelancer role** column shows a tick if the freelancer already has that role, and *Not yet* otherwise.
 
 **Still to settle** is what their next statement would amount to, excluding VAT: their time entries and own expenses up to today that are not yet on a statement. If the **Settlement** column shows something (*No agreement*, *Details missing*, *No hourly rate* or *Inactive*), Quaymark issues no statement for them. Point at it: the explanation says what to fill in on their record.
 

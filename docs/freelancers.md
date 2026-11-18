@@ -14,7 +14,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Freelancers**.
 
 ![Freelancers met Code, Bedrijfsnaam, Uurtarief (inkoop), Btw-regeling en Rol](images/freelancers.png "De freelancers")
 
-De kolom **Rol** zegt of de freelancer al de rol Freelancer heeft.
+De kolom **Rol Freelancer** heeft een vinkje als de freelancer die rol al heeft, en anders *Nog niet*.
 
 **Nog af te rekenen** is wat zijn volgende afrekening zou bedragen, zonder btw: zijn prestaties en eigen kosten tot vandaag die nog op geen afrekening staan. Staat er iets in de kolom **Afrekenen** (*Geen akkoord*, *Gegevens ontbreken*, *Geen uurtarief* of *Niet actief*), dan geeft Quaymark voor hem geen afrekening uit. Wijs het aan: de uitleg zegt wat u op zijn fiche invult.
 
