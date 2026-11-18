@@ -18,7 +18,7 @@ Cliquez sur **Offres** dans le menu de gauche. Vous voyez les offres avec leur n
 
 ## Envoyer
 
-**Envoyer** attribue son numéro à l'offre (par exemple O-HQ-2026-0001), crée le PDF avec son empreinte et annonce l'offre aux utilisateurs du portail du donneur d'ordre. Indiquez une adresse pour envoyer aussi le PDF par e-mail ; vide, c'est le portail uniquement. Ensuite les lignes sont figées.
+**Envoyer** attribue son numéro à l'offre (par exemple O-HQ-2026-0001), crée le PDF avec son empreinte et annonce l'offre aux utilisateurs du portail du donneur d'ordre. Indiquez une adresse pour envoyer aussi le PDF par e-mail ; vide, c'est le portail uniquement. Ensuite les lignes sont figées, et l'offre indique quand elle a été envoyée.
 
 ## Accepter ou refuser
 

@@ -18,7 +18,7 @@ Klicken Sie im Menü links auf **Angebote**. Sie sehen die Angebote mit Nummer, 
 
 ## Senden
 
-**Senden** vergibt die Nummer (zum Beispiel O-HQ-2026-0001), erstellt das PDF mit Fingerabdruck und kündigt das Angebot den Portalbenutzern des Auftraggebers an. Geben Sie eine Adresse ein, um das PDF auch zu mailen; leer heißt nur das Portal. Danach sind die Zeilen fest.
+**Senden** vergibt die Nummer (zum Beispiel O-HQ-2026-0001), erstellt das PDF mit Fingerabdruck und kündigt das Angebot den Portalbenutzern des Auftraggebers an. Geben Sie eine Adresse ein, um das PDF auch zu mailen; leer heißt nur das Portal. Danach sind die Zeilen fest, und das Angebot zeigt, wann es gesendet wurde.
 
 ## Annehmen oder ablehnen
 

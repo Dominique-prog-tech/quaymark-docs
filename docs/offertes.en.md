@@ -18,7 +18,7 @@ Click **Quotations** in the menu on the left. You see the quotations with their 
 
 ## Sending
 
-**Send** gives the quotation its number (for example O-HQ-2026-0001), creates the PDF with its fingerprint and announces the quotation to the principal's portal users. Fill in an address to also email the PDF; empty means the portal only. After that the lines are fixed.
+**Send** gives the quotation its number (for example O-HQ-2026-0001), creates the PDF with its fingerprint and announces the quotation to the principal's portal users. Fill in an address to also email the PDF; empty means the portal only. After that the lines are fixed, and the quotation shows when it was sent.
 
 ## Accepting or declining
 

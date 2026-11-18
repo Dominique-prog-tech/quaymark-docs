@@ -18,7 +18,7 @@ Klik in het menu links op **Offertes**. U ziet de offertes met hun nummer, opdra
 
 ## Versturen
 
-**Versturen** geeft de offerte haar nummer (bijvoorbeeld O-HQ-2026-0001), maakt de PDF met haar vingerafdruk en meldt de offerte aan de portaalgebruikers van de opdrachtgever. Vul een adres in om de PDF ook te mailen; leeg is enkel het portaal. Daarna liggen de regels vast.
+**Versturen** geeft de offerte haar nummer (bijvoorbeeld O-HQ-2026-0001), maakt de PDF met haar vingerafdruk en meldt de offerte aan de portaalgebruikers van de opdrachtgever. Vul een adres in om de PDF ook te mailen; leeg is enkel het portaal. Daarna liggen de regels vast, en de offerte toont wanneer ze verstuurd werd.
 
 ## Aanvaarden of weigeren
 
