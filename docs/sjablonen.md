@@ -15,7 +15,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Sjablonen**.
 - Elk bureau start met een **algemeen** sjabloon in de vier talen. Het geldt voor elke soort survey. Zet er uw logo en huisstijl in.
 - Moet het rapport van één soort survey er anders uitzien? Maak met **Nieuw documentsjabloon** een sjabloon en kies de soort survey. Dat sjabloon gaat voor het algemene, per taal: zonder Frans document neemt een Frans rapport het algemene Franse.
 - De kolom **Documenten** toont per taal de huidige versie. Een ontbrekende taal valt zo op.
-- De drie **standaardbrieven** (protest, voorbehoud, uitnodiging tot gezamenlijke survey) en de vijf **certificaten** (hoeveelheid, gewicht, on-hire/off-hire, ruimkeuring, kwaliteit) hebben elk één sjabloon, los van de soort survey. De tekst van een brief schrijft de surveyor per brief; de verklaring van een certificaat staat in het sjabloon.
+- De drie **standaardbrieven** (protest, voorbehoud, uitnodiging tot gezamenlijke survey) en de vijf **certificaten** (hoeveelheid, gewicht, on-hire/off-hire, ruimkeuring, kwaliteit) hebben elk één sjabloon, los van de soort survey. De tekst van een brief schrijft de surveyor per brief; de verklaring van een certificaat staat in het sjabloon. Een soort survey kiezen kan enkel bij het rapport: bij een brief, certificaat, factuur of offerte weigert Quaymark het, want die gebruiken altijd hun algemene sjabloon.
 
 ![De lijst Sjablonen met de kolom Voor soort survey](images/sjablonen.png "De sjablonen")
 
