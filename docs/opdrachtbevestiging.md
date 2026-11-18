@@ -14,7 +14,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Algemene voorw
 2. Pas de tekst aan. De Nederlandse tekst is verplicht; een taal die u leeg laat, toont de Nederlandse tekst.
 3. Klik op **Versie vastleggen**.
 
-De nieuwe versie geldt voor elke bevestiging die u daarna verstuurt. Een versie wordt nooit gewijzigd of verwijderd: de opdrachtgever aanvaardt altijd één bepaalde versie. Klik op een versie om haar tekst en haar vingerafdruk (SHA-256) te zien.
+Is er niets gewijzigd tegenover de geldende versie, dan legt Quaymark geen nieuwe vast: een versie die niets verandert, krijgt geen nummer. De nieuwe versie geldt voor elke bevestiging die u daarna verstuurt. Een versie wordt nooit gewijzigd of verwijderd: de opdrachtgever aanvaardt altijd één bepaalde versie. Dubbelklik op een versie om haar tekst en haar vingerafdruk (SHA-256) te zien.
 
 Zonder algemene voorwaarden kan er geen opdrachtbevestiging vertrekken.
 

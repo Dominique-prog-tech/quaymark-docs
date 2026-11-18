@@ -356,6 +356,24 @@ sql.append(f"delete from planning.afwezigheden where id = {lit(vid('afwezigheid/
 sql.append(rij('planning.afwezigheden', dict(id=vid('afwezigheid/1'), gebruiker_id=SURVEYOR_ID, van=maandag, tot=maandag, soort='opleiding',
            opmerking='IIMS refresher', created_at=om(-7), archived_on_utc=None)))
 
+# ── Algemene voorwaarden (D5; 18/11/2026, visuele ronde rij 59): versie 1, kort en VERZONNEN, in de vier talen. Zonder versie bleef het scherm leeg en
+#    kon een opdrachtbevestiging geen voorwaarden meesturen. Een versie wordt nooit gewijzigd: enkel toevoegen als er nog GEEN enkele is (een versie uit de
+#    app blijft staan). De vingerafdruk zoals de app ze rekent (Voorwaardenregels.Sha256: regeleinden gelijk, randen weg, elke taal met haar code). ──
+VOORWAARDEN = {
+    'nl': "Algemene voorwaarden van Noordkaai Surveys (demo)\n\n1. Opdracht. Elke opdracht wordt uitgevoerd volgens deze voorwaarden, tenzij schriftelijk anders overeengekomen.\n2. Uitvoering. De surveyor voert de opdracht naar best vermogen uit; de vaststellingen gelden op het moment van de survey.\n3. Facturatie. Facturen zijn betaalbaar binnen 30 dagen na de factuurdatum.\n4. Aansprakelijkheid. De aansprakelijkheid is beperkt tot het bedrag van de factuur van de betrokken opdracht.\n5. Bevoegde rechtbank. Op elke opdracht is het Belgisch recht van toepassing.",
+    'fr': "Conditions générales de Noordkaai Surveys (démo)\n\n1. Mission. Chaque mission est exécutée selon les présentes conditions, sauf accord écrit contraire.\n2. Exécution. L'expert exécute la mission au mieux de ses capacités ; les constatations valent au moment de l'expertise.\n3. Facturation. Les factures sont payables dans les 30 jours suivant la date de facture.\n4. Responsabilité. La responsabilité est limitée au montant de la facture de la mission concernée.\n5. Tribunal compétent. Le droit belge s'applique à chaque mission.",
+    'en': "General terms and conditions of Noordkaai Surveys (demo)\n\n1. Assignment. Every assignment is carried out under these terms, unless otherwise agreed in writing.\n2. Performance. The surveyor carries out the assignment to the best of their ability; the findings apply at the time of the survey.\n3. Invoicing. Invoices are payable within 30 days of the invoice date.\n4. Liability. Liability is limited to the amount invoiced for the assignment concerned.\n5. Jurisdiction. Belgian law applies to every assignment.",
+    'de': "Allgemeine Geschäftsbedingungen von Noordkaai Surveys (Demo)\n\n1. Auftrag. Jeder Auftrag wird nach diesen Bedingungen ausgeführt, sofern nicht schriftlich anders vereinbart.\n2. Ausführung. Der Sachverständige führt den Auftrag nach bestem Vermögen aus; die Feststellungen gelten zum Zeitpunkt der Besichtigung.\n3. Rechnungsstellung. Rechnungen sind innerhalb von 30 Tagen nach Rechnungsdatum zahlbar.\n4. Haftung. Die Haftung ist auf den Rechnungsbetrag des betreffenden Auftrags begrenzt.\n5. Gerichtsstand. Für jeden Auftrag gilt belgisches Recht.",
+}
+def voorwaarden_sha(t):
+    norm = lambda x: (x or '').replace('\r\n', '\n').strip()
+    bron = f"nl\n{norm(t['nl'])}\x1efr\n{norm(t['fr'])}\x1een\n{norm(t['en'])}\x1ede\n{norm(t['de'])}"
+    return hashlib.sha256(bron.encode('utf-8')).hexdigest()
+sql.append(f"""insert into dossiers.voorwaarden (id, nummer, nl, fr, en, de, sha256, op, door)
+select {lit(vid('voorwaarden/1'))}, 1, {lit(VOORWAARDEN['nl'])}, {lit(VOORWAARDEN['fr'])}, {lit(VOORWAARDEN['en'])}, {lit(VOORWAARDEN['de'])},
+  {lit(voorwaarden_sha(VOORWAARDEN))}, {lit(om(-30))}, {lit(SURVEYOR_NAAM)}
+where not exists (select 1 from dossiers.voorwaarden);""")
+
 # ── Facturatie (8a tot 8c, 13/11/2026): de gegevens van het bureau, de tarieven, tijd en kosten op ZB-2026-0003 (nog niet gefactureerd: zo kan
 #    "Factuur voorstellen" op het beeld), en een KLAD-factuur voor HQ-2026-0007. Een uitgegeven factuur maakt dit script NIET: die heeft een PDF met
 #    haar SHA-256 nodig, en die komt enkel uit de app. ──

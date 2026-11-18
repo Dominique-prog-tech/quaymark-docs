@@ -14,7 +14,7 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Conditions g
 2. Adaptez le texte. Le texte néerlandais est obligatoire ; une langue laissée vide affiche le texte néerlandais.
 3. Cliquez sur **Enregistrer la version**.
 
-La nouvelle version s'applique à chaque confirmation envoyée ensuite. Une version n'est jamais modifiée ni supprimée : le donneur d'ordre accepte toujours une version précise. Cliquez sur une version pour voir son texte et son empreinte (SHA-256).
+Si rien n'a changé par rapport à la version en vigueur, Quaymark n'en enregistre pas de nouvelle : une version qui ne change rien ne reçoit pas de numéro. La nouvelle version s'applique à chaque confirmation envoyée ensuite. Une version n'est jamais modifiée ni supprimée : le donneur d'ordre accepte toujours une version précise. Double-cliquez sur une version pour voir son texte et son empreinte (SHA-256).
 
 Sans conditions générales, aucune confirmation de mission ne peut partir.
 

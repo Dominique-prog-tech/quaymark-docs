@@ -14,7 +14,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Geschäf
 2. Passen Sie den Text an. Der niederländische Text ist Pflicht; eine leer gelassene Sprache zeigt den niederländischen Text.
 3. Klicken Sie auf **Version speichern**.
 
-Die neue Version gilt für jede danach versendete Bestätigung. Eine Version wird nie geändert oder gelöscht: Der Auftraggeber akzeptiert immer eine bestimmte Version. Klicken Sie auf eine Version, um ihren Text und ihren Fingerabdruck (SHA-256) zu sehen.
+Hat sich gegenüber der geltenden Fassung nichts geändert, legt Quaymark keine neue an: Eine Version, die nichts ändert, erhält keine Nummer. Die neue Version gilt für jede danach versendete Bestätigung. Eine Version wird nie geändert oder gelöscht: Der Auftraggeber akzeptiert immer eine bestimmte Version. Doppelklicken Sie auf eine Version, um ihren Text und ihren Fingerabdruck (SHA-256) zu sehen.
 
 Ohne Geschäftsbedingungen kann keine Auftragsbestätigung versendet werden.
 

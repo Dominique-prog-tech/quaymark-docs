@@ -14,7 +14,7 @@ At the bottom of the menu, click **Administration**, then the **Terms and condit
 2. Adjust the text. The Dutch text is required; a language left empty shows the Dutch text.
 3. Click **Save version**.
 
-The new version applies to every confirmation you send afterwards. A version is never changed or deleted: the principal always accepts one specific version. Click a version to see its text and its fingerprint (SHA-256).
+If nothing has changed compared to the current version, Quaymark does not record a new one: a version that changes nothing gets no number. The new version applies to every confirmation you send afterwards. A version is never changed or deleted: the principal always accepts one specific version. Double-click a version to see its text and its fingerprint (SHA-256).
 
 Without terms and conditions, no order confirmation can be sent.
 
