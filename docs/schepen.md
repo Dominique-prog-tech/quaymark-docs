@@ -52,7 +52,7 @@ Een binnenschip heeft het tabblad **Ijkbrief**: het **nummer**, **Geldig tot** e
 
 ![Ijkbrief van de JOHANNA-W met Nummer ijkbrief, Geldig tot en de Ijktabel](images/schip-ijkbrief.png "Ijkbrief")
 
-Plak de ijktabel als twee kolommen uit een rekenblad, één regel per inzinking; een kopregel mag. Quaymark leest ze meteen en toont het aantal regels en het bereik, of de regel die niet te lezen is. Inzinking en waterverplaatsing moeten oplopen, anders kan **Bewaren** niet. Een vervallen ijkbrief geeft hier een waarschuwing. Bovenaan staat wanneer en door wie de ijkbrief bewaard werd; een wijziging die nog niet bewaard is, zegt **Niet bewaard**. Een meting die al bewaard is, rekent verder met de ijkbrief van toen: wijzigt u de ijkbrief, dan verandert geen enkele bewaarde meting (zie [Dossiers](dossiers.md#meting-op-ijkschalen)).
+Plak de ijktabel als twee kolommen uit een rekenblad, één regel per inzinking; een kopregel mag. Quaymark leest ze meteen en toont het aantal regels en het bereik, of de regel die niet te lezen is. Ernaast staat de tabel zoals Quaymark ze leest. Inzinking en waterverplaatsing moeten oplopen, anders kan **Bewaren** niet. Een vervallen ijkbrief geeft hier een waarschuwing. Bovenaan staat wanneer en door wie de ijkbrief bewaard werd; een wijziging die nog niet bewaard is, zegt **Niet bewaard**. Een meting die al bewaard is, rekent verder met de ijkbrief van toen: wijzigt u de ijkbrief, dan verandert geen enkele bewaarde meting (zie [Dossiers](dossiers.md#meting-op-ijkschalen)).
 
 ## Zie ook
 
