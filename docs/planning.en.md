@@ -30,6 +30,8 @@ You can also fill in the time on the file itself: **Scheduled for** and **Schedu
 
 Each file is shown in the time of its office, as on the file itself.
 
+The planning shows the hours from 06:00 to 20:00. If the days shown contain something earlier or later, such as a vessel arriving at night or an on-call duty, it adds those hours, in grey; if it runs past midnight, the whole day.
+
 ## Absences
 
 **Add absence** records leave, sick leave, training or another absence, for a user, from one day up to and including another. It appears at the top of that user's column. Click it and choose **Edit absence** to change or delete it; a deleted absence goes to the recycle bin.

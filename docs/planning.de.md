@@ -30,6 +30,8 @@ Sie können den Zeitpunkt auch in der Akte selbst eintragen: **Geplant am** und 
 
 Jede Akte steht in der Zeit ihrer Niederlassung, wie in der Akte selbst.
 
+Die Planung zeigt die Stunden von 06:00 bis 20:00. Enthalten die gezeigten Tage etwas Früheres oder Späteres, etwa ein Schiff, das nachts einläuft, oder einen Bereitschaftsdienst, zeigt sie diese Stunden dazu, in Grau; läuft es über Mitternacht, den ganzen Tag.
+
 ## Abwesenheiten
 
 **Abwesenheit hinzufügen** erfasst Urlaub, Krankheit, Schulung oder eine andere Abwesenheit, für einen Benutzer, von einem Tag bis einschließlich einem Tag. Sie steht oben in der Spalte dieses Benutzers. Klicken Sie darauf und wählen Sie **Abwesenheit bearbeiten**, um sie zu ändern oder zu löschen; eine gelöschte Abwesenheit steht im Papierkorb.

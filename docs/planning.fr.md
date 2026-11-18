@@ -30,6 +30,8 @@ Vous pouvez aussi saisir l'horaire sur la fiche du dossier : **Prévu le** et **
 
 Chaque dossier figure à l'heure de son établissement, comme sur la fiche.
 
+Le planning affiche les heures de 06:00 à 20:00. Si les jours affichés contiennent quelque chose de plus tôt ou de plus tard, comme un navire qui arrive la nuit ou une garde, il ajoute ces heures, en gris ; si cela passe minuit, toute la journée.
+
 ## Absences
 
 **Ajouter une absence** enregistre un congé, une maladie, une formation ou une autre absence, pour un utilisateur, d'un jour jusqu'à un jour inclus. Elle figure en haut de la colonne de cet utilisateur. Cliquez dessus et choisissez **Modifier l'absence** pour la modifier ou la supprimer ; une absence supprimée se trouve dans la corbeille.

@@ -161,6 +161,7 @@ def om(dagen, uur=8, minuut=0):
 
 
 # ── Dossiers. (sleutel, vestiging, nummer, soort, schip, opdrachtgever, haven, terminal, status, dagen t.o.v. vandaag, velden, omschrijving) ──
+# 18/11/2026: elk dossier hier krijgt een surveyor en een tijdstip; dan is de status minstens 'gepland' (dezelfde regel als de app: Planregels.StatusNaPlanning).
 DOSSIERS = [
     ('3', HQ, 'HQ-2026-0003', 'damage', 1, 2, 'BEANR', 'Kaai 730', 'in_uitvoering', -1,
      {'datum_schade': (VANDAAG - dt.timedelta(days=3)).isoformat(), 'oorzaak': 'Contact with grab during discharge', 'geraamde_kost': '18500', 'lading': 'Steel coils'},
@@ -171,7 +172,7 @@ DOSSIERS = [
      {'bunker_hfo': '187.0', 'bunker_mgo': '31.6', 'weer': 'Clear, wind W 3'}, 'Redelivery from time charter'),
     ('6', HQ, 'HQ-2026-0004', 'draft', 3, 'scheldemond', 'NLRTM', 'EMO terminal', 'gepland', 1,
      {'lading': 'Coal', 'soort_meting': 'initieel', 'densiteit': '1.025'}, None),
-    ('7', HQ, 'HQ-2026-0005', 'hatch_cover', 4, 1, 'BEGNE', 'Kluizendok', 'nieuw', 3, {'methode': 'ultrasoon', 'aantal_luiken': '4'}, None),
+    ('7', HQ, 'HQ-2026-0005', 'hatch_cover', 4, 1, 'BEGNE', 'Kluizendok', 'gepland', 3, {'methode': 'ultrasoon', 'aantal_luiken': '4'}, None),
     # 14/11/2026: vandaag in uitvoering (was gepland over twee dagen), zodat de checklist met een staat per punt en de aanbevelingen ingevuld kunnen zijn.
     ('8', HQ, 'HQ-2026-0006', 'condition', 5, 3, 'FRDKK', None, 'in_uitvoering', 0, {'doel': 'P&I', 'weer': None}, 'P&I condition survey before entry'),
     ('9', HQ, 'HQ-2026-0007', 'bunker', 'pioneer', 'scheldemond', 'BEANR', 'Kaai 526', 'afgesloten', -12,
