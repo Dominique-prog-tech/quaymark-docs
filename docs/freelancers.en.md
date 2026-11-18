@@ -48,7 +48,7 @@ Click **Issue statement** and confirm. The statement gets a number and a PDF wit
 
 If something is missing (the agreement, the details, an hourly rate), the screen says what, and the button stays disabled.
 
-The issued statements are listed below, with their **PDF**. The freelancer sees the same PDF on My work.
+The issued statements are listed below, with the total excluding and including VAT, who issued them and their **PDF**. You can search, sort and export them. The freelancer sees the same PDF on My work.
 
 ## On the file
 

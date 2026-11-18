@@ -48,7 +48,7 @@ Cliquez sur **Émettre le décompte** et confirmez. Le décompte reçoit un num�
 
 S'il manque quelque chose (l'accord, les données, un tarif horaire), l'écran le dit et le bouton reste désactivé.
 
-Les décomptes émis figurent en dessous, avec leur **PDF**. Le freelance voit le même PDF dans Mon travail.
+Les décomptes émis figurent en dessous dans une liste, avec le total hors TVA et TVA comprise, qui les a émis et leur **PDF**. Vous pouvez y rechercher, trier et exporter. Le freelance voit le même PDF dans Mon travail.
 
 ## Sur le dossier
 

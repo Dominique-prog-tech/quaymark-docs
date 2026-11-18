@@ -48,7 +48,7 @@ Klicken Sie auf **Abrechnung ausstellen** und bestätigen Sie. Die Abrechnung er
 
 Fehlt etwas (die Vereinbarung, die Daten, ein Stundensatz), sagt die Seite was, und die Schaltfläche bleibt aus.
 
-Darunter stehen die ausgestellten Abrechnungen mit ihrem **PDF**. Der Freiberufler sieht dasselbe PDF unter Meine Arbeit.
+Darunter stehen die ausgestellten Abrechnungen in einer Liste, mit der Summe netto und brutto, wer sie ausgestellt hat und ihrem **PDF**. Sie können darin suchen, sortieren und exportieren. Der Freiberufler sieht dasselbe PDF unter Meine Arbeit.
 
 ## In der Akte
 

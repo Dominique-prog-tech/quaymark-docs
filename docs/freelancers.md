@@ -48,7 +48,7 @@ Klik op **Afrekening uitgeven** en bevestig. De afrekening krijgt een nummer en 
 
 Ontbreekt er iets (het akkoord, de gegevens, een uurtarief), dan zegt het scherm wat, en blijft de knop uit.
 
-De uitgegeven afrekeningen staan eronder, met hun **PDF**. De freelancer ziet dezelfde PDF op Mijn werk.
+De uitgegeven afrekeningen staan eronder in een lijst, met het totaal zonder en met btw, wie ze uitgaf en hun **PDF**. U kunt er zoeken, sorteren en exporteren. De freelancer ziet dezelfde PDF op Mijn werk.
 
 ## Op het dossier
 
