@@ -8,7 +8,7 @@ Les choix d'une constatation et le statut opérationnel d'un dossier, pour votre
 
 ## Ouvrir l'écran
 
-En bas du menu, cliquez sur **Administration**, puis sur la tuile **Catégories et emplacements**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Catégories et lieux**.
 
 ## Champs et fonctions
 
