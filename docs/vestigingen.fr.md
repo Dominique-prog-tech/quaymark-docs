@@ -12,9 +12,9 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Sites**.
 
 ## Champs et fonctions
 
-- Le **code** (2 à 10 lettres ou chiffres) figure en tête de chaque numéro de dossier, par exemple ANR-2026-0001. La numérotation suit le site et l'année. Le code est fixé dès que des dossiers existent pour le site.
+- Le **code** (2 à 10 lettres ou chiffres) figure en tête de chaque numéro de dossier, par exemple ANR-2026-0001. La numérotation suit le site et l'année. Le code est fixé dès que des dossiers existent pour le site ; dans la fenêtre, le champ est alors désactivé.
 - Le **fuseau horaire** détermine dans quelle heure une expertise planifiée est affichée et saisie. Un bureau à Dunkerque planifie à l'heure française, même si le dossier est planifié à Anvers.
-- Double-cliquez sur une ligne pour la modifier ; **Nouveau site** en ajoute un. Un site qui n'est plus utilisé passe en **non actif**.
+- Double-cliquez sur une ligne pour la modifier ; **Nouveau site** en ajoute un. Un site qui n'est plus utilisé passe en **non actif** : il n'est alors plus sélectionnable pour un nouveau dossier, une offre ou une facture. Le dernier site actif ne peut pas être désactivé.
 
 ![La liste Sites avec le bouton Nouveau site](images/vestigingen-fr.png "Les sites")
 
