@@ -14,6 +14,8 @@ At the bottom of the menu, click **Administration**, then the **Standard folders
 
 - On the left the folders **for files**, on the right those **for vessels**. A folder has a name in the four languages.
 - **Drag** a folder to change the order or to put it inside another folder.
+- Two folders with the same name in the same place are not possible: a new file or vessel would only get one.
+- You can only **delete** a folder once it has no subfolders; existing files and vessels keep their folder.
 - A new file or vessel gets these folders at once, however it is created: on its record, from a request or a quote, or a vessel from a file.
 - Existing files and vessels do not change. Add the folders there with **Insert standard folders** on the Documents tab; folders that are already there are not duplicated.
 

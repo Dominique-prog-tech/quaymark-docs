@@ -14,6 +14,8 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Répertoires
 
 - À gauche les répertoires **pour les dossiers**, à droite ceux **pour les navires**. Un répertoire a un nom dans les quatre langues.
 - **Faites glisser** un répertoire pour changer l'ordre ou le placer dans un autre répertoire.
+- Deux répertoires du même nom au même endroit ne sont pas possibles : un nouveau dossier ou navire n'en recevrait qu'un.
+- Vous ne pouvez **supprimer** un répertoire que s'il n'a plus de sous-répertoires ; les dossiers et navires existants conservent leur répertoire.
 - Un nouveau dossier ou navire reçoit ces répertoires aussitôt, quelle que soit la façon dont il est créé : sur sa fiche, depuis une demande ou une offre, ou un navire depuis un dossier.
 - Les dossiers et navires existants ne changent pas. Ajoutez-y les répertoires avec **Insérer les répertoires standard** dans l'onglet Documents ; les répertoires déjà présents ne sont pas dédoublés.
 
