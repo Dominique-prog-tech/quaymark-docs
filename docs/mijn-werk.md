@@ -26,7 +26,7 @@ Klik op **Kost toevoegen** voor een kost die u zelf betaalde (een reis, een park
 - **Datum**, **Soort**, **Omschrijving** en **Bedrag**.
 - **Bonnetje**: een foto of PDF, hoogstens 15 MB. Het komt bij de bijlagen van het dossier, zodat het bureau het ziet.
 
-Een kost die nog niet afgerekend of gefactureerd is, kunt u verwijderen. Daarna ligt hij vast.
+Een kost die nog niet afgerekend of gefactureerd is, kunt u verwijderen met **⋯** achteraan de rij. Daarna ligt hij vast. Elke lijst heeft een zoekvak, en met **Exporteren** neemt u ze mee naar Excel.
 
 Heeft het bureau uw fiche nog niet aangemaakt, dan zegt de pagina dat. U kunt al kosten ingeven; afrekenen kan pas met een fiche.
 

@@ -26,7 +26,7 @@ Cliquez sur **Ajouter un frais** pour un frais que vous avez payé vous-même (u
 - **Date**, **Type**, **Description** et **Montant**.
 - **Ticket** : une photo ou un PDF, 15 Mo au plus. Il rejoint les pièces jointes du dossier, pour que le bureau le voie.
 
-Un frais qui n'est pas encore réglé ni facturé peut être supprimé. Ensuite, il est figé.
+Un frais qui n'est pas encore réglé ni facturé peut être supprimé avec **⋯** en fin de ligne. Ensuite, il est figé. Chaque liste a un champ de recherche, et **Exporter** l'emporte vers Excel.
 
 Si le bureau n'a pas encore créé votre fiche de freelance, la page vous le dit. Vous pouvez déjà saisir des frais ; le décompte n'est possible qu'avec une fiche.
 

@@ -26,7 +26,7 @@ Click **Add expense** for an expense you paid yourself (travel, parking, an over
 - **Date**, **Kind**, **Description** and **Amount**.
 - **Receipt**: a photo or PDF, at most 15 MB. It is added to the attachments of the file, so the company sees it.
 
-You can delete an expense that has not yet been settled or invoiced. After that it is fixed.
+You can delete an expense that has not yet been settled or invoiced with **⋯** at the end of the row. After that it is fixed. Each list has a search box, and **Export** takes it to Excel.
 
 If the company has not yet created your freelancer record, the page tells you. You can already enter expenses; settling is only possible with a record.
 

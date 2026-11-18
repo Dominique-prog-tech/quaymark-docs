@@ -26,7 +26,7 @@ Klicken Sie auf **Kosten hinzufügen** für Kosten, die Sie selbst bezahlt haben
 - **Datum**, **Art**, **Beschreibung** und **Betrag**.
 - **Beleg**: ein Foto oder PDF, höchstens 15 MB. Es kommt zu den Anhängen der Akte, damit das Büro es sieht.
 
-Kosten, die noch nicht abgerechnet oder fakturiert sind, können Sie löschen. Danach stehen sie fest.
+Kosten, die noch nicht abgerechnet oder fakturiert sind, können Sie mit **⋯** am Zeilenende löschen. Danach stehen sie fest. Jede Liste hat ein Suchfeld, und mit **Exportieren** nehmen Sie sie nach Excel mit.
 
 Hat das Büro Ihr Freiberufler-Datenblatt noch nicht angelegt, sagt die Seite das. Sie können bereits Kosten erfassen; abrechnen geht erst mit einem Datenblatt.
 
