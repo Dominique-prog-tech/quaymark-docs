@@ -44,7 +44,7 @@ A principal can follow their own files in the principal portal. To allow this, y
 
 What the contact person sees in the portal:
 
-- **My files**: the files in which this relation is the principal, with survey type, vessel, port, their own reference, the status and when the work is scheduled. Not a file in the recycle bin.
+- **My files**: the files in which this relation is the principal, with survey type, vessel, port (by name, as in the list of ports), their own reference, the status and when the work is scheduled. Not a file in the recycle bin. From 10 files on, a search field appears above them: by number, vessel, port or their own reference.
 - For each file, the **issued** report versions and the issued letters and certificates, as PDF. Never a preview or a draft. Every file is first checked against its fingerprint.
 - **New assignment**: submit an assignment, with attachments. It reaches the office as a request and appears under **My requests** until the office decides. → [Requests](aanvragen.md)
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF. Not a draft. The portal does not show whether an invoice has been paid.

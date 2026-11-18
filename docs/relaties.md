@@ -44,7 +44,7 @@ Een opdrachtgever kan zijn dossiers zelf volgen in het opdrachtgeversportaal. U 
 
 Wat de contactpersoon in het portaal ziet:
 
-- **Mijn dossiers**: de dossiers waarin deze relatie opdrachtgever is, met soort survey, schip, haven, de eigen referentie, de status en wanneer het werk gepland is. Een dossier in de prullenbak niet.
+- **Mijn dossiers**: de dossiers waarin deze relatie opdrachtgever is, met soort survey, schip, haven (bij naam, zoals in de lijst van havens), de eigen referentie, de status en wanneer het werk gepland is. Een dossier in de prullenbak niet. Vanaf 10 dossiers staat er een zoekveld boven: op nummer, schip, haven of de eigen referentie.
 - Per dossier de **uitgegeven** rapportversies en de uitgegeven brieven en certificaten, als PDF. Een voorbeeld of een klad nooit. Elk bestand wordt eerst nagerekend tegen zijn vingerafdruk.
 - **Nieuwe opdracht**: een opdracht indienen, met bijlagen. Ze komt als aanvraag bij het bureau en staat onder **Mijn aanvragen** tot het bureau beslist. → [Aanvragen](aanvragen.md)
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF. Een klad niet. Of een factuur betaald is, toont het portaal niet.
