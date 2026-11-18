@@ -22,6 +22,7 @@ Klik in het menu op **Analyses**. Daarvoor is het recht om analyses te bekijken 
 
 - Elke vaststelling telt één keer. Is een vaststelling rechtgezet, dan telt enkel de laatste versie, met haar ernst.
 - Afgesloten dossiers tellen mee; dossiers in de prullenbak niet.
+- Een geannuleerd dossier telt niet mee. Een nieuw of gepland dossier telt pas mee als het vaststellingen heeft: zonder is er nog niets geïnspecteerd, en dat is geen dossier zonder schade. Een dossier in uitvoering, in rapportage of afgesloten telt altijd mee, ook zonder vaststellingen.
 - Bij groeperen op categorie of plaats telt een dossier in elke groep waarin het een vaststelling heeft. Bij de andere groeperingen staat elk dossier in één groep, ook een dossier zonder vaststellingen.
 
 ## Kerncijfers en grafieken
@@ -32,7 +33,7 @@ De grafiek **Vaststellingen per …** toont per groep het aantal vaststellingen,
 
 ## De tabel
 
-De tabel toont elke groep met het aantal dossiers en vaststellingen per ernst. Klik op een rij: onder de tabel verschijnen de dossiers van die groep, met een link naar elk dossier. Exporteer de tabel naar Excel met de knop boven de tabel.
+De tabel toont elke groep met het aantal dossiers en vaststellingen per ernst. Dubbelklik op een rij: onder de tabel verschijnen de dossiers van die groep, met een link naar elk dossier. Exporteer de tabel naar Excel met de knop boven de tabel.
 
 ## Vraag het in gewone taal
 

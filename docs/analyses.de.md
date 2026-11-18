@@ -22,6 +22,7 @@ Klicken Sie im Menü auf **Analysen**. Dafür ist das Recht nötig, Analysen anz
 
 - Jede Feststellung zählt einmal. Wurde eine Feststellung berichtigt, zählt nur die letzte Fassung, mit ihrem Schweregrad.
 - Abgeschlossene Akten zählen; Akten im Papierkorb nicht.
+- Eine stornierte Akte zählt nicht. Eine neue oder geplante Akte zählt erst, wenn sie Feststellungen hat: ohne sie wurde noch nichts besichtigt, und das ist keine Akte ohne Schaden. Eine Akte in Bearbeitung, in Berichterstellung oder abgeschlossen zählt immer, auch ohne Feststellungen.
 - Beim Gruppieren nach Kategorie oder Ort zählt eine Akte in jeder Gruppe, in der sie eine Feststellung hat. Bei den anderen Gruppierungen steht jede Akte in einer Gruppe, auch eine Akte ohne Feststellungen.
 
 ## Kennzahlen und Grafiken
@@ -32,7 +33,7 @@ Die Grafik **Feststellungen nach …** zeigt pro Gruppe die Zahl der Feststellun
 
 ## Die Tabelle
 
-Die Tabelle zeigt jede Gruppe mit der Zahl der Akten und Feststellungen pro Schweregrad. Klicken Sie auf eine Zeile: unter der Tabelle erscheinen die Akten dieser Gruppe, mit einem Link zu jeder Akte. Exportieren Sie die Tabelle mit der Schaltfläche über der Tabelle nach Excel.
+Die Tabelle zeigt jede Gruppe mit der Zahl der Akten und Feststellungen pro Schweregrad. Doppelklicken Sie auf eine Zeile: unter der Tabelle erscheinen die Akten dieser Gruppe, mit einem Link zu jeder Akte. Exportieren Sie die Tabelle mit der Schaltfläche über der Tabelle nach Excel.
 
 ## Fragen Sie in einfachen Worten
 

@@ -22,6 +22,7 @@ Click **Analyses** in the menu. This needs the right to view analyses; the User 
 
 - Each finding counts once. If a finding was corrected, only the latest version counts, with its severity.
 - Closed files count; files in the recycle bin do not.
+- A cancelled file does not count. A new or scheduled file only counts once it has findings: without them nothing has been inspected yet, and that is not a file without damage. A file in progress, in reporting or closed always counts, even without findings.
 - When grouping by category or location, a file counts in every group where it has a finding. For the other groupings, each file is in one group, even a file without findings.
 
 ## Key figures and charts
@@ -32,7 +33,7 @@ The **Findings by …** chart shows the number of findings per group, stacked by
 
 ## The table
 
-The table shows each group with the number of files and findings per severity. Click a row: the files in that group appear below the table, with a link to each file. Export the table to Excel with the button above the table.
+The table shows each group with the number of files and findings per severity. Double-click a row: the files in that group appear below the table, with a link to each file. Export the table to Excel with the button above the table.
 
 ## Ask in plain language
 

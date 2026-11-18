@@ -22,6 +22,7 @@ Cliquez dans le menu sur **Analyses**. Il faut pour cela le droit de voir les an
 
 - Chaque constatation compte une fois. Si une constatation a été rectifiée, seule la dernière version compte, avec sa gravité.
 - Les dossiers clôturés comptent ; les dossiers dans la corbeille non.
+- Un dossier annulé ne compte pas. Un dossier nouveau ou planifié ne compte que s'il a des constatations : sans elles, rien n'a encore été inspecté, et ce n'est pas un dossier sans dommage. Un dossier en cours, en rapport ou clôturé compte toujours, même sans constatations.
 - En regroupant par catégorie ou emplacement, un dossier compte dans chaque groupe où il a une constatation. Pour les autres regroupements, chaque dossier figure dans un seul groupe, même un dossier sans constatation.
 
 ## Chiffres clés et graphiques
@@ -32,7 +33,7 @@ Le graphique **Constatations par …** montre par groupe le nombre de constatati
 
 ## Le tableau
 
-Le tableau montre chaque groupe avec le nombre de dossiers et de constatations par gravité. Cliquez sur une ligne : les dossiers de ce groupe apparaissent sous le tableau, avec un lien vers chaque dossier. Exportez le tableau vers Excel avec le bouton au-dessus du tableau.
+Le tableau montre chaque groupe avec le nombre de dossiers et de constatations par gravité. Double-cliquez sur une ligne : les dossiers de ce groupe apparaissent sous le tableau, avec un lien vers chaque dossier. Exportez le tableau vers Excel avec le bouton au-dessus du tableau.
 
 ## Demandez en langage courant
 
