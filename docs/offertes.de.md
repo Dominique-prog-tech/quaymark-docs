@@ -8,7 +8,7 @@ Ein Angebot an einen Auftraggeber, in dessen Sprache. Angenommen wird es zur Akt
 
 ## Bildschirm öffnen
 
-Klicken Sie im Menü links auf **Angebote**. Sie sehen die Angebote mit Nummer, Auftraggeber, Gültigkeit, Summe und Status: Entwurf, gesendet, angenommen, abgelehnt oder abgelaufen. Der Status erscheint als farbiges Etikett, wie im Angebot selbst und im Auftraggeberportal: grün angenommen, rot abgelehnt, blau gesendet, grau Entwurf oder abgelaufen. Ansehen erfordert das Recht, Rechnungen anzusehen; erstellen, senden und entscheiden das Recht, Rechnungen zu bearbeiten.
+Klicken Sie im Menü links auf **Angebote**. Sie sehen die Angebote mit Nummer, Auftraggeber, Besichtigungsart, Schiff, Gültigkeit, Summe und Status, und bei einem angenommenen Angebot die Akte, die daraus entstand. Der Status ist Entwurf, gesendet, angenommen, abgelehnt oder abgelaufen. Der Status erscheint als farbiges Etikett, wie im Angebot selbst und im Auftraggeberportal: grün angenommen, rot abgelehnt, blau gesendet, grau Entwurf oder abgelaufen. Ansehen erfordert das Recht, Rechnungen anzusehen; erstellen, senden und entscheiden das Recht, Rechnungen zu bearbeiten.
 
 ## Angebot
 

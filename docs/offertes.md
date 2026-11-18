@@ -8,7 +8,7 @@ Een offerte aan een opdrachtgever, in de taal van de opdrachtgever. Aanvaard wor
 
 ## Het scherm openen
 
-Klik in het menu links op **Offertes**. U ziet de offertes met hun nummer, opdrachtgever, geldigheid, totaal en status: klad, verstuurd, aanvaard, geweigerd of verlopen. De status staat als gekleurd label, zoals op de offerte zelf en in het opdrachtgeversportaal: groen aanvaard, rood geweigerd, blauw verstuurd, grijs klad of verlopen. Bekijken kan met het recht om facturen te bekijken; opstellen, versturen en beslissen met het recht om facturen te bewerken.
+Klik in het menu links op **Offertes**. U ziet de offertes met hun nummer, opdrachtgever, soort survey, schip, geldigheid, totaal en status, en bij een aanvaarde offerte het dossier dat eruit ontstond. De status is klad, verstuurd, aanvaard, geweigerd of verlopen. De status staat als gekleurd label, zoals op de offerte zelf en in het opdrachtgeversportaal: groen aanvaard, rood geweigerd, blauw verstuurd, grijs klad of verlopen. Bekijken kan met het recht om facturen te bekijken; opstellen, versturen en beslissen met het recht om facturen te bewerken.
 
 ## Offerte
 

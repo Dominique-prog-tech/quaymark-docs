@@ -8,7 +8,7 @@ Une offre à un donneur d'ordre, dans la langue de celui-ci. Acceptée, elle dev
 
 ## Ouvrir l'écran
 
-Cliquez sur **Offres** dans le menu de gauche. Vous voyez les offres avec leur numéro, donneur d'ordre, validité, total et statut : brouillon, envoyée, acceptée, refusée ou expirée. Le statut apparaît sous forme d'étiquette colorée, comme sur l'offre elle-même et dans le portail des donneurs d'ordre : vert acceptée, rouge refusée, bleu envoyée, gris brouillon ou expirée. La consultation demande le droit de consulter les factures ; rédiger, envoyer et décider, le droit de modifier les factures.
+Cliquez sur **Offres** dans le menu de gauche. Vous voyez les offres avec leur numéro, donneur d'ordre, type d'expertise, navire, validité, total et statut, et pour une offre acceptée le dossier qui en est issu. Le statut est brouillon, envoyée, acceptée, refusée ou expirée. Le statut apparaît sous forme d'étiquette colorée, comme sur l'offre elle-même et dans le portail des donneurs d'ordre : vert acceptée, rouge refusée, bleu envoyée, gris brouillon ou expirée. La consultation demande le droit de consulter les factures ; rédiger, envoyer et décider, le droit de modifier les factures.
 
 ## Offre
 
