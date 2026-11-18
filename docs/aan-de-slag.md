@@ -24,7 +24,7 @@ Het **Dashboard** is de startpagina van uw bureau: het eerste item in het menu.
 
 Meld u aan met uw **gebruikersnaam of e-mailadres** en uw wachtwoord.
 
-- Wachtwoord kwijt of nog geen wachtwoord? Uw beheerder bezorgt u een **herstel-link**.
+- Wachtwoord kwijt? Klik op **Wachtwoord vergeten?** en vul het e-mailadres van uw account in: u krijgt een mail met een link om een nieuw wachtwoord te kiezen. De link is 1 uur geldig. Nog geen wachtwoord? Uw beheerder bezorgt u een **herstel-link**.
 - U kiest hier ook de **taal** van het scherm.
 - Staat tweestapsverificatie aan, dan vraagt het volgende scherm een code uit uw app.
 - Hebt u een passkey, kies dan **Aanmelden met een passkey**: uw toestel vraagt uw vingerafdruk, gezicht of pincode, zonder wachtwoord en code.
@@ -76,11 +76,11 @@ Hier kiest u een nieuw wachtwoord voor uw account.
 
 ## Wachtwoord instellen
 
-U kwam hier via de **herstel-link** die uw beheerder voor u maakte.
+U kwam hier via de link uit de mail van **Wachtwoord vergeten?**, of via de **herstel-link** die uw beheerder voor u maakte.
 
 - Kies een **nieuw wachtwoord** en vul het ter bevestiging een tweede keer in.
 - Daarna meldt u zich aan met dat wachtwoord.
-- Werkt de link niet meer? Hij is maar een beperkte tijd geldig: vraag uw beheerder een nieuwe.
+- Werkt de link niet meer? Hij is maar een beperkte tijd geldig: vraag een nieuwe aan met **Nieuwe link aanvragen**, of aan uw beheerder.
 
 ## Proefversie
 

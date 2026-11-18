@@ -24,7 +24,7 @@ Le **Tableau de bord** est la page d'accueil de votre bureau : le premier élém
 
 Connectez-vous avec votre **nom d'utilisateur ou adresse e-mail** et votre mot de passe.
 
-- Mot de passe perdu ou pas encore de mot de passe ? Votre administrateur vous fournit un **lien de réinitialisation**.
+- Mot de passe perdu ? Cliquez sur **Mot de passe oublié ?** et saisissez l'adresse e-mail de votre compte : vous recevez un e-mail avec un lien pour choisir un nouveau mot de passe. Le lien est valable 1 heure. Pas encore de mot de passe ? Votre administrateur vous fournit un **lien de réinitialisation**.
 - Vous choisissez ici aussi la **langue** de l'écran.
 - Si la double authentification est activée, l'écran suivant demande un code de votre application.
 - Si vous avez une clé d'accès, choisissez **Se connecter avec une clé d'accès** : votre appareil demande votre empreinte digitale, votre visage ou votre code PIN, sans mot de passe ni code.
@@ -76,11 +76,11 @@ Ici, vous choisissez un nouveau mot de passe pour votre compte.
 
 ## Définir le mot de passe
 
-Vous êtes arrivé ici via le **lien de réinitialisation** que votre administrateur a créé pour vous.
+Vous êtes arrivé ici via le lien de l'e-mail de **Mot de passe oublié ?**, ou via le **lien de réinitialisation** que votre administrateur a créé pour vous.
 
 - Choisissez un **nouveau mot de passe** et saisissez-le une seconde fois pour confirmer.
 - Connectez-vous ensuite avec ce mot de passe.
-- Le lien ne fonctionne plus ? Il n'est valable qu'un temps limité : demandez-en un nouveau à votre administrateur.
+- Le lien ne fonctionne plus ? Il n'est valable qu'un temps limité : demandez-en un nouveau avec **Demander un nouveau lien**, ou à votre administrateur.
 
 ## Version d'essai
 

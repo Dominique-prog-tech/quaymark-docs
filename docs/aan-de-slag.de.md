@@ -24,7 +24,7 @@ Die **Übersicht** ist die Startseite Ihres Büros: der erste Eintrag im Menü.
 
 Melden Sie sich mit Ihrem **Benutzernamen oder Ihrer E-Mail-Adresse** und Ihrem Passwort an.
 
-- Passwort vergessen oder noch keines? Ihr Administrator gibt Ihnen einen **Link zum Zurücksetzen**.
+- Passwort vergessen? Klicken Sie auf **Passwort vergessen?** und geben Sie die E-Mail-Adresse Ihres Kontos ein: Sie erhalten eine E-Mail mit einem Link, um ein neues Passwort zu wählen. Der Link gilt 1 Stunde. Noch kein Passwort? Ihr Administrator gibt Ihnen einen **Link zum Zurücksetzen**.
 - Hier wählen Sie auch die **Sprache** des Bildschirms.
 - Ist die Zwei-Faktor-Authentifizierung aktiv, fragt der nächste Bildschirm nach einem Code aus Ihrer App.
 - Haben Sie einen Passkey, wählen Sie **Mit einem Passkey anmelden**: Ihr Gerät fragt nach Fingerabdruck, Gesicht oder PIN, ohne Passwort und Code.
@@ -76,11 +76,11 @@ Hier wählen Sie ein neues Passwort für Ihr Konto.
 
 ## Passwort festlegen
 
-Sie sind über den **Link zum Zurücksetzen** hierhergekommen, den Ihr Administrator für Sie erstellt hat.
+Sie sind über den Link aus der E-Mail von **Passwort vergessen?** hierhergekommen, oder über den **Link zum Zurücksetzen**, den Ihr Administrator für Sie erstellt hat.
 
 - Wählen Sie ein **neues Passwort** und geben Sie es zur Bestätigung ein zweites Mal ein.
 - Danach melden Sie sich mit diesem Passwort an.
-- Der Link funktioniert nicht mehr? Er gilt nur eine begrenzte Zeit: bitten Sie Ihren Administrator um einen neuen.
+- Der Link funktioniert nicht mehr? Er gilt nur eine begrenzte Zeit: fordern Sie mit **Neuen Link anfordern** einen neuen an, oder bitten Sie Ihren Administrator darum.
 
 ## Testversion
 

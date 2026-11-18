@@ -24,7 +24,7 @@ The **Dashboard** is the home page of your office: the first item in the menu.
 
 Sign in with your **user name or email address** and your password.
 
-- Lost your password or do not have one yet? Your administrator gives you a **reset link**.
+- Lost your password? Click **Forgot your password?** and enter the email address of your account: you receive an email with a link to choose a new password. The link is valid for 1 hour. No password yet? Your administrator gives you a **reset link**.
 - You also choose the screen **language** here.
 - If two-factor authentication is on, the next screen asks for a code from your app.
 - If you have a passkey, choose **Sign in with a passkey**: your device asks for your fingerprint, face or PIN, without password and code.
@@ -76,11 +76,11 @@ Here you choose a new password for your account.
 
 ## Set your password
 
-You arrived here through the **reset link** your administrator created for you.
+You arrived here through the link in the **Forgot your password?** email, or through the **reset link** your administrator created for you.
 
 - Choose a **new password** and enter it a second time to confirm.
 - Then sign in with that password.
-- The link no longer works? It is only valid for a limited time: ask your administrator for a new one.
+- The link no longer works? It is only valid for a limited time: request a new one with **Request a new link**, or ask your administrator.
 
 ## Trial version
 
