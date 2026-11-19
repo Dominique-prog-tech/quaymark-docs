@@ -87,7 +87,7 @@ Sie sind über den Link aus der E-Mail von **Passwort vergessen?** hierhergekomm
 Haben Sie auf quaymark.eu eine Testversion angefordert, erhalten Sie eine eigene Umgebung auf den Namen Ihres Büros, gefüllt mit erfundenen Beispieldaten: Beziehungen, Schiffe und Akten mit Feststellungen und Fotos.
 
 - Sie melden sich mit den Daten aus der **Willkommens-E-Mail** an und wählen sofort ein eigenes Passwort.
-- Bei Ihrer ersten Anmeldung werden Sie der **Surveyor** der Beispielakten: Sie sehen sie in Ihrer Planung, bei den Fristen und in der Außendienst-App.
+- Bei Ihrer ersten Anmeldung werden Sie der **Sachverständige** der Beispielakten: Sie sehen sie in Ihrer Planung, bei den Fristen und in der Außendienst-App.
 - Oben steht, bis wann die Testversion läuft.
 - Auf der **Übersicht** hilft Ihnen das Feld **Erste Schritte** beim Einstieg: Ihre Firmendaten, Ihre erste eigene Akte und Ihr erster Bericht. Ein Schritt hakt sich selbst ab, sobald Sie ihn erledigt haben. Ist alles erledigt oder klicken Sie auf **Ausblenden**, verschwindet das Feld.
 - In einer Testversion **geht nichts nach außen**: keine E-Mail, kein Peppol, keine Signatur und keine Einladung zum Auftraggeberportal. Vorbereiten und ansehen können Sie alles, auch die Berichte als PDF.

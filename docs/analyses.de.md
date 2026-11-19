@@ -42,7 +42,7 @@ Oben rechts steht die Schaltfläche **Fragen Sie Ihre Daten** (ein Balkensymbol)
 Der Assistent beantwortet vier Arten von Fragen:
 
 - **Schäden gruppiert**: Feststellungen pro Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Auftraggeber, Kategorie oder Ort, pro Schweregrad. Dieselben Zahlen wie diese Seite.
-- **Akten**: eine Liste oder eine Zählung, nach Status, Auftraggeber, Schiff, Hafen, Besichtiger, Besichtigungsart, Niederlassung und Zeitraum.
+- **Akten**: eine Liste oder eine Zählung, nach Status, Auftraggeber, Schiff, Hafen, Sachverständigen, Besichtigungsart, Niederlassung und Zeitraum.
 - **Durchlaufzeit bis zum Bericht**: die Tage vom Auftrag bis zum ersten herausgegebenen Bericht, als Durchschnitt, Median, kürzeste und längste.
 - **Fakturierung**: fakturiert pro Auftraggeber oder pro Monat (netto, Gutschriften abgezogen) oder die offenen und überfälligen Rechnungen.
 
@@ -50,7 +50,7 @@ Gut zu wissen:
 
 - Das Sprachmodell wählt nur die Frage und die Filter; Quaymark rechnet selbst. **Ihre Daten gehen nicht an das Sprachmodell**, nur Ihre Frage.
 - Sie erhalten nur Fragen zu dem, was Sie sehen dürfen: die Fakturierung nur mit dem Recht, Rechnungen anzusehen.
-- Findet ein Name nichts, sagt die Tabelle das. Passt ein Name zu mehr als einem Auftraggeber, Schiff oder Besichtiger, zeigt die Tabelle die Kandidaten: Fragen Sie dann genauer.
+- Findet ein Name nichts, sagt die Tabelle das. Passt ein Name zu mehr als einem Auftraggeber, Schiff oder Sachverständigen, zeigt die Tabelle die Kandidaten: Fragen Sie dann genauer.
 - Der Assistent funktioniert mit dem **eigenen KI-Schlüssel des Büros**. Fragen Sie ADM-Concept, wie Sie ihn einrichten.
 
 ## Fristen

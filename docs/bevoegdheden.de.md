@@ -1,10 +1,10 @@
 ---
-description: "Die Zertifikate und Qualifikationen der Besichtiger, mit Ablaufdatum, und welche eine Besichtigungsart verlangt."
+description: "Die Zertifikate und Qualifikationen der Sachverständigen, mit Ablaufdatum, und welche eine Besichtigungsart verlangt."
 ---
 
 # Qualifikationen
 
-Die Zertifikate und Qualifikationen der Besichtiger des Büros (zum Beispiel IIMS, ADR oder Gasfreiheitsbescheinigung), mit Ablaufdatum. Eine Besichtigungsart kann sie verlangen: Planung und Akte warnen dann, wenn der Besichtiger keine gültige hat.
+Die Zertifikate und Qualifikationen der Sachverständigen des Büros (zum Beispiel IIMS, ADR oder Gasfreiheitsbescheinigung), mit Ablaufdatum. Eine Besichtigungsart kann sie verlangen: Planung und Akte warnen dann, wenn der Sachverständige keine gültige hat.
 
 ## Bildschirm öffnen
 
@@ -14,14 +14,14 @@ Klicken Sie im Menü links auf **Qualifikationen**.
 
 ## Die Liste
 
-- Jede Zeile ist eine Qualifikation eines Besichtigers: die Art, die Nummer, das Ausstellungs- und das Ablaufdatum.
+- Jede Zeile ist eine Qualifikation eines Sachverständigen: die Art, die Nummer, das Ausstellungs- und das Ablaufdatum.
 - Der **Status** sagt, ob sie **gültig** ist, **bald abläuft** (innerhalb von 60 Tagen), **abgelaufen** oder **noch nicht gültig** ist (in der Zukunft ausgestellt). Ohne Ablaufdatum bleibt eine Qualifikation gültig. Hat der Sachverständige bereits eine neue gültige derselben Art, die länger läuft, steht die alte auf **ersetzt**.
 - Haken Sie **Nur was innerhalb von 60 Tagen abläuft oder abgelaufen ist** an, um nur zu sehen, was Aufmerksamkeit braucht.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 
 ## Hinzufügen und bearbeiten
 
-Nur der Administrator des Büros fügt Qualifikationen hinzu, bearbeitet oder löscht sie. **Qualifikation hinzufügen** fragt nach dem Besichtiger, der Art, der Nummer, dem Ausstellungsdatum, dem Ablaufdatum und einer Bemerkung. Ein Doppelklick auf eine Zeile öffnet sie; **Bearbeiten** und **Löschen** stehen auch unter **⋯** in der Zeile. Eine gelöschte Qualifikation geht in den Papierkorb; der Verlauf hält fest, wer was geändert hat.
+Nur der Administrator des Büros fügt Qualifikationen hinzu, bearbeitet oder löscht sie. **Qualifikation hinzufügen** fragt nach dem Sachverständigen, der Art, der Nummer, dem Ausstellungsdatum, dem Ablaufdatum und einer Bemerkung. Ein Doppelklick auf eine Zeile öffnet sie; **Bearbeiten** und **Löschen** stehen auch unter **⋯** in der Zeile. Eine gelöschte Qualifikation geht in den Papierkorb; der Verlauf hält fest, wer was geändert hat.
 
 ## Qualifikationsarten
 
@@ -29,9 +29,9 @@ Unter der Liste verwaltet der Administrator die **Arten** des Büros: einen Code
 
 ## Verlangt pro Besichtigungsart
 
-Auf dem Formular einer Besichtigungsart (siehe [Besichtigungsarten](soorten-survey.md)) wählen Sie die **erforderlichen Qualifikationen**. Hat der Besichtiger einer Akte am geplanten Tag (sonst heute) keine gültige, dann:
+Auf dem Formular einer Besichtigungsart (siehe [Besichtigungsarten](soorten-survey.md)) wählen Sie die **erforderlichen Qualifikationen**. Hat der Sachverständige einer Akte am geplanten Tag (sonst heute) keine gültige, dann:
 
-- zeigt das Formular der Akte eine Warnung unter dem Besichtiger;
+- zeigt das Formular der Akte eine Warnung unter dem Sachverständigen;
 - wird der Block in der [Planung](planning.md) rot, mit dem Grund.
 
 Quaymark verweigert nichts: Es warnt, wie bei einer Abwesenheit.

@@ -13,7 +13,7 @@ Klicken Sie im Menü links auf **Akten**.
 ## Die Liste
 
 - Der Filter **Status** in der Symbolleiste zeigt standardmäßig die **offenen** Akten; eine Statuskachel auf der Übersicht öffnet die Liste mit diesem Status. Wählen Sie **Alle**, um auch abgeschlossene und stornierte Akten zu sehen, oder einen einzelnen Status.
-- Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Besichtiger, Planung, Status und die gescannten Codes (die nicht als Spalte angezeigt werden) (eine Containernummer findet man auch mit Leerzeichen).
+- Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Sachverständiger, Planung, Status und die gescannten Codes (die nicht als Spalte angezeigt werden) (eine Containernummer findet man auch mit Leerzeichen).
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 - Die Spalte **Bericht bis** zeigt das Datum, bis zu dem der Bericht laut Rahmenvereinbarung vorliegen muss, mit dem Stand. → [Frist bis zum Bericht](#frist-bis-zum-bericht)
@@ -22,11 +22,11 @@ Klicken Sie im Menü links auf **Akten**.
 
 ## Akte
 
-Ein Auftrag: was verlangt wird, wo und wann, und was der Besichtiger vor Ort feststellt.
+Ein Auftrag: was verlangt wird, wo und wann, und was der Sachverständige vor Ort feststellt.
 
 ![Akte HQ-2026-0003 mit Allgemein, Auftrag, Ort und Planung, Umstände und Anwesende](images/dossier-de.png "Eine Akte")
 
-- **Auftrag**: Niederlassung, Besichtigungsart, Auftraggeber, Besichtiger, Referenz, Datum, Berichtssprache und nach dem ersten Speichern der Status. Eine neue Akte beginnt mit Neu; mit einem Besichtiger und einem geplanten Zeitpunkt wird sie von selbst Geplant, ohne diese wieder Neu, wie in der Planung. Die **Aktennummer** (Niederlassungscode, Jahr, laufende Nummer) wird beim ersten Speichern vergeben; danach steht die Niederlassung fest.
+- **Auftrag**: Niederlassung, Besichtigungsart, Auftraggeber, Sachverständiger, Referenz, Datum, Berichtssprache und nach dem ersten Speichern der Status. Eine neue Akte beginnt mit Neu; mit einem Sachverständigen und einem geplanten Zeitpunkt wird sie von selbst Geplant, ohne diese wieder Neu, wie in der Planung. Die **Aktennummer** (Niederlassungscode, Jahr, laufende Nummer) wird beim ersten Speichern vergeben; danach steht die Niederlassung fest.
 - **Ort und Planung**: Schiff, Hafen, Terminal oder Kai, der geplante Zeitpunkt (in der Zeitzone der Niederlassung), Währung und Beschreibung.
 - **Umstände und Anwesende**: Wetter, See, Sicht, Liegeplatz und wer bei der Besichtigung anwesend war. **Verknüpfte Akte** verweist auf eine frühere Akte desselben Schiffs, zum Beispiel On-hire zu Off-hire. Dieser Block erscheint nach dem ersten Speichern.
 - **Besichtigungsdaten**: die Felder der gewählten Besichtigungsart; der Block erscheint nur, wenn diese Art eigene Felder hat. Ein Pflichtfeld muss ab dem Status Berichterstellung ausgefüllt sein. Wählen Sie eine andere Art, gehen beim Speichern die Werte von Feldern verloren, die die neue Art nicht kennt.
@@ -49,7 +49,7 @@ Steht in der [Rahmenvereinbarung](relaties.md#rahmenvereinbarungen) mit dem Auft
 
 Die Frist läuft ab dem Ende der geplanten Besichtigung, in Arbeitstagen ohne Wochenende und Feiertage des Landes der Niederlassung. Planen Sie die Akte anders ein, verschiebt sich das Datum mit. Eine abgeschlossene oder stornierte Akte ohne Bericht hat keine Frist mehr.
 
-Der **Besichtiger** der Akte erhält am letzten Arbeitstag davor und nach Ablauf der Frist eine Meldung auf der Glocke. Kann Quaymark die Feiertage nicht abrufen, zählt es ohne sie und sagt es: Das Datum fällt dann früher, nie später.
+Der **Sachverständige** der Akte erhält am letzten Arbeitstag davor und nach Ablauf der Frist eine Meldung auf der Glocke. Kann Quaymark die Feiertage nicht abrufen, zählt es ohne sie und sagt es: Das Datum fällt dann früher, nie später.
 
 ### Feststellungen
 
@@ -85,7 +85,7 @@ Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Bes
 
 Eine gute Antwort speichern Sie mit einem Klick. Bei einem Mangel (**Nicht in Ordnung**, **Mangelhaft** oder **Schlecht**) füllen Sie die **Feststellung**, die **Empfehlung** und die **Priorität** aus: **Sofort, vor dem Auslaufen**, **Innerhalb von 3 Monaten**, **Bei der nächsten Wartung** oder **Zur Information**. **Standardbefund einfügen** füllt die drei Felder mit einem Standardtext der Besichtigungsart, in der Sprache der Akte; passen Sie sie danach an. **Neue Feststellung** macht daraus eine Feststellung.
 
-Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Besichtiger in der Feld-App, mit derselben Skala und denselben Standardbefunden. Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
+Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Sachverständige in der Feld-App, mit derselben Skala und denselben Standardbefunden. Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
 
 Ein zweiter Klick auf eine gute Antwort, die schon dasteht, speichert nichts; bei einem Mangel öffnet er den Befund zum Anpassen. Gibt es für den Punkt schon eine Feststellung, zeigt der Mangel diese statt **Neue Feststellung**. Die letzte Antwort ist die zuletzt gegebene, auch wenn eine Antwort aus der Feld-App erst später eintrifft.
 
@@ -124,7 +124,7 @@ Ein Klick auf den Titel einer Besichtigung öffnet sie zum Bearbeiten. Danach ä
 
 ### Unterschriften
 
-Vor Ort lässt der Besichtiger den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Feld-App mit dem Unterschriftssymbol oben in der Akte, oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
+Vor Ort lässt der Sachverständige den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Feld-App mit dem Unterschriftssymbol oben in der Akte, oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
 
 1. Geben Sie den **Name des Unterzeichners** ein, wählen Sie die **Funktion** und gegebenenfalls die Partei, in deren Namen er unterschreibt.
 2. Wählen Sie die **Klausel**: **Zum Empfang, ohne Anerkennung einer Haftung** (Standard), **Einverstanden** oder **Gesehen**. Die Erklärung steht in der Sprache der Akte dabei, mit den Feststellungen dieses Moments.
@@ -142,7 +142,7 @@ Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweiger
 
 ### Bordunterlagen
 
-An Bord erfasst der Besichtiger den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Feld-App, mit dem Dokumentsymbol oben in der Akte. Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
+An Bord erfasst der Sachverständige den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Feld-App, mit dem Dokumentsymbol oben in der Akte. Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
 
 Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest.
 
@@ -152,9 +152,9 @@ Kam eine Unterlage per E-Mail, fügen Sie sie im Büro mit **Dokument hinzufüge
 
 ### Codes
 
-Der Besichtiger scannt in der Feld-App Barcodes und QR-Codes: das **QR-Symbol** oben in der Akte. Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
+Der Sachverständige scannt in der Feld-App Barcodes und QR-Codes: das **QR-Symbol** oben in der Akte. Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
 
-- Eine **Containernummer** (ISO 6346) besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7 Ziffern; die App schreibt sie in Großbuchstaben ohne Leerzeichen. Stimmt die Prüfziffer nicht, warnt die App, und der Besichtiger darf trotzdem speichern: Der Code erhält die Markierung **Stimmt nicht**.
+- Eine **Containernummer** (ISO 6346) besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7 Ziffern; die App schreibt sie in Großbuchstaben ohne Leerzeichen. Stimmt die Prüfziffer nicht, warnt die App, und der Sachverständige darf trotzdem speichern: Der Code erhält die Markierung **Stimmt nicht**.
 - Wer einen gescannten Code korrigiert, macht daraus einen getippten Code: Die Spalte **Quelle** sagt ehrlich, wie er hereinkam.
 - Im Büro geben Sie einen Code mit **Code hinzufügen** ein (zum Beispiel eine Containernummer aus einem Dokument): Art, Code und gegebenenfalls die Feststellung. Eine Containernummer wird sofort geprüft; eine falsche Prüfziffer warnt, Speichern ist möglich. Die Quelle lautet dann **Von Hand · im Büro**.
 - Ein Code bei einer berichtigten Feststellung steht bei der neuen Fassung, im Reiter und im Bericht.
@@ -192,7 +192,7 @@ Die Prüfung verweigert nichts. Geben Sie mit Befunden heraus, fragt Quaymark **
 
 Hat Ihr Büro einen OKSign-Vertrag in ADM One, lassen Sie eine herausgegebene Version qualifiziert unterschreiben, mit eID oder itsme. Das geschieht im Teil **Unterzeichnung (OKSign)** der Registerkarte **Bericht**.
 
-1. Klicken Sie bei der Version auf **Unterschreiben lassen**. Der Besichtiger der Akte unterschreibt; bei einer Besichtigungsart mit Vier-Augen-Prinzip unterschreibt auch, wer den Bericht freigegeben hat.
+1. Klicken Sie bei der Version auf **Unterschreiben lassen**. Der Sachverständige der Akte unterschreibt; bei einer Besichtigungsart mit Vier-Augen-Prinzip unterschreibt auch, wer den Bericht freigegeben hat.
 2. Geben Sie für jeden Unterzeichner die Handynummer ein (OKSign verlangt sie; Quaymark merkt sie sich für das nächste Mal) und klicken Sie auf **An OKSign senden**.
 3. Jeder Unterzeichner sieht bei der Version seine eigene Schaltfläche **Jetzt unterschreiben**. Sie öffnet die Unterschriftsseite von OKSign.
 4. Sobald alle unterschrieben haben, kommt die unterschriebene Version von selbst herein (jede Viertelstunde, oder sofort mit **Aktualisieren**). Die Version steht dann auf **Unterschrieben**, mit **Unterschriebenes PDF**.
@@ -205,12 +205,12 @@ Was der Auftraggeber im Auftraggeberportal sieht, bestimmt die Einstellung **Ber
 
 ### Vier-Augen-Prinzip
 
-Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besichtigungsarten](soorten-survey.md)) lässt sich ein Bericht erst herausgeben, nachdem ein zweiter Besichtiger ihn freigegeben hat. Die Registerkarte Bericht zeigt dann den Block **Vier-Augen-Prinzip**.
+Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besichtigungsarten](soorten-survey.md)) lässt sich ein Bericht erst herausgeben, nachdem ein zweiter Sachverständiger ihn freigegeben hat. Die Registerkarte Bericht zeigt dann den Block **Vier-Augen-Prinzip**.
 
 ![Vier-Augen-Prinzip im Bericht von ZB-2026-0002, mit Prüfung angefordert von Demo Surveyor](images/dossier-vier-ogen-de.png "Vier-Augen-Prinzip")
 
 - **Prüfung anfordern** legt den Bericht einem Kollegen vor, auf Wunsch mit einem Hinweis. Auf dem Startbildschirm steht er dann unter **Wartet auf Prüfung**.
-- Freigeben darf ein Kollege mit dem Recht, Berichte herauszugeben, aber nicht der Besichtiger der Akte und nicht, wer die Prüfung angefordert hat. Er sieht die **Vorschau (PDF)** an und wählt **Freigeben** oder **Zurückweisen** mit dem, was geändert werden muss.
+- Freigeben darf ein Kollege mit dem Recht, Berichte herauszugeben, aber nicht der Sachverständige der Akte und nicht, wer die Prüfung angefordert hat. Er sieht die **Vorschau (PDF)** an und wählt **Freigeben** oder **Zurückweisen** mit dem, was geändert werden muss.
 - Eine Freigabe gilt für den Bericht, wie er in diesem Moment war. Ändert sich danach etwas, das in den Bericht kommt (ein Abschnittstext, ein Feld, ein ausgeblendetes Foto, die Vorlage), verfällt sie, und Sie fordern erneut eine Prüfung an. Der Block sagt es, und **Bericht herausgeben** erscheint erst nach einer neuen Freigabe wieder.
 - Jeder Schritt bleibt erhalten, mit wer, wann und dem Fingerabdruck des freigegebenen oder zurückgewiesenen Inhalts.
 
@@ -354,7 +354,7 @@ Das Ergebnis rechnet beim Tippen mit: erlaubt, verbraucht, Liegegeld oder Despat
 
 In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, von wann bis wann, in der Zeit der Niederlassung) und die **Kosten** (Reise, Unterkunft, Labor, Dritte) der Akte, mit dem Beleg aus den Anhängen. Kosten auf **Weiterberechnen** kommen auf die Rechnung. **Bearbeiten** und **Löschen** stehen unter **⋯** neben einer Zeile, die noch auf keiner Rechnung oder Abrechnung steht. **Rechnung vorschlagen** macht daraus einen Rechnungsentwurf; siehe [Rechnungen](facturen.md). Was auf einer Rechnung steht, steht fest. Die Spalte **Geschätzt (EUR)** ist eine Schätzung: Stunden × Stundensatz × Zuschlag (Wochenende, Nacht oder ein Feiertag des Landes der Niederlassung), wie die Rechnung rechnet; die Tarife stehen in EUR, und die Rechnung rechnet in die Währung der Akte um. Unten stehen die Summen; jede Rechnung zeigt ihre eigene Währung.
 
-In der Feld-App erfasst der Besichtiger seine Zeit auf der Registerkarte **Zeit** der Akte: **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
+In der Feld-App erfasst der Sachverständige seine Zeit auf der Registerkarte **Zeit** der Akte: **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
 
 ![Zeit und Kosten von ZB-2026-0003 mit Rechnung vorschlagen, Leistungen und Kosten](images/dossier-tijd-kosten-de.png "Zeit und Kosten")
 
@@ -401,7 +401,7 @@ Sobald Auftraggeber und Schiff gewählt sind, zeigt das Formular schon vor dem S
 
 ## Interessenkonflikte
 
-Ein Besichtiger darf nicht für beide Parteien tätig sein. Quaymark warnt oben in der Akte, wenn das Büro in einer anderen Akte mit **demselben Schiff** oder **derselben Anspruchs- oder Policennummer** für einen anderen Auftraggeber arbeitet und dieser Auftraggeber Partei in dieser Akte ist (oder Ihr Auftraggeber Partei in der anderen). Offene Akten zählen, ebenso in den letzten zwölf Monaten abgeschlossene; stornierte nicht.
+Ein Sachverständiger darf nicht für beide Parteien tätig sein. Quaymark warnt oben in der Akte, wenn das Büro in einer anderen Akte mit **demselben Schiff** oder **derselben Anspruchs- oder Policennummer** für einen anderen Auftraggeber arbeitet und dieser Auftraggeber Partei in dieser Akte ist (oder Ihr Auftraggeber Partei in der anderen). Offene Akten zählen, ebenso in den letzten zwölf Monaten abgeschlossene; stornierte nicht.
 
 - Die Kopfzeile zeigt dann **Interessenkonflikt?**, und oben in der Akte stehen die anderen Akten mit ihrem Auftraggeber.
 - Liegt kein Konflikt vor, klicken Sie auf **Kein Konflikt** und erklären Sie warum (zum Beispiel: anderer Schaden, beide Parteien informiert). Das wird mit Ihrem Namen und der Uhrzeit gespeichert und kann nicht geändert werden. Es ist der Nachweis der Unabhängigkeit, den ein Auftraggeber oder eine Akkreditierung verlangen kann.

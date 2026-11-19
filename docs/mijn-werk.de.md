@@ -1,10 +1,10 @@
 ---
-description: "Meine Arbeit: die Seite eines freiberuflichen Besichtigers mit seinen Akten, seiner Zeit, seinen Kosten mit Beleg und seinen Abrechnungen."
+description: "Meine Arbeit: die Seite eines freiberuflichen Sachverständigen mit seinen Akten, seiner Zeit, seinen Kosten mit Beleg und seinen Abrechnungen."
 ---
 
 # Meine Arbeit
 
-Die Seite eines **freiberuflichen Besichtigers**. Mit der Rolle Freiberufler ist das die einzige Seite, die Sie in der Web-App sehen: Ihre Akten, Ihre Zeit, Ihre Kosten und Ihre Abrechnungen. Die Arbeit vor Ort erledigen Sie in der Außendienst-App. → [Freiberufler](freelancers.md#die-rolle-freiberufler)
+Die Seite eines **freiberuflichen Sachverständigen**. Mit der Rolle Freiberufler ist das die einzige Seite, die Sie in der Web-App sehen: Ihre Akten, Ihre Zeit, Ihre Kosten und Ihre Abrechnungen. Die Arbeit vor Ort erledigen Sie in der Außendienst-App. → [Freiberufler](freelancers.md#die-rolle-freiberufler)
 
 ## Die Seite öffnen
 

@@ -29,7 +29,7 @@ Klicken Sie im Menü auf **Nachrichten** für jedes Gespräch mit einem Auftragg
 
 ## Die Glocke
 
-Die Glocke oben rechts zeigt eine neue Nachricht eines Auftraggebers dem Besichtiger der Akte und wer auf der Seite des Büros bereits in diesem Gespräch geschrieben hat. Hat die Akte keinen Besichtiger und hat noch niemand geschrieben, sehen sie alle, die Akten bearbeiten dürfen. Ein Klick auf die Benachrichtigung öffnet das Gespräch.
+Die Glocke oben rechts zeigt eine neue Nachricht eines Auftraggebers dem Sachverständigen der Akte und wer auf der Seite des Büros bereits in diesem Gespräch geschrieben hat. Hat die Akte keinen Sachverständigen und hat noch niemand geschrieben, sehen sie alle, die Akten bearbeiten dürfen. Ein Klick auf die Benachrichtigung öffnet das Gespräch.
 
 ## Was der Auftraggeber sieht
 

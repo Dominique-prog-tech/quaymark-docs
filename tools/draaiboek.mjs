@@ -81,7 +81,7 @@ export const FILMS = [
   // ⚠️ NIET IN DE FILM: het voorbeeld (PDF). De motor draait Chromium zonder scherm, en dat toont geen PDF: het venster zegt dan
   // "Deze browser toont dit bestand niet rechtstreeks" (gemeten 19/11/2026). De knop wordt enkel aangewezen.
   // Goedgekeurd door Dominique op 19/11/2026 ("Ja, goedgekeurd"), daarna vertaald met de woorden van de handleiding en het scherm:
-  // fr l’expert, donneur d’ordre, empreinte · en surveyor, principal, fingerprint · de Besichtiger, Auftraggeber, Fingerabdruck.
+  // fr l’expert, donneur d’ordre, empreinte · en surveyor, principal, fingerprint · de Sachverständiger, Auftraggeber, Fingerabdruck.
   ['rapport-uitgeven', {
     pagina: 'hoe/rapport-uitgeven',
     titel: {
@@ -194,7 +194,7 @@ export const FILMS = [
         nl: 'Ter plaatse legt de surveyor zijn vaststellingen vast in de veldapp, per plaats aan boord, met de ernst en een foto. Op kantoor vindt u ze terug onder Veldwerk.',
         fr: 'Sur place, l’expert consigne ses constatations dans l’application de terrain, par emplacement à bord, avec leur gravité et une photo. Au bureau, vous les retrouvez sous Travail de terrain.',
         en: 'On site, the surveyor records the findings in the field app, per location on board, with their severity and a photo. At the office, you find them under Fieldwork.',
-        de: 'Vor Ort hält der Besichtiger seine Feststellungen in der Feld-App fest, je Ort an Bord, mit dem Schweregrad und einem Foto. Im Büro finden Sie sie unter Feldarbeit.' },
+        de: 'Vor Ort hält der Sachverständige seine Feststellungen in der Feld-App fest, je Ort an Bord, mit dem Schweregrad und einem Foto. Im Büro finden Sie sie unter Feldarbeit.' },
 
       { naam: 'foto', kop: { nl: 'Foto’s met bewijswaarde', fr: 'Des photos qui font foi', en: 'Photos as evidence', de: 'Fotos mit Beweiskraft' },
         doe: async (p) => {
@@ -252,7 +252,7 @@ export const FILMS = [
         nl: 'Wat de surveyor aan boord insprak, staat hier al uitgeschreven. Met Toevoegen aan rubriek komt het in de Bevindingen.',
         fr: 'Ce que l’expert a dicté à bord est déjà transcrit ici. Avec Ajouter à la rubrique, le texte va dans les Observations.',
         en: 'What the surveyor dictated on board is already transcribed here. With Add to section, it goes into the Observations.',
-        de: 'Was der Besichtiger an Bord diktiert hat, steht hier schon ausgeschrieben. Mit Zum Abschnitt hinzufügen kommt es in die Befunde.' },
+        de: 'Was der Sachverständige an Bord diktiert hat, steht hier schon ausgeschrieben. Mit Zum Abschnitt hinzufügen kommt es in die Befunde.' },
 
       { naam: 'standaardtekst', kop: { nl: 'Een standaardtekst', fr: 'Un texte type', en: 'A standard text', de: 'Ein Standardtext' },
         doe: async (p) => {
@@ -556,7 +556,7 @@ export const FILMS = [
       en: 'A request from the form on your website: what comes in, the principal that Quaymark suggests, accepting, the file that results, and '
         + 'scheduling by dragging the file to the surveyor.',
       de: 'Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus '
-        + 'entsteht, und die Planung, indem Sie die Akte zum Besichtiger ziehen.',
+        + 'entsteht, und die Planung, indem Sie die Akte zum Sachverständigen ziehen.',
     },
     uitvoeringen: {
       handleiding: { stem: true },
@@ -571,7 +571,7 @@ export const FILMS = [
           en: 'A request from the form on your website arrives in Quaymark straight away: sender, vessel, port and preferred day. '
             + 'Accepting it creates a file, which you schedule by dragging it to a surveyor and a time.',
           de: 'Eine Anfrage über das Formular Ihrer Website kommt sofort in Quaymark an: Absender, Schiff, Hafen und Wunschtag. Mit dem '
-            + 'Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Besichtiger und einer Uhrzeit ziehen.',
+            + 'Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Sachverständigen und einer Uhrzeit ziehen.',
         } },
     },
     scenes: [
@@ -663,8 +663,8 @@ export const FILMS = [
         nl: 'Op de planning staat het nieuwe dossier links, onder Te plannen: het heeft nog geen surveyor.',
         fr: 'Dans le planning, le nouveau dossier figure à gauche, sous À planifier : il n’a pas encore d’expert.',
         en: 'On the schedule, the new file appears on the left, under To schedule: it has no surveyor yet.',
-        de: 'In der Planung steht die neue Akte links unter Zu planen: Sie hat noch keinen Besichtiger.',
-        website: { nl: 'Nog zonder surveyor? Dan staat het bij Te plannen.', fr: 'Sans expert ? Il attend sous À planifier.', en: 'No surveyor yet? It waits under To schedule.', de: 'Noch ohne Besichtiger? Dann steht sie unter Zu planen.' } },
+        de: 'In der Planung steht die neue Akte links unter Zu planen: Sie hat noch keinen Sachverständigen.',
+        website: { nl: 'Nog zonder surveyor? Dan staat het bij Te plannen.', fr: 'Sans expert ? Il attend sous À planifier.', en: 'No surveyor yet? It waits under To schedule.', de: 'Noch ohne Sachverständigen? Dann steht sie unter Zu planen.' } },
 
       { naam: 'slepen', kop: { nl: 'Inplannen door te slepen', fr: 'Planifier en glissant', en: 'Scheduling by dragging', de: 'Planen durch Ziehen' },
         doe: async (p) => {
@@ -687,8 +687,8 @@ export const FILMS = [
         nl: 'U bladert naar de gewenste dag en sleept het dossier naar de kolom van de surveyor, op het uur waarop het werk begint.',
         fr: 'Vous passez au jour souhaité et glissez le dossier dans la colonne de l’expert, à l’heure où le travail commence.',
         en: 'You go to the requested day and drag the file into the surveyor’s column, at the hour the work starts.',
-        de: 'Sie blättern zum gewünschten Tag und ziehen die Akte in die Spalte des Besichtigers, zu der Stunde, zu der die Arbeit beginnt.',
-        website: { nl: 'Sleep het naar een surveyor en een uur.', fr: 'Glissez-le vers un expert et une heure.', en: 'Drag it to a surveyor and a time.', de: 'Ziehen Sie sie zu einem Besichtiger und einer Uhrzeit.' } },
+        de: 'Sie blättern zum gewünschten Tag und ziehen die Akte in die Spalte des Sachverständigen, zu der Stunde, zu der die Arbeit beginnt.',
+        website: { nl: 'Sleep het naar een surveyor en een uur.', fr: 'Glissez-le vers un expert et une heure.', en: 'Drag it to a surveyor and a time.', de: 'Ziehen Sie sie zu einem Sachverständigen und einer Uhrzeit.' } },
 
       { naam: 'gepland', kop: { nl: 'Gepland', fr: 'Planifié', en: 'Scheduled', de: 'Geplant' },
         doe: async (p) => {

@@ -1,10 +1,10 @@
 ---
-description: "Feste Texte, die ein Besichtiger in der Registerkarte Bericht einer Akte in einen Abschnitt einfügt, zum Beispiel den üblichen Vorbehalt des Büros."
+description: "Feste Texte, die ein Sachverständiger in der Registerkarte Bericht einer Akte in einen Abschnitt einfügt, zum Beispiel den üblichen Vorbehalt des Büros."
 ---
 
 # Standardtexte
 
-Feste Texte, die ein Besichtiger in der Registerkarte **Bericht** einer Akte in einen Abschnitt einfügt, zum Beispiel den üblichen Vorbehalt des Büros.
+Feste Texte, die ein Sachverständiger in der Registerkarte **Bericht** einer Akte in einen Abschnitt einfügt, zum Beispiel den üblichen Vorbehalt des Büros.
 
 ## Bildschirm öffnen
 
@@ -20,7 +20,7 @@ Klicken Sie unten im Menü auf **Verwaltung** und dann auf die Kachel **Standard
 - Wählen Sie eine **Besichtigungsart**, um einen Text nur für diese Art anzubieten; leer = für jede Art.
 - **Automatisch einfügen** (nur mit einem Abschnitt): Der Text steht in diesem Abschnitt bereit, wenn er in einer Akte dieser Art leer ist. Ein Text für eine Art geht einem Text für jede Art vor. Je Sprache, Abschnitt und Art kann es nur einen automatischen Text geben: Einen zweiten lehnt Quaymark ab, mit dem Namen des Textes, der diese Stelle bereits hat. Leeren Sie den Abschnitt, wird das Häkchen entfernt.
 - **Markierungen** werden zu den Daten der Akte: {{schip}}, {{imo}}, {{haven}}, {{terminal}}, {{opdrachtgever}}, {{referentie}}, {{dossier}}, {{surveyor}} und {{veld:schlüssel}} für ein Feld der Besichtigungsart (zum Beispiel die Containernummer). Was die Akte nicht weiß, wird eine offene Stelle.
-- Text in eckigen Klammern, wie [Ort], ist eine **offene Stelle**, die der Surveyor ausfüllt. Solange eine bleibt, wird der Bericht nicht ausgegeben. → [Akten](dossiers.md#standardsatze-und-offene-stellen)
+- Text in eckigen Klammern, wie [Ort], ist eine **offene Stelle**, die der Sachverständige ausfüllt. Solange eine bleibt, wird der Bericht nicht ausgegeben. → [Akten](dossiers.md#standardsatze-und-offene-stellen)
 ![Standardtexte mit Neuer Standardtext](images/standaardteksten-de.png "Die Standardtexte")
 
 ## Siehe auch

@@ -44,7 +44,7 @@ Die gesetzlichen Feiertage des Landes Ihrer Niederlassungen erscheinen von selbs
 
 Fällt eine Akte auf eine Abwesenheit des Sachverständigen, einen Feiertag oder eine andere Akte desselben Sachverständigen, ist das erlaubt: Ein Schiff wartet nicht auf das Ende eines Feiertags, und zwei kurze Aufträge im selben Hafen passen zusammen. Der Block wird dann rot, und die Planung sagt warum.
 
-Verlangt die Besichtigungsart eine Qualifikation, die der Besichtiger an diesem Tag nicht gültig hat, warnt die Planung auf dieselbe Weise. Siehe [Qualifikationen](bevoegdheden.md).
+Verlangt die Besichtigungsart eine Qualifikation, die der Sachverständige an diesem Tag nicht gültig hat, warnt die Planung auf dieselbe Weise. Siehe [Qualifikationen](bevoegdheden.md).
 
 ## Mein Kalender
 
@@ -73,7 +73,7 @@ Der Block warnt, wenn nur Sie etwas lösen können:
 
 ## In der Feld-App
 
-Der Besichtiger sieht seine Planung in der Feld-App, auch ohne Netz: die ihm zugewiesenen offenen Akten, pro Tag (**Früher (noch offen)**, **Heute**, **Morgen**, **Diese Woche**, **Später**, **Nicht geplant**). Bei jeder Akte stehen das Zeitfenster in der Zeit der Niederlassung, das Schiff, der Hafen und das Terminal. **Navigieren** öffnet die Karten-App des Geräts auf Terminal und Hafen.
+Der Sachverständige sieht seine Planung in der Feld-App, auch ohne Netz: die ihm zugewiesenen offenen Akten, pro Tag (**Früher (noch offen)**, **Heute**, **Morgen**, **Diese Woche**, **Später**, **Nicht geplant**). Bei jeder Akte stehen das Zeitfenster in der Zeit der Niederlassung, das Schiff, der Hafen und das Terminal. **Navigieren** öffnet die Karten-App des Geräts auf Terminal und Hafen.
 
 ## Siehe auch
 

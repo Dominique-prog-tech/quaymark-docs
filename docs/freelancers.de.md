@@ -1,10 +1,10 @@
 ---
-description: "Freiberufliche Besichtiger: ihr Datenblatt mit Stundensatz und Umsatzsteuerregelung, die Rolle Freiberufler und die Abrechnung pro Zeitraum per Gutschrift."
+description: "Freiberufliche Sachverständige: ihr Datenblatt mit Stundensatz und Umsatzsteuerregelung, die Rolle Freiberufler und die Abrechnung pro Zeitraum per Gutschrift."
 ---
 
 # Freiberufler
 
-Ein freiberuflicher Besichtiger arbeitet für das Büro an Akten, die ihm zugewiesen sind, und wird pro Zeitraum bezahlt. Das Büro stellt diese Rechnung für ihn aus (**Gutschrift**): Quaymark rechnet seine Stunden und seine eigenen Kosten zu seinem Satz ab, mit einer Nummer und einem PDF.
+Ein freiberuflicher Sachverständiger arbeitet für das Büro an Akten, die ihm zugewiesen sind, und wird pro Zeitraum bezahlt. Das Büro stellt diese Rechnung für ihn aus (**Gutschrift**): Quaymark rechnet seine Stunden und seine eigenen Kosten zu seinem Satz ab, mit einer Nummer und einem PDF.
 
 Was das Büro dem **Auftraggeber** in Rechnung stellt, ändert sich nicht: Das bleibt der Satz auf der Seite [Tarife](tarieven.md).
 
@@ -36,7 +36,7 @@ Ein Freiberufler ist ein Benutzer des Büros. Laden Sie ihn zuerst auf der Seite
 
 Oben im Datenblatt sehen Sie, ob der Freiberufler die Rolle bereits hat. Klicken Sie auf **Rolle Freiberufler geben** und bestätigen Sie.
 
-Mit dieser Rolle sieht er in der Web-App nur **Meine Arbeit** und in der Außendienst-App die ihm zugewiesenen Akten. Dort erfasst er Feststellungen, Fotos und seine Zeit, wie jeder Besichtiger. Seine anderen Rollen entfallen, und auf dem Bildschirm **Rollen** steht er nicht bei den Benutzern, denen Sie eine Rolle geben können. Ohne diese Rolle sieht er alles, was ein Mitarbeiter des Büros sieht. Zurücksetzen können Sie auf der Seite **Benutzer**. → [Meine Arbeit](mijn-werk.md)
+Mit dieser Rolle sieht er in der Web-App nur **Meine Arbeit** und in der Außendienst-App die ihm zugewiesenen Akten. Dort erfasst er Feststellungen, Fotos und seine Zeit, wie jeder Sachverständige. Seine anderen Rollen entfallen, und auf dem Bildschirm **Rollen** steht er nicht bei den Benutzern, denen Sie eine Rolle geben können. Ohne diese Rolle sieht er alles, was ein Mitarbeiter des Büros sieht. Zurücksetzen können Sie auf der Seite **Benutzer**. → [Meine Arbeit](mijn-werk.md)
 
 ## Abrechnungen
 

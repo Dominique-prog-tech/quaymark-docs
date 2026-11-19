@@ -26,7 +26,7 @@ Ein Zuschlag in Prozent für das **Wochenende**, einen **Feiertag** und die **Na
 
 ## Rahmenvereinbarungen
 
-Ein Auftraggeber mit eigenen Vereinbarungen erhält seine Tarife im Datensatz der Beziehung, Registerkarte Rahmenvereinbarungen. Sie gehen dieser Tabelle vor, auch dem Tarif eines Besichtigers. → [Rahmenvereinbarungen](relaties.md#rahmenvereinbarungen)
+Ein Auftraggeber mit eigenen Vereinbarungen erhält seine Tarife im Datensatz der Beziehung, Registerkarte Rahmenvereinbarungen. Sie gehen dieser Tabelle vor, auch dem Tarif eines Sachverständigen. → [Rahmenvereinbarungen](relaties.md#rahmenvereinbarungen)
 
 ## Siehe auch
 

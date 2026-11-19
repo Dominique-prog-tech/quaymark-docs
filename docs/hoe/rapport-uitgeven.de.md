@@ -8,7 +8,7 @@ description: "Von den Abschnitten auf der Registerkarte Bericht zu einer festges
 2. **Schreiben Sie die Abschnitte** auf der Registerkarte **Bericht**, mit den Standardtexten Ihres Büros oder einem **Entwurf** der KI, und klicken Sie auf **Abschnitte speichern**. → [Bericht](../dossiers.md#bericht) · [Entwurf vorschlagen](../dossiers.md#entwurf-vorschlagen)
 3. **Prüfen Sie den Bericht** mit **Bericht (PDF)**. Es wird noch nichts gespeichert oder gesendet. → [Berichtsvorschau](../dossiers.md#berichtsvorschau)
 4. **Klicken Sie auf Bericht herausgeben.** Der Bericht wird Version 1, mit seinem Fingerabdruck, und ändert sich danach nicht mehr. → [Bericht herausgeben und senden](../dossiers.md#bericht-herausgeben-und-senden)
-5. **Lassen Sie ihn unterschreiben** (hat Ihr Büro einen OKSign-Vertrag): **Unterschreiben lassen** bei der Version; der Besichtiger unterschreibt mit eID oder itsme. → [Bericht unterschreiben lassen](../dossiers.md#bericht-unterschreiben-lassen)
+5. **Lassen Sie ihn unterschreiben** (hat Ihr Büro einen OKSign-Vertrag): **Unterschreiben lassen** bei der Version; der Sachverständige unterschreibt mit eID oder itsme. → [Bericht unterschreiben lassen](../dossiers.md#bericht-unterschreiben-lassen)
 6. **Klicken Sie auf Senden.** Der Auftraggeber erhält das PDF; die E-Mail wird im Journal der Akte festgehalten.
 7. **Muss etwas berichtigt werden?** Verwenden Sie **Neue Version herausgeben** und geben Sie einen Grund an. Die vorige Version bleibt erhalten.
 
