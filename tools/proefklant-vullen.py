@@ -82,8 +82,9 @@ if not OPSLAG.is_dir():
 HQ = q("select id from dossiers.vestigingen where code = 'HQ'")
 SOORT = dict(r.split('|') for r in q('select code, id from dossiers.survey_types').splitlines())
 CHECKLIST = {c: json.loads(j) for c, j in (r.split('|', 1) for r in q('select code, checklist::text from dossiers.survey_types').splitlines())}
-SCHELDEMOND = q("select id from relaties.relaties where naam = 'Scheldemond Bevrachting NV'") or None
-PIONEER = q("select id from dossiers.schepen where naam = 'NOORDKAAI PIONEER'") or None
+# (19/11/2026) Scheldemond Bevrachting NV en de NOORDKAAI PIONEER kwamen tot dan uit een eerdere demovulling van de app, en drie dossiers (HQ-2026-0002,
+# 0009, 0010) uit proeven in de app. "Demogegevens laden" wiste ze, en dit script kon de proefklant dan niet meer terugzetten. Nu maakt het ze zelf
+# (relatie 10 en 11, schip 7, dossier 15 tot 17), met wat de handleidingbeelden en de films ervan tonen.
 
 sql = ['begin;']
 # Een prestatie of kost op een afrekening of factuur ligt vast (de app weigert haar te wijzigen of te verwijderen): dit script laat ze dus staan, ook als het
@@ -125,7 +126,7 @@ if film_dossiers:
     sql.append(f'delete from dossiers.dossiers where id in ({fl});')
 
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
-eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 15)] + [vid('dossier/zb1')]
+eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 18)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.scan_codes', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
@@ -136,11 +137,11 @@ for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.s
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
 # Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
 sql.append(f'delete from dossiers.verwijderregister where dossier_id in ({lijst});')
-eigen_relaties = ', '.join(lit(vid(f'relatie/{k}')) for k in range(1, 10))
+eigen_relaties = ', '.join(lit(vid(f'relatie/{k}')) for k in range(1, 12))
 sql.append(f'delete from relaties.contactpersonen where relatie_id in ({eigen_relaties});')
 sql.append(f'delete from relaties.relaties where id in ({eigen_relaties});')
-sql.append(f"delete from berekeningen.ijkbrieven where schip_id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 7))});")   # D9
-sql.append(f"delete from dossiers.schepen where id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 7))});")
+sql.append(f"delete from berekeningen.ijkbrieven where schip_id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 8))});")   # D9
+sql.append(f"delete from dossiers.schepen where id in ({', '.join(lit(vid(f'schip/{k}')) for k in range(1, 8))});")
 sql.append(f"delete from rapporten.standaardteksten where id in ({', '.join(lit(vid(f'standaardtekst/{k}')) for k in range(1, 4))});")
 sql.append(f"delete from rapporten.woordenlijst where id in ({', '.join(lit(vid(f'woordterm/{k}')) for k in range(1, 4))});")
 
@@ -161,10 +162,12 @@ RELATIES = [
     (7, 'Nordlicht Schiffsmakler GmbH', ['makelaar'], 'DE', '20457', 'Hamburg', 'Am Sandtorkai 7', 'de', []),
     (8, 'Scheldester Chartering BV', ['bevrachter', 'opdrachtgever'], 'NL', '3072', 'Rotterdam', 'Wilhelminakade 50', 'en', [('Eva de Vries', 'Chartering manager')]),
     (9, 'Ankerpunt Scheepsherstel NV', ['hersteller'], 'BE', '2030', 'Antwerpen', 'Droogdokkenweg 3', 'nl', [('Bart Willems', 'Estimator')]),
+    (10, 'Scheldemond Bevrachting NV', ['bevrachter', 'opdrachtgever'], 'BE', '9000', 'Gent', 'Voorhavenlaan 21', 'nl', [('Pieter Claes', 'Chartering manager')]),
+    (11, 'Peeters Shipping BV', ['opdrachtgever'], 'BE', '2030', 'Antwerpen', 'Kattendijkdok-Oostkaai 5', 'nl', [('Lies Peeters', 'Operations')]),
 ]
 REL = {}
 # De opkuis bovenaan wist relatie 1 tot 9: groeit deze lijst, dan moet die grens mee (anders botst een tweede run op de primaire sleutel).
-assert len(RELATIES) <= 9, 'Vergroot de opkuis van de relaties (range bovenaan).'
+assert len(RELATIES) <= 11, 'Vergroot de opkuis van de relaties (range bovenaan).'
 for k, naam, rollen, land, pc, gem, straat, taal, contacten in RELATIES:
     REL[k] = vid(f'relatie/{k}')
     dom = naam.split()[0].lower()
@@ -174,7 +177,18 @@ for k, naam, rollen, land, pc, gem, straat, taal, contacten in RELATIES:
     for i, (cn, functie) in enumerate(contacten):
         sql.append(rij('relaties.contactpersonen', dict(id=vid(f'contact/{k}/{i}'), relatie_id=REL[k], naam=cn, functie=functie,
                    email=f"{cn.split()[0].lower()}@{dom}.example", telefoon=None, taal=taal)))
-REL['scheldemond'] = SCHELDEMOND or REL[8]
+REL['scheldemond'] = REL[10]
+REL['peeters'] = REL[11]
+
+# ── Raamafspraken met een termijn tot het rapport (K6; 19/11/2026: tot dan uit de demovulling van de app). Zo staan HQ-2026-0002 (twee werkdagen vanaf
+#    de opdracht) en de dossiers van Polderwacht (drie werkdagen, schade twee) onder Termijnen op het dashboard: de film aan-de-slag zoekt er HQ-2026-0002.
+#    Termijnen in camelCase, zoals de app jsonb bewaart. ──
+RAAM = [(1, REL[2], 3, [('damage', 2)], 'Demo: framework agreement with report deadline'), (2, REL[10], 2, [], 'Demo: report within two working days')]
+sql.append(f"delete from financieel.raamafspraken where id in ({', '.join(lit(vid(f'raamafspraak/{k}')) for k, *_ in RAAM)});")
+for k, rel, termijn, per_soort, opm in RAAM:
+    sql.append(rij('financieel.raamafspraken', dict(id=vid(f'raamafspraak/{k}'), relatie_id=rel, van=None, tot=None, soorten=[], opmerking=opm,
+               created_at=NU - dt.timedelta(days=30), termijn_werkdagen=termijn,
+               termijnen=[{'surveyTypeId': SOORT[c], 'werkdagen': w} for c, w in per_soort if c in SOORT])))
 
 # ── Schepen. IMO met een 1 vooraan (zie boven). ──
 SCHEPEN = [
@@ -184,13 +198,14 @@ SCHEPEN = [
     (4, 'zeevaart', 'BRAKWATER TRADER', '1080904', None, 'CY', 'Multipurpose', 2013, 11200, 14900, 'BV', 2, None),
     (5, 'zeevaart', 'DUINROOS', '1112135', None, 'PT', 'Product tanker', 2018, 29700, 49900, 'ABS', None, 12),
     (6, 'binnenvaart', 'JOHANNA-W', None, '06099991', 'BE', 'Motorvrachtschip', 2004, None, 3200, None, 2, None),
+    (7, 'zeevaart', 'NOORDKAAI PIONEER', '1001178', None, 'MT', 'General cargo', 2016, 9800, 12650, 'BV', 3, None),
 ]
 SCHIP = {}
 for k, soort, naam, imo, eni, vlag, typ, bj, gt, dwt, klasse, ruimen, tanks in SCHEPEN:
     SCHIP[k] = vid(f'schip/{k}')
     sql.append(rij('dossiers.schepen', dict(id=SCHIP[k], soort=soort, naam=naam, imo=imo, eni=eni, vlag=vlag, type=typ, bouwjaar=bj, gt=gt, dwt=dwt,
                klasse=klasse, actief=True, archived_on_utc=None, aantal_ruimen=ruimen, aantal_tanks=tanks)))
-SCHIP['pioneer'] = PIONEER or SCHIP[1]
+SCHIP['pioneer'] = SCHIP[7]
 
 
 def om(dagen, uur=8, minuut=0):
@@ -224,6 +239,13 @@ DOSSIERS = [
      {'oorzaak': 'Heavy weather during sea passage', 'lading': 'Bagged rice'}, 'Heavy weather damage to cargo in hold 2'),
     ('12', HQ, 'HQ-2019-0117', 'condition', 4, 3, 'BEGNE', 'Kluizendok', 'afgesloten', -2700, {'doel': 'P&I', 'weer': None}, 'P&I condition survey'),
     ('13', HQ, 'HQ-2017-0008', 'damage', 1, 2, 'BEANR', 'Kaai 730', 'afgesloten', -3400, {'oorzaak': 'Collision with quay'}, 'Quay contact, claim in court'),
+    # 19/11/2026: tot dan uit proeven in de app (zie boven). 15 = nog niet ingepland, 16 = van de freelancer (morgen 08:00), 17 = zonder surveyor, het
+    # voorbeeld van een belangenconflict bij HQ-2026-0003 (zelfde schip, Kaaimeeuw Rederij is daar partij). Tijd en surveyor zet een update hieronder.
+    ('15', HQ, 'HQ-2026-0002', 'draft', 'pioneer', 'scheldemond', 'BEANR', 'Kaai 1333', 'nieuw', -6,
+     {'lading': 'Steel products', 'soort_meting': 'initieel', 'densiteit': '1.012'}, 'Initial and final draft survey, loading of steel products'),
+    ('16', HQ, 'HQ-2026-0009', 'draft', 'pioneer', 'peeters', 'BEANR', 'Kaai 1333', 'nieuw', 1,
+     {'lading': 'Steel coils', 'soort_meting': 'initieel', 'densiteit': '1.015'}, 'Draft survey before loading'),
+    ('17', HQ, 'HQ-2026-0010', 'condition', 1, 1, None, None, 'nieuw', 0, {'doel': 'P&I', 'weer': None}, 'Condition survey for P&I entry'),
 ]
 # D9 (15/11/2026): een meting op ijkschalen op het binnenschip JOHANNA-W. Enkel als het bureau de binnenvaarttypes heeft (de knop in Instellingen,
 # Soorten survey): de catalogus van de app is de enige bron van die soorten, dit script maakt ze niet zelf.
@@ -271,6 +293,11 @@ for k, vest, nr, soort, schip, opdr, haven, terminal, status, dagen, velden, oms
         if k in ('3', '5') else [],
         gekoppeld_dossier_id=DOS.get('4') if k == '5' else None,
         omstandigheden=omst)))
+
+# 15 en 17 zonder tijdstip, 17 ook zonder surveyor; 16 morgen om 08:00 (de freelancer krijgt hem verderop).
+sql.append(f"update dossiers.dossiers set gepland_op = null where id in ({lit(DOS['15'])}, {lit(DOS['17'])});")
+sql.append(f"update dossiers.dossiers set surveyor_id = null where id = {lit(DOS['17'])};")
+sql.append(f"update dossiers.dossiers set gepland_op = {lit(om(1, 8))} where id = {lit(DOS['16'])};")
 
 # Partijen bij het hoofddossier en de off-hire.
 for k, rel, rol, ref in [('3', 1, 'reder', 'KM-OPS-2211'), ('3', 4, 'terminal', None), ('3', 3, 'pi_club', 'HK/26/0912'), ('3', 6, 'tegenexpert', None),
@@ -444,8 +471,7 @@ for k, dag, van, tot, oms in PRESTATIES:
 for k, soort, oms, bedrag, door in KOSTEN:
     sql.append(rij_tenzij_vast('financieel.kosten', dict(id=vid(f'kost/{k}'), dossier_id=STAALNAME, datum=VANDAAG, soort=soort, omschrijving=oms, bedrag=bedrag,
                doorrekenen=door, bijlage_id=None, factuur_id=None, created_at=om(-1))))
-if not SCHELDEMOND:
-    raise SystemExit('⛔ De relatie Scheldemond Bevrachting NV bestaat niet (de opdrachtgever van HQ-2026-0007). Gestopt; niets geschreven.')
+SCHELDEMOND = REL['scheldemond']   # sinds 19/11/2026 door dit script gemaakt (relatie 10)
 KLAD = vid('factuur/klad-1')
 # De regels zoals de app ze bewaart (JSON, camelCase). Forfait bunker survey + een kost; 21 %: 488,50 + 102,59 = 591,09 (één afronding per tarief).
 REGELS = [dict(omschrijving='Fixed fee: Bunker survey', aantal=1, eenheid='C62', eenheidsprijs=450.00, btwCategorie='S', btwProcent=21),
@@ -797,16 +823,11 @@ on conflict (gebruiker_id) do update set code = excluded.code, bedrijfsnaam = ex
   straat = excluded.straat, postcode = excluded.postcode, gemeente = excluded.gemeente, land = excluded.land, iban = excluded.iban, uurtarief = excluded.uurtarief,
   btw_regeling = excluded.btw_regeling, raamakkoord_op = excluded.raamakkoord_op, actief = true;""")
 eerste_vorige = (VANDAAG.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
-FL_DOSSIER = q("select id from dossiers.dossiers where nummer = 'ZB-2026-0001'")
-if not FL_DOSSIER:
-    raise SystemExit('⛔ Het dossier ZB-2026-0001 bestaat niet. Gestopt; niets geschreven.')
+FL_DOSSIER = DOS['4']   # ZB-2026-0001, door dit script gemaakt
 # Zijn eigen dossiers (18/11/2026, visuele ronde rij 55): zonder toonde Mijn werk geen dossier en bleef Kost toevoegen uit, terwijl zijn tijd en kost op
 # ZB-2026-0001 stonden (met surveyor.demo als surveyor). Nu is hij surveyor van ZB-2026-0001 (afgesloten, met zijn werk) en van HQ-2026-0009 (nieuw, komt eraan).
-FL_EIGEN = ['ZB-2026-0001', 'HQ-2026-0009']
-for nr in FL_EIGEN:
-    if not q(f"select id from dossiers.dossiers where nummer = {lit(nr)} and archived_on_utc is null"):
-        raise SystemExit(f'⛔ Het dossier {nr} bestaat niet (of staat in de prullenbak). Gestopt; niets geschreven.')
-sql.append(f"update dossiers.dossiers set surveyor_id = {lit(FREELANCER)} where nummer in ({', '.join(lit(n) for n in FL_EIGEN)});")
+FL_EIGEN = [DOS['4'], DOS['16']]   # ZB-2026-0001 en HQ-2026-0009, sinds 19/11/2026 allebei door dit script gemaakt
+sql.append(f"update dossiers.dossiers set surveyor_id = {lit(FREELANCER)} where id in ({', '.join(lit(i) for i in FL_EIGEN)});")
 FL_PRESTATIES = [(1, eerste_vorige + dt.timedelta(days=6), '07:30', '11:00', 'On board · Draft survey, initial'), (2, eerste_vorige + dt.timedelta(days=6), '15:00', '17:15', 'On board · Draft survey, final')]
 FL_KOST = vid('freelance/kost/1')
 sql.append(f"delete from financieel.prestaties where id in ({', '.join(lit(vid(f'freelance/prestatie/{k}')) for k, *_ in FL_PRESTATIES)}) and {VAST};")
