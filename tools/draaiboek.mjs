@@ -44,8 +44,11 @@ export const FILMS = [
   // ⚠️ DEZE FILM SCHRIJFT in de lokale proefklant: de status, de rubrieken, een verantwoording en een uitgegeven versie (die is enkel
   // toe te voegen). Vóór ELKE taal de proefklant opnieuw vullen, anders is het in de tweede taal versie 2 en vraagt Quaymark geen
   // verantwoording meer:
+  //   sinds=$(date -u '+%Y-%m-%d %H:%M:%S')
   //   for t in nl fr en de; do QUAYMARK_REPO=<werkboom> python3 tools/proefklant-vullen.py && node tools/films.mjs rapport --taal=$t; done
-  // En daarna nog één keer vullen, voor de beelden.
+  //   QUAYMARK_REPO=<werkboom> python3 tools/proefklant-vullen.py && python3 tools/film-opruimen.py --sinds "$sinds" --echt
+  // ⚠️ Dat laatste is NIET optioneel: het vulscript kent de historiek, de portaalmeldingen en de journaalmails niet die uitgeven
+  // achterlaat. Na de eerste rondes stonden er zeventien statuswissels in de historiek van HQ-2026-0003 (19/11/2026; zie film-opruimen.py).
   //
   // ⚠️ NIET IN DE FILM: het voorbeeld (PDF). De motor draait Chromium zonder scherm, en dat toont geen PDF: het venster zegt dan
   // "Deze browser toont dit bestand niet rechtstreeks" (gemeten 19/11/2026). De knop wordt enkel aangewezen.
