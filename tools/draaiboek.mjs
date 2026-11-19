@@ -90,8 +90,62 @@ export const FILMS = [
       de: 'Der Weg einer Akte zu ihrem Bericht: die Feststellungen mit ihren Fotos, die Akte im Status Berichterstellung, der Text je '
         + 'Abschnitt mit einer Sprachnotiz und einem Standardtext, die Berichtsprüfung, das Herausgeben mit einem Fingerabdruck und das Senden.',
     },
-    uitvoeringen: { handleiding: { stem: true } },
+    uitvoeringen: {
+      // De handleiding houdt UITDRUKKELIJK haar elf scènes: de drie w-scènes hieronder zijn enkel voor de website, en zonder deze lijst
+      // kwamen ze er bij een herneming bij. (De hash van een film wordt bij de opname berekend over de GEKOZEN scènes: deze lijst laat
+      // de opgenomen en gepubliceerde handleidingfilm ongemoeid.)
+      handleiding: { stem: true, scenes: ['vaststellingen', 'foto', 'status', 'tekst', 'spraaknotitie', 'standaardtekst', 'bewaren', 'controle',
+                                          'verantwoording', 'uitgeven', 'verzenden'] },
+      // De websitefilm voor de pagina Vaststellingen ter plaatse (Dominique, 19/11/2026: "Planning + vaststelling", en "beide punten mogen
+      // mee": tijdstip, GPS en vingerafdruk als tekst in beeld, en het eigen Word-sjabloon). Stil, tekst in beeld, 30 tot 45 s.
+      website: { stem: false, scenes: ['w-vaststellingen', 'foto', 'w-sjabloon', 'w-uitgeven', 'verzenden'] },
+    },
     scenes: [
+      // ── Enkel voor de website: een eigen begin (de eerste scène van een selectie navigeert zelf; de motor eist een p.goto in haar doe).
+      { naam: 'w-vaststellingen', kop: { nl: 'De vaststellingen', fr: 'Les constatations', en: 'The findings', de: 'Die Feststellungen' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/dossiers`); await p.waitForLoadState('networkidle');
+          await openDossier(p, 'HQ-2026-0003');
+          await naarTab(p, 'veldwerk');
+          await beweegNaar(p, p.getByText('Tank top plating indented').first());
+        },
+        merk: /Tank top plating indented/,
+        website: { nl: 'Vaststellingen ter plaatse, per plaats aan boord, met foto.', fr: 'Les constatations sur place, par emplacement à bord, avec photo.', en: 'Findings on site, per location on board, with a photo.', de: 'Feststellungen vor Ort, je Ort an Bord, mit Foto.' } },
+
+      // ── Enkel voor de website: het eigen Word-sjabloon van het bureau, in de taal van de film (de taal van het scherm, uit het cookie).
+      { naam: 'w-sjabloon', kop: { nl: 'Uw eigen Word-sjabloon', fr: 'Votre propre modèle Word', en: 'Your own Word template', de: 'Ihre eigene Word-Vorlage' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/beheer/rapportsjablonen`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1000);
+          const rij = p.getByRole('row').filter({ hasText: 'Surveyrapport' }).first();
+          await beweegNaar(p, rij);
+          await rij.dblclick();
+          await p.waitForURL(/\/beheer\/rapportsjablonen\/[0-9a-f-]{36}$/, { timeout: 15000 });
+          // De taal van het scherm staat in het cultuurcookie (c=fr-BE|uic=fr-BE). Geen terugval: zonder cookie weet de film niet welk
+          // sjabloon hij moet tonen, en een Engels sjabloon onder een Duitse tekst is precies de stille fout die niemand ziet.
+          const cookie = (await p.context().cookies()).find(k => /Culture/i.test(k.name));
+          const taal = decodeURIComponent(cookie?.value ?? '').match(/c=([a-z]{2})-/)?.[1];
+          if (!taal) throw new Error('Geen cultuurcookie: de taal van het sjabloon is niet te bepalen.');
+          await p.goto(`${p.url()}/${taal}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(5000);
+        },
+        // Een markering van het sjabloon zelf, in elke taal gelijk: een gegeven van het document, geen opschrift.
+        merk: /\{\{rubriek:inleiding\}\}/,
+        website: { nl: 'Het rapport volgt uw eigen Word-sjabloon.', fr: 'Le rapport suit votre propre modèle Word.', en: 'The report follows your own Word template.', de: 'Der Bericht folgt Ihrer eigenen Word-Vorlage.' } },
+
+      // ── Enkel voor de website: uitgeven in één scène. Ze gaat zelf naar het dossier en hergebruikt de stappen van de handleiding
+      // (status, en de vensters bij het uitgeven), zodat die op één plaats blijven. ⚠️ Schrijft, zoals de handleiding: vóór elke taal vullen.
+      { naam: 'w-uitgeven', kop: { nl: 'Uitgeven', fr: 'Émettre', en: 'Issuing', de: 'Herausgeben' },
+        doe: async (p, film) => {
+          const stap = (naam) => FILMS.find(([n]) => n === 'rapport-uitgeven')[1].scenes.find(sc => sc.naam === naam).doe(p, film);
+          await openDossier(p, 'HQ-2026-0003');
+          await stap('status');
+          await naarTab(p, 'rapport_tab');
+          await naarTab(p, 'rapport_deel_uitgifte');
+          await stap('verantwoording');
+          await stap('uitgeven');
+        },
+        merk: /[0-9a-f]{12}/,
+        website: { nl: 'Uitgeven: versie 1, met vingerafdruk. Ze verandert nooit meer.', fr: 'Émission : version 1, avec empreinte. Elle ne change plus jamais.', en: 'Issued: version 1, with a fingerprint. It never changes again.', de: 'Herausgegeben: Version 1 mit Fingerabdruck. Sie ändert sich nie mehr.' } },
+
       { naam: 'vaststellingen', kop: { nl: 'De vaststellingen', fr: 'Les constatations', en: 'The findings', de: 'Die Feststellungen' },
         doe: async (p) => {
           await openDossier(p, 'HQ-2026-0003');
@@ -114,7 +168,8 @@ export const FILMS = [
         nl: 'Bij elke foto legt het toestel het tijdstip, de positie en een vingerafdruk vast. Een vaststelling wordt nooit overschreven. Een fout zet u recht met een nieuwe versie.',
         fr: 'Pour chaque photo, l’appareil enregistre l’heure, la position et une empreinte. Une constatation n’est jamais écrasée. Une erreur se corrige par une nouvelle version.',
         en: 'For each photo, the device records the time, the position and a fingerprint. A finding is never overwritten. You correct a mistake with a new version.',
-        de: 'Zu jedem Foto speichert das Gerät die Uhrzeit, die Position und einen Fingerabdruck. Eine Feststellung wird nie überschrieben. Einen Fehler berichtigen Sie mit einer neuen Version.' },
+        de: 'Zu jedem Foto speichert das Gerät die Uhrzeit, die Position und einen Fingerabdruck. Eine Feststellung wird nie überschrieben. Einen Fehler berichtigen Sie mit einer neuen Version.',
+        website: { nl: 'Elke foto draagt tijdstip, GPS-positie en vingerafdruk.', fr: 'Chaque photo porte l’heure, la position GPS et l’empreinte.', en: 'Every photo carries time, GPS position and fingerprint.', de: 'Jedes Foto trägt Uhrzeit, GPS-Position und Fingerabdruck.' } },
 
       { naam: 'status', kop: { nl: 'Het dossier op Rapportage', fr: 'Le dossier au statut Rapport', en: 'The file set to Reporting', de: 'Die Akte auf Berichterstellung' },
         doe: async (p) => {
@@ -242,7 +297,8 @@ export const FILMS = [
         nl: 'Met Verzenden krijgt de opdrachtgever de PDF, en de mail komt in het journaal. Heeft uw bureau OKSign, dan laat u de versie eerst ondertekenen. Iets rechtzetten doet u met een nieuwe versie, met een reden.',
         fr: 'Avec Envoyer, le donneur d’ordre reçoit le PDF, et le mail est consigné dans le journal. Si votre bureau a OKSign, faites d’abord signer la version. Pour corriger quelque chose, vous émettez une nouvelle version, avec une raison.',
         en: 'With Send, the principal receives the PDF, and the email is recorded in the journal. If your office uses OKSign, have the version signed first. To correct something, you issue a new version, with a reason.',
-        de: 'Mit Senden erhält der Auftraggeber das PDF, und die E-Mail wird im Journal festgehalten. Hat Ihr Büro OKSign, lassen Sie die Version zuerst unterschreiben. Etwas berichtigen Sie mit einer neuen Version, mit einem Grund.' },
+        de: 'Mit Senden erhält der Auftraggeber das PDF, und die E-Mail wird im Journal festgehalten. Hat Ihr Büro OKSign, lassen Sie die Version zuerst unterschreiben. Etwas berichtigen Sie mit einer neuen Version, mit einem Grund.',
+        website: { nl: 'In één klik bij de opdrachtgever.', fr: 'En un clic chez le donneur d’ordre.', en: 'With one click to the principal.', de: 'Mit einem Klick beim Auftraggeber.' } },
     ],
   }],
 
@@ -464,7 +520,11 @@ export const FILMS = [
       de: 'Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus '
         + 'entsteht, und die Planung, indem Sie die Akte zum Besichtiger ziehen.',
     },
-    uitvoeringen: { handleiding: { stem: true } },
+    uitvoeringen: {
+      handleiding: { stem: true },
+      // De websitefilm voor de pagina Opdracht en planning (Dominique, 19/11/2026): zes van de acht scènes, stil, tekst in beeld.
+      website: { stem: false, scenes: ['binnen', 'aanvraag', 'aanvaarden', 'te-plannen', 'slepen', 'gepland'] },
+    },
     scenes: [
       { naam: 'binnen', kop: { nl: 'Een aanvraag komt binnen', fr: 'Une demande arrive', en: 'A request comes in', de: 'Eine Anfrage geht ein' },
         doe: async (p) => {
@@ -476,7 +536,8 @@ export const FILMS = [
         nl: 'Een aanvraag via het formulier op uw website komt meteen in Quaymark binnen. Het dashboard toont ze onder Aanvragen te beslissen.',
         fr: 'Une demande envoyée via le formulaire de votre site web arrive aussitôt dans Quaymark. Le tableau de bord l’affiche sous Demandes à décider.',
         en: 'A request through the form on your website arrives in Quaymark right away. The dashboard shows it under Requests to decide.',
-        de: 'Eine Anfrage über das Formular Ihrer Website geht sofort in Quaymark ein. Die Übersicht zeigt sie unter Zu entscheidende Anfragen.' },
+        de: 'Eine Anfrage über das Formular Ihrer Website geht sofort in Quaymark ein. Die Übersicht zeigt sie unter Zu entscheidende Anfragen.',
+        website: { nl: 'Een aanvraag van uw website komt meteen binnen.', fr: 'Une demande de votre site arrive aussitôt.', en: 'A request from your website comes straight in.', de: 'Eine Anfrage von Ihrer Website kommt sofort an.' } },
 
       { naam: 'aanvraag', kop: { nl: 'De aanvraag', fr: 'La demande', en: 'The request', de: 'Die Anfrage' },
         doe: async (p) => {
@@ -493,7 +554,8 @@ export const FILMS = [
         nl: 'U ziet wie de aanvraag indiende, voor welk schip, in welke haven en wanneer het werk gewenst is.',
         fr: 'Vous voyez qui a introduit la demande, pour quel navire, dans quel port et quand le travail est souhaité.',
         en: 'You see who submitted the request, for which vessel, in which port and when the work is wanted.',
-        de: 'Sie sehen, wer die Anfrage eingereicht hat, für welches Schiff, in welchem Hafen und wann die Arbeit gewünscht ist.' },
+        de: 'Sie sehen, wer die Anfrage eingereicht hat, für welches Schiff, in welchem Hafen und wann die Arbeit gewünscht ist.',
+        website: { nl: 'Indiener, schip, haven en gewenste dag in één oogopslag.', fr: 'Demandeur, navire, port et date souhaitée d’un coup d’œil.', en: 'Sender, vessel, port and requested day at a glance.', de: 'Absender, Schiff, Hafen und Wunschtag auf einen Blick.' } },
 
       { naam: 'voorstel', kop: { nl: 'Wat Quaymark voorstelt', fr: 'Ce que Quaymark propose', en: 'What Quaymark suggests', de: 'Was Quaymark vorschlägt' },
         doe: async (p) => {
@@ -524,7 +586,8 @@ export const FILMS = [
         nl: 'Met Aanvaarden maakt Quaymark het dossier aan, en krijgt de indiener een mail dat zijn opdracht aanvaard is.',
         fr: 'Avec Accepter, Quaymark crée le dossier, et l’expéditeur reçoit un e-mail indiquant que sa mission est acceptée.',
         en: 'With Accept, Quaymark creates the file, and the sender receives an email saying the assignment is accepted.',
-        de: 'Mit Annehmen legt Quaymark die Akte an, und der Absender erhält eine E-Mail, dass sein Auftrag angenommen ist.' },
+        de: 'Mit Annehmen legt Quaymark die Akte an, und der Absender erhält eine E-Mail, dass sein Auftrag angenommen ist.',
+        website: { nl: 'Aanvaarden: het dossier staat meteen klaar.', fr: 'Accepter : le dossier est aussitôt prêt.', en: 'Accept: the file is ready at once.', de: 'Annehmen: Die Akte steht sofort bereit.' } },
 
       { naam: 'dossier', kop: { nl: 'Het nieuwe dossier', fr: 'Le nouveau dossier', en: 'The new file', de: 'Die neue Akte' },
         doe: async (p) => {
@@ -551,7 +614,8 @@ export const FILMS = [
         nl: 'Op de planning staat het nieuwe dossier links, onder Te plannen: het heeft nog geen surveyor.',
         fr: 'Dans le planning, le nouveau dossier figure à gauche, sous À planifier : il n’a pas encore d’expert.',
         en: 'On the schedule, the new file appears on the left, under To schedule: it has no surveyor yet.',
-        de: 'In der Planung steht die neue Akte links unter Zu planen: Sie hat noch keinen Besichtiger.' },
+        de: 'In der Planung steht die neue Akte links unter Zu planen: Sie hat noch keinen Besichtiger.',
+        website: { nl: 'Nog zonder surveyor? Dan staat het bij Te plannen.', fr: 'Sans expert ? Il attend sous À planifier.', en: 'No surveyor yet? It waits under To schedule.', de: 'Noch ohne Besichtiger? Dann steht sie unter Zu planen.' } },
 
       { naam: 'slepen', kop: { nl: 'Inplannen door te slepen', fr: 'Planifier en glissant', en: 'Scheduling by dragging', de: 'Planen durch Ziehen' },
         doe: async (p) => {
@@ -574,7 +638,8 @@ export const FILMS = [
         nl: 'U bladert naar de gewenste dag en sleept het dossier naar de kolom van de surveyor, op het uur waarop het werk begint.',
         fr: 'Vous passez au jour souhaité et glissez le dossier dans la colonne de l’expert, à l’heure où le travail commence.',
         en: 'You go to the requested day and drag the file into the surveyor’s column, at the hour the work starts.',
-        de: 'Sie blättern zum gewünschten Tag und ziehen die Akte in die Spalte des Besichtigers, zu der Stunde, zu der die Arbeit beginnt.' },
+        de: 'Sie blättern zum gewünschten Tag und ziehen die Akte in die Spalte des Besichtigers, zu der Stunde, zu der die Arbeit beginnt.',
+        website: { nl: 'Sleep het naar een surveyor en een uur.', fr: 'Glissez-le vers un expert et une heure.', en: 'Drag it to a surveyor and a time.', de: 'Ziehen Sie sie zu einem Besichtiger und einer Uhrzeit.' } },
 
       { naam: 'gepland', kop: { nl: 'Gepland', fr: 'Planifié', en: 'Scheduled', de: 'Geplant' },
         doe: async (p) => {
@@ -585,7 +650,8 @@ export const FILMS = [
         nl: 'Het dossier is nu Gepland, standaard voor twee uur. U rekt het blok uit als het werk langer duurt. Het kleurt rood bij een afwezigheid of een overlap.',
         fr: 'Le dossier est maintenant Planifié, par défaut pour deux heures. Vous étirez le bloc si le travail dure plus longtemps. Il devient rouge en cas d’absence ou de chevauchement.',
         en: 'The file is now Scheduled, by default for two hours. You stretch the block if the work takes longer. It turns red for an absence or an overlap.',
-        de: 'Die Akte ist jetzt Geplant, standardmäßig für zwei Stunden. Sie ziehen den Block länger, wenn die Arbeit länger dauert. Er wird rot bei einer Abwesenheit oder einer Überschneidung.' },
+        de: 'Die Akte ist jetzt Geplant, standardmäßig für zwei Stunden. Sie ziehen den Block länger, wenn die Arbeit länger dauert. Er wird rot bei einer Abwesenheit oder einer Überschneidung.',
+        website: { nl: 'Ingepland. Een overlap of afwezigheid kleurt rood.', fr: 'Planifié. Un chevauchement ou une absence s’affiche en rouge.', en: 'Scheduled. An overlap or an absence shows in red.', de: 'Geplant. Überschneidung oder Abwesenheit erscheint rot.' } },
     ],
   }],
 ];
