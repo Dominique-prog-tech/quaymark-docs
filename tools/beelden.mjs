@@ -57,7 +57,8 @@ const VERBERG = '.nav-version, .adm-klok-vast, .dxbl-scroll-viewer-vert-scroll-b
 // beeld zonder. De URL alleen zegt niets: Blazor wisselt de URL vóór het scherm hertekend is. Een gegeven uit de demo (scheepsnaam, tekst van een
 // vaststelling) is in elke taal gelijk; anders een tekst van het scherm in de vier talen (Q).
 const SCHOTEN = () => [
-  { naam: 'startscherm', route: '/', verwacht: Q('dossiers_per_status'), magKortZijn: 'een welkom en vier tegels' },
+  // 19/11/2026: "Dossiers per status" staat niet meer op het dashboard (visuele ronde); de kaart Vraagt aandacht wel.
+  { naam: 'startscherm', route: '/', verwacht: Q('vraagt_aandacht'), magKortZijn: 'een welkom en vier tegels' },
   { naam: 'dossiers-lijst', route: '/dossiers', verwacht: /HQ-2026-0005/ },
   { naam: 'dossier', route: '/dossiers', hoogte: 1500, verwacht: Q('aanwezige_toevoegen'), na: dossier('HQ-2026-0003') },
   { naam: 'dossier-vaststellingen', route: '/dossiers', hoogte: 1000, verwacht: /Tank top plating indented/, na: dossier('HQ-2026-0003', 'vaststellingen') },
@@ -114,7 +115,8 @@ const SCHOTEN = () => [
   // V5 (14/11/2026): de handtekeningen (een handtekening en een weigering uit de demodata) en de pagina om te laten tekenen, met een naam ingevuld.
   // R7 (14/11/2026): het deel Ondertekening op het tabblad Rapport (HQ-2026-0001: versie 2 ondertekend, versie 1 nog te ondertekenen).
   //    Afgesloten, dus niet in de lijst: een rechtstreekse route (het dossier staat in de proefdatabank, niet in proefklant-vullen.py).
-  { naam: 'rapport-ondertekening', route: '/dossiers/01a1ca92-792f-7ee9-98b6-8e47fcc8571a?tab=rapport', verwacht: Q('laten_ondertekenen'),
+  // 19/11/2026: het tabblad Rapport heeft sinds 17/11 vier tabjes; de ondertekening staat onder Uitgifte (?deel=uitgifte).
+  { naam: 'rapport-ondertekening', route: '/dossiers/01a1ca92-792f-7ee9-98b6-8e47fcc8571a?tab=rapport&deel=uitgifte', verwacht: Q('laten_ondertekenen'),
     na: async p => { await p.locator('[data-ondertekening]').evaluate(e => e.scrollIntoView({ block: 'center' })); } },
   // V8 (15/11/2026): de documenten van boord op HQ-2026-0003 (een stuwplan als pagina en een cargo manifest als pdf, verzonnen).
   { naam: 'dossier-boorddocumenten', route: '/dossiers', hoogte: 900, verwacht: /Departure condition/, na: dossier('HQ-2026-0003', 'boorddocumenten') },
@@ -126,7 +128,7 @@ const SCHOTEN = () => [
       await p.locator('[data-tekenen] input').first().fill('Capt. R. Lindqvist'); } },
   { naam: 'dossier-schade', route: '/dossiers', hoogte: 1250, verwacht: /Hatch cover rubber packing/, na: dossier('HQ-2026-0003', 'schade') },
   { naam: 'claims', route: '/claims', verwacht: /Cargo claim from receivers/, magKortZijn: 'twee open claims' },
-  { naam: 'dossier-vier-ogen', route: '/dossiers', hoogte: 1100, verwacht: /new damage in hold 2 added/, na: dossier('ZB-2026-0002', 'rapport') },
+  { naam: 'dossier-vier-ogen', route: '/dossiers', hoogte: 1100, verwacht: /new damage in hold 2 added/, na: dossier('ZB-2026-0002', 'rapport&deel=uitgifte') },
   { naam: 'bevoegdheden', route: '/bevoegdheden', verwacht: /IIMS-2022-0417/ },
   { naam: 'bewaartermijnen', route: '/beheer/bewaartermijnen', hoogte: 1250, verwacht: /HQ-2018-0042/ },
   { naam: 'dossier-draft', route: '/dossiers', hoogte: 1250, verwacht: /49[.,\u202f\u00a0]706/, na: dossier('HQ-2026-0004', 'draft') },

@@ -57,7 +57,7 @@ A **finding** is added, never changed or deleted. You correct a mistake with **C
 
 A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible. The calculations (draft survey, gauging on draught scales, bunker survey, timeline and laytime) can then only be viewed.
 
-![The Findings tab per location on board, with photo, Severity, Leave out of report and Correct](images/dossier-vaststellingen-en.png "Findings with their photo")
+![The Findings tab per location on board, with Category, Severity, Description, photo and the New finding button](images/dossier-vaststellingen-en.png "Findings with their photo")
 
 ### Photos in the report
 

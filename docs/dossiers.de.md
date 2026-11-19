@@ -57,7 +57,7 @@ Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Feh
 
 Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Feld-App. Was schon da ist, bleibt sichtbar. Auch die Berechnungen (Draft Survey, Eichaufnahme, Bunker Survey, Zeitleiste und Laytime) können dann nur noch gelesen werden.
 
-![Feststellungen je Ort mit Berichtigen und Aus dem Bericht nehmen](images/dossier-vaststellingen-de.png "Feststellungen mit Foto")
+![Feststellungen je Ort mit Kategorie, Schweregrad, Beschreibung und Neue Feststellung](images/dossier-vaststellingen-de.png "Feststellungen mit Foto")
 
 ### Fotos im Bericht
 

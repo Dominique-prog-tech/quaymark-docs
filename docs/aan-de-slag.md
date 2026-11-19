@@ -6,7 +6,7 @@ description: "De startpagina van uw bureau."
 
 Het **Dashboard** is de startpagina van uw bureau: het eerste item in het menu.
 
-![Het startscherm met de tegels Dossiers per status](images/startscherm.png "Het startscherm")
+![Het startscherm met de tegels per status, Te factureren en Omzet, en de kaarten onder Vraagt aandacht](images/startscherm.png "Het startscherm")
 
 - **Bovenaan** de open dossiers per status: nieuw, gepland, in uitvoering en in rapportage. Een klik op een tegel opent de lijst met die status. Wie facturen mag bekijken, ziet ook wat er nog **te factureren** is (een raming) en de **omzet** van dit jaar.
 - **Vraagt aandacht**: kaarten met de eerste regels en onderaan een link naar de volledige lijst.

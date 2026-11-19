@@ -57,7 +57,7 @@ Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout z
 
 Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij: geen vaststellingen, checklistantwoorden, foto's of handtekeningen, ook niet vanuit de veldapp. Wat er al is, blijft zichtbaar. Ook de berekeningen (draft survey, meting op ijkschalen, bunker survey, tijdlijn en laytime) zijn dan enkel nog te lezen.
 
-![Het tabblad Vaststellingen per plaats aan boord, met foto, Ernst, Uit rapport halen en Rechtzetten](images/dossier-vaststellingen.png "Vaststellingen met hun foto")
+![Het tabblad Vaststellingen per plaats aan boord, met Categorie, Ernst, Omschrijving, foto en de knop Nieuwe vaststelling](images/dossier-vaststellingen.png "Vaststellingen met hun foto")
 
 ### Foto's in het rapport
 

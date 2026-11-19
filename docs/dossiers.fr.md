@@ -57,7 +57,7 @@ Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se
 
 Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : ni constatations, ni réponses à la check-list, ni photos, ni signatures, pas même depuis l'application de terrain. Ce qui existe reste visible. Les calculs (draft survey, jaugeage sur échelles, bunker survey, chronologie et laytime) ne peuvent alors plus qu'être consultés.
 
-![L'onglet Constatations par emplacement à bord, avec photo, Gravité, Retirer du rapport et Rectifier](images/dossier-vaststellingen-fr.png "Les constatations et leur photo")
+![L'onglet Constatations par emplacement à bord, avec Catégorie, Gravité, Description, photo et le bouton Nouvelle constatation](images/dossier-vaststellingen-fr.png "Les constatations et leur photo")
 
 ### Photos dans le rapport
 

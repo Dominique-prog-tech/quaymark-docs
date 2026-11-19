@@ -6,7 +6,7 @@ description: "Die Startseite Ihres Büros."
 
 Die **Übersicht** ist die Startseite Ihres Büros: der erste Eintrag im Menü.
 
-![Startseite mit Akten nach Status](images/startscherm-de.png "Die Startseite")
+![Startseite mit Abzurechnen und Braucht Aufmerksamkeit](images/startscherm-de.png "Die Startseite")
 
 - **Oben** die offenen Akten nach Status: neu, geplant, in Bearbeitung und in Berichterstellung. Ein Klick auf eine Kachel öffnet die Liste mit diesem Status. Wer Rechnungen ansehen darf, sieht auch, was noch **abzurechnen** ist (eine Schätzung), und den **Umsatz** dieses Jahres.
 - **Braucht Aufmerksamkeit**: Karten mit den ersten Zeilen und unten einem Link zur vollständigen Liste.

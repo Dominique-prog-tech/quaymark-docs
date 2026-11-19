@@ -6,7 +6,7 @@ description: "The home page of your office."
 
 The **Dashboard** is the home page of your office: the first item in the menu.
 
-![The start screen with the Files by status tiles](images/startscherm-en.png "The start screen")
+![The start screen with the tiles per status and To invoice, and the cards under Needs attention](images/startscherm-en.png "The start screen")
 
 - **At the top**, the open files by status: new, scheduled, in progress and reporting. A click on a tile opens the list with that status. Those who may view invoices also see what is still **to invoice** (an estimate) and this year's **revenue**.
 - **Needs attention**: cards with the first lines and, at the bottom, a link to the full list.

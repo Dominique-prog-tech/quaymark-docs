@@ -6,7 +6,7 @@ description: "La page d'accueil de votre bureau."
 
 Le **Tableau de bord** est la page d'accueil de votre bureau : le premier élément du menu.
 
-![L'écran d'accueil avec les tuiles Dossiers par statut](images/startscherm-fr.png "L'écran d'accueil")
+![L'écran d'accueil avec les tuiles par statut et À facturer, et les cartes sous Demande votre attention](images/startscherm-fr.png "L'écran d'accueil")
 
 - **En haut**, les dossiers ouverts par statut : nouveaux, planifiés, en cours et en rapport. Un clic sur une tuile ouvre la liste avec ce statut. Qui peut voir les factures voit aussi ce qui reste **à facturer** (une estimation) et le **chiffre d'affaires** de l'année.
 - **Demande votre attention** : des cartes avec les premières lignes et, en bas, un lien vers la liste complète.
