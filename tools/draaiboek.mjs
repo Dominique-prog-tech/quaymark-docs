@@ -35,6 +35,24 @@ const kies = async (p, patroon) => {
   await klik(p, optie); await p.waitForTimeout(900);
 };
 
+// De woorden van de AppKit-schil (kopknoppen, werkbalk van een lijst): niet in QText, dus GEMETEN in de draaiende app, in de vier
+// talen (19/11/2026, tools: een aanmelding per taal, de titels uitgelezen). Waar een vaste klasse of een vast adres bestaat, gaat die voor:
+// die verschilt niet per taal (notif-btn, avatar-btn, prefs-close; de menulinks "dossiers", "planning", "facturen", "beheer").
+const SCHIL = {
+  hulp: /^(Hulp bij dit scherm|Aide pour cet écran|Help for this screen|Hilfe zu diesem Bildschirm)$/,
+  handleiding: /^(Vraag het de handleiding|Demander au manuel|Ask the manual|Fragen Sie das Handbuch)$/,
+  gegevens: /^(Vraag het aan uw gegevens|Interrogez vos données|Ask your data|Fragen Sie Ihre Daten)$/,
+  feedback: /^(Een melding sturen|Signaler quelque chose|Send a report|Eine Meldung senden)$/,
+  exporteren: /^\s*(Exporteren|Exporter|Export|Exportieren)/,
+  filter: /^(Uitgebreid filteren|Filtres avancés|Advanced filter|Erweiterter Filter)$/,
+  zoeken: /^(Zoeken…|Rechercher…|Search…|Suchen…)$/,
+  historiek: /^\s*(Historiek|Historique|History|Verlauf)(\s+(Historiek|Historique|History|Verlauf))?\s*$/,
+  // Een tabblad van de fiche uit de AppKit: dezelfde marge als tabNaam voor de verborgen kopie van DevExpress.
+  journaal: /^\s*(Journaal|Journal)(\s+(Journaal|Journal))?\s*$/,
+};
+const menu = (p, adres) => p.locator(`nav a[href="${adres}"]`).first();
+const sluitPaneel = async (p) => { await klik(p, p.locator('button.prefs-close:visible').first()); await p.waitForTimeout(800); };
+
 export const FILMS = [
   // ── VAN VASTSTELLING TOT UITGEGEVEN RAPPORT (19/11/2026, de proeffilm; op vraag van Dominique: "Ja, schrijf uit") ─────────────────
   // De keten van de Hoe-doe-ik-pagina "Hoe geef ik een rapport uit": vaststellingen met foto → status Rapportage → de tekst per rubriek
@@ -225,6 +243,148 @@ export const FILMS = [
         fr: 'Avec Envoyer, le donneur d’ordre reçoit le PDF, et le mail est consigné dans le journal. Si votre bureau a OKSign, faites d’abord signer la version. Pour corriger quelque chose, vous émettez une nouvelle version, avec une raison.',
         en: 'With Send, the principal receives the PDF, and the email is recorded in the journal. If your office uses OKSign, have the version signed first. To correct something, you issue a new version, with a reason.',
         de: 'Mit Senden erhält der Auftraggeber das PDF, und die E-Mail wird im Journal festgehalten. Hat Ihr Büro OKSign, lassen Sie die Version zuerst unterschreiben. Etwas berichtigen Sie mit einer neuen Version, mit einem Grund.' },
+    ],
+  }],
+
+  // ── AAN DE SLAG (19/11/2026, op vraag van Dominique: "Go" — de eerste van vier nieuwe films) ───────────────────────────────────
+  // De eerste rondleiding: wat iedereen ziet die Quaymark voor het eerst opent, ook een proefgebruiker. Er wordt NIETS bewaard: de film
+  // wijst aan, opent een fiche, de hulplade, de voorkeuren en de meldingen, en sluit ze weer. HQ-2026-0003 is het dossier met het rijkste
+  // journaal in de proefklant. ⚠️ Zijn HISTORIEK moet schoon zijn (zie film-opruimen.py): de scène historiek toont ze.
+  ['aan-de-slag', {
+    pagina: 'aan-de-slag',
+    titel: {
+      nl: 'Aan de slag met Quaymark: het dashboard, de lijsten, een dossier en de hulp',
+    },
+    omschrijving: {
+      nl: 'De eerste rondleiding: het dashboard met uw dossiers per status en wat aandacht vraagt, het menu, werken in een lijst (zoeken, '
+        + 'filteren, exporteren), een dossier met zijn tabbladen, het journaal en de historiek, de hulp bij elk scherm, de assistenten, '
+        + 'uw voorkeuren en de meldingen.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'dashboard', kop: { nl: 'Het dashboard' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await beweegNaar(p, p.locator('main a, main .card, main [class*=tegel]').first());
+        },
+        // Een dossiernummer onder Termijnen: een gegeven van de proefklant, geen opschrift.
+        merk: /HQ-2026-0002/,
+        nl: 'Na het aanmelden opent Quaymark op het dashboard. Bovenaan staan uw open dossiers per status, en wat er nog te factureren is.' },
+
+      { naam: 'aandacht', kop: { nl: 'Wat aandacht vraagt' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText('HQ-2026-0002').first());
+          await p.waitForTimeout(1200);
+          await beweegNaar(p, p.getByText('ZB-2026-0002').first());
+        },
+        merk: /ZB-2026-0002/,
+        nl: 'Daaronder ziet u wat aandacht vraagt: een termijn die vervalt, een aanvraag om te beslissen, een rapport dat op review wacht.' },
+
+      { naam: 'menu', kop: { nl: 'Het menu' },
+        doe: async (p) => {
+          for (const adres of ['dossiers', 'planning', 'facturen']) { await beweegNaar(p, menu(p, adres)); await p.waitForTimeout(900); }
+          await beweegNaar(p, menu(p, 'beheer'));
+        },
+        merk: /HQ-2026-0002/,
+        nl: 'Links staat het menu: de dossiers, de planning, de facturatie. Onderaan opent Platformbeheer de instellingen van uw bureau.' },
+
+      { naam: 'lijst', kop: { nl: 'Een lijst' },
+        doe: async (p) => {
+          await klik(p, menu(p, 'dossiers'));
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await beweegNaar(p, p.getByTitle(SCHIL.filter).first());
+          await p.waitForTimeout(900);
+          await beweegNaar(p, p.getByRole('button', { name: SCHIL.exporteren }).first());
+        },
+        merk: /HQ-2026-0004/,
+        nl: 'Elke lijst werkt hetzelfde. Bovenaan kiest u de status, filtert u op elke kolom, kiest u de kolommen en exporteert u de lijst.' },
+
+      { naam: 'zoeken', kop: { nl: 'Zoeken' },
+        doe: async (p) => {
+          const z = p.getByPlaceholder(SCHIL.zoeken).first();
+          await klik(p, z);
+          await z.type('KAAIMEEUW', { delay: 90 });
+          await p.waitForTimeout(1500);
+        },
+        merk: /HQ-2026-0010/,
+        nl: 'Het zoekvak zoekt in alle kolommen tegelijk. Hier op de naam van een schip: er blijven drie dossiers over.' },
+
+      { naam: 'fiche', kop: { nl: 'Een dossier' },
+        doe: async (p) => {
+          const rij = p.getByRole('row').filter({ hasText: 'HQ-2026-0003' }).first();
+          await beweegNaar(p, rij);
+          await rij.dblclick();
+          await p.waitForURL(/\/dossiers\/[0-9a-f-]{36}(\?.*)?$/, { timeout: 15000 });
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await beweegNaar(p, tabblad(p, tabNaam('veldwerk')));
+          await p.waitForTimeout(800);
+          await beweegNaar(p, tabblad(p, tabNaam('rapport_tab')));
+        },
+        // Het nummer met zijn statusbadge (zo staan ze in de tekst van de pagina; geen \b: zie de statusscène van rapport-uitgeven).
+        merk: /HQ-2026-0003\s*(In uitvoering|En cours|In progress|In Bearbeitung)/,
+        nl: 'Een dubbelklik opent het dossier. Bovenaan staan het nummer en de status, daaronder de tabbladen: van de partijen en het veldwerk tot het rapport.' },
+
+      { naam: 'journaal', kop: { nl: 'Het journaal' },
+        doe: async (p) => {
+          await klik(p, tabblad(p, SCHIL.journaal)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
+          await beweegNaar(p, p.getByText('Statement of facts').first());
+        },
+        merk: /Statement of facts/,
+        nl: 'In het journaal staan de notities, de taken en de bijlagen van het dossier. Ook wat Quaymark zelf noteert, zoals een uitgegeven factuur.' },
+
+      { naam: 'historiek', kop: { nl: 'De historiek' },
+        doe: async (p) => {
+          await klik(p, tabblad(p, SCHIL.historiek));
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await beweegNaar(p, p.getByText(/Estuaire Expertises SARL/).first());
+        },
+        // Een regel van de historiek van HQ-2026-0003 (de partij die op 16/11/2026 bijkwam): een gegeven.
+        merk: /Estuaire Expertises SARL/,
+        nl: 'De historiek toont wie wat wanneer veranderde, in gewone woorden. Een vaststelling of een uitgegeven rapport wordt nooit overschreven.' },
+
+      { naam: 'hulp', kop: { nl: 'De hulp bij elk scherm' },
+        doe: async (p) => {
+          await klik(p, p.getByTitle(SCHIL.hulp).first());
+          await p.waitForTimeout(2500);
+        },
+        // De eerste zin van de uitleg in de lade: tekst van de handleiding, in de taal van het scherm (gemeten 19/11/2026).
+        merk: /Eén opdracht: wat er gevraagd is|Une mission : ce qui est demandé|One instruction: what was asked|Ein Auftrag: was verlangt wird/,
+        nl: 'Het vraagteken rechtsboven opent de uitleg bij het scherm waar u bent, met onderaan een link naar de volledige handleiding.' },
+
+      { naam: 'assistent', kop: { nl: 'De assistenten' },
+        doe: async (p) => {
+          await sluitPaneel(p);
+          await beweegNaar(p, p.getByTitle(SCHIL.handleiding).first());
+          await p.waitForTimeout(1200);
+          await beweegNaar(p, p.getByTitle(SCHIL.gegevens).first());
+          await p.waitForTimeout(800);
+        },
+        merk: /Estuaire Expertises SARL/,
+        nl: 'Met het sterretje stelt u een vraag aan de handleiding, in uw eigen woorden. Het grafiekje beantwoordt vragen over uw eigen gegevens.' },
+
+      { naam: 'voorkeuren', kop: { nl: 'Uw voorkeuren' },
+        doe: async (p) => {
+          await klik(p, p.locator('button.avatar-btn').first());
+          await p.waitForTimeout(1500);
+          // Het paneel blijft OPEN tot de volgende scène: de stem spreekt erover (gemeten 19/11/2026: sloot het hier, dan toonde de
+          // film acht seconden lang de historiek onder een zin over de voorkeuren).
+          await beweegNaar(p, p.getByText(/^(English|Deutsch)$/).first());
+        },
+        // De talen in het paneel, elk in hun eigen woord, dus in elke schermtaal gelijk, en ENKEL in dit paneel. NIET "Demo Surveyor":
+        // die naam staat ook in de historiek eronder, en dan slaagt het merkteken ook zonder paneel (zo gemeten op 19/11/2026).
+        merk: /Nederlands\s*Français\s*English\s*Deutsch/,
+        nl: 'Onder uw initialen kiest u uw accentkleur, de taal van het scherm, en zet u tweestapsverificatie aan.' },
+
+      { naam: 'meldingen', kop: { nl: 'De meldingen' },
+        doe: async (p) => {
+          await sluitPaneel(p);
+          await klik(p, p.locator('button.notif-btn').first());
+          await p.waitForTimeout(1500);
+          await beweegNaar(p, p.getByText(/HQ-2026-0002/).first());
+        },
+        // Het dossiernummer van een melding: staat op deze pagina enkel in het paneel van de meldingen.
+        merk: /HQ-2026-0002/,
+        nl: 'Het belletje toont wat er voor u binnenkwam, zoals een termijn die voorbij is. Met de ballon ernaast stuurt u ons een vraag of een opmerking.' },
     ],
   }],
 ];
