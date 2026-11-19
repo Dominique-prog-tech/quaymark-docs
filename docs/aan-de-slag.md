@@ -13,7 +13,7 @@ Het **Dashboard** is de startpagina van uw bureau: het eerste item in het menu.
     - **Termijnen** (als het bureau in een raamafspraak een termijn afsprak): de open dossiers zonder rapport waarvan de termijn vandaag of de volgende werkdag vervalt, of al voorbij is. → [Termijn tot het rapport](dossiers.md#termijn-tot-het-rapport)
     - **Aanvragen te beslissen**: opdrachten uit het opdrachtgeversportaal of het webformulier. → [Aanvragen](aanvragen.md)
     - **Wacht op review** (wie rapporten mag uitgeven): de rapporten waarvoor een collega een review vroeg.
-    - **Niet-gefactureerd werk** (wie facturen mag bekijken): de grootste ramingen eerst. → [Te factureren](facturen.md#te-factureren)
+    - **Te factureren** (wie facturen mag bekijken): de grootste ramingen eerst. → [Te factureren](facturen.md#te-factureren)
     - **Wachtdiensten**: wie nu van wacht staat per vestiging, met een rode teller als de rol de komende vier weken niet klopt. → [Wachtdiensten](wachtdiensten.md)
 - **Omzet** (wie facturen mag bekijken): per maand, met vorig jaar als lijn ernaast, de grootste opdrachtgevers en het aandeel van elke soort survey. In EUR, zonder btw.
 - Het **menu links** toont de schermen waartoe u toegang hebt. Onderaan staan **Platformbeheer** (de instellingen van het bureau) en **Klantenportaal** (uw facturen en tickets bij ADM Concept).

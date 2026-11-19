@@ -13,7 +13,7 @@ Le **Tableau de bord** est la page d'accueil de votre bureau : le premier élém
     - **Délais** (si le bureau a convenu un délai dans un accord-cadre) : les dossiers ouverts sans rapport dont le délai expire aujourd'hui ou le jour ouvrable suivant, ou est déjà dépassé. → [Délai jusqu'au rapport](dossiers.md#delai-jusquau-rapport)
     - **Demandes à décider** : les missions venues du portail des donneurs d'ordre ou du formulaire web. → [Demandes](aanvragen.md)
     - **En attente de relecture** (pour qui peut émettre des rapports) : les rapports pour lesquels un collègue a demandé une relecture.
-    - **Travail non facturé** (pour qui peut voir les factures) : les plus grandes estimations en premier. → [À facturer](facturen.md#a-facturer)
+    - **À facturer** (pour qui peut voir les factures) : les plus grandes estimations en premier. → [À facturer](facturen.md#a-facturer)
     - **Gardes** : qui est de garde maintenant par site, avec un compteur rouge si le rôle des quatre prochaines semaines n'est pas correct. → [Gardes](wachtdiensten.md)
 - **Chiffre d'affaires** (pour qui peut voir les factures) : par mois, avec l'année précédente en ligne, les plus grands donneurs d'ordre et la part de chaque type d'expertise. En EUR, hors TVA.
 - Le **menu de gauche** affiche les écrans auxquels vous avez accès. En bas se trouvent **Administration** (les paramètres du bureau) et **Portail client** (vos factures et tickets chez ADM Concept).

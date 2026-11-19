@@ -13,7 +13,7 @@ Die **Übersicht** ist die Startseite Ihres Büros: der erste Eintrag im Menü.
     - **Fristen** (wenn das Büro in einer Rahmenvereinbarung eine Frist vereinbart hat): die offenen Akten ohne Bericht, deren Frist heute oder am nächsten Arbeitstag abläuft oder schon abgelaufen ist. → [Frist bis zum Bericht](dossiers.md#frist-bis-zum-bericht)
     - **Zu entscheidende Anfragen**: Aufträge aus dem Auftraggeberportal oder dem Webformular. → [Anfragen](aanvragen.md)
     - **Wartet auf Prüfung** (wenn Sie Berichte herausgeben dürfen): die Berichte, für die ein Kollege eine Prüfung angefordert hat.
-    - **Nicht abgerechnete Arbeit** (wenn Sie Rechnungen ansehen dürfen): die größten Schätzungen zuerst. → [Abzurechnen](facturen.md#abzurechnen)
+    - **Abzurechnen** (wenn Sie Rechnungen ansehen dürfen): die größten Schätzungen zuerst. → [Abzurechnen](facturen.md#abzurechnen)
     - **Bereitschaft**: wer jetzt pro Niederlassung Bereitschaft hat, mit einem roten Zähler, wenn der Plan der nächsten vier Wochen nicht stimmt. → [Bereitschaft](wachtdiensten.md)
 - **Umsatz** (wenn Sie Rechnungen ansehen dürfen): pro Monat, mit dem Vorjahr als Linie, die größten Auftraggeber und der Anteil jeder Besichtigungsart. In EUR, ohne MwSt.
 - Das **Menü links** zeigt die Bildschirme, auf die Sie Zugriff haben. Unten stehen **Verwaltung** (die Einstellungen des Büros) und **Kundenportal** (Ihre Rechnungen und Tickets bei ADM Concept).

@@ -13,7 +13,7 @@ The **Dashboard** is the home page of your office: the first item in the menu.
     - **Deadlines** (if the office agreed a deadline in a framework agreement): the open files without a report whose deadline falls due today or the next working day, or has passed. → [Report deadline](dossiers.md#report-deadline)
     - **Requests to decide**: assignments from the principal portal or the web form. → [Requests](aanvragen.md)
     - **Awaiting review** (for those who may issue reports): the reports for which a colleague requested a review.
-    - **Uninvoiced work** (for those who may view invoices): the largest estimates first. → [To invoice](facturen.md#to-invoice)
+    - **To invoice** (for those who may view invoices): the largest estimates first. → [To invoice](facturen.md#to-invoice)
     - **On-call duty**: who is on call now per office, with a red counter if the roster for the next four weeks is not right. → [On-call duty](wachtdiensten.md)
 - **Revenue** (for those who may view invoices): per month, with last year as a line, the largest principals and the share of each survey type. In EUR, excluding VAT.
 - The **menu on the left** shows the screens you have access to. At the bottom are **Administration** (the office's settings) and **Customer portal** (your invoices and tickets at ADM Concept).
