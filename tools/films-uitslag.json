@@ -306,5 +306,549 @@
     "gepubliceerdOp": "2026-11-19T10:49:42.39",
     "gepubliceerdeHash": "78be1f48079739de",
     "embed": "https://iframe.mediadelivery.net/embed/814490/c36f5745-b709-4f44-8929-6709f0a65c16"
+  },
+  "aan-de-slag-nl": {
+    "film": "aan-de-slag",
+    "taal": "nl-BE",
+    "pagina": "aan-de-slag",
+    "lengte": 166.44,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Aan de slag met Quaymark: het dashboard, de lijsten, een dossier en de hulp",
+    "omschrijving": "De eerste rondleiding: het dashboard met uw dossiers per status en wat aandacht vraagt, het menu, werken in een lijst (zoeken, filteren, exporteren), een dossier met zijn tabbladen, het journaal en de historiek, de hulp bij elk scherm, de assistenten, uw voorkeuren en de meldingen.",
+    "hash": "3f0873b1f38b2fba",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Het dashboard",
+        "start": 4.3,
+        "eind": 12.89
+      },
+      {
+        "titel": "Wat aandacht vraagt",
+        "start": 17.09,
+        "eind": 25.04
+      },
+      {
+        "titel": "Het menu",
+        "start": 32.24,
+        "eind": 40.04
+      },
+      {
+        "titel": "Een lijst",
+        "start": 46.22,
+        "eind": 54.95
+      },
+      {
+        "titel": "Zoeken",
+        "start": 59.55,
+        "eind": 66.15
+      },
+      {
+        "titel": "Een dossier",
+        "start": 72.2,
+        "eind": 81.86
+      },
+      {
+        "titel": "Het journaal",
+        "start": 86.14,
+        "eind": 96.12
+      },
+      {
+        "titel": "De historiek",
+        "start": 100.68,
+        "eind": 109.46
+      },
+      {
+        "titel": "De hulp bij elk scherm",
+        "start": 114.24,
+        "eind": 122.18
+      },
+      {
+        "titel": "De assistenten",
+        "start": 128.76,
+        "eind": 137.3
+      },
+      {
+        "titel": "Uw voorkeuren",
+        "start": 141.82,
+        "eind": 148.84
+      },
+      {
+        "titel": "De meldingen",
+        "start": 154.94,
+        "eind": 164.05
+      }
+    ]
+  },
+  "aan-de-slag-fr": {
+    "film": "aan-de-slag",
+    "taal": "fr-BE",
+    "pagina": "aan-de-slag",
+    "lengte": 156.92,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Premiers pas avec Quaymark : le tableau de bord, les listes, un dossier et l’aide",
+    "omschrijving": "La première visite guidée : le tableau de bord avec vos dossiers par statut et ce qui demande votre attention, le menu, le travail dans une liste (rechercher, filtrer, exporter), un dossier et ses onglets, le journal et l’historique, l’aide sur chaque écran, les assistants, vos préférences et les notifications.",
+    "hash": "fd6c075bece07e10",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Le tableau de bord",
+        "start": 4.31,
+        "eind": 11.69
+      },
+      {
+        "titel": "Ce qui demande votre attention",
+        "start": 15.9,
+        "eind": 23.47
+      },
+      {
+        "titel": "Le menu",
+        "start": 30.7,
+        "eind": 37.94
+      },
+      {
+        "titel": "Une liste",
+        "start": 44.12,
+        "eind": 52.99
+      },
+      {
+        "titel": "Rechercher",
+        "start": 57.57,
+        "eind": 63.79
+      },
+      {
+        "titel": "Un dossier",
+        "start": 69.88,
+        "eind": 78.89
+      },
+      {
+        "titel": "Le journal",
+        "start": 83.13,
+        "eind": 91.02
+      },
+      {
+        "titel": "L’historique",
+        "start": 95.55,
+        "eind": 103.21
+      },
+      {
+        "titel": "L’aide sur chaque écran",
+        "start": 107.99,
+        "eind": 115.33
+      },
+      {
+        "titel": "Les assistants",
+        "start": 121.88,
+        "eind": 128.89
+      },
+      {
+        "titel": "Vos préférences",
+        "start": 133.43,
+        "eind": 140.73
+      },
+      {
+        "titel": "Les notifications",
+        "start": 146.81,
+        "eind": 154.52
+      }
+    ]
+  },
+  "aan-de-slag-en": {
+    "film": "aan-de-slag",
+    "taal": "en-BE",
+    "pagina": "aan-de-slag",
+    "lengte": 160.96,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Getting started with Quaymark: the dashboard, lists, a file and help",
+    "omschrijving": "A first tour: the dashboard with your files by status and what needs attention, the menu, working in a list (search, filter, export), a file with its tabs, the journal and the history, help on every screen, the assistants, your preferences and the notifications.",
+    "hash": "5c803928d39fdbf8",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "The dashboard",
+        "start": 4.28,
+        "eind": 12.22
+      },
+      {
+        "titel": "What needs attention",
+        "start": 16.41,
+        "eind": 23.8
+      },
+      {
+        "titel": "The menu",
+        "start": 30.99,
+        "eind": 38.7
+      },
+      {
+        "titel": "A list",
+        "start": 44.9,
+        "eind": 53.58
+      },
+      {
+        "titel": "Search",
+        "start": 58.17,
+        "eind": 64.95
+      },
+      {
+        "titel": "A file",
+        "start": 71.07,
+        "eind": 80.96
+      },
+      {
+        "titel": "The journal",
+        "start": 85.18,
+        "eind": 93.49
+      },
+      {
+        "titel": "The history",
+        "start": 98.07,
+        "eind": 105.54
+      },
+      {
+        "titel": "Help on every screen",
+        "start": 110.34,
+        "eind": 117.54
+      },
+      {
+        "titel": "The assistants",
+        "start": 124.17,
+        "eind": 131.37
+      },
+      {
+        "titel": "Your preferences",
+        "start": 135.93,
+        "eind": 143.27
+      },
+      {
+        "titel": "Notifications",
+        "start": 149.37,
+        "eind": 158.61
+      }
+    ]
+  },
+  "aan-de-slag-de": {
+    "film": "aan-de-slag",
+    "taal": "de-BE",
+    "pagina": "aan-de-slag",
+    "lengte": 170.6,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Erste Schritte mit Quaymark: die Übersicht, Listen, eine Akte und die Hilfe",
+    "omschrijving": "Der erste Rundgang: die Übersicht mit Ihren Akten nach Status und dem, was Aufmerksamkeit braucht, das Menü, die Arbeit in einer Liste (suchen, filtern, exportieren), eine Akte mit ihren Registerkarten, das Journal und der Verlauf, die Hilfe zu jedem Bildschirm, die Assistenten, Ihre Einstellungen und die Benachrichtigungen.",
+    "hash": "05009cfdfd620f6f",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Die Übersicht",
+        "start": 4.33,
+        "eind": 12.83
+      },
+      {
+        "titel": "Was Aufmerksamkeit braucht",
+        "start": 17.04,
+        "eind": 26.37
+      },
+      {
+        "titel": "Das Menü",
+        "start": 33.56,
+        "eind": 41.32
+      },
+      {
+        "titel": "Eine Liste",
+        "start": 47.48,
+        "eind": 56.4
+      },
+      {
+        "titel": "Suchen",
+        "start": 60.99,
+        "eind": 67.91
+      },
+      {
+        "titel": "Eine Akte",
+        "start": 73.98,
+        "eind": 83.31
+      },
+      {
+        "titel": "Das Journal",
+        "start": 87.54,
+        "eind": 96.68
+      },
+      {
+        "titel": "Der Verlauf",
+        "start": 101.22,
+        "eind": 109.58
+      },
+      {
+        "titel": "Die Hilfe zu jedem Bildschirm",
+        "start": 114.39,
+        "eind": 122.75
+      },
+      {
+        "titel": "Die Assistenten",
+        "start": 129.35,
+        "eind": 138.18
+      },
+      {
+        "titel": "Ihre Einstellungen",
+        "start": 142.7,
+        "eind": 151.39
+      },
+      {
+        "titel": "Die Benachrichtigungen",
+        "start": 157.5,
+        "eind": 168.18
+      }
+    ]
+  },
+  "aanvraag-tot-planning-nl": {
+    "film": "aanvraag-tot-planning",
+    "taal": "nl-BE",
+    "pagina": "aanvragen",
+    "lengte": 110.44,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Van aanvraag tot ingepland dossier in Quaymark",
+    "omschrijving": "Een aanvraag van het formulier op uw website: wat er binnenkomt, de opdrachtgever die Quaymark voorstelt, aanvaarden, het dossier dat daaruit ontstaat, en het inplannen door het dossier naar de surveyor te slepen.",
+    "hash": "b38e8324b0675c1d",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Een aanvraag komt binnen",
+        "start": 4.35,
+        "eind": 12.75
+      },
+      {
+        "titel": "De aanvraag",
+        "start": 19.29,
+        "eind": 26.11
+      },
+      {
+        "titel": "Wat Quaymark voorstelt",
+        "start": 30.34,
+        "eind": 38.74
+      },
+      {
+        "titel": "Aanvaarden",
+        "start": 45.93,
+        "eind": 52.94
+      },
+      {
+        "titel": "Het nieuwe dossier",
+        "start": 57.95,
+        "eind": 68.58
+      },
+      {
+        "titel": "Te plannen",
+        "start": 73.61,
+        "eind": 79.18
+      },
+      {
+        "titel": "Inplannen door te slepen",
+        "start": 85.27,
+        "eind": 93.35
+      },
+      {
+        "titel": "Gepland",
+        "start": 97.12,
+        "eind": 108.08
+      }
+    ]
+  },
+  "aanvraag-tot-planning-fr": {
+    "film": "aanvraag-tot-planning",
+    "taal": "fr-BE",
+    "pagina": "aanvragen",
+    "lengte": 102.2,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "De la demande au dossier planifié dans Quaymark",
+    "omschrijving": "Une demande du formulaire de votre site web : ce qui arrive, le donneur d’ordre que Quaymark propose, l’acceptation, le dossier qui en résulte, et la planification en glissant le dossier vers l’expert.",
+    "hash": "9fce5885bde7d107",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Une demande arrive",
+        "start": 4.28,
+        "eind": 12.27
+      },
+      {
+        "titel": "La demande",
+        "start": 18.8,
+        "eind": 24.51
+      },
+      {
+        "titel": "Ce que Quaymark propose",
+        "start": 28.73,
+        "eind": 36.44
+      },
+      {
+        "titel": "Accepter",
+        "start": 43.61,
+        "eind": 49.74
+      },
+      {
+        "titel": "Le nouveau dossier",
+        "start": 54.77,
+        "eind": 63.96
+      },
+      {
+        "titel": "À planifier",
+        "start": 68.99,
+        "eind": 74.98
+      },
+      {
+        "titel": "Planifier en glissant",
+        "start": 81.03,
+        "eind": 87.03
+      },
+      {
+        "titel": "Planifié",
+        "start": 90.79,
+        "eind": 99.8
+      }
+    ]
+  },
+  "aanvraag-tot-planning-en": {
+    "film": "aanvraag-tot-planning",
+    "taal": "en-BE",
+    "pagina": "aanvragen",
+    "lengte": 103.28,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "From request to scheduled file in Quaymark",
+    "omschrijving": "A request from the form on your website: what comes in, the principal that Quaymark suggests, accepting, the file that results, and scheduling by dragging the file to the surveyor.",
+    "hash": "5cd0d598d2c0ee2c",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "A request comes in",
+        "start": 4.29,
+        "eind": 12.09
+      },
+      {
+        "titel": "The request",
+        "start": 18.61,
+        "eind": 24.27
+      },
+      {
+        "titel": "What Quaymark suggests",
+        "start": 28.48,
+        "eind": 36.8
+      },
+      {
+        "titel": "Accepting",
+        "start": 43.96,
+        "eind": 51.21
+      },
+      {
+        "titel": "The new file",
+        "start": 56.23,
+        "eind": 64.63
+      },
+      {
+        "titel": "To schedule",
+        "start": 69.66,
+        "eind": 75.83
+      },
+      {
+        "titel": "Scheduling by dragging",
+        "start": 81.93,
+        "eind": 87.78
+      },
+      {
+        "titel": "Scheduled",
+        "start": 91.57,
+        "eind": 100.9
+      }
+    ]
+  },
+  "aanvraag-tot-planning-de": {
+    "film": "aanvraag-tot-planning",
+    "taal": "de-BE",
+    "pagina": "aanvragen",
+    "lengte": 111.56,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Von der Anfrage zur geplanten Akte in Quaymark",
+    "omschrijving": "Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus entsteht, und die Planung, indem Sie die Akte zum Besichtiger ziehen.",
+    "hash": "013d166cda4a63d4",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Eine Anfrage geht ein",
+        "start": 4.3,
+        "eind": 13.04
+      },
+      {
+        "titel": "Die Anfrage",
+        "start": 19.56,
+        "eind": 26.52
+      },
+      {
+        "titel": "Was Quaymark vorschlägt",
+        "start": 30.75,
+        "eind": 39.85
+      },
+      {
+        "titel": "Annehmen",
+        "start": 47.02,
+        "eind": 53.98
+      },
+      {
+        "titel": "Die neue Akte",
+        "start": 58.99,
+        "eind": 69.44
+      },
+      {
+        "titel": "Zu planen",
+        "start": 74.45,
+        "eind": 79.89
+      },
+      {
+        "titel": "Planen durch Ziehen",
+        "start": 85.96,
+        "eind": 93.95
+      },
+      {
+        "titel": "Geplant",
+        "start": 97.7,
+        "eind": 109.17
+      }
+    ]
   }
 }
