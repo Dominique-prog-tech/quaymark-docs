@@ -103,6 +103,7 @@ lijst = ', '.join(lit(i) for i in eigen_dossiers)
 for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.spraaknotities', 'dossiers.gezamenlijke_antwoorden', 'dossiers.gezamenlijke_verzoeken', 'dossiers.gezamenlijke_vastleggingen', 'dossiers.gezamenlijke_surveys',
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.scan_codes', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
+          'dossiers.bevestiging_verantwoordingen',   # 19/11/2026: de film rapport-uitgeven laat er een achter (geen vreemde sleutel naar het dossier)
           'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'berekeningen.ijk_metingen', 'rapporten.documenten']:
     sql.append(f'delete from {t} where dossier_id in ({lijst})' + (f' and {VAST}' if t == 'financieel.kosten' else '') + ';')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
