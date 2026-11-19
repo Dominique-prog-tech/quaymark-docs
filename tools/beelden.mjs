@@ -25,7 +25,11 @@ const { chromium } = await import(PAKKET.playwright);
 const HIER = new URL('.', import.meta.url).pathname;
 const DOCS = join(HIER, '..', 'docs');
 const BEELDEN = join(DOCS, 'images');
-const filter = process.argv[2]?.split(',') ?? null;   // één of meer stukken van een naam, met komma's
+const filter = process.argv.slice(2).find(a => !a.startsWith('--'))?.split(',') ?? null;   // één of meer stukken van een naam, met komma's
+// `--taal=de`: enkel die taal (19/11/2026, voor de Duitse woordwissel: anders worden alle 216 beelden opnieuw gemaakt).
+const TAAL = process.argv.find(a => a.startsWith('--taal='))?.split('=')[1];
+// `--meld=<regex>`: noemt op het einde elk beeld waarvan het SCHERM die tekst draagt (om te weten welke beelden een woordwissel raakt).
+const MELD = process.argv.find(a => a.startsWith('--meld='))?.split('=').slice(1).join('=');
 const BREED = 1440, HOOG = 900;
 const WACHTWOORD = process.env.BEELDEN_WACHTWOORD;
 if (!WACHTWOORD) { console.error('⛔ Zet BEELDEN_WACHTWOORD (zie bovenaan): het wachtwoord van de proefsurveyor. Het staat bewust in geen enkel bestand.'); process.exit(2); }
@@ -152,7 +156,8 @@ const SCHOTEN = () => [
   { naam: 'woordenlijst', route: '/beheer/woordenlijst', verwacht: /hatch coaming/ },
 ];
 
-const TALEN = [['nl-BE', ''], ['fr-BE', '-fr'], ['en-BE', '-en'], ['de-BE', '-de']];
+const TALEN = [['nl-BE', ''], ['fr-BE', '-fr'], ['en-BE', '-en'], ['de-BE', '-de']].filter(([t]) => !TAAL || t.startsWith(TAAL));
+if (!TALEN.length) { console.error(`⛔ --taal=${TAAL} past bij geen enkele taal (nl, fr, en, de). Niets geschreven.`); process.exit(2); }
 
 function altUitPaginas() {
   const alt = {};
@@ -193,7 +198,7 @@ try {
   await browser.close(); process.exit(2);
 }
 
-const geschreven = [], mislukt = [], geweigerd = [], altMissers = [];
+const geschreven = [], mislukt = [], geweigerd = [], altMissers = [], gemeld = [];
 for (const [taal, achter] of TALEN) {
   await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
   for (const s of schoten) {
@@ -211,6 +216,7 @@ for (const [taal, achter] of TALEN) {
       await page.mouse.move(0, (s.hoogte ?? HOOG) - 1);
 
       const tekst = await page.locator('body').innerText();
+      if (MELD && new RegExp(MELD).test(tekst)) gemeld.push(bestand);
       // De standaard van de kern kent enkel nl en fr, en "Une erreur" staat hier in een gewone uitleg (« Une erreur se rectifie… », tabblad
       // Constatations): dat gaf op 13/11 twee valse weigeringen. Daarom de vier talen, preciezer, én de foutbalk van Blazor zelf (haar tekst is
       // verborgen tot ze verschijnt, dus geen tekstzoektocht ziet ze).
@@ -246,6 +252,7 @@ await browser.close();
 
 console.log(`App: ${toestand.sha?.slice(0, 8)}${toestand.vuil ? ' (werkmap VUIL)' : ''}. Geschreven: ${geschreven.length}.`);
 for (const g of geschreven) console.log('  ✔', g);
+if (MELD) console.log(`\nMET "${MELD}" OP HET SCHERM (${gemeld.length}): ${gemeld.join(', ') || 'geen enkel'}`);
 for (const [kop, lijst] of [['❌ MISLUKT', mislukt], ['⛔ GEWEIGERD (vorm)', geweigerd], ['⚠️ ALT-TEKST', altMissers]])
   if (lijst.length) { console.log(`\n${kop}`); for (const l of lijst) console.log('  ', l); }
 if (mislukt.length || geweigerd.length) process.exit(1);
