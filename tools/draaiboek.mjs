@@ -10,6 +10,16 @@ import { BASIS } from './app.mjs';
 import { Q, QX } from './qtekst.mjs';
 import { beweegNaar, klik, tabblad } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/browser.mjs';
 
+// ── HET TEMPO VAN EEN WEBSITEFILM (19/11/2026). De wachttijden in de scènes volgen het tempo van een STEM: de handleiding wacht tot
+// de zin klaar is. Een websitefilm is stil, en de motor toont zijn tekst pas NA de handelingen van de scène: de eerste opname van de
+// websitefilms duurde 55 en 76 s in plaats van 30 tot 45, en de tekst stond er telkens maar 3 tot 4 s. T() zet elke wachttijd in de
+// websiteversie op 30 %; in de handleiding is T(n) = n, dus daar verandert er niets.
+const WEBSITE = process.argv.includes('--uitvoering=website');
+const T = ms => (WEBSITE ? Math.round(ms * 0.3) : ms);
+// De vaste id van HQ-2026-0003 in de proefklant: uuid5 van 'qm-demo/dossier/3' (proefklant-vullen.py, vid()). Zo gaat een websitescène
+// rechtstreeks naar het dossier, zonder de lijst.
+const HQ3 = '042a72d9-2d86-5b00-a6c9-805bb8917c25';
+
 // Een dossier openen vanuit de lijst, zoals een gebruiker: de rij aanwijzen en dubbelklikken.
 const openDossier = async (p, nummer) => {
   await p.goto(`${BASIS}/dossiers`); await p.waitForLoadState('networkidle');
@@ -18,21 +28,21 @@ const openDossier = async (p, nummer) => {
   await beweegNaar(p, rij);
   await rij.dblclick();
   await p.waitForURL(/\/dossiers\/[0-9a-f-]{36}(\?.*)?$/, { timeout: 15000 });
-  await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
+  await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1200));
 };
 // ⚠️ DevExpress zet de naam van een tabblad TWEE keer in de pagina ("Veldwerk\n   Veldwerk": een verborgen kopie, gemeten 19/11/2026), dus
 // QX vindt nooit een tabblad. Dit patroon laat die verdubbeling toe en blijft strikt: "Bericht" (Duits voor rapport) vindt "Berichten" niet.
 const tabNaam = sleutel => { const a = Q(sleutel).source; return new RegExp(`^\\s*(${a})(\\s+(${a}))?\\s*$`); };
-const naarTab = async (p, sleutel) => { await klik(p, tabblad(p, tabNaam(sleutel))); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200); };
+const naarTab = async (p, sleutel) => { await klik(p, tabblad(p, tabNaam(sleutel))); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1200)); };
 const knop = (p, sleutel) => p.getByRole('button', { name: QX(sleutel) });
 // De knop Bewaren onderaan een fiche komt uit de AppKit, niet uit QText.
 const BEWAREN = /^(Bewaren|Enregistrer|Save|Speichern)$/;
 // Een keuzelijst van DevExpress openen: het pijltje naast het vak (een klik in het vak geeft enkel de focus, gemeten 19/11/2026).
-const openLijst = async (p, vak) => { await klik(p, vak.locator('button, .dxbl-edit-btn-dropdown').last()); await p.waitForTimeout(900); };
+const openLijst = async (p, vak) => { await klik(p, vak.locator('button, .dxbl-edit-btn-dropdown').last()); await p.waitForTimeout(T(900)); };
 const kies = async (p, patroon) => {
   const optie = p.locator('[role=option]:visible, .dxbl-list-box-item:visible').filter({ hasText: patroon }).first();
   await optie.waitFor({ state: 'visible', timeout: 10000 });
-  await klik(p, optie); await p.waitForTimeout(900);
+  await klik(p, optie); await p.waitForTimeout(T(900));
 };
 
 // De woorden van de AppKit-schil (kopknoppen, werkbalk van een lijst): niet in QText, dus GEMETEN in de draaiende app, in de vier
@@ -51,7 +61,7 @@ const SCHIL = {
   journaal: /^\s*(Journaal|Journal)(\s+(Journaal|Journal))?\s*$/,
 };
 const menu = (p, adres) => p.locator(`nav a[href="${adres}"]`).first();
-const sluitPaneel = async (p) => { await klik(p, p.locator('button.prefs-close:visible').first()); await p.waitForTimeout(800); };
+const sluitPaneel = async (p) => { await klik(p, p.locator('button.prefs-close:visible').first()); await p.waitForTimeout(T(800)); };
 
 export const FILMS = [
   // ── VAN VASTSTELLING TOT UITGEGEVEN RAPPORT (19/11/2026, de proeffilm; op vraag van Dominique: "Ja, schrijf uit") ─────────────────
@@ -98,15 +108,26 @@ export const FILMS = [
                                           'verantwoording', 'uitgeven', 'verzenden'] },
       // De websitefilm voor de pagina Vaststellingen ter plaatse (Dominique, 19/11/2026: "Planning + vaststelling", en "beide punten mogen
       // mee": tijdstip, GPS en vingerafdruk als tekst in beeld, en het eigen Word-sjabloon). Stil, tekst in beeld, 30 tot 45 s.
-      website: { stem: false, scenes: ['w-vaststellingen', 'foto', 'w-sjabloon', 'w-uitgeven', 'verzenden'] },
+      // Een EIGEN omschrijving (Dominique, 19/11/2026: "Ja, zo doen"): die van de film noemt de spraaknotitie, de standaardtekst en de
+      // controle, die deze film niet toont, en zwijgt over het Word-sjabloon. Ze gaat via website-films.json naar de site.
+      website: { stem: false, scenes: ['w-vaststellingen', 'foto', 'w-sjabloon', 'w-uitgeven', 'verzenden'],
+        omschrijving: {
+          nl: 'Vaststellingen ter plaatse, met foto’s die tijdstip, GPS-positie en vingerafdruk dragen. Het rapport volgt uw eigen '
+            + 'Word-sjabloon, wordt uitgegeven als versie met vingerafdruk en gaat in één klik naar de opdrachtgever.',
+          fr: 'Des constatations sur place, avec des photos qui portent l’heure, la position GPS et une empreinte. Le rapport suit votre '
+            + 'propre modèle Word, est émis en version avec empreinte et part en un clic chez le donneur d’ordre.',
+          en: 'Findings on site, with photos that carry the time, GPS position and fingerprint. The report follows your own Word '
+            + 'template, is issued as a version with a fingerprint and reaches the principal in one click.',
+          de: 'Feststellungen vor Ort, mit Fotos, die Uhrzeit, GPS-Position und Fingerabdruck tragen. Der Bericht folgt Ihrer eigenen '
+            + 'Word-Vorlage, wird als Version mit Fingerabdruck herausgegeben und ist mit einem Klick beim Auftraggeber.',
+        } },
     },
     scenes: [
       // ── Enkel voor de website: een eigen begin (de eerste scène van een selectie navigeert zelf; de motor eist een p.goto in haar doe).
       { naam: 'w-vaststellingen', kop: { nl: 'De vaststellingen', fr: 'Les constatations', en: 'The findings', de: 'Die Feststellungen' },
         doe: async (p) => {
-          await p.goto(`${BASIS}/dossiers`); await p.waitForLoadState('networkidle');
-          await openDossier(p, 'HQ-2026-0003');
-          await naarTab(p, 'veldwerk');
+          // Rechtstreeks naar Veldwerk › Vaststellingen van HQ-2026-0003 (?tab=vaststellingen, zoals beelden.mjs).
+          await p.goto(`${BASIS}/dossiers/${HQ3}?tab=vaststellingen`); await p.waitForLoadState('networkidle');
           await beweegNaar(p, p.getByText('Tank top plating indented').first());
         },
         merk: /Tank top plating indented/,
@@ -115,7 +136,7 @@ export const FILMS = [
       // ── Enkel voor de website: het eigen Word-sjabloon van het bureau, in de taal van de film (de taal van het scherm, uit het cookie).
       { naam: 'w-sjabloon', kop: { nl: 'Uw eigen Word-sjabloon', fr: 'Votre propre modèle Word', en: 'Your own Word template', de: 'Ihre eigene Word-Vorlage' },
         doe: async (p) => {
-          await p.goto(`${BASIS}/beheer/rapportsjablonen`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1000);
+          await p.goto(`${BASIS}/beheer/rapportsjablonen`); await p.waitForLoadState('networkidle');
           const rij = p.getByRole('row').filter({ hasText: 'Surveyrapport' }).first();
           await beweegNaar(p, rij);
           await rij.dblclick();
@@ -125,23 +146,40 @@ export const FILMS = [
           const cookie = (await p.context().cookies()).find(k => /Culture/i.test(k.name));
           const taal = decodeURIComponent(cookie?.value ?? '').match(/c=([a-z]{2})-/)?.[1];
           if (!taal) throw new Error('Geen cultuurcookie: de taal van het sjabloon is niet te bepalen.');
-          await p.goto(`${p.url()}/${taal}`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(5000);
+          await p.goto(`${p.url()}/${taal}`);
+          // Wachten op de INHOUD van het document, niet op een vaste tijd (de Word-editor laadt in 2 tot 5 s).
+          await p.locator('body').filter({ hasText: /\{\{rubriek:inleiding\}\}/ }).first().waitFor({ timeout: 20000 });
+          await p.waitForTimeout(T(1500));
         },
         // Een markering van het sjabloon zelf, in elke taal gelijk: een gegeven van het document, geen opschrift.
         merk: /\{\{rubriek:inleiding\}\}/,
         website: { nl: 'Het rapport volgt uw eigen Word-sjabloon.', fr: 'Le rapport suit votre propre modèle Word.', en: 'The report follows your own Word template.', de: 'Der Bericht folgt Ihrer eigenen Word-Vorlage.' } },
 
-      // ── Enkel voor de website: uitgeven in één scène. Ze gaat zelf naar het dossier en hergebruikt de stappen van de handleiding
-      // (status, en de vensters bij het uitgeven), zodat die op één plaats blijven. ⚠️ Schrijft, zoals de handleiding: vóór elke taal vullen.
+      // ── Enkel voor de website: uitgeven in één scène, slank. Rechtstreeks naar het dossier, de status op Rapportage, naar Uitgifte, en de
+      // vier vensters (verantwoording, Toch uitgeven, de laatste bevestiging, Niet nu). De verantwoording wordt INGEVULD, niet getypt: in een
+      // stille film is typen dode tijd. ⚠️ Schrijft, zoals de handleiding: vóór elke taal vullen, na de ronde film-opruimen.py.
       { naam: 'w-uitgeven', kop: { nl: 'Uitgeven', fr: 'Émettre', en: 'Issuing', de: 'Herausgeben' },
-        doe: async (p, film) => {
-          const stap = (naam) => FILMS.find(([n]) => n === 'rapport-uitgeven')[1].scenes.find(sc => sc.naam === naam).doe(p, film);
-          await openDossier(p, 'HQ-2026-0003');
-          await stap('status');
-          await naarTab(p, 'rapport_tab');
-          await naarTab(p, 'rapport_deel_uitgifte');
-          await stap('verantwoording');
-          await stap('uitgeven');
+        doe: async (p) => {
+          // De voorbereiding (status op Rapportage) en de bevestigingsvensters zonder glijdende cursor: in de eerste snelle opname kostte
+          // deze scène nog 20 s stille handelingen (19/11/2026). De cursor glijdt enkel naar wat de kijker moet zien: Uitgifte en Rapport uitgeven.
+          await p.goto(`${BASIS}/dossiers/${HQ3}`); await p.waitForLoadState('networkidle');
+          const vak = p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q('status').source})`) }).first();
+          await vak.locator('button, .dxbl-edit-btn-dropdown').last().click();
+          await p.locator('[role=option]:visible, .dxbl-list-box-item:visible').filter({ hasText: /^\s*(Rapportage|Rapport|Reporting|Berichterstellung)\s*$/ }).first().click();
+          await p.getByRole('button', { name: BEWAREN }).first().click();
+          await p.waitForLoadState('networkidle');
+          await p.goto(`${BASIS}/dossiers/${HQ3}?tab=rapport`); await p.waitForLoadState('networkidle');
+          await klik(p, tabblad(p, tabNaam('rapport_deel_uitgifte'))); await p.waitForLoadState('networkidle');
+          await klik(p, knop(p, 'uitgeven').first());
+          await p.locator('textarea:visible').last().fill('Order confirmed by phone by the insurer.');
+          // ⚠️ Een korte pauze tussen de vensters: zonder viel de Engelse opname twee keer op een klik terwijl een venster nog wisselde
+          // (19/11/2026; stap voor stap, met pauzes, lukte elke klik). T(800) = 0,24 s in de websiteversie.
+          await knop(p, 'bevestiging_verder').click(); await p.waitForTimeout(T(800));
+          await knop(p, 'ctl_toch_ok').click(); await p.waitForTimeout(T(800));
+          await knop(p, 'uitgeven').last().click();
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(800));
+          await knop(p, 'niet_nu').click();
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
         },
         merk: /[0-9a-f]{12}/,
         website: { nl: 'Uitgeven: versie 1, met vingerafdruk. Ze verandert nooit meer.', fr: 'Émission : version 1, avec empreinte. Elle ne change plus jamais.', en: 'Issued: version 1, with a fingerprint. It never changes again.', de: 'Herausgegeben: Version 1 mit Fingerabdruck. Sie ändert sich nie mehr.' } },
@@ -162,7 +200,7 @@ export const FILMS = [
         doe: async (p) => {
           const rij = p.getByRole('row').filter({ hasText: 'Hatch coaming top plate bent' }).first();
           await beweegNaar(p, rij.locator('a[href*="/quaymark/bewijs/"]').first());
-          await p.waitForTimeout(1500);
+          await p.waitForTimeout(T(1500));
         },
         merk: /Hatch coaming top plate bent/,
         nl: 'Bij elke foto legt het toestel het tijdstip, de positie en een vingerafdruk vast. Een vaststelling wordt nooit overschreven. Een fout zet u recht met een nieuwe versie.',
@@ -179,7 +217,7 @@ export const FILMS = [
           // De naam van de status staat in QText onder een enum-sleutel (DossierStatus.Rapportage), die Q niet leest.
           await kies(p, /^\s*(Rapportage|Rapport|Reporting|Berichterstellung)\s*$/);
           await klik(p, p.getByRole('button', { name: BEWAREN }).first());
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
         },
         // Het dossiernummer met zijn statusbadge erachter (zo staan ze in de paginatekst). NIET de opdrachtgever: die staat in een invoervak,
         // en de waarde van een invoervak hoort niet bij de tekst die de motor nakijkt (gemeten 19/11/2026). Aan het nummer gekoppeld, want het
@@ -205,9 +243,9 @@ export const FILMS = [
       { naam: 'spraaknotitie', kop: { nl: 'Een spraaknotitie', fr: 'Une note vocale', en: 'A voice note', de: 'Eine Sprachnotiz' },
         doe: async (p) => {
           await beweegNaar(p, p.getByText(/water ingress marks on the tank top/).first());
-          await p.waitForTimeout(800);
+          await p.waitForTimeout(T(800));
           await klik(p, knop(p, 'notitie_toevoegen').first());
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           await beweegNaar(p, p.getByText(/water ingress marks on the tank top/).last());
         },
         merk: /water ingress marks on the tank top/,
@@ -234,7 +272,7 @@ export const FILMS = [
       { naam: 'bewaren', kop: { nl: 'Bewaren en nakijken', fr: 'Enregistrer et relire', en: 'Save and review', de: 'Speichern und prüfen' },
         doe: async (p) => {
           await klik(p, knop(p, 'rubrieken_bewaren'));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, knop(p, 'voorbeeld_pdf').first());
         },
         merk: /A further survey is recommended/,
@@ -258,14 +296,14 @@ export const FILMS = [
       { naam: 'verantwoording', kop: { nl: 'Zonder opdrachtbevestiging', fr: 'Sans confirmation de mission', en: 'Without an order confirmation', de: 'Ohne Auftragsbestätigung' },
         doe: async (p) => {
           await klik(p, knop(p, 'uitgeven').first());
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           const vak = p.locator('textarea:visible').last();
           await klik(p, vak);
           // Engels, zoals alle gegevens van de proefklant: een surveyor schrijft zijn dossier in de taal van het rapport.
           await vak.type('Order confirmed by phone by the insurer.', { delay: 45 });
-          await p.waitForTimeout(600);
+          await p.waitForTimeout(T(600));
           await klik(p, knop(p, 'bevestiging_verder'));
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
         },
         merk: Q('bevestiging_ontbreekt_kop'),
         nl: 'Dan Rapport uitgeven. De opdrachtgever heeft deze opdracht niet bevestigd. Quaymark vraagt dus waarom u toch uitgeeft, en bewaart dat met uw naam en het tijdstip.',
@@ -276,13 +314,13 @@ export const FILMS = [
       { naam: 'uitgeven', kop: { nl: 'Versie 1, met vingerafdruk', fr: 'Version 1, avec son empreinte', en: 'Version 1, with its fingerprint', de: 'Version 1, mit Fingerabdruck' },
         doe: async (p) => {
           await klik(p, knop(p, 'ctl_toch_ok'));
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           // De laatste bevestiging: dezelfde tekst als de knop op het tabblad, dus de LAATSTE zichtbare.
           await klik(p, knop(p, 'uitgeven').last());
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
           // Daarna vraagt Quaymark of het dossier afgesloten mag worden (gemeten 19/11/2026). Niet nu: eerst verzenden.
           await klik(p, knop(p, 'niet_nu'));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
         },
         // De vingerafdruk van de uitgegeven versie (hex): een gegeven, geen opschrift.
         merk: /[0-9a-f]{12}/,
@@ -292,7 +330,7 @@ export const FILMS = [
         de: 'Die Hinweise der Prüfung werden mit der Version gespeichert. Nach der letzten Bestätigung ist der Bericht Version 1, mit seinem Fingerabdruck. Er ändert sich danach nie mehr. Die Akte abschließen können Sie später.' },
 
       { naam: 'verzenden', kop: { nl: 'Verzenden', fr: 'Envoyer', en: 'Sending', de: 'Senden' },
-        doe: async (p) => { await beweegNaar(p, knop(p, 'verzenden').first()); await p.waitForTimeout(1200); },
+        doe: async (p) => { await beweegNaar(p, knop(p, 'verzenden').first()); await p.waitForTimeout(T(1200)); },
         merk: /[0-9a-f]{12}/,
         nl: 'Met Verzenden krijgt de opdrachtgever de PDF, en de mail komt in het journaal. Heeft uw bureau OKSign, dan laat u de versie eerst ondertekenen. Iets rechtzetten doet u met een nieuwe versie, met een reden.',
         fr: 'Avec Envoyer, le donneur d’ordre reçoit le PDF, et le mail est consigné dans le journal. Si votre bureau a OKSign, faites d’abord signer la version. Pour corriger quelque chose, vous émettez une nouvelle version, avec une raison.',
@@ -331,7 +369,7 @@ export const FILMS = [
     scenes: [
       { naam: 'dashboard', kop: { nl: 'Het dashboard', fr: 'Le tableau de bord', en: 'The dashboard', de: 'Die Übersicht' },
         doe: async (p) => {
-          await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, p.locator('main a, main .card, main [class*=tegel]').first());
         },
         // Een dossiernummer onder Termijnen: een gegeven van de proefklant, geen opschrift.
@@ -344,7 +382,7 @@ export const FILMS = [
       { naam: 'aandacht', kop: { nl: 'Wat aandacht vraagt', fr: 'Ce qui demande votre attention', en: 'What needs attention', de: 'Was Aufmerksamkeit braucht' },
         doe: async (p) => {
           await beweegNaar(p, p.getByText('HQ-2026-0002').first());
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           await beweegNaar(p, p.getByText('ZB-2026-0002').first());
         },
         merk: /ZB-2026-0002/,
@@ -355,7 +393,7 @@ export const FILMS = [
 
       { naam: 'menu', kop: { nl: 'Het menu', fr: 'Le menu', en: 'The menu', de: 'Das Menü' },
         doe: async (p) => {
-          for (const adres of ['dossiers', 'planning', 'facturen']) { await beweegNaar(p, menu(p, adres)); await p.waitForTimeout(900); }
+          for (const adres of ['dossiers', 'planning', 'facturen']) { await beweegNaar(p, menu(p, adres)); await p.waitForTimeout(T(900)); }
           await beweegNaar(p, menu(p, 'beheer'));
         },
         merk: /HQ-2026-0002/,
@@ -367,9 +405,9 @@ export const FILMS = [
       { naam: 'lijst', kop: { nl: 'Een lijst', fr: 'Une liste', en: 'A list', de: 'Eine Liste' },
         doe: async (p) => {
           await klik(p, menu(p, 'dossiers'));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, p.getByTitle(SCHIL.filter).first());
-          await p.waitForTimeout(900);
+          await p.waitForTimeout(T(900));
           await beweegNaar(p, p.getByRole('button', { name: SCHIL.exporteren }).first());
         },
         merk: /HQ-2026-0004/,
@@ -383,7 +421,7 @@ export const FILMS = [
           const z = p.getByPlaceholder(SCHIL.zoeken).first();
           await klik(p, z);
           await z.type('KAAIMEEUW', { delay: 90 });
-          await p.waitForTimeout(1500);
+          await p.waitForTimeout(T(1500));
         },
         merk: /HQ-2026-0010/,
         nl: 'Het zoekvak zoekt in alle kolommen tegelijk. Hier op de naam van een schip: er blijven drie dossiers over.',
@@ -397,9 +435,9 @@ export const FILMS = [
           await beweegNaar(p, rij);
           await rij.dblclick();
           await p.waitForURL(/\/dossiers\/[0-9a-f-]{36}(\?.*)?$/, { timeout: 15000 });
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, tabblad(p, tabNaam('veldwerk')));
-          await p.waitForTimeout(800);
+          await p.waitForTimeout(T(800));
           await beweegNaar(p, tabblad(p, tabNaam('rapport_tab')));
         },
         // Het nummer met zijn statusbadge (zo staan ze in de tekst van de pagina; geen \b: zie de statusscène van rapport-uitgeven).
@@ -411,7 +449,7 @@ export const FILMS = [
 
       { naam: 'journaal', kop: { nl: 'Het journaal', fr: 'Le journal', en: 'The journal', de: 'Das Journal' },
         doe: async (p) => {
-          await klik(p, tabblad(p, SCHIL.journaal)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
+          await klik(p, tabblad(p, SCHIL.journaal)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1200));
           await beweegNaar(p, p.getByText('Statement of facts').first());
         },
         merk: /Statement of facts/,
@@ -423,7 +461,7 @@ export const FILMS = [
       { naam: 'historiek', kop: { nl: 'De historiek', fr: 'L’historique', en: 'The history', de: 'Der Verlauf' },
         doe: async (p) => {
           await klik(p, tabblad(p, SCHIL.historiek));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, p.getByText(/Estuaire Expertises SARL/).first());
         },
         // Een regel van de historiek van HQ-2026-0003 (de partij die op 16/11/2026 bijkwam): een gegeven.
@@ -436,7 +474,7 @@ export const FILMS = [
       { naam: 'hulp', kop: { nl: 'De hulp bij elk scherm', fr: 'L’aide sur chaque écran', en: 'Help on every screen', de: 'Die Hilfe zu jedem Bildschirm' },
         doe: async (p) => {
           await klik(p, p.getByTitle(SCHIL.hulp).first());
-          await p.waitForTimeout(2500);
+          await p.waitForTimeout(T(2500));
         },
         // De eerste zin van de uitleg in de lade: tekst van de handleiding, in de taal van het scherm (gemeten 19/11/2026).
         // ⚠️ \s*: het Frans zet een VASTE spatie (U+00A0) vóór het dubbelpunt (gemeten 19/11/2026), geen gewone.
@@ -450,9 +488,9 @@ export const FILMS = [
         doe: async (p) => {
           await sluitPaneel(p);
           await beweegNaar(p, p.getByTitle(SCHIL.handleiding).first());
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           await beweegNaar(p, p.getByTitle(SCHIL.gegevens).first());
-          await p.waitForTimeout(800);
+          await p.waitForTimeout(T(800));
         },
         merk: /Estuaire Expertises SARL/,
         nl: 'Met het sterretje stelt u een vraag aan de handleiding, in uw eigen woorden. Het grafiekje beantwoordt vragen over uw eigen gegevens.',
@@ -463,7 +501,7 @@ export const FILMS = [
       { naam: 'voorkeuren', kop: { nl: 'Uw voorkeuren', fr: 'Vos préférences', en: 'Your preferences', de: 'Ihre Einstellungen' },
         doe: async (p) => {
           await klik(p, p.locator('button.avatar-btn').first());
-          await p.waitForTimeout(1500);
+          await p.waitForTimeout(T(1500));
           // Het paneel blijft OPEN tot de volgende scène: de stem spreekt erover (gemeten 19/11/2026: sloot het hier, dan toonde de
           // film acht seconden lang de historiek onder een zin over de voorkeuren).
           await beweegNaar(p, p.getByText(/^(English|Deutsch)$/).first());
@@ -480,7 +518,7 @@ export const FILMS = [
         doe: async (p) => {
           await sluitPaneel(p);
           await klik(p, p.locator('button.notif-btn').first());
-          await p.waitForTimeout(1500);
+          await p.waitForTimeout(T(1500));
           await beweegNaar(p, p.getByText(/HQ-2026-0002/).first());
         },
         // Het dossiernummer van een melding: staat op deze pagina enkel in het paneel van de meldingen.
@@ -523,12 +561,23 @@ export const FILMS = [
     uitvoeringen: {
       handleiding: { stem: true },
       // De websitefilm voor de pagina Opdracht en planning (Dominique, 19/11/2026): zes van de acht scènes, stil, tekst in beeld.
-      website: { stem: false, scenes: ['binnen', 'aanvraag', 'aanvaarden', 'te-plannen', 'slepen', 'gepland'] },
+      // Een EIGEN omschrijving (Dominique, 19/11/2026), zoals bij rapport-uitgeven: deze film toont zes van de acht scènes.
+      website: { stem: false, scenes: ['binnen', 'aanvraag', 'aanvaarden', 'te-plannen', 'slepen', 'gepland'],
+        omschrijving: {
+          nl: 'Een aanvraag via het formulier op uw website komt meteen binnen in Quaymark: indiener, schip, haven en gewenste dag. '
+            + 'Aanvaarden maakt er een dossier van, en u plant het door het naar een surveyor en een uur te slepen.',
+          fr: 'Une demande envoyée via le formulaire de votre site web arrive aussitôt dans Quaymark : demandeur, navire, port et jour '
+            + 'souhaité. L’accepter en fait un dossier, que vous planifiez en le glissant vers un expert et une heure.',
+          en: 'A request from the form on your website arrives in Quaymark straight away: sender, vessel, port and preferred day. '
+            + 'Accepting it creates a file, which you schedule by dragging it to a surveyor and a time.',
+          de: 'Eine Anfrage über das Formular Ihrer Website kommt sofort in Quaymark an: Absender, Schiff, Hafen und Wunschtag. Mit dem '
+            + 'Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Besichtiger und einer Uhrzeit ziehen.',
+        } },
     },
     scenes: [
       { naam: 'binnen', kop: { nl: 'Een aanvraag komt binnen', fr: 'Une demande arrive', en: 'A request comes in', de: 'Eine Anfrage geht ein' },
         doe: async (p) => {
-          await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, p.getByText(/Scheldemond Bevrachting NV · POLDERWIND/).first());
         },
         // De aanvraag op het dashboard (opdrachtgever · schip): staat enkel onder Aanvragen te beslissen.
@@ -542,12 +591,12 @@ export const FILMS = [
       { naam: 'aanvraag', kop: { nl: 'De aanvraag', fr: 'La demande', en: 'The request', de: 'Die Anfrage' },
         doe: async (p) => {
           await klik(p, menu(p, 'aanvragen'));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1200));
           const rij = p.getByRole('row').filter({ hasText: 'POLDERWIND' }).first();
           await beweegNaar(p, rij);
           await rij.dblclick();
           await p.waitForURL(/\/aanvragen\/[0-9a-f-]{36}/, { timeout: 15000 });
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
           await beweegNaar(p, p.getByText('Lotte Janssens').first());
         },
         merk: /Lotte Janssens/,
@@ -563,7 +612,7 @@ export const FILMS = [
           // van de pagina (gemeten 19/11/2026: getByText vond "Scheldemond Bevrachting NV (zelfde e-mailadres)" niet).
           const vak = (sleutel) => p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q(sleutel).source})`) }).first();
           await beweegNaar(p, vak('opdrachtgever'));
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           await beweegNaar(p, vak('schip'));
         },
         merk: /SB-2026-118/,
@@ -579,7 +628,7 @@ export const FILMS = [
           await kies(p, /Hoofdkantoor|HQ\)/);
           await klik(p, knop(p, 'aanvraag_aanvaarden').first());
           await p.waitForURL(/\/dossiers\/[0-9a-f-]{36}/, { timeout: 20000 });
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
         },
         // Het NIEUWE dossier met zijn status Nieuw (zonder surveyor): een gegeven dat pas na het aanvaarden bestaat.
         merk: /HQ-2026-\d{4}\s*(Nieuw|Nouveau|New|Neu)/,
@@ -593,9 +642,9 @@ export const FILMS = [
         doe: async (p) => {
           const vak = (sleutel) => p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q(sleutel).source})`) }).first();
           await beweegNaar(p, p.getByText(Q('bevestiging_stand_via_aanvraag')).first());
-          await p.waitForTimeout(1200);
+          await p.waitForTimeout(T(1200));
           await beweegNaar(p, vak('gepland_op'));
-          await p.waitForTimeout(800);
+          await p.waitForTimeout(T(800));
         },
         merk: /HQ-2026-\d{4}\s*(Nieuw|Nouveau|New|Neu)/,
         nl: 'Het dossier heeft al zijn opdrachtgever, zijn schip, de haven en het gewenste moment. Het geldt als bevestigd: de opdrachtgever vroeg het zelf aan.',
@@ -606,7 +655,7 @@ export const FILMS = [
       { naam: 'te-plannen', kop: { nl: 'Te plannen', fr: 'À planifier', en: 'To schedule', de: 'Zu planen' },
         doe: async (p) => {
           await klik(p, menu(p, 'planning'));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
           await beweegNaar(p, p.locator('[draggable=true][data-dossier-id]').filter({ hasText: 'POLDERWIND' }).first());
         },
         // De kaart van het nieuwe dossier onder Te plannen: POLDERWIND staat vandaag nergens anders op de planning.
@@ -624,14 +673,14 @@ export const FILMS = [
           // 19/11/2026; eerst stond hier $="Day", en dat vond in het Frans niets). In elke taal eerst Vorige, dan Volgende.
           const vandaag = new Date(); let d = 1;
           while ([0, 6].includes(new Date(vandaag.getFullYear(), vandaag.getMonth(), vandaag.getDate() + d).getDay())) d++;
-          for (let i = 0; i < d; i++) { await klik(p, p.locator('button[title*="Day"]').nth(1)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1000); }
+          for (let i = 0; i < d; i++) { await klik(p, p.locator('button[title*="Day"]').nth(1)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1000)); }
           const doel = new Date(vandaag.getFullYear(), vandaag.getMonth(), vandaag.getDate() + d);
           // data-start = de wandklok van de cel in epoch-ms (adm-scheduler-drop.js); data-resource 0 = de eerste kolom, Demo Surveyor.
           const cel = p.locator(`.dxbl-sc-time-cell[data-start="${Date.UTC(doel.getFullYear(), doel.getMonth(), doel.getDate(), 9, 0)}"][data-resource="0"]`).first();
           const kaart = p.locator('[draggable=true][data-dossier-id]').filter({ hasText: 'POLDERWIND' }).first();
           await beweegNaar(p, kaart);
           await kaart.dragTo(cel);
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
         },
         // Het blok op de planning: POLDERWIND om 09:00. Het andere POLDERWIND-dossier (HQ-2026-0004) staat om 14:00.
         merk: /POLDERWIND · [^0-9]*09:00/,
@@ -644,7 +693,7 @@ export const FILMS = [
       { naam: 'gepland', kop: { nl: 'Gepland', fr: 'Planifié', en: 'Scheduled', de: 'Geplant' },
         doe: async (p) => {
           await beweegNaar(p, p.getByText(/POLDERWIND · [^0-9]*$/).first());
-          await p.waitForTimeout(1500);
+          await p.waitForTimeout(T(1500));
         },
         merk: /POLDERWIND · [^0-9]*09:00/,
         nl: 'Het dossier is nu Gepland, standaard voor twee uur. U rekt het blok uit als het werk langer duurt. Het kleurt rood bij een afwezigheid of een overlap.',

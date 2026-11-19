@@ -882,5 +882,413 @@
     "gepubliceerdOp": "2026-11-19T15:07:49.359",
     "gepubliceerdeHash": "013d166cda4a63d4",
     "embed": "https://iframe.mediadelivery.net/embed/814490/108694e3-0527-41a6-8397-4f92c4aac9cf"
+  },
+  "aanvraag-tot-planning-website-nl": {
+    "film": "aanvraag-tot-planning",
+    "taal": "nl-BE",
+    "pagina": "aanvragen",
+    "lengte": 46.64,
+    "uitvoering": "website",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Van aanvraag tot ingepland dossier in Quaymark",
+    "omschrijving": "Een aanvraag via het formulier op uw website komt meteen binnen in Quaymark: indiener, schip, haven en gewenste dag. Aanvaarden maakt er een dossier van, en u plant het door het naar een surveyor en een uur te slepen.",
+    "hash": "23e5db95897e56c3",
+    "guid": "f74c3a19-56c2-4abd-8763-3239071037e5",
+    "hoofdstukken": [
+      {
+        "titel": "Een aanvraag komt binnen",
+        "start": 3.36,
+        "eind": 6.72
+      },
+      {
+        "titel": "De aanvraag",
+        "start": 11.36,
+        "eind": 15.36
+      },
+      {
+        "titel": "Aanvaarden",
+        "start": 20.95,
+        "eind": 24.02
+      },
+      {
+        "titel": "Te plannen",
+        "start": 27.66,
+        "eind": 31.23
+      },
+      {
+        "titel": "Inplannen door te slepen",
+        "start": 35.27,
+        "eind": 38.05
+      },
+      {
+        "titel": "Gepland",
+        "start": 40.77,
+        "eind": 44.34
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/f74c3a19-56c2-4abd-8763-3239071037e5/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T16:15:10.033",
+    "gepubliceerdeHash": "23e5db95897e56c3",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/f74c3a19-56c2-4abd-8763-3239071037e5"
+  },
+  "aanvraag-tot-planning-website-fr": {
+    "film": "aanvraag-tot-planning",
+    "taal": "fr-BE",
+    "pagina": "aanvragen",
+    "lengte": 46.24,
+    "uitvoering": "website",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "De la demande au dossier planifié dans Quaymark",
+    "omschrijving": "Une demande envoyée via le formulaire de votre site web arrive aussitôt dans Quaymark : demandeur, navire, port et jour souhaité. L’accepter en fait un dossier, que vous planifiez en le glissant vers un expert et une heure.",
+    "hash": "d3864f220e9cc0ee",
+    "guid": "2b397fe0-6785-4ee3-af6d-a54e232165be",
+    "hoofdstukken": [
+      {
+        "titel": "Une demande arrive",
+        "start": 3.38,
+        "eind": 6.38
+      },
+      {
+        "titel": "La demande",
+        "start": 11.37,
+        "eind": 15.51
+      },
+      {
+        "titel": "Accepter",
+        "start": 20.47,
+        "eind": 23.33
+      },
+      {
+        "titel": "À planifier",
+        "start": 26.96,
+        "eind": 29.89
+      },
+      {
+        "titel": "Planifier en glissant",
+        "start": 33.88,
+        "eind": 36.66
+      },
+      {
+        "titel": "Planifié",
+        "start": 39.43,
+        "eind": 43.79
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/2b397fe0-6785-4ee3-af6d-a54e232165be/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T16:25:21.629",
+    "gepubliceerdeHash": "d3864f220e9cc0ee",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/2b397fe0-6785-4ee3-af6d-a54e232165be"
+  },
+  "aanvraag-tot-planning-website-en": {
+    "film": "aanvraag-tot-planning",
+    "taal": "en-BE",
+    "pagina": "aanvragen",
+    "lengte": 44.64,
+    "uitvoering": "website",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "From request to scheduled file in Quaymark",
+    "omschrijving": "A request from the form on your website arrives in Quaymark straight away: sender, vessel, port and preferred day. Accepting it creates a file, which you schedule by dragging it to a surveyor and a time.",
+    "hash": "92e2728b2d131671",
+    "guid": "2557b472-b00e-4412-a539-878043ee8a6a",
+    "hoofdstukken": [
+      {
+        "titel": "A request comes in",
+        "start": 3.35,
+        "eind": 6.64
+      },
+      {
+        "titel": "The request",
+        "start": 11.46,
+        "eind": 15.1
+      },
+      {
+        "titel": "Accepting",
+        "start": 20.04,
+        "eind": 22.64
+      },
+      {
+        "titel": "To schedule",
+        "start": 26.31,
+        "eind": 29.45
+      },
+      {
+        "titel": "Scheduling by dragging",
+        "start": 33.42,
+        "eind": 36.02
+      },
+      {
+        "titel": "Scheduled",
+        "start": 38.73,
+        "eind": 42.23
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/2557b472-b00e-4412-a539-878043ee8a6a/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T16:35:34.027",
+    "gepubliceerdeHash": "92e2728b2d131671",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/2557b472-b00e-4412-a539-878043ee8a6a"
+  },
+  "aanvraag-tot-planning-website-de": {
+    "film": "aanvraag-tot-planning",
+    "taal": "de-BE",
+    "pagina": "aanvragen",
+    "lengte": 48.44,
+    "uitvoering": "website",
+    "routes": [],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Von der Anfrage zur geplanten Akte in Quaymark",
+    "omschrijving": "Eine Anfrage über das Formular Ihrer Website kommt sofort in Quaymark an: Absender, Schiff, Hafen und Wunschtag. Mit dem Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Besichtiger und einer Uhrzeit ziehen.",
+    "hash": "9532158e331e1905",
+    "guid": "a202b593-c9f8-4a2b-9742-f08e4d5d7546",
+    "hoofdstukken": [
+      {
+        "titel": "Eine Anfrage geht ein",
+        "start": 3.45,
+        "eind": 6.81
+      },
+      {
+        "titel": "Die Anfrage",
+        "start": 11.73,
+        "eind": 15.59
+      },
+      {
+        "titel": "Annehmen",
+        "start": 20.77,
+        "eind": 23.56
+      },
+      {
+        "titel": "Zu planen",
+        "start": 27.25,
+        "eind": 31.11
+      },
+      {
+        "titel": "Planen durch Ziehen",
+        "start": 35.5,
+        "eind": 39.36
+      },
+      {
+        "titel": "Geplant",
+        "start": 42.1,
+        "eind": 46.03
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/a202b593-c9f8-4a2b-9742-f08e4d5d7546/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T16:45:55.839",
+    "gepubliceerdeHash": "9532158e331e1905",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/a202b593-c9f8-4a2b-9742-f08e4d5d7546"
+  },
+  "rapport-uitgeven-website-nl": {
+    "film": "rapport-uitgeven",
+    "taal": "nl-BE",
+    "pagina": "hoe/rapport-uitgeven",
+    "lengte": 44.12,
+    "uitvoering": "website",
+    "routes": [
+      "/dossiers/{id}",
+      "/beheer/rapportsjablonen"
+    ],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
+    "omschrijving": "Vaststellingen ter plaatse, met foto’s die tijdstip, GPS-positie en vingerafdruk dragen. Het rapport volgt uw eigen Word-sjabloon, wordt uitgegeven als versie met vingerafdruk en gaat in één klik naar de opdrachtgever.",
+    "hash": "8c4a222acbd3b6ee",
+    "guid": "93ccdc2c-3e58-4596-a982-af8a03706006",
+    "hoofdstukken": [
+      {
+        "titel": "De vaststellingen",
+        "start": 2.95,
+        "eind": 7.16
+      },
+      {
+        "titel": "Foto’s met bewijswaarde",
+        "start": 9.87,
+        "eind": 13.8
+      },
+      {
+        "titel": "Uw eigen Word-sjabloon",
+        "start": 17.87,
+        "eind": 20.8
+      },
+      {
+        "titel": "Uitgeven",
+        "start": 31.96,
+        "eind": 36.39
+      },
+      {
+        "titel": "Verzenden",
+        "start": 39.11,
+        "eind": 41.71
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/93ccdc2c-3e58-4596-a982-af8a03706006/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T16:56:08.426",
+    "gepubliceerdeHash": "8c4a222acbd3b6ee",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/93ccdc2c-3e58-4596-a982-af8a03706006"
+  },
+  "rapport-uitgeven-website-fr": {
+    "film": "rapport-uitgeven",
+    "taal": "fr-BE",
+    "pagina": "hoe/rapport-uitgeven",
+    "lengte": 42.6,
+    "uitvoering": "website",
+    "routes": [
+      "/dossiers/{id}",
+      "/beheer/rapportsjablonen"
+    ],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "De la constatation au rapport émis dans Quaymark",
+    "omschrijving": "Des constatations sur place, avec des photos qui portent l’heure, la position GPS et une empreinte. Le rapport suit votre propre modèle Word, est émis en version avec empreinte et part en un clic chez le donneur d’ordre.",
+    "hash": "400ea91d84c3d5a7",
+    "guid": "f8b6f22e-6a9a-43ed-b9f4-8410fad58658",
+    "hoofdstukken": [
+      {
+        "titel": "Les constatations",
+        "start": 2.96,
+        "eind": 7.53
+      },
+      {
+        "titel": "Des photos qui font foi",
+        "start": 10.3,
+        "eind": 14.51
+      },
+      {
+        "titel": "Votre propre modèle Word",
+        "start": 18.29,
+        "eind": 21.22
+      },
+      {
+        "titel": "Émettre",
+        "start": 30.13,
+        "eind": 34.77
+      },
+      {
+        "titel": "Envoyer",
+        "start": 37.58,
+        "eind": 40.18
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/f8b6f22e-6a9a-43ed-b9f4-8410fad58658/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T17:06:20.299",
+    "gepubliceerdeHash": "400ea91d84c3d5a7",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/f8b6f22e-6a9a-43ed-b9f4-8410fad58658"
+  },
+  "rapport-uitgeven-website-en": {
+    "film": "rapport-uitgeven",
+    "taal": "en-BE",
+    "pagina": "hoe/rapport-uitgeven",
+    "lengte": 41.56,
+    "uitvoering": "website",
+    "routes": [
+      "/dossiers/{id}",
+      "/beheer/rapportsjablonen"
+    ],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "From finding to issued report in Quaymark",
+    "omschrijving": "Findings on site, with photos that carry the time, GPS position and fingerprint. The report follows your own Word template, is issued as a version with a fingerprint and reaches the principal in one click.",
+    "hash": "0f6bc25f711c01fb",
+    "guid": "3aa352c3-3844-430c-8684-de9063051859",
+    "hoofdstukken": [
+      {
+        "titel": "The findings",
+        "start": 2.75,
+        "eind": 6.61
+      },
+      {
+        "titel": "Photos as evidence",
+        "start": 9.34,
+        "eind": 13.27
+      },
+      {
+        "titel": "Your own Word template",
+        "start": 17.27,
+        "eind": 20.27
+      },
+      {
+        "titel": "Issuing",
+        "start": 29.49,
+        "eind": 33.92
+      },
+      {
+        "titel": "Sending",
+        "start": 36.54,
+        "eind": 39.14
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/3aa352c3-3844-430c-8684-de9063051859/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T17:15:24.578",
+    "gepubliceerdeHash": "0f6bc25f711c01fb",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/3aa352c3-3844-430c-8684-de9063051859"
+  },
+  "rapport-uitgeven-website-de": {
+    "film": "rapport-uitgeven",
+    "taal": "de-BE",
+    "pagina": "hoe/rapport-uitgeven",
+    "lengte": 41.2,
+    "uitvoering": "website",
+    "routes": [
+      "/dossiers/{id}",
+      "/beheer/rapportsjablonen"
+    ],
+    "app": {
+      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "vuil": false
+    },
+    "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
+    "omschrijving": "Feststellungen vor Ort, mit Fotos, die Uhrzeit, GPS-Position und Fingerabdruck tragen. Der Bericht folgt Ihrer eigenen Word-Vorlage, wird als Version mit Fingerabdruck herausgegeben und ist mit einem Klick beim Auftraggeber.",
+    "hash": "73c4d06b566bc4e9",
+    "guid": "acb0e0bd-da4c-4f3e-b03a-229b29a2e366",
+    "hoofdstukken": [
+      {
+        "titel": "Die Feststellungen",
+        "start": 3.06,
+        "eind": 6.56
+      },
+      {
+        "titel": "Fotos mit Beweiskraft",
+        "start": 9.32,
+        "eind": 13.39
+      },
+      {
+        "titel": "Ihre eigene Word-Vorlage",
+        "start": 17.13,
+        "eind": 20.35
+      },
+      {
+        "titel": "Herausgeben",
+        "start": 28.52,
+        "eind": 33.45
+      },
+      {
+        "titel": "Senden",
+        "start": 36.17,
+        "eind": 38.77
+      }
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/acb0e0bd-da4c-4f3e-b03a-229b29a2e366/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T17:22:32.266",
+    "gepubliceerdeHash": "73c4d06b566bc4e9",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/acb0e0bd-da4c-4f3e-b03a-229b29a2e366"
   }
 }

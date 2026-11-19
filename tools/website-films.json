@@ -1,0 +1,73 @@
+{
+  "_bron": "quaymark-docs — geschreven door `node tools/bunny.mjs naar-website`, niet met de hand bewerken",
+  "films": {
+    "aanvraag-tot-planning": {
+      "nl": {
+        "guid": "f74c3a19-56c2-4abd-8763-3239071037e5",
+        "lengte": 46.64,
+        "titel": "Van aanvraag tot ingepland dossier in Quaymark",
+        "omschrijving": "Een aanvraag via het formulier op uw website komt meteen binnen in Quaymark: indiener, schip, haven en gewenste dag. Aanvaarden maakt er een dossier van, en u plant het door het naar een surveyor en een uur te slepen.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/f74c3a19-56c2-4abd-8763-3239071037e5/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T16:15:10.033Z"
+      },
+      "fr": {
+        "guid": "2b397fe0-6785-4ee3-af6d-a54e232165be",
+        "lengte": 46.24,
+        "titel": "De la demande au dossier planifié dans Quaymark",
+        "omschrijving": "Une demande envoyée via le formulaire de votre site web arrive aussitôt dans Quaymark : demandeur, navire, port et jour souhaité. L’accepter en fait un dossier, que vous planifiez en le glissant vers un expert et une heure.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/2b397fe0-6785-4ee3-af6d-a54e232165be/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T16:25:21.629Z"
+      },
+      "en": {
+        "guid": "2557b472-b00e-4412-a539-878043ee8a6a",
+        "lengte": 44.64,
+        "titel": "From request to scheduled file in Quaymark",
+        "omschrijving": "A request from the form on your website arrives in Quaymark straight away: sender, vessel, port and preferred day. Accepting it creates a file, which you schedule by dragging it to a surveyor and a time.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/2557b472-b00e-4412-a539-878043ee8a6a/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T16:35:34.027Z"
+      },
+      "de": {
+        "guid": "a202b593-c9f8-4a2b-9742-f08e4d5d7546",
+        "lengte": 48.44,
+        "titel": "Von der Anfrage zur geplanten Akte in Quaymark",
+        "omschrijving": "Eine Anfrage über das Formular Ihrer Website kommt sofort in Quaymark an: Absender, Schiff, Hafen und Wunschtag. Mit dem Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Besichtiger und einer Uhrzeit ziehen.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/a202b593-c9f8-4a2b-9742-f08e4d5d7546/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T16:45:55.839Z"
+      }
+    },
+    "rapport-uitgeven": {
+      "nl": {
+        "guid": "93ccdc2c-3e58-4596-a982-af8a03706006",
+        "lengte": 44.12,
+        "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
+        "omschrijving": "Vaststellingen ter plaatse, met foto’s die tijdstip, GPS-positie en vingerafdruk dragen. Het rapport volgt uw eigen Word-sjabloon, wordt uitgegeven als versie met vingerafdruk en gaat in één klik naar de opdrachtgever.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/93ccdc2c-3e58-4596-a982-af8a03706006/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T16:56:08.426Z"
+      },
+      "fr": {
+        "guid": "f8b6f22e-6a9a-43ed-b9f4-8410fad58658",
+        "lengte": 42.6,
+        "titel": "De la constatation au rapport émis dans Quaymark",
+        "omschrijving": "Des constatations sur place, avec des photos qui portent l’heure, la position GPS et une empreinte. Le rapport suit votre propre modèle Word, est émis en version avec empreinte et part en un clic chez le donneur d’ordre.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/f8b6f22e-6a9a-43ed-b9f4-8410fad58658/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T17:06:20.299Z"
+      },
+      "en": {
+        "guid": "3aa352c3-3844-430c-8684-de9063051859",
+        "lengte": 41.56,
+        "titel": "From finding to issued report in Quaymark",
+        "omschrijving": "Findings on site, with photos that carry the time, GPS position and fingerprint. The report follows your own Word template, is issued as a version with a fingerprint and reaches the principal in one click.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/3aa352c3-3844-430c-8684-de9063051859/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T17:15:24.578Z"
+      },
+      "de": {
+        "guid": "acb0e0bd-da4c-4f3e-b03a-229b29a2e366",
+        "lengte": 41.2,
+        "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
+        "omschrijving": "Feststellungen vor Ort, mit Fotos, die Uhrzeit, GPS-Position und Fingerabdruck tragen. Der Bericht folgt Ihrer eigenen Word-Vorlage, wird als Version mit Fingerabdruck herausgegeben und ist mit einem Klick beim Auftraggeber.",
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/acb0e0bd-da4c-4f3e-b03a-229b29a2e366/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-19T17:22:32.266Z"
+      }
+    }
+  }
+}
