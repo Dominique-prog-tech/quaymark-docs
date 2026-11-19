@@ -387,4 +387,123 @@ export const FILMS = [
         nl: 'Het belletje toont wat er voor u binnenkwam, zoals een termijn die voorbij is. Met de ballon ernaast stuurt u ons een vraag of een opmerking.' },
     ],
   }],
+
+  // ── VAN AANVRAAG TOT INGEPLAND DOSSIER (19/11/2026, op vraag van Dominique: "Ja, voeg toe" voor de open webaanvraag) ───────────────
+  // Een aanvraag van het webformulier → aanvaarden → het dossier dat eruit ontstaat → de planning: slepen naar de surveyor.
+  // De aanvraag is VERZONNEN en staat in proefklant-vullen.py (Lotte Janssens, Scheldemond Bevrachting NV, POLDERWIND, de eerstvolgende
+  // werkdag om 09:00). De film laat de surveyor bij het aanvaarden LEEG: zo komt het dossier onder Te plannen en toont de film het slepen.
+  //
+  // ⚠️ DEZE FILM SCHRIJFT: een dossier (nieuwe id), zijn mappen, een mail aan de indiener (niet verstuurd: Development), historiek. Zelfde
+  // werkwijze als rapport-uitgeven: vóór elke taal vullen (het vulscript ruimt het dossier van de aanvraag op en zet de aanvraag terug), na de
+  // laatste taal vullen en film-opruimen.py. De nummerteller volgt het hoogste bestaande nummer, dus het dossier heet in elke taal hetzelfde.
+  // ⚠️ Gemeten 19/11/2026: de uitleg bij de opdrachtbevestiging zegt "via het opdrachtgeversportaal", ook bij een aanvraag van het
+  // webformulier (QText bevestiging_uitleg_via_aanvraag). De stem noemt het portaal daarom NIET; gemeld aan Dominique.
+  ['aanvraag-tot-planning', {
+    pagina: 'aanvragen',
+    titel: {
+      nl: 'Van aanvraag tot ingepland dossier in Quaymark',
+    },
+    omschrijving: {
+      nl: 'Een aanvraag van het formulier op uw website: wat er binnenkomt, de opdrachtgever die Quaymark voorstelt, aanvaarden, het dossier '
+        + 'dat daaruit ontstaat, en het inplannen door het dossier naar de surveyor te slepen.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'binnen', kop: { nl: 'Een aanvraag komt binnen' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await beweegNaar(p, p.getByText(/Scheldemond Bevrachting NV · POLDERWIND/).first());
+        },
+        // De aanvraag op het dashboard (opdrachtgever · schip): staat enkel onder Aanvragen te beslissen.
+        merk: /Scheldemond Bevrachting NV · POLDERWIND/,
+        nl: 'Een aanvraag via het formulier op uw website komt meteen in Quaymark binnen. Het dashboard toont ze onder Aanvragen te beslissen.' },
+
+      { naam: 'aanvraag', kop: { nl: 'De aanvraag' },
+        doe: async (p) => {
+          await klik(p, menu(p, 'aanvragen'));
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
+          const rij = p.getByRole('row').filter({ hasText: 'POLDERWIND' }).first();
+          await beweegNaar(p, rij);
+          await rij.dblclick();
+          await p.waitForURL(/\/aanvragen\/[0-9a-f-]{36}/, { timeout: 15000 });
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+          await beweegNaar(p, p.getByText('Lotte Janssens').first());
+        },
+        merk: /Lotte Janssens/,
+        nl: 'U ziet wie de aanvraag indiende, voor welk schip, in welke haven en wanneer het werk gewenst is.' },
+
+      { naam: 'voorstel', kop: { nl: 'Wat Quaymark voorstelt' },
+        doe: async (p) => {
+          // De vakken op hun LABEL: de voorgestelde waarde staat in een keuzevak, en de waarde van een invoervak hoort niet bij de tekst
+          // van de pagina (gemeten 19/11/2026: getByText vond "Scheldemond Bevrachting NV (zelfde e-mailadres)" niet).
+          const vak = (sleutel) => p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q(sleutel).source})`) }).first();
+          await beweegNaar(p, vak('opdrachtgever'));
+          await p.waitForTimeout(1200);
+          await beweegNaar(p, vak('schip'));
+        },
+        merk: /SB-2026-118/,
+        nl: 'Quaymark stelt zelf de opdrachtgever voor, op het e-mailadres van de indiener, en herkent het schip. U kiest nog de vestiging.' },
+
+      { naam: 'aanvaarden', kop: { nl: 'Aanvaarden' },
+        doe: async (p) => {
+          const vak = p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q('vestiging').source})`) }).first();
+          await openLijst(p, vak);
+          await kies(p, /Hoofdkantoor|HQ\)/);
+          await klik(p, knop(p, 'aanvraag_aanvaarden').first());
+          await p.waitForURL(/\/dossiers\/[0-9a-f-]{36}/, { timeout: 20000 });
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
+        },
+        // Het NIEUWE dossier met zijn status Nieuw (zonder surveyor): een gegeven dat pas na het aanvaarden bestaat.
+        merk: /HQ-2026-\d{4}\s*(Nieuw|Nouveau|New|Neu)/,
+        nl: 'Met Aanvaarden maakt Quaymark het dossier aan, en krijgt de indiener een mail dat zijn opdracht aanvaard is.' },
+
+      { naam: 'dossier', kop: { nl: 'Het nieuwe dossier' },
+        doe: async (p) => {
+          const vak = (sleutel) => p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q(sleutel).source})`) }).first();
+          await beweegNaar(p, p.getByText(Q('bevestiging_stand_via_aanvraag')).first());
+          await p.waitForTimeout(1200);
+          await beweegNaar(p, vak('gepland_op'));
+          await p.waitForTimeout(800);
+        },
+        merk: /HQ-2026-\d{4}\s*(Nieuw|Nouveau|New|Neu)/,
+        nl: 'Het dossier heeft al zijn opdrachtgever, zijn schip, de haven en het gewenste moment. Het geldt als bevestigd: de opdrachtgever vroeg het zelf aan.' },
+
+      { naam: 'te-plannen', kop: { nl: 'Te plannen' },
+        doe: async (p) => {
+          await klik(p, menu(p, 'planning'));
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
+          await beweegNaar(p, p.locator('[draggable=true][data-dossier-id]').filter({ hasText: 'POLDERWIND' }).first());
+        },
+        // De kaart van het nieuwe dossier onder Te plannen: POLDERWIND staat vandaag nergens anders op de planning.
+        merk: /POLDERWIND/,
+        nl: 'Op de planning staat het nieuwe dossier links, onder Te plannen: het heeft nog geen surveyor.' },
+
+      { naam: 'slepen', kop: { nl: 'Inplannen door te slepen' },
+        doe: async (p) => {
+          // De gewenste dag: de eerstvolgende werkdag (zoals proefklant-vullen.py). De knoppen Vorige/Volgende dragen geen tekst, wel een titel
+          // die eindigt op de naam van de weergave ("Volgende Day": DevExpress vertaalt "Day" niet; gemeten 19/11/2026). De tweede is Volgende.
+          const vandaag = new Date(); let d = 1;
+          while ([0, 6].includes(new Date(vandaag.getFullYear(), vandaag.getMonth(), vandaag.getDate() + d).getDay())) d++;
+          for (let i = 0; i < d; i++) { await klik(p, p.locator('button[title$="Day"]').nth(1)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1000); }
+          const doel = new Date(vandaag.getFullYear(), vandaag.getMonth(), vandaag.getDate() + d);
+          // data-start = de wandklok van de cel in epoch-ms (adm-scheduler-drop.js); data-resource 0 = de eerste kolom, Demo Surveyor.
+          const cel = p.locator(`.dxbl-sc-time-cell[data-start="${Date.UTC(doel.getFullYear(), doel.getMonth(), doel.getDate(), 9, 0)}"][data-resource="0"]`).first();
+          const kaart = p.locator('[draggable=true][data-dossier-id]').filter({ hasText: 'POLDERWIND' }).first();
+          await beweegNaar(p, kaart);
+          await kaart.dragTo(cel);
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
+        },
+        // Het blok op de planning: POLDERWIND om 09:00. Het andere POLDERWIND-dossier (HQ-2026-0004) staat om 14:00.
+        merk: /POLDERWIND · [^0-9]*09:00/,
+        nl: 'U bladert naar de gewenste dag en sleept het dossier naar de kolom van de surveyor, op het uur waarop het werk begint.' },
+
+      { naam: 'gepland', kop: { nl: 'Gepland' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText(/POLDERWIND · [^0-9]*$/).first());
+          await p.waitForTimeout(1500);
+        },
+        merk: /POLDERWIND · [^0-9]*09:00/,
+        nl: 'Het dossier is nu Gepland, standaard voor twee uur. U rekt het blok uit als het werk langer duurt. Het kleurt rood bij een afwezigheid of een overlap.' },
+    ],
+  }],
 ];

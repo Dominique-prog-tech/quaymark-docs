@@ -97,6 +97,33 @@ def rij_tenzij_vast(tabel, waarden):
     return rij(tabel, waarden)[:-1] + ' on conflict (id) do nothing;'
 
 
+# ── De aanvraag van de film "aanvraag-tot-planning" (19/11/2026): een open webaanvraag die de film AANVAARDT. Aanvaarden maakt een
+# dossier met een NIEUWE id die dit script niet kent; dat dossier ruimen we hier eerst op, met alles wat eraan hangt: elke tabel met een
+# kolom dossier_id (zo vergeet een nieuwe tabel zich niet) en de journaaltabellen (owner_type 'dossier'). Daarna de aanvraag zelf.
+FILM_AANVRAAG = vid('aanvraag/film')
+film_dossiers = [r for r in q(f"select dossier_id from dossiers.aanvragen where id = {lit(FILM_AANVRAAG)} and dossier_id is not null").splitlines() if r]
+if film_dossiers:
+    fl = ', '.join(lit(i) for i in film_dossiers)
+    for t in q("select table_schema || '.' || table_name from information_schema.columns where column_name = 'dossier_id' "
+               "and table_schema not in ('pg_catalog', 'information_schema') and table_name not in ('aanvragen', 'dossiers') "
+               "and table_name in (select table_name from information_schema.tables where table_type = 'BASE TABLE')").splitlines():
+        sql.append(f'delete from {t} where dossier_id in ({fl});')
+    for t in q("select c.table_schema || '.' || c.table_name from information_schema.columns c join information_schema.columns d "
+               "on d.table_schema = c.table_schema and d.table_name = c.table_name and d.column_name = 'owner_type' "
+               "where c.column_name = 'owner_id'").splitlines():
+        sql.append(f"delete from {t} where owner_type = 'dossier' and owner_id::text in ({fl});")
+    # De journaaltabellen met entity_type/entity_id in plaats van owner_type/owner_id (de mappen van het dossier; gemeten 19/11/2026: zes per
+    # aanvaard dossier). Enkel in het schema journaal: de historiek heeft dezelfde kolommen, en die ruimt film-opruimen.py op.
+    for t in q("select c.table_schema || '.' || c.table_name from information_schema.columns c join information_schema.columns d "
+               "on d.table_schema = c.table_schema and d.table_name = c.table_name and d.column_name = 'entity_type' "
+               "where c.column_name = 'entity_id' and c.table_schema = 'journaal'").splitlines():
+        sql.append(f"delete from {t} where entity_type = 'dossier' and entity_id::text in ({fl});")
+# Wie de aanvraag zag (de markering voor het belletje): hangt aan de AANVRAAG, niet aan een dossier.
+sql.append(f'delete from dossiers.aanvraag_lezingen where aanvraag_id = {lit(FILM_AANVRAAG)};')
+sql.append(f'delete from dossiers.aanvragen where id = {lit(FILM_AANVRAAG)};')
+if film_dossiers:
+    sql.append(f'delete from dossiers.dossiers where id in ({fl});')
+
 # Eerst opruimen wat dit script vroeger maakte (kinderen eerst). De ids zijn vast, dus dit raakt niets anders.
 eigen_dossiers = [vid(f'dossier/{i}') for i in range(3, 15)] + [vid('dossier/zb1')]
 lijst = ', '.join(lit(i) for i in eigen_dossiers)
@@ -841,10 +868,27 @@ for vest, laatste in [(HQ, 3), (ZB, 1)]:
     sql.append(f"insert into financieel.adm_nummer_tellers (id, reeks, jaar, laatste_nummer) select {lit(vid('teller/' + reeks))}, {lit(reeks)}, {VANDAAG.year}, {laatste} "
                f"where not exists (select 1 from financieel.adm_nummer_tellers where reeks = {lit(reeks)} and jaar = {VANDAAG.year});")
 
+# De gewenste dag: de eerstvolgende WERKDAG, want de planning toont die dag en een zondag zonder werk oogt fout (19/11/2026: om(3) viel op zondag).
+FILM_DAG = 1
+while (VANDAAG + dt.timedelta(days=FILM_DAG)).weekday() >= 5:
+    FILM_DAG += 1
+# ── Een open webaanvraag, voor de film aanvraag-tot-planning (19/11/2026). VERZONNEN: Lotte Janssens bestaat niet, .example is geen domein.
+# De film aanvaardt ze; hierboven ruimt dit script het dossier op dat daaruit ontstond. Op het dashboard staat ze onder "Aanvragen te beslissen".
+sql.append(rij('dossiers.aanvragen', dict(
+    id=FILM_AANVRAAG, relatie_id=None, ingediend_door_id=None, ingediend_door_naam='Lotte Janssens', ingediend_door_email='lotte@scheldemond.example',
+    ingediend_op=NU - dt.timedelta(hours=3), survey_type_id=SOORT['draft'], schip_naam='POLDERWIND', schip_imo=None, schip_eni=None,
+    haven_locode='BEANR', terminal='Kaai 869', gewenst_op=om(FILM_DAG, 9), referentie='SB-2026-118',
+    omschrijving='Draft survey before and after loading, please. Vessel expected at Kaai 869.', status='ingediend', beslist_op=None,
+    beslist_door=None, reden=None, dossier_id=None, bron='website', formulier='aanvraagformulier hoofdsite', indiener_bedrijf='Scheldemond Bevrachting NV',
+    indiener_telefoon=None, lead_id=None, taal='nl', voorstel_relatie_id=REL['scheldemond'])))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 8 if 'ijkmeting' in SOORT else 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"
-    sql.append(f"update dossiers.adm_nummer_tellers set laatste_nummer = greatest(laatste_nummer, {laatste}) where reeks = {lit(reeks)} and jaar = {VANDAAG.year};")
+    # Het HOOGSTE BESTAANDE nummer (19/11/2026), niet "nooit lager": het dossier van de film aanvraag-tot-planning wordt hierboven gewist, en anders
+    # kreeg elke ronde een nummer hoger (in elke taal een ander dossiernummer). Botsen kan niet: het telt wat er na het wissen nog staat.
+    sql.append(f"update dossiers.adm_nummer_tellers set laatste_nummer = greatest({laatste}, (select coalesce(max(substring(nummer from '[0-9]+$')::int), 0) "
+               f"from dossiers.dossiers where vestiging_id = {lit(vest)} and nummer like {lit(f'%-{VANDAAG.year}-%')})) where reeks = {lit(reeks)} and jaar = {VANDAAG.year};")
     sql.append(f"insert into dossiers.adm_nummer_tellers (id, reeks, jaar, laatste_nummer) select {lit(vid('teller/' + reeks))}, {lit(reeks)}, {VANDAAG.year}, {laatste} "
                f"where not exists (select 1 from dossiers.adm_nummer_tellers where reeks = {lit(reeks)} and jaar = {VANDAAG.year});")
 
