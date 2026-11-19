@@ -1,0 +1,75 @@
+{
+  "rapport-uitgeven-nl": {
+    "film": "rapport-uitgeven",
+    "taal": "nl-BE",
+    "pagina": "hoe/rapport-uitgeven",
+    "lengte": 186.6,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "3035b527f06b3a8e551906a08a076d4192d98a42",
+      "vuil": false
+    },
+    "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
+    "omschrijving": "De weg van een dossier naar zijn rapport: de vaststellingen met hun foto, het dossier op Rapportage, de tekst per rubriek met een spraaknotitie en een standaardtekst, de controle van het rapport, uitgeven met een vingerafdruk, en verzenden.",
+    "hash": "5e4abaf5c26ab267",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De vaststellingen",
+        "start": 6.73,
+        "eind": 17.74
+      },
+      {
+        "titel": "Foto’s met bewijswaarde",
+        "start": 21.52,
+        "eind": 34.01
+      },
+      {
+        "titel": "Het dossier op Rapportage",
+        "start": 43.1,
+        "eind": 52.67
+      },
+      {
+        "titel": "De tekst per rubriek",
+        "start": 56.91,
+        "eind": 66.99
+      },
+      {
+        "titel": "Een spraaknotitie",
+        "start": 72.81,
+        "eind": 79.82
+      },
+      {
+        "titel": "Een standaardtekst",
+        "start": 85.5,
+        "eind": 93.03
+      },
+      {
+        "titel": "Bewaren en nakijken",
+        "start": 97.61,
+        "eind": 107.5
+      },
+      {
+        "titel": "De controle van het rapport",
+        "start": 111.75,
+        "eind": 124.56
+      },
+      {
+        "titel": "Zonder opdrachtbevestiging",
+        "start": 133.29,
+        "eind": 145.32
+      },
+      {
+        "titel": "Versie 1, met vingerafdruk",
+        "start": 154.36,
+        "eind": 167.65
+      },
+      {
+        "titel": "Verzenden",
+        "start": 171.13,
+        "eind": 184.22
+      }
+    ]
+  }
+}
