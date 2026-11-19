@@ -251,3 +251,23 @@ html {
   max-height: none;
   width: 100%;
 }
+
+/* ── De film bovenaan een handleidingpagina (19/11/2026, zoals nimble-, cleanops- en creditsoft-docs) ──────────────
+   De filmhook (adm-appkit/tools/filmgenerator/films_hook.py) zet <div class="film"><iframe …></div>. Zonder deze regels krijgt
+   de iframe de standaardmaat van een browser (300 × 150) en staat de speler klein links (gemeten 19/11/2026, Dominique zag het).
+   16:9 via padding-top, want de iframe zelf heeft geen eigen hoogte; een vaste hoogte gaf op een telefoon zwarte balken. */
+.film {
+  position: relative;
+  padding-top: 56.25%;
+  margin: 0 0 1.6rem;
+  border-radius: .4rem;
+  overflow: hidden;
+  background: #000;
+}
+.film iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

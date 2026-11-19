@@ -148,6 +148,7 @@ plugins:
                   name: Passer en mode clair
           nav_translations:
             "Home": "Accueil"
+            "Video's": "Vidéos"
             "Hoe doe ik…?": "Comment faire… ?"
             "Instellingen": "Paramètres"
             "Opdrachten en dossiers": "Missions et dossiers"
@@ -177,6 +178,7 @@ plugins:
                   name: Switch to light mode
           nav_translations:
             "Home": "Home"
+            "Video's": "Videos"
             "Hoe doe ik…?": "How do I…?"
             "Instellingen": "Settings"
             "Opdrachten en dossiers": "Assignments and files"
@@ -206,6 +208,7 @@ plugins:
                   name: Zum hellen Modus wechseln
           nav_translations:
             "Home": "Startseite"
+            "Video's": "Videos"
             "Hoe doe ik…?": "Wie mache ich…?"
             "Instellingen": "Einstellungen"
             "Opdrachten en dossiers": "Aufträge und Akten"
@@ -237,11 +240,12 @@ extra:
 # de groep van haar domein, niet als eigen tabblad.
 nav:
   - Home: index.md
+  # Eén overzicht van alle films, als EIGEN tabblad zoals nimble-, cleanops- en creditsoft-docs (19/11/2026, op vraag van Dominique):
+  # de uitzondering op "een nieuwe pagina gaat in de groep van haar domein". De LIJST maakt de filmhook uit tools/films-uitslag.json.
+  - "Video's": videos.md
   - aan-de-slag.md
   - Hoe doe ik…?:
       - hoe/index.md
-      # De films (19/11/2026): het overzicht van alle films, in deze groep en niet als eigen tabblad (zie hierboven).
-      - videos.md
       - hoe/nieuw-dossier.md
       - hoe/dossier-plannen.md
       - hoe/rapport-uitgeven.md
