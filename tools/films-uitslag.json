@@ -321,7 +321,7 @@
     "titel": "Aan de slag met Quaymark: het dashboard, de lijsten, een dossier en de hulp",
     "omschrijving": "De eerste rondleiding: het dashboard met uw dossiers per status en wat aandacht vraagt, het menu, werken in een lijst (zoeken, filteren, exporteren), een dossier met zijn tabbladen, het journaal en de historiek, de hulp bij elk scherm, de assistenten, uw voorkeuren en de meldingen.",
     "hash": "3f0873b1f38b2fba",
-    "guid": null,
+    "guid": "daaa6a34-b6dc-4da2-a9fd-61cb0b30c783",
     "hoofdstukken": [
       {
         "titel": "Het dashboard",
@@ -383,7 +383,11 @@
         "start": 154.94,
         "eind": 164.05
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/daaa6a34-b6dc-4da2-a9fd-61cb0b30c783/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T13:50:08.472",
+    "gepubliceerdeHash": "3f0873b1f38b2fba",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/daaa6a34-b6dc-4da2-a9fd-61cb0b30c783"
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
@@ -399,7 +403,7 @@
     "titel": "Premiers pas avec Quaymark : le tableau de bord, les listes, un dossier et l’aide",
     "omschrijving": "La première visite guidée : le tableau de bord avec vos dossiers par statut et ce qui demande votre attention, le menu, le travail dans une liste (rechercher, filtrer, exporter), un dossier et ses onglets, le journal et l’historique, l’aide sur chaque écran, les assistants, vos préférences et les notifications.",
     "hash": "fd6c075bece07e10",
-    "guid": null,
+    "guid": "0b3a3700-ec32-4f51-a086-8142cdcdf9ea",
     "hoofdstukken": [
       {
         "titel": "Le tableau de bord",
@@ -461,7 +465,11 @@
         "start": 146.81,
         "eind": 154.52
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/0b3a3700-ec32-4f51-a086-8142cdcdf9ea/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T14:00:21.235",
+    "gepubliceerdeHash": "fd6c075bece07e10",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/0b3a3700-ec32-4f51-a086-8142cdcdf9ea"
   },
   "aan-de-slag-en": {
     "film": "aan-de-slag",
@@ -477,7 +485,7 @@
     "titel": "Getting started with Quaymark: the dashboard, lists, a file and help",
     "omschrijving": "A first tour: the dashboard with your files by status and what needs attention, the menu, working in a list (search, filter, export), a file with its tabs, the journal and the history, help on every screen, the assistants, your preferences and the notifications.",
     "hash": "5c803928d39fdbf8",
-    "guid": null,
+    "guid": "f4d47e73-c305-4bd9-bfd9-cca6158ca64b",
     "hoofdstukken": [
       {
         "titel": "The dashboard",
@@ -539,7 +547,11 @@
         "start": 149.37,
         "eind": 158.61
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/f4d47e73-c305-4bd9-bfd9-cca6158ca64b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T14:16:36.301",
+    "gepubliceerdeHash": "5c803928d39fdbf8",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/f4d47e73-c305-4bd9-bfd9-cca6158ca64b"
   },
   "aan-de-slag-de": {
     "film": "aan-de-slag",
@@ -555,7 +567,7 @@
     "titel": "Erste Schritte mit Quaymark: die Übersicht, Listen, eine Akte und die Hilfe",
     "omschrijving": "Der erste Rundgang: die Übersicht mit Ihren Akten nach Status und dem, was Aufmerksamkeit braucht, das Menü, die Arbeit in einer Liste (suchen, filtern, exportieren), eine Akte mit ihren Registerkarten, das Journal und der Verlauf, die Hilfe zu jedem Bildschirm, die Assistenten, Ihre Einstellungen und die Benachrichtigungen.",
     "hash": "05009cfdfd620f6f",
-    "guid": null,
+    "guid": "6d6dec3b-acd9-4b29-b36f-c152902c2170",
     "hoofdstukken": [
       {
         "titel": "Die Übersicht",
@@ -617,7 +629,11 @@
         "start": 157.5,
         "eind": 168.18
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/6d6dec3b-acd9-4b29-b36f-c152902c2170/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T14:26:47.8",
+    "gepubliceerdeHash": "05009cfdfd620f6f",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/6d6dec3b-acd9-4b29-b36f-c152902c2170"
   },
   "aanvraag-tot-planning-nl": {
     "film": "aanvraag-tot-planning",
@@ -633,7 +649,7 @@
     "titel": "Van aanvraag tot ingepland dossier in Quaymark",
     "omschrijving": "Een aanvraag van het formulier op uw website: wat er binnenkomt, de opdrachtgever die Quaymark voorstelt, aanvaarden, het dossier dat daaruit ontstaat, en het inplannen door het dossier naar de surveyor te slepen.",
     "hash": "b38e8324b0675c1d",
-    "guid": null,
+    "guid": "86c11576-bfdb-4c5f-bc7d-3c85b34bccf2",
     "hoofdstukken": [
       {
         "titel": "Een aanvraag komt binnen",
@@ -675,7 +691,11 @@
         "start": 97.12,
         "eind": 108.08
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/86c11576-bfdb-4c5f-bc7d-3c85b34bccf2/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T14:37:08.649",
+    "gepubliceerdeHash": "b38e8324b0675c1d",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/86c11576-bfdb-4c5f-bc7d-3c85b34bccf2"
   },
   "aanvraag-tot-planning-fr": {
     "film": "aanvraag-tot-planning",
@@ -691,7 +711,7 @@
     "titel": "De la demande au dossier planifié dans Quaymark",
     "omschrijving": "Une demande du formulaire de votre site web : ce qui arrive, le donneur d’ordre que Quaymark propose, l’acceptation, le dossier qui en résulte, et la planification en glissant le dossier vers l’expert.",
     "hash": "9fce5885bde7d107",
-    "guid": null,
+    "guid": "3e540162-2305-4f4f-b2cf-9754235d4ea7",
     "hoofdstukken": [
       {
         "titel": "Une demande arrive",
@@ -733,7 +753,11 @@
         "start": 90.79,
         "eind": 99.8
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/3e540162-2305-4f4f-b2cf-9754235d4ea7/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T14:47:21.369",
+    "gepubliceerdeHash": "9fce5885bde7d107",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/3e540162-2305-4f4f-b2cf-9754235d4ea7"
   },
   "aanvraag-tot-planning-en": {
     "film": "aanvraag-tot-planning",
@@ -749,7 +773,7 @@
     "titel": "From request to scheduled file in Quaymark",
     "omschrijving": "A request from the form on your website: what comes in, the principal that Quaymark suggests, accepting, the file that results, and scheduling by dragging the file to the surveyor.",
     "hash": "5cd0d598d2c0ee2c",
-    "guid": null,
+    "guid": "4b287eff-cfba-492a-a778-802ec1f0335f",
     "hoofdstukken": [
       {
         "titel": "A request comes in",
@@ -791,7 +815,11 @@
         "start": 91.57,
         "eind": 100.9
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/4b287eff-cfba-492a-a778-802ec1f0335f/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T14:57:36.87",
+    "gepubliceerdeHash": "5cd0d598d2c0ee2c",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/4b287eff-cfba-492a-a778-802ec1f0335f"
   },
   "aanvraag-tot-planning-de": {
     "film": "aanvraag-tot-planning",
@@ -807,7 +835,7 @@
     "titel": "Von der Anfrage zur geplanten Akte in Quaymark",
     "omschrijving": "Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus entsteht, und die Planung, indem Sie die Akte zum Besichtiger ziehen.",
     "hash": "013d166cda4a63d4",
-    "guid": null,
+    "guid": "108694e3-0527-41a6-8397-4f92c4aac9cf",
     "hoofdstukken": [
       {
         "titel": "Eine Anfrage geht ein",
@@ -849,6 +877,10 @@
         "start": 97.7,
         "eind": 109.17
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/108694e3-0527-41a6-8397-4f92c4aac9cf/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T15:07:49.359",
+    "gepubliceerdeHash": "013d166cda4a63d4",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/108694e3-0527-41a6-8397-4f92c4aac9cf"
   }
 }
