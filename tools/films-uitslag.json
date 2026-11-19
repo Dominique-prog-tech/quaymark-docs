@@ -13,7 +13,7 @@
     "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
     "omschrijving": "De weg van een dossier naar zijn rapport: de vaststellingen met hun foto, het dossier op Rapportage, de tekst per rubriek met een spraaknotitie en een standaardtekst, de controle van het rapport, uitgeven met een vingerafdruk, en verzenden.",
     "hash": "5e4abaf5c26ab267",
-    "guid": null,
+    "guid": "8891d091-e1ef-44b4-af42-7410b965304c",
     "hoofdstukken": [
       {
         "titel": "De vaststellingen",
@@ -70,7 +70,11 @@
         "start": 171.13,
         "eind": 184.22
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/8891d091-e1ef-44b4-af42-7410b965304c/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T10:21:35.101",
+    "gepubliceerdeHash": "5e4abaf5c26ab267",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/8891d091-e1ef-44b4-af42-7410b965304c"
   },
   "rapport-uitgeven-fr": {
     "film": "rapport-uitgeven",
@@ -86,7 +90,7 @@
     "titel": "De la constatation au rapport émis dans Quaymark",
     "omschrijving": "Le chemin d’un dossier jusqu’à son rapport : les constatations et leurs photos, le dossier au statut Rapport, le texte par rubrique avec une note vocale et un texte type, le contrôle du rapport, l’émission avec une empreinte, et l’envoi.",
     "hash": "d458b398f569eb8d",
-    "guid": null,
+    "guid": "f1adf57a-877f-4eaa-8155-9af05ab112be",
     "hoofdstukken": [
       {
         "titel": "Les constatations",
@@ -143,7 +147,11 @@
         "start": 169.22,
         "eind": 183.01
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/f1adf57a-877f-4eaa-8155-9af05ab112be/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T10:30:37.376",
+    "gepubliceerdeHash": "d458b398f569eb8d",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/f1adf57a-877f-4eaa-8155-9af05ab112be"
   },
   "rapport-uitgeven-en": {
     "film": "rapport-uitgeven",
@@ -159,7 +167,7 @@
     "titel": "From finding to issued report in Quaymark",
     "omschrijving": "How a file becomes a report: the findings with their photos, the file set to Reporting, the text per section with a voice note and a standard text, the report check, issuing with a fingerprint, and sending.",
     "hash": "2e245bed2b97bc43",
-    "guid": null,
+    "guid": "06e5a210-1659-4e9d-b700-0d49f6ce30f4",
     "hoofdstukken": [
       {
         "titel": "The findings",
@@ -216,7 +224,11 @@
         "start": 165.07,
         "eind": 180.31
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/06e5a210-1659-4e9d-b700-0d49f6ce30f4/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T10:39:45.142",
+    "gepubliceerdeHash": "2e245bed2b97bc43",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/06e5a210-1659-4e9d-b700-0d49f6ce30f4"
   },
   "rapport-uitgeven-de": {
     "film": "rapport-uitgeven",
@@ -232,7 +244,7 @@
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Der Weg einer Akte zu ihrem Bericht: die Feststellungen mit ihren Fotos, die Akte im Status Berichterstellung, der Text je Abschnitt mit einer Sprachnotiz und einem Standardtext, die Berichtsprüfung, das Herausgeben mit einem Fingerabdruck und das Senden.",
     "hash": "78be1f48079739de",
-    "guid": null,
+    "guid": "c36f5745-b709-4f44-8929-6709f0a65c16",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
@@ -289,6 +301,10 @@
         "start": 174.42,
         "eind": 188.68
       }
-    ]
+    ],
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/c36f5745-b709-4f44-8929-6709f0a65c16/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T10:49:42.39",
+    "gepubliceerdeHash": "78be1f48079739de",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/c36f5745-b709-4f44-8929-6709f0a65c16"
   }
 }
