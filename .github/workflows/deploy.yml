@@ -33,13 +33,15 @@ jobs:
       # adm-appkit, en die repo is privé: meelezen met het repo-geheim ADM_APPKIT_LEZEN (fine-grained token, enkel
       # adm-appkit, Contents: Read-only — NOTEER DE VERVALDATUM). Zonder deze stap vindt mkdocs de hook niet en
       # faalt de bouw; de vorige versie blijft dan online. Zoals nimble-docs en cleanops-docs (07/11/2026).
-      # Komt de eerste film, voeg dan tools/filmgenerator toe aan sparse-checkout (zie CLAUDE.md).
+      # Sinds de eerste film (19/11/2026) ook tools/filmgenerator: de filmhook (mkdocs.yml) en de filmcontrole hieronder.
       - uses: actions/checkout@v4
         with:
           repository: ADM-Concept/adm-appkit
           token: ${{ secrets.ADM_APPKIT_LEZEN }}
           path: _appkit
-          sparse-checkout: tools/docs-site
+          sparse-checkout: |
+            tools/docs-site
+            tools/filmgenerator
       - run: mkdocs build --strict
       # ⚠️ NA de bouw: zoekt elke taal enkel in haar eigen pagina's? De hook faalt luid bij alles wat hij ziet, maar niet
       # wanneer hij er niet is — haalt iemand hem uit mkdocs.yml, dan mengt het zoekvak stil weer de talen (zo stond het
@@ -52,8 +54,11 @@ jobs:
       # Aan sinds de eerste beeldronde (13/11/2026: 76 beelden op 44 pagina's, vier talen).
       - name: Beelden controleren (bron tegen gebouwde site)
         run: python3 tools/check-beelden.py site
-      # Nog niet aan, en waarom (zie CLAUDE.md): de gedeelde filmhook en de filmcontrole uit adm-appkit vanaf de eerste
-      # film. Het meelezen van adm-appkit (geheim ADM_APPKIT_LEZEN) staat er sinds 07/11/2026 al, voor zoeken per taal.
+      # Staat elke gepubliceerde film direct onder de titel van zijn pagina, met een volledig VideoObject (miniatuur, datum, duur)?
+      # Aan sinds de eerste film (19/11/2026: rapport-uitgeven in vier talen). --min-paginas en --min-talen zijn de bodem: trek ze
+      # op wanneer er films bijkomen, verlaag ze nooit om een melding weg te krijgen. Deze mag de uitrol TEGENHOUDEN.
+      - name: Films controleren (plaatsing + videogegevens)
+        run: python3 _appkit/tools/filmgenerator/check-films.py --min-paginas=4 --min-talen=4
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

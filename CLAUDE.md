@@ -94,7 +94,7 @@ een recept in dat script (naam, route, merkteken) + een verwijzing in elke taalv
 | Plausible (bezoekcijfers) | ⏸️ **bewust uit** (Dominique, 13/11/2026): het Business-abonnement zit aan 10 sites, een elfde vraagt Enterprise. Niet opnieuw voorstellen tot er ruimte is | `plausible-init.js` staat er al (zet enkel een wachtrij klaar, stuurt niets); de regel met `pa-<code>.js` erbij in `mkdocs.yml` (zie de uitleg daar) |
 | ~~De beelden en de beeldcontrole~~ | ✅ aan sinds 13/11/2026 | zie "De beelden"; `MIN_PAGINAS` verhogen bij elke beeldronde |
 | Een pagina over de veldapp | wanneer de veldapp aan klanten gaat | bron: `~/projects/adm-quaymark-flutter` en `adm-quaymark/docs/ontwerp-laag-4.md` |
-| Films en de pagina "Video's" | **motor aangesloten 19/11/2026** (zie "De films"); de rest bij de eerste GEPUBLICEERDE film | de gedeelde filmhook in `mkdocs.yml`, `extra.bunny_library`, de filmcontrole in de uitrol (`check-films.py --min-paginas=<n> --min-talen=4`), een pagina `videos.md` met `<!-- FILMOVERZICHT -->` in vier talen. ⚠️ Zonder `bunny_library` faalt de bouw: zet de hook pas in `mkdocs.yml` samen met het nummer |
+| ~~Films en de pagina "Video's"~~ | ✅ aan sinds 19/11/2026 | hook en `bunny_library` (814490) in `mkdocs.yml`, `videos.md` in vier talen (in de groep Hoe doe ik…?), de filmcontrole in deploy.yml (`--min-paginas=4 --min-talen=4`: optrekken bij elke nieuwe film) |
 
 ## De films (sinds 19/11/2026)
 De gedeelde filmmotor van de vloot (`~/projects/adm-appkit/tools/filmgenerator`, LEESMIJ.md) in **vier talen**, elke taal op haar eigen scherm.

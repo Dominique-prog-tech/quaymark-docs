@@ -213,6 +213,10 @@ plugins:
             "Facturatie": "Abrechnung"
 
 hooks:
+  # De films (19/11/2026): de speler bovenaan de pagina die een film uitlegt, en het overzicht op videos.md. De hook woont in
+  # adm-appkit/tools/filmgenerator (gedeeld met Nimble en CleanOps, vier talen sinds 19/11/2026) en leest tools/films-uitslag.json.
+  # Lokaal via de symlink _appkit; in de uitrol checkt deploy.yml adm-appkit mee uit (tools/filmgenerator in sparse-checkout).
+  - _appkit/tools/filmgenerator/films_hook.py
   # Zoeken per taal (07/11/2026): elke taal zoekt enkel in haar eigen pagina's (hier vier: nl, fr, en, de).
   # Zonder deze hook voegt mkdocs-static-i18n beide talen samen tot één index. Gedeeld door de vier handleidingen;
   # woont in adm-appkit/tools/docs-site (lokaal via de symlink _appkit, in de uitrol via de checkout in deploy.yml).
@@ -220,6 +224,8 @@ hooks:
 
 extra:
   generator: false
+  # De Bunny-bibliotheek van Quaymark (19/11/2026). Geen geheim: het staat in elk publiek embed-adres. Zonder faalt de bouw.
+  bunny_library: "814490"
 
 # Alleen KLARE pagina's staan hier: de handleiding groeit mee per scherm. Pagina's zonder titel hier nemen hun eigen kop (# …)
 # in elke taal: zo hoeft een schermnaam niet nog eens in nav_translations, en kan hij er ook niet van afwijken. Enkel de
@@ -234,6 +240,8 @@ nav:
   - aan-de-slag.md
   - Hoe doe ik…?:
       - hoe/index.md
+      # De films (19/11/2026): het overzicht van alle films, in deze groep en niet als eigen tabblad (zie hierboven).
+      - videos.md
       - hoe/nieuw-dossier.md
       - hoe/dossier-plannen.md
       - hoe/rapport-uitgeven.md
