@@ -94,7 +94,18 @@ een recept in dat script (naam, route, merkteken) + een verwijzing in elke taalv
 | Plausible (bezoekcijfers) | ⏸️ **bewust uit** (Dominique, 13/11/2026): het Business-abonnement zit aan 10 sites, een elfde vraagt Enterprise. Niet opnieuw voorstellen tot er ruimte is | `plausible-init.js` staat er al (zet enkel een wachtrij klaar, stuurt niets); de regel met `pa-<code>.js` erbij in `mkdocs.yml` (zie de uitleg daar) |
 | ~~De beelden en de beeldcontrole~~ | ✅ aan sinds 13/11/2026 | zie "De beelden"; `MIN_PAGINAS` verhogen bij elke beeldronde |
 | Een pagina over de veldapp | wanneer de veldapp aan klanten gaat | bron: `~/projects/adm-quaymark-flutter` en `adm-quaymark/docs/ontwerp-laag-4.md` |
-| Films en de pagina "Video's" | bij de eerste film | de gedeelde filmhook, de filmcontrole, `extra.bunny_library` |
+| Films en de pagina "Video's" | **motor aangesloten 19/11/2026** (zie "De films"); de rest bij de eerste GEPUBLICEERDE film | de gedeelde filmhook in `mkdocs.yml`, `extra.bunny_library`, de filmcontrole in de uitrol (`check-films.py --min-paginas=<n> --min-talen=4`), een pagina `videos.md` met `<!-- FILMOVERZICHT -->` in vier talen. ⚠️ Zonder `bunny_library` faalt de bouw: zet de hook pas in `mkdocs.yml` samen met het nummer |
+
+## De films (sinds 19/11/2026)
+De gedeelde filmmotor van de vloot (`~/projects/adm-appkit/tools/filmgenerator`, LEESMIJ.md) in **vier talen**, elke taal op haar eigen scherm.
+- `tools/films.mjs`, `bunny.mjs`, `stemmen.mjs` zijn starters; `films-instellingen.mjs` zegt wat de motor van Quaymark nodig heeft (`TALEN`: nl, fr, en, de);
+  `aansturing.mjs` meldt aan als **surveyor.demo** en weigert elk ander bureau (dezelfde grendel als `beelden.mjs`); `draaiboek.mjs` is nog leeg.
+- **Geheimen** in de user-secrets van de app: `ElevenLabs:ApiKey`, `:Model`, `:StemNl`, `:StemFr` (de huisstem, dezelfde waarden als Nimble);
+  `:StemEn` en `:StemDe` kiest Dominique (`node tools/stemmen.mjs`). Zonder stem slaat de motor die taal luid over. `Bunny:LibraryId` en `Bunny:ApiKey`
+  komen er bij een eigen library voor Quaymark (checklist in de LEESMIJ: `BlockNoneReferrer` uit).
+- **Vóór een ronde:** de preview quaymark-web en `python3 tools/proefklant-vullen.py` van VANDAAG. Eerst `--meet` (repetitie, niets opgenomen).
+- ⚠️ **Quaymark onthoudt de taal per gebruiker** (`pref_lang`): na een ronde staat surveyor.demo op de taal van de laatste film. De starter `films.mjs`
+  zet ze terug op nl-BE; wie de motor anders aanroept, doet dat zelf (gemeten 19/11: en-BE na een Engelse repetitie).
 
 ## Live zetten — ✅ gedaan op 13/11/2026
 Repo publiek, Pages aan (GitHub Actions, `docs.quaymark.eu`), DNS bij Cloudflare (`docs` CNAME naar `dominique-prog-tech.github.io`,
