@@ -48,7 +48,7 @@ Het bureau kan een aanvraagformulier op zijn eigen website zetten. Wie het invul
 
 ## Meldingen aan de opdrachtgever
 
-De portaalgebruikers van de opdrachtgever krijgen een mail als hun aanvraag aanvaard of geweigerd wordt, als een dossier gepland of verplaatst wordt, en als er een rapport, brief, certificaat of factuur uitgegeven wordt. De mail bevat geen bijlage, wel een link naar het portaal. U zet het per relatie uit op het tabblad Opdrachtgeversportaal; elke gebruiker kan het ook zelf uitzetten. Elke verstuurde melding staat in het journaal van het dossier.
+De portaalgebruikers van de opdrachtgever krijgen een mail als hun aanvraag aanvaard of geweigerd wordt, als een dossier gepland of verplaatst wordt, als het bureau een offerte of een bericht stuurt, en als er een rapport, brief, certificaat of factuur uitgegeven wordt. De mail bevat geen bijlage, wel een link naar het portaal. U zet het per relatie uit op het tabblad Opdrachtgeversportaal; elke gebruiker kan het ook zelf uitzetten (staat het voor de relatie uit, dan zegt de pagina Meldingen in het portaal dat). Elke verstuurde melding staat in het journaal van het dossier.
 
 ## Zie ook
 

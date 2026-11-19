@@ -48,7 +48,7 @@ Le bureau peut placer un formulaire de demande sur son propre site web. La perso
 
 ## Notifications au donneur d'ordre
 
-Les utilisateurs du portail du donneur d'ordre reçoivent un e-mail lorsque leur demande est acceptée ou refusée, lorsqu'un dossier est planifié ou déplacé, et lorsqu'un rapport, une lettre, un certificat ou une facture est émis. L'e-mail ne contient pas de pièce jointe, mais un lien vers le portail. Vous le désactivez par relation dans l'onglet Portail des donneurs d'ordre ; chaque utilisateur peut aussi le désactiver lui-même. Chaque notification envoyée figure dans le journal du dossier.
+Les utilisateurs du portail du donneur d'ordre reçoivent un e-mail lorsque leur demande est acceptée ou refusée, lorsqu'un dossier est planifié ou déplacé, lorsque le bureau envoie une offre ou un message, et lorsqu'un rapport, une lettre, un certificat ou une facture est émis. L'e-mail ne contient pas de pièce jointe, mais un lien vers le portail. Vous le désactivez par relation dans l'onglet Portail des donneurs d'ordre ; chaque utilisateur peut aussi le désactiver lui-même (si elles sont désactivées pour la relation, la page Notifications du portail le dit). Chaque notification envoyée figure dans le journal du dossier.
 
 ## Voir aussi
 

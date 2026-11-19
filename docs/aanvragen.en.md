@@ -48,7 +48,7 @@ The company can put a request form on its own website. Whoever fills it in needs
 
 ## Notifications to the principal
 
-The principal's portal users receive an email when their request is accepted or declined, when a file is scheduled or moved, and when a report, letter, certificate or invoice is issued. The email has no attachment, only a link to the portal. You turn it off per relation on the Principal portal tab; each user can also turn it off. Every notification sent appears in the file's journal.
+The principal's portal users receive an email when their request is accepted or declined, when a file is scheduled or moved, when the office sends a quotation or a message, and when a report, letter, certificate or invoice is issued. The email has no attachment, only a link to the portal. You turn it off per relation on the Principal portal tab; each user can also turn it off (if it is off for the relation, the Notifications page in the portal says so). Every notification sent appears in the file's journal.
 
 ## See also
 

@@ -48,7 +48,7 @@ Das Büro kann ein Anfrageformular auf seine eigene Website stellen. Wer es ausf
 
 ## Benachrichtigungen an den Auftraggeber
 
-Die Portalbenutzer des Auftraggebers erhalten eine E-Mail, wenn ihre Anfrage angenommen oder abgelehnt wird, wenn eine Akte geplant oder verschoben wird und wenn ein Bericht, Brief, Zertifikat oder eine Rechnung ausgestellt wird. Die E-Mail enthält keinen Anhang, nur einen Link zum Portal. Sie schalten das pro Beziehung auf der Registerkarte Auftraggeberportal aus; jeder Benutzer kann es auch selbst ausschalten. Jede gesendete Benachrichtigung steht im Journal der Akte.
+Die Portalbenutzer des Auftraggebers erhalten eine E-Mail, wenn ihre Anfrage angenommen oder abgelehnt wird, wenn eine Akte geplant oder verschoben wird, wenn das Büro ein Angebot oder eine Nachricht sendet und wenn ein Bericht, Brief, Zertifikat oder eine Rechnung ausgestellt wird. Die E-Mail enthält keinen Anhang, nur einen Link zum Portal. Sie schalten das pro Beziehung auf der Registerkarte Auftraggeberportal aus; jeder Benutzer kann es auch selbst ausschalten (ist es für die Beziehung aus, sagt die Seite Benachrichtigungen im Portal das). Jede gesendete Benachrichtigung steht im Journal der Akte.
 
 ## Siehe auch
 
