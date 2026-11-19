@@ -101,7 +101,7 @@ De gedeelde filmmotor van de vloot (`~/projects/adm-appkit/tools/filmgenerator`,
 - `tools/films.mjs`, `bunny.mjs`, `stemmen.mjs` zijn starters; `films-instellingen.mjs` zegt wat de motor van Quaymark nodig heeft (`TALEN`: nl, fr, en, de);
   `aansturing.mjs` meldt aan als **surveyor.demo** en weigert elk ander bureau (dezelfde grendel als `beelden.mjs`); `draaiboek.mjs` is nog leeg.
 - **Geheimen** in de user-secrets van de app: `ElevenLabs:ApiKey`, `:Model`, `:StemNl`, `:StemFr` (de huisstem, dezelfde waarden als Nimble);
-  `:StemEn` en `:StemDe` kiest Dominique (`node tools/stemmen.mjs`). Zonder stem slaat de motor die taal luid over. `Bunny:LibraryId` en `Bunny:ApiKey`
+  `:StemEn` en `:StemDe` = ook de huisstem (beslist 19/11/2026, adm-appkit `docs/handleiding-schrijfregels.md` §4b). Zonder stem slaat de motor die taal luid over. `Bunny:LibraryId` en `Bunny:ApiKey`
   komen er bij een eigen library voor Quaymark (checklist in de LEESMIJ: `BlockNoneReferrer` uit).
 - **Vóór een ronde:** de preview quaymark-web en `python3 tools/proefklant-vullen.py` van VANDAAG. Eerst `--meet` (repetitie, niets opgenomen).
 - ⚠️ **Quaymark onthoudt de taal per gebruiker** (`pref_lang`): na een ronde staat surveyor.demo op de taal van de laatste film. De starter `films.mjs`

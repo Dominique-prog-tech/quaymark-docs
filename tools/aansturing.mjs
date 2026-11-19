@@ -18,7 +18,7 @@ export const gebruiker = PAKKET.gebruiker;
 export const wachtwoord = geheim(SECRETS, 'Proef:Surveyor:Wachtwoord') ?? '';
 
 // ElevenLabs en Bunny: ElevenLabs:ApiKey, :Model, :StemNl, :StemFr — de huisstem van de vloot (beslist 06/09/2026), dezelfde
-// waarden als Nimble (overgenomen op 19/11/2026). :StemEn en :StemDe kiest Dominique (node tools/stemmen.mjs). Bunny:LibraryId
+// waarden als Nimble (overgenomen op 19/11/2026). :StemEn en :StemDe = de huisstem (beslist 19/11/2026, schrijfregels §4b). Bunny:LibraryId
 // en Bunny:ApiKey: een EIGEN library voor Quaymark, die Dominique aanmaakt.
 export const stemGeheim = naam => geheim(SECRETS, `ElevenLabs:${naam}`);
 export const bunnyGeheim = naam => geheim(SECRETS, `Bunny:${naam}`);
