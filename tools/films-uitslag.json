@@ -234,78 +234,79 @@
     "film": "rapport-uitgeven",
     "taal": "de-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 191.04,
+    "lengte": 192.48,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "b05aad46610006790cf59f2818561e84dad1d969",
+      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
       "vuil": false
     },
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Der Weg einer Akte zu ihrem Bericht: die Feststellungen mit ihren Fotos, die Akte im Status Berichterstellung, der Text je Abschnitt mit einer Sprachnotiz und einem Standardtext, die Berichtsprüfung, das Herausgeben mit einem Fingerabdruck und das Senden.",
-    "hash": "78be1f48079739de",
-    "guid": "c36f5745-b709-4f44-8929-6709f0a65c16",
+    "hash": "54f68d56de663b73",
+    "guid": "414a48ac-3299-4006-abcd-d19423ffdd26",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
-        "start": 6.66,
-        "eind": 17.3
+        "start": 6.72,
+        "eind": 17.03
       },
       {
         "titel": "Fotos mit Beweiskraft",
-        "start": 21.05,
-        "eind": 32.94
+        "start": 20.82,
+        "eind": 32.71
       },
       {
         "titel": "Die Akte auf Berichterstellung",
-        "start": 42.01,
-        "eind": 51.48
+        "start": 41.84,
+        "eind": 51.31
       },
       {
         "titel": "Der Text je Abschnitt",
-        "start": 55.72,
-        "eind": 66.58
+        "start": 55.59,
+        "eind": 66.45
       },
       {
         "titel": "Eine Sprachnotiz",
-        "start": 72.44,
-        "eind": 80.75
+        "start": 72.3,
+        "eind": 80.29
       },
       {
         "titel": "Ein Standardtext",
-        "start": 86.39,
-        "eind": 95.31
+        "start": 85.96,
+        "eind": 94.88
       },
       {
         "titel": "Speichern und prüfen",
-        "start": 99.88,
-        "eind": 109.82
+        "start": 99.47,
+        "eind": 109.41
       },
       {
         "titel": "Die Berichtsprüfung",
-        "start": 114.11,
-        "eind": 128.18
+        "start": 113.7,
+        "eind": 127.77
       },
       {
         "titel": "Ohne Auftragsbestätigung",
-        "start": 136.91,
-        "eind": 148.98
+        "start": 136.52,
+        "eind": 148.6
       },
       {
         "titel": "Version 1, mit Fingerabdruck",
-        "start": 158.07,
-        "eind": 170.93
+        "start": 159.5,
+        "eind": 172.36
       },
       {
         "titel": "Senden",
-        "start": 174.42,
-        "eind": 188.68
+        "start": 175.85,
+        "eind": 190.11
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/c36f5745-b709-4f44-8929-6709f0a65c16/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-19T10:49:42.39",
-    "gepubliceerdeHash": "78be1f48079739de",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/c36f5745-b709-4f44-8929-6709f0a65c16"
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/414a48ac-3299-4006-abcd-d19423ffdd26/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T18:25:50.204",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/414a48ac-3299-4006-abcd-d19423ffdd26",
+    "gepubliceerdeHash": "54f68d56de663b73",
+    "vorigeGuid": "c36f5745-b709-4f44-8929-6709f0a65c16"
   },
   "aan-de-slag-nl": {
     "film": "aan-de-slag",
@@ -561,33 +562,33 @@
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
       "vuil": false
     },
     "titel": "Erste Schritte mit Quaymark: die Übersicht, Listen, eine Akte und die Hilfe",
     "omschrijving": "Der erste Rundgang: die Übersicht mit Ihren Akten nach Status und dem, was Aufmerksamkeit braucht, das Menü, die Arbeit in einer Liste (suchen, filtern, exportieren), eine Akte mit ihren Registerkarten, das Journal und der Verlauf, die Hilfe zu jedem Bildschirm, die Assistenten, Ihre Einstellungen und die Benachrichtigungen.",
-    "hash": "05009cfdfd620f6f",
-    "guid": "6d6dec3b-acd9-4b29-b36f-c152902c2170",
+    "hash": "6343514c468df369",
+    "guid": "a17d0164-ac89-45dd-be47-397a45a58f44",
     "hoofdstukken": [
       {
         "titel": "Die Übersicht",
-        "start": 4.33,
-        "eind": 12.83
+        "start": 4.27,
+        "eind": 12.77
       },
       {
         "titel": "Was Aufmerksamkeit braucht",
-        "start": 17.04,
-        "eind": 26.37
+        "start": 17,
+        "eind": 26.33
       },
       {
         "titel": "Das Menü",
-        "start": 33.56,
-        "eind": 41.32
+        "start": 33.54,
+        "eind": 41.3
       },
       {
         "titel": "Eine Liste",
         "start": 47.48,
-        "eind": 56.4
+        "eind": 56.39
       },
       {
         "titel": "Suchen",
@@ -596,18 +597,18 @@
       },
       {
         "titel": "Eine Akte",
-        "start": 73.98,
-        "eind": 83.31
+        "start": 73.99,
+        "eind": 83.33
       },
       {
         "titel": "Das Journal",
-        "start": 87.54,
-        "eind": 96.68
+        "start": 87.57,
+        "eind": 96.71
       },
       {
         "titel": "Der Verlauf",
-        "start": 101.22,
-        "eind": 109.58
+        "start": 101.25,
+        "eind": 109.61
       },
       {
         "titel": "Die Hilfe zu jedem Bildschirm",
@@ -616,8 +617,8 @@
       },
       {
         "titel": "Die Assistenten",
-        "start": 129.35,
-        "eind": 138.18
+        "start": 129.33,
+        "eind": 138.15
       },
       {
         "titel": "Ihre Einstellungen",
@@ -626,14 +627,15 @@
       },
       {
         "titel": "Die Benachrichtigungen",
-        "start": 157.5,
-        "eind": 168.18
+        "start": 157.49,
+        "eind": 168.17
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/6d6dec3b-acd9-4b29-b36f-c152902c2170/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-19T14:26:47.8",
-    "gepubliceerdeHash": "05009cfdfd620f6f",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/6d6dec3b-acd9-4b29-b36f-c152902c2170"
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/a17d0164-ac89-45dd-be47-397a45a58f44/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T18:26:19.435",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/a17d0164-ac89-45dd-be47-397a45a58f44",
+    "gepubliceerdeHash": "6343514c468df369",
+    "vorigeGuid": "6d6dec3b-acd9-4b29-b36f-c152902c2170"
   },
   "aanvraag-tot-planning-nl": {
     "film": "aanvraag-tot-planning",
@@ -829,59 +831,60 @@
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
       "vuil": false
     },
     "titel": "Von der Anfrage zur geplanten Akte in Quaymark",
-    "omschrijving": "Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus entsteht, und die Planung, indem Sie die Akte zum Besichtiger ziehen.",
-    "hash": "013d166cda4a63d4",
-    "guid": "108694e3-0527-41a6-8397-4f92c4aac9cf",
+    "omschrijving": "Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus entsteht, und die Planung, indem Sie die Akte zum Sachverständigen ziehen.",
+    "hash": "34ecf1192f7531f2",
+    "guid": "6c7cbbf7-8d53-43f1-9636-6814842304b4",
     "hoofdstukken": [
       {
         "titel": "Eine Anfrage geht ein",
-        "start": 4.3,
-        "eind": 13.04
+        "start": 4.27,
+        "eind": 13
       },
       {
         "titel": "Die Anfrage",
-        "start": 19.56,
-        "eind": 26.52
+        "start": 19.54,
+        "eind": 26.5
       },
       {
         "titel": "Was Quaymark vorschlägt",
-        "start": 30.75,
-        "eind": 39.85
+        "start": 30.73,
+        "eind": 39.84
       },
       {
         "titel": "Annehmen",
-        "start": 47.02,
-        "eind": 53.98
+        "start": 47.1,
+        "eind": 54.06
       },
       {
         "titel": "Die neue Akte",
-        "start": 58.99,
-        "eind": 69.44
+        "start": 59.09,
+        "eind": 69.54
       },
       {
         "titel": "Zu planen",
-        "start": 74.45,
-        "eind": 79.89
+        "start": 74.57,
+        "eind": 80.1
       },
       {
         "titel": "Planen durch Ziehen",
-        "start": 85.96,
-        "eind": 93.95
+        "start": 86.2,
+        "eind": 93.96
       },
       {
         "titel": "Geplant",
-        "start": 97.7,
-        "eind": 109.17
+        "start": 97.73,
+        "eind": 109.2
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/108694e3-0527-41a6-8397-4f92c4aac9cf/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-19T15:07:49.359",
-    "gepubliceerdeHash": "013d166cda4a63d4",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/108694e3-0527-41a6-8397-4f92c4aac9cf"
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/6c7cbbf7-8d53-43f1-9636-6814842304b4/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T18:26:38.299",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/6c7cbbf7-8d53-43f1-9636-6814842304b4",
+    "gepubliceerdeHash": "34ecf1192f7531f2",
+    "vorigeGuid": "108694e3-0527-41a6-8397-4f92c4aac9cf"
   },
   "aanvraag-tot-planning-website-nl": {
     "film": "aanvraag-tot-planning",
@@ -1043,53 +1046,54 @@
     "film": "aanvraag-tot-planning",
     "taal": "de-BE",
     "pagina": "aanvragen",
-    "lengte": 48.44,
+    "lengte": 47.88,
     "uitvoering": "website",
     "routes": [],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
       "vuil": false
     },
     "titel": "Von der Anfrage zur geplanten Akte in Quaymark",
-    "omschrijving": "Eine Anfrage über das Formular Ihrer Website kommt sofort in Quaymark an: Absender, Schiff, Hafen und Wunschtag. Mit dem Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Besichtiger und einer Uhrzeit ziehen.",
-    "hash": "9532158e331e1905",
-    "guid": "a202b593-c9f8-4a2b-9742-f08e4d5d7546",
+    "omschrijving": "Eine Anfrage über das Formular Ihrer Website kommt sofort in Quaymark an: Absender, Schiff, Hafen und Wunschtag. Mit dem Annehmen entsteht eine Akte, die Sie planen, indem Sie sie zu einem Sachverständigen und einer Uhrzeit ziehen.",
+    "hash": "cbe43cab6e4fc9be",
+    "guid": "b7142b71-8781-4592-8cdf-85be71473472",
     "hoofdstukken": [
       {
         "titel": "Eine Anfrage geht ein",
-        "start": 3.45,
-        "eind": 6.81
+        "start": 3.21,
+        "eind": 6.57
       },
       {
         "titel": "Die Anfrage",
-        "start": 11.73,
-        "eind": 15.59
+        "start": 11.23,
+        "eind": 15.09
       },
       {
         "titel": "Annehmen",
-        "start": 20.77,
-        "eind": 23.56
+        "start": 19.97,
+        "eind": 22.75
       },
       {
         "titel": "Zu planen",
-        "start": 27.25,
-        "eind": 31.11
+        "start": 26.4,
+        "eind": 30.62
       },
       {
         "titel": "Planen durch Ziehen",
-        "start": 35.5,
-        "eind": 39.36
+        "start": 34.63,
+        "eind": 38.84
       },
       {
         "titel": "Geplant",
-        "start": 42.1,
-        "eind": 46.03
+        "start": 41.57,
+        "eind": 45.5
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/a202b593-c9f8-4a2b-9742-f08e4d5d7546/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-19T16:45:55.839",
-    "gepubliceerdeHash": "9532158e331e1905",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/a202b593-c9f8-4a2b-9742-f08e4d5d7546"
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/b7142b71-8781-4592-8cdf-85be71473472/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T18:26:58.817",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/b7142b71-8781-4592-8cdf-85be71473472",
+    "gepubliceerdeHash": "cbe43cab6e4fc9be",
+    "vorigeGuid": "a202b593-c9f8-4a2b-9742-f08e4d5d7546"
   },
   "rapport-uitgeven-website-nl": {
     "film": "rapport-uitgeven",
@@ -1245,50 +1249,51 @@
     "film": "rapport-uitgeven",
     "taal": "de-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 41.2,
+    "lengte": 40.72,
     "uitvoering": "website",
     "routes": [
       "/dossiers/{id}",
       "/beheer/rapportsjablonen"
     ],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
+      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
       "vuil": false
     },
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Feststellungen vor Ort, mit Fotos, die Uhrzeit, GPS-Position und Fingerabdruck tragen. Der Bericht folgt Ihrer eigenen Word-Vorlage, wird als Version mit Fingerabdruck herausgegeben und ist mit einem Klick beim Auftraggeber.",
     "hash": "73c4d06b566bc4e9",
-    "guid": "acb0e0bd-da4c-4f3e-b03a-229b29a2e366",
+    "guid": "82e16246-b829-4eb6-9f1a-7faae22d8996",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
-        "start": 3.06,
-        "eind": 6.56
+        "start": 2.76,
+        "eind": 6.26
       },
       {
         "titel": "Fotos mit Beweiskraft",
-        "start": 9.32,
-        "eind": 13.39
+        "start": 9,
+        "eind": 13.07
       },
       {
         "titel": "Ihre eigene Word-Vorlage",
-        "start": 17.13,
-        "eind": 20.35
+        "start": 17.44,
+        "eind": 20.65
       },
       {
         "titel": "Herausgeben",
-        "start": 28.52,
-        "eind": 33.45
+        "start": 28.18,
+        "eind": 33.11
       },
       {
         "titel": "Senden",
-        "start": 36.17,
-        "eind": 38.77
+        "start": 35.77,
+        "eind": 38.37
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/acb0e0bd-da4c-4f3e-b03a-229b29a2e366/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-19T17:22:32.266",
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/82e16246-b829-4eb6-9f1a-7faae22d8996/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-19T18:27:15.254",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/82e16246-b829-4eb6-9f1a-7faae22d8996",
     "gepubliceerdeHash": "73c4d06b566bc4e9",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/acb0e0bd-da4c-4f3e-b03a-229b29a2e366"
+    "vorigeGuid": "acb0e0bd-da4c-4f3e-b03a-229b29a2e366"
   }
 }
