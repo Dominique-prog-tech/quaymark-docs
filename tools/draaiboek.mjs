@@ -254,41 +254,61 @@ export const FILMS = [
     pagina: 'aan-de-slag',
     titel: {
       nl: 'Aan de slag met Quaymark: het dashboard, de lijsten, een dossier en de hulp',
+      fr: 'Premiers pas avec Quaymark : le tableau de bord, les listes, un dossier et l’aide',
+      en: 'Getting started with Quaymark: the dashboard, lists, a file and help',
+      de: 'Erste Schritte mit Quaymark: die Übersicht, Listen, eine Akte und die Hilfe',
     },
     omschrijving: {
       nl: 'De eerste rondleiding: het dashboard met uw dossiers per status en wat aandacht vraagt, het menu, werken in een lijst (zoeken, '
         + 'filteren, exporteren), een dossier met zijn tabbladen, het journaal en de historiek, de hulp bij elk scherm, de assistenten, '
         + 'uw voorkeuren en de meldingen.',
+      fr: 'La première visite guidée : le tableau de bord avec vos dossiers par statut et ce qui demande votre attention, le menu, le travail dans une '
+        + 'liste (rechercher, filtrer, exporter), un dossier et ses onglets, le journal et l’historique, l’aide sur chaque écran, les assistants, '
+        + 'vos préférences et les notifications.',
+      en: 'A first tour: the dashboard with your files by status and what needs attention, the menu, working in a list (search, filter, export), '
+        + 'a file with its tabs, the journal and the history, help on every screen, the assistants, your preferences and the notifications.',
+      de: 'Der erste Rundgang: die Übersicht mit Ihren Akten nach Status und dem, was Aufmerksamkeit braucht, das Menü, die Arbeit in einer Liste '
+        + '(suchen, filtern, exportieren), eine Akte mit ihren Registerkarten, das Journal und der Verlauf, die Hilfe zu jedem Bildschirm, die '
+        + 'Assistenten, Ihre Einstellungen und die Benachrichtigungen.',
     },
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
-      { naam: 'dashboard', kop: { nl: 'Het dashboard' },
+      { naam: 'dashboard', kop: { nl: 'Het dashboard', fr: 'Le tableau de bord', en: 'The dashboard', de: 'Die Übersicht' },
         doe: async (p) => {
           await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
           await beweegNaar(p, p.locator('main a, main .card, main [class*=tegel]').first());
         },
         // Een dossiernummer onder Termijnen: een gegeven van de proefklant, geen opschrift.
         merk: /HQ-2026-0002/,
-        nl: 'Na het aanmelden opent Quaymark op het dashboard. Bovenaan staan uw open dossiers per status, en wat er nog te factureren is.' },
+        nl: 'Na het aanmelden opent Quaymark op het dashboard. Bovenaan staan uw open dossiers per status, en wat er nog te factureren is.',
+        fr: 'Après la connexion, Quaymark s’ouvre sur le tableau de bord. En haut, vos dossiers ouverts par statut, et ce qui reste à facturer.',
+        en: 'After signing in, Quaymark opens on the dashboard. At the top are your open files by status, and what is still to invoice.',
+        de: 'Nach der Anmeldung öffnet Quaymark die Übersicht. Oben stehen Ihre offenen Akten nach Status und das, was noch abzurechnen ist.' },
 
-      { naam: 'aandacht', kop: { nl: 'Wat aandacht vraagt' },
+      { naam: 'aandacht', kop: { nl: 'Wat aandacht vraagt', fr: 'Ce qui demande votre attention', en: 'What needs attention', de: 'Was Aufmerksamkeit braucht' },
         doe: async (p) => {
           await beweegNaar(p, p.getByText('HQ-2026-0002').first());
           await p.waitForTimeout(1200);
           await beweegNaar(p, p.getByText('ZB-2026-0002').first());
         },
         merk: /ZB-2026-0002/,
-        nl: 'Daaronder ziet u wat aandacht vraagt: een termijn die vervalt, een aanvraag om te beslissen, een rapport dat op review wacht.' },
+        nl: 'Daaronder ziet u wat aandacht vraagt: een termijn die vervalt, een aanvraag om te beslissen, een rapport dat op review wacht.',
+        fr: 'En dessous, ce qui demande votre attention : un délai qui expire, une demande à décider, un rapport en attente de relecture.',
+        en: 'Below, you see what needs attention: a deadline that is due, a request to decide, a report awaiting review.',
+        de: 'Darunter sehen Sie, was Aufmerksamkeit braucht: eine Frist, die abläuft, eine Anfrage zur Entscheidung, einen Bericht, der auf Prüfung wartet.' },
 
-      { naam: 'menu', kop: { nl: 'Het menu' },
+      { naam: 'menu', kop: { nl: 'Het menu', fr: 'Le menu', en: 'The menu', de: 'Das Menü' },
         doe: async (p) => {
           for (const adres of ['dossiers', 'planning', 'facturen']) { await beweegNaar(p, menu(p, adres)); await p.waitForTimeout(900); }
           await beweegNaar(p, menu(p, 'beheer'));
         },
         merk: /HQ-2026-0002/,
-        nl: 'Links staat het menu: de dossiers, de planning, de facturatie. Onderaan opent Platformbeheer de instellingen van uw bureau.' },
+        nl: 'Links staat het menu: de dossiers, de planning, de facturatie. Onderaan opent Platformbeheer de instellingen van uw bureau.',
+        fr: 'À gauche, le menu : les dossiers, le planning, la facturation. En bas, Administration ouvre les paramètres de votre bureau.',
+        en: 'On the left is the menu: the files, the schedule, invoicing. At the bottom, Administration opens your office’s settings.',
+        de: 'Links steht das Menü: die Akten, die Planung, die Abrechnung. Unten öffnet Verwaltung die Einstellungen Ihres Büros.' },
 
-      { naam: 'lijst', kop: { nl: 'Een lijst' },
+      { naam: 'lijst', kop: { nl: 'Een lijst', fr: 'Une liste', en: 'A list', de: 'Eine Liste' },
         doe: async (p) => {
           await klik(p, menu(p, 'dossiers'));
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
@@ -297,9 +317,12 @@ export const FILMS = [
           await beweegNaar(p, p.getByRole('button', { name: SCHIL.exporteren }).first());
         },
         merk: /HQ-2026-0004/,
-        nl: 'Elke lijst werkt hetzelfde. Bovenaan kiest u de status, filtert u op elke kolom, kiest u de kolommen en exporteert u de lijst.' },
+        nl: 'Elke lijst werkt hetzelfde. Bovenaan kiest u de status, filtert u op elke kolom, kiest u de kolommen en exporteert u de lijst.',
+        fr: 'Toutes les listes fonctionnent de la même façon. En haut, vous choisissez le statut, filtrez sur chaque colonne, choisissez les colonnes et exportez la liste.',
+        en: 'Every list works the same way. At the top you choose the status, filter on any column, choose the columns and export the list.',
+        de: 'Jede Liste funktioniert gleich. Oben wählen Sie den Status, filtern nach jeder Spalte, wählen die Spalten und exportieren die Liste.' },
 
-      { naam: 'zoeken', kop: { nl: 'Zoeken' },
+      { naam: 'zoeken', kop: { nl: 'Zoeken', fr: 'Rechercher', en: 'Search', de: 'Suchen' },
         doe: async (p) => {
           const z = p.getByPlaceholder(SCHIL.zoeken).first();
           await klik(p, z);
@@ -307,9 +330,12 @@ export const FILMS = [
           await p.waitForTimeout(1500);
         },
         merk: /HQ-2026-0010/,
-        nl: 'Het zoekvak zoekt in alle kolommen tegelijk. Hier op de naam van een schip: er blijven drie dossiers over.' },
+        nl: 'Het zoekvak zoekt in alle kolommen tegelijk. Hier op de naam van een schip: er blijven drie dossiers over.',
+        fr: 'La zone de recherche cherche dans toutes les colonnes à la fois. Ici sur le nom d’un navire : il reste trois dossiers.',
+        en: 'The search box searches all columns at once. Here on the name of a vessel: three files remain.',
+        de: 'Das Suchfeld sucht in allen Spalten zugleich. Hier nach dem Namen eines Schiffs: Es bleiben drei Akten übrig.' },
 
-      { naam: 'fiche', kop: { nl: 'Een dossier' },
+      { naam: 'fiche', kop: { nl: 'Een dossier', fr: 'Un dossier', en: 'A file', de: 'Eine Akte' },
         doe: async (p) => {
           const rij = p.getByRole('row').filter({ hasText: 'HQ-2026-0003' }).first();
           await beweegNaar(p, rij);
@@ -322,17 +348,23 @@ export const FILMS = [
         },
         // Het nummer met zijn statusbadge (zo staan ze in de tekst van de pagina; geen \b: zie de statusscène van rapport-uitgeven).
         merk: /HQ-2026-0003\s*(In uitvoering|En cours|In progress|In Bearbeitung)/,
-        nl: 'Een dubbelklik opent het dossier. Bovenaan staan het nummer en de status, daaronder de tabbladen: van de partijen en het veldwerk tot het rapport.' },
+        nl: 'Een dubbelklik opent het dossier. Bovenaan staan het nummer en de status, daaronder de tabbladen: van de partijen en het veldwerk tot het rapport.',
+        fr: 'Un double-clic ouvre le dossier. En haut, le numéro et le statut, en dessous les onglets : des parties et du travail de terrain jusqu’au rapport.',
+        en: 'A double-click opens the file. At the top are the number and the status, below them the tabs: from the parties and the fieldwork to the report.',
+        de: 'Ein Doppelklick öffnet die Akte. Oben stehen die Nummer und der Status, darunter die Registerkarten: von den Parteien und der Feldarbeit bis zum Bericht.' },
 
-      { naam: 'journaal', kop: { nl: 'Het journaal' },
+      { naam: 'journaal', kop: { nl: 'Het journaal', fr: 'Le journal', en: 'The journal', de: 'Das Journal' },
         doe: async (p) => {
           await klik(p, tabblad(p, SCHIL.journaal)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
           await beweegNaar(p, p.getByText('Statement of facts').first());
         },
         merk: /Statement of facts/,
-        nl: 'In het journaal staan de notities, de taken en de bijlagen van het dossier. Ook wat Quaymark zelf noteert, zoals een uitgegeven factuur.' },
+        nl: 'In het journaal staan de notities, de taken en de bijlagen van het dossier. Ook wat Quaymark zelf noteert, zoals een uitgegeven factuur.',
+        fr: 'Le journal contient les notes, les tâches et les pièces jointes du dossier. Aussi ce que Quaymark note lui-même, comme une facture émise.',
+        en: 'The journal holds the notes, tasks and attachments of the file. Also what Quaymark records itself, such as an issued invoice.',
+        de: 'Im Journal stehen die Notizen, Aufgaben und Anhänge der Akte. Auch das, was Quaymark selbst festhält, etwa eine ausgestellte Rechnung.' },
 
-      { naam: 'historiek', kop: { nl: 'De historiek' },
+      { naam: 'historiek', kop: { nl: 'De historiek', fr: 'L’historique', en: 'The history', de: 'Der Verlauf' },
         doe: async (p) => {
           await klik(p, tabblad(p, SCHIL.historiek));
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
@@ -340,18 +372,25 @@ export const FILMS = [
         },
         // Een regel van de historiek van HQ-2026-0003 (de partij die op 16/11/2026 bijkwam): een gegeven.
         merk: /Estuaire Expertises SARL/,
-        nl: 'De historiek toont wie wat wanneer veranderde, in gewone woorden. Een vaststelling of een uitgegeven rapport wordt nooit overschreven.' },
+        nl: 'De historiek toont wie wat wanneer veranderde, in gewone woorden. Een vaststelling of een uitgegeven rapport wordt nooit overschreven.',
+        fr: 'L’historique montre qui a modifié quoi et quand, en termes clairs. Une constatation ou un rapport émis n’est jamais écrasé.',
+        en: 'The history shows who changed what and when, in plain words. A finding or an issued report is never overwritten.',
+        de: 'Der Verlauf zeigt, wer wann was geändert hat, in klaren Worten. Eine Feststellung oder ein herausgegebener Bericht wird nie überschrieben.' },
 
-      { naam: 'hulp', kop: { nl: 'De hulp bij elk scherm' },
+      { naam: 'hulp', kop: { nl: 'De hulp bij elk scherm', fr: 'L’aide sur chaque écran', en: 'Help on every screen', de: 'Die Hilfe zu jedem Bildschirm' },
         doe: async (p) => {
           await klik(p, p.getByTitle(SCHIL.hulp).first());
           await p.waitForTimeout(2500);
         },
         // De eerste zin van de uitleg in de lade: tekst van de handleiding, in de taal van het scherm (gemeten 19/11/2026).
-        merk: /Eén opdracht: wat er gevraagd is|Une mission : ce qui est demandé|One instruction: what was asked|Ein Auftrag: was verlangt wird/,
-        nl: 'Het vraagteken rechtsboven opent de uitleg bij het scherm waar u bent, met onderaan een link naar de volledige handleiding.' },
+        // ⚠️ \s*: het Frans zet een VASTE spatie (U+00A0) vóór het dubbelpunt (gemeten 19/11/2026), geen gewone.
+        merk: /Eén opdracht: wat er gevraagd is|Une mission\s*:\s*ce qui est demandé|One instruction: what was asked|Ein Auftrag: was verlangt wird/,
+        nl: 'Het vraagteken rechtsboven opent de uitleg bij het scherm waar u bent, met onderaan een link naar de volledige handleiding.',
+        fr: 'Le point d’interrogation en haut à droite ouvre l’explication de l’écran où vous êtes, avec en bas un lien vers le manuel complet.',
+        en: 'The question mark at the top right opens the explanation of the screen you are on, with a link to the full manual at the bottom.',
+        de: 'Das Fragezeichen oben rechts öffnet die Erklärung zu dem Bildschirm, auf dem Sie sind, mit einem Link zum vollständigen Handbuch.' },
 
-      { naam: 'assistent', kop: { nl: 'De assistenten' },
+      { naam: 'assistent', kop: { nl: 'De assistenten', fr: 'Les assistants', en: 'The assistants', de: 'Die Assistenten' },
         doe: async (p) => {
           await sluitPaneel(p);
           await beweegNaar(p, p.getByTitle(SCHIL.handleiding).first());
@@ -360,9 +399,12 @@ export const FILMS = [
           await p.waitForTimeout(800);
         },
         merk: /Estuaire Expertises SARL/,
-        nl: 'Met het sterretje stelt u een vraag aan de handleiding, in uw eigen woorden. Het grafiekje beantwoordt vragen over uw eigen gegevens.' },
+        nl: 'Met het sterretje stelt u een vraag aan de handleiding, in uw eigen woorden. Het grafiekje beantwoordt vragen over uw eigen gegevens.',
+        fr: 'Avec l’étoile, vous posez une question au manuel, avec vos propres mots. Le petit graphique répond aux questions sur vos propres données.',
+        en: 'With the star you ask the manual a question, in your own words. The small chart answers questions about your own data.',
+        de: 'Mit dem Stern stellen Sie dem Handbuch eine Frage, in Ihren eigenen Worten. Das kleine Diagramm beantwortet Fragen zu Ihren eigenen Daten.' },
 
-      { naam: 'voorkeuren', kop: { nl: 'Uw voorkeuren' },
+      { naam: 'voorkeuren', kop: { nl: 'Uw voorkeuren', fr: 'Vos préférences', en: 'Your preferences', de: 'Ihre Einstellungen' },
         doe: async (p) => {
           await klik(p, p.locator('button.avatar-btn').first());
           await p.waitForTimeout(1500);
@@ -373,9 +415,12 @@ export const FILMS = [
         // De talen in het paneel, elk in hun eigen woord, dus in elke schermtaal gelijk, en ENKEL in dit paneel. NIET "Demo Surveyor":
         // die naam staat ook in de historiek eronder, en dan slaagt het merkteken ook zonder paneel (zo gemeten op 19/11/2026).
         merk: /Nederlands\s*Français\s*English\s*Deutsch/,
-        nl: 'Onder uw initialen kiest u uw accentkleur, de taal van het scherm, en zet u tweestapsverificatie aan.' },
+        nl: 'Onder uw initialen kiest u uw accentkleur, de taal van het scherm, en zet u tweestapsverificatie aan.',
+        fr: 'Sous vos initiales, vous choisissez votre couleur d’accent, la langue de l’écran, et vous activez la vérification en deux étapes.',
+        en: 'Under your initials you choose your accent colour, the language of the screen, and you turn on two-step verification.',
+        de: 'Unter Ihren Initialen wählen Sie Ihre Akzentfarbe und die Sprache des Bildschirms und schalten die Zwei-Faktor-Authentifizierung ein.' },
 
-      { naam: 'meldingen', kop: { nl: 'De meldingen' },
+      { naam: 'meldingen', kop: { nl: 'De meldingen', fr: 'Les notifications', en: 'Notifications', de: 'Die Benachrichtigungen' },
         doe: async (p) => {
           await sluitPaneel(p);
           await klik(p, p.locator('button.notif-btn').first());
@@ -384,7 +429,10 @@ export const FILMS = [
         },
         // Het dossiernummer van een melding: staat op deze pagina enkel in het paneel van de meldingen.
         merk: /HQ-2026-0002/,
-        nl: 'Het belletje toont wat er voor u binnenkwam, zoals een termijn die voorbij is. Met de ballon ernaast stuurt u ons een vraag of een opmerking.' },
+        nl: 'Het belletje toont wat er voor u binnenkwam, zoals een termijn die voorbij is. Met de ballon ernaast stuurt u ons een vraag of een opmerking.',
+        fr: 'La cloche montre ce qui vous est arrivé, comme un délai dépassé. Avec la bulle à côté, vous nous envoyez une question ou une remarque.',
+        en: 'The bell shows what came in for you, such as a deadline that has passed. With the speech bubble next to it, you send us a question or a remark.',
+        de: 'Die Glocke zeigt, was für Sie eingegangen ist, etwa eine überschrittene Frist. Mit der Sprechblase daneben senden Sie uns eine Frage oder eine Anmerkung.' },
     ],
   }],
 
@@ -402,23 +450,35 @@ export const FILMS = [
     pagina: 'aanvragen',
     titel: {
       nl: 'Van aanvraag tot ingepland dossier in Quaymark',
+      fr: 'De la demande au dossier planifié dans Quaymark',
+      en: 'From request to scheduled file in Quaymark',
+      de: 'Von der Anfrage zur geplanten Akte in Quaymark',
     },
     omschrijving: {
       nl: 'Een aanvraag van het formulier op uw website: wat er binnenkomt, de opdrachtgever die Quaymark voorstelt, aanvaarden, het dossier '
         + 'dat daaruit ontstaat, en het inplannen door het dossier naar de surveyor te slepen.',
+      fr: 'Une demande du formulaire de votre site web : ce qui arrive, le donneur d’ordre que Quaymark propose, l’acceptation, le dossier qui en '
+        + 'résulte, et la planification en glissant le dossier vers l’expert.',
+      en: 'A request from the form on your website: what comes in, the principal that Quaymark suggests, accepting, the file that results, and '
+        + 'scheduling by dragging the file to the surveyor.',
+      de: 'Eine Anfrage aus dem Formular Ihrer Website: was eingeht, der Auftraggeber, den Quaymark vorschlägt, das Annehmen, die Akte, die daraus '
+        + 'entsteht, und die Planung, indem Sie die Akte zum Besichtiger ziehen.',
     },
     uitvoeringen: { handleiding: { stem: true } },
     scenes: [
-      { naam: 'binnen', kop: { nl: 'Een aanvraag komt binnen' },
+      { naam: 'binnen', kop: { nl: 'Een aanvraag komt binnen', fr: 'Une demande arrive', en: 'A request comes in', de: 'Eine Anfrage geht ein' },
         doe: async (p) => {
           await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1500);
           await beweegNaar(p, p.getByText(/Scheldemond Bevrachting NV · POLDERWIND/).first());
         },
         // De aanvraag op het dashboard (opdrachtgever · schip): staat enkel onder Aanvragen te beslissen.
         merk: /Scheldemond Bevrachting NV · POLDERWIND/,
-        nl: 'Een aanvraag via het formulier op uw website komt meteen in Quaymark binnen. Het dashboard toont ze onder Aanvragen te beslissen.' },
+        nl: 'Een aanvraag via het formulier op uw website komt meteen in Quaymark binnen. Het dashboard toont ze onder Aanvragen te beslissen.',
+        fr: 'Une demande envoyée via le formulaire de votre site web arrive aussitôt dans Quaymark. Le tableau de bord l’affiche sous Demandes à décider.',
+        en: 'A request through the form on your website arrives in Quaymark right away. The dashboard shows it under Requests to decide.',
+        de: 'Eine Anfrage über das Formular Ihrer Website geht sofort in Quaymark ein. Die Übersicht zeigt sie unter Zu entscheidende Anfragen.' },
 
-      { naam: 'aanvraag', kop: { nl: 'De aanvraag' },
+      { naam: 'aanvraag', kop: { nl: 'De aanvraag', fr: 'La demande', en: 'The request', de: 'Die Anfrage' },
         doe: async (p) => {
           await klik(p, menu(p, 'aanvragen'));
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(1200);
@@ -430,9 +490,12 @@ export const FILMS = [
           await beweegNaar(p, p.getByText('Lotte Janssens').first());
         },
         merk: /Lotte Janssens/,
-        nl: 'U ziet wie de aanvraag indiende, voor welk schip, in welke haven en wanneer het werk gewenst is.' },
+        nl: 'U ziet wie de aanvraag indiende, voor welk schip, in welke haven en wanneer het werk gewenst is.',
+        fr: 'Vous voyez qui a introduit la demande, pour quel navire, dans quel port et quand le travail est souhaité.',
+        en: 'You see who submitted the request, for which vessel, in which port and when the work is wanted.',
+        de: 'Sie sehen, wer die Anfrage eingereicht hat, für welches Schiff, in welchem Hafen und wann die Arbeit gewünscht ist.' },
 
-      { naam: 'voorstel', kop: { nl: 'Wat Quaymark voorstelt' },
+      { naam: 'voorstel', kop: { nl: 'Wat Quaymark voorstelt', fr: 'Ce que Quaymark propose', en: 'What Quaymark suggests', de: 'Was Quaymark vorschlägt' },
         doe: async (p) => {
           // De vakken op hun LABEL: de voorgestelde waarde staat in een keuzevak, en de waarde van een invoervak hoort niet bij de tekst
           // van de pagina (gemeten 19/11/2026: getByText vond "Scheldemond Bevrachting NV (zelfde e-mailadres)" niet).
@@ -442,9 +505,12 @@ export const FILMS = [
           await beweegNaar(p, vak('schip'));
         },
         merk: /SB-2026-118/,
-        nl: 'Quaymark stelt zelf de opdrachtgever voor, op het e-mailadres van de indiener, en herkent het schip. U kiest nog de vestiging.' },
+        nl: 'Quaymark stelt zelf de opdrachtgever voor, op het e-mailadres van de indiener, en herkent het schip. U kiest nog de vestiging.',
+        fr: 'Quaymark propose lui-même le donneur d’ordre, d’après l’adresse e-mail de l’expéditeur, et reconnaît le navire. Vous choisissez encore le site.',
+        en: 'Quaymark suggests the principal itself, from the sender’s email address, and recognises the vessel. You still choose the office.',
+        de: 'Quaymark schlägt den Auftraggeber selbst vor, anhand der E-Mail-Adresse des Absenders, und erkennt das Schiff. Sie wählen noch die Niederlassung.' },
 
-      { naam: 'aanvaarden', kop: { nl: 'Aanvaarden' },
+      { naam: 'aanvaarden', kop: { nl: 'Aanvaarden', fr: 'Accepter', en: 'Accepting', de: 'Annehmen' },
         doe: async (p) => {
           const vak = p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q('vestiging').source})`) }).first();
           await openLijst(p, vak);
@@ -455,9 +521,12 @@ export const FILMS = [
         },
         // Het NIEUWE dossier met zijn status Nieuw (zonder surveyor): een gegeven dat pas na het aanvaarden bestaat.
         merk: /HQ-2026-\d{4}\s*(Nieuw|Nouveau|New|Neu)/,
-        nl: 'Met Aanvaarden maakt Quaymark het dossier aan, en krijgt de indiener een mail dat zijn opdracht aanvaard is.' },
+        nl: 'Met Aanvaarden maakt Quaymark het dossier aan, en krijgt de indiener een mail dat zijn opdracht aanvaard is.',
+        fr: 'Avec Accepter, Quaymark crée le dossier, et l’expéditeur reçoit un e-mail indiquant que sa mission est acceptée.',
+        en: 'With Accept, Quaymark creates the file, and the sender receives an email saying the assignment is accepted.',
+        de: 'Mit Annehmen legt Quaymark die Akte an, und der Absender erhält eine E-Mail, dass sein Auftrag angenommen ist.' },
 
-      { naam: 'dossier', kop: { nl: 'Het nieuwe dossier' },
+      { naam: 'dossier', kop: { nl: 'Het nieuwe dossier', fr: 'Le nouveau dossier', en: 'The new file', de: 'Die neue Akte' },
         doe: async (p) => {
           const vak = (sleutel) => p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q(sleutel).source})`) }).first();
           await beweegNaar(p, p.getByText(Q('bevestiging_stand_via_aanvraag')).first());
@@ -466,9 +535,12 @@ export const FILMS = [
           await p.waitForTimeout(800);
         },
         merk: /HQ-2026-\d{4}\s*(Nieuw|Nouveau|New|Neu)/,
-        nl: 'Het dossier heeft al zijn opdrachtgever, zijn schip, de haven en het gewenste moment. Het geldt als bevestigd: de opdrachtgever vroeg het zelf aan.' },
+        nl: 'Het dossier heeft al zijn opdrachtgever, zijn schip, de haven en het gewenste moment. Het geldt als bevestigd: de opdrachtgever vroeg het zelf aan.',
+        fr: 'Le dossier a déjà son donneur d’ordre, son navire, le port et le moment souhaité. Il compte comme confirmé : le donneur d’ordre l’a demandé lui-même.',
+        en: 'The file already has its principal, its vessel, the port and the requested time. It counts as confirmed: the principal asked for it.',
+        de: 'Die Akte hat schon ihren Auftraggeber, ihr Schiff, den Hafen und den gewünschten Zeitpunkt. Sie gilt als bestätigt: Der Auftraggeber hat sie selbst angefragt.' },
 
-      { naam: 'te-plannen', kop: { nl: 'Te plannen' },
+      { naam: 'te-plannen', kop: { nl: 'Te plannen', fr: 'À planifier', en: 'To schedule', de: 'Zu planen' },
         doe: async (p) => {
           await klik(p, menu(p, 'planning'));
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(2000);
@@ -476,15 +548,19 @@ export const FILMS = [
         },
         // De kaart van het nieuwe dossier onder Te plannen: POLDERWIND staat vandaag nergens anders op de planning.
         merk: /POLDERWIND/,
-        nl: 'Op de planning staat het nieuwe dossier links, onder Te plannen: het heeft nog geen surveyor.' },
+        nl: 'Op de planning staat het nieuwe dossier links, onder Te plannen: het heeft nog geen surveyor.',
+        fr: 'Dans le planning, le nouveau dossier figure à gauche, sous À planifier : il n’a pas encore d’expert.',
+        en: 'On the schedule, the new file appears on the left, under To schedule: it has no surveyor yet.',
+        de: 'In der Planung steht die neue Akte links unter Zu planen: Sie hat noch keinen Besichtiger.' },
 
-      { naam: 'slepen', kop: { nl: 'Inplannen door te slepen' },
+      { naam: 'slepen', kop: { nl: 'Inplannen door te slepen', fr: 'Planifier en glissant', en: 'Scheduling by dragging', de: 'Planen durch Ziehen' },
         doe: async (p) => {
           // De gewenste dag: de eerstvolgende werkdag (zoals proefklant-vullen.py). De knoppen Vorige/Volgende dragen geen tekst, wel een titel
-          // die eindigt op de naam van de weergave ("Volgende Day": DevExpress vertaalt "Day" niet; gemeten 19/11/2026). De tweede is Volgende.
+          // MET de naam van de weergave, die DevExpress niet vertaalt: "Volgende Day", "Next Day", "Nächste Day", maar "Day suivant" (gemeten
+          // 19/11/2026; eerst stond hier $="Day", en dat vond in het Frans niets). In elke taal eerst Vorige, dan Volgende.
           const vandaag = new Date(); let d = 1;
           while ([0, 6].includes(new Date(vandaag.getFullYear(), vandaag.getMonth(), vandaag.getDate() + d).getDay())) d++;
-          for (let i = 0; i < d; i++) { await klik(p, p.locator('button[title$="Day"]').nth(1)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1000); }
+          for (let i = 0; i < d; i++) { await klik(p, p.locator('button[title*="Day"]').nth(1)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(1000); }
           const doel = new Date(vandaag.getFullYear(), vandaag.getMonth(), vandaag.getDate() + d);
           // data-start = de wandklok van de cel in epoch-ms (adm-scheduler-drop.js); data-resource 0 = de eerste kolom, Demo Surveyor.
           const cel = p.locator(`.dxbl-sc-time-cell[data-start="${Date.UTC(doel.getFullYear(), doel.getMonth(), doel.getDate(), 9, 0)}"][data-resource="0"]`).first();
@@ -495,15 +571,21 @@ export const FILMS = [
         },
         // Het blok op de planning: POLDERWIND om 09:00. Het andere POLDERWIND-dossier (HQ-2026-0004) staat om 14:00.
         merk: /POLDERWIND · [^0-9]*09:00/,
-        nl: 'U bladert naar de gewenste dag en sleept het dossier naar de kolom van de surveyor, op het uur waarop het werk begint.' },
+        nl: 'U bladert naar de gewenste dag en sleept het dossier naar de kolom van de surveyor, op het uur waarop het werk begint.',
+        fr: 'Vous passez au jour souhaité et glissez le dossier dans la colonne de l’expert, à l’heure où le travail commence.',
+        en: 'You go to the requested day and drag the file into the surveyor’s column, at the hour the work starts.',
+        de: 'Sie blättern zum gewünschten Tag und ziehen die Akte in die Spalte des Besichtigers, zu der Stunde, zu der die Arbeit beginnt.' },
 
-      { naam: 'gepland', kop: { nl: 'Gepland' },
+      { naam: 'gepland', kop: { nl: 'Gepland', fr: 'Planifié', en: 'Scheduled', de: 'Geplant' },
         doe: async (p) => {
           await beweegNaar(p, p.getByText(/POLDERWIND · [^0-9]*$/).first());
           await p.waitForTimeout(1500);
         },
         merk: /POLDERWIND · [^0-9]*09:00/,
-        nl: 'Het dossier is nu Gepland, standaard voor twee uur. U rekt het blok uit als het werk langer duurt. Het kleurt rood bij een afwezigheid of een overlap.' },
+        nl: 'Het dossier is nu Gepland, standaard voor twee uur. U rekt het blok uit als het werk langer duurt. Het kleurt rood bij een afwezigheid of een overlap.',
+        fr: 'Le dossier est maintenant Planifié, par défaut pour deux heures. Vous étirez le bloc si le travail dure plus longtemps. Il devient rouge en cas d’absence ou de chevauchement.',
+        en: 'The file is now Scheduled, by default for two hours. You stretch the block if the work takes longer. It turns red for an absence or an overlap.',
+        de: 'Die Akte ist jetzt Geplant, standardmäßig für zwei Stunden. Sie ziehen den Block länger, wenn die Arbeit länger dauert. Er wird rot bei einer Abwesenheit oder einer Überschneidung.' },
     ],
   }],
 ];
