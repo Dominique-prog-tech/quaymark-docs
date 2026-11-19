@@ -89,6 +89,7 @@ If you requested a trial version on quaymark.eu, you get your own environment in
 - You sign in with the details from the **welcome email** and choose your own password straight away.
 - At your first sign-in you become the **surveyor** of the sample files: you see them in your planning, in the deadlines and in the field app.
 - The top of the screen shows until when the trial runs.
+- On the **Dashboard**, the **Getting started** panel helps you along: your company details, your first own file and your first report. A step ticks itself off as soon as you have done it. Once everything is done, or when you click **Hide**, the panel disappears.
 - In a trial version **nothing goes out**: no email, Peppol, signing or principal portal invitation. You can prepare and view everything, including the reports as PDF.
 - When it ends, the environment becomes **read-only**. If you become a customer, ADM Concept sets up your environment again, without the sample data. Your account stays.
 

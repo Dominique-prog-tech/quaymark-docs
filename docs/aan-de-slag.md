@@ -89,6 +89,7 @@ Vroeg u een proefversie aan op quaymark.eu, dan krijgt u een eigen omgeving op n
 - U meldt zich aan met de gegevens uit de **welkomstmail** en kiest meteen een eigen wachtwoord.
 - Bij uw eerste aanmelding wordt u de **surveyor** van de voorbeelddossiers: u ziet ze in uw planning, bij de termijnen en in de veldapp.
 - Bovenaan staat tot wanneer de proef loopt.
+- Op het **Dashboard** helpt het paneel **Aan de slag** u op weg: uw bureaugegevens, uw eerste eigen dossier en uw eerste rapport. Een stap vinkt zichzelf af zodra u hem gedaan hebt. Is alles gedaan, of klikt u op **Verbergen**, dan verdwijnt het paneel.
 - In een proefversie **vertrekt er niets naar buiten**: geen mail, Peppol, ondertekening of uitnodiging voor het opdrachtgeversportaal. Alles voorbereiden en bekijken kan wel, ook de rapporten als PDF.
 - Na afloop staat de omgeving op **alleen lezen**. Wordt u klant, dan zet ADM Concept uw omgeving opnieuw op, zonder de voorbeeldgegevens. Uw account blijft.
 

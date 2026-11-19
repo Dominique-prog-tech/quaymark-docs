@@ -89,6 +89,7 @@ Si vous avez demandé une version d'essai sur quaymark.eu, vous recevez votre pr
 - Vous vous connectez avec les données de l'**e-mail de bienvenue** et choisissez aussitôt votre propre mot de passe.
 - À votre première connexion, vous devenez le **surveyor** des dossiers d'exemple : vous les voyez dans votre planning, dans les délais et dans l'application de terrain.
 - En haut figure la date de fin de l'essai.
+- Sur le **Tableau de bord**, le panneau **Pour commencer** vous guide : les données de votre bureau, votre premier dossier et votre premier rapport. Une étape se coche d'elle-même dès que vous l'avez faite. Quand tout est fait, ou si vous cliquez sur **Masquer**, le panneau disparaît.
 - Dans une version d'essai, **rien ne part vers l'extérieur** : pas d'e-mail, de Peppol, de signature ni d'invitation au portail des donneurs d'ordre. Vous pouvez tout préparer et consulter, y compris les rapports en PDF.
 - À la fin, l'environnement passe en **lecture seule**. Si vous devenez client, ADM Concept réinstalle votre environnement, sans les données d'exemple. Votre compte est conservé.
 
