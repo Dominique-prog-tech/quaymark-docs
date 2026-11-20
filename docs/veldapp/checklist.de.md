@@ -6,7 +6,7 @@ description: "Die Checkliste in der Feld-App: eine Antwort pro Punkt und bei ein
 
 Hat die Besichtigungsart eine Checkliste, trägt die Akte die Karte **Checkliste** mit der Anzahl beantworteter Punkte. Tippen Sie auf die Karte, um die Checkliste zu öffnen.
 
-<!-- AFBEELDING: de checklist met een paar antwoorden (app-checklist-de) -->
+![Die Checkliste mit fünf Punkten und unter jedem den Schaltflächen In Ordnung, Nicht in Ordnung und Entfällt: drei Punkte In Ordnung, einer Nicht in Ordnung mit dem Befund in Rot und einer Entfällt. Ein Punkt trägt Foto erforderlich.](../images/app-checklist-de.png "Die Checkliste"){ width="320" }
 
 ## Antworten
 
@@ -23,7 +23,7 @@ Jede Antwort wird **hinzugefügt**: Eine neue Antwort ersetzt die vorige nicht, 
 
 Bei **Nicht in Ordnung**, **Mangelhaft** oder **Schlecht** öffnet sich der Bildschirm **Mangel**.
 
-<!-- AFBEELDING: het scherm Gebrek met de standaardbevindingen (app-gebrek-de) -->
+![Der Bildschirm Mangel · Schlecht für einen Punkt einer Zustandsbesichtigung: zwei Standardbefunde, die Felder Befund und Empfehlung, auf Englisch ausgefüllt (die Sprache der Akte), die Priorität Innerhalb von 3 Monaten und Speichern.](../images/app-gebrek-de.png "Ein Mangel"){ width="320" }
 
 1. Tippen Sie bei Bedarf auf einen der **Standardbefunde** des Punktes: Er füllt **Befund** und **Empfehlung**, in der Sprache der Akte.
 2. Passen Sie **Befund** und **Empfehlung** bei Bedarf an.

@@ -6,7 +6,7 @@ description: "Un dossier dans l'application de terrain : une seule page avec des
 
 Dans l'application de terrain, un dossier est une seule page avec des cartes, dans l'ordre du travail à bord. Chaque carte a son propre bouton, à droite de son en-tête.
 
-<!-- AFBEELDING: het dossier bovenaan: de kop met de knop, de checklist en de vaststellingen (app-dossier-fr) -->
+![Le dossier HQ-2026-0003 en haut : l'en-tête avec le navire KAAIMEEUW, le moment, le port, le donneur d'ordre, l'étiquette En cours et le bouton Terminé sur place → rapport, la carte Check-list avec 5 / 5 répondu(s), la carte Constatations avec quatre constatations cochées, et le bouton Nouvelle constatation.](../images/app-dossier-fr.png "Le dossier"){ width="320" }
 
 ## Les cartes
 
@@ -25,7 +25,7 @@ Dans l'application de terrain, un dossier est une seule page avec des cartes, da
 
 Vous créez aussi une constatation avec le bouton **Nouvelle constatation** en bas de l'écran.
 
-<!-- AFBEELDING: hetzelfde dossier verder naar onder: notities, codes, documenten van boord, tijd en handtekeningen (app-dossier-verder-fr) -->
+![Le même dossier plus bas : la carte Notes avec Dicter et deux notes, la carte Codes avec Scanner et trois codes, dont un avec un avertissement parce que le chiffre de contrôle est incorrect, et la carte Documents de bord avec Ajouter.](../images/app-dossier-verder-fr.png "Notes, codes et documents de bord"){ width="320" }
 
 ## Envoyé ou encore en route
 

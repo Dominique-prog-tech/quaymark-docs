@@ -20,7 +20,7 @@ Install the **Quaymark** app from the App Store or Google Play. There is one app
 
 ## Signing in
 
-<!-- AFBEELDING: het aanmeldscherm van de veldapp (app-aanmelden-en) -->
+![The sign-in screen of the field app: at the top the blue brand panel with Quaymark and A platform for marine surveying firms, below it Sign in with the fields Username or email and Password, and the Sign in button.](../images/app-aanmelden-en.png "Signing in to the field app"){ width="320" }
 
 1. Open the app.
 2. Enter your **Username or email** and your **Password**. The eye next to the password shows what you typed.
@@ -34,7 +34,7 @@ Forgot your password? Request a new one on the sign-in screen of the web app, wi
 
 ## The menu
 
-<!-- AFBEELDING: het zijmenu, licht (app-zijmenu-en) -->
+![The side menu of the field app: at the top the surveyor's name and email address, below it My files, Still to send, Profile and Privacy, and at the bottom the version number and Sign out.](../images/app-zijmenu-en.png "The menu"){ width="320" }
 
 At the top left, ☰ opens the menu:
 
@@ -49,10 +49,10 @@ At the bottom of the menu are **Sign out** and the version of the app. If the of
 
 ## Profile
 
-<!-- AFBEELDING: het profiel met Taal en Weergave (app-profiel-en) -->
+![The Profile screen: the surveyor's name and email address, Language with Same as the phone and the four languages, Appearance with Phone, Light and Dark, and the Sign out button.](../images/app-profiel-en.png "Profile"){ width="320" }
 
 - **Language**: **Same as the phone**, or one of the four languages. If your phone uses another language, the app shows English. The language applies to the screens of the app. What goes into the report, such as the statement the signatory reads and the standard findings, is in the language of the file.
-- **Appearance**: light, dark or same as the device.
+- **Appearance**: **Phone** (same as the device), **Light** or **Dark**.
 - **Sign out**: see below.
 
 ## Signing out

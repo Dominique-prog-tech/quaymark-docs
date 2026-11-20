@@ -10,7 +10,7 @@ description: "Faire signer dans l'application de terrain : le capitaine ou le se
 
 Touchez **Signer** sur la carte **Signatures** du dossier.
 
-<!-- AFBEELDING: Laten tekenen met naam, functie, de verklaring met de vaststellingen en een handtekening (app-tekenen-fr) -->
+![L'écran Faire signer : Nom du signataire Capt. R. Lindqvist, la Fonction, Au nom de la partie (facultatif), la Clause, la déclaration en anglais avec les quatre constatations, Refuse de signer désactivé, et sous Signez ci-dessous une signature.](../images/app-tekenen-fr.png "Faire signer"){ width="320" }
 
 1. Indiquez le **Nom du signataire** et choisissez sa **Fonction**.
 2. Choisissez éventuellement la partie **Au nom de la partie (facultatif)** : l'une des parties du dossier.

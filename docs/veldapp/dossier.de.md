@@ -6,7 +6,7 @@ description: "Eine Akte in der Feld-App: eine Seite mit Karten, vom Kopf mit dem
 
 Eine Akte ist in der Feld-App eine Seite mit Karten, in der Reihenfolge der Arbeit an Bord. Jede Karte hat rechts in ihrem Kopf ihre eigene Schaltfläche.
 
-<!-- AFBEELDING: het dossier bovenaan: de kop met de knop, de checklist en de vaststellingen (app-dossier-de) -->
+![Die Akte HQ-2026-0003 oben: der Kopf mit dem Schiff KAAIMEEUW, Zeitpunkt, Hafen, Auftraggeber, dem Etikett In Bearbeitung und der Schaltfläche Vor Ort fertig → Bericht, die Karte Checkliste mit 5 / 5 beantwortet, die Karte Feststellungen mit vier Feststellungen mit Häkchen, und die Schaltfläche Neue Feststellung.](../images/app-dossier-de.png "Die Akte"){ width="320" }
 
 ## Die Karten
 
@@ -25,7 +25,7 @@ Eine Akte ist in der Feld-App eine Seite mit Karten, in der Reihenfolge der Arbe
 
 Eine neue Feststellung erstellen Sie auch mit der Schaltfläche **Neue Feststellung** unten auf dem Bildschirm.
 
-<!-- AFBEELDING: hetzelfde dossier verder naar onder: notities, codes, documenten van boord, tijd en handtekeningen (app-dossier-verder-de) -->
+![Dieselbe Akte weiter unten: die Karte Notizen mit Diktieren und zwei Notizen, die Karte Codes mit Scannen und drei Codes, einer mit einer Warnung, weil die Prüfziffer nicht stimmt, und die Karte Bordunterlagen mit Hinzufügen.](../images/app-dossier-verder-de.png "Notizen, Codes und Bordunterlagen"){ width="320" }
 
 ## Gesendet oder noch unterwegs
 

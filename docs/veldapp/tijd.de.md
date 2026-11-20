@@ -13,7 +13,9 @@ Auf der Karte **Zeit** einer Akte erfassen Sie Ihre Zeit: mit der Uhr oder von H
 3. Auf der Karte steht jetzt **Uhr läuft**, mit der Zeit. Tippen Sie auf **Uhr stoppen**, wenn Sie fertig sind.
 4. Prüfen Sie **Von** und **Bis**, geben Sie bei Bedarf eine **Bemerkung** ein und tippen Sie auf **Speichern**.
 
-<!-- AFBEELDING: het venster Tijd met Soort werk, Van en Tot (app-tijd-de) -->
+![Die Karten Zeit und Unterschriften der Akte: Uhr läuft · An Bord mit der laufenden Zeit und der Schaltfläche Uhr stoppen, Zeit erfassen, darunter zwei Unterschriften, davon eine Verweigerung mit Grund.](../images/app-dossier-onderaan-de.png "Die Uhr läuft"){ width="320" }
+
+![Das Fenster Zeit über der Akte: Art der Arbeit An Bord, Von und Bis mit Datum und Uhrzeit, die Dauer 1:00, das Feld Bemerkung, Abbrechen und Speichern.](../images/app-tijd-de.png "Zeit speichern"){ width="320" }
 
 Die Uhr läuft weiter, wenn Sie die App schließen: Das Gerät merkt sich, wann Sie gestartet haben. Es läuft **immer nur eine Uhr**. Läuft sie an einer anderen Akte, sagt die Karte *Die Uhr läuft bereits auf …*: Stoppen Sie diese zuerst. Die laufende Uhr steht auch oben in [Meine Akten](mijn-dossiers.md#die-laufende-uhr).
 

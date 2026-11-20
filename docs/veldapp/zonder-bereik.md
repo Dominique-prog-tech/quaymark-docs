@@ -35,7 +35,7 @@ Wat al verstuurd is, krijgt een vinkje.
 
 Wacht er iets, dan staat rechtsboven op Mijn dossiers **… wachtend**, en in het menu **Nog te versturen** met het aantal. Tik erop voor de lijst: per handeling wat het is en wanneer u het deed, met *wacht op verzending*. Staat er **Alles is verstuurd.**, dan heeft Quaymark alles.
 
-<!-- AFBEELDING: Nog te versturen met een wachtende handeling (app-wachtrij) -->
+![Het scherm Nog te versturen met één Vaststelling, haar omschrijving, het tijdstip en wacht op verzending.](../images/app-wachtrij.png "Nog te versturen"){ width="320" }
 
 ### Een geweigerde handeling
 

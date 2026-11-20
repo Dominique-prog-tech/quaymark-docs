@@ -6,7 +6,7 @@ description: "My files in the field app: your open files by day, the running tim
 
 The first screen of the field app: the open files of which you are the surveyor, by day. The list is on the device, so it also works offline.
 
-<!-- AFBEELDING: Mijn dossiers met twee daggroepen en de klokbalk bovenaan (app-dossiers-en) -->
+![My files: at the top the Timer running bar for HQ-2026-0003, On board, then the groups Earlier (still open), Today and Tomorrow, with for each file the number, the survey type, the time, the vessel, the port and the terminal, and on the right the button to navigate.](../images/app-dossiers-en.png "My files"){ width="320" }
 
 ## The list
 
@@ -22,7 +22,7 @@ Tap a file to open it. → [The file](dossier.md)
 
 ## Navigating
 
-If the file has a port or a terminal, there is a **Navigate** button on the right. It opens the maps app of your device (Apple Maps or Google Maps) with the terminal and the port as the search.
+If the file has a port or a terminal, there is a button with a signpost on the right: **Navigate**. It opens the maps app of your device (Apple Maps or Google Maps) with the terminal and the port as the search.
 
 ## The running timer
 
@@ -33,7 +33,7 @@ If your timer is running, a bar at the top of the list shows **Timer running**, 
 The app fetches the latest state and sends what is waiting:
 
 - when My files opens, and every time you return to the app;
-- with the **Sync** button at the top right, or by pulling the list down.
+- with the button with two arrows at the top right (**Sync**), or by pulling the list down.
 
 In every round the app also fetches each file in the list in full, so that you can open it offline later.
 
@@ -52,7 +52,7 @@ A message may appear at the top of the list:
 
 On a tablet the list and the file are side by side: the list on the left, the file you chose on the right. Until you choose one, the right side says *Choose a file on the left.*
 
-<!-- AFBEELDING: de iPad met de lijst en het dossier naast elkaar (app-tablet-en) -->
+![The field app on an iPad: on the left My files with the groups Earlier (still open), Today, Tomorrow, Later and Not scheduled, on the right the file HQ-2026-0003 with its cards.](../images/app-tablet-en.png "On a tablet"){ width="560" }
 
 ## Common mistakes
 

@@ -13,7 +13,9 @@ Sur la carte **Temps** d'un dossier, vous enregistrez votre temps : avec le chro
 3. La carte affiche maintenant **Chrono en cours**, avec le temps écoulé. Touchez **Arrêter le chrono** quand vous avez terminé.
 4. Vérifiez **Du** et **Au**, indiquez éventuellement une **Remarque** et touchez **Enregistrer**.
 
-<!-- AFBEELDING: het venster Tijd met Soort werk, Van en Tot (app-tijd-fr) -->
+![Les cartes Temps et Signatures du dossier : Chrono en cours · À bord avec le temps écoulé et le bouton Arrêter le chrono, Saisir du temps, puis deux signatures, dont un refus avec le motif.](../images/app-dossier-onderaan-fr.png "Le chrono tourne"){ width="320" }
+
+![La fenêtre Temps sur le dossier : Type de travail À bord, Du et Au avec date et heure, la durée 1:00, le champ Remarque, Annuler et Enregistrer.](../images/app-tijd-fr.png "Enregistrer le temps"){ width="320" }
 
 Le chrono continue de tourner si vous fermez l'application : l'appareil retient quand vous l'avez démarré. Un **seul chrono à la fois** tourne. S'il tourne sur un autre dossier, la carte dit *Le chrono tourne déjà sur …* : arrêtez-le d'abord. Le chrono en cours figure aussi en haut de [Mes dossiers](mijn-dossiers.md#le-chrono-en-cours).
 

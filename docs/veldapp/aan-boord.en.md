@@ -10,7 +10,7 @@ Besides findings, you also record notes, codes, documents and soundings on board
 
 Dictate a note instead of typing it. Tap **Dictate** on the **Notes** card.
 
-<!-- AFBEELDING: het scherm Spraaknotitie met tekst in het vak (app-notitie-en) -->
+![The Voice note screen: Language you speak in, Report section (optional) set to No choice (office or AI decides), the large microphone button, the Text field with the transcribed note, and Save.](../images/app-notitie-en.png "A voice note"){ width="320" }
 
 1. Choose the **Language you speak in**. The app starts with the language of the app.
 2. If you like, choose the **Report section (optional)**. With no choice (**No choice (office or AI decides)**), the office or the AI chooses later.
@@ -25,7 +25,7 @@ If the device has no speech recognition, or the app is not allowed to use it, th
 
 Scan container numbers, seals and samples. Tap **Scan** on the **Codes** card.
 
-<!-- AFBEELDING: het scherm Code scannen met een ingetikt containernummer en Controlecijfer klopt. (app-code-en) -->
+![The Scan a code screen: Code type Container, the camera box (here without a camera), Read from a photo, the Code CSQU3054383 with Typed by hand and Check digit is correct., With finding None (on the file), and Save.](../images/app-code-en.png "Scanning a code"){ width="320" }
 
 1. Choose the **Code type**: **Container**, **Seal**, **Sample** or **Other code**.
 2. Point the camera at the code. Or tap **Read from a photo** to read the code from a photo on the device, or type it in **Code**.
@@ -40,7 +40,7 @@ A **container number** is 4 letters, the last one U, J or Z, and 7 digits. The a
 
 Record the stowage plan, the cargo manifest, the logbook, a delivery note or a certificate. Tap **Add** on the **Board documents** card.
 
-<!-- AFBEELDING: het scherm Document van boord met een soort en een bestand (app-boorddocument-en) -->
+![The Board document screen: Type of document Stowage plan, a Description, the explanation about evidence, the Photograph a page, Pdf or file and Video buttons, one photo with its size and the start of its SHA-256, and Save.](../images/app-boorddocument-en.png "A board document"){ width="320" }
 
 1. Choose the **Type of document**: **Stowage plan**, **Cargo manifest**, **Logbook**, **Delivery note**, **Certificate** or **Other document**. If you like, fill in a **Description**.
 2. Add the files:

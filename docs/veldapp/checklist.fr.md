@@ -6,7 +6,7 @@ description: "La check-list dans l'application de terrain : une réponse par poi
 
 Si le type d'expertise a une check-list, le dossier porte la carte **Check-list**, avec le nombre de points qui ont une réponse. Touchez la carte pour ouvrir la check-list.
 
-<!-- AFBEELDING: de checklist met een paar antwoorden (app-checklist-fr) -->
+![La check-list avec cinq points et sous chacun les boutons Conforme, Non conforme et S.o. : trois points Conforme, un Non conforme avec le constat en rouge et un S.o. Un point porte photo obligatoire.](../images/app-checklist-fr.png "La check-list"){ width="320" }
 
 ## Répondre
 
@@ -23,7 +23,7 @@ Chaque réponse est **ajoutée** : une nouvelle réponse ne remplace pas la pré
 
 Pour **Non conforme**, **Médiocre** ou **Mauvais**, l'écran **Défaut** s'ouvre.
 
-<!-- AFBEELDING: het scherm Gebrek met de standaardbevindingen (app-gebrek-fr) -->
+![L'écran Défaut · Mauvais pour un point d'une expertise d'état : deux Constats standard, les champs Constat et Recommandation, remplis en anglais (la langue du dossier), la Priorité Dans les 3 mois et Enregistrer.](../images/app-gebrek-fr.png "Un défaut"){ width="320" }
 
 1. Touchez éventuellement l'un des **Constats standard** du point : il remplit le **Constat** et la **Recommandation**, dans la langue du dossier.
 2. Adaptez le **Constat** et la **Recommandation** si nécessaire.

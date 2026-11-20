@@ -35,7 +35,7 @@ Was gesendet ist, bekommt ein Häkchen.
 
 Wartet etwas, steht oben rechts in Meine Akten **… wartend**, und im Menü steht **Noch zu senden** mit der Anzahl. Tippen Sie darauf für die Liste: pro Aktion, was es ist und wann Sie es getan haben, mit *wartet auf Versand*. Steht dort **Alles wurde gesendet.**, hat Quaymark alles.
 
-<!-- AFBEELDING: Nog te versturen met een wachtende handeling (app-wachtrij-de) -->
+![Der Bildschirm Noch zu senden mit einer Feststellung, ihrer Beschreibung, der Uhrzeit und wartet auf Versand.](../images/app-wachtrij-de.png "Noch zu senden"){ width="320" }
 
 ### Eine abgelehnte Aktion
 

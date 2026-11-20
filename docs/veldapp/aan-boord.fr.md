@@ -10,7 +10,7 @@ Outre les constatations, vous consignez aussi à bord des notes, des codes, des 
 
 Dictez une note au lieu de la taper. Touchez **Dicter** sur la carte **Notes**.
 
-<!-- AFBEELDING: het scherm Spraaknotitie met tekst in het vak (app-notitie-fr) -->
+![L'écran Note vocale : Langue dans laquelle vous parlez, Rubrique du rapport (facultative) sur Pas de choix (bureau ou IA), le grand bouton micro, le champ Texte avec la note transcrite, et Enregistrer.](../images/app-notitie-fr.png "Une note vocale"){ width="320" }
 
 1. Choisissez la **Langue dans laquelle vous parlez**. L'application propose d'abord la langue de l'application.
 2. Choisissez éventuellement la **Rubrique du rapport (facultative)**. Sans choix (**Pas de choix (bureau ou IA)**), le bureau ou l'IA choisit plus tard.
@@ -25,7 +25,7 @@ Si l'appareil n'a pas de reconnaissance vocale, ou si l'application n'y est pas 
 
 Scannez des numéros de conteneur, des scellés et des échantillons. Touchez **Scanner** sur la carte **Codes**.
 
-<!-- AFBEELDING: het scherm Code scannen met een ingetikt containernummer en Controlecijfer klopt. (app-code-fr) -->
+![L'écran Scanner un code : Type de code Conteneur, le cadre de la caméra (ici sans caméra), Lire depuis une photo, le Code CSQU3054383 avec Saisi à la main et Le chiffre de contrôle est correct., Liée à la constatation Aucune (au dossier), et Enregistrer.](../images/app-code-fr.png "Scanner un code"){ width="320" }
 
 1. Choisissez le **Type de code** : **Conteneur**, **Scellé**, **Échantillon** ou **Autre code**.
 2. Dirigez la caméra vers le code. Ou touchez **Lire depuis une photo** pour lire le code sur une photo de l'appareil, ou saisissez-le dans **Code**.
@@ -40,7 +40,7 @@ Un **numéro de conteneur** comporte 4 lettres, la dernière U, J ou Z, et 7 chi
 
 Enregistrez le plan de chargement, le manifeste de cargaison, le journal de bord, un bon de livraison ou un certificat. Touchez **Ajouter** sur la carte **Documents de bord**.
 
-<!-- AFBEELDING: het scherm Document van boord met een soort en een bestand (app-boorddocument-fr) -->
+![L'écran Document de bord : Type de document Plan de chargement, une Description, l'explication sur la preuve, les boutons Photographier une page, Pdf ou fichier et Vidéo, une photo avec sa taille et le début de son SHA-256, et Enregistrer.](../images/app-boorddocument-fr.png "Un document de bord"){ width="320" }
 
 1. Choisissez le **Type de document** : **Plan de chargement**, **Manifeste de cargaison**, **Journal de bord**, **Bon de livraison**, **Certificat** ou **Autre document**. Indiquez éventuellement une **Description**.
 2. Ajoutez les fichiers :

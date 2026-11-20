@@ -10,7 +10,7 @@ On board you have the master, the chief officer or the terminal sign a statement
 
 Tap **Sign** on the **Signatures** card of the file.
 
-<!-- AFBEELDING: Laten tekenen met naam, functie, de verklaring met de vaststellingen en een handtekening (app-tekenen-en) -->
+![The Get signature screen: Name of the signatory Capt. R. Lindqvist, the Position, On behalf of party (optional), the Clause, the statement in English with the four findings, Refuses to sign switched off, and a signature under Sign below.](../images/app-tekenen-en.png "Getting a signature"){ width="320" }
 
 1. Fill in the **Name of the signatory** and choose their **Position**.
 2. If needed, choose **On behalf of party (optional)**: one of the parties of the file.

@@ -20,7 +20,7 @@ Installieren Sie die App **Quaymark** aus dem App Store oder von Google Play. Es
 
 ## Anmelden
 
-<!-- AFBEELDING: het aanmeldscherm van de veldapp (app-aanmelden-de) -->
+![Der Anmeldebildschirm der Feld-App: oben das blaue Markenfeld mit Quaymark und Eine Plattform für maritime Sachverständigenbüros, darunter Anmelden mit den Feldern Benutzername oder E-Mail und Passwort und der Schaltfläche Anmelden.](../images/app-aanmelden-de.png "Anmelden in der Feld-App"){ width="320" }
 
 1. Öffnen Sie die App.
 2. Geben Sie unter **Benutzername oder E-Mail** und **Passwort** Ihre Zugangsdaten ein. Das Auge neben dem Passwort zeigt, was Sie getippt haben.
@@ -34,7 +34,7 @@ Passwort vergessen? Fordern Sie auf dem Anmeldebildschirm der Web-App mit **Pass
 
 ## Das Menü
 
-<!-- AFBEELDING: het zijmenu, licht (app-zijmenu-de) -->
+![Das Seitenmenü der Feld-App: oben Name und E-Mail-Adresse des Sachverständigen, darunter Meine Akten, Noch zu senden, Profil und Datenschutz, unten die Versionsnummer und Abmelden.](../images/app-zijmenu-de.png "Das Menü"){ width="320" }
 
 Oben links öffnet ☰ das Menü:
 
@@ -49,10 +49,10 @@ Unten im Menü stehen **Abmelden** und die Version der App. Fragt das Büro, wel
 
 ## Profil
 
-<!-- AFBEELDING: het profiel met Taal en Weergave (app-profiel-de) -->
+![Der Bildschirm Profil: Name und E-Mail-Adresse des Sachverständigen, Sprache mit Wie das Telefon und den vier Sprachen, Darstellung mit Telefon, Hell und Dunkel, und die Schaltfläche Abmelden.](../images/app-profiel-de.png "Profil"){ width="320" }
 
 - **Sprache**: **Wie das Telefon** oder eine der vier Sprachen. Spricht Ihr Telefon eine andere Sprache, zeigt die App Englisch. Die Sprache gilt für die Bildschirme der App. Was in den Bericht kommt, etwa die Erklärung, die der Unterzeichner liest, und die Standardbefunde, steht in der Sprache der Akte.
-- **Darstellung**: hell, dunkel oder wie das Gerät.
+- **Darstellung**: **Telefon** (wie das Gerät), **Hell** oder **Dunkel**.
 - **Abmelden**: siehe unten.
 
 ## Abmelden

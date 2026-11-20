@@ -10,7 +10,7 @@ Eine **Feststellung** ist, was Sie an Bord sehen: eine Delle in der Tankdecke vo
 
 Tippen Sie auf **Neue Feststellung** unten in der Akte oder auf **Hinzufügen** auf der Karte **Feststellungen**.
 
-<!-- AFBEELDING: Nieuwe vaststelling, ingevuld, met een foto (app-vaststelling-de) -->
+![Der Bildschirm Neue Feststellung, ausgefüllt: Ort an Bord, Nummer / Seite, Kategorie, Schweregrad und Beschreibung, unter Fotos ein Foto mit dem Anfang seines Fingerabdrucks, einer Stecknadel und dem Zeichen der Mediathek, die Schaltflächen Foto und Aus der Mediathek, und Speichern.](../images/app-vaststelling-de.png "Neue Feststellung"){ width="320" }
 
 1. Wählen Sie den **Ort an Bord** und geben Sie bei Bedarf **Nummer / Seite** ein, zum Beispiel *3* oder *StB*.
 2. Wählen Sie die **Kategorie** und den **Schweregrad**: **Keine**, **Gering**, **Mäßig** oder **Schwer**.
@@ -30,7 +30,7 @@ In dem Moment, in dem Sie das Foto aufnehmen, hält die App fest:
 - die **GPS-Position** und wie genau sie ist. Gibt es keine Position (keine Erlaubnis, kein Empfang im Laderaum), hält die App fest, warum;
 - den **Fingerabdruck** (SHA-256) des Fotos.
 
-Bei jedem Foto zeigt der Bildschirm die ersten Zeichen des Fingerabdrucks, mit 📍, wenn es eine Position gibt. Das Foto bleibt unverändert: Die App verkleinert und bearbeitet nichts. Quaymark rechnet den Fingerabdruck nach, wenn das Foto ankommt. Wurde das Foto inzwischen auf dem Gerät verändert, wird es nicht gesendet.
+Bei jedem Foto zeigt der Bildschirm die ersten Zeichen des Fingerabdrucks, mit 📍, wenn es eine Position gibt, und 🖼 bei einem Foto aus der Mediathek. Das Foto bleibt unverändert: Die App verkleinert und bearbeitet nichts. Quaymark rechnet den Fingerabdruck nach, wenn das Foto ankommt. Wurde das Foto inzwischen auf dem Gerät verändert, wird es nicht gesendet.
 
 Ein Foto **Aus der Mediathek** trägt dieses Merkmal: Im Büro ist zu sehen, dass es nicht mit der Kamera der App aufgenommen wurde. Nehmen Sie ein Beweisfoto also am besten mit **Foto** auf.
 

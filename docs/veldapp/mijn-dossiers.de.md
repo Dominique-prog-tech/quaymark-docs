@@ -6,7 +6,7 @@ description: "Meine Akten in der Feld-App: Ihre offenen Akten nach Tag, die lauf
 
 Der erste Bildschirm der Feld-App: die offenen Akten, deren Sachverständiger Sie sind, nach Tag. Die Liste steht auf dem Gerät, sie funktioniert also auch offline.
 
-<!-- AFBEELDING: Mijn dossiers met twee daggroepen en de klokbalk bovenaan (app-dossiers-de) -->
+![Meine Akten: oben der Balken Uhr läuft für HQ-2026-0003, An Bord, darunter die Gruppen Früher (noch offen), Heute und Morgen, pro Akte Nummer, Besichtigungsart, Zeitpunkt, Schiff, Hafen und Terminal, und rechts die Schaltfläche zum Navigieren.](../images/app-dossiers-de.png "Meine Akten"){ width="320" }
 
 ## Die Liste
 
@@ -22,7 +22,7 @@ Tippen Sie auf eine Akte, um sie zu öffnen. → [Die Akte](dossier.md)
 
 ## Navigieren
 
-Kennt die Akte einen Hafen oder ein Terminal, steht rechts eine Schaltfläche **Navigieren**. Sie öffnet die Karten-App Ihres Geräts (Apple Karten oder Google Maps) mit dem Terminal und dem Hafen als Suche.
+Kennt die Akte einen Hafen oder ein Terminal, steht rechts eine Schaltfläche mit einem Wegweiser: **Navigieren**. Sie öffnet die Karten-App Ihres Geräts (Apple Karten oder Google Maps) mit dem Terminal und dem Hafen als Suche.
 
 ## Die laufende Uhr
 
@@ -33,7 +33,7 @@ Läuft Ihre Uhr, steht oben in der Liste ein Balken mit **Uhr läuft**, der Akte
 Die App ruft den aktuellen Stand ab und sendet, was wartet:
 
 - wenn Meine Akten sich öffnet, und jedes Mal, wenn Sie zur App zurückkehren;
-- mit der Schaltfläche **Synchronisieren** oben rechts oder indem Sie die Liste nach unten ziehen.
+- mit der Schaltfläche mit den zwei Pfeilen oben rechts (**Synchronisieren**) oder indem Sie die Liste nach unten ziehen.
 
 Bei jeder Runde ruft die App auch jede Akte der Liste vollständig ab, damit Sie sie später offline öffnen können.
 
@@ -52,7 +52,7 @@ Oben in der Liste kann eine Meldung stehen:
 
 Auf einem Tablet stehen Liste und Akte nebeneinander: links die Liste, rechts die gewählte Akte. Solange Sie nichts gewählt haben, steht rechts *Wählen Sie links eine Akte.*
 
-<!-- AFBEELDING: de iPad met de lijst en het dossier naast elkaar (app-tablet-de) -->
+![Die Feld-App auf einem iPad: links Meine Akten mit den Gruppen Früher (noch offen), Heute, Morgen, Später und Nicht geplant, rechts die Akte HQ-2026-0003 mit ihren Karten.](../images/app-tablet-de.png "Auf einem Tablet"){ width="560" }
 
 ## Häufige Fehler
 

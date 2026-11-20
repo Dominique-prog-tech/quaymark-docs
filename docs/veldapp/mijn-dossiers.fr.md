@@ -6,7 +6,7 @@ description: "Mes dossiers dans l'application de terrain : vos dossiers ouverts 
 
 Le premier écran de l'application de terrain : les dossiers ouverts dont vous êtes l'expert, par jour. La liste est sur l'appareil, elle fonctionne donc aussi hors connexion.
 
-<!-- AFBEELDING: Mijn dossiers met twee daggroepen en de klokbalk bovenaan (app-dossiers-fr) -->
+![Mes dossiers : en haut la barre Chrono en cours pour HQ-2026-0003, À bord, puis les groupes Antérieur (encore ouvert), Aujourd'hui et Demain, avec pour chaque dossier le numéro, le type d'expertise, le moment, le navire, le port et le terminal, et à droite le bouton d'itinéraire.](../images/app-dossiers-fr.png "Mes dossiers"){ width="320" }
 
 ## La liste
 
@@ -22,7 +22,7 @@ Touchez un dossier pour l'ouvrir. → [Le dossier](dossier.md)
 
 ## Itinéraire
 
-Si le dossier connaît un port ou un terminal, un bouton **Itinéraire** figure à droite. Il ouvre l'application de cartes de votre appareil (Plans d'Apple ou Google Maps) avec le terminal et le port comme recherche.
+Si le dossier connaît un port ou un terminal, un bouton avec un panneau indicateur figure à droite : **Itinéraire**. Il ouvre l'application de cartes de votre appareil (Plans d'Apple ou Google Maps) avec le terminal et le port comme recherche.
 
 ## Le chrono en cours
 
@@ -33,7 +33,7 @@ Si votre chrono tourne, une barre apparaît en haut de la liste avec **Chrono en
 L'application récupère l'état à jour et envoie ce qui attend :
 
 - quand Mes dossiers s'ouvre, et chaque fois que vous revenez dans l'application ;
-- avec le bouton **Synchroniser** en haut à droite, ou en tirant la liste vers le bas.
+- avec le bouton aux deux flèches en haut à droite (**Synchroniser**), ou en tirant la liste vers le bas.
 
 À chaque tour, l'application récupère aussi chaque dossier de la liste en entier, pour que vous puissiez l'ouvrir plus tard hors connexion.
 
@@ -52,7 +52,7 @@ Un message peut figurer en haut de la liste :
 
 Sur une tablette, la liste et le dossier sont côte à côte : à gauche la liste, à droite le dossier choisi. Tant que vous n'avez rien choisi, il est écrit à droite *Choisissez un dossier à gauche.*
 
-<!-- AFBEELDING: de iPad met de lijst en het dossier naast elkaar (app-tablet-fr) -->
+![L'application de terrain sur un iPad : à gauche Mes dossiers avec les groupes Antérieur (encore ouvert), Aujourd'hui, Demain, Plus tard et Non planifié, à droite le dossier HQ-2026-0003 avec ses cartes.](../images/app-tablet-fr.png "Sur une tablette"){ width="560" }
 
 ## Erreurs fréquentes
 

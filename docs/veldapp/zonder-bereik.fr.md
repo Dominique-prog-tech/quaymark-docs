@@ -35,7 +35,7 @@ Ce qui est envoyé reçoit une coche.
 
 Si quelque chose attend, il est écrit **… en attente** en haut à droite de Mes dossiers, et **À envoyer** figure dans le menu avec le nombre. Touchez-le pour la liste : par action, ce que c'est et quand vous l'avez fait, avec *en attente d'envoi*. S'il est écrit **Tout a été envoyé.**, Quaymark a tout.
 
-<!-- AFBEELDING: Nog te versturen met een wachtende handeling (app-wachtrij-fr) -->
+![L'écran À envoyer avec une Constatation, sa description, l'heure et en attente d'envoi.](../images/app-wachtrij-fr.png "À envoyer"){ width="320" }
 
 ### Une action refusée
 

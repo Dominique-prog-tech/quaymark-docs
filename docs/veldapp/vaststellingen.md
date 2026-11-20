@@ -10,7 +10,7 @@ Een **vaststelling** is wat u aan boord ziet: een deuk in de tanktop van ruim 3,
 
 Tik op **Nieuwe vaststelling** onderaan het dossier, of op **Toevoegen** op de kaart **Vaststellingen**.
 
-<!-- AFBEELDING: Nieuwe vaststelling, ingevuld, met een foto (app-vaststelling) -->
+![Het scherm Nieuwe vaststelling, ingevuld: Plaats aan boord, Nummer / zijde, Categorie, Ernst en Omschrijving, onder Foto's een foto met het begin van haar vingerafdruk, een speld en het teken van de bibliotheek, de knoppen Foto en Uit bibliotheek, en Bewaren.](../images/app-vaststelling.png "Nieuwe vaststelling"){ width="320" }
 
 1. Kies de **Plaats aan boord** en vul eventueel het **Nummer / zijde** in, bijvoorbeeld *3* of *SB*.
 2. Kies de **Categorie** en de **Ernst**: **Geen**, **Gering**, **Matig** of **Ernstig**.
@@ -30,7 +30,7 @@ Op het moment dat u de foto neemt, legt de app vast:
 - de **GPS-positie** en hoe nauwkeurig ze is. Is er geen positie (geen toestemming, geen ontvangst in een ruim), dan legt de app vast waarom;
 - de **vingerafdruk** (SHA-256) van de foto.
 
-Bij elke foto toont het scherm de eerste tekens van de vingerafdruk, met 📍 als er een positie is. De foto blijft onveranderd: de app verkleint niets en bewerkt niets. Quaymark rekent de vingerafdruk na wanneer de foto aankomt. Is de foto op het toestel intussen gewijzigd, dan vertrekt ze niet.
+Bij elke foto toont het scherm de eerste tekens van de vingerafdruk, met 📍 als er een positie is, en 🖼 bij een foto uit de bibliotheek. De foto blijft onveranderd: de app verkleint niets en bewerkt niets. Quaymark rekent de vingerafdruk na wanneer de foto aankomt. Is de foto op het toestel intussen gewijzigd, dan vertrekt ze niet.
 
 Een foto **Uit bibliotheek** draagt dat merkteken: op kantoor is te zien dat ze niet met de camera van de app genomen werd. Neem een foto voor het bewijs dus liefst met **Foto**.
 

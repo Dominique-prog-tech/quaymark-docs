@@ -6,7 +6,7 @@ description: "The checklist in the field app: one answer per item, and for a def
 
 If the survey type has a checklist, the file has the **Checklist** card, showing how many items are answered. Tap the card to open the checklist.
 
-<!-- AFBEELDING: de checklist met een paar antwoorden (app-checklist-en) -->
+![The checklist with five items and below each the OK, Not OK and N/a buttons: three items OK, one Not OK with the finding in red and one N/a. One item is marked photo required.](../images/app-checklist-en.png "The checklist"){ width="320" }
 
 ## Answering
 
@@ -23,7 +23,7 @@ Every answer is **added**: a new answer does not replace the previous one, it co
 
 For **Not OK**, **Poor** or **Bad**, the **Deficiency** screen opens.
 
-<!-- AFBEELDING: het scherm Gebrek met de standaardbevindingen (app-gebrek-en) -->
+![The Deficiency · Bad screen for an item of a condition survey: two Standard findings, the Finding and Recommendation fields, filled in in English (the language of the file), the Priority Within 3 months and Save.](../images/app-gebrek-en.png "A deficiency"){ width="320" }
 
 1. If you like, tap one of the item's **Standard findings**: it fills in the **Finding** and the **Recommendation**, in the language of the file.
 2. Adjust the **Finding** and the **Recommendation** where needed.

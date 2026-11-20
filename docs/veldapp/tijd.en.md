@@ -13,7 +13,9 @@ On the **Time** card of a file you record your time: with the timer, or by hand.
 3. The card now shows **Timer running**, with the time. Tap **Stop timer** when you are done.
 4. Check **From** and **To**, fill in a **Remark** if you like, and tap **Save**.
 
-<!-- AFBEELDING: het venster Tijd met Soort werk, Van en Tot (app-tijd-en) -->
+![The Time and Signatures cards of the file: Timer running · On board with the elapsed time and the Stop timer button, Record time, and below two signatures, one of them a refusal with the reason.](../images/app-dossier-onderaan-en.png "The timer is running"){ width="320" }
+
+![The Time window over the file: Type of work On board, From and To with date and time, the duration 1:00, the Remark field, Cancel and Save.](../images/app-tijd-en.png "Saving time"){ width="320" }
 
 The timer keeps running if you close the app: the device remembers when you started. Only **one timer runs at a time**. If it is running on another file, the card says *The timer is already running on …*: stop that one first. The running timer is also shown at the top of [My files](mijn-dossiers.md#the-running-timer).
 

@@ -20,7 +20,7 @@ Installez l'application **Quaymark** depuis l'App Store ou Google Play. Il y a u
 
 ## Se connecter
 
-<!-- AFBEELDING: het aanmeldscherm van de veldapp (app-aanmelden-fr) -->
+![L'écran de connexion de l'application de terrain : en haut le bandeau bleu avec Quaymark et Une plateforme pour les bureaux d'expertise maritime, en dessous Se connecter avec les champs Identifiant ou e-mail et Mot de passe, et le bouton Se connecter.](../images/app-aanmelden-fr.png "Se connecter dans l'application de terrain"){ width="320" }
 
 1. Ouvrez l'application.
 2. Indiquez votre **Identifiant ou e-mail** et votre **Mot de passe**. L'œil à côté du mot de passe affiche ce que vous avez tapé.
@@ -34,7 +34,7 @@ Mot de passe oublié ? Demandez-en un nouveau sur l'écran de connexion de l'app
 
 ## Le menu
 
-<!-- AFBEELDING: het zijmenu, licht (app-zijmenu-fr) -->
+![Le menu latéral de l'application de terrain : en haut le nom et l'adresse e-mail de l'expert, en dessous Mes dossiers, À envoyer, Profil et Confidentialité, et en bas le numéro de version et Se déconnecter.](../images/app-zijmenu-fr.png "Le menu"){ width="320" }
 
 En haut à gauche, ☰ ouvre le menu :
 
@@ -49,10 +49,10 @@ En bas du menu figurent **Se déconnecter** et la version de l'application. Si l
 
 ## Profil
 
-<!-- AFBEELDING: het profiel met Taal en Weergave (app-profiel-fr) -->
+![L'écran Profil : le nom et l'adresse e-mail de l'expert, Langue avec Comme le téléphone et les quatre langues, Affichage avec Téléphone, Clair et Sombre, et le bouton Se déconnecter.](../images/app-profiel-fr.png "Profil"){ width="320" }
 
 - **Langue** : **Comme le téléphone**, ou l'une des quatre langues. Si votre téléphone parle une autre langue, l'application s'affiche en anglais. La langue vaut pour les écrans de l'application. Ce qui va dans le rapport, comme la déclaration que lit le signataire et les constats standard, est dans la langue du dossier.
-- **Affichage** : clair, sombre ou comme l'appareil.
+- **Affichage** : **Téléphone** (comme l'appareil), **Clair** ou **Sombre**.
 - **Se déconnecter** : voir ci-dessous.
 
 ## Se déconnecter

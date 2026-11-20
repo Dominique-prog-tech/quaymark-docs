@@ -6,7 +6,7 @@ description: "De checklist in de veldapp: een antwoord per punt, en bij een gebr
 
 Heeft de soort survey een checklist, dan staat op het dossier de kaart **Checklist**, met hoeveel punten er beantwoord zijn. Tik op de kaart om de checklist te openen.
 
-<!-- AFBEELDING: de checklist met een paar antwoorden (app-checklist) -->
+![De checklist met vijf punten en onder elk de knoppen In orde, Niet in orde en N.v.t.: drie punten In orde, één Niet in orde met de bevinding in het rood en één N.v.t. Bij één punt staat foto verplicht.](../images/app-checklist.png "De checklist"){ width="320" }
 
 ## Antwoorden
 
@@ -23,7 +23,7 @@ Elk antwoord wordt **toegevoegd**: een nieuw antwoord vervangt het vorige niet, 
 
 Bij **Niet in orde**, **Matig** of **Slecht** opent het scherm **Gebrek**.
 
-<!-- AFBEELDING: het scherm Gebrek met de standaardbevindingen (app-gebrek) -->
+![Het scherm Gebrek · Slecht voor een punt van een conditiesurvey: twee Standaardbevindingen, de velden Bevinding en Aanbeveling, ingevuld in het Engels (de taal van het dossier), de Prioriteit Binnen 3 maanden en Bewaren.](../images/app-gebrek.png "Een gebrek"){ width="320" }
 
 1. Tik eventueel op een van de **Standaardbevindingen** van het punt: die vult de **Bevinding** en de **Aanbeveling**, in de taal van het dossier.
 2. Pas de **Bevinding** en de **Aanbeveling** aan waar nodig.

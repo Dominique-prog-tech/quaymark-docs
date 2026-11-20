@@ -6,7 +6,7 @@ description: "Een dossier in de veldapp: één pagina met kaarten, van de kop me
 
 Een dossier is in de veldapp één pagina met kaarten, in de volgorde van het werk aan boord. Elke kaart heeft rechts in haar kop haar eigen knop.
 
-<!-- AFBEELDING: het dossier bovenaan: de kop met de knop, de checklist en de vaststellingen (app-dossier) -->
+![Het dossier HQ-2026-0003 bovenaan: de kop met het schip KAAIMEEUW, het tijdstip, de haven, de opdrachtgever, het label In uitvoering en de knop Klaar ter plaatse → rapportage, de kaart Checklist met 5 / 5 beantwoord, de kaart Vaststellingen met vier vaststellingen met een vinkje, en de knop Nieuwe vaststelling.](../images/app-dossier.png "Het dossier"){ width="320" }
 
 ## De kaarten
 
@@ -25,7 +25,7 @@ Een dossier is in de veldapp één pagina met kaarten, in de volgorde van het we
 
 Een nieuwe vaststelling maakt u ook met de knop **Nieuwe vaststelling** onderaan het scherm.
 
-<!-- AFBEELDING: hetzelfde dossier verder naar onder: notities, codes, documenten van boord, tijd en handtekeningen (app-dossier-verder) -->
+![Hetzelfde dossier verder naar onder: de kaart Notities met Inspreken en twee notities, de kaart Codes met Scannen en drie codes, waarvan één met een waarschuwing omdat het controlecijfer niet klopt, en de kaart Documenten van boord met Toevoegen.](../images/app-dossier-verder.png "Notities, codes en documenten van boord"){ width="320" }
 
 ## Verstuurd of nog onderweg
 

@@ -10,7 +10,7 @@ Neben Feststellungen erfassen Sie an Bord auch Notizen, Codes, Unterlagen und Pe
 
 Diktieren Sie eine Notiz, statt sie zu tippen. Tippen Sie auf **Diktieren** auf der Karte **Notizen**.
 
-<!-- AFBEELDING: het scherm Spraaknotitie met tekst in het vak (app-notitie-de) -->
+![Der Bildschirm Sprachnotiz: Sprache, in der Sie sprechen, Berichtsabschnitt (optional) auf Keine Wahl (Büro oder KI), die große Mikrofontaste, das Feld Text mit der Notiz und Speichern.](../images/app-notitie-de.png "Eine Sprachnotiz"){ width="320" }
 
 1. Wählen Sie die **Sprache, in der Sie sprechen**. Die App beginnt mit der Sprache der App.
 2. Wählen Sie bei Bedarf den **Berichtsabschnitt (optional)**. Ohne Wahl (**Keine Wahl (Büro oder KI)**) wählen später das Büro oder die KI.
@@ -25,7 +25,7 @@ Hat das Gerät keine Spracherkennung oder darf die App sie nicht nutzen, sagt de
 
 Scannen Sie Containernummern, Plomben und Proben. Tippen Sie auf **Scannen** auf der Karte **Codes**.
 
-<!-- AFBEELDING: het scherm Code scannen met een ingetikt containernummer en Controlecijfer klopt. (app-code-de) -->
+![Der Bildschirm Code scannen: Codeart Container, das Kamerafeld (hier ohne Kamera), Aus einem Foto lesen, der Code CSQU3054383 mit Von Hand eingegeben und Die Prüfziffer stimmt., Zur Feststellung Keine (zur Akte), und Speichern.](../images/app-code-de.png "Code scannen"){ width="320" }
 
 1. Wählen Sie die **Codeart**: **Container**, **Plombe**, **Probe** oder **Anderer Code**.
 2. Richten Sie die Kamera auf den Code. Oder tippen Sie auf **Aus einem Foto lesen**, um den Code aus einem Foto des Geräts zu lesen, oder tippen Sie ihn unter **Code** ein.
@@ -40,7 +40,7 @@ Eine **Containernummer** besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7
 
 Erfassen Sie den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat. Tippen Sie auf **Hinzufügen** auf der Karte **Bordunterlagen**.
 
-<!-- AFBEELDING: het scherm Document van boord met een soort en een bestand (app-boorddocument-de) -->
+![Der Bildschirm Bordunterlage: Art des Dokuments Stauplan, eine Beschreibung, die Erklärung zum Beweis, die Schaltflächen Seite fotografieren, PDF oder Datei und Video, ein Foto mit seiner Größe und dem Anfang seines SHA-256, und Speichern.](../images/app-boorddocument-de.png "Eine Bordunterlage"){ width="320" }
 
 1. Wählen Sie die **Art des Dokuments**: **Stauplan**, **Ladungsmanifest**, **Logbuch**, **Lieferschein**, **Zertifikat** oder **Anderes Dokument**. Geben Sie bei Bedarf eine **Beschreibung** ein.
 2. Fügen Sie die Dateien hinzu:

@@ -10,7 +10,7 @@ Une **constatation**, c'est ce que vous voyez à bord : un enfoncement du plafon
 
 Touchez **Nouvelle constatation** en bas du dossier, ou **Ajouter** sur la carte **Constatations**.
 
-<!-- AFBEELDING: Nieuwe vaststelling, ingevuld, met een foto (app-vaststelling-fr) -->
+![L'écran Nouvelle constatation, rempli : Emplacement à bord, Numéro / bord, Catégorie, Gravité et Description, sous Photos une photo avec le début de son empreinte, une punaise et le signe de la photothèque, les boutons Photo et De la photothèque, et Enregistrer.](../images/app-vaststelling-fr.png "Nouvelle constatation"){ width="320" }
 
 1. Choisissez l'**Emplacement à bord** et indiquez éventuellement le **Numéro / bord**, par exemple *3* ou *TB*.
 2. Choisissez la **Catégorie** et la **Gravité** : **Aucune**, **Légère**, **Modérée** ou **Grave**.
@@ -30,7 +30,7 @@ Au moment où vous prenez la photo, l'application enregistre :
 - la **position GPS** et sa précision. S'il n'y a pas de position (pas d'autorisation, pas de réception dans une cale), l'application enregistre pourquoi ;
 - l'**empreinte** (SHA-256) de la photo.
 
-À côté de chaque photo, l'écran affiche les premiers caractères de l'empreinte, avec 📍 s'il y a une position. La photo reste inchangée : l'application ne réduit rien et ne modifie rien. Quaymark recalcule l'empreinte à l'arrivée de la photo. Si la photo a été modifiée sur l'appareil entre-temps, elle ne part pas.
+À côté de chaque photo, l'écran affiche les premiers caractères de l'empreinte, avec 📍 s'il y a une position, et 🖼 pour une photo de la photothèque. La photo reste inchangée : l'application ne réduit rien et ne modifie rien. Quaymark recalcule l'empreinte à l'arrivée de la photo. Si la photo a été modifiée sur l'appareil entre-temps, elle ne part pas.
 
 Une photo **De la photothèque** porte cette marque : le bureau voit qu'elle n'a pas été prise avec l'appareil photo de l'application. Pour la preuve, prenez donc de préférence la photo avec **Photo**.
 

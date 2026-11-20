@@ -6,7 +6,7 @@ description: "A file in the field app: one page of cards, from the header with t
 
 In the field app a file is one page of cards, in the order of the work on board. Each card has its own button on the right of its header.
 
-<!-- AFBEELDING: het dossier bovenaan: de kop met de knop, de checklist en de vaststellingen (app-dossier-en) -->
+![The file HQ-2026-0003 at the top: the header with the vessel KAAIMEEUW, the time, the port, the principal, the In progress label and the Done on site → reporting button, the Checklist card with 5 / 5 answered, the Findings card with four ticked findings, and the New finding button.](../images/app-dossier-en.png "The file"){ width="320" }
 
 ## The cards
 
@@ -25,7 +25,7 @@ In the field app a file is one page of cards, in the order of the work on board.
 
 You can also create a finding with the **New finding** button at the bottom of the screen.
 
-<!-- AFBEELDING: hetzelfde dossier verder naar onder: notities, codes, documenten van boord, tijd en handtekeningen (app-dossier-verder-en) -->
+![The same file further down: the Notes card with Dictate and two notes, the Codes card with Scan and three codes, one with a warning because the check digit is incorrect, and the Board documents card with Add.](../images/app-dossier-verder-en.png "Notes, codes and board documents"){ width="320" }
 
 ## Sent or still on its way
 

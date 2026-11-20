@@ -6,7 +6,7 @@ description: "Mijn dossiers in de veldapp: uw open dossiers per dag, de lopende 
 
 Het eerste scherm van de veldapp: de open dossiers waarvan u de surveyor bent, per dag. De lijst staat op het toestel, dus ze werkt ook zonder bereik.
 
-<!-- AFBEELDING: Mijn dossiers met twee daggroepen en de klokbalk bovenaan (app-dossiers) -->
+![Mijn dossiers: bovenaan de balk Klok loopt voor HQ-2026-0003, Aan boord, daaronder de groepen Eerder (nog open), Vandaag en Morgen, met per dossier het nummer, de soort survey, het tijdstip, het schip, de haven en de terminal, en rechts de knop om te navigeren.](../images/app-dossiers.png "Mijn dossiers"){ width="320" }
 
 ## De lijst
 
@@ -22,7 +22,7 @@ Tik op een dossier om het te openen. → [Het dossier](dossier.md)
 
 ## Navigeren
 
-Kent het dossier een haven of een terminal, dan staat er rechts een **Navigeer**-knop. Die opent de kaarten-app van uw toestel (Apple Kaarten of Google Maps) met de terminal en de haven als zoekopdracht.
+Kent het dossier een haven of een terminal, dan staat er rechts een knop met een wegwijzer: **Navigeer**. Die opent de kaarten-app van uw toestel (Apple Kaarten of Google Maps) met de terminal en de haven als zoekopdracht.
 
 ## De lopende klok
 
@@ -33,7 +33,7 @@ Loopt uw klok, dan staat bovenaan de lijst een balk met **Klok loopt**, het doss
 De app haalt de verse stand op en verstuurt wat wacht:
 
 - wanneer Mijn dossiers opent, en telkens u terugkeert naar de app;
-- met de knop **Synchroniseren** rechtsboven, of door de lijst naar beneden te trekken.
+- met de knop met de twee pijlen rechtsboven (**Synchroniseren**), of door de lijst naar beneden te trekken.
 
 Bij elke ronde haalt de app ook elk dossier uit de lijst volledig op, zodat u het later zonder bereik kunt openen.
 
@@ -52,7 +52,7 @@ Bovenaan de lijst kan een melding staan:
 
 Op een tablet staan de lijst en het dossier naast elkaar: links de lijst, rechts het dossier dat u koos. Zolang u niets koos, staat rechts *Kies links een dossier.*
 
-<!-- AFBEELDING: de iPad met de lijst en het dossier naast elkaar (app-tablet) -->
+![De veldapp op een iPad: links Mijn dossiers met de groepen Eerder (nog open), Vandaag, Morgen, Later en Niet gepland, rechts het dossier HQ-2026-0003 met zijn kaarten.](../images/app-tablet.png "Op een tablet"){ width="560" }
 
 ## Veelgemaakte fouten
 

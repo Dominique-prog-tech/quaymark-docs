@@ -20,7 +20,7 @@ Installeer de app **Quaymark** uit de App Store of uit Google Play. Er is één 
 
 ## Aanmelden
 
-<!-- AFBEELDING: het aanmeldscherm van de veldapp (app-aanmelden) -->
+![Het aanmeldscherm van de veldapp: bovenaan het blauwe merkpaneel met Quaymark en Een platform voor maritieme surveybureaus, daaronder Aanmelden met de velden Gebruikersnaam of e-mail en Wachtwoord, en de knop Aanmelden.](../images/app-aanmelden.png "Aanmelden in de veldapp"){ width="320" }
 
 1. Open de app.
 2. Vul uw **Gebruikersnaam of e-mail** en uw **Wachtwoord** in. Het oog naast het wachtwoord toont wat u typte.
@@ -34,7 +34,7 @@ Uw wachtwoord vergeten? Vraag een nieuw aan op het aanmeldscherm van de webapp, 
 
 ## Het menu
 
-<!-- AFBEELDING: het zijmenu, licht (app-zijmenu) -->
+![Het zijmenu van de veldapp: bovenaan de naam en het e-mailadres van de surveyor, daaronder Mijn dossiers, Nog te versturen, Profiel en Privacy, en onderaan het versienummer en Afmelden.](../images/app-zijmenu.png "Het menu"){ width="320" }
 
 Linksboven opent ☰ het menu:
 
@@ -49,10 +49,10 @@ Onderaan het menu staan **Afmelden** en de versie van de app. Vraagt kantoor wel
 
 ## Profiel
 
-<!-- AFBEELDING: het profiel met Taal en Weergave (app-profiel) -->
+![Het scherm Profiel: de naam en het e-mailadres van de surveyor, Taal met Zoals de telefoon en de vier talen, Weergave met Telefoon, Licht en Donker, en de knop Afmelden.](../images/app-profiel.png "Profiel"){ width="320" }
 
 - **Taal**: **Zoals de telefoon**, of een van de vier talen. Spreekt uw telefoon een andere taal, dan toont de app Engels. De taal geldt voor de schermen van de app. Wat in het rapport komt, zoals de verklaring die de ondertekenaar leest en de standaardbevindingen, staat in de taal van het dossier.
-- **Weergave**: licht, donker of zoals het toestel.
+- **Weergave**: **Telefoon** (zoals het toestel), **Licht** of **Donker**.
 - **Afmelden**: zie hieronder.
 
 ## Afmelden

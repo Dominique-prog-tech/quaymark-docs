@@ -10,7 +10,7 @@ Aan boord laat u de kapitein, de chief officer of de terminal een verklaring tek
 
 Tik op **Tekenen** op de kaart **Handtekeningen** van het dossier.
 
-<!-- AFBEELDING: Laten tekenen met naam, functie, de verklaring met de vaststellingen en een handtekening (app-tekenen) -->
+![Het scherm Laten tekenen: Naam van de ondertekenaar Capt. R. Lindqvist, de Functie, Namens partij (optioneel), de Clausule, de verklaring in het Engels met de vier vaststellingen, Weigert te tekenen uit, en onder Teken hieronder een handtekening.](../images/app-tekenen.png "Laten tekenen"){ width="320" }
 
 1. Vul de **Naam van de ondertekenaar** in en kies zijn **Functie**.
 2. Kies eventueel de partij **Namens partij (optioneel)**: een van de partijen van het dossier.

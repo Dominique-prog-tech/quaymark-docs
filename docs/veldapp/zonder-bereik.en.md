@@ -35,7 +35,7 @@ What has been sent gets a tick.
 
 If something is waiting, **… pending** appears at the top right of My files, and **Still to send** in the menu shows the number. Tap it for the list: per action what it is and when you did it, with *waiting to be sent*. If it says **Everything has been sent.**, Quaymark has everything.
 
-<!-- AFBEELDING: Nog te versturen met een wachtende handeling (app-wachtrij-en) -->
+![The Still to send screen with one Finding, its description, the time and waiting to be sent.](../images/app-wachtrij-en.png "Still to send"){ width="320" }
 
 ### A refused action
 

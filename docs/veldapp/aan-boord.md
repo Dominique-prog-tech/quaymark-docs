@@ -10,7 +10,7 @@ Naast vaststellingen legt u aan boord ook notities, codes, documenten en peiling
 
 Spreek een notitie in, in plaats van te typen. Tik op **Inspreken** op de kaart **Notities**.
 
-<!-- AFBEELDING: het scherm Spraaknotitie met tekst in het vak (app-notitie) -->
+![Het scherm Spraaknotitie: Taal waarin u spreekt, Rubriek van het rapport (mag leeg) op Geen keuze (kantoor of AI kiest), de grote microfoonknop, het vak Tekst met de uitgeschreven notitie, en Bewaren.](../images/app-notitie.png "Een spraaknotitie"){ width="320" }
 
 1. Kies de **Taal waarin u spreekt**. De app kiest eerst de taal van de app.
 2. Kies eventueel de **Rubriek van het rapport (mag leeg)**. Kiest u niets (**Geen keuze (kantoor of AI kiest)**), dan kiest kantoor of de AI later.
@@ -25,7 +25,7 @@ Kent het toestel geen spraakherkenning, of staat de app ze niet toe, dan zegt he
 
 Scan containernummers, zegels en stalen. Tik op **Scannen** op de kaart **Codes**.
 
-<!-- AFBEELDING: het scherm Code scannen met een ingetikt containernummer en Controlecijfer klopt. (app-code) -->
+![Het scherm Code scannen: Soort code Container, het vak van de camera (hier zonder camera), Uit een foto lezen, de Code CSQU3054383 met Met de hand ingegeven en Controlecijfer klopt., Bij vaststelling Geen (bij het dossier), en Bewaren.](../images/app-code.png "Code scannen"){ width="320" }
 
 1. Kies de **Soort code**: **Container**, **Zegel**, **Staal** of **Andere code**.
 2. Richt de camera op de code. Of tik op **Uit een foto lezen** om de code uit een foto van het toestel te halen, of tik ze in bij **Code**.
@@ -40,7 +40,7 @@ Een **containernummer** is 4 letters, de laatste U, J of Z, en 7 cijfers. De app
 
 Leg het stuwplan, het cargo manifest, het logboek, een leveringsbon of een certificaat vast. Tik op **Toevoegen** op de kaart **Documenten van boord**.
 
-<!-- AFBEELDING: het scherm Document van boord met een soort en een bestand (app-boorddocument) -->
+![Het scherm Document van boord: Soort document Stuwplan, een Omschrijving, de uitleg over het bewijs, de knoppen Pagina fotograferen, Pdf of bestand en Video, één foto met haar grootte en het begin van haar SHA-256, en Bewaren.](../images/app-boorddocument.png "Een document van boord"){ width="320" }
 
 1. Kies de **Soort document**: **Stuwplan**, **Cargo manifest**, **Logboek**, **Leveringsbon**, **Certificaat** of **Ander document**. Vul eventueel een **Omschrijving** in.
 2. Voeg de bestanden toe:

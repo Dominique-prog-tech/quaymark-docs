@@ -10,7 +10,7 @@ A **finding** is what you see on board: a dent in the tank top of hold 3, wet ca
 
 Tap **New finding** at the bottom of the file, or **Add** on the **Findings** card.
 
-<!-- AFBEELDING: Nieuwe vaststelling, ingevuld, met een foto (app-vaststelling-en) -->
+![The New finding screen, filled in: Location on board, Number / side, Category, Severity and Description, under Photos one photo with the start of its fingerprint, a pin and the library sign, the Photo and From library buttons, and Save.](../images/app-vaststelling-en.png "New finding"){ width="320" }
 
 1. Choose the **Location on board** and, if needed, fill in the **Number / side**, for example *3* or *SB*.
 2. Choose the **Category** and the **Severity**: **None**, **Minor**, **Moderate** or **Severe**.
@@ -30,7 +30,7 @@ At the moment you take the photo, the app records:
 - the **GPS position** and how accurate it is. If there is no position (no permission, no reception in a hold), the app records why;
 - the **fingerprint** (SHA-256) of the photo.
 
-Next to each photo the screen shows the first characters of the fingerprint, with 📍 if there is a position. The photo stays unchanged: the app does not shrink or edit anything. Quaymark recalculates the fingerprint when the photo arrives. If the photo was changed on the device in the meantime, it is not sent.
+Next to each photo the screen shows the first characters of the fingerprint, with 📍 if there is a position, and 🖼 for a photo from the library. The photo stays unchanged: the app does not shrink or edit anything. Quaymark recalculates the fingerprint when the photo arrives. If the photo was changed on the device in the meantime, it is not sent.
 
 A photo **From library** carries that mark: the office can see that it was not taken with the app's camera. For evidence, preferably take the photo with **Photo**.
 

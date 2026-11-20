@@ -10,7 +10,7 @@ An Bord lassen Sie den Kapitän, den Ersten Offizier oder das Terminal eine Erkl
 
 Tippen Sie auf **Unterschreiben** auf der Karte **Unterschriften** der Akte.
 
-<!-- AFBEELDING: Laten tekenen met naam, functie, de verklaring met de vaststellingen en een handtekening (app-tekenen-de) -->
+![Der Bildschirm Unterschreiben lassen: Name des Unterzeichners Capt. R. Lindqvist, die Funktion, Im Namen der Partei (optional), die Klausel, die Erklärung auf Englisch mit den vier Feststellungen, Verweigert die Unterschrift ausgeschaltet, und unter Unten unterschreiben eine Unterschrift.](../images/app-tekenen-de.png "Unterschreiben lassen"){ width="320" }
 
 1. Geben Sie unter **Name des Unterzeichners** seinen Namen ein und wählen Sie seine **Funktion**.
 2. Wählen Sie bei Bedarf **Im Namen der Partei (optional)**: eine der Parteien der Akte.
