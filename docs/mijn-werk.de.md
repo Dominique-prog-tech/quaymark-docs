@@ -4,7 +4,7 @@ description: "Meine Arbeit: die Seite eines freiberuflichen Sachverständigen mi
 
 # Meine Arbeit
 
-Die Seite eines **freiberuflichen Sachverständigen**. Mit der Rolle Freiberufler ist das die einzige Seite, die Sie in der Web-App sehen: Ihre Akten, Ihre Zeit, Ihre Kosten und Ihre Abrechnungen. Die Arbeit vor Ort erledigen Sie in der Außendienst-App. → [Freiberufler](freelancers.md#die-rolle-freiberufler)
+Die Seite eines **freiberuflichen Sachverständigen**. Mit der Rolle Freiberufler ist das die einzige Seite, die Sie in der Web-App sehen: Ihre Akten, Ihre Zeit, Ihre Kosten und Ihre Abrechnungen. Die Arbeit vor Ort erledigen Sie in der Feld-App. → [Freiberufler](freelancers.md#die-rolle-freiberufler)
 
 ## Die Seite öffnen
 
@@ -12,11 +12,11 @@ Melden Sie sich an: Quaymark öffnet **Meine Arbeit** sofort. Im Menü steht sie
 
 ## Meine Akten
 
-Die Ihnen zugewiesenen Akten, mit ihrem Status als farbigem Etikett (blau, was noch kommt, orange, was läuft, grün, was erledigt ist), dem geplanten Zeitpunkt und dem Hafen. Sie öffnen sie in der Außendienst-App.
+Die Ihnen zugewiesenen Akten, mit ihrem Status als farbigem Etikett (blau, was noch kommt, orange, was läuft, grün, was erledigt ist), dem geplanten Zeitpunkt und dem Hafen. Sie öffnen sie in der Feld-App.
 
 ## Meine Zeit
 
-Ihre Zeit erfassen Sie in der Außendienst-App, in der Akte. Hier sehen Sie alles, was Sie erfasst haben, mit den Stunden. Was auf einer Abrechnung steht, trägt *Abgerechnet*.
+Ihre Zeit erfassen Sie in der Feld-App, in der Akte. Hier sehen Sie alles, was Sie erfasst haben, mit den Stunden. Was auf einer Abrechnung steht, trägt *Abgerechnet*.
 
 ## Meine Kosten
 

@@ -73,7 +73,7 @@ Het blok waarschuwt als iets enkel door u op te lossen is:
 
 ## In de veldapp
 
-De surveyor ziet zijn planning in de veldapp, ook zonder bereik: de open dossiers die aan hem toegewezen zijn, per dag (**Eerder (nog open)**, **Vandaag**, **Morgen**, **Deze week**, **Later**, **Niet gepland**). Bij elk dossier staan het tijdvak in de tijd van de vestiging, het schip, de haven en de terminal. **Navigeer** opent de kaarten-app van het toestel op de terminal en de haven.
+De surveyor ziet zijn planning in de veldapp, ook zonder bereik: de open dossiers die aan hem toegewezen zijn, per dag (**Eerder (nog open)**, **Vandaag**, **Morgen**, **Deze week**, **Later**, **Niet gepland**). Bij elk dossier staan het tijdvak in de tijd van de vestiging, het schip, de haven en de terminal. **Navigeer** opent de kaarten-app van het toestel op de terminal en de haven. → [Mijn dossiers in de veldapp](veldapp/mijn-dossiers.md)
 
 ## Zie ook
 

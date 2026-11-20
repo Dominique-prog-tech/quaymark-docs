@@ -10,6 +10,6 @@ description: "De la liste vide à un dossier que l'expert peut traiter sur place
 4. **Remplissez le lieu et le planning :** navire, port, terminal ou quai et le moment prévu. Si le navire n'existe pas encore, créez-le d'abord. → [Navires](../schepen.md#la-liste)
 5. **Enregistrez.** Le dossier reçoit alors son numéro ; le site est ensuite fixé.
 6. **Ajoutez les autres intervenants** dans l'onglet **Parties**, avec leur rôle et leur référence. → [Dossier](../dossiers.md#dossier)
-7. **Sur place,** l'expert enregistre les constatations et les réponses de la check-list dans l'application mobile ; elles apparaissent dans le dossier. → [Constatations](../dossiers.md#constatations)
+7. **Sur place,** l'expert enregistre les constatations et les réponses de la check-list dans l'application de terrain ; elles apparaissent dans le dossier. → [Constatations](../dossiers.md#constatations)
 
 Voir aussi : [Comment comparer un off-hire à l'on-hire ?](off-hire-vergelijken.md)

@@ -152,6 +152,7 @@ plugins:
             "Hoe doe ik…?": "Comment faire… ?"
             "Instellingen": "Paramètres"
             "Opdrachten en dossiers": "Missions et dossiers"
+            "Veldapp": "Application de terrain"
             "Planning en personeel": "Planning et personnel"
             "Facturatie": "Facturation"
         - locale: en
@@ -182,6 +183,7 @@ plugins:
             "Hoe doe ik…?": "How do I…?"
             "Instellingen": "Settings"
             "Opdrachten en dossiers": "Assignments and files"
+            "Veldapp": "Field app"
             "Planning en personeel": "Scheduling and staff"
             "Facturatie": "Invoicing"
         - locale: de
@@ -212,6 +214,7 @@ plugins:
             "Hoe doe ik…?": "Wie mache ich…?"
             "Instellingen": "Einstellungen"
             "Opdrachten en dossiers": "Aufträge und Akten"
+            "Veldapp": "Feld-App"
             "Planning en personeel": "Planung und Personal"
             "Facturatie": "Abrechnung"
 
@@ -265,6 +268,20 @@ nav:
       - relaties.md
       - schepen.md
       - analyses.md
+  # De veldapp (20/11/2026, op Dominiques "Ja, zo bouwen"): een EIGEN groep, zoals "Mobiele app" bij nimble- en cleanops-docs —
+  # de tweede uitzondering op "een nieuwe pagina gaat in de groep van haar domein". Na Opdrachten en dossiers: het werk aan boord
+  # volgt op het dossier. Bron: ~/projects/adm-quaymark-flutter (lib/core/teksten.dart voor elke knopnaam, in vier talen). Beelden
+  # met de hand uit de simulator (de automatische beeldronde bedient enkel de webapp), als docs/images/app-*.png.
+  - Veldapp:
+      - veldapp/aan-de-slag.md
+      - veldapp/mijn-dossiers.md
+      - veldapp/dossier.md
+      - veldapp/vaststellingen.md
+      - veldapp/checklist.md
+      - veldapp/laten-tekenen.md
+      - veldapp/aan-boord.md
+      - veldapp/tijd.md
+      - veldapp/zonder-bereik.md
   - Planning en personeel:
       - planning.md
       - wachtdiensten.md

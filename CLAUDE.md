@@ -59,7 +59,8 @@ De `nav:` staat **in groepen** (sinds 14/11/2026, op Dominiques vraag: vijftien 
 zoals `nimble-docs`: Home · Aan de slag · Hoe doe ik…? · Opdrachten en dossiers · Planning en personeel · Facturatie ·
 Instellingen. De groepen volgen de domeinen van het masterplan (D, P, F); binnen een groep de volgorde van het menu van de
 app (`adm-quaymark/src/Host/Quaymark.Host.Web/Navigation/NavCatalogus.cs`). **Een nieuwe pagina gaat in de groep van haar
-domein, niet als eigen tabblad.** De bestanden zijn NIET verplaatst: de groep staat enkel in de `nav:`, dus de adressen (en de
+domein, niet als eigen tabblad.** Twee uitzonderingen, allebei op Dominiques vraag en zoals de andere handleidingen: **Video's** (19/11/2026) en
+**Veldapp** (20/11/2026, `docs/veldapp/`, na Opdrachten en dossiers). De bestanden zijn NIET verplaatst: de groep staat enkel in de `nav:`, dus de adressen (en de
 links vanuit de zijlade) blijven gelijk. Pagina's staan er **zonder titel**: dan neemt elke taal de eigen kop (`# …`) van de
 pagina, en hoeft een schermnaam niet nog eens in `nav_translations`. Enkel de **secties** (Home en de groepen) staan daar, in
 fr, en en de.
@@ -93,7 +94,7 @@ een recept in dat script (naam, route, merkteken) + een verwijzing in elke taalv
 | ~~`robots.txt` open + sitemap~~ | ✅ gedaan 13/11/2026 | `Allow: /` en de `Sitemap:`-regel |
 | Plausible (bezoekcijfers) | ⏸️ **bewust uit** (Dominique, 13/11/2026): het Business-abonnement zit aan 10 sites, een elfde vraagt Enterprise. Niet opnieuw voorstellen tot er ruimte is | `plausible-init.js` staat er al (zet enkel een wachtrij klaar, stuurt niets); de regel met `pa-<code>.js` erbij in `mkdocs.yml` (zie de uitleg daar) |
 | ~~De beelden en de beeldcontrole~~ | ✅ aan sinds 13/11/2026 | zie "De beelden"; `MIN_PAGINAS` verhogen bij elke beeldronde |
-| Een pagina over de veldapp | wanneer de veldapp aan klanten gaat | bron: `~/projects/adm-quaymark-flutter` en `adm-quaymark/docs/ontwerp-laag-4.md` |
+| ~~Een pagina over de veldapp~~ | ✅ 20/11/2026: negen pagina's in `docs/veldapp/` | zie "De veldapp" hieronder |
 | ~~Films en de pagina "Video's"~~ | ✅ aan sinds 19/11/2026 | hook en `bunny_library` (814490) in `mkdocs.yml`, `videos.md` in vier talen (eigen tabblad na Home, zoals de andere handleidingen), de spelerstijl `.film` in `extra.css`, de filmcontrole in deploy.yml (`--min-paginas=12 --min-talen=4` sinds de derde film: optrekken bij elke nieuwe film) |
 
 ## De films (sinds 19/11/2026)
@@ -106,6 +107,16 @@ De gedeelde filmmotor van de vloot (`~/projects/adm-appkit/tools/filmgenerator`,
 - **Vóór een ronde:** de preview quaymark-web en `python3 tools/proefklant-vullen.py` van VANDAAG. Eerst `--meet` (repetitie, niets opgenomen).
 - ⚠️ **Quaymark onthoudt de taal per gebruiker** (`pref_lang`): na een ronde staat surveyor.demo op de taal van de laatste film. De starter `films.mjs`
   zet ze terug op nl-BE; wie de motor anders aanroept, doet dat zelf (gemeten 19/11: en-BE na een Engelse repetitie).
+
+## De veldapp (sinds 20/11/2026)
+Negen pagina's in `docs/veldapp/`, in de vier talen, als eigen groep **Veldapp** in de `nav:` (zoals *Mobiele app* bij Nimble en CleanOps).
+- **De bron is de Flutter-app**, niet `QText.cs`: `~/projects/adm-quaymark-flutter`, `lib/core/teksten.dart` voor elke knop- en veldnaam in de vier talen,
+  en de schermen in `lib/features/`. Lees `origin/main`, niet de werkmap: daar werkt de veldappsessie.
+- **De beelden** maakt de automatische beeldronde NIET (die bedient enkel de webapp). Ze komen met de hand uit de simulator, door de veldappsessie,
+  als `docs/images/app-<naam>.png` (+ `-fr`, `-en`, `-de`), lokaal tegen de preview met `surveyor.demo`. Een beeld dat nog moet komen staat als
+  `<!-- AFBEELDING: … -->` in de pagina (schrijfregels §4).
+- Een nieuwe functie in de veldapp = de pagina hier bijwerken (schrijfregels §1: een nieuwe knop op een bestaand scherm raakt geen controle).
+  Gebeurd op 20/11/2026: de pagina Dossiers sprak nog van icoontjes bovenaan het dossier en van tabbladen, de app heeft sinds 19/11 kaarten.
 
 ## Live zetten — ✅ gedaan op 13/11/2026
 Repo publiek, Pages aan (GitHub Actions, `docs.quaymark.eu`), DNS bij Cloudflare (`docs` CNAME naar `dominique-prog-tech.github.io`,

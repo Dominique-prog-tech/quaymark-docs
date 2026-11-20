@@ -47,6 +47,14 @@ constatations sur place à valeur probante, lettres, certificats et dossier de p
 
     [Dossiers](dossiers.md) · [Planning](planning.md)
 
+-   :material-cellphone: **Application de terrain**
+
+    ---
+
+    À bord, même hors connexion : vos dossiers par jour, les constatations avec photos, la check-list, faire signer et votre temps.
+
+    [Premiers pas avec l'application de terrain](veldapp/aan-de-slag.md) · [Hors connexion](veldapp/zonder-bereik.md)
+
 -   :material-ferry: **Relations et navires**
 
     ---

@@ -65,11 +65,11 @@ Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: 
 
 ### Fotos aus dem Büro
 
-Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** unter **⋯** am Ende der Zeile oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
+Ohne Feld-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** unter **⋯** am Ende der Zeile oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
 
 - **Aufnahmezeit** und **GPS** stammen aus dem Foto selbst. Die Bildunterschrift im Bericht sagt dann „laut Kamera“.
 - Ohne Aufnahmezeit nennt der Bericht **hochgeladen am** mit dem Zeitpunkt des Hochladens.
-- Auch diese Fotos erhalten einen Fingerabdruck und werden nur hinzugefügt. Sie sind aber schwächerer Beweis als ein Foto aus der Außendienst-App: Die Zeit stammt von der Uhr der Kamera.
+- Auch diese Fotos erhalten einen Fingerabdruck und werden nur hinzugefügt. Sie sind aber schwächerer Beweis als ein Foto aus der Feld-App: Die Zeit stammt von der Uhr der Kamera.
 
 ### Fotos annotieren
 
@@ -124,7 +124,7 @@ Ein Klick auf den Titel einer Besichtigung öffnet sie zum Bearbeiten. Danach ä
 
 ### Unterschriften
 
-Vor Ort lässt der Sachverständige den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Feld-App mit dem Unterschriftssymbol oben in der Akte, oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
+Vor Ort lässt der Sachverständige den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Feld-App mit **Unterschreiben** auf der Karte **Unterschriften** ([Unterschreiben lassen](veldapp/laten-tekenen.md)), oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
 
 1. Geben Sie den **Name des Unterzeichners** ein, wählen Sie die **Funktion** und gegebenenfalls die Partei, in deren Namen er unterschreibt.
 2. Wählen Sie die **Klausel**: **Zum Empfang, ohne Anerkennung einer Haftung** (Standard), **Einverstanden** oder **Gesehen**. Die Erklärung steht in der Sprache der Akte dabei, mit den Feststellungen dieses Moments.
@@ -142,7 +142,7 @@ Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweiger
 
 ### Bordunterlagen
 
-An Bord erfasst der Sachverständige den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Feld-App, mit dem Dokumentsymbol oben in der Akte. Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
+An Bord erfasst der Sachverständige den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Feld-App, mit **Hinzufügen** auf der Karte **Bordunterlagen** ([An Bord erfassen](veldapp/aan-boord.md#bordunterlagen)). Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
 
 Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest.
 
@@ -152,7 +152,7 @@ Kam eine Unterlage per E-Mail, fügen Sie sie im Büro mit **Dokument hinzufüge
 
 ### Codes
 
-Der Sachverständige scannt in der Feld-App Barcodes und QR-Codes: das **QR-Symbol** oben in der Akte. Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
+Der Sachverständige scannt in der Feld-App Barcodes und QR-Codes: **Scannen** auf der Karte **Codes** ([An Bord erfassen](veldapp/aan-boord.md#codes)). Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
 
 - Eine **Containernummer** (ISO 6346) besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7 Ziffern; die App schreibt sie in Großbuchstaben ohne Leerzeichen. Stimmt die Prüfziffer nicht, warnt die App, und der Sachverständige darf trotzdem speichern: Der Code erhält die Markierung **Stimmt nicht**.
 - Wer einen gescannten Code korrigiert, macht daraus einen getippten Code: Die Spalte **Quelle** sagt ehrlich, wie er hereinkam.
@@ -227,7 +227,7 @@ Unter der Schaltfläche steht, worauf sich der Vorschlag stützte. Ihr eigener T
 
 ### Sprachnotizen
 
-An Bord sprechen Sie eine Notiz ein, statt sie zu tippen. Tippen Sie in der Außendienst-App oben in der Akte auf das **Mikrofon**: Das Gerät schreibt die Sprache sofort um. Wählen Sie die Sprache, in der Sie sprechen, und auf Wunsch den Abschnitt des Berichts. Korrigieren Sie danach den Text und speichern Sie. Ohne Verbindung wartet die Notiz auf dem Gerät, wie eine Feststellung. Nur der Text geht an Quaymark, mit Uhrzeit und Ort der Aufnahme; der Ton wird nicht gespeichert. Die Registerkarte **Notizen** der Akte zeigt, was schon gesendet ist.
+An Bord sprechen Sie eine Notiz ein, statt sie zu tippen. Tippen Sie in der Feld-App auf **Diktieren** auf der Karte **Notizen** ([An Bord erfassen](veldapp/aan-boord.md#sprachnotizen)): Das Gerät schreibt die Sprache sofort um. Wählen Sie die Sprache, in der Sie sprechen, und auf Wunsch den Abschnitt des Berichts. Korrigieren Sie danach den Text und speichern Sie. Ohne Verbindung wartet die Notiz auf dem Gerät, wie eine Feststellung. Nur der Text geht an Quaymark, mit Uhrzeit und Ort der Aufnahme; der Ton wird nicht gespeichert. Die Karte **Notizen** in der Feld-App zeigt auch, was schon gesendet ist.
 
 Im Büro stehen die Notizen in der Registerkarte **Bericht**, über den Abschnitten.
 
@@ -323,7 +323,7 @@ Bei einer Besichtigungsart mit dem Haken **Bunkerbesichtigung** (siehe [Besichti
 
 ![Bunkerbesichtigung · Nachher von HQ-2026-0007 mit Tank, Volumen (m³) und Temp. (°C)](images/dossier-bunker-peilingen-de.png "Peilungen")
 
-Vor Ort peilt der Sachverständige in der Außendienst-App: Das Brennstoffsymbol oben in der Akte zeigt die Tanks je Zeitpunkt, mit einer Schätzung in Tonnen. Einen Tank, den das Schiff noch nicht hatte, fügt er dort hinzu. Ohne Verbindung warten die Peilungen auf dem Gerät.
+Vor Ort peilt der Sachverständige in der Feld-App: Die Karte **Bunkerbesichtigung** der Akte zeigt die Tanks je Zeitpunkt ([An Bord erfassen](veldapp/aan-boord.md#bunkerbesichtigung)), mit einer Schätzung in Tonnen. Einen Tank, den das Schiff noch nicht hatte, fügt er dort hinzu. Ohne Verbindung warten die Peilungen auf dem Gerät.
 
 Im Bericht setzt `{{bunker}}` das Ergebnis und die Tabelle je Tank (siehe [Vorlagen](sjablonen.md)). Auf der **Mengenbescheinigung** übernimmt **Aus der Bunkerbesichtigung** die gelieferte Menge je Produkt.
 
@@ -354,7 +354,7 @@ Das Ergebnis rechnet beim Tippen mit: erlaubt, verbraucht, Liegegeld oder Despat
 
 In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, von wann bis wann, in der Zeit der Niederlassung) und die **Kosten** (Reise, Unterkunft, Labor, Dritte) der Akte, mit dem Beleg aus den Anhängen. Kosten auf **Weiterberechnen** kommen auf die Rechnung. **Bearbeiten** und **Löschen** stehen unter **⋯** neben einer Zeile, die noch auf keiner Rechnung oder Abrechnung steht. **Rechnung vorschlagen** macht daraus einen Rechnungsentwurf; siehe [Rechnungen](facturen.md). Was auf einer Rechnung steht, steht fest. Die Spalte **Geschätzt (EUR)** ist eine Schätzung: Stunden × Stundensatz × Zuschlag (Wochenende, Nacht oder ein Feiertag des Landes der Niederlassung), wie die Rechnung rechnet; die Tarife stehen in EUR, und die Rechnung rechnet in die Währung der Akte um. Unten stehen die Summen; jede Rechnung zeigt ihre eigene Währung.
 
-In der Feld-App erfasst der Sachverständige seine Zeit auf der Registerkarte **Zeit** der Akte: **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
+In der Feld-App erfasst der Sachverständige seine Zeit auf der Karte **Zeit** der Akte ([Zeit erfassen](veldapp/tijd.md)): **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
 
 ![Zeit und Kosten von ZB-2026-0003 mit Rechnung vorschlagen, Leistungen und Kosten](images/dossier-tijd-kosten-de.png "Zeit und Kosten")
 

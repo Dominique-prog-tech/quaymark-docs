@@ -85,7 +85,7 @@ La **check-list** affiche pour chaque point la dernière réponse, par qui et qu
 
 Une bonne réponse s'enregistre d'un clic. En cas de défaut (**Non conforme**, **Médiocre** ou **Mauvais**), vous complétez la **Constatation**, la **Recommandation** et la **Priorité** : **Immédiat, avant le départ**, **Dans les 3 mois**, **Au prochain entretien** ou **Pour information**. **Insérer un constat standard** remplit les trois champs avec un texte standard du type d'expertise, dans la langue du dossier ; adaptez-les ensuite. **Nouvelle constatation** en fait une constatation.
 
-Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'expert répond dans l'application mobile, avec la même échelle et les mêmes constats standard. Les défauts apparaissent dans le rapport avec le marqueur `{{aanbevelingen}}` (voir [Modèles](sjablonen.md)).
+Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'expert répond dans l'application de terrain, avec la même échelle et les mêmes constats standard. Les défauts apparaissent dans le rapport avec le marqueur `{{aanbevelingen}}` (voir [Modèles](sjablonen.md)).
 
 Un deuxième clic sur une bonne réponse déjà enregistrée n'enregistre rien ; sur un défaut, il ouvre le constat pour l'adapter. Si une constatation existe déjà pour le point, le défaut l'affiche, au lieu de **Nouvelle constatation**. La dernière réponse est la dernière donnée, même si une réponse de l'application de terrain arrive plus tard.
 
@@ -124,7 +124,7 @@ Si vous modifiez l'expertise après l'enregistrement, enregistrez une nouvelle v
 
 ### Signatures
 
-Sur place, l'expert fait signer une déclaration au capitaine, au second capitaine ou au terminal : dans l'application mobile avec l'icône de signature en haut du dossier, ou au bureau dans l'onglet **Signatures** avec **Faire signer** (par exemple sur une tablette au comptoir).
+Sur place, l'expert fait signer une déclaration au capitaine, au second capitaine ou au terminal : dans l'application de terrain avec **Signer** sur la carte **Signatures** ([Faire signer](veldapp/laten-tekenen.md)), ou au bureau dans l'onglet **Signatures** avec **Faire signer** (par exemple sur une tablette au comptoir).
 
 1. Indiquez le **Nom du signataire**, choisissez la **Fonction** et éventuellement la partie au nom de laquelle il signe.
 2. Choisissez la **Clause** : **Pour réception, sans reconnaissance de responsabilité** (par défaut), **Pour accord** ou **Vu**. La déclaration s'affiche dans la langue du dossier, avec les constatations de ce moment.
@@ -134,7 +134,7 @@ Si vous quittez la page alors qu'une signature ou une saisie est en cours, Quaym
 
 ![La page Faire signer avec la déclaration, les constatations et la zone de signature](images/dossier-tekenen-fr.png "Faire signer")
 
-Une signature est uniquement ajoutée, jamais modifiée. Quaymark conserve ce qui a été signé : la déclaration et la liste des constatations de ce moment (l'**instantané**, avec son empreinte), l'image de la signature avec l'heure et, sur l'appareil, la position. Une constatation ajoutée ou rectifiée ensuite ne change pas une signature donnée. Dans l'application mobile, cela fonctionne sans réseau : la signature part dès qu'il y a une connexion.
+Une signature est uniquement ajoutée, jamais modifiée. Quaymark conserve ce qui a été signé : la déclaration et la liste des constatations de ce moment (l'**instantané**, avec son empreinte), l'image de la signature avec l'heure et, sur l'appareil, la position. Une constatation ajoutée ou rectifiée ensuite ne change pas une signature donnée. Dans l'application de terrain, cela fonctionne sans réseau : la signature part dès qu'il y a une connexion.
 
 L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Constatations au moment de la signature** figure l'instantané, aussi en fichier. Une constatation rectifiée depuis y figure barrée, et **Depuis la signature** compte les rectifiées et les nouvelles : vous demandez alors peut-être une nouvelle signature. Quaymark recalcule l'empreinte de l'image et de l'instantané ; si l'une ne correspond plus, un message rouge l'indique. Survolez l'image pour l'heure, la position GPS et l'empreinte. Dans le rapport, elles apparaissent avec le marqueur `{{handtekeningen}}` (voir [Modèles](sjablonen.md)), et elles font partie du dossier de preuves.
 
@@ -142,7 +142,7 @@ L'onglet **Signatures** les affiche toutes, avec l'image ou le refus. Sous **Con
 
 ### Documents de bord
 
-À bord, l'expert enregistre le plan de chargement, le manifeste de cargaison, le journal de bord, un bon de livraison ou un certificat dans l'application terrain, avec l'icône de document en haut du dossier. Il choisit le type, photographie les pages, choisit un pdf ou un fichier de l'appareil, ou filme une courte vidéo (une photo ou un pdf 50 Mo au maximum, une vidéo 200 Mo au maximum). Chaque fichier devient une preuve comme une photo : avec l'heure, le lieu et l'empreinte (SHA-256) du moment de l'ajout, et il entre dans la file d'attente même sans réseau.
+À bord, l'expert enregistre le plan de chargement, le manifeste de cargaison, le journal de bord, un bon de livraison ou un certificat dans l'application de terrain, avec **Ajouter** sur la carte **Documents de bord** ([Consigner à bord](veldapp/aan-boord.md#documents-de-bord)). Il choisit le type, photographie les pages, choisit un pdf ou un fichier de l'appareil, ou filme une courte vidéo (une photo ou un pdf 50 Mo au maximum, une vidéo 200 Mo au maximum). Chaque fichier devient une preuve comme une photo : avec l'heure, le lieu et l'empreinte (SHA-256) du moment de l'ajout, et il entre dans la file d'attente même sans réseau.
 
 Au bureau, ils figurent dans l'onglet **Documents de bord**, avec le type, qui et quand. Une photo montre une miniature, un pdf s'ouvre, une vidéo se lit dans le navigateur. Ils ne sont jamais modifiés ni supprimés. Ils n'entrent pas dans l'annexe photographique du rapport, mais bien dans le dossier de preuves, avec leur type dans le manifeste.
 
@@ -152,7 +152,7 @@ Si un document est arrivé par e-mail, ajoutez-le au bureau avec **Ajouter un do
 
 ### Codes
 
-L'expert scanne des codes-barres et QR dans l'application terrain : l'**icône QR** en haut du dossier. Il choisit le type (conteneur, scellé, échantillon ou autre code) et scanne avec la caméra, fait lire le code depuis une photo ou le saisit. Il peut lier le code à une constatation ou le laisser au dossier. Sans réseau, il attend sur l'appareil.
+L'expert scanne des codes-barres et QR dans l'application de terrain : **Scanner** sur la carte **Codes** ([Consigner à bord](veldapp/aan-boord.md#codes)). Il choisit le type (conteneur, scellé, échantillon ou autre code) et scanne avec la caméra, fait lire le code depuis une photo ou le saisit. Il peut lier le code à une constatation ou le laisser au dossier. Sans réseau, il attend sur l'appareil.
 
 - Un **numéro de conteneur** (ISO 6346) comporte 4 lettres, la dernière U, J ou Z, et 7 chiffres ; l'application l'écrit en majuscules sans espaces. Si le chiffre de contrôle est faux, l'application avertit et l'expert peut enregistrer quand même : le code reçoit la marque **Incorrect**.
 - Corriger un code scanné en fait un code saisi : la colonne **Source** dit honnêtement comment il est arrivé.
@@ -227,7 +227,7 @@ Sous le bouton figure ce sur quoi la proposition s'est appuyée. Votre propre te
 
 ### Notes vocales
 
-À bord, vous dictez une note au lieu de la taper. Dans l'application de terrain, touchez le **micro** en haut du dossier : l'appareil transcrit la parole aussitôt. Choisissez la langue dans laquelle vous parlez et, si vous le souhaitez, la rubrique du rapport. Corrigez ensuite le texte et enregistrez. Sans réseau, la note attend sur l'appareil, comme une constatation. Seul le texte est envoyé à Quaymark, avec l'heure et le lieu de l'enregistrement ; le son n'est pas conservé. L'onglet **Notes** du dossier montre ce qui est déjà envoyé.
+À bord, vous dictez une note au lieu de la taper. Dans l'application de terrain, touchez **Dicter** sur la carte **Notes** ([Consigner à bord](veldapp/aan-boord.md#notes-vocales)) : l'appareil transcrit la parole aussitôt. Choisissez la langue dans laquelle vous parlez et, si vous le souhaitez, la rubrique du rapport. Corrigez ensuite le texte et enregistrez. Sans réseau, la note attend sur l'appareil, comme une constatation. Seul le texte est envoyé à Quaymark, avec l'heure et le lieu de l'enregistrement ; le son n'est pas conservé. La carte **Notes** de l'application de terrain montre aussi ce qui est déjà envoyé.
 
 Au bureau, les notes figurent dans l'onglet **Rapport**, au-dessus des rubriques.
 
@@ -323,7 +323,7 @@ Pour un type d'expertise avec la case **Expertise de soutes** (voir [Types d'exp
 
 ![Les sondages après le soutage de HQ-2026-0007, une ligne par soute](images/dossier-bunker-peilingen-fr.png "Sondages")
 
-Sur place, l'expert sonde dans l'application de terrain : l'icône carburant en haut du dossier montre les soutes par moment, avec une estimation en tonnes. Il y ajoute une soute que le navire n'avait pas encore. Sans réseau, les sondages attendent sur l'appareil.
+Sur place, l'expert sonde dans l'application de terrain : la carte **Expertise de soutes** du dossier montre les soutes par moment ([Consigner à bord](veldapp/aan-boord.md#expertise-de-soutes)), avec une estimation en tonnes. Il y ajoute une soute que le navire n'avait pas encore. Sans réseau, les sondages attendent sur l'appareil.
 
 Dans le rapport, `{{bunker}}` place le résultat et le tableau par soute (voir [Modèles](sjablonen.md)). Sur le **certificat de quantité**, **De l'expertise de soutes** reprend la quantité livrée par produit.
 
@@ -354,7 +354,7 @@ Le résultat se recalcule pendant la saisie : alloué, utilisé, surestaries ou 
 
 Dans l'onglet **Temps et frais**, vous encodez les **prestations** (qui, de quand à quand, à l'heure du site) et les **frais** (déplacement, séjour, laboratoire, tiers) du dossier, avec le justificatif tiré des pièces jointes. Un frais marqué **Refacturer** figure sur la facture. **Modifier** et **Supprimer** se trouvent sous **⋯** à côté d'une ligne qui ne figure encore sur aucune facture ni aucun décompte. **Proposer une facture** en fait un brouillon de facture ; voir [Factures](facturen.md). Ce qui figure sur une facture est figé. La colonne **Estimé (EUR)** est une estimation : heures × taux horaire × supplément (week-end, nuit ou jour férié du pays du site), comme la facture la calcule ; les tarifs sont en EUR et la facture convertit dans la devise du dossier. Les totaux figurent en bas ; chaque facture affiche sa propre devise.
 
-Dans l'application terrain, l'expert enregistre son temps dans l'onglet **Temps** du dossier : **Démarrer le chrono** avec un type de travail (**À bord**, **Temps de trajet**, **Temps d'attente**, **Rapport**), et **Arrêter le chrono** ouvre la fenêtre pour vérifier début et fin, avec une remarque. **Saisir du temps** fait de même à la main. Un seul chrono tourne à la fois ; il continue si l'application se ferme. Après l'enregistrement, la prestation apparaît ici, avec le type dans la langue du dossier comme description. Si le chrono a tourné plus de 12 heures, l'application demande d'abord de vérifier.
+Dans l'application de terrain, l'expert enregistre son temps sur la carte **Temps** du dossier ([Enregistrer le temps](veldapp/tijd.md)) : **Démarrer le chrono** avec un type de travail (**À bord**, **Temps de trajet**, **Temps d'attente**, **Rapport**), et **Arrêter le chrono** ouvre la fenêtre pour vérifier début et fin, avec une remarque. **Saisir du temps** fait de même à la main. Un seul chrono tourne à la fois ; il continue si l'application se ferme. Après l'enregistrement, la prestation apparaît ici, avec le type dans la langue du dossier comme description. Si le chrono a tourné plus de 12 heures, l'application demande d'abord de vérifier.
 
 ![Temps et frais de ZB-2026-0003 avec Proposer une facture, Prestations et Frais](images/dossier-tijd-kosten-fr.png "Temps et frais")
 

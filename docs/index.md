@@ -47,6 +47,14 @@ uitgegeven rapport: dossiers, vaststellingen ter plaatse met bewijswaarde, briev
 
     [Dossiers](dossiers.md) · [Planning](planning.md)
 
+-   :material-cellphone: **Veldapp**
+
+    ---
+
+    Aan boord, ook zonder bereik: uw dossiers per dag, vaststellingen met foto's, de checklist, laten tekenen en uw tijd.
+
+    [Aan de slag met de veldapp](veldapp/aan-de-slag.md) · [Zonder bereik](veldapp/zonder-bereik.md)
+
 -   :material-ferry: **Relaties en schepen**
 
     ---

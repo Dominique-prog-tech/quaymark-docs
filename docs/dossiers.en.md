@@ -124,7 +124,7 @@ If you change the survey after recording it, record a new version. An answer bel
 
 ### Signatures
 
-On site, the surveyor has the master, the chief officer or the terminal sign a statement: in the field app with the signature icon at the top of the file, or at the office on the **Signatures** tab with **Get signature** (for example on a tablet at the counter).
+On site, the surveyor has the master, the chief officer or the terminal sign a statement: in the field app with **Sign** on the **Signatures** card ([Getting a signature](veldapp/laten-tekenen.md)), or at the office on the **Signatures** tab with **Get signature** (for example on a tablet at the counter).
 
 1. Fill in the **Name of the signatory**, choose the **Position** and, if needed, the party on whose behalf they sign.
 2. Choose the **Clause**: **For receipt only, without admission of liability** (default), **Agreed** or **Sighted**. The statement is shown in the language of the file, with the findings at that moment.
@@ -142,7 +142,7 @@ The **Signatures** tab shows them all, with the image or the refusal. Under **Fi
 
 ### Board documents
 
-On board, the surveyor records the stowage plan, the cargo manifest, the logbook, a delivery note or a certificate in the field app, with the document icon at the top of the file. They choose the type, photograph the pages, pick a pdf or file from the device, or record a short video (a photo or pdf at most 50 MB, a video at most 200 MB). Each file becomes evidence like a photo: with the time, place and fingerprint (SHA-256) of the moment it was added, and it joins the queue even without network.
+On board, the surveyor records the stowage plan, the cargo manifest, the logbook, a delivery note or a certificate in the field app, with **Add** on the **Board documents** card ([Recording on board](veldapp/aan-boord.md#board-documents)). They choose the type, photograph the pages, pick a pdf or file from the device, or record a short video (a photo or pdf at most 50 MB, a video at most 200 MB). Each file becomes evidence like a photo: with the time, place and fingerprint (SHA-256) of the moment it was added, and it joins the queue even without network.
 
 At the office they are on the **Board documents** tab, with the type, who and when. A photo shows a thumbnail, a pdf opens, a video plays in the browser. They are never changed or deleted. They do not go into the photo appendix of the report, but they are part of the evidence package, with their type in the manifest.
 
@@ -152,7 +152,7 @@ If a document came by e-mail, add it at the office with **Add document**: choose
 
 ### Codes
 
-The surveyor scans barcodes and QR codes in the field app: the **QR icon** at the top of the file. They choose the type (container, seal, sample or other code) and scan with the camera, have the code read from a photo or type it. They can link the code to a finding or leave it on the file. Without network it waits on the device.
+The surveyor scans barcodes and QR codes in the field app: **Scan** on the **Codes** card ([Recording on board](veldapp/aan-boord.md#codes)). They choose the type (container, seal, sample or other code) and scan with the camera, have the code read from a photo or type it. They can link the code to a finding or leave it on the file. Without network it waits on the device.
 
 - A **container number** (ISO 6346) is 4 letters, the last U, J or Z, and 7 digits; the app writes it in capitals without spaces. If the check digit is wrong, the app warns and the surveyor may save anyway: the code gets the mark **Incorrect**.
 - Correcting a scanned code makes it a typed code: the **Source** column says honestly how it came in.
@@ -227,7 +227,7 @@ Below the button you see what the proposal was based on. Your own text in the se
 
 ### Voice notes
 
-On board, you dictate a note instead of typing it. In the field app, tap the **microphone** at the top of the file: the device transcribes the speech straight away. Choose the language you speak in and, if you want, the report section. Then correct the text and save. Without a connection, the note waits on the device, like a finding. Only the text goes to Quaymark, with the time and place of the recording; the sound is not kept. The **Notes** tab of the file shows what has already been sent.
+On board, you dictate a note instead of typing it. In the field app, tap **Dictate** on the **Notes** card ([Recording on board](veldapp/aan-boord.md#voice-notes)): the device transcribes the speech straight away. Choose the language you speak in and, if you want, the report section. Then correct the text and save. Without a connection, the note waits on the device, like a finding. Only the text goes to Quaymark, with the time and place of the recording; the sound is not kept. The **Notes** card in the field app also shows what has already been sent.
 
 At the office, the notes are on the **Report** tab, above the sections.
 
@@ -323,7 +323,7 @@ For a survey type with the **Bunker survey** box ticked (see [Survey types](soor
 
 ![The soundings after bunkering of HQ-2026-0007, a row per tank](images/dossier-bunker-peilingen-en.png "Soundings")
 
-On site, the surveyor sounds in the field app: the fuel icon at the top of the file shows the tanks per stage, with an estimate in tonnes. A tank the vessel did not have yet can be added there. Without a connection, the soundings wait on the device.
+On site, the surveyor sounds in the field app: the **Bunker survey** card of the file shows the tanks per stage ([Recording on board](veldapp/aan-boord.md#bunker-survey)), with an estimate in tonnes. A tank the vessel did not have yet can be added there. Without a connection, the soundings wait on the device.
 
 In the report, `{{bunker}}` places the result and the table per tank (see [Templates](sjablonen.md)). On the **certificate of quantity**, **From the bunker survey** takes over the delivered quantity per product.
 
@@ -354,7 +354,7 @@ The result recalculates as you type: allowed, used, demurrage or despatch with t
 
 On the **Time and expenses** tab you record the **time entries** (who, from when to when, in the office's time) and the **expenses** (travel, accommodation, laboratory, third parties) of the file, with the receipt from the attachments. An expense marked **Recharge** goes on the invoice. **Edit** and **Delete** are under **⋯** next to a row that is not yet on an invoice or statement. **Propose invoice** turns them into a draft invoice; see [Invoices](facturen.md). Anything on an invoice is fixed. The **Estimated (EUR)** column is an estimate: hours × hourly rate × surcharge (weekend, night or a public holiday of the office's country), as the invoice calculates it; the rates are in EUR and the invoice converts to the currency of the file. The totals are at the bottom; each invoice shows its own currency.
 
-In the field app, the surveyor records their time on the **Time** tab of the file: **Start timer** with a type of work (**On board**, **Travel time**, **Waiting time**, **Reporting**), and **Stop timer** opens the window to check start and end, with a remark. **Record time** does the same by hand. One timer runs at a time; it keeps running if the app closes. After saving, the entry appears here, with the type in the language of the file as description. If the timer ran for more than 12 hours, the app first asks to check.
+In the field app, the surveyor records their time on the **Time** card of the file ([Recording time](veldapp/tijd.md)): **Start timer** with a type of work (**On board**, **Travel time**, **Waiting time**, **Reporting**), and **Stop timer** opens the window to check start and end, with a remark. **Record time** does the same by hand. One timer runs at a time; it keeps running if the app closes. After saving, the entry appears here, with the type in the language of the file as description. If the timer ran for more than 12 hours, the app first asks to check.
 
 ![Time and expenses of ZB-2026-0003 with Propose invoice, Time entries and Expenses](images/dossier-tijd-kosten-en.png "Time and expenses")
 

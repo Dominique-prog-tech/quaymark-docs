@@ -73,7 +73,7 @@ The block warns you when only you can solve something:
 
 ## In the field app
 
-The surveyor sees their schedule in the field app, also without network: the open files assigned to them, per day (**Earlier (still open)**, **Today**, **Tomorrow**, **This week**, **Later**, **Not scheduled**). Each file shows the time slot in the office's time, the vessel, the port and the terminal. **Navigate** opens the device's maps app on the terminal and the port.
+The surveyor sees their schedule in the field app, also without network: the open files assigned to them, per day (**Earlier (still open)**, **Today**, **Tomorrow**, **This week**, **Later**, **Not scheduled**). Each file shows the time slot in the office's time, the vessel, the port and the terminal. **Navigate** opens the device's maps app on the terminal and the port. → [My files in the field app](veldapp/mijn-dossiers.md)
 
 ## See also
 

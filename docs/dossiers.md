@@ -124,7 +124,7 @@ Wijzigt u de survey na het vastleggen, leg dan een nieuwe versie vast. Een antwo
 
 ### Handtekeningen
 
-Ter plaatse laat de surveyor de kapitein, de chief officer of de terminal een verklaring tekenen: in de veldapp met het tekenicoon bovenaan het dossier, of op kantoor op het tabblad **Handtekeningen** met **Laten tekenen** (bijvoorbeeld op een tablet aan de balie).
+Ter plaatse laat de surveyor de kapitein, de chief officer of de terminal een verklaring tekenen: in de veldapp met **Tekenen** op de kaart **Handtekeningen** ([Laten tekenen](veldapp/laten-tekenen.md)), of op kantoor op het tabblad **Handtekeningen** met **Laten tekenen** (bijvoorbeeld op een tablet aan de balie).
 
 1. Vul de **Naam van de ondertekenaar** in, kies de **Functie** en eventueel de partij namens wie hij tekent.
 2. Kies de **Clausule**: **Voor ontvangst, zonder erkenning van aansprakelijkheid** (standaard), **Voor akkoord** of **Gezien**. De verklaring staat erbij in de taal van het dossier, met de vaststellingen van dat moment.
@@ -142,7 +142,7 @@ Het tabblad **Handtekeningen** toont ze allemaal, met het beeld of de weigering.
 
 ### Documenten van boord
 
-Aan boord legt de surveyor het stuwplan, het cargo manifest, het logboek, een leveringsbon of een certificaat vast in de veldapp, met het documenticoon bovenaan het dossier. Hij kiest de soort, fotografeert de pagina's, kiest een pdf of bestand van het toestel, of neemt een korte video op (een foto of pdf hoogstens 50 MB, een video hoogstens 200 MB). Elk bestand wordt bewijs zoals een foto: met de tijd, de plaats en de vingerafdruk (SHA-256) van het moment van toevoegen, en het gaat ook zonder bereik in de wachtrij.
+Aan boord legt de surveyor het stuwplan, het cargo manifest, het logboek, een leveringsbon of een certificaat vast in de veldapp, met **Toevoegen** op de kaart **Documenten van boord** ([Aan boord vastleggen](veldapp/aan-boord.md#documenten-van-boord)). Hij kiest de soort, fotografeert de pagina's, kiest een pdf of bestand van het toestel, of neemt een korte video op (een foto of pdf hoogstens 50 MB, een video hoogstens 200 MB). Elk bestand wordt bewijs zoals een foto: met de tijd, de plaats en de vingerafdruk (SHA-256) van het moment van toevoegen, en het gaat ook zonder bereik in de wachtrij.
 
 Op kantoor staan ze op het tabblad **Documenten van boord**, met de soort, wie en wanneer. Een foto toont een miniatuur, een pdf opent u, een video speelt in de browser af. Ze worden nooit gewijzigd of verwijderd. Ze komen niet in de fotobijlage van het rapport, wel in het bewijspakket, met hun soort in het manifest.
 
@@ -152,7 +152,7 @@ Kwam een document per mail, dan voegt u het op kantoor toe met **Document toevoe
 
 ### Codes
 
-De surveyor scant in de veldapp barcodes en QR-codes: het **QR-icoon** bovenaan het dossier. Hij kiest de soort (container, zegel, staal of andere code) en scant met de camera, laat de code uit een foto lezen of tikt ze in. Hij kan de code aan een vaststelling koppelen, of los aan het dossier laten. Zonder bereik wacht ze op het toestel.
+De surveyor scant in de veldapp barcodes en QR-codes: **Scannen** op de kaart **Codes** ([Aan boord vastleggen](veldapp/aan-boord.md#codes)). Hij kiest de soort (container, zegel, staal of andere code) en scant met de camera, laat de code uit een foto lezen of tikt ze in. Hij kan de code aan een vaststelling koppelen, of los aan het dossier laten. Zonder bereik wacht ze op het toestel.
 
 - Een **containernummer** (ISO 6346) is 4 letters, de laatste U, J of Z, en 7 cijfers; de app schrijft het in hoofdletters zonder spaties. Klopt het controlecijfer niet, dan waarschuwt de app en mag de surveyor toch bewaren: de code krijgt het merkteken **Klopt niet**.
 - Wie een gescande code verbetert, maakt er een getikte code van: de kolom **Bron** zegt eerlijk hoe ze binnenkwam.
@@ -227,7 +227,7 @@ Onder de knop staat waarop het voorstel steunde. Uw eigen tekst in de rubrieken 
 
 ### Spraaknotities
 
-Aan boord spreekt u een notitie in, in plaats van te typen. Tik in de veldapp op de **microfoon** bovenaan het dossier: het toestel schrijft de spraak meteen uit. Kies de taal waarin u spreekt en, als u wil, de rubriek van het rapport. Verbeter daarna de tekst en bewaar. Zonder bereik wacht de notitie op het toestel tot er bereik is, zoals een vaststelling. Enkel de tekst gaat naar Quaymark, met het uur en de plaats van de opname; het geluid wordt niet bewaard. Het tabblad **Notities** van het dossier toont wat al verstuurd is.
+Aan boord spreekt u een notitie in, in plaats van te typen. Tik in de veldapp op **Inspreken** op de kaart **Notities** ([Aan boord vastleggen](veldapp/aan-boord.md#spraaknotities)): het toestel schrijft de spraak meteen uit. Kies de taal waarin u spreekt en, als u wil, de rubriek van het rapport. Verbeter daarna de tekst en bewaar. Zonder bereik wacht de notitie op het toestel tot er bereik is, zoals een vaststelling. Enkel de tekst gaat naar Quaymark, met het uur en de plaats van de opname; het geluid wordt niet bewaard. De kaart **Notities** in de veldapp toont ook wat al verstuurd is.
 
 Op kantoor staan de notities op het tabblad Rapport, boven de rubrieken.
 
@@ -323,7 +323,7 @@ Bij een soort survey met het vinkje **Bunker survey** (zie [Soorten survey](soor
 
 ![De peilingen na het bunkeren van HQ-2026-0007, een rij per tank](images/dossier-bunker-peilingen.png "Peilingen")
 
-Ter plaatse peilt de surveyor in de veldapp: het brandstoficoon bovenaan het dossier toont de tanks per moment, met een schatting in ton. Een tank die het schip nog niet had, voegt hij daar toe. Zonder bereik wachten de peilingen op het toestel.
+Ter plaatse peilt de surveyor in de veldapp: de kaart **Bunker survey** van het dossier toont de tanks per moment ([Aan boord vastleggen](veldapp/aan-boord.md#bunker-survey)), met een schatting in ton. Een tank die het schip nog niet had, voegt hij daar toe. Zonder bereik wachten de peilingen op het toestel.
 
 In het rapport zet `{{bunker}}` het resultaat en de tabel per tank (zie [Sjablonen](sjablonen.md)). Op het **certificaat van hoeveelheid** neemt **Uit de bunker survey** de geleverde hoeveelheid per product over.
 
@@ -354,7 +354,7 @@ De uitkomst rekent mee terwijl u typt: toegestaan, gebruikt, demurrage of despat
 
 Op het tabblad **Tijd en kosten** boekt u de **prestaties** (wie, van wanneer tot wanneer, in de tijd van de vestiging) en de **kosten** (reis, verblijf, labo, derden) van het dossier, met het bewijsstuk uit de bijlagen. Een kost op **Doorrekenen** komt op de factuur. **Bewerken** en **Verwijderen** staan onder **⋯** naast een regel die nog op geen factuur of afrekening staat. **Factuur voorstellen** maakt er een klad-factuur van; zie [Facturen](facturen.md). Wat op een factuur staat, ligt vast. De kolom **Geraamd (EUR)** is een raming: uren × uurtarief × toeslag (weekend, nacht of een feestdag van het land van de vestiging), zoals de factuur rekent; de tarieven staan in EUR en de factuur rekent om naar de munt van het dossier. Onderaan staan de totalen; elke factuur toont haar eigen munt.
 
-In de veldapp registreert de surveyor zijn tijd op het tabblad **Tijd** van het dossier: **Start klok** met een soort werk (**Aan boord**, **Reistijd**, **Wachttijd**, **Rapportering**), en **Stop klok** opent het venster om van en tot na te kijken, met een opmerking. **Tijd ingeven** doet hetzelfde met de hand. Er loopt één klok tegelijk; ze loopt door als de app sluit. Na het bewaren verschijnt de prestatie hier, met de soort in de taal van het dossier als omschrijving. Liep de klok meer dan 12 uur, dan vraagt de app eerst na te kijken.
+In de veldapp registreert de surveyor zijn tijd op de kaart **Tijd** van het dossier ([Tijd registreren](veldapp/tijd.md)): **Start klok** met een soort werk (**Aan boord**, **Reistijd**, **Wachttijd**, **Rapportering**), en **Stop klok** opent het venster om van en tot na te kijken, met een opmerking. **Tijd ingeven** doet hetzelfde met de hand. Er loopt één klok tegelijk; ze loopt door als de app sluit. Na het bewaren verschijnt de prestatie hier, met de soort in de taal van het dossier als omschrijving. Liep de klok meer dan 12 uur, dan vraagt de app eerst na te kijken.
 
 ![Tijd en kosten van ZB-2026-0003 met Factuur voorstellen, Prestaties en Kosten](images/dossier-tijd-kosten.png "Tijd en kosten")
 

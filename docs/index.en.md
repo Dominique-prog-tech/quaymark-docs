@@ -47,6 +47,14 @@ on-site findings with evidential value, letters, certificates and the evidence p
 
     [Files](dossiers.md) · [Schedule](planning.md)
 
+-   :material-cellphone: **Field app**
+
+    ---
+
+    On board, even offline: your files by day, findings with photos, the checklist, getting a signature and your time.
+
+    [Getting started with the field app](veldapp/aan-de-slag.md) · [Offline](veldapp/zonder-bereik.md)
+
 -   :material-ferry: **Relations and vessels**
 
     ---
