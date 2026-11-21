@@ -20,7 +20,7 @@ De kolom **Rol Freelancer** heeft een vinkje als de freelancer die rol al heeft,
 
 ## Een freelancer toevoegen
 
-Een freelancer is een gebruiker van het bureau. Nodig hem eerst uit op het scherm **Gebruikers**, en klik dan hier op **Nieuwe freelancer**.
+Een freelancer is een gebruiker van het bureau. Een nieuwe gebruiker maakt ADM Concept aan: vraag het aan ADM Concept. Klik daarna hier op **Nieuwe freelancer**.
 
 - **Gebruiker**: de gebruiker van het bureau. Quaymark stelt een **Bedrijfsnaam** en een **Code** voor uit zijn naam.
 - **Code**: 2 tot 6 hoofdletters of cijfers, uniek in het bureau. Ze staat in het nummer van elke afrekening: *SB-CODE-JAAR-001*. Na de eerste afrekening ligt ze vast, zodat de nummers één reeks blijven.
@@ -36,7 +36,7 @@ Een freelancer is een gebruiker van het bureau. Nodig hem eerst uit op het scher
 
 Bovenaan de fiche staat of de freelancer de rol al heeft. Klik op **Rol Freelancer geven** en bevestig.
 
-Met die rol ziet hij in de webapp enkel **Mijn werk**, en in de veldapp de dossiers die aan hem toegewezen zijn. Daar legt hij vaststellingen, foto's en zijn tijd vast, zoals elke surveyor. Zijn andere rollen vervallen, en op het scherm **Rollen** staat hij niet bij de gebruikers die u een rol kunt geven. Zonder deze rol ziet hij alles wat een medewerker van het bureau ziet. Terugzetten kan op het scherm **Gebruikers**. → [Mijn werk](mijn-werk.md)
+Met die rol ziet hij in de webapp enkel **Mijn werk**, en in de veldapp de dossiers die aan hem toegewezen zijn. Daar legt hij vaststellingen, foto's en zijn tijd vast, zoals elke surveyor. Zijn andere rollen vervallen, en op het scherm **Rollen** staat hij niet bij de gebruikers die u een rol kunt geven. Zonder deze rol ziet hij alles wat een medewerker van het bureau ziet. Terugzetten: vraag het aan ADM Concept. → [Mijn werk](mijn-werk.md)
 
 ## Afrekeningen
 

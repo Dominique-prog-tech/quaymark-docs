@@ -20,7 +20,7 @@ Die Spalte **Rolle Freiberufler** zeigt ein Häkchen, wenn der Freiberufler dies
 
 ## Einen Freiberufler hinzufügen
 
-Ein Freiberufler ist ein Benutzer des Büros. Laden Sie ihn zuerst auf der Seite **Benutzer** ein und klicken Sie dann hier auf **Neuer Freiberufler**.
+Ein Freiberufler ist ein Benutzer des Büros. Neue Benutzer legt ADM Concept an: Fragen Sie ADM Concept. Klicken Sie danach hier auf **Neuer Freiberufler**.
 
 - **Benutzer**: der Benutzer des Büros. Quaymark schlägt aus seinem Namen einen **Firmennamen** und einen **Code** vor.
 - **Code**: 2 bis 6 Großbuchstaben oder Ziffern, eindeutig im Büro. Er steht in der Nummer jeder Abrechnung: *SB-CODE-JAHR-001*. Nach der ersten Abrechnung ist er festgelegt, damit die Nummern eine Reihe bleiben.
@@ -36,7 +36,7 @@ Ein Freiberufler ist ein Benutzer des Büros. Laden Sie ihn zuerst auf der Seite
 
 Oben im Datenblatt sehen Sie, ob der Freiberufler die Rolle bereits hat. Klicken Sie auf **Rolle Freiberufler geben** und bestätigen Sie.
 
-Mit dieser Rolle sieht er in der Web-App nur **Meine Arbeit** und in der Feld-App die ihm zugewiesenen Akten. Dort erfasst er Feststellungen, Fotos und seine Zeit, wie jeder Sachverständige. Seine anderen Rollen entfallen, und auf dem Bildschirm **Rollen** steht er nicht bei den Benutzern, denen Sie eine Rolle geben können. Ohne diese Rolle sieht er alles, was ein Mitarbeiter des Büros sieht. Zurücksetzen können Sie auf der Seite **Benutzer**. → [Meine Arbeit](mijn-werk.md)
+Mit dieser Rolle sieht er in der Web-App nur **Meine Arbeit** und in der Feld-App die ihm zugewiesenen Akten. Dort erfasst er Feststellungen, Fotos und seine Zeit, wie jeder Sachverständige. Seine anderen Rollen entfallen, und auf dem Bildschirm **Rollen** steht er nicht bei den Benutzern, denen Sie eine Rolle geben können. Ohne diese Rolle sieht er alles, was ein Mitarbeiter des Büros sieht. Zum Zurücksetzen fragen Sie ADM Concept. → [Meine Arbeit](mijn-werk.md)
 
 ## Abrechnungen
 

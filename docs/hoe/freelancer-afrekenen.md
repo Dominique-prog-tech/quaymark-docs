@@ -4,7 +4,7 @@ description: "Een freelance surveyor afrekenen met autofacturatie: fiche, akkoor
 
 # Hoe reken ik een freelancer af?
 
-1. **Nodig de freelancer uit** als gebruiker op het scherm **Gebruikers**.
+1. **Vraag ADM Concept** om de freelancer als gebruiker van het bureau aan te maken.
 2. **Maak zijn fiche**: klik in **Platformbeheer** op de tegel **Freelancers** en dan op **Nieuwe freelancer**. Vul zijn gegevens, zijn **Uurtarief (inkoop)** en zijn **Btw-regeling** in. → [Een freelancer toevoegen](../freelancers.md#een-freelancer-toevoegen)
 3. **Vul de datum van het akkoord in** bij **Akkoord autofacturatie op**. Zonder schriftelijk akkoord maakt het bureau geen factuur in zijn naam.
 4. **Geef hem de rol Freelancer**: dan ziet hij enkel Mijn werk en de veldapp. → [De rol Freelancer](../freelancers.md#de-rol-freelancer)

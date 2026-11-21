@@ -12,7 +12,7 @@ Chaque utilisateur du bureau peut se connecter à l'application de terrain, avec
 
 L'application n'affiche que les **dossiers ouverts dont vous êtes l'expert**. Le bureau vous attribue un dossier, sur le dossier ou dans le [Planning](../planning.md).
 
-Vous n'avez pas encore de compte ? Demandez-le à l'administrateur de votre bureau.
+Vous n'avez pas encore de compte ? Demandez-le à ADM Concept.
 
 ## Installer
 
@@ -68,7 +68,7 @@ Si l'application est trop ancienne, elle affiche **Mettez Quaymark à jour**, av
 ## Erreurs fréquentes
 
 !!! warning "La connexion échoue"
-    Vérifiez l'identifiant et le mot de passe : ce sont les mêmes que dans l'application web. Si cela fonctionne là et pas dans l'application, demandez à l'administrateur de votre bureau si votre compte est actif.
+    Vérifiez l'identifiant et le mot de passe : ce sont les mêmes que dans l'application web. Si cela fonctionne là et pas dans l'application, demandez à ADM Concept si votre compte est actif.
 
 !!! warning "Votre connexion n'est plus valable"
     Reconnectez-vous. Si cela ne fonctionne pas, votre accès a peut-être été retiré : demandez à votre bureau. Ce qui n'était pas encore envoyé reste sur l'appareil.

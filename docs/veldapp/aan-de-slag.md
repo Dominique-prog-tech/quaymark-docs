@@ -12,7 +12,7 @@ Elke gebruiker van het bureau kan zich aanmelden in de veldapp, met dezelfde geb
 
 De app toont enkel de **open dossiers waarvan u de surveyor bent**. Een dossier wijst u toe op kantoor, op het dossier of in de [Planning](../planning.md).
 
-Hebt u nog geen account, vraag het dan aan de beheerder van uw bureau.
+Hebt u nog geen account, vraag het dan aan ADM Concept.
 
 ## Installeren
 
@@ -68,7 +68,7 @@ Is de app te oud, dan toont ze **Werk Quaymark bij**, met de versie die nodig is
 ## Veelgemaakte fouten
 
 !!! warning "Aanmelden lukt niet"
-    Kijk de gebruikersnaam en het wachtwoord na: ze zijn dezelfde als in de webapp. Lukt het daar wel en in de app niet, vraag dan de beheerder van uw bureau of uw account actief is.
+    Kijk de gebruikersnaam en het wachtwoord na: ze zijn dezelfde als in de webapp. Lukt het daar wel en in de app niet, vraag dan aan ADM Concept of uw account actief is.
 
 !!! warning "Uw aanmelding is niet meer geldig"
     Meld u opnieuw aan. Lukt dat niet, dan is uw toegang misschien ingetrokken: vraag het aan uw bureau. Wat nog niet verstuurd was, blijft op het toestel.

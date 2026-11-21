@@ -4,7 +4,7 @@ description: "Settling a freelance surveyor with self-billing: record, agreement
 
 # How do I settle a freelancer?
 
-1. **Invite the freelancer** as a user on the **Users** screen.
+1. **Ask ADM Concept** to create the freelancer as a user of the firm.
 2. **Create their record**: in **Administration**, click the **Freelancers** tile and then **New freelancer**. Fill in their details, their **Hourly rate (purchase)** and their **VAT scheme**. → [Adding a freelancer](../freelancers.md#adding-a-freelancer)
 3. **Fill in the date of the agreement** in **Self-billing agreement on**. Without a written agreement, the company does not draw up an invoice in their name.
 4. **Give them the Freelancer role**: they then only see My work and the field app. → [The Freelancer role](../freelancers.md#the-freelancer-role)

@@ -4,7 +4,7 @@ description: "Einen freiberuflichen Sachverständigen per Gutschrift abrechnen: 
 
 # Wie rechne ich einen Freiberufler ab?
 
-1. **Laden Sie den Freiberufler** als Benutzer auf der Seite **Benutzer** ein.
+1. **Bitten Sie ADM Concept**, den Freiberufler als Benutzer des Büros anzulegen.
 2. **Legen Sie sein Datenblatt an**: Klicken Sie in **Verwaltung** auf die Kachel **Freiberufler** und dann auf **Neuer Freiberufler**. Tragen Sie seine Daten, seinen **Stundensatz (Einkauf)** und seine **Umsatzsteuerregelung** ein. → [Einen Freiberufler hinzufügen](../freelancers.md#einen-freiberufler-hinzufugen)
 3. **Tragen Sie das Datum der Vereinbarung** bei **Gutschriftvereinbarung am** ein. Ohne schriftliche Vereinbarung stellt das Büro keine Rechnung in seinem Namen aus.
 4. **Geben Sie ihm die Rolle Freiberufler**: Dann sieht er nur Meine Arbeit und die Feld-App. → [Die Rolle Freiberufler](../freelancers.md#die-rolle-freiberufler)

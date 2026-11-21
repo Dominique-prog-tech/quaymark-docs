@@ -4,7 +4,7 @@ description: "Régler un expert freelance en autofacturation : fiche, accord, r�
 
 # Comment régler un freelance ?
 
-1. **Invitez le freelance** comme utilisateur sur l'écran **Utilisateurs**.
+1. **Demandez à ADM Concept** de créer le freelance comme utilisateur du bureau.
 2. **Créez sa fiche** : dans **Administration**, cliquez sur la tuile **Freelances** puis sur **Nouveau freelance**. Complétez ses données, son **Tarif horaire (achat)** et son **Régime de TVA**. → [Ajouter un freelance](../freelancers.md#ajouter-un-freelance)
 3. **Complétez la date de l'accord** dans **Accord d'autofacturation le**. Sans accord écrit, le bureau n'établit pas de facture en son nom.
 4. **Donnez-lui le rôle Freelance** : il ne voit alors que Mon travail et l'application de terrain. → [Le rôle Freelance](../freelancers.md#le-role-freelance)

@@ -20,7 +20,7 @@ La colonne **Rôle Freelance** affiche une coche si le freelance a déjà ce rô
 
 ## Ajouter un freelance
 
-Un freelance est un utilisateur du bureau. Invitez-le d'abord sur l'écran **Utilisateurs**, puis cliquez ici sur **Nouveau freelance**.
+Un freelance est un utilisateur du bureau. Un nouvel utilisateur est créé par ADM Concept : demandez-le à ADM Concept. Cliquez ensuite ici sur **Nouveau freelance**.
 
 - **Utilisateur** : l'utilisateur du bureau. Quaymark propose un **Nom de l'entreprise** et un **Code** à partir de son nom.
 - **Code** : 2 à 6 majuscules ou chiffres, unique dans le bureau. Il figure dans le numéro de chaque décompte : *SB-CODE-ANNÉE-001*. Après le premier décompte, il est figé, pour que les numéros restent une seule série.
@@ -36,7 +36,7 @@ Un freelance est un utilisateur du bureau. Invitez-le d'abord sur l'écran **Uti
 
 En haut de la fiche, vous voyez si le freelance a déjà le rôle. Cliquez sur **Donner le rôle Freelance** et confirmez.
 
-Avec ce rôle, il ne voit dans l'application web que **Mon travail**, et dans l'application de terrain les dossiers qui lui sont attribués. Il y enregistre constatations, photos et son temps, comme tout expert. Ses autres rôles sont retirés, et sur l'écran **Rôles** il ne figure pas parmi les utilisateurs à qui vous pouvez donner un rôle. Sans ce rôle, il voit tout ce que voit un collaborateur du bureau. Vous pouvez revenir en arrière sur l'écran **Utilisateurs**. → [Mon travail](mijn-werk.md)
+Avec ce rôle, il ne voit dans l'application web que **Mon travail**, et dans l'application de terrain les dossiers qui lui sont attribués. Il y enregistre constatations, photos et son temps, comme tout expert. Ses autres rôles sont retirés, et sur l'écran **Rôles** il ne figure pas parmi les utilisateurs à qui vous pouvez donner un rôle. Sans ce rôle, il voit tout ce que voit un collaborateur du bureau. Pour revenir en arrière, demandez-le à ADM Concept. → [Mon travail](mijn-werk.md)
 
 ## Décomptes
 

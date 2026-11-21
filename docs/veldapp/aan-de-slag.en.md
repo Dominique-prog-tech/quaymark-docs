@@ -12,7 +12,7 @@ Every user of the firm can sign in to the field app, with the same username or e
 
 The app only shows the **open files of which you are the surveyor**. The office assigns a file to you, on the file or in the [Schedule](../planning.md).
 
-No account yet? Ask your firm's administrator.
+No account yet? Ask ADM Concept.
 
 ## Installing
 
@@ -68,7 +68,7 @@ If the app is too old, it shows **Update Quaymark**, with the version required. 
 ## Common mistakes
 
 !!! warning "Signing in fails"
-    Check the username and password: they are the same as in the web app. If it works there but not in the app, ask your firm's administrator whether your account is active.
+    Check the username and password: they are the same as in the web app. If it works there but not in the app, ask ADM Concept whether your account is active.
 
 !!! warning "Your sign-in is no longer valid"
     Sign in again. If that fails, your access may have been withdrawn: ask your firm. Anything not sent yet stays on the device.

@@ -20,7 +20,7 @@ The **Freelancer role** column shows a tick if the freelancer already has that r
 
 ## Adding a freelancer
 
-A freelancer is a user of the company. First invite them on the **Users** screen, then click **New freelancer** here.
+A freelancer is a user of the company. New users are created by ADM Concept: ask ADM Concept. Then click **New freelancer** here.
 
 - **User**: the user of the company. Quaymark suggests a **Company name** and a **Code** from their name.
 - **Code**: 2 to 6 capital letters or digits, unique within the company. It appears in the number of every statement: *SB-CODE-YEAR-001*. After the first statement it is fixed, so that the numbers remain one series.
@@ -36,7 +36,7 @@ A freelancer is a user of the company. First invite them on the **Users** screen
 
 The top of the record shows whether the freelancer already has the role. Click **Give Freelancer role** and confirm.
 
-With this role they only see **My work** in the web app, and in the field app the files assigned to them. There they record findings, photos and their time, like any surveyor. Their other roles are removed, and on the **Roles** screen they are not among the users you can give a role. Without this role they see everything a member of staff sees. You can undo this on the **Users** screen. → [My work](mijn-werk.md)
+With this role they only see **My work** in the web app, and in the field app the files assigned to them. There they record findings, photos and their time, like any surveyor. Their other roles are removed, and on the **Roles** screen they are not among the users you can give a role. Without this role they see everything a member of staff sees. To undo this, ask ADM Concept. → [My work](mijn-werk.md)
 
 ## Statements
 

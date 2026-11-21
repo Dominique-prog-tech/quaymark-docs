@@ -12,7 +12,7 @@ Jeder Benutzer des Büros kann sich in der Feld-App anmelden, mit demselben Benu
 
 Die App zeigt nur die **offenen Akten, deren Sachverständiger Sie sind**. Das Büro weist Ihnen eine Akte zu, in der Akte oder in der [Planung](../planning.md).
 
-Noch kein Konto? Fragen Sie den Administrator Ihres Büros.
+Noch kein Konto? Fragen Sie ADM Concept.
 
 ## Installieren
 
@@ -68,7 +68,7 @@ Ist die App zu alt, zeigt sie **Aktualisieren Sie Quaymark** mit der erforderlic
 ## Häufige Fehler
 
 !!! warning "Die Anmeldung klappt nicht"
-    Prüfen Sie Benutzername und Passwort: Sie sind dieselben wie in der Web-App. Klappt es dort, aber nicht in der App, fragen Sie den Administrator Ihres Büros, ob Ihr Konto aktiv ist.
+    Prüfen Sie Benutzername und Passwort: Sie sind dieselben wie in der Web-App. Klappt es dort, aber nicht in der App, fragen Sie ADM Concept, ob Ihr Konto aktiv ist.
 
 !!! warning "Ihre Anmeldung ist nicht mehr gültig"
     Melden Sie sich erneut an. Klappt das nicht, wurde Ihr Zugang vielleicht entzogen: Fragen Sie Ihr Büro. Was noch nicht gesendet war, bleibt auf dem Gerät.
