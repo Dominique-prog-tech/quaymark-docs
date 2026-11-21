@@ -45,7 +45,7 @@ If the principal has access to the principal portal, they see the same confirmat
 - **Declined**: the principal does not confirm this assignment. Get in touch and, if needed, send a new confirmation.
 - **Expired**: the link expired after 14 days without a reply.
 - **Withdrawn**: the office withdrew the link.
-- **Confirmed by quotation** or **Confirmed by request**: the file was created from a quotation the principal accepted, or from a request in the principal portal. A separate confirmation is then not needed. → [Quotations](offertes.md), [Requests](aanvragen.md)
+- **Confirmed by quotation** or **Confirmed by request**: the file was created from a quotation the principal accepted, or from a request in the principal portal or through the [web form](aanvragen.md#web-form). The explanation next to the status says which of the two. A separate confirmation is then not needed. → [Quotations](offertes.md), [Requests](aanvragen.md)
 
 Every acceptance or refusal also appears as a note in the file's journal.
 
