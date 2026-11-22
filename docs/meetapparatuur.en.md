@@ -64,6 +64,10 @@ If the calibration had expired, or the instrument had none on that day, a warnin
 - **In the report**, under the draft survey or the bunker survey, there is one line per instrument: the type, the name, the make, the model and the serial number, and the calibration with its validity and certificate number, or that it had expired. The line comes with the markers `{{draftsurvey}}` and `{{bunker}}`: if your template does not show them yet, add them (see [Templates](sjablonen.md)).
 - **In the evidence package**, the folder `meetapparatuur/` holds the certificate (pdf) of each calibration used, with an overview in `meetapparatuur.json` and `meetapparatuur.csv`.
 
+## The bell
+
+Whoever manages the measuring instruments gets a notification on the bell at the top right for each active instrument that needs attention: the calibration expires within 30 days, has expired, or the instrument was never calibrated. A click opens the instrument on the **Calibrations** tab. A notification you have seen stays hidden until something changes: a new calibration, or a calibration that has expired in the meantime. An inactive instrument reports nothing. → [Messages](berichten.md#the-bell)
+
 ## Instrument types
 
 Next to the list you manage the office's **types**: a code (lowercase letters, digits and _), the name in four languages, active and the order. The code is fixed once the type is saved, because instruments refer to it. You fix a typo with a new type and set the wrong one to inactive. A new office starts with five types: ultrasonic thickness gauge, hydrometer/densimeter, thermometer, sounding/ullage tape and other instrument.

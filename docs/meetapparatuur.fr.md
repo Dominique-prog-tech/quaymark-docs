@@ -64,6 +64,10 @@ Si l'étalonnage était expiré, ou si l'instrument n'en avait pas ce jour-là, 
 - **Dans le rapport**, sous le draft survey ou l'expertise de soutes, une ligne par instrument : le type, le nom, la marque, le modèle et le numéro de série, et l'étalonnage avec sa validité et son numéro de certificat, ou le fait qu'il était expiré. La ligne accompagne les marqueurs `{{draftsurvey}}` et `{{bunker}}` : si votre modèle ne les affiche pas encore, ajoutez-les (voir [Modèles](sjablonen.md)).
 - **Dans le dossier de preuves**, le dossier `meetapparatuur/` contient le certificat (pdf) de chaque étalonnage utilisé, et un aperçu dans `meetapparatuur.json` et `meetapparatuur.csv`.
 
+## La cloche
+
+Qui gère les instruments de mesure reçoit sur la cloche en haut à droite une notification pour chaque instrument actif qui demande attention : l'étalonnage expire dans les 30 jours, a expiré, ou l'instrument n'a jamais été étalonné. Un clic ouvre l'instrument sur l'onglet **Étalonnages**. Une notification vue reste masquée jusqu'à ce que quelque chose change : un nouvel étalonnage, ou un étalonnage qui a expiré entre-temps. Un instrument inactif ne signale rien. → [Messages](berichten.md#la-cloche)
+
 ## Types d'instrument
 
 À côté de la liste, vous gérez les **types** du bureau : un code (minuscules, chiffres et _), le nom en quatre langues, actif et l'ordre. Le code est figé dès que le type est enregistré, car des instruments y renvoient. Une faute de frappe se corrige avec un nouveau type, et l'erroné passe en inactif. Un nouveau bureau commence avec cinq types : jauge d'épaisseur à ultrasons, densimètre/aréomètre, thermomètre, ruban de sondage/ullage et autre appareil.

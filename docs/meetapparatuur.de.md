@@ -64,6 +64,10 @@ War die Kalibrierung abgelaufen oder hatte das Gerät an diesem Tag keine, ersch
 - **Im Bericht** steht unter dem Draft Survey oder der Bunkerbesichtigung eine Zeile je Gerät: Art, Name, Marke, Modell und Seriennummer, und die Kalibrierung mit ihrer Gültigkeit und Zertifikatsnummer, oder dass sie abgelaufen war. Die Zeile kommt mit den Markierungen `{{draftsurvey}}` und `{{bunker}}`: Zeigt Ihre Vorlage sie noch nicht, fügen Sie sie ein (siehe [Vorlagen](sjablonen.md)).
 - **Im Beweispaket** enthält der Ordner `meetapparatuur/` das Zertifikat (PDF) jeder verwendeten Kalibrierung, mit einer Übersicht in `meetapparatuur.json` und `meetapparatuur.csv`.
 
+## Die Glocke
+
+Wer die Messgeräte verwaltet, erhält auf der Glocke oben rechts eine Meldung für jedes aktive Gerät, das Aufmerksamkeit braucht: Die Kalibrierung läuft innerhalb von 30 Tagen ab, ist abgelaufen, oder das Gerät wurde nie kalibriert. Ein Klick öffnet das Gerät auf der Registerkarte **Kalibrierungen**. Eine gesehene Meldung bleibt verborgen, bis sich etwas ändert: eine neue Kalibrierung oder eine Kalibrierung, die inzwischen abgelaufen ist. Ein nicht aktives Gerät meldet nichts. → [Nachrichten](berichten.md#die-glocke)
+
 ## Gerätearten
 
 Neben der Liste verwalten Sie die **Arten** des Büros: einen Code (Kleinbuchstaben, Ziffern und _), den Namen in vier Sprachen, aktiv und die Reihenfolge. Der Code ist fest, sobald die Art gespeichert ist, denn Geräte verweisen darauf. Einen Tippfehler beheben Sie mit einer neuen Art, und die falsche setzen Sie auf nicht aktiv. Ein neues Büro beginnt mit fünf Arten: Ultraschall-Dickenmessgerät, Aräometer/Dichtemesser, Thermometer, Peilband/Ullage-Band und anderes Gerät.

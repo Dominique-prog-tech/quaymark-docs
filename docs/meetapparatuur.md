@@ -64,6 +64,10 @@ Was de kalibratie vervallen, of had het toestel er op die dag geen, dan verschij
 - **In het rapport** staat onder de draft survey of de bunker survey een regel per toestel: de soort, de naam, het merk, het model en het serienummer, en de kalibratie met haar geldigheid en certificaatnummer, of dat ze vervallen was. De regel komt mee met de markeringen `{{draftsurvey}}` en `{{bunker}}`: toont uw sjabloon die nog niet, zet ze erin (zie [Sjablonen](sjablonen.md)).
 - **In het bewijspakket** staat de map `meetapparatuur/` met het certificaat (pdf) van elke gebruikte kalibratie, en een overzicht in `meetapparatuur.json` en `meetapparatuur.csv`.
 
+## Het belletje
+
+Wie meetapparatuur beheert, krijgt op het belletje rechtsboven een melding voor elk actief toestel dat aandacht vraagt: de kalibratie vervalt binnen 30 dagen, is vervallen, of het toestel werd nooit gekalibreerd. Een klik opent het toestel op het tabblad **Kalibraties**. Een melding die u zag, blijft weg tot er iets verandert: een nieuwe kalibratie, of een kalibratie die intussen vervallen is. Een toestel dat niet actief is, meldt niets. → [Berichten](berichten.md#het-belletje)
+
 ## Soorten toestel
 
 Naast de lijst beheert u de **soorten** van het bureau: een code (kleine letters, cijfers en _), de naam in vier talen, actief en de volgorde. De code ligt vast zodra de soort bewaard is, want toestellen verwijzen ernaar. Een tikfout herstelt u met een nieuwe soort, en de foute zet u op niet actief. Een nieuw bureau start met vijf soorten: ultrasone diktemeter, hydrometer/densimeter, thermometer, peillint/ullage-tape en ander toestel.
