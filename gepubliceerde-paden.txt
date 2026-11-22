@@ -98,6 +98,10 @@ index.de.md
 index.en.md
 index.fr.md
 index.md
+meetapparatuur.de.md
+meetapparatuur.en.md
+meetapparatuur.fr.md
+meetapparatuur.md
 mijn-werk.de.md
 mijn-werk.en.md
 mijn-werk.fr.md
