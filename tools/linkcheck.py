@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Dode-linkcontrole op de LIVE handleiding (docs.credimatch.be) — overgenomen uit cleanops-docs op 31/10/2026.
+"""Dode-linkcontrole op de LIVE handleiding (docs.quaymark.eu) — overgenomen uit cleanops-docs op 31/10/2026.
+
+⚠️ Tot 22/11/2026 stond de standaard hier op docs.credimatch.be (meegekopieerd): zonder argument mat het script dan de
+handleiding van CrediMatch en meldde "niets dood" over een site die niet de onze is.
 
     python3 tools/linkcheck.py            # de live site
     python3 tools/linkcheck.py <basis>    # een andere basis, bv. een lokale `mkdocs serve`
@@ -17,7 +20,7 @@ Slaagcode 0 = niets dood; 1 = iets gevonden; 2 = de controle zelf werkt niet.
 """
 import collections, html, re, sys, urllib.error, urllib.parse, urllib.request
 
-BASIS = (sys.argv[1] if len(sys.argv) > 1 else "https://docs.credimatch.be/").rstrip("/") + "/"
+BASIS = (sys.argv[1] if len(sys.argv) > 1 else "https://docs.quaymark.eu/").rstrip("/") + "/"
 
 
 def haal(url, methode="GET"):

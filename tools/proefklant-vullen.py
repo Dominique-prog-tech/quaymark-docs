@@ -903,6 +903,43 @@ sql.append(rij('dossiers.aanvragen', dict(
     beslist_door=None, reden=None, dossier_id=None, bron='website', formulier='aanvraagformulier hoofdsite', indiener_bedrijf='Scheldemond Bevrachting NV',
     indiener_telefoon=None, lead_id=None, taal='nl', voorstel_relatie_id=REL['scheldemond'])))
 
+# ── Meetapparatuur (P6, 22/11/2026): vier toestellen, elk in een andere stand (geldig, vervalt binnenkort, vervallen met een rechtzetting, nooit
+#    gekalibreerd), zoals de demovulling van de app (DemoZaaier.MeetapparatuurAsync). De soorten zaait de app zelf bij de migratie: het script
+#    weigert een soort die er niet is (een onbekende code geeft in de app geen fout, enkel een leeg vak). De certificaten zijn verzonnen. ──
+SOORT_TOESTEL = set(q("select code from berekeningen.toestelsoorten").splitlines())
+TOESTELLEN = [(1, 'hydrometer', 'H-03', 'DH-300', 'DH3-10427', HQ), (2, 'ultrasoon', 'UT-01', 'UTG-45', 'UT45-2291', HQ),
+              (3, 'thermometer', 'T-02', 'DT-10', 'DT10-0588', ZB), (4, 'peillint', 'P-01', 'ST-30', 'ST30-7710', ZB)]
+ontbreekt = sorted({s for _, s, *_ in TOESTELLEN} - SOORT_TOESTEL)
+if ontbreekt:
+    raise SystemExit(f'⛔ Soorten toestel {ontbreekt} bestaan niet in {KLANT_DB}: draait de app met de migratie P6Meetapparatuur? Gestopt; niets geschreven.')
+KALIBRATIES = [  # (k, toestel, dagen geleden, geldig tot (dagen t.o.v. vandaag), nummer, uitslag, vervangt, reden, certificaat)
+    (1, 1, 200, 165, 'KL-2026-0311', 'Within tolerance (±0.0002 g/ml)', None, None, True),
+    (2, 2, 715, -350, 'KL-2024-1102', 'Within tolerance (±0.05 mm)', None, None, True),
+    (3, 2, 350, 15, 'KL-2025-1187', 'Within tolerance (±0.05 mm)', None, None, True),
+    (4, 3, 400, 330, 'KL-2025-0954', 'Deviation +0.1 °C at 50 °C', None, None, True),
+    (5, 3, 400, -35, 'KL-2025-0954', 'Deviation +0.1 °C at 50 °C', 4, 'Typo in the valid-until date; the certificate says one year.', False),
+]
+sql.append(f"delete from berekeningen.kalibraties where id in ({', '.join(lit(vid(f'kalibratie/{k}')) for k, *_ in KALIBRATIES)});")
+sql.append(f"delete from berekeningen.toestellen where id in ({', '.join(lit(vid(f'toestel/{k}')) for k, *_ in TOESTELLEN)});")
+for k, soort, naam, model, serie, vest in TOESTELLEN:
+    sql.append(rij('berekeningen.toestellen', dict(id=vid(f'toestel/{k}'), soort=soort, naam=naam, merk='Demo Instruments', model=model, serienummer=serie,
+               vestiging_id=vest, actief=True, opmerking=None, created_at=om(-30), archived_on_utc=None)))
+CERT = {}
+for k, t, geleden, tot, nummer, uitslag, vervangt, reden, cert in KALIBRATIES:
+    datum = VANDAAG - dt.timedelta(days=geleden)
+    if cert:
+        tid = vid(f'toestel/{t}').replace('-', '')
+        sleutel = f"bureau-{TENANT_N}/meetapparatuur/{tid}/kalibratie-{vid(f'kalibratie/{k}').replace('-', '')}.pdf"
+        inhoud = f'%PDF-1.4\n% Quaymark demo: kalibratiecertificaat {nummer} (verzonnen)\n%%EOF\n'.encode()
+        CERT[k] = (sleutel, f'{nummer}.pdf', *bestand(sleutel, inhoud))
+    # Een rechtzetting zonder eigen certificaat houdt dat van de vervangen kalibratie (zoals de app).
+    c = CERT.get(k) or (CERT.get(vervangt) if vervangt else None) or (None, None, None, None)
+    sql.append(rij('berekeningen.kalibraties', dict(id=vid(f'kalibratie/{k}'), toestel_id=vid(f'toestel/{t}'), datum=datum.isoformat(),
+               geldig_tot=(VANDAAG + dt.timedelta(days=tot)).isoformat(), labo='Noordkaai Calibration Lab (demo)', certificaatnummer=nummer, uitslag=uitslag,
+               certificaat_storage_key=c[0], certificaat_naam=c[1], certificaat_sha256=c[2], certificaat_grootte=c[3],
+               vervangt_id=vid(f'kalibratie/{vervangt}') if vervangt else None, vervang_reden=reden,
+               vastgelegd_op=NU - dt.timedelta(days=geleden) + dt.timedelta(minutes=5 if vervangt else 0), vastgelegd_door=SURVEYOR_NAAM)))
+
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 8 if 'ijkmeting' in SOORT else 7), (ZB, 3)]:
     reeks = f"dossier:{vest.replace('-', '')}"

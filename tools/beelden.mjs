@@ -134,6 +134,10 @@ const SCHOTEN = () => [
   { naam: 'claims', route: '/claims', verwacht: /Cargo claim from receivers/, magKortZijn: 'twee open claims' },
   { naam: 'dossier-vier-ogen', route: '/dossiers', hoogte: 1100, verwacht: /new damage in hold 2 added/, na: dossier('ZB-2026-0002', 'rapport&deel=uitgifte') },
   { naam: 'bevoegdheden', route: '/bevoegdheden', verwacht: /IIMS-2022-0417/ },
+  // P6 (22/11/2026): de toestellen van proefklant-vullen.py; de fiche van T-02 (toestel/3) toont een rechtgezette kalibratie, doorgestreept.
+  { naam: 'meetapparatuur', route: '/beheer/meetapparatuur', verwacht: /DH3-10427/, magKortZijn: 'vier toestellen' },
+  { naam: 'meetapparatuur-kalibraties', route: '/beheer/meetapparatuur/f458ed56-0d64-58c5-8f61-683678e8431e?tab=kalibraties', hoogte: 1100,
+    verwacht: /the certificate says one year/ },
   { naam: 'bewaartermijnen', route: '/beheer/bewaartermijnen', hoogte: 1250, verwacht: /HQ-2018-0042/ },
   { naam: 'dossier-draft', route: '/dossiers', hoogte: 1250, verwacht: /49[.,\u202f\u00a0]706/, na: dossier('HQ-2026-0004', 'draft') },
   { naam: 'dossier-draft-meting', route: '/dossiers', hoogte: 1500, verwacht: Q('draft_berekening'),
