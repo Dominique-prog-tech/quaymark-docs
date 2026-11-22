@@ -15,9 +15,22 @@ Unter jedem Punkt stehen die Schaltflächen der Skala. Die Besichtigungsart best
 - bei einer Kontrolle: **In Ordnung**, **Nicht in Ordnung** und **Entfällt**;
 - bei einer Zustandsbesichtigung: **Gut**, **Befriedigend**, **Mangelhaft**, **Schlecht** und **Entfällt**.
 
-Eine gute Antwort speichern Sie mit einem Tippen. Ein Punkt mit *Foto erforderlich* braucht ein Foto bei diesem Punkt. Das fügt das Büro mit **Fotos hinzufügen** hinzu: In der Feld-App gehört ein Foto immer zu einer [Feststellung](vaststellingen.md). → [Checkliste](../dossiers.md#checkliste)
+Eine gute Antwort speichern Sie mit einem Tippen.
 
 Jede Antwort wird **hinzugefügt**: Eine neue Antwort ersetzt die vorige nicht, sie kommt dazu. Die letzte zählt, zu dem Zeitpunkt, an dem Sie sie gegeben haben, auch wenn sie später ankommt. Das Büro sieht die vorigen Antworten, mit wem und wann.
+
+## Ein Foto bei einem Punkt
+
+Unter einem beantworteten Punkt stehen **Foto** und **Aus der Mediathek**, wie bei einer neuen Feststellung. Ein Punkt ohne Antwort hat sie nicht: Antworten Sie zuerst, denn das Foto ist der Beweis dieser Antwort.
+
+<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto-de, met 1.0.7) -->
+
+- Es gibt kein **Speichern**: Das Foto hängt sofort am Punkt. Solange das Gerät das Foto festhält (die Position kann bis zu 15 Sekunden dauern), dreht sich ein Rad auf der Schaltfläche.
+- Unter dem Punkt steht, wie viele Fotos er hat, zum Beispiel *Foto erforderlich · 📷 2 · noch nicht gesendet*. Diese Zahl zählt die Fotos, die schon im Büro sind, auch bei einer früheren Antwort, und die noch auf dem Gerät warten.
+- Das Foto gehört zur letzten Antwort, die die App kennt. Antworten Sie danach erneut, bleibt es bei der früheren Antwort; Büro und Bericht zeigen es trotzdem unter dem Punkt.
+- Offline wird das Foto bei der nächsten Synchronisierung gesendet, nach seiner Antwort. Das Gerät hält dasselbe fest wie bei einer Feststellung: Uhrzeit, Position und Fingerabdruck. → [Was das Gerät bei einem Foto festhält](vaststellingen.md#was-das-gerat-bei-einem-foto-festhalt)
+
+*Foto erforderlich* ist eine Erinnerung: Die App speichert eine Antwort auch ohne Foto. Im Büro fügen Sie mit **Fotos hinzufügen** noch Fotos hinzu. → [Checkliste](../dossiers.md#checkliste)
 
 ## Ein Mangel
 

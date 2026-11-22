@@ -95,7 +95,7 @@ Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Bes
 
 Eine gute Antwort speichern Sie mit einem Klick. Bei einem Mangel (**Nicht in Ordnung**, **Mangelhaft** oder **Schlecht**) füllen Sie die **Feststellung**, die **Empfehlung** und die **Priorität** aus: **Sofort, vor dem Auslaufen**, **Innerhalb von 3 Monaten**, **Bei der nächsten Wartung** oder **Zur Information**. **Standardbefund einfügen** füllt die drei Felder mit einem Standardtext der Besichtigungsart, in der Sprache der Akte; passen Sie sie danach an. **Neue Feststellung** macht daraus eine Feststellung.
 
-Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Sachverständige in der Feld-App, mit derselben Skala und denselben Standardbefunden. Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
+Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Sachverständige in der Feld-App, mit derselben Skala und denselben Standardbefunden, und nimmt Fotos zu einem beantworteten Punkt auf ([Die Checkliste](veldapp/checklist.md#ein-foto-bei-einem-punkt)). Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
 
 Ein zweiter Klick auf eine gute Antwort, die schon dasteht, speichert nichts; bei einem Mangel öffnet er den Befund zum Anpassen. Gibt es für den Punkt schon eine Feststellung, zeigt der Mangel diese statt **Neue Feststellung**. Die letzte Antwort ist die zuletzt gegebene, auch wenn eine Antwort aus der Feld-App erst später eintrifft.
 

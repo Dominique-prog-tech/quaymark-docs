@@ -95,7 +95,7 @@ De **checklist** toont per punt het laatste antwoord, van wie en wanneer. De soo
 
 Een goed antwoord bewaart u met één klik. Bij een gebrek (**Niet in orde**, **Matig** of **Slecht**) vult u de **Bevinding**, de **Aanbeveling** en de **Prioriteit** in: **Onmiddellijk, vóór vertrek**, **Binnen 3 maanden**, **Bij het volgende onderhoud** of **Ter info**. **Standaardbevinding invoegen** vult de drie velden met een standaardtekst van de soort survey, in de taal van het dossier; pas ze daarna aan. **Nieuwe vaststelling** maakt er een vaststelling van.
 
-Elk antwoord blijft bewaard onder **Vorige antwoorden**. Ter plaatse antwoordt de surveyor in de veldapp, met dezelfde schaal en dezelfde standaardbevindingen. De gebreken komen in het rapport met de markering `{{aanbevelingen}}` (zie [Sjablonen](sjablonen.md)).
+Elk antwoord blijft bewaard onder **Vorige antwoorden**. Ter plaatse antwoordt de surveyor in de veldapp, met dezelfde schaal en dezelfde standaardbevindingen, en neemt hij foto's bij een beantwoord punt ([De checklist](veldapp/checklist.md#een-foto-bij-een-punt)). De gebreken komen in het rapport met de markering `{{aanbevelingen}}` (zie [Sjablonen](sjablonen.md)).
 
 Een tweede klik op een goed antwoord dat er al staat, bewaart niets; op een gebrek opent hij de bevinding om ze aan te passen. Staat er al een vaststelling voor het punt, dan toont het gebrek die, in plaats van **Nieuwe vaststelling**. Het laatste antwoord is het laatst gegeven antwoord, ook als een antwoord uit de veldapp pas later binnenkomt.
 

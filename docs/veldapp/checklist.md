@@ -15,9 +15,22 @@ Onder elk punt staan de knoppen van de schaal. De soort survey bepaalt welke:
 - bij een controle: **In orde**, **Niet in orde** en **N.v.t.**;
 - bij een conditiesurvey: **Goed**, **Redelijk**, **Matig**, **Slecht** en **N.v.t.**
 
-Een goed antwoord bewaart u met één tik. Een punt met *foto verplicht* vraagt een foto bij dat punt. Die zet kantoor erbij met **Foto's toevoegen**: in de veldapp hangt een foto altijd aan een [vaststelling](vaststellingen.md). → [Checklist](../dossiers.md#checklist)
+Een goed antwoord bewaart u met één tik.
 
 Elk antwoord wordt **toegevoegd**: een nieuw antwoord vervangt het vorige niet, het komt erbij. Het laatste telt, op het moment waarop u het gaf, ook als het pas later aankomt. Kantoor ziet de vorige antwoorden, met wie en wanneer.
+
+## Een foto bij een punt
+
+Onder een beantwoord punt staan **Foto** en **Uit bibliotheek**, zoals bij een nieuwe vaststelling. Een punt zonder antwoord heeft ze niet: antwoord eerst, want de foto is het bewijs van dat antwoord.
+
+<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto, met 1.0.7) -->
+
+- Er is geen **Bewaren**: de foto hangt meteen aan het punt. Zolang het toestel de foto vastlegt (de positie kan tot 15 seconden duren), draait er een wieltje op de knop.
+- Onder het punt staat hoeveel foto's het heeft, bijvoorbeeld *foto verplicht · 📷 2 · nog niet verstuurd*. Dat aantal telt de foto's die al bij kantoor staan, ook bij een vorig antwoord, en die nog op het toestel wachten.
+- De foto hangt aan het laatste antwoord dat de app kent. Antwoordt u daarna opnieuw, dan blijft ze bij het vorige antwoord; kantoor en het rapport tonen ze toch onder het punt.
+- Zonder bereik vertrekt de foto bij de volgende synchronisatie, na haar antwoord. Het toestel legt hetzelfde vast als bij een vaststelling: tijd, positie en vingerafdruk. → [Wat het toestel bij een foto vastlegt](vaststellingen.md#wat-het-toestel-bij-een-foto-vastlegt)
+
+*Foto verplicht* is een herinnering: de app bewaart een antwoord ook zonder foto. Op kantoor zet u er nog foto's bij met **Foto's toevoegen**. → [Checklist](../dossiers.md#checklist)
 
 ## Een gebrek
 

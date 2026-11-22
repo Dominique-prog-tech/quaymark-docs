@@ -95,7 +95,7 @@ The **checklist** shows the latest answer per item, by whom and when. The survey
 
 A good answer is saved with one click. For a deficiency (**Not OK**, **Poor** or **Bad**) you fill in the **Finding**, the **Recommendation** and the **Priority**: **Immediate, before departure**, **Within 3 months**, **At the next maintenance** or **For information**. **Insert a standard finding** fills the three fields with a standard text of the survey type, in the language of the file; adjust them afterwards. **New finding** turns it into a finding.
 
-Every answer is kept under **Previous answers**. On site, the surveyor answers in the field app, with the same scale and the same standard findings. The deficiencies appear in the report with the marker `{{aanbevelingen}}` (see [Templates](sjablonen.md)).
+Every answer is kept under **Previous answers**. On site, the surveyor answers in the field app, with the same scale and the same standard findings, and takes photos with an answered item ([The checklist](veldapp/checklist.md#a-photo-with-an-item)). The deficiencies appear in the report with the marker `{{aanbevelingen}}` (see [Templates](sjablonen.md)).
 
 A second click on a good answer that is already there saves nothing; on a deficiency, it opens the finding so you can adjust it. If a finding already exists for the item, the deficiency shows it instead of **New finding**. The latest answer is the one given last, even if an answer from the field app arrives later.
 

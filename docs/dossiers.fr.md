@@ -95,7 +95,7 @@ La **check-list** affiche pour chaque point la dernière réponse, par qui et qu
 
 Une bonne réponse s'enregistre d'un clic. En cas de défaut (**Non conforme**, **Médiocre** ou **Mauvais**), vous complétez la **Constatation**, la **Recommandation** et la **Priorité** : **Immédiat, avant le départ**, **Dans les 3 mois**, **Au prochain entretien** ou **Pour information**. **Insérer un constat standard** remplit les trois champs avec un texte standard du type d'expertise, dans la langue du dossier ; adaptez-les ensuite. **Nouvelle constatation** en fait une constatation.
 
-Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'expert répond dans l'application de terrain, avec la même échelle et les mêmes constats standard. Les défauts apparaissent dans le rapport avec le marqueur `{{aanbevelingen}}` (voir [Modèles](sjablonen.md)).
+Chaque réponse reste conservée sous **Réponses précédentes**. Sur place, l'expert répond dans l'application de terrain, avec la même échelle et les mêmes constats standard, et prend des photos à un point répondu ([La check-list](veldapp/checklist.md#une-photo-a-un-point)). Les défauts apparaissent dans le rapport avec le marqueur `{{aanbevelingen}}` (voir [Modèles](sjablonen.md)).
 
 Un deuxième clic sur une bonne réponse déjà enregistrée n'enregistre rien ; sur un défaut, il ouvre le constat pour l'adapter. Si une constatation existe déjà pour le point, le défaut l'affiche, au lieu de **Nouvelle constatation**. La dernière réponse est la dernière donnée, même si une réponse de l'application de terrain arrive plus tard.
 

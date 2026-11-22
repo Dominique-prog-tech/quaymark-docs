@@ -15,9 +15,22 @@ Below each item are the buttons of the scale. The survey type decides which:
 - for an inspection: **OK**, **Not OK** and **N/a**;
 - for a condition survey: **Good**, **Fair**, **Poor**, **Bad** and **N/a**.
 
-A good answer is saved with one tap. An item marked *photo required* needs a photo with that item. The office adds it with **Add photos**: in the field app a photo always belongs to a [finding](vaststellingen.md). → [Checklist](../dossiers.md#checklist)
+A good answer is saved with one tap.
 
 Every answer is **added**: a new answer does not replace the previous one, it comes on top of it. The last one counts, at the moment you gave it, even if it arrives later. The office sees the previous answers, with who and when.
+
+## A photo with an item
+
+Below an answered item are **Photo** and **From library**, as for a new finding. An item without an answer does not have them: answer first, because the photo is the evidence of that answer.
+
+<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto-en, met 1.0.7) -->
+
+- There is no **Save**: the photo is attached to the item straight away. While the device records the photo (the position can take up to 15 seconds), a spinner turns on the button.
+- Below the item you see how many photos it has, for example *photo required · 📷 2 · not sent yet*. That number counts the photos already at the office, including those of a previous answer, and those still waiting on the device.
+- The photo belongs to the last answer the app knows. If you answer again afterwards, it stays with the previous answer; the office and the report still show it below the item.
+- Offline, the photo is sent at the next sync, after its answer. The device records the same as for a finding: the time, the position and the fingerprint. → [What the device records with a photo](vaststellingen.md#what-the-device-records-with-a-photo)
+
+*Photo required* is a reminder: the app also saves an answer without a photo. At the office you can still add photos with **Add photos**. → [Checklist](../dossiers.md#checklist)
 
 ## A deficiency
 
