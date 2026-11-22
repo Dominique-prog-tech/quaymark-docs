@@ -50,6 +50,20 @@ A calibration is only ever **added**: you do not edit or delete it. That way you
 
 The new calibration replaces the wrong one. The wrong one stays in the list, struck through, with **Corrected**, and the reason appears under the new one.
 
+## During a measurement
+
+For the draft survey (under each measurement) and on the **Bunkers** tab (for the soundings before and after) there is a **Measuring instruments** block. There you record which instrument you measured with.
+
+1. Choose the instrument in the list. The types that fit the measurement are at the top (the hydrometer for the draft survey, the thermometer and the sounding tape for the bunkers), each with its status on the day of measurement.
+2. Click **Choose instrument**.
+
+Quaymark saves the instrument as it was, with the calibration that applied on the day of measurement: for the bunkers the day of the soundings, for the draft survey the planned day of the file (otherwise the day of choosing). A later calibration or correction does not change that. To refresh it, click **Remove** and choose the instrument again. While the file is open you can remove an instrument; after that it is fixed.
+
+If the calibration had expired, or the instrument had none on that day, a warning appears. Quaymark refuses nothing: on board you must always be able to measure, and the report says honestly how things were.
+
+- **In the report**, under the draft survey or the bunker survey, there is one line per instrument: the type, the name, the make, the model and the serial number, and the calibration with its validity and certificate number, or that it had expired. The line comes with the markers `{{draftsurvey}}` and `{{bunker}}`: if your template does not show them yet, add them (see [Templates](sjablonen.md)).
+- **In the evidence package**, the folder `meetapparatuur/` holds the certificate (pdf) of each calibration used, with an overview in `meetapparatuur.json` and `meetapparatuur.csv`.
+
 ## Instrument types
 
 Next to the list you manage the office's **types**: a code (lowercase letters, digits and _), the name in four languages, active and the order. The code is fixed once the type is saved, because instruments refer to it. You fix a typo with a new type and set the wrong one to inactive. A new office starts with five types: ultrasonic thickness gauge, hydrometer/densimeter, thermometer, sounding/ullage tape and other instrument.

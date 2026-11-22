@@ -50,6 +50,20 @@ Een kalibratie wordt enkel **toegevoegd**: u wijzigt of verwijdert ze niet. Zo b
 
 De nieuwe kalibratie vervangt de foute. De foute blijft doorgestreept in de lijst met **Rechtgezet**, en onder de nieuwe staat de reden.
 
+## Bij een meting
+
+Bij de draft survey (onder elke meting) en op het tabblad **Bunker** (voor de peilingen vóór en na) staat een blok **Meetapparatuur**. Daar legt u vast met welk toestel u mat.
+
+1. Kies het toestel in de lijst. De soorten die bij de meting passen, staan bovenaan (de hydrometer bij de draft survey, de thermometer en het peillint bij de bunker), elk met zijn stand op de dag van de meting.
+2. Klik op **Toestel kiezen**.
+
+Quaymark bewaart het toestel zoals het toen was, met de kalibratie die gold op de dag van de meting: bij de bunker de dag van de peilingen, bij de draft survey de geplande dag van het dossier (anders de dag van het kiezen). Een latere kalibratie of rechtzetting verandert dat niet. Wilt u het vernieuwen, klik dan op **Weghalen** en kies het toestel opnieuw. Zolang het dossier open is, kunt u een toestel weghalen; daarna ligt het vast.
+
+Was de kalibratie vervallen, of had het toestel er op die dag geen, dan verschijnt een waarschuwing. Quaymark weigert niets: aan boord moet u altijd kunnen meten, en het rapport zegt eerlijk hoe het zat.
+
+- **In het rapport** staat onder de draft survey of de bunker survey een regel per toestel: de soort, de naam, het merk, het model en het serienummer, en de kalibratie met haar geldigheid en certificaatnummer, of dat ze vervallen was. De regel komt mee met de markeringen `{{draftsurvey}}` en `{{bunker}}`: toont uw sjabloon die nog niet, zet ze erin (zie [Sjablonen](sjablonen.md)).
+- **In het bewijspakket** staat de map `meetapparatuur/` met het certificaat (pdf) van elke gebruikte kalibratie, en een overzicht in `meetapparatuur.json` en `meetapparatuur.csv`.
+
 ## Soorten toestel
 
 Naast de lijst beheert u de **soorten** van het bureau: een code (kleine letters, cijfers en _), de naam in vier talen, actief en de volgorde. De code ligt vast zodra de soort bewaard is, want toestellen verwijzen ernaar. Een tikfout herstelt u met een nieuwe soort, en de foute zet u op niet actief. Een nieuw bureau start met vijf soorten: ultrasone diktemeter, hydrometer/densimeter, thermometer, peillint/ullage-tape en ander toestel.

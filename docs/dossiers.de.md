@@ -294,6 +294,8 @@ Die **Berechnung** daneben folgt jeder Änderung: die Tiefgänge an den Loten, d
 
 **Draft Survey Report (PDF)** zeigt das Dokument; **Draft Survey Report herausgeben** (sobald beide Messungen vollständig sind) hält es mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte, und im Beweispaket. Das Dokument hat Platz für die Unterschrift des Kapitäns. Öffnen Sie danach eine Messung, meldet sie oben, dass der Bericht schon ausgegeben ist: geben Sie nach einer Änderung eine neue Version aus. Im Bericht steht der Draft Survey mit der Markierung `{{draftsurvey}}` (siehe [Vorlagen](sjablonen.md)).
 
+Unter der Messung steht der Block **Messgeräte**: Wählen Sie das Aräometer, mit dem Sie die Dichte gemessen haben, und klicken Sie auf **Gerät wählen**. Quaymark speichert das Gerät mit der Kalibrierung, die am Tag der Messung galt (dem geplanten Tag der Akte). War sie abgelaufen oder hatte das Gerät keine, erscheint eine Warnung; Quaymark lehnt nichts ab. Das Gerät steht im Bericht unter dem Draft Survey. → [Messgeräte](meetapparatuur.md#bei-einer-messung)
+
 Jeder Zwischenschritt ist auf drei Dezimalen gerundet, und der nächste Schritt rechnet mit diesem gerundeten Wert, wie auf Papier: So ergibt sich jede Zeile aus der vorigen, und die Ladung ist genau die Differenz der beiden Nettoverdrängungen. Die Bemerkungen der Messungen stehen unter der Tabelle. Nach der Ausgabe zeigt der Reiter **Ausgegeben am** mit Datum, wer, PDF und Fingerabdruck; ändern Sie danach eine Messung, warnt er, dass der ausgegebene Bericht andere Zahlen hat.
 
 ### Eichaufnahme
@@ -324,6 +326,8 @@ Bei einer Besichtigungsart mit dem Haken **Bunkerbesichtigung** (siehe [Besichti
 ![Bunkerbesichtigung · Nachher von HQ-2026-0007 mit Tank, Volumen (m³) und Temp. (°C)](images/dossier-bunker-peilingen-de.png "Peilungen")
 
 Vor Ort peilt der Sachverständige in der Feld-App: Die Karte **Bunkerbesichtigung** der Akte zeigt die Tanks je Zeitpunkt ([An Bord erfassen](veldapp/aan-boord.md#bunkerbesichtigung)), mit einer Schätzung in Tonnen. Einen Tank, den das Schiff noch nicht hatte, fügt er dort hinzu. Ohne Verbindung warten die Peilungen auf dem Gerät.
+
+Unter den Peilungen steht der Block **Messgeräte**, für **Peilungen vorher** und **Peilungen nachher**: Wählen Sie das Thermometer und das Peilband, mit denen Sie gepeilt haben. Quaymark speichert sie mit ihrer Kalibrierung am Tag dieser Peilungen; eine abgelaufene Kalibrierung gibt eine Warnung. Sie stehen im Bericht unter der Bunkerbesichtigung, und ihre Zertifikate kommen ins Beweispaket. → [Messgeräte](meetapparatuur.md#bei-einer-messung)
 
 Im Bericht setzt `{{bunker}}` das Ergebnis und die Tabelle je Tank (siehe [Vorlagen](sjablonen.md)). Auf der **Mengenbescheinigung** übernimmt **Aus der Bunkerbesichtigung** die gelieferte Menge je Produkt.
 

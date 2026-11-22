@@ -294,6 +294,8 @@ Le **calcul** à côté suit chaque modification : les tirants d'eau aux perpend
 
 **Draft survey report (PDF)** affiche le document ; **Émettre le draft survey report** (lorsque les deux mesures sont complètes) le fige avec son empreinte, avec les lettres et certificats du dossier, et dans le dossier de preuves. Le document prévoit la signature du capitaine. Si vous ouvrez ensuite une mesure, elle indique en haut que le rapport a déjà été émis : après une modification, émettez une nouvelle version. Dans le rapport, la draft survey vient avec le marqueur `{{draftsurvey}}` (voir [Modèles](sjablonen.md)).
 
+Sous la mesure se trouve le bloc **Instruments de mesure** : choisissez le densimètre avec lequel vous avez mesuré la densité et cliquez sur **Choisir l'instrument**. Quaymark enregistre l'instrument avec l'étalonnage valable le jour de la mesure (le jour prévu du dossier). S'il était expiré, ou si l'instrument n'en avait pas, un avertissement apparaît ; Quaymark ne refuse rien. L'instrument figure dans le rapport sous le draft survey. → [Instruments de mesure](meetapparatuur.md#lors-dune-mesure)
+
 Chaque étape intermédiaire est arrondie à trois décimales, et l'étape suivante calcule avec cette valeur arrondie, comme sur papier : chaque ligne découle ainsi de la précédente, et la cargaison est exactement la différence des deux déplacements nets. Les remarques des mesures figurent sous le tableau. Après l'émission, l'onglet affiche **Émis le** avec la date, qui, le PDF et l'empreinte ; si vous modifiez ensuite une mesure, il avertit que le rapport émis contient d'autres chiffres.
 
 ### Jaugeage aux échelles
@@ -324,6 +326,8 @@ Pour un type d'expertise avec la case **Expertise de soutes** (voir [Types d'exp
 ![Les sondages après le soutage de HQ-2026-0007, une ligne par soute](images/dossier-bunker-peilingen-fr.png "Sondages")
 
 Sur place, l'expert sonde dans l'application de terrain : la carte **Expertise de soutes** du dossier montre les soutes par moment ([Consigner à bord](veldapp/aan-boord.md#expertise-de-soutes)), avec une estimation en tonnes. Il y ajoute une soute que le navire n'avait pas encore. Sans réseau, les sondages attendent sur l'appareil.
+
+Sous les sondages se trouve le bloc **Instruments de mesure**, pour **Sondages avant** et **Sondages après** : choisissez le thermomètre et le ruban de sondage utilisés. Quaymark les enregistre avec leur étalonnage au jour de ces sondages ; un étalonnage expiré donne un avertissement. Ils figurent dans le rapport sous l'expertise de soutes, et leurs certificats sont joints au dossier de preuves. → [Instruments de mesure](meetapparatuur.md#lors-dune-mesure)
 
 Dans le rapport, `{{bunker}}` place le résultat et le tableau par soute (voir [Modèles](sjablonen.md)). Sur le **certificat de quantité**, **De l'expertise de soutes** reprend la quantité livrée par produit.
 

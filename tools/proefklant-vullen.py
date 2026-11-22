@@ -132,7 +132,8 @@ for t in ['dossiers.handtekeningen', 'dossiers.notitie_plaatsingen', 'dossiers.s
           'dossiers.vergelijking_oordelen', 'dossiers.bewijs_annotaties', 'dossiers.boorddocumenten', 'dossiers.scan_codes', 'dossiers.bericht_lezingen', 'dossiers.bericht_bijlagen', 'dossiers.berichten', 'dossiers.bewijs_zichtbaarheid', 'dossiers.bewijsstukken', 'dossiers.checklist_antwoorden',
           'dossiers.vaststellingen', 'dossiers.dossier_partijen', 'rapporten.rubriek_teksten', 'dossiers.blokkeringen', 'rapporten.rapportversies',
           'dossiers.bevestiging_verantwoordingen',   # 19/11/2026: de film rapport-uitgeven laat er een achter (geen vreemde sleutel naar het dossier)
-          'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'berekeningen.ijk_metingen', 'rapporten.documenten']:
+          'berekeningen.gebeurtenissen', 'berekeningen.bunker_peilingen', 'berekeningen.bunker_bdns', 'financieel.kosten', 'berekeningen.draft_metingen', 'berekeningen.ijk_metingen', 'rapporten.documenten',
+          'berekeningen.meting_toestellen']:   # P6 stap 2 (22/11/2026)
     sql.append(f'delete from {t} where dossier_id in ({lijst})' + (f' and {VAST}' if t == 'financieel.kosten' else '') + ';')
 sql.append(f'delete from dossiers.dossiers where id in ({lijst});')
 # Het register van de bewaartermijnen (Q3) voor de eigen dossiers: een proef wist HQ-2018-0042, en dan zou elke run een regel bijzetten.
@@ -939,6 +940,29 @@ for k, t, geleden, tot, nummer, uitslag, vervangt, reden, cert in KALIBRATIES:
                certificaat_storage_key=c[0], certificaat_naam=c[1], certificaat_sha256=c[2], certificaat_grootte=c[3],
                vervangt_id=vid(f'kalibratie/{vervangt}') if vervangt else None, vervang_reden=reden,
                vastgelegd_op=NU - dt.timedelta(days=geleden) + dt.timedelta(minutes=5 if vervangt else 0), vastgelegd_door=SURVEYOR_NAAM)))
+
+# P6 stap 2: het toestel bij een meting, met een KOPIE zoals de app ze bewaart (EfMeetapparatuurService.KiesAsync, JSON in camelCase). De draft survey van
+# HQ-2026-0004 met de hydrometer H-03 (geldig op de geplande dag), de peilingen vóór van HQ-2026-0007 met thermometer T-02: op de dag van die peilingen
+# (12 dagen geleden) was haar kalibratie vervallen, zodat het blok en het rapport de waarschuwing tonen.
+SOORTNAAM = {c: json.loads(n) for c, n in (r.split('|', 1) for r in q("select code || '|' || naam::text from berekeningen.toestelsoorten").splitlines())}
+def toestelkopie(t, k, dag):
+    _, soort, naam, model, serie, _vest = next(x for x in TOESTELLEN if x[0] == t)
+    kal = None
+    if k is not None:
+        _, _, geleden, tot, nummer, uitslag, vervangt, _r, _c = next(x for x in KALIBRATIES if x[0] == k)
+        c = CERT.get(k) or (CERT.get(vervangt) if vervangt else None) or (None, None, None, None)
+        kal = dict(id=vid(f'kalibratie/{k}'), datum=(VANDAAG - dt.timedelta(days=geleden)).isoformat(), geldigTot=(VANDAAG + dt.timedelta(days=tot)).isoformat(),
+                   labo='Noordkaai Calibration Lab (demo)', certificaatnummer=nummer, uitslag=uitslag, certificaatNaam=c[1], certificaatSha256=c[2])
+    return dict(toestelId=vid(f'toestel/{t}'), soort=soort, soortNaam=SOORTNAAM[soort], naam=naam, merk='Demo Instruments', model=model, serienummer=serie,
+                kalibratie=kal)
+METING_TOESTELLEN = [  # (k, moment, dossier, toestel, geldende kalibratie, dag van de meting)
+    (1, 'draft_begin', D6, 1, 1, VANDAAG + dt.timedelta(days=1)),   # de geplande dag van HQ-2026-0004
+    (2, 'draft_eind', D6, 1, 1, VANDAAG + dt.timedelta(days=1)),
+    (3, 'bunker_voor', D9, 3, 5, VANDAAG - dt.timedelta(days=12)),  # de dag van de peilingen vóór (om(-12))
+]
+for k, moment, dossier, t, kal, dag in METING_TOESTELLEN:
+    sql.append(rij('berekeningen.meting_toestellen', dict(id=vid(f'metingtoestel/{k}'), dossier_id=dossier, moment=moment, toestel_id=vid(f'toestel/{t}'),
+               dag=dag.isoformat(), kopie=toestelkopie(t, kal, dag), gewijzigd_op=om(-1, 10, k), gewijzigd_door=SURVEYOR_NAAM, created_at=om(-1, 10, k))))
 
 # ── De nummerteller: het volgende dossier dat de app maakt, mag niet botsen met deze nummers. ──
 for vest, laatste in [(HQ, 8 if 'ijkmeting' in SOORT else 7), (ZB, 3)]:

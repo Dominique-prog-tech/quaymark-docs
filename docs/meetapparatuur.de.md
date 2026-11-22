@@ -50,6 +50,20 @@ Eine Kalibrierung wird nur **hinzugefügt**: Sie ändern oder löschen sie nicht
 
 Die neue Kalibrierung ersetzt die falsche. Die falsche bleibt durchgestrichen in der Liste, mit **Berichtigt**, und unter der neuen steht der Grund.
 
+## Bei einer Messung
+
+Beim Draft Survey (unter jeder Messung) und auf der Registerkarte **Bunker** (für die Peilungen vorher und nachher) steht ein Block **Messgeräte**. Dort halten Sie fest, mit welchem Gerät Sie gemessen haben.
+
+1. Wählen Sie das Gerät in der Liste. Die Arten, die zur Messung passen, stehen oben (das Aräometer beim Draft Survey, das Thermometer und das Peilband beim Bunker), jede mit ihrem Status am Tag der Messung.
+2. Klicken Sie auf **Gerät wählen**.
+
+Quaymark speichert das Gerät, wie es damals war, mit der Kalibrierung, die am Tag der Messung galt: beim Bunker der Tag der Peilungen, beim Draft Survey der geplante Tag der Akte (sonst der Tag der Wahl). Eine spätere Kalibrierung oder Berichtigung ändert daran nichts. Um es zu erneuern, klicken Sie auf **Entfernen** und wählen das Gerät erneut. Solange die Akte offen ist, können Sie ein Gerät entfernen; danach ist es fest.
+
+War die Kalibrierung abgelaufen oder hatte das Gerät an diesem Tag keine, erscheint eine Warnung. Quaymark lehnt nichts ab: An Bord muss man immer messen können, und der Bericht sagt ehrlich, wie es war.
+
+- **Im Bericht** steht unter dem Draft Survey oder der Bunkerbesichtigung eine Zeile je Gerät: Art, Name, Marke, Modell und Seriennummer, und die Kalibrierung mit ihrer Gültigkeit und Zertifikatsnummer, oder dass sie abgelaufen war. Die Zeile kommt mit den Markierungen `{{draftsurvey}}` und `{{bunker}}`: Zeigt Ihre Vorlage sie noch nicht, fügen Sie sie ein (siehe [Vorlagen](sjablonen.md)).
+- **Im Beweispaket** enthält der Ordner `meetapparatuur/` das Zertifikat (PDF) jeder verwendeten Kalibrierung, mit einer Übersicht in `meetapparatuur.json` und `meetapparatuur.csv`.
+
 ## Gerätearten
 
 Neben der Liste verwalten Sie die **Arten** des Büros: einen Code (Kleinbuchstaben, Ziffern und _), den Namen in vier Sprachen, aktiv und die Reihenfolge. Der Code ist fest, sobald die Art gespeichert ist, denn Geräte verweisen darauf. Einen Tippfehler beheben Sie mit einer neuen Art, und die falsche setzen Sie auf nicht aktiv. Ein neues Büro beginnt mit fünf Arten: Ultraschall-Dickenmessgerät, Aräometer/Dichtemesser, Thermometer, Peilband/Ullage-Band und anderes Gerät.

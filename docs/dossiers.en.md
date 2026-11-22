@@ -294,6 +294,8 @@ The **calculation** beside it follows every change: the drafts at the perpendicu
 
 **Draft survey report (PDF)** shows the document; **Issue draft survey report** (once both measurements are complete) records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. If you then open a survey, it says at the top that the report has already been issued: after a change, issue a new version. In the report the draft survey comes with the marker `{{draftsurvey}}` (see [Templates](sjablonen.md)).
 
+Below the measurement is the **Measuring instruments** block: choose the hydrometer you measured the density with and click **Choose instrument**. Quaymark saves the instrument with the calibration that applied on the day of measurement (the planned day of the file). If it had expired, or the instrument had none, a warning appears; Quaymark refuses nothing. The instrument appears in the report under the draft survey. → [Measuring instruments](meetapparatuur.md#during-a-measurement)
+
 Each intermediate step is rounded to three decimals, and the next step calculates with that rounded value, as on paper: each line follows from the previous one, and the cargo is exactly the difference of the two net displacements. The notes of the measurements appear below the table. After issuing, the tab shows **Issued on** with the date, who, the PDF and the fingerprint; if you change a measurement afterwards, it warns that the issued report has different figures.
 
 ### Barge gauging
@@ -324,6 +326,8 @@ For a survey type with the **Bunker survey** box ticked (see [Survey types](soor
 ![The soundings after bunkering of HQ-2026-0007, a row per tank](images/dossier-bunker-peilingen-en.png "Soundings")
 
 On site, the surveyor sounds in the field app: the **Bunker survey** card of the file shows the tanks per stage ([Recording on board](veldapp/aan-boord.md#bunker-survey)), with an estimate in tonnes. A tank the vessel did not have yet can be added there. Without a connection, the soundings wait on the device.
+
+Below the soundings is the **Measuring instruments** block, for **Soundings before** and **Soundings after**: choose the thermometer and the sounding tape you used. Quaymark saves them with their calibration on the day of those soundings; an expired calibration gives a warning. They appear in the report under the bunker survey, and their certificates go into the evidence package. → [Measuring instruments](meetapparatuur.md#during-a-measurement)
 
 In the report, `{{bunker}}` places the result and the table per tank (see [Templates](sjablonen.md)). On the **certificate of quantity**, **From the bunker survey** takes over the delivered quantity per product.
 

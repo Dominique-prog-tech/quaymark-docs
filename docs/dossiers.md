@@ -294,6 +294,8 @@ De **berekening** ernaast volgt elke wijziging: de diepgangen aan de loodlijnen,
 
 **Draft survey report (PDF)** toont het document; **Draft survey report uitgeven** (als beide metingen volledig zijn) legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier, en mee in het bewijspakket. Het document heeft plaats voor de handtekening van de kapitein. Opent u daarna een meting, dan meldt ze bovenaan dat het rapport al uitgegeven is: geef na een wijziging een nieuwe versie uit. In het rapport komt de draft survey met de markering `{{draftsurvey}}` (zie [Sjablonen](sjablonen.md)).
 
+Onder de meting staat het blok **Meetapparatuur**: kies de hydrometer waarmee u de densiteit mat en klik op **Toestel kiezen**. Quaymark bewaart het toestel met de kalibratie die gold op de dag van de meting (de geplande dag van het dossier). Was die vervallen, of had het toestel er geen, dan verschijnt een waarschuwing; Quaymark weigert niets. Het toestel staat in het rapport onder de draft survey. → [Meetapparatuur](meetapparatuur.md#bij-een-meting)
+
 Elke tussenstap staat afgerond op drie decimalen, en de volgende stap rekent met die afgeronde waarde, zoals op papier: zo telt elke regel op uit de vorige, en is de lading precies het verschil van de twee netto's. De opmerkingen van de metingen staan onder de tabel. Na de uitgifte toont het tabblad **Uitgegeven op** met de datum, wie, de PDF en de vingerafdruk; wijzigt u daarna een meting, dan waarschuwt het dat het uitgegeven report andere cijfers heeft.
 
 ### Meting op ijkschalen
@@ -324,6 +326,8 @@ Bij een soort survey met het vinkje **Bunker survey** (zie [Soorten survey](soor
 ![De peilingen na het bunkeren van HQ-2026-0007, een rij per tank](images/dossier-bunker-peilingen.png "Peilingen")
 
 Ter plaatse peilt de surveyor in de veldapp: de kaart **Bunker survey** van het dossier toont de tanks per moment ([Aan boord vastleggen](veldapp/aan-boord.md#bunker-survey)), met een schatting in ton. Een tank die het schip nog niet had, voegt hij daar toe. Zonder bereik wachten de peilingen op het toestel.
+
+Onder de peilingen staat het blok **Meetapparatuur**, voor **Peilingen vóór** en **Peilingen na**: kies de thermometer en het peillint waarmee u peilde. Quaymark bewaart ze met hun kalibratie op de dag van die peilingen; een vervallen kalibratie geeft een waarschuwing. Ze staan in het rapport onder de bunker survey, en hun certificaten gaan mee in het bewijspakket. → [Meetapparatuur](meetapparatuur.md#bij-een-meting)
 
 In het rapport zet `{{bunker}}` het resultaat en de tabel per tank (zie [Sjablonen](sjablonen.md)). Op het **certificaat van hoeveelheid** neemt **Uit de bunker survey** de geleverde hoeveelheid per product over.
 
