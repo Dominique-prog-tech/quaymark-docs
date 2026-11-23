@@ -35,6 +35,12 @@ Een bewaard dossier heeft deze tabbladen: **Partijen**, **Documenten** (in mappe
 
 **Partijen**: de relaties met hun rol (reder, P&I-club, tegenexpert …) en hun referentie. **Partij toevoegen** voegt er een toe; met **⋯** achteraan een rij bewerkt u rol en referentie, of verwijdert u de partij.
 
+### Afgesloten of geannuleerd
+
+Een **afgesloten** of **geannuleerd** dossier ligt vast. Bovenaan staat een vak dat het zegt, met de **Status**. De blokken van het tabblad **Algemeen** en de **Partijen** zijn enkel nog te lezen, en **Bevestiging versturen** en **Verwijderen** staan er niet meer. Moet er toch iets veranderen, zet de status dan terug (bijvoorbeeld naar Rapportage) en klik op **Bewaren**: het dossier is dan weer open. Opnieuw afsluiten zet een nieuwe afsluitdatum, en elke stap staat in de historiek.
+
+Het **Journaal**, **Tijd en kosten** en het tabblad **Rapport** blijven bruikbaar: een rapport uitgeven kan ook bij een afgesloten dossier, en de taalknop op het tabblad Rapport wijzigt de taal van het rapport.
+
 ### Werkinstructie en operationele status
 
 - Heeft het soort survey een **werkinstructie**, dan staat ze bovenaan het dossier, met de gegevens van het dossier ingevuld (schip, haven, terminal …). Wat het dossier niet weet, staat tussen rechte haken. → [Soorten survey](soorten-survey.md#soort-survey)

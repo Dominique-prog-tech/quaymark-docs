@@ -35,6 +35,12 @@ A saved file has these tabs: **Parties**, **Documents** (in folders, those of th
 
 **Parties**: the relations with their role (owner, P&I club, opposing expert …) and their reference. **Add party** adds one; with **⋯** at the end of a row you edit the role and reference, or delete the party.
 
+### Closed or cancelled
+
+A **closed** or **cancelled** file is fixed. A box at the top says so, with the **Status**. The blocks of the **General** tab and the **Parties** can only be read, and **Send confirmation** and **Delete** are no longer there. If something still has to change, set the status back (for example to Reporting) and click **Save**: the file is then open again. Closing it again sets a new closing date, and every step is in the history.
+
+The **Journal**, **Time and expenses** and the **Report** tab remain available: issuing a report is still possible for a closed file, and the language button on the Report tab changes the language of the report.
+
 ### Work instructions and operational status
 
 - If the survey type has **work instructions**, they appear at the top of the file, with the file's data filled in (ship, port, terminal …). What the file does not know appears between square brackets. → [Survey types](soorten-survey.md#survey-type)

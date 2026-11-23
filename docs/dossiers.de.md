@@ -35,6 +35,12 @@ Eine gespeicherte Akte hat diese Registerkarten: **Parteien**, **Dokumente** (in
 
 **Parteien**: die Beziehungen mit ihrer Rolle (Reeder, P&I-Club, Gegengutachter …) und ihrer Referenz. **Partei hinzufügen** fügt eine hinzu; mit **⋯** am Ende einer Zeile bearbeiten Sie Rolle und Referenz oder löschen die Partei.
 
+### Abgeschlossen oder storniert
+
+Eine **abgeschlossene** oder **stornierte** Akte ist festgelegt. Ein Kasten oben sagt es, mit dem **Status**. Die Blöcke der Registerkarte **Allgemein** und die **Parteien** sind nur noch lesbar, und **Bestätigung senden** und **Löschen** erscheinen nicht mehr. Muss dennoch etwas geändert werden, setzen Sie den Status zurück (zum Beispiel auf Berichterstellung) und klicken Sie auf **Speichern**: Die Akte ist dann wieder offen. Erneutes Abschließen setzt ein neues Abschlussdatum, und jeder Schritt steht im Verlauf.
+
+**Journal**, **Zeit und Kosten** und die Registerkarte **Bericht** bleiben nutzbar: Einen Bericht herausgeben ist auch bei einer abgeschlossenen Akte möglich, und die Sprachtaste auf der Registerkarte Bericht ändert die Sprache des Berichts.
+
 ### Arbeitsanweisung und Betriebsstatus
 
 - Hat die Besichtigungsart eine **Arbeitsanweisung**, steht sie oben in der Akte, mit den Daten der Akte ausgefüllt (Schiff, Hafen, Terminal …). Was die Akte nicht weiß, steht in eckigen Klammern. → [Besichtigungsarten](soorten-survey.md#besichtigungsart)

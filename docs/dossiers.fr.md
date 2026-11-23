@@ -35,6 +35,12 @@ Un dossier enregistré a ces onglets : **Parties**, **Documents** (dans des rép
 
 **Parties** : les relations avec leur rôle (armateur, P&I club, contre-expert …) et leur référence. **Ajouter une partie** en ajoute une ; avec **⋯** en fin de ligne, vous modifiez le rôle et la référence, ou supprimez la partie.
 
+### Clôturé ou annulé
+
+Un dossier **clôturé** ou **annulé** est figé. Un encadré en haut l'indique, avec le **Statut**. Les blocs de l'onglet **Général** et les **Parties** ne sont plus que consultables, et **Envoyer la confirmation** et **Supprimer** n'apparaissent plus. S'il faut tout de même modifier quelque chose, remettez le statut en arrière (par exemple sur Rapport) et cliquez sur **Enregistrer** : le dossier est alors de nouveau ouvert. Le clôturer à nouveau fixe une nouvelle date de clôture, et chaque étape figure dans l'historique.
+
+Le **Journal**, **Temps et frais** et l'onglet **Rapport** restent utilisables : émettre un rapport reste possible pour un dossier clôturé, et le bouton de langue de l'onglet Rapport modifie la langue du rapport.
+
 ### Instructions de travail et statut opérationnel
 
 - Si le type d'expertise a des **instructions de travail**, elles figurent en haut du dossier, avec les données du dossier complétées (navire, port, terminal …). Ce que le dossier ne sait pas figure entre crochets. → [Types d'expertise](soorten-survey.md#type-dexpertise)
