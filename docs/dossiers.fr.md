@@ -44,7 +44,7 @@ Le **Journal**, **Temps et frais**, les **réclamations** de l'onglet Dommages e
 ### Instructions de travail et statut opérationnel
 
 - Si le type d'expertise a des **instructions de travail**, elles figurent en haut du dossier, avec les données du dossier complétées (navire, port, terminal …). Ce que le dossier ne sait pas figure entre crochets. → [Types d'expertise](soorten-survey.md#type-dexpertise)
-- **Statut opérationnel** : où en est la mission, à côté de l'étape du travail : par exemple en attente du navire, chargement, déchargement ou en suspens. Il figure en badge en haut, après le statut dans la liste (« Rapport · Chargement ») et dans le planning. La liste se gère dans [Catégories et emplacements](categorieen-en-plaatsen.md).
+- **Statut opérationnel** : où en est la mission, à côté de l'étape du travail : par exemple en attente du navire, chargement, déchargement ou en suspens. Il figure en badge en haut, après le statut dans la liste (« Rapport · Chargement ») et dans le planning. La liste se gère dans [Listes de choix](categorieen-en-plaatsen.md).
 
 ### Délai jusqu'au rapport
 
@@ -59,7 +59,7 @@ L'**expert** du dossier reçoit une notification sur la cloche le dernier jour o
 
 ### Constatations
 
-Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier**, sous **⋯** en fin de ligne, et un motif : l'ancienne version reste visible, barrée. Ses photos suivent la nouvelle version, à l'écran comme dans le rapport. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue.
+Une **constatation** est ajoutée, jamais modifiée ni supprimée. Une erreur se corrige avec **Rectifier**, sous **⋯** en fin de ligne, et un motif : l'ancienne version reste visible, barrée. Ses photos suivent la nouvelle version, à l'écran comme dans le rapport. Au survol, une photo affiche l'heure, la position GPS et l'empreinte (SHA-256) enregistrées par l'appareil lors de la prise de vue. Si l'horloge de l'appareil était en avance, l'heure de réception compte et l'heure de l'appareil reste conservée : le label **horloge de l'appareil en avance** l'indique, avec les deux heures. Cela vaut aussi pour les photos et les autres pièces de l'application de terrain.
 
 Un dossier **clôturé** ou **annulé** ne reçoit plus de travail de terrain : ni constatations, ni réponses à la check-list, ni photos, ni signatures, pas même depuis l'application de terrain. Ce qui existe reste visible. Les calculs (draft survey, jaugeage sur échelles, bunker survey, chronologie et laytime) ne peuvent alors plus qu'être consultés.
 
@@ -289,6 +289,7 @@ Pour un type d'expertise avec la case **Draft survey** cochée (voir [Types d'ex
 
 Un clic sur **Mesure initiale** ou **Mesure finale** dans l'en-tête du tableau ouvre la page de cette mesure. Saisissez :
 
+- la **Date de la mesure** (vide = le jour planifié) : l'instrument de mesure de cette mesure, par exemple l'hydromètre, est vérifié à cette date ;
 - les six **tirants d'eau** : avant, milieu et arrière, à bâbord et à tribord ;
 - le **navire** : la LBP et les distances des marques de tirant d'eau aux perpendiculaires (avant et milieu positifs si la marque est en arrière de la perpendiculaire ou du maître-couple, arrière positif si la marque est en avant de la perpendiculaire arrière) ;
 - l'**eau** : la densité de l'eau du bassin (hydromètre) et la densité des tables (généralement 1,025) ;
@@ -353,7 +354,7 @@ En haut, les tuiles du résumé calculent : le temps de la NOR au début, la dur
 L'onglet **Laytime** calcule le laytime et les surestaries à partir de la chronologie, selon les conditions de la charte-partie :
 
 - **Temps alloué** : un nombre d'heures fixe, ou une quantité divisée par une cadence par jour. Si le dossier a un draft survey, Quaymark propose la quantité.
-- **Décompte** : SHINC (chaque jour compte), SHEX (sans dimanches ni jours fériés) ou SSHEX (sans samedis non plus). Les jours fériés sont ceux du pays du port. Un jour exclu ne compte pas, même si l'on a travaillé.
+- **Décompte** : SHINC (chaque jour compte), SHEX (sans dimanches ni jours fériés) ou SSHEX (sans samedis non plus). Les jours fériés sont ceux du pays du port. Un jour exclu ne compte pas, même si l'on a travaillé. Les jours comptent dans le fuseau horaire du port (voir [Ports](havens.md)), sinon dans celui du site.
 - **Début** : le NOR (remis ou accepté) plus le délai en heures, ou un moment que vous saisissez. La fin est la dernière fin de chargement ou de déchargement de la chronologie.
 - Les **interruptions** de la chronologie ne comptent pas ; cochez celles qui comptent quand même.
 - **Une fois en surestaries, toujours en surestaries** : après le laytime, chaque jour exclu compte en surestaries. Vous pouvez le décocher.

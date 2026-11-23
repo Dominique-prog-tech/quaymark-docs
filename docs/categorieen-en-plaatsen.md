@@ -2,13 +2,13 @@
 description: "De keuzes bij een vaststelling en de operationele status van een dossier, voor uw bureau."
 ---
 
-# Categorieën en plaatsen
+# Keuzelijsten
 
 De keuzes bij een vaststelling en de operationele status van een dossier, voor uw bureau.
 
 ## Het scherm openen
 
-Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Categorieën en plaatsen**.
+Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Keuzelijsten**.
 
 ## Velden en functies
 
@@ -18,7 +18,7 @@ Klik onderaan het menu op **Platformbeheer** en dan op de tegel **Categorieën e
 - Elke waarde heeft een **code**, een volgorde, een naam in de vier talen en of ze actief is. Een code die al gebruikt is, ligt vast: in een vaststelling (categorie en plaats) of op een dossier (operationele status). Het veld **Code** staat dan uit, met de reden eronder; de naam, de volgorde en Actief kunt u altijd aanpassen. Zet een waarde die u niet meer gebruikt op **niet actief**.
 - Dubbelklik op een rij om ze te bewerken; **Nieuwe waarde** voegt er een toe.
 
-![De lijsten Categorieën van gebreken en Plaatsen aan boord](images/categorieen-en-plaatsen.png "Categorieën en plaatsen")
+![De lijsten Categorieën van gebreken en Plaatsen aan boord](images/categorieen-en-plaatsen.png "Keuzelijsten")
 
 ## Zie ook
 

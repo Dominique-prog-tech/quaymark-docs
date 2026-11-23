@@ -46,4 +46,4 @@ Het tabblad **Historiek** toont wie wat wijzigde.
 ## Zie ook
 
 - [Sjablonen](sjablonen.md)
-- [Categorieën en plaatsen](categorieen-en-plaatsen.md)
+- [Keuzelijsten](categorieen-en-plaatsen.md)

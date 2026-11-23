@@ -18,7 +18,7 @@ Tippen Sie auf **Neue Feststellung** unten in der Akte oder auf **Hinzufügen** 
 4. Fügen Sie unter **Fotos** Fotos hinzu: **Foto** öffnet die Kamera, **Aus der Mediathek** wählt ein Foto, das schon auf dem Gerät ist.
 5. Tippen Sie auf **Speichern**.
 
-Ort, Kategorie und Beschreibung sind Pflicht. Die Auswahl für Ort und Kategorie kommt von Ihrem Büro. → [Kategorien und Orte](../categorieen-en-plaatsen.md)
+Ort, Kategorie und Beschreibung sind Pflicht. Die Auswahl für Ort und Kategorie kommt von Ihrem Büro. → [Auswahllisten](../categorieen-en-plaatsen.md)
 
 Die Feststellung steht sofort auf der Karte, mit einer Wolke, solange sie nicht gesendet ist. Die Fotos werden nach ihrer Feststellung gesendet.
 

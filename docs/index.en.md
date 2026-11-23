@@ -77,6 +77,6 @@ on-site findings with evidential value, letters, certificates and the evidence p
 
     Survey types, offices, ports, standard folders, categories and locations.
 
-    [Survey types](soorten-survey.md) · [Offices](vestigingen.md) · [Ports](havens.md) · [Standard folders](standaardmappen.md) · [Categories and locations](categorieen-en-plaatsen.md)
+    [Survey types](soorten-survey.md) · [Offices](vestigingen.md) · [Ports](havens.md) · [Standard folders](standaardmappen.md) · [Choice lists](categorieen-en-plaatsen.md)
 
 </div>

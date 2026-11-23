@@ -18,7 +18,7 @@ Tik op **Nieuwe vaststelling** onderaan het dossier, of op **Toevoegen** op de k
 4. Voeg foto's toe onder **Foto's**: **Foto** opent de camera, **Uit bibliotheek** kiest een foto die al op het toestel staat.
 5. Tik op **Bewaren**.
 
-Plaats, categorie en omschrijving zijn verplicht. De keuzes van plaats en categorie komen van uw bureau. → [Categorieën en plaatsen](../categorieen-en-plaatsen.md)
+Plaats, categorie en omschrijving zijn verplicht. De keuzes van plaats en categorie komen van uw bureau. → [Keuzelijsten](../categorieen-en-plaatsen.md)
 
 De vaststelling staat meteen op de kaart, met een wolk zolang ze niet verstuurd is. De foto's vertrekken na hun vaststelling.
 

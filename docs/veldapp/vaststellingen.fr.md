@@ -18,7 +18,7 @@ Touchez **Nouvelle constatation** en bas du dossier, ou **Ajouter** sur la carte
 4. Ajoutez des photos sous **Photos** : **Photo** ouvre l'appareil photo, **De la photothèque** choisit une photo déjà sur l'appareil.
 5. Touchez **Enregistrer**.
 
-L'emplacement, la catégorie et la description sont obligatoires. Les choix d'emplacement et de catégorie viennent de votre bureau. → [Catégories et emplacements](../categorieen-en-plaatsen.md)
+L'emplacement, la catégorie et la description sont obligatoires. Les choix d'emplacement et de catégorie viennent de votre bureau. → [Listes de choix](../categorieen-en-plaatsen.md)
 
 La constatation apparaît aussitôt sur la carte, avec un nuage tant qu'elle n'est pas envoyée. Les photos partent après leur constatation.
 

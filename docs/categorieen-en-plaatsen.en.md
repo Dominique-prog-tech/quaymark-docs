@@ -2,13 +2,13 @@
 description: "The choices for a finding and the operational status of a file, for your office."
 ---
 
-# Categories and locations
+# Choice lists
 
 The choices for a finding and the operational status of a file, for your office.
 
 ## Opening the screen
 
-At the bottom of the menu, click **Administration**, then the **Categories and locations** tile.
+At the bottom of the menu, click **Administration**, then the **Choice lists** tile.
 
 ## Fields and functions
 
@@ -18,7 +18,7 @@ At the bottom of the menu, click **Administration**, then the **Categories and l
 - Each value has a **code**, an order, a name in the four languages and whether it is active. A code already in use is fixed: in a finding (category and location) or on a file (operational status). The **Code** field is then switched off, with the reason below it; the name, the order and Active can always be changed. Set a value you no longer use to **inactive**.
 - Double-click a row to edit it; **New value** adds one.
 
-![The Defect categories and Locations on board lists](images/categorieen-en-plaatsen-en.png "Categories and locations")
+![The Defect categories and Locations on board lists](images/categorieen-en-plaatsen-en.png "Choice lists")
 
 ## See also
 

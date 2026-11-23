@@ -44,7 +44,7 @@ Eine **abgeschlossene** oder **stornierte** Akte ist festgelegt. Ein Kasten oben
 ### Arbeitsanweisung und Betriebsstatus
 
 - Hat die Besichtigungsart eine **Arbeitsanweisung**, steht sie oben in der Akte, mit den Daten der Akte ausgefüllt (Schiff, Hafen, Terminal …). Was die Akte nicht weiß, steht in eckigen Klammern. → [Besichtigungsarten](soorten-survey.md#besichtigungsart)
-- **Betriebsstatus**: wo der Auftrag gerade steht, neben dem Arbeitsschritt: zum Beispiel wartet auf das Schiff, Laden, Löschen oder angehalten. Er steht als Badge oben, hinter dem Status in der Liste („Bericht · Laden“) und in der Planung. Die Liste verwalten Sie unter [Kategorien und Orte](categorieen-en-plaatsen.md).
+- **Betriebsstatus**: wo der Auftrag gerade steht, neben dem Arbeitsschritt: zum Beispiel wartet auf das Schiff, Laden, Löschen oder angehalten. Er steht als Badge oben, hinter dem Status in der Liste („Bericht · Laden“) und in der Planung. Die Liste verwalten Sie unter [Auswahllisten](categorieen-en-plaatsen.md).
 
 ### Frist bis zum Bericht
 
@@ -59,7 +59,7 @@ Der **Sachverständige** der Akte erhält am letzten Arbeitstag davor und nach A
 
 ### Feststellungen
 
-Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** unter **⋯** am Ende der Zeile und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat.
+Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** unter **⋯** am Ende der Zeile und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat. Ging die Uhr des Geräts vor, zählt die Empfangszeit, und die Zeit des Geräts bleibt gespeichert: Das Label **Uhr des Geräts ging vor** sagt es, mit beiden Zeiten. Das gilt auch für Fotos und die anderen Stücke aus der Feld-App.
 
 Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Feld-App. Was schon da ist, bleibt sichtbar. Auch die Berechnungen (Draft Survey, Eichaufnahme, Bunker Survey, Zeitleiste und Laytime) können dann nur noch gelesen werden.
 
@@ -289,6 +289,7 @@ Bei einer Besichtigungsart mit angehaktem **Draft Survey** (siehe [Besichtigungs
 
 Ein Klick auf **Anfangsmessung** oder **Endmessung** im Tabellenkopf öffnet die Seite dieser Messung. Geben Sie ein:
 
+- das **Datum der Messung** (leer = der geplante Tag): Das Messgerät dieser Messung, zum Beispiel das Hydrometer, wird an diesem Tag geprüft;
 - die sechs **Tiefgänge**: vorn, Mitte und achtern, an Backbord und Steuerbord;
 - das **Schiff**: die LBP und die Abstände der Tiefgangsmarken zu den Loten (vorn und Mitte positiv, wenn die Marke hinter dem Lot oder Mittschiffs liegt, achtern positiv, wenn die Marke vor dem hinteren Lot liegt);
 - das **Wasser**: die Dichte des Hafenwassers (Aräometer) und die Dichte, für die die Tabellen gelten (meist 1,025);
@@ -353,7 +354,7 @@ Oben berechnen die Kacheln der Zusammenfassung: die Zeit von der NOR bis zum Beg
 Die Registerkarte **Laytime** berechnet Liegezeit und Liegegeld aus dem Zeitablauf, nach den Bedingungen der Charterpartie:
 
 - **Erlaubte Zeit**: eine feste Stundenzahl oder eine Menge geteilt durch eine Rate pro Tag. Hat die Akte einen Draft Survey, schlägt Quaymark die Menge vor.
-- **Zählweise**: SHINC (jeder Tag zählt), SHEX (ohne Sonn- und Feiertage) oder SSHEX (auch ohne Samstage). Die Feiertage sind die des Landes des Hafens. Ein ausgenommener Tag zählt nicht, auch wenn gearbeitet wurde.
+- **Zählweise**: SHINC (jeder Tag zählt), SHEX (ohne Sonn- und Feiertage) oder SSHEX (auch ohne Samstage). Die Feiertage sind die des Landes des Hafens. Ein ausgenommener Tag zählt nicht, auch wenn gearbeitet wurde. Die Tage zählen in der Zeitzone des Hafens (siehe [Häfen](havens.md)), sonst in der der Niederlassung.
 - **Beginn**: die NOR (übergeben oder angenommen) plus die Wartezeit in Stunden, oder ein Zeitpunkt, den Sie selbst eingeben. Das Ende ist das letzte Ende des Ladens oder Löschens im Zeitablauf.
 - **Unterbrechungen** aus dem Zeitablauf zählen nicht; markieren Sie, was trotzdem zählt.
 - **Einmal Liegegeld, immer Liegegeld**: Nach der Liegezeit zählt jeder ausgenommene Tag als Liegegeld. Sie können es abwählen.

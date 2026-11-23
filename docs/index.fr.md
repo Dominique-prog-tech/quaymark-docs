@@ -77,6 +77,6 @@ constatations sur place à valeur probante, lettres, certificats et dossier de p
 
     Types d'expertise, sites, ports, répertoires standard, catégories et emplacements.
 
-    [Types d'expertise](soorten-survey.md) · [Sites](vestigingen.md) · [Ports](havens.md) · [Répertoires standard](standaardmappen.md) · [Catégories et emplacements](categorieen-en-plaatsen.md)
+    [Types d'expertise](soorten-survey.md) · [Sites](vestigingen.md) · [Ports](havens.md) · [Répertoires standard](standaardmappen.md) · [Listes de choix](categorieen-en-plaatsen.md)
 
 </div>

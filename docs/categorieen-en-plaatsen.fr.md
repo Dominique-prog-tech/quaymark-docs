@@ -2,13 +2,13 @@
 description: "Les choix d'une constatation et le statut opérationnel d'un dossier, pour votre bureau."
 ---
 
-# Catégories et emplacements
+# Listes de choix
 
 Les choix d'une constatation et le statut opérationnel d'un dossier, pour votre bureau.
 
 ## Ouvrir l'écran
 
-En bas du menu, cliquez sur **Administration**, puis sur la tuile **Catégories et lieux**.
+En bas du menu, cliquez sur **Administration**, puis sur la tuile **Listes de choix**.
 
 ## Champs et fonctions
 
@@ -18,7 +18,7 @@ En bas du menu, cliquez sur **Administration**, puis sur la tuile **Catégories 
 - Chaque valeur a un **code**, un ordre, un nom dans les quatre langues et un statut actif ou non. Un code déjà utilisé est fixé : dans une constatation (catégorie et emplacement) ou sur un dossier (statut opérationnel). Le champ **Code** est alors désactivé, avec la raison en dessous ; le nom, l'ordre et Actif restent toujours modifiables. Passez une valeur que vous n'utilisez plus en **non active**.
 - Double-cliquez sur une ligne pour la modifier ; **Nouvelle valeur** en ajoute une.
 
-![Les listes Catégories de défauts et Emplacements à bord](images/categorieen-en-plaatsen-fr.png "Catégories et emplacements")
+![Les listes Catégories de défauts et Emplacements à bord](images/categorieen-en-plaatsen-fr.png "Listes de choix")
 
 ## Voir aussi
 

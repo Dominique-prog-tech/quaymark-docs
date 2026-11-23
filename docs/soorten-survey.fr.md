@@ -46,4 +46,4 @@ L'onglet **Historique** montre qui a modifié quoi.
 ## Voir aussi
 
 - [Modèles](sjablonen.md)
-- [Catégories et emplacements](categorieen-en-plaatsen.md)
+- [Listes de choix](categorieen-en-plaatsen.md)

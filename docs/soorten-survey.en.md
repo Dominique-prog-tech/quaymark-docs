@@ -46,4 +46,4 @@ The **History** tab shows who changed what.
 ## See also
 
 - [Templates](sjablonen.md)
-- [Categories and locations](categorieen-en-plaatsen.md)
+- [Choice lists](categorieen-en-plaatsen.md)

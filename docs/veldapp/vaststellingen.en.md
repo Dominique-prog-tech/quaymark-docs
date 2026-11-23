@@ -18,7 +18,7 @@ Tap **New finding** at the bottom of the file, or **Add** on the **Findings** ca
 4. Add photos under **Photos**: **Photo** opens the camera, **From library** picks a photo that is already on the device.
 5. Tap **Save**.
 
-Location, category and description are required. The choices of location and category come from your firm. → [Categories and locations](../categorieen-en-plaatsen.md)
+Location, category and description are required. The choices of location and category come from your firm. → [Choice lists](../categorieen-en-plaatsen.md)
 
 The finding appears on the card straight away, with a cloud as long as it has not been sent. The photos are sent after their finding.
 

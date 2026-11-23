@@ -77,6 +77,6 @@ uitgegeven rapport: dossiers, vaststellingen ter plaatse met bewijswaarde, briev
 
     Soorten survey, vestigingen, havens, standaardmappen, categorieën en plaatsen.
 
-    [Soorten survey](soorten-survey.md) · [Vestigingen](vestigingen.md) · [Havens](havens.md) · [Standaardmappen](standaardmappen.md) · [Categorieën en plaatsen](categorieen-en-plaatsen.md)
+    [Soorten survey](soorten-survey.md) · [Vestigingen](vestigingen.md) · [Havens](havens.md) · [Standaardmappen](standaardmappen.md) · [Keuzelijsten](categorieen-en-plaatsen.md)
 
 </div>

@@ -75,8 +75,8 @@ Akten, Feststellungen vor Ort mit Beweiskraft, Schreiben, Bescheinigungen und da
 
     ---
 
-    Besichtigungsarten, Niederlassungen, Häfen, Standardordner, Kategorien und Orte.
+    Besichtigungsarten, Niederlassungen, Häfen, Standardordner, Auswahllisten.
 
-    [Besichtigungsarten](soorten-survey.md) · [Niederlassungen](vestigingen.md) · [Häfen](havens.md) · [Standardordner](standaardmappen.md) · [Kategorien und Orte](categorieen-en-plaatsen.md)
+    [Besichtigungsarten](soorten-survey.md) · [Niederlassungen](vestigingen.md) · [Häfen](havens.md) · [Standardordner](standaardmappen.md) · [Auswahllisten](categorieen-en-plaatsen.md)
 
 </div>

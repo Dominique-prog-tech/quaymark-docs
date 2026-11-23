@@ -44,7 +44,7 @@ The **Journal**, **Time and expenses**, the **claims** on the Damage tab and the
 ### Work instructions and operational status
 
 - If the survey type has **work instructions**, they appear at the top of the file, with the file's data filled in (ship, port, terminal …). What the file does not know appears between square brackets. → [Survey types](soorten-survey.md#survey-type)
-- **Operational status**: where the assignment stands now, next to the work step: for example awaiting vessel, loading, discharging or on hold. It appears as a badge at the top, after the status in the list ("Reporting · Loading") and in the planning. You manage the list under [Categories and locations](categorieen-en-plaatsen.md).
+- **Operational status**: where the assignment stands now, next to the work step: for example awaiting vessel, loading, discharging or on hold. It appears as a badge at the top, after the status in the list ("Reporting · Loading") and in the planning. You manage the list under [Choice lists](categorieen-en-plaatsen.md).
 
 ### Report deadline
 
@@ -59,7 +59,7 @@ The file's **surveyor** gets a notification on the bell on the last working day 
 
 ### Findings
 
-A **finding** is added, never changed or deleted. You correct a mistake with **Correct** under **⋯** at the end of the row, with a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken.
+A **finding** is added, never changed or deleted. You correct a mistake with **Correct** under **⋯** at the end of the row, with a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken. If the device clock was ahead, the time of receipt counts and the device time is kept: the label **device clock was ahead** says so, with both times. This also applies to photos and the other items from the field app.
 
 A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible. The calculations (draft survey, gauging on draught scales, bunker survey, timeline and laytime) can then only be viewed.
 
@@ -289,6 +289,7 @@ For a survey type with **Draft survey** ticked (see [Survey types](soorten-surve
 
 Clicking **Initial survey** or **Final survey** in the table header opens the page of that measurement. Enter:
 
+- the **Date of the reading** (empty = the planned day): the measuring instrument of that reading, for example the hydrometer, is checked on that day;
 - the six **drafts**: forward, midships and aft, port and starboard;
 - the **vessel**: the LBP and the distances of the draft marks from the perpendiculars (forward and midships positive when the mark is aft of the perpendicular or midships, aft positive when the mark is forward of the aft perpendicular);
 - the **water**: the density of the dock water (hydrometer) and the density the tables are made for (usually 1.025);
@@ -353,7 +354,7 @@ At the top, the summary tiles calculate: the time from NOR to commencement, the 
 The **Laytime** tab calculates laytime and demurrage from the timeline, under the terms of the charter party:
 
 - **Allowed time**: a fixed number of hours, or a quantity divided by a rate per day. If the file has a draft survey, Quaymark proposes the quantity.
-- **Counting**: SHINC (every day counts), SHEX (Sundays and holidays excepted) or SSHEX (Saturdays excepted too). The holidays are those of the port's country. An excepted day does not count, even if work was done.
+- **Counting**: SHINC (every day counts), SHEX (Sundays and holidays excepted) or SSHEX (Saturdays excepted too). The holidays are those of the port's country. An excepted day does not count, even if work was done. The days count in the time zone of the port (see [Ports](havens.md)), otherwise in that of the office.
 - **Commencement**: the NOR (tendered or accepted) plus the notice time in hours, or a time you enter yourself. The end is the last end of loading or discharging in the timeline.
 - **Interruptions** from the timeline do not count; tick those that count after all.
 - **Once on demurrage, always on demurrage**: after laytime, every excepted day counts as demurrage. You can untick it.

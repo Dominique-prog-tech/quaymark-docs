@@ -44,7 +44,7 @@ Het **Journaal**, **Tijd en kosten**, de **claims** op het tabblad Schade en het
 ### Werkinstructie en operationele status
 
 - Heeft het soort survey een **werkinstructie**, dan staat ze bovenaan het dossier, met de gegevens van het dossier ingevuld (schip, haven, terminal …). Wat het dossier niet weet, staat tussen rechte haken. → [Soorten survey](soorten-survey.md#soort-survey)
-- **Operationele status**: waar de opdracht nu staat, naast de stap van het werk: bijvoorbeeld wacht op het schip, laden, lossen of on hold. Ze staat als badge bovenaan, achter de status in de lijst ("Rapportage · Laden") en in de planning. De lijst beheert u onder [Categorieën en plaatsen](categorieen-en-plaatsen.md).
+- **Operationele status**: waar de opdracht nu staat, naast de stap van het werk: bijvoorbeeld wacht op het schip, laden, lossen of on hold. Ze staat als badge bovenaan, achter de status in de lijst ("Rapportage · Laden") en in de planning. De lijst beheert u onder [Keuzelijsten](categorieen-en-plaatsen.md).
 
 ### Termijn tot het rapport
 
@@ -59,7 +59,7 @@ De **surveyor** van het dossier krijgt een melding op het belletje op de laatste
 
 ### Vaststellingen
 
-Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** onder **⋯** achteraan de rij, met een reden: de oude versie blijft doorgestreept staan. Haar foto's gaan mee naar de nieuwe versie, op het scherm en in het rapport. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde.
+Een **vaststelling** wordt toegevoegd, nooit gewijzigd of verwijderd. Een fout zet u recht met **Rechtzetten** onder **⋯** achteraan de rij, met een reden: de oude versie blijft doorgestreept staan. Haar foto's gaan mee naar de nieuwe versie, op het scherm en in het rapport. Een foto toont bij aanwijzen het tijdstip, de GPS-positie en de vingerafdruk (SHA-256) die het toestel bij de opname vastlegde. Liep de klok van het toestel voor, dan telt de ontvangsttijd en blijft de tijd van het toestel bewaard: het label **klok van het toestel liep voor** zegt het, met beide tijden. Dat geldt ook voor foto's en de andere stukken uit de veldapp.
 
 Bij een **afgesloten** of **geannuleerd** dossier komt er geen veldwerk meer bij: geen vaststellingen, checklistantwoorden, foto's of handtekeningen, ook niet vanuit de veldapp. Wat er al is, blijft zichtbaar. Ook de berekeningen (draft survey, meting op ijkschalen, bunker survey, tijdlijn en laytime) zijn dan enkel nog te lezen.
 
@@ -289,6 +289,7 @@ Bij een soort survey met het vinkje **Draft survey** (zie [Soorten survey](soort
 
 Een klik op **Beginmeting** of **Eindmeting** in de kop van de tabel opent de pagina van die meting. Vul in:
 
+- de **Datum van de meting** (leeg = de geplande dag): het meettoestel van die meting, bijvoorbeeld de hydrometer, wordt op die dag getoetst;
 - de zes **diepgangen**: voor, midden en achter, aan bakboord en stuurboord;
 - het **schip**: de LBP en de afstanden van de diepgangmerken tot de loodlijnen (voor en midden positief als het merk achter de loodlijn of midscheeps staat, achter positief als het merk voor de achterloodlijn staat);
 - het **water**: de densiteit van het dokwater (hydrometer) en de densiteit waarvoor de tabellen gelden (meestal 1,025);
@@ -353,7 +354,7 @@ Bovenaan rekenen de tegels van de samenvatting: de tijd van de NOR tot de start,
 Het tabblad **Laytime** rekent laytime en demurrage uit de tijdlijn, volgens de voorwaarden van de charter party:
 
 - **Toegestane tijd**: een vast aantal uren, of een hoeveelheid gedeeld door een tempo per dag. Heeft het dossier een draft survey, dan stelt Quaymark de hoeveelheid voor.
-- **Telwijze**: SHINC (elke dag telt), SHEX (zon- en feestdagen niet) of SSHEX (ook zaterdag niet). De feestdagen zijn die van het land van de haven. Een uitgesloten dag telt niet, ook al werd er gewerkt.
+- **Telwijze**: SHINC (elke dag telt), SHEX (zon- en feestdagen niet) of SSHEX (ook zaterdag niet). De feestdagen zijn die van het land van de haven. Een uitgesloten dag telt niet, ook al werd er gewerkt. De dagen tellen in de tijdzone van de haven (zie [Havens](havens.md)), anders in die van de vestiging.
 - **Aanvang**: de NOR (ingediend of aanvaard) plus de wachttijd in uren, of een moment dat u zelf invult. Het einde is het laatste einde van laden of lossen in de tijdlijn.
 - **Onderbrekingen** uit de tijdlijn tellen niet; vink aan wat toch meetelt.
 - **Eens in demurrage, altijd in demurrage**: na de laytime telt elke uitgesloten dag mee als demurrage. Uitvinken kan.

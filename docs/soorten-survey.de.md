@@ -46,4 +46,4 @@ Die Registerkarte **Verlauf** zeigt, wer was geändert hat.
 ## Siehe auch
 
 - [Vorlagen](sjablonen.md)
-- [Kategorien und Orte](categorieen-en-plaatsen.md)
+- [Auswahllisten](categorieen-en-plaatsen.md)
