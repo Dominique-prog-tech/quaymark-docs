@@ -13,7 +13,7 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 ## La liste
 
 - Le filtre **Statut** dans la barre d'outils affiche par défaut les dossiers **ouverts** ; une tuile de statut du tableau de bord ouvre la liste avec ce statut. Choisissez **Tous** pour voir aussi les dossiers clôturés et annulés, ou un seul statut.
-- Le filtre **Site** (seulement pour un bureau de plus d'un site) et le filtre **Expert** limitent encore la liste. **Mes dossiers** affiche les dossiers dont vous êtes l'expert ; vous pouvez aussi choisir un collègue. Les choix figurent dans l'adresse de la page : le bouton Retour de votre navigateur vous ramène à la même liste, et un favori les mémorise.
+- Le filtre **Site** (seulement pour un bureau de plus d'un site) et le filtre **Expert** limitent encore la liste. **Mes dossiers** affiche les dossiers dont vous êtes l'expert ; vous pouvez aussi choisir un collègue. Si vous ouvrez un dossier, le bouton **Dossiers** en haut de la fiche vous ramène à la même liste, avec les mêmes choix (le bouton Retour de votre navigateur aussi). Les choix figurent dans l'adresse de la page : un favori les mémorise.
 - La colonne **Référence donneur d'ordre** affiche le numéro que le donneur d'ordre a donné à la mission ; le champ de recherche trouve aussi un dossier par ce numéro.
 - Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, expert, planning, statut et les codes scannés (qui ne sont pas affichés en colonne) (un numéro de conteneur se trouve aussi avec des espaces).
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.

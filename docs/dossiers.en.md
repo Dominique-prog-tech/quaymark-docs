@@ -13,7 +13,7 @@ In the menu on the left, click **Files**.
 ## The list
 
 - The **Status** filter in the toolbar shows the **open** files by default; a status tile on the dashboard opens the list with that status. Choose **All** to include closed and cancelled files as well, or pick one status.
-- The **Office** filter (only for an office with more than one branch) and the **Surveyor** filter narrow the list further. **My files** shows the files on which you are the surveyor; you can also pick a colleague. The choices are part of the page address: your browser's back button brings you to the same list, and a bookmark remembers them.
+- The **Office** filter (only for an office with more than one branch) and the **Surveyor** filter narrow the list further. **My files** shows the files on which you are the surveyor; you can also pick a colleague. When you open a file, the **Files** button at the top of the record brings you back to the same list, with the same choices (so does your browser's back button). The choices are part of the page address: a bookmark remembers them.
 - The **Principal's reference** column shows the number the principal gave the instruction; the search box also finds a file by it.
 - The **search box** searches all columns: number, survey type, vessel, principal, port, surveyor, planning, status and the scanned codes (not shown as a column) (a container number is also found with spaces).
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.

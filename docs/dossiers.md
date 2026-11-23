@@ -13,7 +13,7 @@ Klik in het menu links op **Dossiers**.
 ## De lijst
 
 - Het filter **Status** in de werkbalk toont standaard de **open** dossiers; een statustegel op het dashboard opent de lijst met die status. Kies **Alle** om ook afgesloten en geannuleerde dossiers te zien, of één status.
-- Het filter **Vestiging** (enkel bij een bureau met meer dan één vestiging) en het filter **Surveyor** beperken de lijst verder. **Mijn dossiers** toont de dossiers waarvan u de surveyor bent; u kunt ook een collega kiezen. De keuzes staan in het adres van de pagina: de terugknop van uw browser brengt u naar dezelfde lijst, en een bladwijzer onthoudt ze.
+- Het filter **Vestiging** (enkel bij een bureau met meer dan één vestiging) en het filter **Surveyor** beperken de lijst verder. **Mijn dossiers** toont de dossiers waarvan u de surveyor bent; u kunt ook een collega kiezen. Opent u een dossier, dan brengt de knop **Dossiers** bovenaan de fiche u terug naar dezelfde lijst, met dezelfde keuzes (de terugknop van uw browser ook). De keuzes staan in het adres van de pagina: een bladwijzer onthoudt ze.
 - De kolom **Referentie opdrachtgever** toont het nummer dat de opdrachtgever aan de opdracht gaf; het zoekvak vindt een dossier ook daarop.
 - Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, surveyor, planning, status en de gescande codes (die niet als kolom getoond worden) (een containernummer vindt u ook met spaties).
 - Dubbelklik op een rij om het **dossier** te openen; met het pijltje vooraan de rij opent het in een nieuw tabblad. **Nieuw dossier** maakt er een aan.
