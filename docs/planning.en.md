@@ -34,7 +34,7 @@ The planning shows the hours from 06:00 to 20:00. If the days shown contain some
 
 ## Absences
 
-**Add absence** records leave, sick leave, training or another absence, for a user, from one day up to and including another. It appears at the top of that user's column. Click it and choose **Edit absence** to change or delete it; a deleted absence goes to the recycle bin.
+**Add absence** records leave, sick leave, training or another absence, for a user, from one day up to and including another. It appears at the top of that user's column. Click it and choose **Edit absence** to change or delete it; a deleted absence goes to the recycle bin. Sick leave is health data: colleagues who do not plan only see **Absent**, without the note. The user themselves and those who plan see the type and the note.
 
 ## Public holidays
 

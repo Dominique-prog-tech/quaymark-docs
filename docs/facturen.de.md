@@ -62,6 +62,12 @@ Klicken Sie auf **Ausstellen** und bestätigen Sie. Die Rechnung erhält dann:
 
 Die PDF wird mit ihrem Fingerabdruck (SHA-256) festgelegt. Danach kann die Rechnung nicht mehr geändert oder gelöscht werden. Eine Rechnung darf nicht in der Zukunft liegen und nicht vor der zuletzt ausgestellten Rechnung derselben Niederlassung.
 
+## Per E-Mail senden
+
+Eine ausgestellte Rechnung oder Gutschrift senden Sie mit **Per E-Mail senden** im Block **Per E-Mail**. Die Adresse ist schon ausgefüllt: die des Kunden auf der Rechnung; Sie können sie ändern. Das PDF wird angehängt, mit einem kurzen Text in der Sprache der Rechnung: Nummer und Datum, bei einer Rechnung auch Betrag, Fälligkeit und Verwendungszweck. Jede E-Mail bleibt im Block stehen, mit der Adresse und ihrem Stand.
+
+Eine Testversion mailt nicht nach außen; das Fenster sagt es dann.
+
 ## Über Peppol senden
 
 Eine ausgestellte Rechnung oder Gutschrift können Sie mit **Über Peppol senden** elektronisch an die Buchhaltung des Kunden schicken. Quaymark prüft zuerst, ob der Kunde im Peppol-Netzwerk ist. Dafür ist seine USt-IdNr. nötig: Tragen Sie sie in seiner [Beziehungskarte](relaties.md) ein.
@@ -72,7 +78,7 @@ Jeder Versuch steht im Block **Peppol** der Rechnung:
 - **Abgelehnt**: Der Grund steht dabei. Beheben Sie ihn und senden Sie erneut.
 - **Unbekannt**: Es kam keine klare Antwort. Die Rechnung ist vielleicht verschickt. Fragen Sie den Status ab oder senden Sie einfach erneut: Dieselbe Rechnung geht nie zweimal raus.
 
-Ist der Kunde nicht bei Peppol, stellen Sie die PDF auf anderem Weg zu.
+Ist der Kunde nicht bei Peppol, senden Sie die Rechnung [per E-Mail](#per-e-mail-senden).
 
 ## Fremdwährungen
 
@@ -81,7 +87,7 @@ Eine Rechnung erhält die Währung der [Akte](dossiers.md). Ist das nicht der Eu
 - rechnet der **Vorschlag** die [Tarife](tarieven.md), die in Euro geführt werden, zum Referenzkurs der Europäischen Zentralbank (EZB) in die Währung der Akte um. Quaymark nennt den verwendeten Kurs. Kosten erfassen Sie in der Währung der Akte: Sie werden nicht umgerechnet;
 - legt Quaymark beim **Ausstellen** den Kurs des Rechnungsdatums fest: den letzten, den die EZB an diesem Tag oder davor veröffentlicht hat. Auf der Rechnung steht der **Gegenwert in Euro**: netto, die USt. und brutto, mit dem Kurs und seinem Datum. Kurs und Gegenwert stehen auch auf der Rechnung in Quaymark;
 - zählt der **Umsatz** auf der Startseite in Euro, zum Kurs jeder Rechnung;
-- kann **Peppol** die Rechnung noch nicht senden: Der Block **Peppol** sagt das sofort, ohne Schaltfläche. Übermitteln Sie das PDF auf anderem Weg.
+- kann **Peppol** die Rechnung noch nicht senden: Der Block **Peppol** sagt das sofort, ohne Schaltfläche. Senden Sie die Rechnung dann [per E-Mail](#per-e-mail-senden).
 
 Ohne Kurs (der EZB-Kurs ist vorübergehend nicht verfügbar) stellt Quaymark die Rechnung nicht aus und sagt es. Versuchen Sie es später erneut: Quaymark rechnet nie mit einem geschätzten oder alten Kurs. Eine Rechnung in Euro ist nicht betroffen.
 

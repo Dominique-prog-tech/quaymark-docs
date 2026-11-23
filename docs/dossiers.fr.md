@@ -13,6 +13,8 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 ## La liste
 
 - Le filtre **Statut** dans la barre d'outils affiche par défaut les dossiers **ouverts** ; une tuile de statut du tableau de bord ouvre la liste avec ce statut. Choisissez **Tous** pour voir aussi les dossiers clôturés et annulés, ou un seul statut.
+- Le filtre **Site** (seulement pour un bureau de plus d'un site) et le filtre **Expert** limitent encore la liste. **Mes dossiers** affiche les dossiers dont vous êtes l'expert ; vous pouvez aussi choisir un collègue. Les choix figurent dans l'adresse de la page : le bouton Retour de votre navigateur vous ramène à la même liste, et un favori les mémorise.
+- La colonne **Référence donneur d'ordre** affiche le numéro que le donneur d'ordre a donné à la mission ; le champ de recherche trouve aussi un dossier par ce numéro.
 - Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, expert, planning, statut et les codes scannés (qui ne sont pas affichés en colonne) (un numéro de conteneur se trouve aussi avec des espaces).
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.
 - Le bouton d'export télécharge la liste sous forme de fichier.
@@ -101,7 +103,7 @@ Les photos d'un point figurent en dessous, y compris celles d'une réponse préc
 
 ### Rapport
 
-L'onglet **Rapport** comporte quatre sous-onglets : **Texte** (les rubriques), **Émission** (contrôle, quatre yeux, versions et signature), **Lettres et certificats** et **Dossier de preuves**. Dans le sous-onglet **Texte**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. À côté, **Aperçu (PDF)** montre le rapport dans une fenêtre et **Rapport (Word)** le télécharge en fichier Word, chaque fois avec le texte enregistré. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
+L'onglet **Rapport** comporte quatre sous-onglets : **Texte** (les rubriques), **Émission** (contrôle, quatre yeux, versions et signature), **Lettres et certificats** et **Dossier de preuves**. Dans le sous-onglet **Texte**, vous rédigez le texte du rapport par rubrique, avec une mise en forme simple, et insérez les textes standard du bureau. **Enregistrer les rubriques** les enregistre. À côté, **Aperçu (PDF)** montre le rapport dans une fenêtre et **Rapport (Word)** le télécharge en fichier Word, chaque fois avec le texte enregistré. Chaque page de cet aperçu porte en diagonale **PROJET** (dans la langue du rapport) : il ne passe ainsi jamais pour un rapport émis, même si quelqu'un transmet une seule page. Si le modèle de rapport n'affiche pas une rubrique, l'onglet le signale.
 
 ![L'onglet Rapport avec Lettres et certificats, Dossier de preuves et les rubriques Introduction et Méthode](images/dossier-rapport-fr.png "L'onglet Rapport")
 
@@ -227,7 +229,7 @@ Pour un type d'expertise avec la case **Double contrôle** cochée (voir [Types 
 Deux éléments sont transmis pour rendre la proposition plus juste :
 
 - **Les photos de l'annexe photos**, avec leur numéro (40 au maximum). L'IA décrit uniquement ce qui est clairement visible et peut renvoyer à une photo, par exemple « (photo 3) ». Les photos masquées et les documents de bord ne sont pas transmis. Pour cela, l'administrateur doit aussi autoriser **Scans, photos et PDF** dans ADM One ; sinon la proposition est faite sans photos et l'onglet Rapport l'indique.
-- **Vos rapports précédents** du même type d'expertise : les rubriques des trois derniers rapports émis, uniquement comme exemple de style et de structure. L'IA n'en reprend aucun fait.
+- **Vos rapports précédents** du même type d'expertise et pour le même donneur d'ordre (sans donneur d'ordre : aucun) : les rubriques des trois derniers rapports émis, uniquement comme exemple de style et de structure. L'IA n'en reprend aucun fait.
 
 Sous le bouton figure ce sur quoi la proposition s'est appuyée. Votre propre texte dans les rubriques n'est pas transmis.
 
@@ -384,7 +386,7 @@ Le **Journal** d'un dossier a les onglets **Notes**, **Tâches**, **Pièces join
 
 ### Copier
 
-**Copier** crée un nouveau dossier avec la même mission (navire, donneur d'ordre, type, port), sans constatations, réponses ni données d'expertise, et le lie à ce dossier.
+**Copier** crée un nouveau dossier avec la même mission (navire, donneur d'ordre, type, port), sans constatations, réponses ni données d'expertise, et le lie à ce dossier. La **référence du donneur d'ordre** n'est pas reprise : chaque mission reçoit son propre numéro du donneur d'ordre.
 
 ### Bloquer juridiquement
 

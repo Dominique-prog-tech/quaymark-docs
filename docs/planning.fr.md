@@ -34,7 +34,7 @@ Le planning affiche les heures de 06:00 à 20:00. Si les jours affichés contien
 
 ## Absences
 
-**Ajouter une absence** enregistre un congé, une maladie, une formation ou une autre absence, pour un utilisateur, d'un jour jusqu'à un jour inclus. Elle figure en haut de la colonne de cet utilisateur. Cliquez dessus et choisissez **Modifier l'absence** pour la modifier ou la supprimer ; une absence supprimée se trouve dans la corbeille.
+**Ajouter une absence** enregistre un congé, une maladie, une formation ou une autre absence, pour un utilisateur, d'un jour jusqu'à un jour inclus. Elle figure en haut de la colonne de cet utilisateur. Cliquez dessus et choisissez **Modifier l'absence** pour la modifier ou la supprimer ; une absence supprimée se trouve dans la corbeille. Une maladie est une donnée de santé : les collègues qui ne planifient pas voient seulement **Absent**, sans remarque. L'utilisateur lui-même et ceux qui planifient voient le type et la remarque.
 
 ## Jours fériés
 

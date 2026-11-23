@@ -62,6 +62,12 @@ Click **Issue** and confirm. The invoice then gets:
 
 The PDF is recorded with its fingerprint (SHA-256). After that the invoice can no longer be changed or deleted. An invoice cannot be dated in the future, nor earlier than the last issued invoice of the same office.
 
+## Sending by email
+
+An issued invoice or credit note is emailed with **Send by email** in the **By email** block. The address is already filled in: the customer's address on the invoice; you can change it. The PDF goes along as an attachment, with a short text in the language of the invoice: the number and the date, and for an invoice the amount, the due date and the payment reference. Every email stays in the block, with the address and how far it got.
+
+A trial version does not email outside the office; the window then says so.
+
 ## Sending via Peppol
 
 An issued invoice or credit note can be sent electronically to the customer's accounting with **Send via Peppol**. Quaymark first checks that the customer is on the Peppol network. Their VAT number is needed for that: fill it in on their [relation record](relaties.md).
@@ -72,7 +78,7 @@ Every attempt is listed in the **Peppol** block of the invoice:
 - **Refused**: the reason is shown. Correct it and send again.
 - **Unknown**: no clear answer came back. The invoice may have been sent. Check the status, or simply send again: the same invoice is never sent twice.
 
-If the customer is not on Peppol, deliver the PDF another way.
+If the customer is not on Peppol, send the invoice [by email](#sending-by-email).
 
 ## Foreign currencies
 
@@ -81,7 +87,7 @@ An invoice takes the currency of the [file](dossiers.md). If that is not the eur
 - the **proposal** converts the [rates](tarieven.md), which are in euros, into the currency of the file, at the reference rate of the European Central Bank (ECB). Quaymark tells you which rate it used. Costs are entered in the currency of the file: they are not converted;
 - on **issuing**, Quaymark fixes the rate of the invoice date: the last one the ECB published on or before that day. The invoice states the **equivalent in euros**: excluding VAT, the VAT and including VAT, with the rate and its date. The rate and the equivalent also appear on the invoice in Quaymark;
 - the **revenue** on the home page counts in euros, at the rate of each invoice;
-- **Peppol** cannot send the invoice yet: the **Peppol** block says so straight away, without a button. Deliver the PDF another way.
+- **Peppol** cannot send the invoice yet: the **Peppol** block says so straight away, without a button. Send the invoice [by email](#sending-by-email) instead.
 
 Without a rate (the ECB rate is temporarily unavailable), Quaymark does not issue the invoice and says so. Try again later: Quaymark never calculates with an estimated or old rate. An invoice in euros is not affected.
 

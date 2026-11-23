@@ -13,6 +13,8 @@ Klicken Sie im Menü links auf **Akten**.
 ## Die Liste
 
 - Der Filter **Status** in der Symbolleiste zeigt standardmäßig die **offenen** Akten; eine Statuskachel auf der Übersicht öffnet die Liste mit diesem Status. Wählen Sie **Alle**, um auch abgeschlossene und stornierte Akten zu sehen, oder einen einzelnen Status.
+- Der Filter **Niederlassung** (nur bei einem Büro mit mehr als einer Niederlassung) und der Filter **Sachverständiger** schränken die Liste weiter ein. **Meine Akten** zeigt die Akten, bei denen Sie der Sachverständige sind; Sie können auch einen Kollegen wählen. Die Auswahl steht in der Adresse der Seite: Die Zurück-Taste Ihres Browsers bringt Sie zur selben Liste, und ein Lesezeichen merkt sie sich.
+- Die Spalte **Referenz Auftraggeber** zeigt die Nummer, die der Auftraggeber dem Auftrag gegeben hat; das Suchfeld findet eine Akte auch darüber.
 - Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Sachverständiger, Planung, Status und die gescannten Codes (die nicht als Spalte angezeigt werden) (eine Containernummer findet man auch mit Leerzeichen).
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
@@ -101,7 +103,7 @@ Die Fotos eines Punktes stehen darunter, auch die einer früheren Antwort, und s
 
 ### Bericht
 
-Die Registerkarte **Bericht** hat vier Unterregister: **Text** (die Abschnitte), **Ausgabe** (Prüfung, Vier-Augen, Versionen und Unterschrift), **Schreiben und Bescheinigungen** und **Beweispaket**. Im Unterregister **Text** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Daneben zeigt **Vorschau (PDF)** den Bericht in einem Fenster, und **Bericht (Word)** lädt ihn als Word-Datei herunter, jeweils mit dem gespeicherten Text. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
+Die Registerkarte **Bericht** hat vier Unterregister: **Text** (die Abschnitte), **Ausgabe** (Prüfung, Vier-Augen, Versionen und Unterschrift), **Schreiben und Bescheinigungen** und **Beweispaket**. Im Unterregister **Text** schreiben Sie den Text des Berichts je Abschnitt, mit einfacher Formatierung, und fügen Standardtexte des Büros ein. **Abschnitte speichern** speichert sie. Daneben zeigt **Vorschau (PDF)** den Bericht in einem Fenster, und **Bericht (Word)** lädt ihn als Word-Datei herunter, jeweils mit dem gespeicherten Text. Über jeder Seite dieser Vorschau steht schräg **ENTWURF** (in der Sprache des Berichts): So geht sie nie als ausgestellter Bericht durch, auch nicht, wenn jemand eine einzelne Seite weiterleitet. Zeigt die Berichtsvorlage einen Abschnitt nicht, sagt die Registerkarte das.
 
 ![Bericht mit Schreiben und Bescheinigungen, Beweispaket, Einleitung und Vorgehensweise](images/dossier-rapport-de.png "Die Registerkarte Bericht")
 
@@ -227,7 +229,7 @@ Bei einer Besichtigungsart mit angehaktem **Vier-Augen-Prinzip** (siehe [Besicht
 Zwei Dinge werden übermittelt, damit der Vorschlag genauer wird:
 
 - **Die Fotos der Fotoanlage**, mit ihrer Nummer (höchstens 40). Die KI beschreibt nur, was deutlich zu sehen ist, und darf auf ein Foto verweisen, zum Beispiel „(Foto 3)“. Ausgeblendete Fotos und Bordunterlagen werden nicht übermittelt. Dafür muss der Administrator in ADM One auch **Scans, Fotos und PDFs** erlauben; sonst entsteht der Vorschlag ohne Fotos, und die Registerkarte Bericht sagt das.
-- **Ihre früheren Berichte** derselben Besichtigungsart: die Abschnitte der letzten drei ausgestellten Berichte, nur als Beispiel für Stil und Aufbau. Die KI übernimmt daraus keine Fakten.
+- **Ihre früheren Berichte** derselben Besichtigungsart und für denselben Auftraggeber (ohne Auftraggeber: keine): die Abschnitte der letzten drei ausgestellten Berichte, nur als Beispiel für Stil und Aufbau. Die KI übernimmt daraus keine Fakten.
 
 Unter der Schaltfläche steht, worauf sich der Vorschlag stützte. Ihr eigener Text in den Abschnitten wird nicht übermittelt.
 
@@ -384,7 +386,7 @@ Das **Journal** einer Akte hat die Registerkarten **Notizen**, **Aufgaben**, **A
 
 ### Kopieren
 
-**Kopieren** legt eine neue Akte mit demselben Auftrag an (Schiff, Auftraggeber, Art, Hafen), ohne Feststellungen, Antworten und Besichtigungsdaten, und verknüpft sie mit dieser Akte.
+**Kopieren** legt eine neue Akte mit demselben Auftrag an (Schiff, Auftraggeber, Art, Hafen), ohne Feststellungen, Antworten und Besichtigungsdaten, und verknüpft sie mit dieser Akte. Die **Referenz des Auftraggebers** wird nicht übernommen: Jeder Auftrag erhält seine eigene Nummer vom Auftraggeber.
 
 ### Rechtlich sperren
 

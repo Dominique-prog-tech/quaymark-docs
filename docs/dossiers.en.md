@@ -13,6 +13,8 @@ In the menu on the left, click **Files**.
 ## The list
 
 - The **Status** filter in the toolbar shows the **open** files by default; a status tile on the dashboard opens the list with that status. Choose **All** to include closed and cancelled files as well, or pick one status.
+- The **Office** filter (only for an office with more than one branch) and the **Surveyor** filter narrow the list further. **My files** shows the files on which you are the surveyor; you can also pick a colleague. The choices are part of the page address: your browser's back button brings you to the same list, and a bookmark remembers them.
+- The **Principal's reference** column shows the number the principal gave the instruction; the search box also finds a file by it.
 - The **search box** searches all columns: number, survey type, vessel, principal, port, surveyor, planning, status and the scanned codes (not shown as a column) (a container number is also found with spaces).
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.
 - The export button downloads the list as a file.
@@ -101,7 +103,7 @@ The photos of an item appear below it, including those of a previous answer, and
 
 ### Report
 
-The **Report** tab has four sub-tabs: **Text** (the sections), **Issue** (check, four eyes, versions and signing), **Letters and certificates** and **Evidence package**. On the **Text** sub-tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. Next to it, **Preview (PDF)** shows the report in a window and **Report (Word)** downloads it as a Word file, each time with the saved text. If the report template does not show a section, the tab says so.
+The **Report** tab has four sub-tabs: **Text** (the sections), **Issue** (check, four eyes, versions and signing), **Letters and certificates** and **Evidence package**. On the **Text** sub-tab you write the text of the report per section, with simple formatting, and insert the office's standard texts. **Save sections** saves them. Next to it, **Preview (PDF)** shows the report in a window and **Report (Word)** downloads it as a Word file, each time with the saved text. Every page of that preview carries **DRAFT** diagonally (in the language of the report): it can never pass for an issued report, not even when someone forwards a single page. If the report template does not show a section, the tab says so.
 
 ![The Report tab with Letters and certificates, Evidence package and the sections Introduction and Method](images/dossier-rapport-en.png "The Report tab")
 
@@ -227,7 +229,7 @@ For a survey type with **Four-eyes review** ticked (see [Survey types](soorten-s
 Two things are sent to make the proposal more accurate:
 
 - **The photos of the photo appendix**, with their number (40 at most). The AI only describes what is clearly visible and may refer to a photo, for example "(photo 3)". Hidden photos and board documents are not sent. For this, the administrator must also allow **Scans, photos and PDFs** in ADM One; otherwise the proposal is made without photos and the Report tab says so.
-- **Your earlier reports** of the same survey type: the sections of the last three issued reports, only as an example of style and structure. The AI takes no facts from them.
+- **Your earlier reports** of the same survey type and for the same principal (no principal: none): the sections of the last three issued reports, only as an example of style and structure. The AI takes no facts from them.
 
 Below the button you see what the proposal was based on. Your own text in the sections is not sent.
 
@@ -384,7 +386,7 @@ The **Journal** of a file has the tabs **Notes**, **Tasks**, **Attachments** and
 
 ### Copy
 
-**Copy** creates a new file with the same instruction (vessel, principal, survey type, port), without findings, answers or survey particulars, and links it to this file.
+**Copy** creates a new file with the same instruction (vessel, principal, survey type, port), without findings, answers or survey particulars, and links it to this file. The **principal's reference** is not copied: every instruction gets its own number from the principal.
 
 ### Legal hold
 

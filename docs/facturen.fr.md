@@ -62,6 +62,12 @@ Cliquez sur **Émettre** et confirmez. La facture reçoit alors :
 
 Le PDF est figé avec son empreinte (SHA-256). La facture ne peut ensuite plus être modifiée ni supprimée. Une facture ne peut pas être datée dans le futur, ni avant la dernière facture émise du même site.
 
+## Envoyer par e-mail
+
+Une facture ou une note de crédit émise s'envoie avec **Envoyer par e-mail** dans le bloc **Par e-mail**. L'adresse est déjà remplie : celle du client sur la facture ; vous pouvez la modifier. Le PDF est joint, avec un court texte dans la langue de la facture : le numéro et la date, et pour une facture le montant, l'échéance et la communication. Chaque e-mail reste dans le bloc, avec l'adresse et son état.
+
+Une version d'essai n'envoie pas d'e-mail à l'extérieur ; la fenêtre le signale alors.
+
 ## Envoyer via Peppol
 
 Une facture ou une note de crédit émise peut être envoyée par voie électronique à la comptabilité du client avec **Envoyer via Peppol**. Quaymark vérifie d'abord que le client est sur le réseau Peppol. Son numéro de TVA est nécessaire : complétez-le sur sa [fiche relation](relaties.md).
@@ -72,7 +78,7 @@ Chaque tentative figure dans le bloc **Peppol** de la facture :
 - **Refusée** : la raison est indiquée. Corrigez-la et renvoyez.
 - **Inconnu** : pas de réponse claire. La facture est peut-être partie. Demandez le statut, ou renvoyez sans crainte : la même facture ne part pas deux fois.
 
-Si le client n'est pas sur Peppol, transmettez le PDF autrement.
+Si le client n'est pas sur Peppol, envoyez la facture [par e-mail](#envoyer-par-e-mail).
 
 ## Devises étrangères
 
@@ -81,7 +87,7 @@ Une facture reçoit la devise du [dossier](dossiers.md). Si ce n'est pas l'euro 
 - la **proposition** convertit les [tarifs](tarieven.md), exprimés en euros, dans la devise du dossier, au taux de référence de la Banque centrale européenne (BCE). Quaymark indique le taux utilisé. Les frais se saisissent dans la devise du dossier : ils ne sont pas convertis ;
 - à l'**émission**, Quaymark fixe le taux de la date de facture : le dernier publié par la BCE ce jour-là ou avant. La facture mentionne la **contre-valeur en euros** : hors TVA, la TVA et TVA comprise, avec le taux et sa date. Le taux et la contre-valeur figurent aussi sur la facture dans Quaymark ;
 - le **chiffre d'affaires** de la page d'accueil compte en euros, au taux de chaque facture ;
-- **Peppol** ne peut pas encore envoyer la facture : le bloc **Peppol** le dit tout de suite, sans bouton. Transmettez le PDF autrement.
+- **Peppol** ne peut pas encore envoyer la facture : le bloc **Peppol** le dit tout de suite, sans bouton. Envoyez alors la facture [par e-mail](#envoyer-par-e-mail).
 
 Sans taux (le taux de la BCE est momentanément indisponible), Quaymark n'émet pas la facture et le signale. Réessayez plus tard : Quaymark ne calcule jamais avec un taux estimé ou ancien. Une facture en euros n'est pas concernée.
 

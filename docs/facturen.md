@@ -62,6 +62,12 @@ Klik op **Uitgeven** en bevestig. De factuur krijgt dan:
 
 De PDF wordt vastgelegd met haar vingerafdruk (SHA-256). Daarna kan de factuur niet meer gewijzigd of verwijderd worden. Een factuur mag niet in de toekomst liggen, en niet vroeger dan de laatst uitgegeven factuur van dezelfde vestiging.
 
+## Versturen per mail
+
+Een uitgegeven factuur of creditnota mailt u met **Per mail versturen** in het blok **Per mail**. Het adres staat al ingevuld: dat van de klant op de factuur; u kunt het wijzigen. De PDF gaat als bijlage mee, met een korte tekst in de taal van de factuur: het nummer en de datum, en bij een factuur het bedrag, de vervaldag en de mededeling. Elke mail blijft in het blok staan, met het adres en hoe ver ze is.
+
+Een proefversie mailt niet naar buiten; het venster zegt het dan.
+
 ## Versturen via Peppol
 
 Een uitgegeven factuur of creditnota kunt u elektronisch naar de boekhouding van de klant sturen met **Via Peppol versturen**. Quaymark kijkt eerst na of de klant op het Peppol-netwerk staat. Daarvoor is zijn btw-nummer nodig: vul het in op zijn [relatiefiche](relaties.md).
@@ -72,7 +78,7 @@ Elke poging staat in het blok **Peppol** van de factuur:
 - **Geweigerd**: de reden staat erbij. Zet ze recht en verstuur opnieuw.
 - **Onbekend**: er kwam geen duidelijk antwoord. De factuur kan vertrokken zijn. Vraag de status op, of verstuur gerust opnieuw: dezelfde factuur vertrekt geen twee keer.
 
-Staat de klant niet op Peppol, dan bezorgt u de PDF op een andere manier.
+Staat de klant niet op Peppol, verstuur de factuur dan [per mail](#versturen-per-mail).
 
 ## Vreemde munten
 
@@ -81,7 +87,7 @@ Een factuur krijgt de munt van het [dossier](dossiers.md). Is dat geen euro, dan
 - rekent het **voorstel** de [tarieven](tarieven.md), die in euro staan, om naar de munt van het dossier, met de referentiekoers van de Europese Centrale Bank (ECB). Quaymark meldt welke koers het gebruikte. Kosten tikt u in de munt van het dossier: die worden niet omgerekend;
 - legt Quaymark bij het **uitgeven** de koers van de factuurdatum vast: de laatste die de ECB op of vóór die dag publiceerde. Op de factuur staat de **tegenwaarde in euro**: zonder btw, de btw en met btw, met de koers en haar datum. Koers en tegenwaarde staan ook op de factuur in Quaymark;
 - telt de **omzet** op de startpagina in euro, met de koers van elke factuur;
-- kan **Peppol** de factuur nog niet versturen: het blok **Peppol** zegt dat meteen, zonder knop. Bezorg de PDF op een andere manier.
+- kan **Peppol** de factuur nog niet versturen: het blok **Peppol** zegt dat meteen, zonder knop. Verstuur de factuur dan [per mail](#versturen-per-mail).
 
 Is er geen koers (de ECB-koers is even niet beschikbaar), dan geeft Quaymark de factuur niet uit en zegt het. Probeer het later opnieuw: Quaymark rekent nooit met een geschatte of oude koers. Een factuur in euro merkt hier niets van.
 

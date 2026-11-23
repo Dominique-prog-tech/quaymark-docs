@@ -34,7 +34,7 @@ De planning toont de uren van 06:00 tot 20:00. Staat er in de getoonde dagen iet
 
 ## Afwezigheden
 
-**Afwezigheid toevoegen** geeft verlof, ziekte, opleiding of een andere afwezigheid in, voor een gebruiker, van een dag tot en met een dag. Ze staat bovenaan de kolom van die gebruiker. Klik erop en kies **Afwezigheid bewerken** om ze te wijzigen of te verwijderen; een verwijderde afwezigheid staat in de prullenbak.
+**Afwezigheid toevoegen** geeft verlof, ziekte, opleiding of een andere afwezigheid in, voor een gebruiker, van een dag tot en met een dag. Ze staat bovenaan de kolom van die gebruiker. Klik erop en kies **Afwezigheid bewerken** om ze te wijzigen of te verwijderen; een verwijderde afwezigheid staat in de prullenbak. Ziekte is een gezondheidsgegeven: collega's die niet plannen, zien enkel **Afwezig**, zonder opmerking. De gebruiker zelf en wie plant, zien de soort en de opmerking.
 
 ## Feestdagen
 

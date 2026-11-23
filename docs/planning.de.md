@@ -34,7 +34,7 @@ Die Planung zeigt die Stunden von 06:00 bis 20:00. Enthalten die gezeigten Tage 
 
 ## Abwesenheiten
 
-**Abwesenheit hinzufügen** erfasst Urlaub, Krankheit, Schulung oder eine andere Abwesenheit, für einen Benutzer, von einem Tag bis einschließlich einem Tag. Sie steht oben in der Spalte dieses Benutzers. Klicken Sie darauf und wählen Sie **Abwesenheit bearbeiten**, um sie zu ändern oder zu löschen; eine gelöschte Abwesenheit steht im Papierkorb.
+**Abwesenheit hinzufügen** erfasst Urlaub, Krankheit, Schulung oder eine andere Abwesenheit, für einen Benutzer, von einem Tag bis einschließlich einem Tag. Sie steht oben in der Spalte dieses Benutzers. Klicken Sie darauf und wählen Sie **Abwesenheit bearbeiten**, um sie zu ändern oder zu löschen; eine gelöschte Abwesenheit steht im Papierkorb. Krankheit ist ein Gesundheitsdatum: Kollegen, die nicht planen, sehen nur **Abwesend**, ohne Bemerkung. Der Benutzer selbst und wer plant, sehen die Art und die Bemerkung.
 
 ## Feiertage
 

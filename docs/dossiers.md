@@ -13,6 +13,8 @@ Klik in het menu links op **Dossiers**.
 ## De lijst
 
 - Het filter **Status** in de werkbalk toont standaard de **open** dossiers; een statustegel op het dashboard opent de lijst met die status. Kies **Alle** om ook afgesloten en geannuleerde dossiers te zien, of één status.
+- Het filter **Vestiging** (enkel bij een bureau met meer dan één vestiging) en het filter **Surveyor** beperken de lijst verder. **Mijn dossiers** toont de dossiers waarvan u de surveyor bent; u kunt ook een collega kiezen. De keuzes staan in het adres van de pagina: de terugknop van uw browser brengt u naar dezelfde lijst, en een bladwijzer onthoudt ze.
+- De kolom **Referentie opdrachtgever** toont het nummer dat de opdrachtgever aan de opdracht gaf; het zoekvak vindt een dossier ook daarop.
 - Het **zoekvak** zoekt in alle kolommen: nummer, soort survey, schip, opdrachtgever, haven, surveyor, planning, status en de gescande codes (die niet als kolom getoond worden) (een containernummer vindt u ook met spaties).
 - Dubbelklik op een rij om het **dossier** te openen; met het pijltje vooraan de rij opent het in een nieuw tabblad. **Nieuw dossier** maakt er een aan.
 - Met de exportknop haalt u de lijst op als bestand.
@@ -101,7 +103,7 @@ De foto's van een punt staan eronder, ook die bij een vorig antwoord, en zo gaan
 
 ### Rapport
 
-Het tabblad **Rapport** heeft vier tabjes: **Tekst** (de rubrieken), **Uitgifte** (controle, vier-ogen, versies en ondertekening), **Brieven en certificaten** en **Bewijspakket**. Op het tabje **Tekst** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Ernaast toont **Voorbeeld (PDF)** het rapport in een venster en downloadt **Rapport (Word)** het als Word-bestand, telkens met de bewaarde tekst. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
+Het tabblad **Rapport** heeft vier tabjes: **Tekst** (de rubrieken), **Uitgifte** (controle, vier-ogen, versies en ondertekening), **Brieven en certificaten** en **Bewijspakket**. Op het tabje **Tekst** schrijft u de tekst van het rapport per rubriek, met eenvoudige opmaak, en voegt u standaardteksten van het bureau in. **Rubrieken bewaren** bewaart ze. Ernaast toont **Voorbeeld (PDF)** het rapport in een venster en downloadt **Rapport (Word)** het als Word-bestand, telkens met de bewaarde tekst. Over elke bladzijde van dat voorbeeld staat schuin **CONCEPT** (in de taal van het rapport): zo gaat het nooit door voor een uitgegeven rapport, ook niet als iemand één bladzijde doorstuurt. Toont het rapportsjabloon een rubriek niet, dan zegt het tabblad dat.
 
 ![Het tabblad Rapport met Brieven en certificaten, Bewijspakket en de rubrieken Inleiding en Werkwijze](images/dossier-rapport.png "Het tabblad Rapport")
 
@@ -227,7 +229,7 @@ Bij een soort survey met het vinkje **Vier-ogen** (zie [Soorten survey](soorten-
 Twee dingen gaan mee om het voorstel juister te maken:
 
 - **De foto's van de fotobijlage**, met hun nummer (hoogstens 40). De AI beschrijft enkel wat duidelijk te zien is en mag naar een foto verwijzen, bijvoorbeeld "(foto 3)". Verborgen foto's en documenten van boord gaan niet mee. Daarvoor moet de beheerder in ADM One ook **Scans, foto's en pdf's** toestaan; anders gaat het voorstel zonder foto's en zegt het tabblad Rapport dat.
-- **Uw vorige rapporten** van dezelfde soort survey: de rubrieken van de laatste drie uitgegeven rapporten, enkel als voorbeeld van stijl en opbouw. De AI neemt er geen feiten uit over.
+- **Uw vorige rapporten** van dezelfde soort survey en voor dezelfde opdrachtgever (zonder opdrachtgever: geen): de rubrieken van de laatste drie uitgegeven rapporten, enkel als voorbeeld van stijl en opbouw. De AI neemt er geen feiten uit over.
 
 Onder de knop staat waarop het voorstel steunde. Uw eigen tekst in de rubrieken gaat niet mee.
 
@@ -384,7 +386,7 @@ Het **Journaal** van een dossier heeft de tabbladen **Notities**, **Taken**, **B
 
 ### Kopiëren
 
-**Kopiëren** maakt een nieuw dossier met dezelfde opdracht (schip, opdrachtgever, soort, haven), zonder vaststellingen, antwoorden en gegevens van de survey, en koppelt het aan dit dossier.
+**Kopiëren** maakt een nieuw dossier met dezelfde opdracht (schip, opdrachtgever, soort, haven), zonder vaststellingen, antwoorden en gegevens van de survey, en koppelt het aan dit dossier. De **referentie van de opdrachtgever** gaat niet mee: elke opdracht krijgt haar eigen nummer van de opdrachtgever.
 
 ### Juridisch blokkeren
 
