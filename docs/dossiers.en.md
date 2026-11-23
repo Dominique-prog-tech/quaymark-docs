@@ -39,7 +39,7 @@ A saved file has these tabs: **Parties**, **Documents** (in folders, those of th
 
 A **closed** or **cancelled** file is fixed. A box at the top says so, with the **Status**. The blocks of the **General** tab and the **Parties** can only be read, and **Send confirmation** and **Delete** are no longer there. If something still has to change, set the status back (for example to Reporting) and click **Save**: the file is then open again. Closing it again sets a new closing date, and every step is in the history.
 
-The **Journal**, **Time and expenses** and the **Report** tab remain available: issuing a report is still possible for a closed file, and the language button on the Report tab changes the language of the report.
+The **Journal**, **Time and expenses**, the **claims** on the Damage tab and the **Report** tab remain available (the damage estimate does not): issuing a report is still possible for a closed file, and the language button on the Report tab changes the language of the report.
 
 ### Work instructions and operational status
 
@@ -279,6 +279,7 @@ The **Damage** tab follows up a damage file: the **claims** and the **damage est
 - **Recommended reserve**: if you leave it empty, the net total applies.
 - **Record agreement** fixes the estimate as it is, with whom the agreement was made (for example the insurer and the counter-expert). After that, no item can be added or changed. **Withdraw agreement** allows it again and asks for a reason; both the agreement and the withdrawal are kept.
 - In the report the estimate comes with the marker `{{schadebegroting}}` (see [Templates](sjablonen.md)).
+- For a **closed** or **cancelled** file the damage estimate is fixed: no more lines, reserve or agreement, until you set the status of the file back. The **claims** can still be updated, also after closing: following up a claim often takes months.
 
 ### Draft survey
 

@@ -39,7 +39,7 @@ Un dossier enregistré a ces onglets : **Parties**, **Documents** (dans des rép
 
 Un dossier **clôturé** ou **annulé** est figé. Un encadré en haut l'indique, avec le **Statut**. Les blocs de l'onglet **Général** et les **Parties** ne sont plus que consultables, et **Envoyer la confirmation** et **Supprimer** n'apparaissent plus. S'il faut tout de même modifier quelque chose, remettez le statut en arrière (par exemple sur Rapport) et cliquez sur **Enregistrer** : le dossier est alors de nouveau ouvert. Le clôturer à nouveau fixe une nouvelle date de clôture, et chaque étape figure dans l'historique.
 
-Le **Journal**, **Temps et frais** et l'onglet **Rapport** restent utilisables : émettre un rapport reste possible pour un dossier clôturé, et le bouton de langue de l'onglet Rapport modifie la langue du rapport.
+Le **Journal**, **Temps et frais**, les **réclamations** de l'onglet Dommages et l'onglet **Rapport** restent utilisables (l'estimation des dommages non) : émettre un rapport reste possible pour un dossier clôturé, et le bouton de langue de l'onglet Rapport modifie la langue du rapport.
 
 ### Instructions de travail et statut opérationnel
 
@@ -279,6 +279,7 @@ L'onglet **Dommages** assure le suivi d'un dossier de sinistre : les **réclamat
 - **Réserve proposée** : si vous la laissez vide, le total net s'applique.
 - **Enregistrer l'accord** fige l'estimation telle qu'elle est, avec la partie avec qui l'accord a été conclu (par exemple l'assureur et le contre-expert). Ensuite, plus aucun poste ne peut être ajouté ou modifié. **Retirer l'accord** le permet à nouveau et demande un motif ; l'accord et le retrait restent tous deux conservés.
 - Dans le rapport, l'estimation vient avec le marqueur `{{schadebegroting}}` (voir [Modèles](sjablonen.md)).
+- Pour un dossier **clôturé** ou **annulé**, l'estimation des dommages est figée : plus de postes, de réserve ni d'accord, jusqu'à ce que vous remettiez le statut du dossier en arrière. Les **réclamations** restent modifiables, même après la clôture : le suivi d'une réclamation dure souvent des mois.
 
 ### Draft survey
 

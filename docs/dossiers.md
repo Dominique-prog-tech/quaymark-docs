@@ -39,7 +39,7 @@ Een bewaard dossier heeft deze tabbladen: **Partijen**, **Documenten** (in mappe
 
 Een **afgesloten** of **geannuleerd** dossier ligt vast. Bovenaan staat een vak dat het zegt, met de **Status**. De blokken van het tabblad **Algemeen** en de **Partijen** zijn enkel nog te lezen, en **Bevestiging versturen** en **Verwijderen** staan er niet meer. Moet er toch iets veranderen, zet de status dan terug (bijvoorbeeld naar Rapportage) en klik op **Bewaren**: het dossier is dan weer open. Opnieuw afsluiten zet een nieuwe afsluitdatum, en elke stap staat in de historiek.
 
-Het **Journaal**, **Tijd en kosten** en het tabblad **Rapport** blijven bruikbaar: een rapport uitgeven kan ook bij een afgesloten dossier, en de taalknop op het tabblad Rapport wijzigt de taal van het rapport.
+Het **Journaal**, **Tijd en kosten**, de **claims** op het tabblad Schade en het tabblad **Rapport** blijven bruikbaar (de schadebegroting niet): een rapport uitgeven kan ook bij een afgesloten dossier, en de taalknop op het tabblad Rapport wijzigt de taal van het rapport.
 
 ### Werkinstructie en operationele status
 
@@ -279,6 +279,7 @@ Het tabblad **Schade** volgt een schadedossier op: de **claims** en de **schadeb
 - **Voorgestelde reserve**: laat u ze leeg, dan geldt het netto totaal.
 - **Akkoord vastleggen** legt de begroting vast zoals ze is, met wie het akkoord gesloten werd (bijvoorbeeld de verzekeraar en de tegenexpert). Daarna kunt u geen post meer toevoegen of wijzigen. **Akkoord intrekken** maakt dat weer mogelijk en vraagt een reden; akkoord en intrekking blijven allebei bewaard.
 - In het rapport komt de begroting met de markering `{{schadebegroting}}` (zie [Sjablonen](sjablonen.md)).
+- Bij een **afgesloten** of **geannuleerd** dossier ligt de schadebegroting vast: geen posten, reserve of akkoord meer, tot u de status van het dossier terugzet. De **claims** blijven wél bij te werken, ook na het afsluiten: de opvolging van een claim loopt vaak maanden door.
 
 ### Draft survey
 

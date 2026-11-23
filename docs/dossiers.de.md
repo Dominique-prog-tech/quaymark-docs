@@ -39,7 +39,7 @@ Eine gespeicherte Akte hat diese Registerkarten: **Parteien**, **Dokumente** (in
 
 Eine **abgeschlossene** oder **stornierte** Akte ist festgelegt. Ein Kasten oben sagt es, mit dem **Status**. Die Blöcke der Registerkarte **Allgemein** und die **Parteien** sind nur noch lesbar, und **Bestätigung senden** und **Löschen** erscheinen nicht mehr. Muss dennoch etwas geändert werden, setzen Sie den Status zurück (zum Beispiel auf Berichterstellung) und klicken Sie auf **Speichern**: Die Akte ist dann wieder offen. Erneutes Abschließen setzt ein neues Abschlussdatum, und jeder Schritt steht im Verlauf.
 
-**Journal**, **Zeit und Kosten** und die Registerkarte **Bericht** bleiben nutzbar: Einen Bericht herausgeben ist auch bei einer abgeschlossenen Akte möglich, und die Sprachtaste auf der Registerkarte Bericht ändert die Sprache des Berichts.
+**Journal**, **Zeit und Kosten**, die **Ansprüche** auf der Registerkarte Schaden und die Registerkarte **Bericht** bleiben nutzbar (die Schadenschätzung nicht): Einen Bericht herausgeben ist auch bei einer abgeschlossenen Akte möglich, und die Sprachtaste auf der Registerkarte Bericht ändert die Sprache des Berichts.
 
 ### Arbeitsanweisung und Betriebsstatus
 
@@ -279,6 +279,7 @@ Die Registerkarte **Schaden** begleitet eine Schadensakte: die **Ansprüche** un
 - **Empfohlene Reserve**: Lassen Sie sie leer, gilt die Nettosumme.
 - **Einigung festhalten** legt die Schätzung so fest, wie sie ist, mit wem die Einigung erzielt wurde (zum Beispiel Versicherer und Gegengutachter). Danach lässt sich kein Posten mehr hinzufügen oder ändern. **Einigung zurückziehen** erlaubt das wieder und fragt nach einem Grund; Einigung und Rücknahme bleiben beide erhalten.
 - Im Bericht steht die Schätzung mit der Markierung `{{schadebegroting}}` (siehe [Vorlagen](sjablonen.md)).
+- Bei einer **abgeschlossenen** oder **stornierten** Akte ist die Schadenschätzung festgelegt: keine Posten, Reserve oder Einigung mehr, bis Sie den Status der Akte zurücksetzen. Die **Ansprüche** bleiben änderbar, auch nach dem Abschluss: Die Verfolgung eines Anspruchs dauert oft Monate.
 
 ### Draft Survey
 
