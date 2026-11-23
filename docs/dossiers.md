@@ -398,7 +398,7 @@ Komt de opdracht per mail of als pdf binnen, dan vult Quaymark een nieuw dossier
 Wat Quaymark niet kon koppelen, staat in het kader:
 
 - een opdrachtgever die niet bij uw relaties staat: Quaymark maakt hem niet zelf aan. Kies de opdrachtgever of maak de relatie eerst aan. → [Relaties](relaties.md)
-- een schip dat nog niet bestaat: dat wordt aangemaakt bij het bewaren, met de gelezen naam en het IMO- of ENI-nummer. **Niet aanmaken** laat het weg; kiest u zelf een schip, dan geldt dat;
+- een schip dat nog niet bestaat: dat wordt aangemaakt bij het bewaren, met de gelezen naam en het IMO- of ENI-nummer. Las Quaymark geen nummer, dan vult u eronder de **Soort** en het **IMO-nummer** of **ENI-nummer** in. **Niet aanmaken** laat het weg; kiest u zelf een schip, dan geldt dat;
 - een haven die niet bij uw havens staat, of een gewenste dag zonder uur.
 
 Zodra opdrachtgever en schip gekozen zijn, toont het formulier al vóór het bewaren de mogelijke belangenconflicten en welk tarief geldt (de raamafspraak met de opdrachtgever, anders de tarieven van het bureau). Dat geldt voor elk nieuw dossier.

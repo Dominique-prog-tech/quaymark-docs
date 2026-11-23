@@ -398,7 +398,7 @@ Kommt der Auftrag per E-Mail oder als PDF, füllt Quaymark eine neue Akte vor. D
 Was Quaymark nicht zuordnen konnte, steht im Rahmen:
 
 - ein Auftraggeber, der nicht unter Ihren Beziehungen ist: Quaymark legt ihn nicht selbst an. Wählen Sie den Auftraggeber oder legen Sie die Beziehung zuerst an. → [Beziehungen](relaties.md)
-- ein Schiff, das es noch nicht gibt: Es wird beim Speichern angelegt, mit dem gelesenen Namen und der IMO- oder ENI-Nummer. **Nicht anlegen** lässt es weg; wählen Sie selbst ein Schiff, gilt dieses;
+- ein Schiff, das es noch nicht gibt: Es wird beim Speichern angelegt, mit dem gelesenen Namen und der IMO- oder ENI-Nummer. Hat Quaymark keine Nummer gelesen, geben Sie darunter die **Art** und die **IMO-Nummer** oder **ENI-Nummer** ein. **Nicht anlegen** lässt es weg; wählen Sie selbst ein Schiff, gilt dieses;
 - ein Hafen, der nicht unter Ihren Häfen ist, oder ein gewünschter Tag ohne Uhrzeit.
 
 Sobald Auftraggeber und Schiff gewählt sind, zeigt das Formular schon vor dem Speichern die möglichen Interessenkonflikte und welcher Tarif gilt (die Rahmenvereinbarung mit dem Auftraggeber, sonst die Tarife des Büros). Das gilt für jede neue Akte.

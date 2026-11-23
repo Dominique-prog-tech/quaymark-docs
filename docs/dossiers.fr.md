@@ -398,7 +398,7 @@ Si la mission arrive par e-mail ou en pdf, Quaymark pré-remplit un nouveau doss
 Ce que Quaymark n'a pas pu relier figure dans le cadre :
 
 - un donneur d'ordre absent de vos relations : Quaymark ne le crée pas lui-même. Choisissez le donneur d'ordre ou créez d'abord la relation. → [Relations](relaties.md)
-- un navire qui n'existe pas encore : il est créé à l'enregistrement, avec le nom lu et le numéro IMO ou ENI. **Ne pas créer** l'écarte ; si vous choisissez vous-même un navire, c'est celui-là qui compte ;
+- un navire qui n'existe pas encore : il est créé à l'enregistrement, avec le nom lu et le numéro IMO ou ENI. Si Quaymark n'a pas lu de numéro, indiquez en dessous le **Type** et le **Numéro OMI** ou le **Numéro ENI**. **Ne pas créer** l'écarte ; si vous choisissez vous-même un navire, c'est celui-là qui compte ;
 - un port absent de vos ports, ou un jour souhaité sans heure.
 
 Dès que le donneur d'ordre et le navire sont choisis, le formulaire affiche déjà avant l'enregistrement les conflits d'intérêts possibles et le tarif applicable (l'accord-cadre avec le donneur d'ordre, sinon les tarifs du bureau). Cela vaut pour chaque nouveau dossier.

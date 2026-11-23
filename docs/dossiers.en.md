@@ -398,7 +398,7 @@ If the assignment arrives by email or as a pdf, Quaymark pre-fills a new file. T
 What Quaymark could not link is shown in the box:
 
 - a principal who is not among your relations: Quaymark does not create them. Choose the principal or create the relation first. → [Relations](relaties.md)
-- a vessel that does not exist yet: it is created when saving, with the name and the IMO or ENI number that were read. **Do not create** leaves it out; if you choose a vessel yourself, that one applies;
+- a vessel that does not exist yet: it is created when saving, with the name and the IMO or ENI number that were read. If Quaymark read no number, enter the **Kind** and the **IMO number** or **ENI number** below it. **Do not create** leaves it out; if you choose a vessel yourself, that one applies;
 - a port that is not among your ports, or a requested day without a time.
 
 As soon as principal and vessel are chosen, the form shows, before saving, the possible conflicts of interest and which rate applies (the framework agreement with the principal, otherwise the office's rates). This applies to every new file.
