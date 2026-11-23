@@ -27,7 +27,7 @@ On the left is what the principal filled in: who submitted the request, the surv
 
 ## Web form
 
-The company can put a request form on its own website. Whoever fills it in needs no account. The form sends the details to Quaymark, and half a minute later the request appears on this screen, with the **Website** badge and a notification on the bell at the top right.
+The company can put a request form on its own website. Whoever fills it in needs no account. The form sends the details to Quaymark, and half a minute later the request appears on this screen, with the **Website** badge and a notification on the bell at the top right. Because the form is anonymous, such a request does not count as a confirmation: the file starts as not confirmed, and you send the person who submitted it an [order confirmation](opdrachtbevestiging.md).
 
 - **Setting up**: ask ADM-Concept for a website key for your company, and give it to your web developer with the technical explanation at <https://platform.digitalcloud.be/docs/leads-contactformulier>. → [How do I put a request form on our website?](hoe/aanvraagformulier.md)
 - **The fields**: name, email, phone, company, subject and message always come through. If you want Quaymark to fill in the vessel, port or survey type as well, give the fields one of the names below (capitals, accents and spaces do not matter). Everything else, and a value that is not right (a wrong IMO number, a port that is not a UN/LOCODE), goes into the description. Nothing is lost.

@@ -27,7 +27,7 @@ Cliquez sur **Demandes** dans le menu de gauche. S'il y a des demandes en attent
 
 ## Formulaire web
 
-Le bureau peut placer un formulaire de demande sur son propre site web. La personne qui le remplit n'a pas besoin de compte. Le formulaire envoie les données à Quaymark, et une demi-minute plus tard la demande figure sur cet écran, avec le badge **Site web** et une notification sur la cloche en haut à droite.
+Le bureau peut placer un formulaire de demande sur son propre site web. La personne qui le remplit n'a pas besoin de compte. Le formulaire envoie les données à Quaymark, et une demi-minute plus tard la demande figure sur cet écran, avec le badge **Site web** et une notification sur la cloche en haut à droite. Comme le formulaire est anonyme, une telle demande ne compte pas comme confirmation : le dossier commence comme non confirmé, et vous envoyez une [confirmation de mission](opdrachtbevestiging.md) à la personne qui l'a introduite.
 
 - **Mise en place** : demandez à ADM-Concept une clé de site web pour votre bureau, et transmettez-la à votre webdesigner avec l'explication technique sur <https://platform.digitalcloud.be/docs/leads-contactformulier>. → [Comment placer un formulaire de demande sur notre site web ?](hoe/aanvraagformulier.md)
 - **Les champs** : nom, e-mail, téléphone, entreprise, objet et message sont toujours transmis. Pour que Quaymark complète aussi le navire, le port ou le type d'expertise, donnez aux champs un des noms ci-dessous (majuscules, accents et espaces ne comptent pas). Tout le reste, et une valeur incorrecte (un numéro IMO erroné, un port qui n'est pas un UN/LOCODE), va dans la description. Rien ne se perd.

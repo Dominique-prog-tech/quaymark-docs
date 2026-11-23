@@ -45,7 +45,7 @@ Si le donneur d'ordre a accès au portail des donneurs d'ordre, il voit la même
 - **Refusée** : le donneur d'ordre ne confirme pas cette mission. Prenez contact et envoyez au besoin une nouvelle confirmation.
 - **Expirée** : le lien a expiré après 14 jours sans réponse.
 - **Retirée** : le bureau a retiré le lien.
-- **Confirmée par l'offre** ou **Confirmée par la demande** : le dossier est issu d'une offre acceptée par le donneur d'ordre, ou d'une demande dans le portail des donneurs d'ordre ou via le [formulaire web](aanvragen.md#formulaire-web). L'explication à côté de l'état indique laquelle des deux. Une confirmation séparée n'est alors pas nécessaire. → [Offres](offertes.md), [Demandes](aanvragen.md)
+- **Confirmée par l'offre** ou **Confirmée par la demande** : le dossier est issu d'une offre acceptée par le donneur d'ordre, ou d'une demande dans le portail des donneurs d'ordre. L'explication à côté de l'état indique laquelle des deux. Une confirmation séparée n'est alors pas nécessaire. Une demande via le [formulaire web](aanvragen.md#formulaire-web) ne compte pas : ce formulaire est anonyme, n'importe qui peut le remplir. Un tel dossier commence comme non confirmé ; envoyez une confirmation à la personne qui l'a introduite. → [Offres](offertes.md), [Demandes](aanvragen.md)
 
 Chaque acceptation ou refus apparaît aussi comme note dans le journal du dossier.
 

@@ -27,7 +27,7 @@ Links staat wat de opdrachtgever invulde: wie de aanvraag indiende, de soort sur
 
 ## Webformulier
 
-Het bureau kan een aanvraagformulier op zijn eigen website zetten. Wie het invult, heeft geen account nodig. Het formulier stuurt de gegevens naar Quaymark, en een halve minuut later staat de aanvraag op dit scherm, met de badge **Website** en een melding op het belletje rechtsboven.
+Het bureau kan een aanvraagformulier op zijn eigen website zetten. Wie het invult, heeft geen account nodig. Het formulier stuurt de gegevens naar Quaymark, en een halve minuut later staat de aanvraag op dit scherm, met de badge **Website** en een melding op het belletje rechtsboven. Omdat het formulier anoniem is, telt zo'n aanvraag niet als bevestiging: het dossier begint als niet bevestigd, en u stuurt de indiener een [opdrachtbevestiging](opdrachtbevestiging.md).
 
 - **Opzetten**: vraag ADM-Concept een websitesleutel voor uw bureau, en geef die aan uw webbouwer met de technische uitleg op <https://platform.digitalcloud.be/docs/leads-contactformulier>. → [Hoe zet ik een aanvraagformulier op onze website?](hoe/aanvraagformulier.md)
 - **De velden**: naam, e-mail, telefoon, bedrijf, onderwerp en bericht komen altijd mee. Wil u dat Quaymark ook het schip, de haven of de soort survey invult, geef de velden dan een van de namen hieronder (hoofdletters, accenten en spaties tellen niet). Al de rest, en een waarde die niet klopt (een fout IMO-nummer, een haven die geen UN/LOCODE is), komt in de omschrijving. Er gaat niets verloren.

@@ -45,7 +45,7 @@ Heeft de opdrachtgever toegang tot het opdrachtgeversportaal, dan ziet hij dezel
 - **Geweigerd**: de opdrachtgever bevestigt deze opdracht niet. Neem contact op en verstuur desnoods een nieuwe bevestiging.
 - **Vervallen**: de link is na 14 dagen vervallen zonder antwoord.
 - **Ingetrokken**: het bureau trok de link in.
-- **Bevestigd via offerte** of **Bevestigd via aanvraag**: het dossier ontstond uit een offerte die de opdrachtgever aanvaardde, of uit een aanvraag in het opdrachtgeversportaal of via het [webformulier](aanvragen.md#webformulier). De uitleg bij de stand zegt welke van de twee. Een aparte bevestiging is dan niet nodig. → [Offertes](offertes.md), [Aanvragen](aanvragen.md)
+- **Bevestigd via offerte** of **Bevestigd via aanvraag**: het dossier ontstond uit een offerte die de opdrachtgever aanvaardde, of uit een aanvraag in het opdrachtgeversportaal. De uitleg bij de stand zegt welke van de twee. Een aparte bevestiging is dan niet nodig. Een aanvraag via het [webformulier](aanvragen.md#webformulier) telt niet: dat formulier is anoniem, iedereen kan het invullen. Zo'n dossier begint als niet bevestigd; stuur de indiener een bevestiging. → [Offertes](offertes.md), [Aanvragen](aanvragen.md)
 
 Elke aanvaarding of weigering komt ook als notitie in het journaal van het dossier.
 

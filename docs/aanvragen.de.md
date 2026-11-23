@@ -27,7 +27,7 @@ Links steht, was der Auftraggeber ausgefüllt hat: wer die Anfrage gesendet hat,
 
 ## Webformular
 
-Das Büro kann ein Anfrageformular auf seine eigene Website stellen. Wer es ausfüllt, braucht kein Konto. Das Formular sendet die Daten an Quaymark, und eine halbe Minute später steht die Anfrage auf dieser Seite, mit dem Abzeichen **Website** und einer Meldung an der Glocke oben rechts.
+Das Büro kann ein Anfrageformular auf seine eigene Website stellen. Wer es ausfüllt, braucht kein Konto. Das Formular sendet die Daten an Quaymark, und eine halbe Minute später steht die Anfrage auf dieser Seite, mit dem Abzeichen **Website** und einer Meldung an der Glocke oben rechts. Da das Formular anonym ist, zählt eine solche Anfrage nicht als Bestätigung: Die Akte beginnt als nicht bestätigt, und Sie senden der einreichenden Person eine [Auftragsbestätigung](opdrachtbevestiging.md).
 
 - **Einrichten**: Fragen Sie ADM-Concept nach einem Website-Schlüssel für Ihr Büro und geben Sie ihn Ihrem Webentwickler mit der technischen Erklärung unter <https://platform.digitalcloud.be/docs/leads-contactformulier>. → [Wie stelle ich ein Anfrageformular auf unsere Website?](hoe/aanvraagformulier.md)
 - **Die Felder**: Name, E-Mail, Telefon, Firma, Betreff und Nachricht kommen immer mit. Soll Quaymark auch Schiff, Hafen oder Besichtigungsart ausfüllen, geben Sie den Feldern einen der Namen unten (Groß- und Kleinschreibung, Akzente und Leerzeichen zählen nicht). Alles andere und ein Wert, der nicht stimmt (eine falsche IMO-Nummer, ein Hafen, der kein UN/LOCODE ist), kommt in die Beschreibung. Es geht nichts verloren.

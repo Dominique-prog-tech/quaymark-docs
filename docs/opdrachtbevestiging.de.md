@@ -45,7 +45,7 @@ Hat der Auftraggeber Zugang zum Auftraggeberportal, sieht er dieselbe Bestätigu
 - **Abgelehnt**: Der Auftraggeber bestätigt diesen Auftrag nicht. Nehmen Sie Kontakt auf und senden Sie bei Bedarf eine neue Bestätigung.
 - **Abgelaufen**: Der Link ist nach 14 Tagen ohne Antwort abgelaufen.
 - **Zurückgezogen**: Das Büro hat den Link zurückgezogen.
-- **Durch Angebot bestätigt** oder **Durch Anfrage bestätigt**: Die Akte entstand aus einem Angebot, das der Auftraggeber angenommen hat, oder aus einer Anfrage im Auftraggeberportal oder über das [Webformular](aanvragen.md#webformular). Die Erklärung neben dem Stand sagt, welche der beiden. Eine eigene Bestätigung ist dann nicht nötig. → [Angebote](offertes.md), [Anfragen](aanvragen.md)
+- **Durch Angebot bestätigt** oder **Durch Anfrage bestätigt**: Die Akte entstand aus einem Angebot, das der Auftraggeber angenommen hat, oder aus einer Anfrage im Auftraggeberportal. Die Erklärung neben dem Stand sagt, welche der beiden. Eine eigene Bestätigung ist dann nicht nötig. Eine Anfrage über das [Webformular](aanvragen.md#webformular) zählt nicht: Dieses Formular ist anonym, jeder kann es ausfüllen. Eine solche Akte beginnt als nicht bestätigt; senden Sie der einreichenden Person eine Bestätigung. → [Angebote](offertes.md), [Anfragen](aanvragen.md)
 
 Jede Annahme oder Ablehnung erscheint auch als Notiz im Journal der Akte.
 
