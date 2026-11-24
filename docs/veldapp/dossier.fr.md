@@ -6,13 +6,16 @@ description: "Un dossier dans l'application de terrain : une seule page avec des
 
 Dans l'application de terrain, un dossier est une seule page avec des cartes, dans l'ordre du travail à bord. Chaque carte a son propre bouton, à droite de son en-tête.
 
-![Le dossier HQ-2026-0003 en haut : l'en-tête avec le navire KAAIMEEUW, le moment, le port, le donneur d'ordre, l'étiquette En cours et le bouton Terminé sur place → rapport, la carte Check-list avec 5 / 5 répondu(s), la carte Constatations avec quatre constatations cochées, et le bouton Nouvelle constatation.](../images/app-dossier-fr.png "Le dossier"){ width="320" }
+![Le dossier HQ-2026-0003 en haut : l'en-tête avec le navire KAAIMEEUW, le moment, le port, le donneur d'ordre, l'étiquette En cours et le bouton Terminé sur place → rapport, la carte Conditions et présents avec Remplir, le temps, la mer, la visibilité, le poste et deux présents, et la carte Chronologie avec Événement.](../images/app-dossier-fr.png "Le dossier"){ width="320" }
 
 ## Les cartes
 
 | Carte | Bouton | Quoi |
 |---|---|---|
 | L'en-tête | **Commencer sur place** ou **Terminé sur place → rapport** | Le navire, quand et où, le donneur d'ordre et la description de la mission |
+| **Instructions de travail** | la carte elle-même | Seulement si votre bureau en a écrit pour le type d'expertise : voir [Instructions de travail](#instructions-de-travail) |
+| **Conditions et présents** | **Remplir** | Temps, mer, visibilité, poste et personnes présentes : voir [Consigner à bord](aan-boord.md#conditions-et-presents) |
+| **Chronologie** | **Événement** | Seulement pour un type d'expertise avec chronologie : voir [Consigner à bord](aan-boord.md#chronologie) |
 | **Check-list** | la carte elle-même | Combien de points ont une réponse. Touchez la carte pour ouvrir la check-list : voir [La check-list](checklist.md) |
 | **Constatations** | **Ajouter** | Ce que vous constatez à bord, avec photos : voir [Constatations et photos](vaststellingen.md) |
 | **Notes** | **Dicter** | Notes vocales : voir [Consigner à bord](aan-boord.md#notes-vocales) |
@@ -23,9 +26,11 @@ Dans l'application de terrain, un dossier est une seule page avec des cartes, da
 | **Signatures** | **Signer** | Faire signer la déclaration : voir [Faire signer](laten-tekenen.md) |
 | **Données** | — | Les données de l'expertise, telles que le bureau les a remplies. Ici en lecture seule |
 
-Vous créez aussi une constatation avec le bouton **Nouvelle constatation** en bas de l'écran.
-
 ![Le même dossier plus bas : la carte Notes avec Dicter et deux notes, la carte Codes avec Scanner et trois codes, dont un avec un avertissement parce que le chiffre de contrôle est incorrect, et la carte Documents de bord avec Ajouter.](../images/app-dossier-verder-fr.png "Notes, codes et documents de bord"){ width="320" }
+
+## Instructions de travail
+
+Si votre bureau a écrit des instructions de travail pour le type d'expertise, elles forment la première carte sous l'en-tête, dans la langue de votre appareil. La carte en montre le début : touchez-la pour lire les instructions de travail en entier. Sans instructions de travail, pas de carte. → [Types d'expertise](../soorten-survey.md)
 
 ## Envoyé ou encore en route
 

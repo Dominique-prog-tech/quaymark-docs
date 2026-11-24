@@ -6,13 +6,16 @@ description: "A file in the field app: one page of cards, from the header with t
 
 In the field app a file is one page of cards, in the order of the work on board. Each card has its own button on the right of its header.
 
-![The file HQ-2026-0003 at the top: the header with the vessel KAAIMEEUW, the time, the port, the principal, the In progress label and the Done on site → reporting button, the Checklist card with 5 / 5 answered, the Findings card with four ticked findings, and the New finding button.](../images/app-dossier-en.png "The file"){ width="320" }
+![The file HQ-2026-0003 at the top: the header with the vessel KAAIMEEUW, the time, the port, the principal, the In progress label and the Done on site → reporting button, the Conditions and attendance card with Fill in, the weather, the sea, the visibility, the berth and two attendees, and the Timeline card with Event.](../images/app-dossier-en.png "The file"){ width="320" }
 
 ## The cards
 
 | Card | Button | What |
 |---|---|---|
 | The header | **Start on-site work** or **Done on site → reporting** | The vessel, when and where, the principal and the description of the assignment |
+| **Work instructions** | the card itself | Only if your firm wrote them for the survey type: see [Work instructions](#work-instructions) |
+| **Conditions and attendance** | **Fill in** | Weather, sea, visibility, berth and who attended: see [Recording on board](aan-boord.md#conditions-and-attendance) |
+| **Timeline** | **Event** | Only for a survey type with a timeline: see [Recording on board](aan-boord.md#timeline) |
 | **Checklist** | the card itself | How many items are answered. Tap the card to open the checklist: see [The checklist](checklist.md) |
 | **Findings** | **Add** | What you find on board, with photos: see [Findings and photos](vaststellingen.md) |
 | **Notes** | **Dictate** | Voice notes: see [Recording on board](aan-boord.md#voice-notes) |
@@ -23,9 +26,11 @@ In the field app a file is one page of cards, in the order of the work on board.
 | **Signatures** | **Sign** | Get the statement signed: see [Getting a signature](laten-tekenen.md) |
 | **Details** | — | The survey particulars, as the office filled them in. Read-only here |
 
-You can also create a finding with the **New finding** button at the bottom of the screen.
-
 ![The same file further down: the Notes card with Dictate and two notes, the Codes card with Scan and three codes, one with a warning because the check digit is incorrect, and the Board documents card with Add.](../images/app-dossier-verder-en.png "Notes, codes and board documents"){ width="320" }
+
+## Work instructions
+
+If your firm wrote work instructions for the survey type, they are the first card under the header, in the language of your device. The card shows the beginning: tap it to read all of the work instructions. Without work instructions there is no card. → [Survey types](../soorten-survey.md)
 
 ## Sent or still on its way
 

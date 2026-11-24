@@ -6,7 +6,7 @@ description: "De checklist in de veldapp: een antwoord per punt, en bij een gebr
 
 Heeft de soort survey een checklist, dan staat op het dossier de kaart **Checklist**, met hoeveel punten er beantwoord zijn. Tik op de kaart om de checklist te openen.
 
-![De checklist met vijf punten en onder elk de knoppen In orde, Niet in orde en N.v.t.: drie punten In orde, één Niet in orde met de bevinding in het rood en één N.v.t. Bij één punt staat foto verplicht.](../images/app-checklist.png "De checklist"){ width="320" }
+![De checklist met vijf punten en onder elk de knoppen In orde, Niet in orde en N.v.t., en daaronder Foto en Uit bibliotheek: drie punten In orde, één Niet in orde met de bevinding in het rood en één N.v.t. Bij één punt staat foto verplicht.](../images/app-checklist.png "De checklist"){ width="320" }
 
 ## Antwoorden
 
@@ -22,8 +22,6 @@ Elk antwoord wordt **toegevoegd**: een nieuw antwoord vervangt het vorige niet, 
 ## Een foto bij een punt
 
 Onder een beantwoord punt staan **Foto** en **Uit bibliotheek**, zoals bij een nieuwe vaststelling. Een punt zonder antwoord heeft ze niet: antwoord eerst, want de foto is het bewijs van dat antwoord.
-
-<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto, met 1.0.7) -->
 
 - Er is geen **Bewaren**: de foto hangt meteen aan het punt. Zolang het toestel de foto vastlegt (de positie kan tot 15 seconden duren), draait er een wieltje op de knop.
 - Onder het punt staat hoeveel foto's het heeft, bijvoorbeeld *foto verplicht · 📷 2 · nog niet verstuurd*. Dat aantal telt de foto's die al bij kantoor staan, ook bij een vorig antwoord, en die nog op het toestel wachten.

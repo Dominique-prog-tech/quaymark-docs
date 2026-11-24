@@ -19,6 +19,7 @@ Alles, was Sie an Bord erfassen:
 - [Feststellungen](vaststellingen.md) mit Fotos;
 - die [Checkliste](checklist.md) beantworten;
 - [unterschreiben lassen](laten-tekenen.md);
+- [die Umstände und die Anwesenden](aan-boord.md#umstande-und-anwesende) und [Ereignisse im Zeitablauf](aan-boord.md#zeitablauf);
 - [Sprachnotizen, Codes, Bordunterlagen und Peilungen](aan-boord.md);
 - [Zeit erfassen](tijd.md);
 - die Arbeit beginnen und abschließen.
@@ -39,8 +40,9 @@ Wartet etwas, steht oben rechts in Meine Akten **… wartend**, und im Menü ste
 
 ### Eine abgelehnte Aktion
 
-Manchmal lehnt Quaymark etwas ab, zum Beispiel weil die Akte inzwischen abgeschlossen wurde. Oben in Meine Akten steht dann rot *… abgelehnt — zum Prüfen tippen*. Unter **Noch zu senden** steht die Aktion rot, mit **Vom Server abgelehnt** und dem Grund.
+Manchmal lehnt Quaymark etwas ab: weil die Akte inzwischen abgeschlossen wurde, weil ein Text zu lang ist oder weil das Büro inzwischen dieselben Angaben geändert hat. Oben in Meine Akten steht dann rot *… abgelehnt — zum Prüfen tippen*. Unter **Noch zu senden** steht die Aktion rot, mit **Vom Server abgelehnt** und dem Grund.
 
+- **Bearbeiten**: bei einer Feststellung und bei den Umständen und Anwesenden. Das Formular öffnet sich mit dem, was Sie ausgefüllt haben, und dem Grund darüber. Ändern Sie, was Quaymark abgelehnt hat, und tippen Sie auf **Speichern**: Die Aktion wird erneut gesendet, an ihrem Platz in der Reihe. Die Fotos einer Feststellung bleiben dabei (*… Foto(s) bereits gespeichert*). → [Das Büro hat inzwischen geändert](aan-boord.md#das-buro-hat-inzwischen-geandert)
 - **Erneut versuchen**: sendet sie sofort noch einmal. Sinnvoll, wenn die Ursache inzwischen behoben ist.
 - **Verwerfen**: Die Aktion wird nie gesendet. Die App fragt zuerst. Bei einer Feststellung gehen ihre Fotos mit.
 

@@ -8,7 +8,7 @@ Eine **Feststellung** ist, was Sie an Bord sehen: eine Delle in der Tankdecke vo
 
 ## Eine Feststellung hinzufügen
 
-Tippen Sie auf **Neue Feststellung** unten in der Akte oder auf **Hinzufügen** auf der Karte **Feststellungen**.
+Tippen Sie auf **Hinzufügen** auf der Karte **Feststellungen**.
 
 ![Der Bildschirm Neue Feststellung, ausgefüllt: Ort an Bord, Nummer / Seite, Kategorie, Schweregrad und Beschreibung, unter Fotos ein Foto mit dem Anfang seines Fingerabdrucks, einer Stecknadel und dem Zeichen der Mediathek, die Schaltflächen Foto und Aus der Mediathek, und Speichern.](../images/app-vaststelling-de.png "Neue Feststellung"){ width="320" }
 
@@ -19,6 +19,8 @@ Tippen Sie auf **Neue Feststellung** unten in der Akte oder auf **Hinzufügen** 
 5. Tippen Sie auf **Speichern**.
 
 Ort, Kategorie und Beschreibung sind Pflicht. Die Auswahl für Ort und Kategorie kommt von Ihrem Büro. → [Auswahllisten](../categorieen-en-plaatsen.md)
+
+Unter **Nummer / Seite** zählt die App die Zeichen mit: höchstens 20. Bei einer langen **Beschreibung** erscheint der Zähler erst, wenn Sie sich der Grenze nähern. Ist ein Text zu lang, speichert die App nicht und sagt, warum, zum Beispiel *Nummer / Seite: höchstens 20 Zeichen*.
 
 Die Feststellung steht sofort auf der Karte, mit einer Wolke, solange sie nicht gesendet ist. Die Fotos werden nach ihrer Feststellung gesendet.
 
@@ -38,9 +40,11 @@ Ist das Foto gesendet und hat Quaymark den Fingerabdruck nachgerechnet, löscht 
 
 ## Eine Feststellung berichtigen
 
-Eine Feststellung wird nur **hinzugefügt**, nie geändert oder gelöscht: So bleibt nachvollziehbar, was an Bord notiert wurde. In der App können Sie sie deshalb nicht ändern. Einen Fehler berichtigen Sie im Büro mit **Berichtigen** und einem Grund; die alte Fassung bleibt durchgestrichen sichtbar. → [Feststellungen](../dossiers.md#feststellungen)
+Eine Feststellung wird nur **hinzugefügt**, nie geändert oder gelöscht: So bleibt nachvollziehbar, was an Bord notiert wurde. Eine Feststellung, die bei Quaymark angekommen ist, können Sie in der App deshalb nicht mehr ändern. Einen Fehler berichtigen Sie im Büro mit **Berichtigen** und einem Grund; die alte Fassung bleibt durchgestrichen sichtbar. → [Feststellungen](../dossiers.md#feststellungen)
 
 Sehen Sie den Fehler noch vor dem Senden, können Sie die Feststellung unter **Noch zu senden** verwerfen. Ihre Fotos gehen mit. → [Offline](zonder-bereik.md)
+
+Hat Quaymark die Feststellung abgelehnt, zum Beispiel weil ein Text zu lang war, bearbeiten Sie sie unter **Noch zu senden** mit **Bearbeiten**. → [Eine abgelehnte Aktion](zonder-bereik.md#eine-abgelehnte-aktion)
 
 ## Häufige Fehler
 

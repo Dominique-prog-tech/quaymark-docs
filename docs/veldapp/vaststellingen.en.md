@@ -8,7 +8,7 @@ A **finding** is what you see on board: a dent in the tank top of hold 3, wet ca
 
 ## Adding a finding
 
-Tap **New finding** at the bottom of the file, or **Add** on the **Findings** card.
+Tap **Add** on the **Findings** card.
 
 ![The New finding screen, filled in: Location on board, Number / side, Category, Severity and Description, under Photos one photo with the start of its fingerprint, a pin and the library sign, the Photo and From library buttons, and Save.](../images/app-vaststelling-en.png "New finding"){ width="320" }
 
@@ -19,6 +19,8 @@ Tap **New finding** at the bottom of the file, or **Add** on the **Findings** ca
 5. Tap **Save**.
 
 Location, category and description are required. The choices of location and category come from your firm. → [Choice lists](../categorieen-en-plaatsen.md)
+
+Under **Number / side** the app counts the characters: at most 20. With a long **Description**, the counter only appears when you get close to the limit. If a text is too long, the app does not save and says why, for example *Number / side: at most 20 characters*.
 
 The finding appears on the card straight away, with a cloud as long as it has not been sent. The photos are sent after their finding.
 
@@ -38,9 +40,11 @@ Once the photo has been sent and Quaymark has recalculated its fingerprint, the 
 
 ## Correcting a finding
 
-A finding is only ever **added**, never changed or deleted: that way it remains clear what was recorded on board. You therefore cannot change it in the app. You correct a mistake at the office with **Correct**, with a reason; the old version stays visible, struck through. → [Findings](../dossiers.md#findings)
+A finding is only ever **added**, never changed or deleted: that way it remains clear what was recorded on board. A finding that is at Quaymark can therefore no longer be changed in the app. You correct a mistake at the office with **Correct**, with a reason; the old version stays visible, struck through. → [Findings](../dossiers.md#findings)
 
 If you spot the mistake before it is sent, you can discard the finding on **Still to send**. Its photos go with it. → [Offline](zonder-bereik.md)
+
+If Quaymark refused the finding, for example because a text was too long, you edit it on **Still to send** with **Edit**. → [A refused action](zonder-bereik.md#a-refused-action)
 
 ## Common mistakes
 

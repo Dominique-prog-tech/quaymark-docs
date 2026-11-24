@@ -6,13 +6,16 @@ description: "Een dossier in de veldapp: één pagina met kaarten, van de kop me
 
 Een dossier is in de veldapp één pagina met kaarten, in de volgorde van het werk aan boord. Elke kaart heeft rechts in haar kop haar eigen knop.
 
-![Het dossier HQ-2026-0003 bovenaan: de kop met het schip KAAIMEEUW, het tijdstip, de haven, de opdrachtgever, het label In uitvoering en de knop Klaar ter plaatse → rapportage, de kaart Checklist met 5 / 5 beantwoord, de kaart Vaststellingen met vier vaststellingen met een vinkje, en de knop Nieuwe vaststelling.](../images/app-dossier.png "Het dossier"){ width="320" }
+![Het dossier HQ-2026-0003 bovenaan: de kop met het schip KAAIMEEUW, het tijdstip, de haven, de opdrachtgever, het label In uitvoering en de knop Klaar ter plaatse → rapportage, de kaart Omstandigheden en aanwezigen met Invullen, het weer, de zee, het zicht, de ligplaats en twee aanwezigen, en de kaart Tijdlijn met Gebeurtenis.](../images/app-dossier.png "Het dossier"){ width="320" }
 
 ## De kaarten
 
 | Kaart | Knop | Wat |
 |---|---|---|
 | De kop | **Werk ter plaatse starten** of **Klaar ter plaatse → rapportage** | Het schip, wanneer en waar, de opdrachtgever en de omschrijving van de opdracht |
+| **Werkinstructie** | de kaart zelf | Enkel als uw bureau er een schreef bij de soort survey: zie [De werkinstructie](#de-werkinstructie) |
+| **Omstandigheden en aanwezigen** | **Invullen** | Weer, zee, zicht, ligplaats en wie aanwezig was: zie [Aan boord vastleggen](aan-boord.md#omstandigheden-en-aanwezigen) |
+| **Tijdlijn** | **Gebeurtenis** | Enkel bij een soort survey met een tijdlijn: zie [Aan boord vastleggen](aan-boord.md#tijdlijn) |
 | **Checklist** | de kaart zelf | Hoeveel punten beantwoord zijn. Tik op de kaart om de checklist te openen: zie [De checklist](checklist.md) |
 | **Vaststellingen** | **Toevoegen** | Wat u aan boord vaststelt, met foto's: zie [Vaststellingen en foto's](vaststellingen.md) |
 | **Notities** | **Inspreken** | Spraaknotities: zie [Aan boord vastleggen](aan-boord.md#spraaknotities) |
@@ -23,9 +26,11 @@ Een dossier is in de veldapp één pagina met kaarten, in de volgorde van het we
 | **Handtekeningen** | **Tekenen** | De verklaring laten tekenen: zie [Laten tekenen](laten-tekenen.md) |
 | **Gegevens** | — | De gegevens van de survey, zoals kantoor ze invulde. Hier enkel te lezen |
 
-Een nieuwe vaststelling maakt u ook met de knop **Nieuwe vaststelling** onderaan het scherm.
-
 ![Hetzelfde dossier verder naar onder: de kaart Notities met Inspreken en twee notities, de kaart Codes met Scannen en drie codes, waarvan één met een waarschuwing omdat het controlecijfer niet klopt, en de kaart Documenten van boord met Toevoegen.](../images/app-dossier-verder.png "Notities, codes en documenten van boord"){ width="320" }
+
+## De werkinstructie
+
+Schreef uw bureau een werkinstructie bij de soort survey, dan staat ze als eerste kaart onder de kop, in de taal van uw toestel. De kaart toont het begin: tik erop om de hele werkinstructie te lezen. Zonder werkinstructie is er geen kaart. → [Soorten survey](../soorten-survey.md)
 
 ## Verstuurd of nog onderweg
 

@@ -19,6 +19,7 @@ Everything you record on board:
 - [findings](vaststellingen.md) with photos;
 - answering the [checklist](checklist.md);
 - [getting a signature](laten-tekenen.md);
+- [the conditions and the attendance](aan-boord.md#conditions-and-attendance) and [events on the timeline](aan-boord.md#timeline);
 - [voice notes, codes, board documents and soundings](aan-boord.md);
 - [recording time](tijd.md);
 - starting and finishing the work.
@@ -39,8 +40,9 @@ If something is waiting, **… pending** appears at the top right of My files, a
 
 ### A refused action
 
-Sometimes Quaymark refuses something, for example because the file was closed in the meantime. At the top of My files it then says in red *… refused — tap to review*. On **Still to send** the action is shown in red, with **Refused by the server** and the reason.
+Sometimes Quaymark refuses something: because the file was closed in the meantime, because a text is too long, or because the office changed the same details in the meantime. At the top of My files it then says in red *… refused — tap to review*. On **Still to send** the action is shown in red, with **Refused by the server** and the reason.
 
+- **Edit**: for a finding and for the conditions and attendance. The form opens with what you filled in and the reason above it. Change what Quaymark refused and tap **Save**: the action is sent again, in its place in the queue. The photos of a finding stay with it (*… photo(s) already saved*). → [The office changed it in the meantime](aan-boord.md#the-office-changed-it-in-the-meantime)
 - **Try again**: sends it again straight away. Useful if the cause has gone away in the meantime.
 - **Discard**: the action is never sent. The app asks first. For a finding, its photos go with it.
 

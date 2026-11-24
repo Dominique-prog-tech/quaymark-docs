@@ -19,6 +19,7 @@ Tout ce que vous consignez à bord :
 - des [constatations](vaststellingen.md) avec photos ;
 - répondre à la [check-list](checklist.md) ;
 - [faire signer](laten-tekenen.md) ;
+- [les conditions et les présents](aan-boord.md#conditions-et-presents) et [des événements de la chronologie](aan-boord.md#chronologie) ;
 - [notes vocales, codes, documents de bord et sondages](aan-boord.md) ;
 - [enregistrer le temps](tijd.md) ;
 - commencer et terminer le travail.
@@ -39,8 +40,9 @@ Si quelque chose attend, il est écrit **… en attente** en haut à droite de M
 
 ### Une action refusée
 
-Il arrive que Quaymark refuse quelque chose, par exemple parce que le dossier a été clôturé entre-temps. En haut de Mes dossiers, il est alors écrit en rouge *… refusé(s) — touchez pour vérifier*. Dans **À envoyer**, l'action figure en rouge, avec **Refusé par le serveur** et le motif.
+Il arrive que Quaymark refuse quelque chose : parce que le dossier a été clôturé entre-temps, parce qu'un texte est trop long, ou parce que le bureau a modifié les mêmes données entre-temps. En haut de Mes dossiers, il est alors écrit en rouge *… refusé(s) — touchez pour vérifier*. Dans **À envoyer**, l'action figure en rouge, avec **Refusé par le serveur** et le motif.
 
+- **Modifier** : pour une constatation et pour les conditions et présents. Le formulaire s'ouvre avec ce que vous avez rempli et le motif au-dessus. Modifiez ce que Quaymark a refusé et touchez **Enregistrer** : l'action repart, à sa place dans la file. Les photos d'une constatation restent avec elle (*… photo(s) déjà enregistrée(s)*). → [Le bureau a modifié entre-temps](aan-boord.md#le-bureau-a-modifie-entre-temps)
 - **Réessayer** : l'envoie aussitôt une nouvelle fois. Utile si la cause a disparu entre-temps.
 - **Supprimer** : l'action ne part jamais. L'application le demande d'abord. Pour une constatation, ses photos disparaissent avec elle.
 

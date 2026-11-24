@@ -6,7 +6,7 @@ description: "La check-list dans l'application de terrain : une réponse par poi
 
 Si le type d'expertise a une check-list, le dossier porte la carte **Check-list**, avec le nombre de points qui ont une réponse. Touchez la carte pour ouvrir la check-list.
 
-![La check-list avec cinq points et sous chacun les boutons Conforme, Non conforme et S.o. : trois points Conforme, un Non conforme avec le constat en rouge et un S.o. Un point porte photo obligatoire.](../images/app-checklist-fr.png "La check-list"){ width="320" }
+![La check-list avec cinq points et sous chacun les boutons Conforme, Non conforme et S.o., puis Photo et De la photothèque : trois points Conforme, un Non conforme avec le constat en rouge et un S.o. Un point porte photo obligatoire.](../images/app-checklist-fr.png "La check-list"){ width="320" }
 
 ## Répondre
 
@@ -22,8 +22,6 @@ Chaque réponse est **ajoutée** : une nouvelle réponse ne remplace pas la pré
 ## Une photo à un point
 
 Sous un point répondu figurent **Photo** et **De la photothèque**, comme pour une nouvelle constatation. Un point sans réponse ne les a pas : répondez d'abord, car la photo est la preuve de cette réponse.
-
-<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto-fr, met 1.0.7) -->
 
 - Il n'y a pas d'**Enregistrer** : la photo est liée aussitôt au point. Tant que l'appareil enregistre la photo (la position peut prendre jusqu'à 15 secondes), une roue tourne sur le bouton.
 - Sous le point figure le nombre de photos, par exemple *photo obligatoire · 📷 2 · pas encore envoyé*. Ce nombre compte les photos déjà au bureau, y compris celles d'une réponse précédente, et celles qui attendent encore sur l'appareil.

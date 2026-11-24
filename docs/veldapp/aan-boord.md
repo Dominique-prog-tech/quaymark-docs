@@ -1,10 +1,52 @@
 ---
-description: "Aan boord vastleggen in de veldapp: spraaknotities, codes scannen, documenten van boord en de peilingen van een bunker survey."
+description: "Aan boord vastleggen in de veldapp: omstandigheden en aanwezigen, de tijdlijn, spraaknotities, codes scannen, documenten van boord en de peilingen van een bunker survey."
 ---
 
 # Aan boord vastleggen
 
-Naast vaststellingen legt u aan boord ook notities, codes, documenten en peilingen vast. Elk heeft zijn kaart op het dossier, en alles werkt zonder bereik.
+Naast vaststellingen legt u aan boord ook de omstandigheden, de aanwezigen, de tijdlijn, notities, codes, documenten en peilingen vast. Elk heeft zijn kaart op het dossier, en alles werkt zonder bereik.
+
+## Omstandigheden en aanwezigen
+
+Op de kaart **Omstandigheden en aanwezigen** legt u vast in welke omstandigheden de survey plaatsvond en wie erbij was. Tik op **Invullen**.
+
+![Het scherm Omstandigheden en aanwezigen, ingevuld: Weer Bewolkt, Zee Kalm, Zicht Goed, Ligplaats / afmeren Kaai 730, port side alongside, en onder Aanwezigen twee personen met Naam, Functie en Partij, elk met een kruisje.](../images/app-omstandigheden.png "Omstandigheden en aanwezigen"){ width="320" }
+
+1. Kies het **Weer**, de **Zee** en het **Zicht**. Met **—** laat u een keuze leeg.
+2. Vul eventueel **Ligplaats / afmeren** in, bijvoorbeeld *Kaai 730, port side alongside*.
+3. Tik onder **Aanwezigen** op **Aanwezige toevoegen** en vul de **Naam** in, en eventueel de **Functie** en de **Partij** die de persoon vertegenwoordigt. Met het kruisje haalt u een aanwezige weg.
+4. Tik op **Bewaren**.
+
+Een aanwezige met een functie of een partij heeft ook een naam nodig; anders zegt de app *Geef elke aanwezige een naam, of haal de regel weg.* Er kunnen hoogstens 30 aanwezigen op. Kantoor ziet en wijzigt dezelfde gegevens op het dossier. → [Dossiers](../dossiers.md#dossier)
+
+### Kantoor wijzigde intussen
+
+Wijzigde kantoor de omstandigheden of de aanwezigen terwijl uw wijziging nog op het toestel wachtte, dan overschrijft Quaymark niets. Uw wijziging staat dan in het rood op **Nog te versturen**.
+
+1. Tik op **Aanpassen**. Bovenaan staat *Kantoor wijzigde dit intussen. Zo staat het nu op kantoor:*, met wat kantoor invulde. Daaronder staat uw eigen keuze.
+2. Neem alles van kantoor over met **Die van kantoor overnemen**, of kies per veld wat er moet staan.
+3. Tik op **Bewaren**.
+
+Kiest u precies wat kantoor al heeft, dan vertrekt er niets: het staat er al. → [Een geweigerde handeling](zonder-bereik.md#een-geweigerde-handeling)
+
+## Tijdlijn
+
+Bij een soort survey met een tijdlijn (de statement of facts) staat op het dossier de kaart **Tijdlijn**. Daarop houdt u bij wat er met het schip gebeurt: van de aankomst tot het vertrek.
+
+![De kaart Tijdlijn van ZB-2026-0003 met tien gebeurtenissen en Toon alle (10): de laatste vijf, zoals Start laden om 13:00 en Onderbreking om 18:20, elk met een vinkje en Kantoor.](../images/app-tijdlijn.png "De tijdlijn"){ width="320" }
+
+![Onder de kaart Tijdlijn: de zin Tik op wat er nu gebeurt: de tijd van het toestel gaat mee., en vijftien knoppen, van Aankomst op de rede tot Vertrek en Andere.](../images/app-gebeurtenis.png "Een gebeurtenis kiezen"){ width="320" }
+
+1. Tik op **Gebeurtenis**.
+2. Tik op wat er nu gebeurt, bijvoorbeeld **Start laden** of **Onderbreking**. De tijd van het toestel gaat mee.
+
+De app zegt bijvoorbeeld *Onderbreking vastgelegd.*, en de gebeurtenis staat meteen op de kaart. Bij **Andere** vult u een **Omschrijving** in en tikt u op **Bewaren**.
+
+De keuzes zijn: **Aankomst op de rede**, **NOR ingediend**, **NOR aanvaard**, **Aangemeerd**, **Luiken open**, **Start laden**, **Start lossen**, **Onderbreking**, **Hervatting**, **Einde laden**, **Einde lossen**, **Luiken dicht**, **Documenten aan boord**, **Vertrek** en **Andere**.
+
+De kaart toont de laatste vijf gebeurtenissen; **Toon alle** toont ze allemaal. Wat kantoor invulde, staat er met *Kantoor* bij, met de uren zoals kantoor ze ziet: in de tijd van de vestiging.
+
+In de app voegt u een gebeurtenis enkel toe. Een vergissing zet kantoor recht op het tabblad **Tijdlijn**. → [Tijdlijn](../dossiers.md#tijdlijn)
 
 ## Spraaknotities
 
@@ -65,6 +107,15 @@ Bij een soort survey met bunker survey staat op het dossier de kaart **Bunker su
 Volume en temperatuur zijn verplicht. De app toont een **Schatting** in ton als hulp ter plaatse; Quaymark rekent zelf opnieuw. Een tank die het schip nog niet had, voegt u toe met **Tank toevoegen**.
 
 Een peiling begint met de waarden van de vorige. Een verbetering is een nieuwe peiling: de laatste per tank telt. → [Bunker survey](../dossiers.md#bunker-survey)
+
+### Meetapparatuur
+
+Onder de peilingen staat het blok **Meetapparatuur**: daar kiest u de toestellen waarmee u peilde, zoals de thermometer en het peillint.
+
+1. Tik op **Toestel kiezen**.
+2. Tik op het toestel. Bovenaan staan de toestellen die **Voorgesteld bij de bunker** zijn, daaronder de **Andere toestellen**. Bij elk toestel staat de stand van zijn kalibratie: **Geldig**, **Vervalt binnenkort**, **Vervallen** of **Nooit gekalibreerd**.
+
+Een toestel met een vervallen kalibratie, of zonder kalibratie, kunt u toch kiezen. De app waarschuwt: *U kunt gewoon meten: het rapport vermeldt het.* Een gekozen toestel weghalen kan enkel op kantoor. → [Meetapparatuur](../meetapparatuur.md#bij-een-meting)
 
 ## Zie ook
 

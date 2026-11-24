@@ -8,7 +8,7 @@ Een **vaststelling** is wat u aan boord ziet: een deuk in de tanktop van ruim 3,
 
 ## Een vaststelling toevoegen
 
-Tik op **Nieuwe vaststelling** onderaan het dossier, of op **Toevoegen** op de kaart **Vaststellingen**.
+Tik op **Toevoegen** op de kaart **Vaststellingen**.
 
 ![Het scherm Nieuwe vaststelling, ingevuld: Plaats aan boord, Nummer / zijde, Categorie, Ernst en Omschrijving, onder Foto's een foto met het begin van haar vingerafdruk, een speld en het teken van de bibliotheek, de knoppen Foto en Uit bibliotheek, en Bewaren.](../images/app-vaststelling.png "Nieuwe vaststelling"){ width="320" }
 
@@ -19,6 +19,8 @@ Tik op **Nieuwe vaststelling** onderaan het dossier, of op **Toevoegen** op de k
 5. Tik op **Bewaren**.
 
 Plaats, categorie en omschrijving zijn verplicht. De keuzes van plaats en categorie komen van uw bureau. → [Keuzelijsten](../categorieen-en-plaatsen.md)
+
+Onder **Nummer / zijde** telt de app de tekens mee: hoogstens 20. Bij een lange **Omschrijving** verschijnt de teller pas als u de grens nadert. Is een tekst te lang, dan bewaart de app niet en zegt ze waarom, bijvoorbeeld *Nummer / zijde: hoogstens 20 tekens*.
 
 De vaststelling staat meteen op de kaart, met een wolk zolang ze niet verstuurd is. De foto's vertrekken na hun vaststelling.
 
@@ -38,9 +40,11 @@ Is de foto verstuurd en heeft Quaymark de vingerafdruk nagerekend, dan wist de a
 
 ## Een vaststelling rechtzetten
 
-Een vaststelling wordt enkel **toegevoegd**, nooit gewijzigd of verwijderd: zo blijft vast te stellen wat er aan boord genoteerd werd. In de app kunt u ze daarom niet aanpassen. Een fout zet u op kantoor recht met **Rechtzetten**, met een reden; de oude versie blijft doorgestreept staan. → [Vaststellingen](../dossiers.md#vaststellingen)
+Een vaststelling wordt enkel **toegevoegd**, nooit gewijzigd of verwijderd: zo blijft vast te stellen wat er aan boord genoteerd werd. Een vaststelling die bij Quaymark staat, kunt u in de app daarom niet meer aanpassen. Een fout zet u op kantoor recht met **Rechtzetten**, met een reden; de oude versie blijft doorgestreept staan. → [Vaststellingen](../dossiers.md#vaststellingen)
 
 Ziet u de fout nog vóór het versturen, dan kunt u de vaststelling weggooien op **Nog te versturen**. Haar foto's gaan dan mee weg. → [Zonder bereik](zonder-bereik.md)
+
+Weigerde Quaymark de vaststelling, bijvoorbeeld omdat een tekst te lang was, dan past u ze aan op **Nog te versturen** met **Aanpassen**. → [Een geweigerde handeling](zonder-bereik.md#een-geweigerde-handeling)
 
 ## Veelgemaakte fouten
 

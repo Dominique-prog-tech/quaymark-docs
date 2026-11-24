@@ -6,7 +6,7 @@ description: "Die Checkliste in der Feld-App: eine Antwort pro Punkt und bei ein
 
 Hat die Besichtigungsart eine Checkliste, trägt die Akte die Karte **Checkliste** mit der Anzahl beantworteter Punkte. Tippen Sie auf die Karte, um die Checkliste zu öffnen.
 
-![Die Checkliste mit fünf Punkten und unter jedem den Schaltflächen In Ordnung, Nicht in Ordnung und Entfällt: drei Punkte In Ordnung, einer Nicht in Ordnung mit dem Befund in Rot und einer Entfällt. Ein Punkt trägt Foto erforderlich.](../images/app-checklist-de.png "Die Checkliste"){ width="320" }
+![Die Checkliste mit fünf Punkten und unter jedem den Schaltflächen In Ordnung, Nicht in Ordnung und Entfällt, darunter Foto und Aus der Mediathek: drei Punkte In Ordnung, einer Nicht in Ordnung mit dem Befund in Rot und einer Entfällt. Bei einem Punkt steht Foto erforderlich.](../images/app-checklist-de.png "Die Checkliste"){ width="320" }
 
 ## Antworten
 
@@ -22,8 +22,6 @@ Jede Antwort wird **hinzugefügt**: Eine neue Antwort ersetzt die vorige nicht, 
 ## Ein Foto bei einem Punkt
 
 Unter einem beantworteten Punkt stehen **Foto** und **Aus der Mediathek**, wie bei einer neuen Feststellung. Ein Punkt ohne Antwort hat sie nicht: Antworten Sie zuerst, denn das Foto ist der Beweis dieser Antwort.
-
-<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto-de, met 1.0.7) -->
 
 - Es gibt kein **Speichern**: Das Foto hängt sofort am Punkt. Solange das Gerät das Foto festhält (die Position kann bis zu 15 Sekunden dauern), dreht sich ein Rad auf der Schaltfläche.
 - Unter dem Punkt steht, wie viele Fotos er hat, zum Beispiel *Foto erforderlich · 📷 2 · noch nicht gesendet*. Diese Zahl zählt die Fotos, die schon im Büro sind, auch bei einer früheren Antwort, und die noch auf dem Gerät warten.

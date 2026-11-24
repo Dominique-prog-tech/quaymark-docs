@@ -6,13 +6,16 @@ description: "Eine Akte in der Feld-App: eine Seite mit Karten, vom Kopf mit dem
 
 Eine Akte ist in der Feld-App eine Seite mit Karten, in der Reihenfolge der Arbeit an Bord. Jede Karte hat rechts in ihrem Kopf ihre eigene Schaltfläche.
 
-![Die Akte HQ-2026-0003 oben: der Kopf mit dem Schiff KAAIMEEUW, Zeitpunkt, Hafen, Auftraggeber, dem Etikett In Bearbeitung und der Schaltfläche Vor Ort fertig → Bericht, die Karte Checkliste mit 5 / 5 beantwortet, die Karte Feststellungen mit vier Feststellungen mit Häkchen, und die Schaltfläche Neue Feststellung.](../images/app-dossier-de.png "Die Akte"){ width="320" }
+![Die Akte HQ-2026-0003 oben: der Kopf mit dem Schiff KAAIMEEUW, Zeitpunkt, Hafen, Auftraggeber, dem Etikett In Bearbeitung und der Schaltfläche Vor Ort fertig → Bericht, die Karte Umstände und Anwesende mit Ausfüllen, Wetter, See, Sicht, Liegeplatz und zwei Anwesenden, und die Karte Zeitablauf mit Ereignis.](../images/app-dossier-de.png "Die Akte"){ width="320" }
 
 ## Die Karten
 
 | Karte | Schaltfläche | Was |
 |---|---|---|
 | Der Kopf | **Arbeit vor Ort beginnen** oder **Vor Ort fertig → Bericht** | Das Schiff, wann und wo, der Auftraggeber und die Beschreibung des Auftrags |
+| **Arbeitsanweisung** | die Karte selbst | Nur wenn Ihr Büro eine für die Besichtigungsart geschrieben hat: siehe [Arbeitsanweisung](#arbeitsanweisung) |
+| **Umstände und Anwesende** | **Ausfüllen** | Wetter, See, Sicht, Liegeplatz und wer anwesend war: siehe [An Bord erfassen](aan-boord.md#umstande-und-anwesende) |
+| **Zeitablauf** | **Ereignis** | Nur bei einer Besichtigungsart mit Zeitablauf: siehe [An Bord erfassen](aan-boord.md#zeitablauf) |
 | **Checkliste** | die Karte selbst | Wie viele Punkte beantwortet sind. Tippen Sie auf die Karte, um die Checkliste zu öffnen: siehe [Die Checkliste](checklist.md) |
 | **Feststellungen** | **Hinzufügen** | Was Sie an Bord feststellen, mit Fotos: siehe [Feststellungen und Fotos](vaststellingen.md) |
 | **Notizen** | **Diktieren** | Sprachnotizen: siehe [An Bord erfassen](aan-boord.md#sprachnotizen) |
@@ -23,9 +26,11 @@ Eine Akte ist in der Feld-App eine Seite mit Karten, in der Reihenfolge der Arbe
 | **Unterschriften** | **Unterschreiben** | Die Erklärung unterschreiben lassen: siehe [Unterschreiben lassen](laten-tekenen.md) |
 | **Daten** | — | Die Besichtigungsdaten, wie das Büro sie ausgefüllt hat. Hier nur zum Lesen |
 
-Eine neue Feststellung erstellen Sie auch mit der Schaltfläche **Neue Feststellung** unten auf dem Bildschirm.
-
 ![Dieselbe Akte weiter unten: die Karte Notizen mit Diktieren und zwei Notizen, die Karte Codes mit Scannen und drei Codes, einer mit einer Warnung, weil die Prüfziffer nicht stimmt, und die Karte Bordunterlagen mit Hinzufügen.](../images/app-dossier-verder-de.png "Notizen, Codes und Bordunterlagen"){ width="320" }
+
+## Arbeitsanweisung
+
+Hat Ihr Büro eine Arbeitsanweisung für die Besichtigungsart geschrieben, steht sie als erste Karte unter dem Kopf, in der Sprache Ihres Geräts. Die Karte zeigt den Anfang: Tippen Sie darauf, um die ganze Arbeitsanweisung zu lesen. Ohne Arbeitsanweisung gibt es keine Karte. → [Besichtigungsarten](../soorten-survey.md)
 
 ## Gesendet oder noch unterwegs
 

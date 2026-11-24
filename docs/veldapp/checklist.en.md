@@ -6,7 +6,7 @@ description: "The checklist in the field app: one answer per item, and for a def
 
 If the survey type has a checklist, the file has the **Checklist** card, showing how many items are answered. Tap the card to open the checklist.
 
-![The checklist with five items and below each the OK, Not OK and N/a buttons: three items OK, one Not OK with the finding in red and one N/a. One item is marked photo required.](../images/app-checklist-en.png "The checklist"){ width="320" }
+![The checklist with five items and below each the OK, Not OK and N/a buttons, then Photo and From library: three items OK, one Not OK with the finding in red and one N/a. One item is marked photo required.](../images/app-checklist-en.png "The checklist"){ width="320" }
 
 ## Answering
 
@@ -22,8 +22,6 @@ Every answer is **added**: a new answer does not replace the previous one, it co
 ## A photo with an item
 
 Below an answered item are **Photo** and **From library**, as for a new finding. An item without an answer does not have them: answer first, because the photo is the evidence of that answer.
-
-<!-- AFBEELDING: de checklist met onder een beantwoord punt Foto en Uit bibliotheek, en de regel foto verplicht · 📷 1 (app-checklist-foto-en, met 1.0.7) -->
 
 - There is no **Save**: the photo is attached to the item straight away. While the device records the photo (the position can take up to 15 seconds), a spinner turns on the button.
 - Below the item you see how many photos it has, for example *photo required · 📷 2 · not sent yet*. That number counts the photos already at the office, including those of a previous answer, and those still waiting on the device.

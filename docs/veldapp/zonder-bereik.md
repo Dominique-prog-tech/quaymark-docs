@@ -19,6 +19,7 @@ Alles wat u aan boord vastlegt:
 - [vaststellingen](vaststellingen.md) met foto's;
 - de [checklist](checklist.md) beantwoorden;
 - [laten tekenen](laten-tekenen.md);
+- [de omstandigheden en de aanwezigen](aan-boord.md#omstandigheden-en-aanwezigen) en [gebeurtenissen op de tijdlijn](aan-boord.md#tijdlijn);
 - [spraaknotities, codes, documenten van boord en peilingen](aan-boord.md);
 - [tijd registreren](tijd.md);
 - het werk starten en afronden.
@@ -39,8 +40,9 @@ Wacht er iets, dan staat rechtsboven op Mijn dossiers **… wachtend**, en in he
 
 ### Een geweigerde handeling
 
-Soms weigert Quaymark iets, bijvoorbeeld omdat het dossier intussen afgesloten werd. Bovenaan Mijn dossiers staat dan in het rood *… geweigerd — tik om na te kijken*. Op **Nog te versturen** staat de handeling in het rood, met **Geweigerd door de server** en de reden.
+Soms weigert Quaymark iets: omdat het dossier intussen afgesloten werd, omdat een tekst te lang is, of omdat kantoor intussen dezelfde gegevens wijzigde. Bovenaan Mijn dossiers staat dan in het rood *… geweigerd — tik om na te kijken*. Op **Nog te versturen** staat de handeling in het rood, met **Geweigerd door de server** en de reden.
 
+- **Aanpassen**: bij een vaststelling en bij de omstandigheden en aanwezigen. Het formulier opent met wat u invulde en de reden erboven. Pas aan wat Quaymark weigerde en tik op **Bewaren**: de handeling vertrekt opnieuw, op haar plaats in de rij. De foto's van een vaststelling blijven erbij (*… foto('s) al bewaard*). → [Kantoor wijzigde intussen](aan-boord.md#kantoor-wijzigde-intussen)
 - **Opnieuw proberen**: verstuurt ze meteen nog eens. Zinvol als de oorzaak intussen weg is.
 - **Weggooien**: de handeling vertrekt nooit. De app vraagt het eerst. Bij een vaststelling gaan haar foto's mee weg.
 

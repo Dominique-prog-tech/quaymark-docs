@@ -8,7 +8,7 @@ Une **constatation**, c'est ce que vous voyez à bord : un enfoncement du plafon
 
 ## Ajouter une constatation
 
-Touchez **Nouvelle constatation** en bas du dossier, ou **Ajouter** sur la carte **Constatations**.
+Touchez **Ajouter** sur la carte **Constatations**.
 
 ![L'écran Nouvelle constatation, rempli : Emplacement à bord, Numéro / bord, Catégorie, Gravité et Description, sous Photos une photo avec le début de son empreinte, une punaise et le signe de la photothèque, les boutons Photo et De la photothèque, et Enregistrer.](../images/app-vaststelling-fr.png "Nouvelle constatation"){ width="320" }
 
@@ -19,6 +19,8 @@ Touchez **Nouvelle constatation** en bas du dossier, ou **Ajouter** sur la carte
 5. Touchez **Enregistrer**.
 
 L'emplacement, la catégorie et la description sont obligatoires. Les choix d'emplacement et de catégorie viennent de votre bureau. → [Listes de choix](../categorieen-en-plaatsen.md)
+
+Sous **Numéro / bord**, l'application compte les caractères : au plus 20. Pour une longue **Description**, le compteur n'apparaît que lorsque vous approchez de la limite. Si un texte est trop long, l'application n'enregistre pas et dit pourquoi, par exemple *Numéro / bord : au plus 20 caractères*.
 
 La constatation apparaît aussitôt sur la carte, avec un nuage tant qu'elle n'est pas envoyée. Les photos partent après leur constatation.
 
@@ -38,9 +40,11 @@ Une fois la photo envoyée et son empreinte recalculée par Quaymark, l'applicat
 
 ## Rectifier une constatation
 
-Une constatation est seulement **ajoutée**, jamais modifiée ni supprimée : on peut ainsi établir ce qui a été noté à bord. Vous ne pouvez donc pas la modifier dans l'application. Une erreur se corrige au bureau avec **Rectifier**, et un motif ; l'ancienne version reste visible, barrée. → [Constatations](../dossiers.md#constatations)
+Une constatation est seulement **ajoutée**, jamais modifiée ni supprimée : on peut ainsi établir ce qui a été noté à bord. Une constatation qui figure chez Quaymark ne peut donc plus être modifiée dans l'application. Une erreur se corrige au bureau avec **Rectifier**, et un motif ; l'ancienne version reste visible, barrée. → [Constatations](../dossiers.md#constatations)
 
 Si vous voyez l'erreur avant l'envoi, vous pouvez supprimer la constatation dans **À envoyer**. Ses photos disparaissent avec elle. → [Hors connexion](zonder-bereik.md)
+
+Si Quaymark a refusé la constatation, par exemple parce qu'un texte était trop long, vous la modifiez dans **À envoyer** avec **Modifier**. → [Une action refusée](zonder-bereik.md#une-action-refusee)
 
 ## Erreurs fréquentes
 
