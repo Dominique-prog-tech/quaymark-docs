@@ -32,6 +32,8 @@ Die Daten einer Beziehung.
 
 Eine gespeicherte Beziehung hat die Registerkarte **Ansprechpartner** (Name, Funktion, E-Mail, Telefon, Sprache; mit **⋯** am Zeilenende bearbeiten oder löschen Sie einen, und Löschen ist endgültig) und das Journal mit Notizen, Aufgaben, Anlagen und Verlauf. **Löschen** verschiebt die Beziehung in den Papierkorb; dort stellen Sie sie auch wieder her. Öffnen Sie eine Beziehung, die im Papierkorb liegt (zum Beispiel aus einer alten Akte), sagt der Datensatz das oben, und sie kann nur noch angesehen werden.
 
+Die Registerkarte **Akten** zeigt die Akten, in denen die Beziehung vorkommt: als Auftraggeber oder als Partei, mit ihrer **Rolle** (Auftraggeber, Reeder, P&I-Club …), neueste zuerst. Ein Klick auf eine Zeile öffnet die Akte. Die Registerkarte erscheint für alle, die Akten sehen dürfen; eine Akte im Papierkorb steht nicht darin.
+
 ## Auftraggeberportal
 
 Ein Auftraggeber kann seine Akten im Auftraggeberportal selbst verfolgen. Dazu geben Sie einer Kontaktperson der Beziehung Zugang. Die Registerkarte **Auftraggeberportal** auf dem Datensatz sehen Sie nur mit dem Recht, das Auftraggeberportal zu verwalten; standardmäßig hat nur der Administrator dieses Recht.

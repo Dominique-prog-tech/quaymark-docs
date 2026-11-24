@@ -35,9 +35,11 @@ One instruction: what was asked, where and when, and what the surveyor finds on 
 
 A saved file has these tabs: **Parties**, **Documents** (in folders, those of the vessel and the documents from on board), **Fieldwork** (findings, checklist, damage, joint survey, signatures and codes), **Calculations** (draft survey, gauging, bunkers, timeline and laytime: only what the survey type has), **Messages**, **Time and expenses**, **Report** and the **Journal** (notes, tasks, attachments and history). A group shows its parts as small tabs below it. The office chooses per survey type which tabs a file shows. → [Survey types](soorten-survey.md#survey-type)
 
-**Parties**: the relations with their role (owner, P&I club, opposing expert …) and their reference. **Add party** adds one; with **⋯** at the end of a row you edit the role and reference, or delete the party.
+**Parties**: the relations with their role (owner, P&I club, opposing expert …) and their reference. **Add party** adds one; with **⋯** at the end of a row you edit the role and reference, or delete the party. For each party you can also choose a **contact person** from that relation's contacts (optional). The tab shows their name, email and phone; the report only shows their name, in brackets after the party. If the contact person later disappears from the relation, their name stays on the party, with *(deleted)*.
 
 ### Closed or cancelled
+
+When you set a file to **Closed**, Quaymark first shows what is still open: no issued report, work not yet invoiced (with the estimated amount, as under [To invoice](facturen.md)), open tasks in the journal, a signature still pending. You choose **Close anyway**, or **Cancel** to finish it first; the status then stays as it was. If nothing is open, the file closes straight away.
 
 A **closed** or **cancelled** file is fixed. A box at the top says so, with the **Status**. The blocks of the **General** tab and the **Parties** can only be read, and **Send confirmation** and **Delete** are no longer there. If something still has to change, set the status back (for example to Reporting) and click **Save**: the file is then open again. Closing it again sets a new closing date, and every step is in the history.
 

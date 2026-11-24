@@ -31,6 +31,8 @@ De gegevens van één schip.
 
 Een bewaard schip heeft het tabblad **Documenten** (plannen, certificaten, tabellen, in mappen) en het journaal. Die documenten verschijnen ook op elk dossier van het schip, onder **Van het schip**. **Verwijderen** verplaatst het schip naar de prullenbak. Een nieuw schip krijgt meteen de [standaardmappen](standaardmappen.md) van het bureau, ook als het vanuit een dossier, een aanvraag of een offerte ontstaat.
 
+Het tabblad **Surveyhistoriek** toont alle dossiers van het schip, nieuwste eerst: datum, soort survey, opdrachtgever, haven en status. Een on-hire en zijn off-hire staan bij elkaar vermeld onder **Gekoppeld dossier** (zie het blok Omstandigheden en aanwezigen van een [dossier](dossiers.md#dossier)). Een klik op een rij opent het dossier.
+
 ## Ruimen en tanks
 
 Het tabblad **Ruimen en tanks** houdt per schip de ruimen en tanks bij, zodat een volgend bezoek ze hergebruikt:

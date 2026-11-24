@@ -31,6 +31,8 @@ Die Daten eines Schiffs.
 
 Ein gespeichertes Schiff hat die Registerkarte **Dokumente** (Pläne, Zertifikate, Tabellen, in Ordnern) und das Journal. Diese Dokumente erscheinen auch in jeder Akte des Schiffs, unter **Vom Schiff**. **Löschen** verschiebt das Schiff in den Papierkorb. Ein neues Schiff erhält sofort die [Standardordner](standaardmappen.md) des Büros, auch wenn es aus einer Akte, einer Anfrage oder einem Angebot entsteht.
 
+Die Registerkarte **Besichtigungshistorie** zeigt alle Akten des Schiffs, neueste zuerst: Datum, Besichtigungsart, Auftraggeber, Hafen und Status. Ein On-hire und sein Off-hire verweisen unter **Verknüpfte Akte** aufeinander (siehe den Block Umstände und Anwesende einer [Akte](dossiers.md#akte)). Ein Klick auf eine Zeile öffnet die Akte.
+
 ## Laderäume und Tanks
 
 Die Registerkarte **Laderäume und Tanks** führt pro Schiff die Laderäume und Tanks, damit ein nächster Besuch sie wiederverwendet:

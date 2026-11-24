@@ -31,6 +31,8 @@ Les données d'un navire.
 
 Un navire enregistré a l'onglet **Documents** (plans, certificats, tables, en répertoires) et le journal. Ces documents apparaissent aussi dans chaque dossier du navire, sous **Du navire**. **Supprimer** déplace le navire vers la corbeille. Un nouveau navire reçoit aussitôt les [répertoires standard](standaardmappen.md) du bureau, même s'il est créé depuis un dossier, une demande ou une offre.
 
+L'onglet **Historique des expertises** affiche tous les dossiers du navire, les plus récents d'abord : date, type d'expertise, donneur d'ordre, port et statut. Un on-hire et son off-hire se citent mutuellement sous **Dossier lié** (voir le bloc Conditions et présents d'un [dossier](dossiers.md#dossier)). Un clic sur une ligne ouvre le dossier.
+
 ## Cales et citernes
 
 L'onglet **Cales et citernes** conserve par navire les cales et citernes, pour qu'une visite suivante les réutilise :

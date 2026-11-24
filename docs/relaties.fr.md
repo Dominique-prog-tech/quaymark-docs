@@ -32,6 +32,8 @@ Les données d'une relation.
 
 Une relation enregistrée a l'onglet **Personnes de contact** (nom, fonction, e-mail, téléphone, langue ; avec **⋯** en fin de ligne, vous en modifiez ou supprimez une, et la suppression est définitive) et le journal avec notes, tâches, pièces jointes et historique. **Supprimer** déplace la relation vers la corbeille ; c'est là aussi que vous la restaurez. Si vous ouvrez une relation qui se trouve dans la corbeille (par exemple depuis un ancien dossier), la fiche l'indique en haut et elle ne peut plus qu'être consultée.
 
+L'onglet **Dossiers** affiche les dossiers où la relation apparaît : comme donneur d'ordre ou comme partie, avec son **rôle** (donneur d'ordre, armateur, P&I club …), les plus récents d'abord. Un clic sur une ligne ouvre le dossier. L'onglet apparaît pour qui peut voir les dossiers ; un dossier dans la corbeille n'y figure pas.
+
 ## Portail des donneurs d'ordre
 
 Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail des donneurs d'ordre. Pour cela, vous donnez accès à une personne de contact de la relation. Vous ne voyez l'onglet **Portail des donneurs d'ordre** de la fiche qu'avec le droit de gérer le portail des donneurs d'ordre ; par défaut, seul l'administrateur a ce droit.

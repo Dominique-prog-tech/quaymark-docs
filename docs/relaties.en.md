@@ -32,6 +32,8 @@ The details of one relation.
 
 A saved relation has the **Contacts** tab (name, position, email, phone, language; with **⋯** at the end of the row you edit or delete one, and deleting is permanent) and the journal with notes, tasks, attachments and history. **Delete** moves the relation to the recycle bin; that is also where you restore it. If you open a relation that is in the recycle bin (for example from an old file), the record says so at the top and it can only be viewed.
 
+The **Files** tab shows the files in which the relation appears: as principal or as a party, with its **role** (principal, owner, P&I club …), newest first. A click on a row opens the file. The tab appears for those who may see files; a file in the recycle bin is not listed.
+
 ## Principal portal
 
 A principal can follow their own files in the principal portal. To allow this, you give a contact person of the relation access. You only see the **Principal portal** tab on the record with the right to manage the principal portal; by default only the administrator has that right.

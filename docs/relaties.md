@@ -32,6 +32,8 @@ De gegevens van één relatie.
 
 Een bewaarde relatie heeft het tabblad **Contactpersonen** (naam, functie, e-mail, telefoon, taal; met **⋯** achteraan de rij bewerkt of verwijdert u er een, en verwijderen is definitief) en het journaal met notities, taken, bijlagen en historiek. **Verwijderen** verplaatst de relatie naar de prullenbak; daar zet u ze ook terug. Opent u een relatie die in de prullenbak staat (bijvoorbeeld vanuit een oud dossier), dan zegt de fiche dat bovenaan en is ze enkel nog te lezen.
 
+Het tabblad **Dossiers** toont de dossiers waarin de relatie voorkomt: als opdrachtgever of als partij, met haar **rol** (opdrachtgever, reder, P&I-club …), nieuwste eerst. Een klik op een rij opent het dossier. Het tabblad verschijnt voor wie dossiers mag zien; een dossier in de prullenbak staat er niet in.
+
 ## Opdrachtgeversportaal
 
 Een opdrachtgever kan zijn dossiers zelf volgen in het opdrachtgeversportaal. U geeft daarvoor een contactpersoon van de relatie toegang. Het tabblad **Opdrachtgeversportaal** op de fiche ziet u enkel met het recht om het opdrachtgeversportaal te beheren; standaard heeft enkel de beheerder dat recht.

@@ -31,6 +31,8 @@ The details of one vessel.
 
 A saved vessel has the **Documents** tab (plans, certificates, tables, in folders) and the journal. These documents also appear on every file of the vessel, under **From the vessel**. **Delete** moves the vessel to the recycle bin. A new vessel gets your [standard folders](standaardmappen.md) at once, also when it is created from a file, a request or a quote.
 
+The **Survey history** tab shows all files of the vessel, newest first: date, survey type, principal, port and status. An on-hire and its off-hire refer to each other under **Linked file** (see the Conditions and attendance block of a [file](dossiers.md#file)). A click on a row opens the file.
+
 ## Holds and tanks
 
 The **Holds and tanks** tab keeps the holds and tanks per vessel, so that a next visit reuses them:

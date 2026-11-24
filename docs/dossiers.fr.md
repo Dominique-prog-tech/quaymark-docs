@@ -35,9 +35,11 @@ Une mission : ce qui est demandé, où et quand, et ce que l'expert constate sur
 
 Un dossier enregistré a ces onglets : **Parties**, **Documents** (dans des répertoires, ceux du navire et les documents de bord), **Travail de terrain** (constatations, check-list, dommages, expertise contradictoire, signatures et codes), **Calculs** (draft survey, jaugeage, soutes, chronologie et laytime : uniquement ce que le type d'expertise prévoit), **Messages**, **Temps et frais**, **Rapport** et le **Journal** (notes, tâches, pièces jointes et historique). Un groupe affiche ses parties sous forme de petits onglets en dessous. Le bureau choisit par type d'expertise les onglets qu'affiche un dossier. → [Types d'expertise](soorten-survey.md#type-dexpertise)
 
-**Parties** : les relations avec leur rôle (armateur, P&I club, contre-expert …) et leur référence. **Ajouter une partie** en ajoute une ; avec **⋯** en fin de ligne, vous modifiez le rôle et la référence, ou supprimez la partie.
+**Parties** : les relations avec leur rôle (armateur, P&I club, contre-expert …) et leur référence. **Ajouter une partie** en ajoute une ; avec **⋯** en fin de ligne, vous modifiez le rôle et la référence, ou supprimez la partie. Pour chaque partie, vous choisissez aussi une **personne de contact** parmi celles de cette relation (facultatif). L'onglet affiche son nom, son e-mail et son téléphone ; dans le rapport ne figure que son nom, entre parenthèses après la partie. Si la personne de contact disparaît ensuite de la relation, son nom reste sur la partie, avec *(supprimé)*.
 
 ### Clôturé ou annulé
+
+Si vous passez un dossier à **Clôturé**, Quaymark affiche d'abord ce qui reste ouvert : aucun rapport émis, du travail pas encore facturé (avec le montant estimé, comme dans [À facturer](facturen.md)), des tâches ouvertes dans le journal, une signature encore en cours. Vous choisissez **Clôturer quand même**, ou **Annuler** pour terminer d'abord ; le statut reste alors inchangé. S'il n'y a rien d'ouvert, le dossier se clôture directement.
 
 Un dossier **clôturé** ou **annulé** est figé. Un encadré en haut l'indique, avec le **Statut**. Les blocs de l'onglet **Général** et les **Parties** ne sont plus que consultables, et **Envoyer la confirmation** et **Supprimer** n'apparaissent plus. S'il faut tout de même modifier quelque chose, remettez le statut en arrière (par exemple sur Rapport) et cliquez sur **Enregistrer** : le dossier est alors de nouveau ouvert. Le clôturer à nouveau fixe une nouvelle date de clôture, et chaque étape figure dans l'historique.
 

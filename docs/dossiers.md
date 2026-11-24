@@ -35,9 +35,11 @@ Eén opdracht: wat er gevraagd is, waar en wanneer, en wat de surveyor ter plaat
 
 Een bewaard dossier heeft deze tabbladen: **Partijen**, **Documenten** (in mappen, die van het schip en de documenten van boord), **Veldwerk** (vaststellingen, checklist, schade, gezamenlijke survey, handtekeningen en codes), **Berekeningen** (draft survey, meting, bunker, tijdlijn en laytime: enkel wat de soort survey heeft), **Berichten**, **Tijd en kosten**, **Rapport** en het **Journaal** (notities, taken, bijlagen en historiek). Een groep toont haar onderdelen als tabjes eronder. Welke tabbladen een dossier toont, kiest het bureau per soort survey. → [Soorten survey](soorten-survey.md#soort-survey)
 
-**Partijen**: de relaties met hun rol (reder, P&I-club, tegenexpert …) en hun referentie. **Partij toevoegen** voegt er een toe; met **⋯** achteraan een rij bewerkt u rol en referentie, of verwijdert u de partij.
+**Partijen**: de relaties met hun rol (reder, P&I-club, tegenexpert …) en hun referentie. **Partij toevoegen** voegt er een toe; met **⋯** achteraan een rij bewerkt u rol en referentie, of verwijdert u de partij. Per partij kiest u ook een **contactpersoon** uit de contactpersonen van die relatie (niet verplicht). Het tabblad toont zijn naam, e-mail en telefoon; in het rapport komt enkel zijn naam, tussen haakjes achter de partij. Verdwijnt de contactpersoon later bij de relatie, dan blijft zijn naam bij de partij staan, met *(verwijderd)*.
 
 ### Afgesloten of geannuleerd
+
+Zet u een dossier op **Afgesloten**, dan toont Quaymark eerst wat er nog openstaat: geen uitgegeven rapport, werk dat nog niet gefactureerd is (met het geraamde bedrag, zoals bij [Te factureren](facturen.md)), open taken in het journaal, een ondertekening die nog loopt. U kiest **Toch afsluiten**, of **Annuleren** om het eerst af te werken; de status blijft dan zoals hij was. Staat er niets open, dan sluit het dossier meteen af.
 
 Een **afgesloten** of **geannuleerd** dossier ligt vast. Bovenaan staat een vak dat het zegt, met de **Status**. De blokken van het tabblad **Algemeen** en de **Partijen** zijn enkel nog te lezen, en **Bevestiging versturen** en **Verwijderen** staan er niet meer. Moet er toch iets veranderen, zet de status dan terug (bijvoorbeeld naar Rapportage) en klik op **Bewaren**: het dossier is dan weer open. Opnieuw afsluiten zet een nieuwe afsluitdatum, en elke stap staat in de historiek.
 
