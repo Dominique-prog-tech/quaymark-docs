@@ -17,6 +17,7 @@ Klicken Sie im Menü links auf **Akten**.
 - Die Spalte **Referenz Auftraggeber** zeigt die Nummer, die der Auftraggeber dem Auftrag gegeben hat; das Suchfeld findet eine Akte auch darüber.
 - Das **Suchfeld** sucht in allen Spalten: Nummer, Besichtigungsart, Schiff, Auftraggeber, Hafen, Sachverständiger, Planung, Status und die gescannten Codes (die nicht als Spalte angezeigt werden) (eine Containernummer findet man auch mit Leerzeichen).
 - Doppelklicken Sie auf eine Zeile, um die **Akte** zu öffnen; der Pfeil am Zeilenanfang öffnet sie in einem neuen Tab. **Neue Akte** legt eine an.
+- Die Leiste **Journal** rechts neben der Liste öffnet das Journal der Zeile, auf der Sie stehen: **Notizen**, **Aufgaben**, **Anhänge** und **Verlauf**, wie in der Akte selbst. Klicken Sie einmal auf eine andere Zeile, und das Journal folgt: Sie müssen die Akte nicht öffnen, um zu sehen, was dazu notiert ist. Der Pfeil oben schließt sie wieder.
 - Die Export-Schaltfläche lädt die Liste als Datei herunter.
 - Die Spalte **Bericht bis** zeigt das Datum, bis zu dem der Bericht laut Rahmenvereinbarung vorliegen muss, mit dem Stand. → [Frist bis zum Bericht](#frist-bis-zum-bericht)
 

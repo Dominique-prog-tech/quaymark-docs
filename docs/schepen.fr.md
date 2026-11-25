@@ -15,6 +15,7 @@ Dans le menu de gauche, cliquez sur **Navires**.
 - **Numéro** est le numéro OMI d'un navire de mer ou le numéro ENI d'un bateau de navigation intérieure.
 - Le **champ de recherche** cherche sur le nom, le numéro, le type de navigation, le type de navire, le pavillon et l'année de construction.
 - Double-cliquez sur une ligne pour ouvrir la **fiche** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau navire** en crée un.
+- La barre **Journal** à droite de la liste s'ouvre sur le journal de la ligne sur laquelle vous êtes : **Notes**, **Tâches**, **Pièces jointes** et **Historique**, comme sur la fiche. Cliquez une fois sur une autre ligne et le journal suit : inutile d'ouvrir le navire pour voir ce qui y a été noté. La flèche en haut le referme.
 
 ![La liste Navires avec le bouton Nouveau navire](images/schepen-lijst-fr.png "La liste Navires")
 

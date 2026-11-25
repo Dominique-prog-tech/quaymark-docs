@@ -15,6 +15,7 @@ Klicken Sie im Menü links auf **Schiffe**.
 - **Nummer** ist die IMO-Nummer eines Seeschiffs oder die ENI-Nummer eines Binnenschiffs.
 - Das **Suchfeld** sucht nach Name, Nummer, Art, Schiffstyp, Flagge und Baujahr.
 - Doppelklicken Sie auf eine Zeile, um den **Datensatz** zu öffnen; der Pfeil am Zeilenanfang öffnet ihn in einem neuen Tab. **Neues Schiff** legt einen an.
+- Die Leiste **Journal** rechts neben der Liste öffnet das Journal der Zeile, auf der Sie stehen: **Notizen**, **Aufgaben**, **Anhänge** und **Verlauf**, wie im Datensatz. Klicken Sie einmal auf eine andere Zeile, und das Journal folgt: Sie müssen das Schiff nicht öffnen, um zu sehen, was dazu notiert ist. Der Pfeil oben schließt sie wieder.
 
 ![Liste der Schiffe mit Neues Schiff](images/schepen-lijst-de.png "Die Liste der Schiffe")
 

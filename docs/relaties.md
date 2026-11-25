@@ -16,6 +16,7 @@ Klik in het menu links op **Relaties**.
 - De kolom **Actief** toont of een relatie nog in de keuzelijsten staat; een streepje betekent niet actief.
 - Het **zoekvak** zoekt op naam, rol, gemeente, land, ondernemingsnummer, e-mail en telefoon.
 - Dubbelklik op een rij om de **fiche** te openen; met het pijltje vooraan de rij opent ze in een nieuw tabblad. **Nieuwe relatie** maakt er een aan.
+- De balk **Journaal** rechts naast de lijst klapt open tot het journaal van de rij waarop u staat: **Notities**, **Taken**, **Bijlagen** en **Historiek**, zoals op de fiche. Klik één keer op een andere rij en het journaal volgt: u hoeft de relatie niet te openen om te zien wat erbij genoteerd is. De pijl bovenaan klapt het weer dicht.
 
 ![De lijst Relaties met hun Rollen en de knop Nieuwe relatie](images/relaties-lijst.png "De lijst Relaties")
 

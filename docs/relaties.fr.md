@@ -16,6 +16,7 @@ Dans le menu de gauche, cliquez sur **Relations**.
 - La colonne **Actif** indique si une relation figure encore dans les listes de choix ; un tiret signifie inactive.
 - Le **champ de recherche** cherche sur le nom, le rôle, la commune, le pays, le numéro d'entreprise, l'e-mail et le téléphone.
 - Double-cliquez sur une ligne pour ouvrir la **fiche** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouvelle relation** en crée une.
+- La barre **Journal** à droite de la liste s'ouvre sur le journal de la ligne sur laquelle vous êtes : **Notes**, **Tâches**, **Pièces jointes** et **Historique**, comme sur la fiche. Cliquez une fois sur une autre ligne et le journal suit : inutile d'ouvrir la relation pour voir ce qui y a été noté. La flèche en haut le referme.
 
 ![La liste Relations avec leurs Rôles et le bouton Nouvelle relation](images/relaties-lijst-fr.png "La liste Relations")
 

@@ -16,6 +16,7 @@ In the menu on the left, click **Relations**.
 - The **Active** column shows whether a relation still appears in the selection lists; a dash means inactive.
 - The **search box** searches name, role, city, country, company number, email and phone.
 - Double-click a row to open the **record**; the arrow at the start of the row opens it in a new tab. **New relation** creates one.
+- The **Journal** bar to the right of the list opens the journal of the row you are on: **Notes**, **Tasks**, **Attachments** and **History**, as on the record. Click another row once and the journal follows: no need to open the relation to see what has been noted on it. The arrow at the top closes it again.
 
 ![The Relations list with their Roles and the New relation button](images/relaties-lijst-en.png "The Relations list")
 

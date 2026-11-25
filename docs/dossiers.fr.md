@@ -17,6 +17,7 @@ Dans le menu de gauche, cliquez sur **Dossiers**.
 - La colonne **Référence donneur d'ordre** affiche le numéro que le donneur d'ordre a donné à la mission ; le champ de recherche trouve aussi un dossier par ce numéro.
 - Le **champ de recherche** cherche dans toutes les colonnes : numéro, type d'expertise, navire, donneur d'ordre, port, expert, planning, statut et les codes scannés (qui ne sont pas affichés en colonne) (un numéro de conteneur se trouve aussi avec des espaces).
 - Double-cliquez sur une ligne pour ouvrir le **dossier** ; la flèche en début de ligne l'ouvre dans un nouvel onglet. **Nouveau dossier** en crée un.
+- La barre **Journal** à droite de la liste s'ouvre sur le journal de la ligne sur laquelle vous êtes : **Notes**, **Tâches**, **Pièces jointes** et **Historique**, comme dans le dossier lui-même. Cliquez une fois sur une autre ligne et le journal suit : inutile d'ouvrir le dossier pour voir ce qui y a été noté. La flèche en haut le referme.
 - Le bouton d'export télécharge la liste sous forme de fichier.
 - La colonne **Rapport pour le** indique la date à laquelle le rapport doit être prêt selon l'accord-cadre, avec l'état. → [Délai jusqu'au rapport](#delai-jusquau-rapport)
 

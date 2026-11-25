@@ -15,6 +15,7 @@ Klik in het menu links op **Schepen**.
 - **Nummer** is het IMO-nummer van een zeeschip of het ENI-nummer van een binnenschip.
 - Het **zoekvak** zoekt op naam, nummer, soort, scheepstype, vlag en bouwjaar.
 - Dubbelklik op een rij om de **fiche** te openen; met het pijltje vooraan de rij opent ze in een nieuw tabblad. **Nieuw schip** maakt er een aan.
+- De balk **Journaal** rechts naast de lijst klapt open tot het journaal van de rij waarop u staat: **Notities**, **Taken**, **Bijlagen** en **Historiek**, zoals op de fiche. Klik één keer op een andere rij en het journaal volgt: u hoeft het schip niet te openen om te zien wat erbij genoteerd is. De pijl bovenaan klapt het weer dicht.
 
 ![De lijst Schepen met zeevaart en binnenvaart en de knop Nieuw schip](images/schepen-lijst.png "De lijst Schepen")
 

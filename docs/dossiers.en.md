@@ -17,6 +17,7 @@ In the menu on the left, click **Files**.
 - The **Principal's reference** column shows the number the principal gave the instruction; the search box also finds a file by it.
 - The **search box** searches all columns: number, survey type, vessel, principal, port, surveyor, planning, status and the scanned codes (not shown as a column) (a container number is also found with spaces).
 - Double-click a row to open the **file**; the arrow at the start of the row opens it in a new tab. **New file** creates one.
+- The **Journal** bar to the right of the list opens the journal of the row you are on: **Notes**, **Tasks**, **Attachments** and **History**, as in the file itself. Click another row once and the journal follows: no need to open the file to see what has been noted on it. The arrow at the top closes it again.
 - The export button downloads the list as a file.
 - The **Report due** column shows the date by which the report is due under the framework agreement, with its status. → [Report deadline](#report-deadline)
 

@@ -15,6 +15,7 @@ In the menu on the left, click **Vessels**.
 - **Number** is the IMO number of a seagoing vessel or the ENI number of an inland vessel.
 - The **search box** searches name, number, kind, ship type, flag and year built.
 - Double-click a row to open the **record**; the arrow at the start of the row opens it in a new tab. **New vessel** creates one.
+- The **Journal** bar to the right of the list opens the journal of the row you are on: **Notes**, **Tasks**, **Attachments** and **History**, as on the record. Click another row once and the journal follows: no need to open the vessel to see what has been noted on it. The arrow at the top closes it again.
 
 ![The Vessels list with the New vessel button](images/schepen-lijst-en.png "The Vessels list")
 

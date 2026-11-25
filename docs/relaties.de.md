@@ -16,6 +16,7 @@ Klicken Sie im Menü links auf **Beziehungen**.
 - Die Spalte **Aktiv** zeigt, ob eine Beziehung noch in den Auswahllisten steht; ein Strich bedeutet inaktiv.
 - Das **Suchfeld** sucht nach Name, Rolle, Ort, Land, Unternehmensnummer, E-Mail und Telefon.
 - Doppelklicken Sie auf eine Zeile, um den **Datensatz** zu öffnen; der Pfeil am Zeilenanfang öffnet ihn in einem neuen Tab. **Neue Beziehung** legt einen an.
+- Die Leiste **Journal** rechts neben der Liste öffnet das Journal der Zeile, auf der Sie stehen: **Notizen**, **Aufgaben**, **Anhänge** und **Verlauf**, wie im Datensatz. Klicken Sie einmal auf eine andere Zeile, und das Journal folgt: Sie müssen die Beziehung nicht öffnen, um zu sehen, was dazu notiert ist. Der Pfeil oben schließt sie wieder.
 
 ![Liste der Beziehungen mit Rollen und Neue Beziehung](images/relaties-lijst-de.png "Die Liste der Beziehungen")
 
