@@ -140,7 +140,7 @@ const SCHOTEN = () => [
     verwacht: /the certificate says one year/ },
   { naam: 'bewaartermijnen', route: '/beheer/bewaartermijnen', hoogte: 1250, verwacht: /HQ-2018-0042/ },
   { naam: 'dossier-draft', route: '/dossiers', hoogte: 1250, verwacht: /49[.,\u202f\u00a0]706/, na: dossier('HQ-2026-0004', 'draft') },
-  { naam: 'dossier-draft-meting', route: '/dossiers', hoogte: 1650,   // 22/11/2026: 1500 → 1650, het blok Meetapparatuur (P6 stap 2) viel half onder de knoppenbalk
+  { naam: 'dossier-draft-meting', route: '/dossiers', hoogte: 1730,   // 26/11/2026: 1650 → 1730, de LCF met referentie en teken (één rij meer); 22/11/2026: 1500 → 1650, het blok Meetapparatuur (P6 stap 2) viel half onder de knoppenbalk
     verwacht: Q('draft_berekening'),
     na: async p => { await openRij(p, 'HQ-2026-0004'); const u = new URL(p.url()); await p.goto(`${u.origin}${u.pathname}/draft/begin`); await p.waitForLoadState('networkidle'); } },
   // HQ-2026-0007 is afgesloten en staat dus niet in de standaardlijst: rechtstreeks, met de vaste id van het vulscript (vid('dossier/9')).

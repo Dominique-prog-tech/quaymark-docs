@@ -57,7 +57,7 @@ Passen Sie sie bei Bedarf pro Zeile an. Der gesetzliche Hinweis zur Umkehr der S
 Klicken Sie auf **Ausstellen** und bestätigen Sie. Die Rechnung erhält dann:
 
 - ihre **Nummer**, pro Niederlassung und Jahr (F-HQ-2026-0001);
-- ihr **Fälligkeitsdatum** nach dem Zahlungsziel des Büros;
+- ihr **Fälligkeitsdatum** nach dem Zahlungsziel des Auftraggebers (in seinem Datensatz), sonst dem des Büros;
 - einen **strukturierten Verwendungszweck** und einen **Zahlungs-QR-Code**, den eine Banking-App scannen kann.
 
 Die PDF wird mit ihrem Fingerabdruck (SHA-256) festgelegt. Danach kann die Rechnung nicht mehr geändert oder gelöscht werden. Eine Rechnung darf nicht in der Zukunft liegen und nicht vor der zuletzt ausgestellten Rechnung derselben Niederlassung.

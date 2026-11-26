@@ -26,7 +26,7 @@ De gegevens van één relatie.
 
 ![De relatie Kaaimeeuw Rederij NV: Identiteit, Adres en contact, en het tabblad Contactpersonen](images/relatie.png "Een relatie")
 
-- **Identiteit**: soort (bedrijf of persoon), naam, ondernemingsnummer of btw-nummer, rollen, taal en actief. Een ondernemingsnummer komt per land maar één keer voor.
+- **Identiteit**: soort (bedrijf of persoon), naam, ondernemingsnummer of btw-nummer, rollen, taal, actief en de **Betaaltermijn (dagen)** van deze opdrachtgever: elke nieuwe factuur aan de relatie krijgt die termijn; leeg = de betaaltermijn van het bureau. Een ondernemingsnummer komt per land maar één keer voor.
 - **Opzoeken in de KBO** vult naam en adres aan uit de Kruispuntbank van Ondernemingen. Dat werkt enkel voor Belgische ondernemingen.
 - **Adres en contact**: straat, postcode, gemeente, land, e-mail, telefoon en een opmerking. Een e-mailadres dat niet klopt (bijvoorbeeld een komma in plaats van een punt), bewaart Quaymark niet.
 - Een relatie die u niet meer gebruikt, zet u op **niet actief**: ze verdwijnt dan uit de keuzelijsten van nieuwe dossiers, en oude dossiers blijven haar tonen.
@@ -48,7 +48,7 @@ Een opdrachtgever kan zijn dossiers zelf volgen in het opdrachtgeversportaal. U 
 Wat de contactpersoon in het portaal ziet:
 
 - **Mijn dossiers**: de dossiers waarin deze relatie opdrachtgever is, met soort survey, schip, haven (bij naam, zoals in de lijst van havens), de eigen referentie, de status en wanneer het werk gepland is. Een dossier in de prullenbak niet. Vanaf 10 dossiers staat er een zoekveld boven: op nummer, schip, haven of de eigen referentie.
-- Per dossier de **uitgegeven** rapportversies en de uitgegeven brieven en certificaten met hun soort (bijvoorbeeld Certificaat van hoeveelheid), als PDF. Een voorbeeld of een klad nooit. Elk bestand wordt eerst nagerekend tegen zijn vingerafdruk.
+- Per dossier de **uitgegeven** rapportversies met hun soort (voorlopig, tussentijds of eindrapport) en de uitgegeven brieven en certificaten met hun soort (bijvoorbeeld Certificaat van hoeveelheid), als PDF. Een voorbeeld of een klad nooit. Elk bestand wordt eerst nagerekend tegen zijn vingerafdruk.
 - **Nieuwe opdracht**: een opdracht indienen, met bijlagen. Ze komt als aanvraag bij het bureau en staat onder **Mijn aanvragen** tot het bureau beslist. → [Aanvragen](aanvragen.md)
 - **Mijn facturen**: de uitgegeven facturen en creditnota's met deze relatie als klant, met hun PDF; een creditnota negatief, met de factuur die ze rechtzet. Een klad niet. Of een factuur betaald is, toont het portaal niet.
 - **Analyses**: de vaststellingen uit de rapporten van zijn dossiers, geteld per terminal, schip, lading, soort survey, haven, categorie of plaats. Een dossier telt pas mee met een rapport dat de opdrachtgever al ziet, en met de stand van dat rapport. → [Analyses](analyses.md#in-het-opdrachtgeversportaal)

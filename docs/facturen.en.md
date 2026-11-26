@@ -57,7 +57,7 @@ If needed, adjust it per line. The legal statement for reverse charge or outside
 Click **Issue** and confirm. The invoice then gets:
 
 - its **number**, per office and per year (F-HQ-2026-0001);
-- its **due date** according to the office's payment term;
+- its **due date** according to the principal's payment term (on the relation's record), otherwise the office's;
 - a **structured payment reference** and a **payment QR code** a banking app can scan.
 
 The PDF is recorded with its fingerprint (SHA-256). After that the invoice can no longer be changed or deleted. An invoice cannot be dated in the future, nor earlier than the last issued invoice of the same office.

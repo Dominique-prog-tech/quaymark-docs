@@ -66,6 +66,8 @@ The file's **surveyor** gets a notification on the bell on the last working day 
 
 A **finding** is added, never changed or deleted. You correct a mistake with **Correct** under **⋯** at the end of the row, with a reason: the old version stays visible, struck through. Its photos move to the new version, on screen and in the report. Pointing at a photo shows the time, GPS position and fingerprint (SHA-256) the device recorded when the photo was taken. If the device clock was ahead, the time of receipt counts and the device time is kept: the label **device clock was ahead** says so, with both times. This also applies to photos and the other items from the field app.
 
+If the field app started uploading a photo that has not fully arrived, **Still on its way from the field app** appears at the top: the file, how much has arrived, the surveyor with the device and when it started. The field app finishes it as soon as the device has a connection; a report issued in the meantime does not contain the photo.
+
 A **closed** or **cancelled** file receives no more field work: no findings, checklist answers, photos or signatures, not even from the field app. What is already there stays visible. The calculations (draft survey, gauging on draught scales, bunker survey, timeline and laytime) can then only be viewed.
 
 ![The Findings tab per location on board, with Category, Severity, Description, photo and the New finding button](images/dossier-vaststellingen-en.png "Findings with their photo")
@@ -155,7 +157,7 @@ The **Signatures** tab shows them all, with the image or the refusal. Under **Fi
 
 On board, the surveyor records the stowage plan, the cargo manifest, the logbook, a delivery note or a certificate in the field app, with **Add** on the **Board documents** card ([Recording on board](veldapp/aan-boord.md#board-documents)). They choose the type, photograph the pages, pick a pdf or file from the device, or record a short video (a photo or pdf at most 50 MB, a video at most 200 MB). Each file becomes evidence like a photo: with the time, place and fingerprint (SHA-256) of the moment it was added, and it joins the queue even without network.
 
-At the office they are on the **Board documents** tab, with the type, who and when. A photo shows a thumbnail, a pdf opens, a video plays in the browser. They are never changed or deleted. They do not go into the photo appendix of the report, but they are part of the evidence package, with their type in the manifest.
+At the office they are on the **Board documents** tab, with the type, who and when. A photo shows a thumbnail, a pdf opens, a video plays in the browser. They are never changed or deleted. They do not go into the photo appendix of the report, but they are part of the evidence package, with their type in the manifest. A document that the field app has not fully delivered appears at the top under **Still on its way from the field app**.
 
 If a document came by e-mail, add it at the office with **Add document**: choose the type, optionally a description, and the files (photos of the pages, a pdf or a video). Up to 50 MB per file, a video up to 200 MB. This is evidence with a fingerprint too; the tab, the evidence package and the evidence data say **at the office**. Point at a file for the time, GPS position and fingerprint.
 
@@ -193,11 +195,11 @@ At the top of the Report tab, the **Report check** block compares the report wit
 - **Weights**: a weight in the fields or in the text that differs by more than 0.5 % from the cargo in the draft survey.
 - **Completeness**: sections the template shows that are empty (also when they have text in another language), required fields and checklist items without an answer, a missing required photo, and for a linked file findings without a verdict.
 
-The check refuses nothing. If you issue with findings, Quaymark asks **Issue anyway?**, and the findings are recorded with the version. **Check again** runs the check again, for example after a correction.
+The check refuses nothing. If you issue with findings, the window shows them and you tick **I have seen these findings and issue anyway**; the findings are recorded with the version. **Check again** runs the check again, for example after a correction.
 
 ### Issuing and sending the report
 
-**Issue report** (Report tab, from the status Reporting onwards) fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**, with a reason. **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. If the version is signed, the signed PDF is attached, as in the principal portal; the window says which PDF goes, and warns if you send a version that a newer one superseded. Save the sections first: a version only takes saved text.
+**Issue report** (Report tab, from the status Reporting onwards) opens one window with everything issuing needs. At the top is what prevents it (an open place in a standard sentence, the approval of a second surveyor, a missing image, unsaved sections), all at once: fix it and open the window again. You choose the **Report type**: preliminary report, interim report or final report; Quaymark suggests the type of the previous version, the first time the final report. For a revision the window asks for the reason, without an accepted order confirmation a justification, and with findings from the check the tick that you saw them. If the field app still has a photo or document on its way, the window says so too. Issuing fixes the report as version 1, with its fingerprint (SHA-256): it never changes again. Correcting = **Issue new version**. The type appears in the list of versions, in the PDF file name, in the email subject and in the principal portal; in the report itself, add the field **RapportSoort** (see [Templates](sjablonen.md)). **Send** sends an issued version as a PDF to the principal; the mail is kept in the journal. If the version is signed, the signed PDF is attached, as in the principal portal; the window says which PDF goes, and warns if you send a version that a newer one superseded. Save the sections first: a version only takes saved text.
 
 ### Signing the report
 
@@ -298,7 +300,7 @@ Clicking **Initial survey** or **Final survey** in the table header opens the pa
 - the six **drafts**: forward, midships and aft, port and starboard;
 - the **vessel**: the LBP and the distances of the draft marks from the perpendiculars (forward and midships positive when the mark is aft of the perpendicular or midships, aft positive when the mark is forward of the aft perpendicular);
 - the **water**: the density of the dock water (hydrometer) and the density the tables are made for (usually 1.025);
-- the **hydrostatic values**: once the drafts are entered, Quaymark shows the mean draft (quarter mean) at which you read from the vessel's tables the displacement, TPC, LCF (from midships, positive aft) and the MTC half a metre above and below;
+- the **hydrostatic values**: once the drafts are entered, Quaymark shows the mean draft (quarter mean) at which you read from the vessel's tables the displacement, TPC, LCF and the MTC half a metre above and below. Take the LCF as the tables give it, and choose at **Measured from** midships or the aft perpendicular (AP) and, from midships, at **Positive means** aft or forward of midships. Quaymark converts it and shows below what it calculates with; the report shows the LCF used and, if it was entered differently, also the value from the tables;
 - the **deductibles**: ballast, fresh water, bunkers, lube oil and other, in tonnes; optionally the lightship, for the constant.
 
 ![The initial survey of HQ-2026-0004 with the calculation beside it](images/dossier-draft-meting-en.png "A measurement")
@@ -307,7 +309,7 @@ The **calculation** beside it follows every change: the drafts at the perpendicu
 
 **Draft survey report (PDF)** shows the document; **Issue draft survey report** (once both measurements are complete) records it with its fingerprint, with the letters and certificates of the file, and in the evidence package. The document has room for the master's signature. If you then open a survey, it says at the top that the report has already been issued: after a change, issue a new version. In the report the draft survey comes with the marker `{{draftsurvey}}` (see [Templates](sjablonen.md)).
 
-Below the measurement is the **Measuring instruments** block: choose the hydrometer you measured the density with and click **Choose instrument**. Quaymark saves the instrument with the calibration that applied on the day of measurement (the planned day of the file). If it had expired, or the instrument had none, a warning appears; Quaymark refuses nothing. The instrument appears in the report under the draft survey. → [Measuring instruments](meetapparatuur.md#during-a-measurement)
+Below the measurement is the **Measuring instruments** block: choose the hydrometer you measured the density with and click **Choose instrument**. Quaymark saves the instrument with the calibration that applied on the day of measurement (the **Date of the reading**, otherwise the planned day). If it had expired, or the instrument had none, a warning appears; Quaymark refuses nothing. The instrument appears in the report under the draft survey. → [Measuring instruments](meetapparatuur.md#during-a-measurement)
 
 Each intermediate step is rounded to three decimals, and the next step calculates with that rounded value, as on paper: each line follows from the previous one, and the cargo is exactly the difference of the two net displacements. The notes of the measurements appear below the table. After issuing, the tab shows **Issued on** with the date, who, the PDF and the fingerprint; if you change a measurement afterwards, it warns that the issued report has different figures.
 
@@ -331,7 +333,7 @@ For a survey type with the **Bunker survey** box ticked (see [Survey types](soor
 ![Bunkers of HQ-2026-0007 with the result per product, the delivery note and the soundings](images/dossier-bunker-en.png "Bunkers")
 
 - **Soundings before** and **Soundings after** (for an open file, if you may edit it) open a page with a row per fuel tank: product, method (sounding or ullage), the measured value, the trim and list correction from the table, the **volume** you read from the sounding table at the corrected sounding, and the temperature. The tanks come from the vessel (Holds and tanks tab); add a missing tank there.
-- The **density at 15 °C** comes from the delivery note of that product. If a tank differs (for example your own lab value), fill it in on that tank.
+- The **density at 15 °C** comes from the delivery note of that product. If the fuel already on board (the ROB) was different, also fill in the **ROB density** on the delivery note: it applies to the soundings before delivery. The tab marks the ROB density with ᴿ and the delivery note's with ᴮ, and the report states which ROB density was used. If a tank differs (for example your own lab value), fill it in on that tank: it always takes precedence.
 - Quaymark calculates per tank the **VCF** per ASTM D1250 table 54B, the volume at 15 °C and the weight in air (volume at 15 °C × (density − 0.0011)). If you use a VCF from your own table, fill it in with a reason; it gets an asterisk in the report.
 - **Save** adds a new sounding per changed tank. The previous one is kept, with who and when. If Quaymark refuses one tank, the tanks already saved stay saved; a second **Save** only adds the refused one.
 - Per product the tab shows before, after and the **delivered** quantity, and against the delivery note the difference in tonnes and percent. If a tank was sounded at one stage only, the tab says so: delivered is then not correct for that product. If nothing was added and there is no delivery note for the product, the tab shows **No delivery**, with the small difference next to it: it comes from temperature or consumption. Below the delivery note, the soundings that count are in one table, per tank first before and then after.
@@ -346,7 +348,7 @@ In the report, `{{bunker}}` places the result and the table per tank (see [Templ
 
 ### Timeline
 
-The **Timeline** tab is the statement of facts of the file: the events of the port call, in the office's time. With **Add event** you choose the time, the event (arrived at roads, NOR tendered, NOR accepted, all fast, hatches opened, commenced and completed loading or discharging, stoppage, resumed, hatches closed, documents on board, sailed or other) and a note. An event can be changed or deleted afterwards with **Edit** or **Delete** under **⋯** next to the row; the history keeps who changed what.
+The **Timeline** tab is the statement of facts of the file: the events of the port call, in the office's time. With **Add event** you choose the time, the event (arrived at roads, NOR tendered, NOR accepted, NOR rejected, all fast, hatches opened, commenced and completed loading or discharging, stoppage, resumed, hatches closed, documents on board, sailed or other) and a note. An event can be changed or deleted afterwards with **Edit** or **Delete** under **⋯** next to the row; the history keeps who changed what.
 
 ![Timeline of ZB-2026-0003 with Add event, From NOR to commencement and Issue statement of facts](images/dossier-tijdlijn-en.png "The timeline")
 
@@ -360,10 +362,10 @@ The **Laytime** tab calculates laytime and demurrage from the timeline, under th
 
 - **Allowed time**: a fixed number of hours, or a quantity divided by a rate per day. If the file has a draft survey, Quaymark proposes the quantity.
 - **Counting**: SHINC (every day counts), SHEX (Sundays and holidays excepted) or SSHEX (Saturdays excepted too). The holidays are those of the port's country. An excepted day does not count, even if work was done. The days count in the time zone of the port (see [Ports](havens.md)), otherwise in that of the office.
-- **Commencement**: the NOR (tendered or accepted) plus the notice time in hours, or a time you enter yourself. The end is the last end of loading or discharging in the timeline.
+- **Commencement**: the NOR (tendered or accepted) plus the notice time in hours, or a time you enter yourself. If the timeline has a **NOR rejected**, only a NOR after it counts; if none follows, Quaymark does not calculate and asks for a new NOR or a fixed start. With **Unless sooner commenced**, laytime starts when loading or discharging commenced if that came before the NOR and the notice time (even without a valid NOR); the result then says so. The end is the last end of loading or discharging in the timeline.
 - **Interruptions** from the timeline do not count; tick those that count after all.
 - **Once on demurrage, always on demurrage**: after laytime, every excepted day counts as demurrage. You can untick it.
-- **Demurrage per day** and **despatch per day** (empty = half the demurrage), in the currency you choose.
+- **Demurrage per day** and **despatch per day** (empty = half the demurrage), in the currency you choose. **Despatch on**: working time saved (as before) or all time saved (until laytime would have expired, excepted days included).
 
 The result recalculates as you type: allowed, used, demurrage or despatch with the amount, and a table per period with the reason it counts or not. **Save** records the terms. The report calculates with the saved terms: if what you typed differs, **Not saved** appears next to the button, and on the right when and by whom they were saved. If the NOR or the end is missing from the timeline, Quaymark says so and does not calculate. In the report, laytime appears with the placeholder `{{laytime}}` (see [Templates](sjablonen.md)).
 

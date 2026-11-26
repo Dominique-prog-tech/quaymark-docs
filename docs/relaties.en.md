@@ -26,7 +26,7 @@ The details of one relation.
 
 ![The relation Kaaimeeuw Rederij NV: Identity, Address and contact, and the Contacts tab](images/relatie-en.png "A relation")
 
-- **Identity**: kind (company or person), name, company or VAT number, roles, language and active. A company number occurs only once per country.
+- **Identity**: kind (company or person), name, company or VAT number, roles, language, active and the **Payment term (days)** of this principal: every new invoice to the relation gets this term; empty = the office's payment term. A company number occurs only once per country.
 - **Look up in the CBE** fills in the name and address from the Belgian Crossroads Bank for Enterprises. This only works for Belgian companies.
 - **Address and contact**: street, postcode, city, country, email, phone and a note. Quaymark does not save an email address that is not valid (for example a comma instead of a dot).
 - Set a relation you no longer use to **inactive**: it then disappears from the choice lists of new files, while older files keep showing it.
@@ -48,7 +48,7 @@ A principal can follow their own files in the principal portal. To allow this, y
 What the contact person sees in the portal:
 
 - **My files**: the files in which this relation is the principal, with survey type, vessel, port (by name, as in the list of ports), their own reference, the status and when the work is scheduled. Not a file in the recycle bin. From 10 files on, a search field appears above them: by number, vessel, port or their own reference.
-- For each file, the **issued** report versions and the issued letters and certificates with their kind (for example Certificate of quantity), as PDF. Never a preview or a draft. Every file is first checked against its fingerprint.
+- For each file, the **issued** report versions with their type (preliminary, interim or final) and the issued letters and certificates with their kind (for example Certificate of quantity), as PDF. Never a preview or a draft. Every file is first checked against its fingerprint.
 - **New assignment**: submit an assignment, with attachments. It reaches the office as a request and appears under **My requests** until the office decides. → [Requests](aanvragen.md)
 - **My invoices**: the issued invoices and credit notes with this relation as customer, with their PDF; a credit note as negative, with the invoice it corrects. Not a draft. The portal does not show whether an invoice has been paid.
 - **Analyses**: the findings from the reports on their files, counted by terminal, vessel, cargo, survey type, port, category or location. A file only counts with a report the principal can already see, and as that report stood. → [Analyses](analyses.md#in-the-principal-portal)

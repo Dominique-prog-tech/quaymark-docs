@@ -57,7 +57,7 @@ Si nécessaire, adaptez-la par ligne. La mention légale qui accompagne l'autoli
 Cliquez sur **Émettre** et confirmez. La facture reçoit alors :
 
 - son **numéro**, par site et par année (F-HQ-2026-0001) ;
-- son **échéance** selon le délai de paiement du bureau ;
+- son **échéance** selon le délai de paiement du donneur d'ordre (sur sa fiche de relation), à défaut celui du bureau ;
 - une **communication structurée** et un **QR de paiement** qu'une application bancaire peut scanner.
 
 Le PDF est figé avec son empreinte (SHA-256). La facture ne peut ensuite plus être modifiée ni supprimée. Une facture ne peut pas être datée dans le futur, ni avant la dernière facture émise du même site.

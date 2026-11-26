@@ -57,7 +57,7 @@ Moet het anders, pas het dan per regel aan. Op de factuur komt de wettelijke ver
 Klik op **Uitgeven** en bevestig. De factuur krijgt dan:
 
 - haar **nummer**, per vestiging en per jaar (F-HQ-2026-0001);
-- de **vervaldatum** volgens de betaaltermijn van het bureau;
+- de **vervaldatum** volgens de betaaltermijn van de opdrachtgever (op zijn relatiefiche), anders die van het bureau;
 - een **gestructureerde mededeling** en een **betaal-QR** die een bankapp kan scannen.
 
 De PDF wordt vastgelegd met haar vingerafdruk (SHA-256). Daarna kan de factuur niet meer gewijzigd of verwijderd worden. Een factuur mag niet in de toekomst liggen, en niet vroeger dan de laatst uitgegeven factuur van dezelfde vestiging.

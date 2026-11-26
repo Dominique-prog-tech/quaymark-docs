@@ -26,7 +26,7 @@ Les données d'une relation.
 
 ![La relation Kaaimeeuw Rederij NV : Identité, Adresse et contact, et l'onglet Personnes de contact](images/relatie-fr.png "Une relation")
 
-- **Identité** : type (entreprise ou personne), nom, numéro d'entreprise ou de TVA, rôles, langue et actif. Un numéro d'entreprise n'apparaît qu'une fois par pays.
+- **Identité** : type (entreprise ou personne), nom, numéro d'entreprise ou de TVA, rôles, langue, actif et le **Délai de paiement (jours)** de ce donneur d'ordre : chaque nouvelle facture à la relation reçoit ce délai ; vide = le délai de paiement du bureau. Un numéro d'entreprise n'apparaît qu'une fois par pays.
 - **Rechercher dans la BCE** complète le nom et l'adresse depuis la Banque-Carrefour des Entreprises. Cela ne fonctionne que pour les entreprises belges.
 - **Adresse et contact** : rue, code postal, commune, pays, e-mail, téléphone et une remarque. Quaymark n'enregistre pas une adresse e-mail incorrecte (par exemple une virgule au lieu d'un point).
 - Une relation que vous n'utilisez plus passe en **non active** : elle disparaît des listes de choix des nouveaux dossiers, et les anciens dossiers continuent à l'afficher.
@@ -48,7 +48,7 @@ Un donneur d'ordre peut suivre lui-même ses dossiers dans le portail des donneu
 Ce que la personne de contact voit dans le portail :
 
 - **Mes dossiers** : les dossiers dont cette relation est donneur d'ordre, avec le type d'expertise, le navire, le port (par son nom, comme dans la liste des ports), sa propre référence, le statut et la date prévue des travaux. Pas un dossier dans la corbeille. À partir de 10 dossiers, un champ de recherche apparaît au-dessus : par numéro, navire, port ou sa propre référence.
-- Pour chaque dossier, les versions **émises** du rapport et les lettres et certificats émis avec leur type (par exemple Certificat de quantité), en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
+- Pour chaque dossier, les versions **émises** du rapport avec leur type (préliminaire, intermédiaire ou final) et les lettres et certificats émis avec leur type (par exemple Certificat de quantité), en PDF. Jamais un aperçu ni un brouillon. Chaque fichier est d'abord vérifié par rapport à son empreinte.
 - **Nouvelle mission** : envoyer une mission, avec pièces jointes. Elle arrive au bureau sous forme de demande et figure sous **Mes demandes** jusqu'à la décision du bureau. → [Demandes](aanvragen.md)
 - **Mes factures** : les factures et notes de crédit émises au nom de cette relation, avec leur PDF ; une note de crédit en négatif, avec la facture qu'elle corrige. Pas un brouillon. Le portail n'indique pas si une facture est payée.
 - **Analyses** : les constatations des rapports de ses dossiers, comptées par terminal, navire, cargaison, type d'expertise, port, catégorie ou emplacement. Un dossier ne compte qu'avec un rapport que le donneur d'ordre voit déjà, et selon l'état de ce rapport. → [Analyses](analyses.md#dans-le-portail-des-donneurs-dordre)

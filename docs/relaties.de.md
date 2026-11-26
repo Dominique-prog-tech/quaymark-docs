@@ -26,7 +26,7 @@ Die Daten einer Beziehung.
 
 ![Kaaimeeuw Rederij NV mit Identität, Adresse und Kontakt und Ansprechpartner](images/relatie-de.png "Eine Beziehung")
 
-- **Identität**: Art (Unternehmen oder Person), Name, Unternehmens- oder USt-Nummer, Rollen, Sprache und aktiv. Eine Unternehmensnummer kommt pro Land nur einmal vor.
+- **Identität**: Art (Unternehmen oder Person), Name, Unternehmens- oder USt-Nummer, Rollen, Sprache, aktiv und das **Zahlungsziel (Tage)** dieses Auftraggebers: Jede neue Rechnung an die Beziehung erhält dieses Ziel; leer = das Zahlungsziel des Büros. Eine Unternehmensnummer kommt pro Land nur einmal vor.
 - **In der ZDU suchen** ergänzt Name und Adresse aus der belgischen Zentralen Datenbank der Unternehmen. Das funktioniert nur für belgische Unternehmen.
 - **Adresse und Kontakt**: Straße, Postleitzahl, Ort, Land, E-Mail, Telefon und eine Bemerkung. Eine ungültige E-Mail-Adresse (zum Beispiel ein Komma statt eines Punkts) speichert Quaymark nicht.
 - Eine Beziehung, die Sie nicht mehr verwenden, setzen Sie auf **inaktiv**: sie verschwindet dann aus den Auswahllisten neuer Akten, und ältere Akten zeigen sie weiterhin.
@@ -48,7 +48,7 @@ Ein Auftraggeber kann seine Akten im Auftraggeberportal selbst verfolgen. Dazu g
 Was die Kontaktperson im Portal sieht:
 
 - **Meine Akten**: die Akten, in denen diese Beziehung Auftraggeber ist, mit Besichtigungsart, Schiff, Hafen (mit Namen, wie in der Hafenliste), der eigenen Referenz, dem Status und wann die Arbeit geplant ist. Keine Akte im Papierkorb. Ab 10 Akten steht darüber ein Suchfeld: nach Nummer, Schiff, Hafen oder der eigenen Referenz.
-- Je Akte die **ausgestellten** Berichtsversionen und die ausgestellten Briefe und Zertifikate mit ihrer Art (zum Beispiel Mengenbescheinigung), als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
+- Je Akte die **ausgestellten** Berichtsversionen mit ihrer Art (vorläufig, Zwischen- oder Abschlussbericht) und die ausgestellten Briefe und Zertifikate mit ihrer Art (zum Beispiel Mengenbescheinigung), als PDF. Nie eine Vorschau oder ein Entwurf. Jede Datei wird zuerst gegen ihren Fingerabdruck geprüft.
 - **Neuer Auftrag**: einen Auftrag senden, mit Anhängen. Er geht als Anfrage an das Büro und steht unter **Meine Anfragen**, bis das Büro entscheidet. → [Anfragen](aanvragen.md)
 - **Meine Rechnungen**: die ausgestellten Rechnungen und Gutschriften mit dieser Beziehung als Kunde, mit ihrem PDF; eine Gutschrift negativ, mit der Rechnung, die sie berichtigt. Kein Entwurf. Ob eine Rechnung bezahlt ist, zeigt das Portal nicht.
 - **Analysen**: die Feststellungen aus den Berichten seiner Akten, gezählt nach Terminal, Schiff, Ladung, Besichtigungsart, Hafen, Kategorie oder Ort. Eine Akte zählt erst mit einem Bericht, den der Auftraggeber bereits sieht, und mit dem Stand dieses Berichts. → [Analysen](analyses.md#im-auftraggeberportal)
