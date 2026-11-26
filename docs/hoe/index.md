@@ -12,6 +12,7 @@ Korte antwoorden op de vragen die bij het werk terugkomen. Elke stap verwijst na
 - [Hoe plan ik een dossier in?](dossier-plannen.md)
 - [Hoe geef ik een rapport uit en bezorg ik het aan de opdrachtgever?](rapport-uitgeven.md)
 - [Hoe vergelijk ik een off-hire met de on-hire?](off-hire-vergelijken.md)
+- [Hoe doe ik een draft survey?](draft-survey.md)
 
 ## Relaties
 

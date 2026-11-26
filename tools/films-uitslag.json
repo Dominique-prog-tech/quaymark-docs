@@ -3,99 +3,108 @@
     "film": "rapport-uitgeven",
     "taal": "nl-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 186.6,
+    "lengte": 197.44,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "3035b527f06b3a8e551906a08a076d4192d98a42",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
     "omschrijving": "De weg van een dossier naar zijn rapport: de vaststellingen met hun foto, het dossier op Rapportage, de tekst per rubriek met een spraaknotitie en een standaardtekst, de controle van het rapport, uitgeven met een vingerafdruk, en verzenden.",
-    "hash": "5e4abaf5c26ab267",
+    "hash": "d69a99d2b1450364",
     "guid": "8891d091-e1ef-44b4-af42-7410b965304c",
     "hoofdstukken": [
       {
         "titel": "De vaststellingen",
-        "start": 6.73,
-        "eind": 17.74
+        "start": 7.22,
+        "eind": 18.23
       },
       {
         "titel": "Foto’s met bewijswaarde",
-        "start": 21.52,
-        "eind": 34.01
+        "start": 22,
+        "eind": 34.49
       },
       {
         "titel": "Het dossier op Rapportage",
-        "start": 43.1,
-        "eind": 52.67
+        "start": 43.6,
+        "eind": 53.16
       },
       {
         "titel": "De tekst per rubriek",
-        "start": 56.91,
-        "eind": 66.99
+        "start": 57.43,
+        "eind": 67.51
       },
       {
         "titel": "Een spraaknotitie",
-        "start": 72.81,
-        "eind": 79.82
+        "start": 73.36,
+        "eind": 80.38
       },
       {
         "titel": "Een standaardtekst",
-        "start": 85.5,
-        "eind": 93.03
+        "start": 86.02,
+        "eind": 93.55
       },
       {
         "titel": "Bewaren en nakijken",
-        "start": 97.61,
-        "eind": 107.5
+        "start": 98.17,
+        "eind": 108.06
       },
       {
         "titel": "De controle van het rapport",
-        "start": 111.75,
-        "eind": 124.56
+        "start": 112.38,
+        "eind": 125.2
+      },
+      {
+        "titel": "Eén venster om uit te geven",
+        "start": 131.49,
+        "eind": 139.15
       },
       {
         "titel": "Zonder opdrachtbevestiging",
-        "start": 133.29,
-        "eind": 145.32
+        "start": 143.31,
+        "eind": 151.12
+      },
+      {
+        "titel": "De bevindingen van de controle",
+        "start": 155.2,
+        "eind": 161.61
       },
       {
         "titel": "Versie 1, met vingerafdruk",
-        "start": 154.36,
-        "eind": 167.65
+        "start": 171.09,
+        "eind": 178.61
       },
       {
         "titel": "Verzenden",
-        "start": 171.13,
-        "eind": 184.22
+        "start": 182.13,
+        "eind": 195.23
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/8891d091-e1ef-44b4-af42-7410b965304c/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T10:21:35.101",
-    "gepubliceerdeHash": "5e4abaf5c26ab267",
     "embed": "https://iframe.mediadelivery.net/embed/814490/8891d091-e1ef-44b4-af42-7410b965304c"
   },
   "rapport-uitgeven-fr": {
     "film": "rapport-uitgeven",
     "taal": "fr-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 185.44,
+    "lengte": 190.8,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "b05aad46610006790cf59f2818561e84dad1d969",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "De la constatation au rapport émis dans Quaymark",
     "omschrijving": "Le chemin d’un dossier jusqu’à son rapport : les constatations et leurs photos, le dossier au statut Rapport, le texte par rubrique avec une note vocale et un texte type, le contrôle du rapport, l’émission avec une empreinte, et l’envoi.",
-    "hash": "d458b398f569eb8d",
+    "hash": "759bed1597ad7d45",
     "guid": "f1adf57a-877f-4eaa-8155-9af05ab112be",
     "hoofdstukken": [
       {
         "titel": "Les constatations",
-        "start": 6.92,
-        "eind": 17.83
+        "start": 6.93,
+        "eind": 17.84
       },
       {
         "titel": "Des photos qui font foi",
@@ -104,69 +113,78 @@
       },
       {
         "titel": "Le dossier au statut Rapport",
-        "start": 40.69,
-        "eind": 50.35
+        "start": 40.66,
+        "eind": 50.32
       },
       {
         "titel": "Le texte par rubrique",
-        "start": 55.77,
-        "eind": 65.98
+        "start": 54.58,
+        "eind": 64.8
       },
       {
         "titel": "Une note vocale",
-        "start": 71.83,
-        "eind": 78.71
+        "start": 70.66,
+        "eind": 77.53
       },
       {
         "titel": "Un texte type",
-        "start": 84.33,
-        "eind": 91.76
+        "start": 83.18,
+        "eind": 90.61
       },
       {
         "titel": "Enregistrer et relire",
-        "start": 96.32,
-        "eind": 105.43
+        "start": 95.17,
+        "eind": 104.28
       },
       {
         "titel": "Le contrôle du rapport",
-        "start": 109.69,
-        "eind": 122.04
+        "start": 108.54,
+        "eind": 120.89
+      },
+      {
+        "titel": "Une seule fenêtre pour émettre",
+        "start": 127.1,
+        "eind": 136.06
       },
       {
         "titel": "Sans confirmation de mission",
-        "start": 130.73,
-        "eind": 141.73
+        "start": 140.23,
+        "eind": 147.06
+      },
+      {
+        "titel": "Les points du contrôle",
+        "start": 151.14,
+        "eind": 157.97
       },
       {
         "titel": "Version 1, avec son empreinte",
-        "start": 153.58,
-        "eind": 165.75
+        "start": 163.59,
+        "eind": 171.2
       },
       {
         "titel": "Envoyer",
-        "start": 169.22,
-        "eind": 183.01
+        "start": 174.69,
+        "eind": 188.49
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/f1adf57a-877f-4eaa-8155-9af05ab112be/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T10:30:37.376",
-    "gepubliceerdeHash": "d458b398f569eb8d",
     "embed": "https://iframe.mediadelivery.net/embed/814490/f1adf57a-877f-4eaa-8155-9af05ab112be"
   },
   "rapport-uitgeven-en": {
     "film": "rapport-uitgeven",
     "taal": "en-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 182.68,
+    "lengte": 188.64,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "b05aad46610006790cf59f2818561e84dad1d969",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "From finding to issued report in Quaymark",
     "omschrijving": "How a file becomes a report: the findings with their photos, the file set to Reporting, the text per section with a voice note and a standard text, the report check, issuing with a fingerprint, and sending.",
-    "hash": "2e245bed2b97bc43",
+    "hash": "d1640624e833b3ee",
     "guid": "06e5a210-1659-4e9d-b700-0d49f6ce30f4",
     "hoofdstukken": [
       {
@@ -176,85 +194,94 @@
       },
       {
         "titel": "Photos as evidence",
-        "start": 20.95,
+        "start": 20.96,
         "eind": 30.8
       },
       {
         "titel": "The file set to Reporting",
-        "start": 39.92,
-        "eind": 48
+        "start": 39.93,
+        "eind": 48.01
       },
       {
         "titel": "The text per section",
-        "start": 52.25,
-        "eind": 62.56
+        "start": 52.27,
+        "eind": 62.57
       },
       {
         "titel": "A voice note",
-        "start": 68.44,
-        "eind": 76.56
+        "start": 68.42,
+        "eind": 76.55
       },
       {
         "titel": "A standard text",
-        "start": 82.2,
-        "eind": 89.58
+        "start": 82.21,
+        "eind": 89.59
       },
       {
         "titel": "Save and review",
-        "start": 94.14,
-        "eind": 102.27
+        "start": 94.15,
+        "eind": 102.28
       },
       {
         "titel": "The report check",
-        "start": 106.55,
-        "eind": 120.11
+        "start": 106.59,
+        "eind": 120.15
+      },
+      {
+        "titel": "One window to issue",
+        "start": 126.44,
+        "eind": 134.48
       },
       {
         "titel": "Without an order confirmation",
-        "start": 128.82,
-        "eind": 139.46
+        "start": 138.69,
+        "eind": 145.1
+      },
+      {
+        "titel": "The findings of the check",
+        "start": 149.16,
+        "eind": 155.1
       },
       {
         "titel": "Version 1, with its fingerprint",
-        "start": 148.54,
-        "eind": 161.59
+        "start": 160.72,
+        "eind": 167.54
       },
       {
         "titel": "Sending",
-        "start": 165.07,
-        "eind": 180.31
+        "start": 171.06,
+        "eind": 186.29
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/06e5a210-1659-4e9d-b700-0d49f6ce30f4/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T10:39:45.142",
-    "gepubliceerdeHash": "2e245bed2b97bc43",
     "embed": "https://iframe.mediadelivery.net/embed/814490/06e5a210-1659-4e9d-b700-0d49f6ce30f4"
   },
   "rapport-uitgeven-de": {
     "film": "rapport-uitgeven",
     "taal": "de-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 192.48,
+    "lengte": 200.2,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Der Weg einer Akte zu ihrem Bericht: die Feststellungen mit ihren Fotos, die Akte im Status Berichterstellung, der Text je Abschnitt mit einer Sprachnotiz und einem Standardtext, die Berichtsprüfung, das Herausgeben mit einem Fingerabdruck und das Senden.",
-    "hash": "54f68d56de663b73",
+    "hash": "e76ada40412988c2",
     "guid": "414a48ac-3299-4006-abcd-d19423ffdd26",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
-        "start": 6.72,
-        "eind": 17.03
+        "start": 6.75,
+        "eind": 17.06
       },
       {
         "titel": "Fotos mit Beweiskraft",
-        "start": 20.82,
-        "eind": 32.71
+        "start": 20.83,
+        "eind": 32.72
       },
       {
         "titel": "Die Akte auf Berichterstellung",
@@ -263,49 +290,58 @@
       },
       {
         "titel": "Der Text je Abschnitt",
-        "start": 55.59,
-        "eind": 66.45
+        "start": 55.6,
+        "eind": 66.47
       },
       {
         "titel": "Eine Sprachnotiz",
-        "start": 72.3,
-        "eind": 80.29
+        "start": 72.34,
+        "eind": 80.33
       },
       {
         "titel": "Ein Standardtext",
-        "start": 85.96,
-        "eind": 94.88
+        "start": 86,
+        "eind": 94.91
       },
       {
         "titel": "Speichern und prüfen",
-        "start": 99.47,
-        "eind": 109.41
+        "start": 99.52,
+        "eind": 109.45
       },
       {
         "titel": "Die Berichtsprüfung",
-        "start": 113.7,
-        "eind": 127.77
+        "start": 113.75,
+        "eind": 127.82
+      },
+      {
+        "titel": "Ein Fenster zum Herausgeben",
+        "start": 134.07,
+        "eind": 141.78
       },
       {
         "titel": "Ohne Auftragsbestätigung",
-        "start": 136.52,
-        "eind": 148.6
+        "start": 146,
+        "eind": 155.06
+      },
+      {
+        "titel": "Die Hinweise der Prüfung",
+        "start": 159.16,
+        "eind": 166.17
       },
       {
         "titel": "Version 1, mit Fingerabdruck",
-        "start": 159.5,
-        "eind": 172.36
+        "start": 171.82,
+        "eind": 180.04
       },
       {
         "titel": "Senden",
-        "start": 175.85,
-        "eind": 190.11
+        "start": 183.53,
+        "eind": 197.79
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/414a48ac-3299-4006-abcd-d19423ffdd26/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T18:25:50.204",
     "embed": "https://iframe.mediadelivery.net/embed/814490/414a48ac-3299-4006-abcd-d19423ffdd26",
-    "gepubliceerdeHash": "54f68d56de663b73",
     "vorigeGuid": "c36f5745-b709-4f44-8929-6709f0a65c16"
   },
   "aan-de-slag-nl": {
@@ -1099,201 +1135,841 @@
     "film": "rapport-uitgeven",
     "taal": "nl-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 44.12,
+    "lengte": 44.76,
     "uitvoering": "website",
     "routes": [
       "/dossiers/{id}",
       "/beheer/rapportsjablonen"
     ],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
     "omschrijving": "Vaststellingen ter plaatse, met foto’s die tijdstip, GPS-positie en vingerafdruk dragen. Het rapport volgt uw eigen Word-sjabloon, wordt uitgegeven als versie met vingerafdruk en gaat in één klik naar de opdrachtgever.",
-    "hash": "8c4a222acbd3b6ee",
+    "hash": "cad32426a13d9d4f",
     "guid": "93ccdc2c-3e58-4596-a982-af8a03706006",
     "hoofdstukken": [
       {
         "titel": "De vaststellingen",
-        "start": 2.95,
-        "eind": 7.16
+        "start": 2.83,
+        "eind": 7.05
       },
       {
         "titel": "Foto’s met bewijswaarde",
-        "start": 9.87,
-        "eind": 13.8
+        "start": 9.77,
+        "eind": 13.7
       },
       {
         "titel": "Uw eigen Word-sjabloon",
-        "start": 17.87,
-        "eind": 20.8
+        "start": 18.61,
+        "eind": 21.54
       },
       {
         "titel": "Uitgeven",
-        "start": 31.96,
-        "eind": 36.39
+        "start": 32.69,
+        "eind": 37.12
       },
       {
         "titel": "Verzenden",
-        "start": 39.11,
-        "eind": 41.71
+        "start": 39.76,
+        "eind": 42.36
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/93ccdc2c-3e58-4596-a982-af8a03706006/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T16:56:08.426",
-    "gepubliceerdeHash": "8c4a222acbd3b6ee",
     "embed": "https://iframe.mediadelivery.net/embed/814490/93ccdc2c-3e58-4596-a982-af8a03706006"
   },
   "rapport-uitgeven-website-fr": {
     "film": "rapport-uitgeven",
     "taal": "fr-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 42.6,
+    "lengte": 45.68,
     "uitvoering": "website",
     "routes": [
       "/dossiers/{id}",
       "/beheer/rapportsjablonen"
     ],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "De la constatation au rapport émis dans Quaymark",
     "omschrijving": "Des constatations sur place, avec des photos qui portent l’heure, la position GPS et une empreinte. Le rapport suit votre propre modèle Word, est émis en version avec empreinte et part en un clic chez le donneur d’ordre.",
-    "hash": "400ea91d84c3d5a7",
+    "hash": "c461996647896270",
     "guid": "f8b6f22e-6a9a-43ed-b9f4-8410fad58658",
     "hoofdstukken": [
       {
         "titel": "Les constatations",
-        "start": 2.96,
-        "eind": 7.53
+        "start": 2.79,
+        "eind": 7.36
       },
       {
         "titel": "Des photos qui font foi",
-        "start": 10.3,
-        "eind": 14.51
+        "start": 10.08,
+        "eind": 14.29
       },
       {
         "titel": "Votre propre modèle Word",
-        "start": 18.29,
-        "eind": 21.22
+        "start": 18.24,
+        "eind": 21.17
       },
       {
         "titel": "Émettre",
-        "start": 30.13,
-        "eind": 34.77
+        "start": 33.51,
+        "eind": 38.15
       },
       {
         "titel": "Envoyer",
-        "start": 37.58,
-        "eind": 40.18
+        "start": 40.79,
+        "eind": 43.39
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/f8b6f22e-6a9a-43ed-b9f4-8410fad58658/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T17:06:20.299",
-    "gepubliceerdeHash": "400ea91d84c3d5a7",
     "embed": "https://iframe.mediadelivery.net/embed/814490/f8b6f22e-6a9a-43ed-b9f4-8410fad58658"
   },
   "rapport-uitgeven-website-en": {
     "film": "rapport-uitgeven",
     "taal": "en-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 41.56,
+    "lengte": 41.44,
     "uitvoering": "website",
     "routes": [
       "/dossiers/{id}",
       "/beheer/rapportsjablonen"
     ],
     "app": {
-      "sha": "f15de61a4a0ab80865138a2670885f7d216b8d2d",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "From finding to issued report in Quaymark",
     "omschrijving": "Findings on site, with photos that carry the time, GPS position and fingerprint. The report follows your own Word template, is issued as a version with a fingerprint and reaches the principal in one click.",
-    "hash": "0f6bc25f711c01fb",
+    "hash": "c99293c9603aac1b",
     "guid": "3aa352c3-3844-430c-8684-de9063051859",
     "hoofdstukken": [
       {
         "titel": "The findings",
-        "start": 2.75,
-        "eind": 6.61
+        "start": 2.74,
+        "eind": 6.6
       },
       {
         "titel": "Photos as evidence",
         "start": 9.34,
-        "eind": 13.27
+        "eind": 13.26
       },
       {
         "titel": "Your own Word template",
-        "start": 17.27,
-        "eind": 20.27
+        "start": 16.95,
+        "eind": 19.95
       },
       {
         "titel": "Issuing",
-        "start": 29.49,
-        "eind": 33.92
+        "start": 29.34,
+        "eind": 33.77
       },
       {
         "titel": "Sending",
-        "start": 36.54,
-        "eind": 39.14
+        "start": 36.42,
+        "eind": 39.02
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/3aa352c3-3844-430c-8684-de9063051859/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T17:15:24.578",
-    "gepubliceerdeHash": "0f6bc25f711c01fb",
     "embed": "https://iframe.mediadelivery.net/embed/814490/3aa352c3-3844-430c-8684-de9063051859"
   },
   "rapport-uitgeven-website-de": {
     "film": "rapport-uitgeven",
     "taal": "de-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 40.72,
+    "lengte": 46.6,
     "uitvoering": "website",
     "routes": [
       "/dossiers/{id}",
       "/beheer/rapportsjablonen"
     ],
     "app": {
-      "sha": "1afec7d7b5b94547144d3edb0e2b8e602c87f161",
-      "vuil": false
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
     },
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Feststellungen vor Ort, mit Fotos, die Uhrzeit, GPS-Position und Fingerabdruck tragen. Der Bericht folgt Ihrer eigenen Word-Vorlage, wird als Version mit Fingerabdruck herausgegeben und ist mit einem Klick beim Auftraggeber.",
-    "hash": "73c4d06b566bc4e9",
+    "hash": "79b7a28aede91296",
     "guid": "82e16246-b829-4eb6-9f1a-7faae22d8996",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
-        "start": 2.76,
-        "eind": 6.26
+        "start": 2.67,
+        "eind": 6.17
       },
       {
         "titel": "Fotos mit Beweiskraft",
-        "start": 9,
-        "eind": 13.07
+        "start": 8.89,
+        "eind": 12.96
       },
       {
         "titel": "Ihre eigene Word-Vorlage",
-        "start": 17.44,
-        "eind": 20.65
+        "start": 16.85,
+        "eind": 20.07
       },
       {
         "titel": "Herausgeben",
-        "start": 28.18,
-        "eind": 33.11
+        "start": 34.11,
+        "eind": 39.04
       },
       {
         "titel": "Senden",
-        "start": 35.77,
-        "eind": 38.37
+        "start": 41.67,
+        "eind": 44.27
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/82e16246-b829-4eb6-9f1a-7faae22d8996/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-19T18:27:15.254",
     "embed": "https://iframe.mediadelivery.net/embed/814490/82e16246-b829-4eb6-9f1a-7faae22d8996",
-    "gepubliceerdeHash": "73c4d06b566bc4e9",
     "vorigeGuid": "acb0e0bd-da4c-4f3e-b03a-229b29a2e366"
+  },
+  "bewijspakket-nl": {
+    "film": "bewijspakket",
+    "taal": "nl-BE",
+    "pagina": "hoe/bewijspakket",
+    "lengte": 100.64,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/dossiers/{id}"
+    ],
+    "app": {
+      "sha": "384c234a084c74d001b6ba1bee3b9872092f4d84",
+      "vuil": true
+    },
+    "titel": "Een bewijspakket maken in Quaymark",
+    "omschrijving": "Eén ZIP voor een claim: de originele foto’s met hun vingerafdruk, het uitgegeven rapport, het pakket maken, wat erin zit, natrekken zonder Quaymark, en de vingerafdruk van het pakket in het journaal.",
+    "hash": "b93b2cae0545386a",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De originele foto’s",
+        "start": 5.09,
+        "eind": 18.28
+      },
+      {
+        "titel": "Het uitgegeven rapport",
+        "start": 25.29,
+        "eind": 35.51
+      },
+      {
+        "titel": "Het pakket maken",
+        "start": 44.02,
+        "eind": 55.63
+      },
+      {
+        "titel": "Wat erin zit",
+        "start": 59.44,
+        "eind": 70.63
+      },
+      {
+        "titel": "Natrekken zonder Quaymark",
+        "start": 74.39,
+        "eind": 85.12
+      },
+      {
+        "titel": "Vastgelegd in het journaal",
+        "start": 90.56,
+        "eind": 98.27
+      }
+    ]
+  },
+  "factureren-nl": {
+    "film": "factureren",
+    "taal": "nl-BE",
+    "pagina": "facturen",
+    "lengte": 126.81,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "384c234a084c74d001b6ba1bee3b9872092f4d84",
+      "vuil": true
+    },
+    "titel": "Van tijd en kosten tot factuur in Quaymark",
+    "omschrijving": "Een dossier factureren: de prestaties en de kosten om door te rekenen, Factuur voorstellen, het klad met de voorgestelde btw, uitgeven met nummer, vervaldatum, mededeling en betaal-QR, de vingerafdruk van de PDF, en versturen via Peppol of per mail.",
+    "hash": "bd2bbecf6c68b63a",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Tijd en kosten",
+        "start": 7.75,
+        "eind": 17.13
+      },
+      {
+        "titel": "De kosten",
+        "start": 21.36,
+        "eind": 29.44
+      },
+      {
+        "titel": "Factuur voorstellen",
+        "start": 34.81,
+        "eind": 45.44
+      },
+      {
+        "titel": "Het klad",
+        "start": 50.47,
+        "eind": 62.59
+      },
+      {
+        "titel": "Uitgeven",
+        "start": 70.39,
+        "eind": 82.92
+      },
+      {
+        "titel": "Vast, met vingerafdruk",
+        "start": 86.71,
+        "eind": 94.84
+      },
+      {
+        "titel": "Versturen",
+        "start": 100.35,
+        "eind": 110.52
+      },
+      {
+        "titel": "Openstaand",
+        "start": 116.05,
+        "eind": 124.31
+      }
+    ]
+  },
+  "draft-survey-nl": {
+    "film": "draft-survey",
+    "taal": "nl-BE",
+    "pagina": "hoe/draft-survey",
+    "lengte": 136,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "384c234a084c74d001b6ba1bee3b9872092f4d84",
+      "vuil": true
+    },
+    "titel": "Van diepgang tot lading: een draft survey in Quaymark",
+    "omschrijving": "Een draft survey van begin tot report: de begin- en eindmeting naast elkaar, de diepgangen, het schip en het water, de hydrostatische waarden uit de tabellen, de berekening die meerekent, de hydrometer met zijn kalibratie, het gewicht van de lading en het report met vingerafdruk.",
+    "hash": "b922cd25cea669d0",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Begin en eind",
+        "start": 8.5,
+        "eind": 18.44
+      },
+      {
+        "titel": "Een meting",
+        "start": 26.97,
+        "eind": 40.99
+      },
+      {
+        "titel": "De tabellen van het schip",
+        "start": 45.5,
+        "eind": 59.76
+      },
+      {
+        "titel": "De berekening",
+        "start": 65.08,
+        "eind": 80.36
+      },
+      {
+        "titel": "De hydrometer",
+        "start": 84.12,
+        "eind": 94.11
+      },
+      {
+        "titel": "Het gewicht van de lading",
+        "start": 99.64,
+        "eind": 110.88
+      },
+      {
+        "titel": "Het draft survey report",
+        "start": 120.82,
+        "eind": 133.64
+      }
+    ]
+  },
+  "bewijspakket-fr": {
+    "film": "bewijspakket",
+    "taal": "fr-BE",
+    "pagina": "hoe/bewijspakket",
+    "lengte": 96.84,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/dossiers/{id}"
+    ],
+    "app": {
+      "sha": "384c234a084c74d001b6ba1bee3b9872092f4d84",
+      "vuil": true
+    },
+    "titel": "Constituer un dossier de preuves dans Quaymark",
+    "omschrijving": "Un seul ZIP pour une réclamation : les photos originales et leur empreinte, le rapport émis, la création du dossier de preuves, ce qu’il contient, la vérification sans Quaymark, et l’empreinte du paquet dans le journal.",
+    "hash": "3fed789717cff5bf",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Les photos originales",
+        "start": 5.12,
+        "eind": 17.33
+      },
+      {
+        "titel": "Le rapport émis",
+        "start": 24.36,
+        "eind": 34.15
+      },
+      {
+        "titel": "Créer le paquet",
+        "start": 42.18,
+        "eind": 53
+      },
+      {
+        "titel": "Ce qu’il contient",
+        "start": 56.83,
+        "eind": 68.3
+      },
+      {
+        "titel": "Vérifier sans Quaymark",
+        "start": 72.05,
+        "eind": 81.34
+      },
+      {
+        "titel": "Consigné dans le journal",
+        "start": 86.79,
+        "eind": 94.45
+      }
+    ]
+  },
+  "factureren-fr": {
+    "film": "factureren",
+    "taal": "fr-BE",
+    "pagina": "facturen",
+    "lengte": 121.69,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "384c234a084c74d001b6ba1bee3b9872092f4d84",
+      "vuil": true
+    },
+    "titel": "Des temps et frais à la facture dans Quaymark",
+    "omschrijving": "Facturer un dossier : les prestations et les frais à refacturer, Proposer une facture, le brouillon avec la TVA proposée, l’émission avec numéro, échéance, communication structurée et QR de paiement, l’empreinte du PDF, et l’envoi via Peppol ou par e-mail.",
+    "hash": "9091b8da509661ce",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Temps et frais",
+        "start": 7.75,
+        "eind": 16.52
+      },
+      {
+        "titel": "Les frais",
+        "start": 20.78,
+        "eind": 29.05
+      },
+      {
+        "titel": "Proposer une facture",
+        "start": 34.63,
+        "eind": 44.99
+      },
+      {
+        "titel": "Le brouillon",
+        "start": 50.01,
+        "eind": 61.67
+      },
+      {
+        "titel": "Émettre",
+        "start": 69.53,
+        "eind": 80.49
+      },
+      {
+        "titel": "Figée, avec son empreinte",
+        "start": 84.25,
+        "eind": 90.93
+      },
+      {
+        "titel": "Envoyer",
+        "start": 96.44,
+        "eind": 106.28
+      },
+      {
+        "titel": "En attente de paiement",
+        "start": 111.81,
+        "eind": 119.19
+      }
+    ]
+  },
+  "draft-survey-fr": {
+    "film": "draft-survey",
+    "taal": "fr-BE",
+    "pagina": "hoe/draft-survey",
+    "lengte": 126.68,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "384c234a084c74d001b6ba1bee3b9872092f4d84",
+      "vuil": true
+    },
+    "titel": "Du tirant d’eau à la cargaison : un draft survey dans Quaymark",
+    "omschrijving": "Un draft survey du début au rapport : les mesures initiale et finale côte à côte, les tirants d’eau, le navire et l’eau, les valeurs hydrostatiques des tables, le calcul qui suit, l’hydromètre et son étalonnage, le poids de la cargaison et le rapport avec son empreinte.",
+    "hash": "133b8e451a3d6ba7",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Début et fin",
+        "start": 8.49,
+        "eind": 17.45
+      },
+      {
+        "titel": "Une mesure",
+        "start": 25.96,
+        "eind": 38.78
+      },
+      {
+        "titel": "Les tables du navire",
+        "start": 43.3,
+        "eind": 55.61
+      },
+      {
+        "titel": "Le calcul",
+        "start": 60.95,
+        "eind": 75.72
+      },
+      {
+        "titel": "L’hydromètre",
+        "start": 79.48,
+        "eind": 88.35
+      },
+      {
+        "titel": "Le poids de la cargaison",
+        "start": 93.93,
+        "eind": 104.47
+      },
+      {
+        "titel": "Le draft survey report",
+        "start": 114.43,
+        "eind": 124.32
+      }
+    ]
+  },
+  "bewijspakket-en": {
+    "film": "bewijspakket",
+    "taal": "en-BE",
+    "pagina": "hoe/bewijspakket",
+    "lengte": 97.36,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/dossiers/{id}"
+    ],
+    "app": {
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
+    },
+    "titel": "Putting together an evidence package in Quaymark",
+    "omschrijving": "One ZIP for a claim: the original photos with their fingerprint, the issued report, creating the package, what it contains, verifying it without Quaymark, and the package’s fingerprint in the journal.",
+    "hash": "48fc28e5642e8e45",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "The original photos",
+        "start": 5.17,
+        "eind": 17.11
+      },
+      {
+        "titel": "The issued report",
+        "start": 24.7,
+        "eind": 34.27
+      },
+      {
+        "titel": "Creating the package",
+        "start": 42.49,
+        "eind": 53.68
+      },
+      {
+        "titel": "What it contains",
+        "start": 57.47,
+        "eind": 68.85
+      },
+      {
+        "titel": "Verifying without Quaymark",
+        "start": 72.61,
+        "eind": 81.99
+      },
+      {
+        "titel": "Recorded in the journal",
+        "start": 87.45,
+        "eind": 94.93
+      }
+    ]
+  },
+  "factureren-en": {
+    "film": "factureren",
+    "taal": "en-BE",
+    "pagina": "facturen",
+    "lengte": 123.77,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
+    },
+    "titel": "From time and expenses to invoice in Quaymark",
+    "omschrijving": "Invoicing a file: the time entries and the expenses to recharge, Propose invoice, the draft with the suggested VAT, issuing with a number, due date, payment reference and payment QR code, the fingerprint of the PDF, and sending via Peppol or by email.",
+    "hash": "52776377096a0bdc",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Time and expenses",
+        "start": 7.77,
+        "eind": 17.34
+      },
+      {
+        "titel": "The expenses",
+        "start": 21.56,
+        "eind": 31.04
+      },
+      {
+        "titel": "Propose invoice",
+        "start": 36.52,
+        "eind": 47.62
+      },
+      {
+        "titel": "The draft",
+        "start": 52.68,
+        "eind": 63.78
+      },
+      {
+        "titel": "Issuing",
+        "start": 71.63,
+        "eind": 82.54
+      },
+      {
+        "titel": "Fixed, with a fingerprint",
+        "start": 86.31,
+        "eind": 93.84
+      },
+      {
+        "titel": "Sending",
+        "start": 99.38,
+        "eind": 108.15
+      },
+      {
+        "titel": "Outstanding",
+        "start": 113.69,
+        "eind": 121.26
+      }
+    ]
+  },
+  "draft-survey-en": {
+    "film": "draft-survey",
+    "taal": "en-BE",
+    "pagina": "hoe/draft-survey",
+    "lengte": 133.52,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
+    },
+    "titel": "From draft to cargo: a draft survey in Quaymark",
+    "omschrijving": "A draft survey from start to report: the initial and final surveys side by side, the drafts, the vessel and the water, the hydrostatic values from the tables, the calculation that follows along, the hydrometer and its calibration, the cargo weight and the report with its fingerprint.",
+    "hash": "91c20eb6b211b706",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Initial and final",
+        "start": 8.49,
+        "eind": 18.76
+      },
+      {
+        "titel": "A survey",
+        "start": 27.29,
+        "eind": 40.81
+      },
+      {
+        "titel": "The vessel’s tables",
+        "start": 45.35,
+        "eind": 58.44
+      },
+      {
+        "titel": "The calculation",
+        "start": 63.77,
+        "eind": 78.77
+      },
+      {
+        "titel": "The hydrometer",
+        "start": 82.55,
+        "eind": 92.63
+      },
+      {
+        "titel": "The cargo weight",
+        "start": 98.2,
+        "eind": 109.58
+      },
+      {
+        "titel": "The draft survey report",
+        "start": 119.54,
+        "eind": 131.15
+      }
+    ]
+  },
+  "bewijspakket-de": {
+    "film": "bewijspakket",
+    "taal": "de-BE",
+    "pagina": "hoe/bewijspakket",
+    "lengte": 107.12,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/dossiers/{id}"
+    ],
+    "app": {
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
+    },
+    "titel": "Ein Beweispaket in Quaymark zusammenstellen",
+    "omschrijving": "Ein ZIP für einen Schadensfall: die Originalfotos mit ihrem Fingerabdruck, der herausgegebene Bericht, das Paket erstellen, was es enthält, die Prüfung ohne Quaymark und der Fingerabdruck des Pakets im Journal.",
+    "hash": "7f9bbc0dcd007afa",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Die Originalfotos",
+        "start": 5.12,
+        "eind": 20.54
+      },
+      {
+        "titel": "Der herausgegebene Bericht",
+        "start": 27.57,
+        "eind": 37.97
+      },
+      {
+        "titel": "Das Paket erstellen",
+        "start": 46.61,
+        "eind": 58.78
+      },
+      {
+        "titel": "Was es enthält",
+        "start": 62.57,
+        "eind": 75.06
+      },
+      {
+        "titel": "Prüfen ohne Quaymark",
+        "start": 78.83,
+        "eind": 90.39
+      },
+      {
+        "titel": "Im Journal festgehalten",
+        "start": 95.83,
+        "eind": 104.79
+      }
+    ]
+  },
+  "factureren-de": {
+    "film": "factureren",
+    "taal": "de-BE",
+    "pagina": "facturen",
+    "lengte": 133.1,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
+    },
+    "titel": "Von Zeit und Kosten zur Rechnung in Quaymark",
+    "omschrijving": "Eine Akte abrechnen: die Leistungen und die weiterzuberechnenden Kosten, Rechnung vorschlagen, der Entwurf mit der vorgeschlagenen MwSt., das Ausstellen mit Nummer, Fälligkeitsdatum, Verwendungszweck und Zahlungs-QR-Code, der Fingerabdruck der PDF und der Versand über Peppol oder per E-Mail.",
+    "hash": "2d09e6208c6eb4f5",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Zeit und Kosten",
+        "start": 7.71,
+        "eind": 18.21
+      },
+      {
+        "titel": "Die Kosten",
+        "start": 22.44,
+        "eind": 30.52
+      },
+      {
+        "titel": "Rechnung vorschlagen",
+        "start": 35.99,
+        "eind": 48.63
+      },
+      {
+        "titel": "Der Entwurf",
+        "start": 53.66,
+        "eind": 66.8
+      },
+      {
+        "titel": "Ausstellen",
+        "start": 74.64,
+        "eind": 87.97
+      },
+      {
+        "titel": "Fest, mit Fingerabdruck",
+        "start": 91.74,
+        "eind": 100.98
+      },
+      {
+        "titel": "Versenden",
+        "start": 106.5,
+        "eind": 116.26
+      },
+      {
+        "titel": "Offen",
+        "start": 121.82,
+        "eind": 130.6
+      }
+    ]
+  },
+  "draft-survey-de": {
+    "film": "draft-survey",
+    "taal": "de-BE",
+    "pagina": "hoe/draft-survey",
+    "lengte": 137.2,
+    "uitvoering": "handleiding",
+    "routes": [],
+    "app": {
+      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
+      "vuil": true
+    },
+    "titel": "Vom Tiefgang zur Ladung: ein Draft Survey in Quaymark",
+    "omschrijving": "Ein Draft Survey vom Anfang bis zum Report: Anfangs- und Endmessung nebeneinander, die Tiefgänge, das Schiff und das Wasser, die hydrostatischen Werte aus den Tabellen, die mitlaufende Berechnung, das Hydrometer mit seiner Kalibrierung, das Gewicht der Ladung und der Report mit Fingerabdruck.",
+    "hash": "0922f8acd022eedd",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Anfang und Ende",
+        "start": 8.51,
+        "eind": 19
+      },
+      {
+        "titel": "Eine Messung",
+        "start": 27.54,
+        "eind": 41.89
+      },
+      {
+        "titel": "Die Tabellen des Schiffs",
+        "start": 46.42,
+        "eind": 62.58
+      },
+      {
+        "titel": "Die Berechnung",
+        "start": 67.89,
+        "eind": 82.15
+      },
+      {
+        "titel": "Das Hydrometer",
+        "start": 85.93,
+        "eind": 95.26
+      },
+      {
+        "titel": "Das Gewicht der Ladung",
+        "start": 100.85,
+        "eind": 112.46
+      },
+      {
+        "titel": "Der Draft Survey Report",
+        "start": 122.4,
+        "eind": 134.84
+      }
+    ]
   }
 }

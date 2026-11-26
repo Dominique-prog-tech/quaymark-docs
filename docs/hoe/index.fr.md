@@ -12,6 +12,7 @@ Des réponses courtes aux questions qui reviennent dans le travail. Chaque étap
 - [Comment planifier un dossier ?](dossier-plannen.md)
 - [Comment émettre un rapport et le remettre au donneur d'ordre ?](rapport-uitgeven.md)
 - [Comment comparer un off-hire à l'on-hire ?](off-hire-vergelijken.md)
+- [Comment faire un draft survey ?](draft-survey.md)
 
 ## Relations
 

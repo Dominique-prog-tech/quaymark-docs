@@ -63,6 +63,18 @@ const SCHIL = {
 const menu = (p, adres) => p.locator(`nav a[href="${adres}"]`).first();
 const sluitPaneel = async (p) => { await klik(p, p.locator('button.prefs-close:visible').first()); await p.waitForTimeout(T(800)); };
 
+// ── EEN RONDE MET FILMS DIE SCHRIJVEN (26/11/2026: rapport-uitgeven, bewijspakket, factureren, draft-survey). Een uitgegeven factuur of document
+// is in de app niet te wissen, en proefklant-vullen.py kent ze niet. Werkwijze die op 26/11 voor vijf films in vier talen werkte:
+//   1. proefklant-vullen.py van vandaag, dan een basisdump:
+//        docker exec quaymark-db pg_dump -U postgres -d tenant_quaymark_qm_demo -Fc > <kladmap>/qm-demo-basis.dump
+//   2. vóór ELKE film die schrijft (en per taal) terugzetten:
+//        docker exec -i quaymark-db pg_restore -U postgres -d tenant_quaymark_qm_demo --clean --if-exists --single-transaction < <kladmap>/qm-demo-basis.dump
+//      bewijspakket draait meteen NA rapport-uitgeven in dezelfde taal, zonder terugzetten (het pakket heeft het uitgegeven rapport nodig).
+//   3. na de ronde nog eens terugzetten, en de bestanden van de ronde wissen uit de bestandsmap van het bureau
+//      (adm-quaymark/src/Host/Quaymark.Host.Web/bin/Debug/net10.0/App_Data/files/bureau-<id>/: rapporten/, documenten/, facturen/, rapportkopie/):
+//      die kent de dump niet. ENKEL wat nieuwer is dan het begin van de ronde EN door geen enkele *_storage_key in de databank meer genoemd wordt:
+//      een rapportkopie heeft een vaste naam, en de basis kan dezelfde al kennen.
+// Zo heten het rapport, de factuur en het report in elke taal hetzelfde (versie 1, F-ZB-2026-0001), en blijft er niets achter in de historiek.
 export const FILMS = [
   // ── VAN VASTSTELLING TOT UITGEGEVEN RAPPORT (19/11/2026, de proeffilm; op vraag van Dominique: "Ja, schrijf uit") ─────────────────
   // De keten van de Hoe-doe-ik-pagina "Hoe geef ik een rapport uit": vaststellingen met foto → status Rapportage → de tekst per rubriek
@@ -105,7 +117,7 @@ export const FILMS = [
       // kwamen ze er bij een herneming bij. (De hash van een film wordt bij de opname berekend over de GEKOZEN scènes: deze lijst laat
       // de opgenomen en gepubliceerde handleidingfilm ongemoeid.)
       handleiding: { stem: true, scenes: ['vaststellingen', 'foto', 'status', 'tekst', 'spraaknotitie', 'standaardtekst', 'bewaren', 'controle',
-                                          'verantwoording', 'uitgeven', 'verzenden'] },
+                                          'venster', 'verantwoording', 'bevindingen', 'uitgeven', 'verzenden'] },
       // De websitefilm voor de pagina Vaststellingen ter plaatse (Dominique, 19/11/2026: "Planning + vaststelling", en "beide punten mogen
       // mee": tijdstip, GPS en vingerafdruk als tekst in beeld, en het eigen Word-sjabloon). Stil, tekst in beeld, 30 tot 45 s.
       // Een EIGEN omschrijving (Dominique, 19/11/2026: "Ja, zo doen"): die van de film noemt de spraaknotitie, de standaardtekst en de
@@ -155,13 +167,13 @@ export const FILMS = [
         merk: /\{\{rubriek:inleiding\}\}/,
         website: { nl: 'Het rapport volgt uw eigen Word-sjabloon.', fr: 'Le rapport suit votre propre modèle Word.', en: 'The report follows your own Word template.', de: 'Der Bericht folgt Ihrer eigenen Word-Vorlage.' } },
 
-      // ── Enkel voor de website: uitgeven in één scène, slank. Rechtstreeks naar het dossier, de status op Rapportage, naar Uitgifte, en de
-      // vier vensters (verantwoording, Toch uitgeven, de laatste bevestiging, Niet nu). De verantwoording wordt INGEVULD, niet getypt: in een
-      // stille film is typen dode tijd. ⚠️ Schrijft, zoals de handleiding: vóór elke taal vullen, na de ronde film-opruimen.py.
+      // ── Enkel voor de website: uitgeven in één scène, slank. Rechtstreeks naar het dossier, de status op Rapportage, naar Uitgifte, en het
+      // venster Uitgeven (sinds 0.57.0 één venster: de soort blijft Eindrapport, de verantwoording INGEVULD, niet getypt, want in een stille film is
+      // typen dode tijd; het vinkje bij de bevindingen), dan Niet nu. ⚠️ Schrijft, zoals de handleiding: vóór elke taal de proefklant terugzetten.
       { naam: 'w-uitgeven', kop: { nl: 'Uitgeven', fr: 'Émettre', en: 'Issuing', de: 'Herausgeben' },
         doe: async (p) => {
-          // De voorbereiding (status op Rapportage) en de bevestigingsvensters zonder glijdende cursor: in de eerste snelle opname kostte
-          // deze scène nog 20 s stille handelingen (19/11/2026). De cursor glijdt enkel naar wat de kijker moet zien: Uitgifte en Rapport uitgeven.
+          // De voorbereiding (status op Rapportage) zonder glijdende cursor: in de eerste snelle opname kostte deze scène nog 20 s stille
+          // handelingen (19/11/2026). De cursor glijdt enkel naar wat de kijker moet zien: Uitgifte, Rapport uitgeven en het venster.
           await p.goto(`${BASIS}/dossiers/${HQ3}`); await p.waitForLoadState('networkidle');
           const vak = p.locator('.dxbl-fl-item, .dxbl-form-layout-item').filter({ hasText: new RegExp(`^\\s*(${Q('status').source})`) }).first();
           await vak.locator('button, .dxbl-edit-btn-dropdown').last().click();
@@ -171,12 +183,11 @@ export const FILMS = [
           await p.goto(`${BASIS}/dossiers/${HQ3}?tab=rapport`); await p.waitForLoadState('networkidle');
           await klik(p, tabblad(p, tabNaam('rapport_deel_uitgifte'))); await p.waitForLoadState('networkidle');
           await klik(p, knop(p, 'uitgeven').first());
-          await p.locator('textarea:visible').last().fill('Order confirmed by phone by the insurer.');
-          // ⚠️ Een korte pauze tussen de vensters: zonder viel de Engelse opname twee keer op een klik terwijl een venster nog wisselde
-          // (19/11/2026; stap voor stap, met pauzes, lukte elke klik). T(800) = 0,24 s in de websiteversie.
-          await knop(p, 'bevestiging_verder').click(); await p.waitForTimeout(T(800));
-          await knop(p, 'ctl_toch_ok').click(); await p.waitForTimeout(T(800));
-          await knop(p, 'uitgeven').last().click();
+          await p.locator('.bevestiging-reden textarea:visible').first().waitFor({ state: 'visible', timeout: 15000 });
+          await p.locator('.bevestiging-reden textarea:visible').first().fill('Order confirmed by phone by the insurer.');
+          await p.waitForTimeout(T(800));
+          await klik(p, p.getByText(Q('ctl_gezien')).first()); await p.waitForTimeout(T(800));
+          await klik(p, knop(p, 'uitgeven').last());
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(800));
           await knop(p, 'niet_nu').click();
           await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
@@ -293,41 +304,70 @@ export const FILMS = [
         en: 'Under Issue, Quaymark checks the report against the file: empty sections, a missing photo, times outside the survey. The check refuses nothing. It shows what you may still want to review.',
         de: 'Unter Ausgabe legt Quaymark den Bericht neben die Akte: leere Abschnitte, ein fehlendes Foto, Zeiten außerhalb der Besichtigung. Die Prüfung verweigert nichts. Sie zeigt, was Sie noch prüfen sollten.' },
 
-      { naam: 'verantwoording', kop: { nl: 'Zonder opdrachtbevestiging', fr: 'Sans confirmation de mission', en: 'Without an order confirmation', de: 'Ohne Auftragsbestätigung' },
+      // ── Uitgeven in ÉÉN venster (sinds Quaymark 0.57.0, 26/11/2026): de soort rapport, de verantwoording zonder opdrachtbevestiging en het
+      // vinkje bij de bevindingen van de controle staan samen in het venster "Versie 1 uitgeven". Tot 0.57.0 kwamen ze na elkaar (verantwoording,
+      // Toch uitgeven, laatste bevestiging); deze twee scènes vervangen de vroegere scènes verantwoording en uitgeven.
+      { naam: 'venster', kop: { nl: 'Eén venster om uit te geven', fr: 'Une seule fenêtre pour émettre', en: 'One window to issue', de: 'Ein Fenster zum Herausgeben' },
         doe: async (p) => {
           await klik(p, knop(p, 'uitgeven').first());
-          await p.waitForTimeout(T(1200));
-          const vak = p.locator('textarea:visible').last();
+          // Het venster laadt eerst zijn overzicht (een draaiend wieltje); de soort rapport verschijnt pas daarna.
+          const soort = p.locator('.uitgifte-soort:visible').first();
+          await soort.waitFor({ state: 'visible', timeout: 15000 });
+          await p.waitForTimeout(T(400));
+          await openLijst(p, soort);
+          await kies(p, Q('rapportsoort_preliminary'));
+        },
+        // De titel van het venster met het NUMMER van de versie die er komt: een gegeven, en enkel in dit venster.
+        merk: /Versie 1 uitgeven|Émettre la version 1|Issue version 1|Version 1 herausgeben/,
+        nl: 'Dan Rapport uitgeven. Eén venster vraagt wat nodig is, te beginnen met de soort rapport: hier een voorlopig rapport.',
+        fr: 'Puis Émettre le rapport. Une seule fenêtre demande ce qu’il faut, à commencer par le type de rapport : ici, un rapport préliminaire.',
+        en: 'Then Issue report. One window asks for what is needed, starting with the report type: here, a preliminary report.',
+        de: 'Dann Bericht herausgeben. Ein Fenster fragt, was nötig ist, zuerst die Berichtsart: hier ein vorläufiger Bericht.' },
+
+      { naam: 'verantwoording', kop: { nl: 'Zonder opdrachtbevestiging', fr: 'Sans confirmation de mission', en: 'Without an order confirmation', de: 'Ohne Auftragsbestätigung' },
+        doe: async (p) => {
+          const vak = p.locator('.bevestiging-reden textarea:visible').first();
           await klik(p, vak);
           // Engels, zoals alle gegevens van de proefklant: een surveyor schrijft zijn dossier in de taal van het rapport.
-          await vak.type('Order confirmed by phone by the insurer.', { delay: 45 });
-          await p.waitForTimeout(T(600));
-          await klik(p, knop(p, 'bevestiging_verder'));
-          await p.waitForTimeout(T(1200));
+          await vak.type('Order confirmed by phone by the insurer.', { delay: 35 });
+          await p.waitForTimeout(T(400));
         },
-        merk: Q('bevestiging_ontbreekt_kop'),
-        nl: 'Dan Rapport uitgeven. De opdrachtgever heeft deze opdracht niet bevestigd. Quaymark vraagt dus waarom u toch uitgeeft, en bewaart dat met uw naam en het tijdstip.',
-        fr: 'Puis Émettre le rapport. Le donneur d’ordre n’a pas confirmé cette mission. Quaymark vous demande donc pourquoi vous émettez quand même, et le conserve avec votre nom et l’heure.',
-        en: 'Then Issue report. The principal has not confirmed this assignment. So Quaymark asks why you issue anyway, and keeps that with your name and the time.',
-        de: 'Dann Bericht herausgeben. Der Auftraggeber hat diesen Auftrag nicht bestätigt. Quaymark fragt deshalb, warum Sie trotzdem herausgeben, und speichert das mit Ihrem Namen und der Uhrzeit.' },
+        merk: /Versie 1 uitgeven|Émettre la version 1|Issue version 1|Version 1 herausgeben/,
+        nl: 'De opdrachtgever bevestigde deze opdracht niet. U schrijft waarom u toch uitgeeft, en Quaymark bewaart het met uw naam.',
+        fr: 'Le donneur d’ordre n’a pas confirmé cette mission. Vous écrivez pourquoi vous émettez quand même, et Quaymark le conserve avec votre nom.',
+        en: 'The principal did not confirm this assignment. You write why you issue anyway, and Quaymark keeps it with your name.',
+        de: 'Der Auftraggeber hat diesen Auftrag nicht bestätigt. Sie schreiben, warum Sie trotzdem herausgeben, und Quaymark speichert es mit Ihrem Namen.' },
+
+      { naam: 'bevindingen', kop: { nl: 'De bevindingen van de controle', fr: 'Les points du contrôle', en: 'The findings of the check', de: 'Die Hinweise der Prüfung' },
+        doe: async (p) => {
+          await beweegNaar(p, p.locator('[data-uitgifte-bevindingen]:visible').first());
+          await p.waitForTimeout(T(600));
+          await klik(p, p.getByText(Q('ctl_gezien')).first());
+          await p.waitForTimeout(T(400));
+        },
+        merk: /Versie 1 uitgeven|Émettre la version 1|Issue version 1|Version 1 herausgeben/,
+        nl: 'Daaronder de bevindingen van de controle. U vinkt aan dat u ze zag: ze gaan mee met de versie.',
+        fr: 'En dessous, les points relevés par le contrôle. Vous cochez que vous les avez vus : ils sont conservés avec la version.',
+        en: 'Below are the points raised by the check. You tick that you have seen them: they are kept with the version.',
+        de: 'Darunter die Hinweise der Prüfung. Sie haken ab, dass Sie sie gesehen haben: Sie werden mit der Version gespeichert.' },
 
       { naam: 'uitgeven', kop: { nl: 'Versie 1, met vingerafdruk', fr: 'Version 1, avec son empreinte', en: 'Version 1, with its fingerprint', de: 'Version 1, mit Fingerabdruck' },
         doe: async (p) => {
-          await klik(p, knop(p, 'ctl_toch_ok'));
-          await p.waitForTimeout(T(1200));
-          // De laatste bevestiging: dezelfde tekst als de knop op het tabblad, dus de LAATSTE zichtbare.
+          // De knop van het venster draagt dezelfde tekst als die op het tabblad: de LAATSTE zichtbare.
           await klik(p, knop(p, 'uitgeven').last());
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
-          // Daarna vraagt Quaymark of het dossier afgesloten mag worden (gemeten 19/11/2026). Niet nu: eerst verzenden.
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1000));
+          // Daarna vraagt Quaymark of het dossier afgesloten mag worden. Niet nu: eerst verzenden.
           await klik(p, knop(p, 'niet_nu'));
-          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(800));
+          await beweegNaar(p, p.locator('[data-versie-soort]').first());
         },
-        // De vingerafdruk van de uitgegeven versie (hex): een gegeven, geen opschrift.
-        merk: /[0-9a-f]{12}/,
-        nl: 'De bevindingen van de controle gaan mee met de versie. Na de laatste bevestiging is het rapport versie 1, met zijn vingerafdruk. Het verandert daarna nooit meer. Het dossier afsluiten kan later.',
-        fr: 'Les points relevés par le contrôle sont conservés avec la version. Après la dernière confirmation, le rapport devient la version 1, avec son empreinte. Il ne change plus jamais. Vous pourrez clôturer le dossier plus tard.',
-        en: 'The points raised by the check are kept with the version. After the last confirmation, the report becomes version 1, with its fingerprint. It never changes after that. You can close the file later.',
-        de: 'Die Hinweise der Prüfung werden mit der Version gespeichert. Nach der letzten Bestätigung ist der Bericht Version 1, mit seinem Fingerabdruck. Er ändert sich danach nie mehr. Die Akte abschließen können Sie später.' },
+        // De soort in de lijst van de versies, gevolgd door de vingerafdruk van die versie (hex): gegevens, geen opschrift. Het keuzevak van het
+        // venster telt niet mee: dat is dan dicht, en de waarde van een invoervak staat niet in de tekst van de pagina.
+        merk: new RegExp(`(${Q('rapportsoort_preliminary').source})[\\s\\S]{0,400}[0-9a-f]{12}`),
+        nl: 'Nu is het voorlopig rapport versie 1, met zijn vingerafdruk. Het verandert nooit meer. Het dossier afsluiten kan later.',
+        fr: 'Le rapport préliminaire est maintenant la version 1, avec son empreinte. Il ne change plus jamais. Vous pourrez clôturer le dossier plus tard.',
+        en: 'The preliminary report is now version 1, with its fingerprint. It never changes again. You can close the file later.',
+        de: 'Jetzt ist der vorläufige Bericht Version 1, mit seinem Fingerabdruck. Er ändert sich nie mehr. Die Akte abschließen können Sie später.' },
 
       { naam: 'verzenden', kop: { nl: 'Verzenden', fr: 'Envoyer', en: 'Sending', de: 'Senden' },
         doe: async (p) => { await beweegNaar(p, knop(p, 'verzenden').first()); await p.waitForTimeout(T(1200)); },
@@ -701,6 +741,400 @@ export const FILMS = [
         en: 'The file is now Scheduled, by default for two hours. You stretch the block if the work takes longer. It turns red for an absence or an overlap.',
         de: 'Die Akte ist jetzt Geplant, standardmäßig für zwei Stunden. Sie ziehen den Block länger, wenn die Arbeit länger dauert. Er wird rot bei einer Abwesenheit oder einer Überschneidung.',
         website: { nl: 'Ingepland. Een overlap of afwezigheid kleurt rood.', fr: 'Planifié. Un chevauchement ou une absence s’affiche en rouge.', en: 'Scheduled. An overlap or an absence shows in red.', de: 'Geplant. Überschneidung oder Abwesenheit erscheint rot.' } },
+    ],
+  }],
+  // ── EEN BEWIJSPAKKET MAKEN (26/11/2026, op vraag van Dominique: "Ja, dat pakket" — één van drie nieuwe films) ─────────────────────────
+  // De keten van de Hoe-doe-ik-pagina "Hoe maak ik een bewijspakket": de originele foto's → het uitgegeven rapport → het pakket maken → wat erin
+  // zit → natrekken zonder Quaymark → de vingerafdruk in het journaal. Op HQ-2026-0003, NA de film rapport-uitgeven in dezelfde taal: het pakket
+  // bevat enkel uitgegeven rapporten, en die film geeft versie 1 uit (een voorlopig rapport).
+  //
+  // ⚠️ DEZE FILM SCHRIJFT: een rij in rapporten.bewijspakketten (enkel toe te voegen) en een notitie in het journaal. Zelfde werkwijze als
+  // rapport-uitgeven: per taal de proefklant terugzetten, dan rapport-uitgeven en meteen daarna deze film; na de ronde opnieuw terugzetten.
+  // ⚠️ De knop is een DOWNLOAD (sinds 0.57.1 met het attribuut download: zonder sprong het tabblad terug naar Tekst, gemeten 26/11/2026). Wat er in
+  // de ZIP zit, toont de film niet: dat is geen scherm. De stem zegt het, en de kolom Inhoud telt het.
+  ['bewijspakket', {
+    pagina: 'hoe/bewijspakket',
+    titel: {
+      nl: 'Een bewijspakket maken in Quaymark',
+      fr: 'Constituer un dossier de preuves dans Quaymark',
+      en: 'Putting together an evidence package in Quaymark',
+      de: 'Ein Beweispaket in Quaymark zusammenstellen',
+    },
+    omschrijving: {
+      nl: 'Eén ZIP voor een claim: de originele foto’s met hun vingerafdruk, het uitgegeven rapport, het pakket maken, wat erin zit, natrekken '
+        + 'zonder Quaymark, en de vingerafdruk van het pakket in het journaal.',
+      fr: 'Un seul ZIP pour une réclamation : les photos originales et leur empreinte, le rapport émis, la création du dossier de preuves, ce qu’il '
+        + 'contient, la vérification sans Quaymark, et l’empreinte du paquet dans le journal.',
+      en: 'One ZIP for a claim: the original photos with their fingerprint, the issued report, creating the package, what it contains, verifying it '
+        + 'without Quaymark, and the package’s fingerprint in the journal.',
+      de: 'Ein ZIP für einen Schadensfall: die Originalfotos mit ihrem Fingerabdruck, der herausgegebene Bericht, das Paket erstellen, was es enthält, '
+        + 'die Prüfung ohne Quaymark und der Fingerabdruck des Pakets im Journal.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'fotos', kop: { nl: 'De originele foto’s', fr: 'Les photos originales', en: 'The original photos', de: 'Die Originalfotos' },
+        doe: async (p) => {
+          await p.goto(`${BASIS}/dossiers/${HQ3}?tab=vaststellingen`); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1200));
+          const rij = p.getByRole('row').filter({ hasText: 'Hatch coaming top plate bent' }).first();
+          await beweegNaar(p, rij.locator('a[href*="/quaymark/bewijs/"]').first());
+          await p.waitForTimeout(T(1200));
+        },
+        merk: /Hatch coaming top plate bent/,
+        nl: 'Een bewijspakket bundelt wat u voor een claim nodig hebt. Het begint bij de foto’s van de veldapp. Quaymark bewaart ze zoals het toestel ze nam, met het tijdstip, de positie en een vingerafdruk.',
+        fr: 'Un dossier de preuves rassemble ce qu’il vous faut pour une réclamation. Tout commence par les photos de l’application de terrain. Quaymark les conserve telles que l’appareil les a prises, avec l’heure, la position et une empreinte.',
+        en: 'An evidence package bundles what you need for a claim. It starts with the photos from the field app. Quaymark keeps them as the device took them, with the time, the position and a fingerprint.',
+        de: 'Ein Beweispaket bündelt, was Sie für einen Schadensfall brauchen. Es beginnt mit den Fotos der Feld-App. Quaymark bewahrt sie so auf, wie das Gerät sie aufgenommen hat, mit der Uhrzeit, der Position und einem Fingerabdruck.' },
+
+      { naam: 'rapport', kop: { nl: 'Het uitgegeven rapport', fr: 'Le rapport émis', en: 'The issued report', de: 'Der herausgegebene Bericht' },
+        doe: async (p) => {
+          await naarTab(p, 'rapport_tab');
+          await naarTab(p, 'rapport_deel_uitgifte');
+          await beweegNaar(p, p.locator('[data-versie-soort]').first());
+          await p.waitForTimeout(T(800));
+        },
+        // De soort in de lijst van de versies, met de vingerafdruk van die versie erachter: gegevens van de versie die rapport-uitgeven uitgaf.
+        merk: new RegExp(`(${Q('rapportsoort_preliminary').source})[\\s\\S]{0,400}[0-9a-f]{12}`),
+        nl: 'Het pakket bevat de uitgegeven rapporten, geen voorbeelden. Geef dus eerst het rapport uit. Hier is dat versie 1, met haar eigen vingerafdruk.',
+        fr: 'Le dossier de preuves contient les rapports émis, pas les aperçus. Émettez donc d’abord le rapport. Ici, c’est la version 1, avec sa propre empreinte.',
+        en: 'The package contains the issued reports, not previews. So issue the report first. Here, that is version 1, with its own fingerprint.',
+        de: 'Das Paket enthält die herausgegebenen Berichte, keine Vorschauen. Geben Sie also zuerst den Bericht heraus. Hier ist das Version 1, mit ihrem eigenen Fingerabdruck.' },
+
+      { naam: 'maken', kop: { nl: 'Het pakket maken', fr: 'Créer le paquet', en: 'Creating the package', de: 'Das Paket erstellen' },
+        doe: async (p) => {
+          await naarTab(p, 'bewijspakket');
+          const knopZip = p.locator('a[href$="/bewijspakket.zip"]:visible').first();
+          await beweegNaar(p, knopZip);
+          // Een download: de pagina blijft staan, en het tabblad leest de lijst opnieuw tot de vingerafdruk er staat (VolgPakketAsync, elke 2 s).
+          const [download] = await Promise.all([p.waitForEvent('download', { timeout: 60000 }), klik(p, knopZip)]);
+          await download.path();
+          await p.locator('code:visible').filter({ hasText: /^[0-9a-f]{64}$/ }).first().waitFor({ state: 'visible', timeout: 60000 });
+          await p.waitForTimeout(T(1000));
+        },
+        // De volledige SHA-256 van het pakket: staat enkel in de lijst van de pakketten (de versies tonen er 12 tekens van).
+        merk: /[0-9a-f]{64}/,
+        nl: 'Onder Bewijspakket klikt u op Bewijspakket, ZIP. Quaymark rekent bij het inpakken elk bestand na. Klopt er één niet meer met zijn vingerafdruk, dan komt er geen pakket.',
+        fr: 'Sous Dossier de preuves, vous cliquez sur Dossier de preuves, ZIP. Quaymark revérifie chaque fichier lors de l’emballage. Si un seul ne correspond plus à son empreinte, il n’y a pas de paquet.',
+        en: 'Under Evidence package, you click Evidence package, ZIP. Quaymark re-checks every file while packing. If a single one no longer matches its fingerprint, there is no package.',
+        de: 'Unter Beweispaket klicken Sie auf Beweispaket, ZIP. Quaymark prüft beim Packen jede Datei nach. Stimmt eine nicht mehr mit ihrem Fingerabdruck überein, entsteht kein Paket.' },
+
+      { naam: 'inhoud', kop: { nl: 'Wat erin zit', fr: 'Ce qu’il contient', en: 'What it contains', de: 'Was es enthält' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText(/^\s*6\s/).filter({ hasText: /·/ }).first());
+          await p.waitForTimeout(T(1500));
+        },
+        // De kolom Inhoud van het nieuwe pakket: zes bewijsstukken en één rapportversie, de gegevens van HQ-2026-0003.
+        merk: /6 bewijsstukken · 1 rapportversies|6 pièces de preuve · 1 versions de rapport|6 evidence items · 1 report versions|6 Beweisstücke · 1 Berichtsversionen/,
+        nl: 'In de ZIP zitten de originele foto’s, ook die u uit het rapport liet, met de reden. Verder een manifest, het uitgegeven rapport en een LEESMIJ in de taal van het dossier.',
+        fr: 'Le ZIP contient les photos originales, y compris celles que vous avez retirées du rapport, avec la raison. Ensuite un manifeste, le rapport émis et un LISEZMOI dans la langue du dossier.',
+        en: 'The ZIP holds the original photos, including the ones you left out of the report, with the reason. Then a manifest, the issued report and a README in the language of the file.',
+        de: 'Im ZIP stecken die Originalfotos, auch die, die Sie aus dem Bericht genommen haben, mit dem Grund. Dazu ein Manifest, der herausgegebene Bericht und ein LIESMICH in der Sprache der Akte.' },
+
+      { naam: 'natrekken', kop: { nl: 'Natrekken zonder Quaymark', fr: 'Vérifier sans Quaymark', en: 'Verifying without Quaymark', de: 'Prüfen ohne Quaymark' },
+        doe: async (p) => {
+          await beweegNaar(p, p.locator('code:visible').filter({ hasText: /^[0-9a-f]{64}$/ }).first());
+          await p.waitForTimeout(T(1500));
+        },
+        merk: /[0-9a-f]{64}/,
+        nl: 'U bezorgt de ZIP aan de advocaat, de verzekeraar of de expert van de tegenpartij. Die trekt ze zelf na met de commando’s uit de LEESMIJ, zonder Quaymark.',
+        fr: 'Vous remettez le ZIP à l’avocat, à l’assureur ou à l’expert de la partie adverse. Celui-ci le vérifie lui-même avec les commandes du LISEZMOI, sans Quaymark.',
+        en: 'You deliver the ZIP to the lawyer, the insurer or the other party’s surveyor. They verify it themselves with the commands in the README, without Quaymark.',
+        de: 'Sie stellen das ZIP dem Anwalt, dem Versicherer oder dem Sachverständigen der Gegenpartei zu. Der prüft es selbst mit den Befehlen aus der LIESMICH, ohne Quaymark.' },
+
+      { naam: 'journaal', kop: { nl: 'Vastgelegd in het journaal', fr: 'Consigné dans le journal', en: 'Recorded in the journal', de: 'Im Journal festgehalten' },
+        doe: async (p) => {
+          await klik(p, tabblad(p, SCHIL.journaal)); await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1200));
+          await beweegNaar(p, p.getByText(Q('bewijspakket_journaal')).first());
+          await p.waitForTimeout(T(1200));
+        },
+        // De notitie van Quaymark met de vingerafdruk van het pakket erin: die bestaat pas na het maken.
+        merk: new RegExp(`(${Q('bewijspakket_journaal').source})[\\s\\S]{0,200}[0-9a-f]{64}`),
+        nl: 'De vingerafdruk van het pakket staat op het tabblad en in het journaal. Zo toont u later precies welk pakket u bezorgde.',
+        fr: 'L’empreinte du paquet figure dans l’onglet et dans le journal. Vous pourrez ainsi montrer plus tard quel paquet vous avez remis, exactement.',
+        en: 'The package’s fingerprint is on the tab and in the journal. That way you can later show exactly which package you delivered.',
+        de: 'Der Fingerabdruck des Pakets steht auf der Registerkarte und im Journal. So zeigen Sie später genau, welches Paket Sie zugestellt haben.' },
+    ],
+  }],
+  // ── VAN TIJD EN KOSTEN TOT FACTUUR (26/11/2026, op vraag van Dominique: "Ja, dat pakket" — één van drie nieuwe films) ──────────────────
+  // De keten van de pagina Facturen: de prestaties en kosten van een dossier → Factuur voorstellen → het klad → uitgeven (nummer, vervaldatum,
+  // mededeling, betaal-QR) → vast met vingerafdruk → versturen → de lijst Facturen. Op ZB-2026-0003 (sampling, Polderwacht): twee prestaties en
+  // drie kosten, waarvan twee op Doorrekenen (proefklant-vullen.py).
+  //
+  // ⚠️ DEZE FILM SCHRIJFT, en een uitgegeven factuur is NIET te wissen (geen weg in de app, en proefklant-vullen.py kent ze niet): een klad, een
+  // uitgegeven factuur met haar nummer uit de reeks, een PDF, een notitie in het journaal. Vóór ELKE taal de databank van qm-demo terugzetten uit een
+  // dump die vóór de ronde genomen is (pg_dump/pg_restore in de container quaymark-db), dan heet de factuur in elke taal F-ZB-2026-0001; na de ronde
+  // nog eens terugzetten en de PDF's van de ronde uit de bestandsmap van het bureau wissen.
+  // ⚠️ Versturen wordt enkel AANGEWEZEN: lokaal praat de app met de echte hub (Peppol), en een mail vertrekt in Development niet, wat het blok dan
+  // ook zegt ("niet verstuurd"). Dat hoort niet in een film.
+  // ⚠️ De regels van de factuur staan in de taal van de FACTUUR (die van Polderwacht: Nederlands), ook op een Frans, Engels of Duits scherm.
+  ['factureren', {
+    pagina: 'facturen',
+    titel: {
+      nl: 'Van tijd en kosten tot factuur in Quaymark',
+      fr: 'Des temps et frais à la facture dans Quaymark',
+      en: 'From time and expenses to invoice in Quaymark',
+      de: 'Von Zeit und Kosten zur Rechnung in Quaymark',
+    },
+    omschrijving: {
+      nl: 'Een dossier factureren: de prestaties en de kosten om door te rekenen, Factuur voorstellen, het klad met de voorgestelde btw, uitgeven met '
+        + 'nummer, vervaldatum, mededeling en betaal-QR, de vingerafdruk van de PDF, en versturen via Peppol of per mail.',
+      fr: 'Facturer un dossier : les prestations et les frais à refacturer, Proposer une facture, le brouillon avec la TVA proposée, l’émission avec '
+        + 'numéro, échéance, communication structurée et QR de paiement, l’empreinte du PDF, et l’envoi via Peppol ou par e-mail.',
+      en: 'Invoicing a file: the time entries and the expenses to recharge, Propose invoice, the draft with the suggested VAT, issuing with a number, '
+        + 'due date, payment reference and payment QR code, the fingerprint of the PDF, and sending via Peppol or by email.',
+      de: 'Eine Akte abrechnen: die Leistungen und die weiterzuberechnenden Kosten, Rechnung vorschlagen, der Entwurf mit der vorgeschlagenen MwSt., '
+        + 'das Ausstellen mit Nummer, Fälligkeitsdatum, Verwendungszweck und Zahlungs-QR-Code, der Fingerabdruck der PDF und der Versand über Peppol oder per E-Mail.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'tijd', kop: { nl: 'Tijd en kosten', fr: 'Temps et frais', en: 'Time and expenses', de: 'Zeit und Kosten' },
+        doe: async (p) => {
+          await openDossier(p, 'ZB-2026-0003');
+          await naarTab(p, 'tijd_kosten');
+          await beweegNaar(p, p.getByRole('row').filter({ hasText: 'Sampling during loading' }).first());
+          await p.waitForTimeout(T(1000));
+        },
+        merk: /Sampling during loading, holds 1 to 3/,
+        nl: 'Wat een dossier kost, staat op het tabblad Tijd en kosten. Bovenaan de facturen van het dossier, daaronder de prestaties van de surveyors, met hun uren.',
+        fr: 'Ce que coûte un dossier figure dans l’onglet Temps et frais. En haut, les factures du dossier, en dessous les prestations des experts, avec leurs heures.',
+        en: 'What a file costs is on the Time and expenses tab. At the top are the file’s invoices, below them the surveyors’ time entries, with their hours.',
+        de: 'Was eine Akte kostet, steht auf der Registerkarte Zeit und Kosten. Oben die Rechnungen der Akte, darunter die Leistungen der Sachverständigen, mit ihren Stunden.' },
+
+      { naam: 'kosten', kop: { nl: 'De kosten', fr: 'Les frais', en: 'The expenses', de: 'Die Kosten' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByRole('row').filter({ hasText: 'Laboratory analysis' }).first());
+          await p.waitForTimeout(T(1200));
+          await beweegNaar(p, p.getByRole('row').filter({ hasText: 'Parking at the terminal' }).first());
+        },
+        merk: /Laboratory analysis, 6 samples/,
+        nl: 'Onderaan de kosten. Een kost op Doorrekenen komt op de factuur, zoals de analyse in het labo. De parking blijft bij het bureau.',
+        fr: 'En bas, les frais. Un frais marqué Refacturer va sur la facture, comme l’analyse en laboratoire. Le parking reste à charge du bureau.',
+        en: 'At the bottom are the expenses. An expense marked Recharge goes on the invoice, like the lab analysis. The parking stays with the office.',
+        de: 'Unten die Kosten. Kosten auf Weiterberechnen kommen auf die Rechnung, wie die Laboranalyse. Das Parken bleibt beim Büro.' },
+
+      { naam: 'voorstellen', kop: { nl: 'Factuur voorstellen', fr: 'Proposer une facture', en: 'Propose invoice', de: 'Rechnung vorschlagen' },
+        doe: async (p) => {
+          await klik(p, knop(p, 'factuur_voorstellen').first());
+          await p.waitForURL(/\/facturen\/[0-9a-f-]{36}$/, { timeout: 20000 });
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
+          await beweegNaar(p, p.getByRole('row').filter({ hasText: 'Demo Surveyor' }).first());
+          await p.waitForTimeout(T(800));
+        },
+        // Een regel van het nieuwe klad: op deze pagina enkel als factuurregel (het tabblad Tijd en kosten is weg).
+        merk: /Laboratory analysis, 6 samples/,
+        nl: 'Factuur voorstellen maakt een klad voor de opdrachtgever: de uren maal het uurtarief, en de kosten om door te rekenen. Wat al op een andere factuur staat, telt niet mee.',
+        fr: 'Proposer une facture crée un brouillon pour le donneur d’ordre : les heures multipliées par le tarif horaire, et les frais à refacturer. Ce qui figure déjà sur une autre facture n’est pas repris.',
+        en: 'Propose invoice creates a draft for the principal: the hours times the hourly rate, and the expenses to recharge. Anything already on another invoice is left out.',
+        de: 'Rechnung vorschlagen erstellt einen Entwurf für den Auftraggeber: die Stunden mal dem Stundensatz und die weiterzuberechnenden Kosten. Was schon auf einer anderen Rechnung steht, zählt nicht mit.' },
+
+      { naam: 'klad', kop: { nl: 'Het klad', fr: 'Le brouillon', en: 'The draft', de: 'Der Entwurf' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText(/1\D?701\D01/).first());
+          await p.waitForTimeout(T(1200));
+          await beweegNaar(p, p.getByText(QX('factuur_voorbeeld')).first());
+          await p.waitForTimeout(T(800));
+        },
+        // Het totaal inclusief btw van het klad, in elke schrijfwijze (1.701,01 · 1 701,01 · 1,701.01).
+        merk: /1\D?701\D01/,
+        nl: 'Een klad heeft nog geen nummer en past u vrij aan. De btw is voorgesteld volgens het land en het btw-nummer van de klant. Met Voorbeeld ziet u de factuur zoals ze zal vertrekken.',
+        fr: 'Un brouillon n’a pas encore de numéro et vous l’adaptez librement. La TVA est proposée selon le pays et le numéro de TVA du client. Avec Aperçu, vous voyez la facture telle qu’elle partira.',
+        en: 'A draft has no number yet and you can change it freely. The VAT is suggested from the client’s country and VAT number. With Preview, you see the invoice as it will be sent.',
+        de: 'Ein Entwurf hat noch keine Nummer, und Sie passen ihn frei an. Die MwSt. ist nach dem Land und der USt-IdNr. des Kunden vorgeschlagen. Mit Vorschau sehen Sie die Rechnung so, wie sie verschickt wird.' },
+
+      { naam: 'uitgeven', kop: { nl: 'Uitgeven', fr: 'Émettre', en: 'Issuing', de: 'Ausstellen' },
+        doe: async (p) => {
+          await klik(p, knop(p, 'factuur_uitgeven').first());
+          await p.waitForTimeout(T(1200));
+          // De bevestiging (onomkeerbaar) draagt dezelfde tekst als de knop op de pagina: de LAATSTE zichtbare.
+          await klik(p, knop(p, 'factuur_uitgeven').last());
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
+          await beweegNaar(p, p.getByText(/^\s*F-ZB-2026-\d{4}\s*$/).last());
+          await p.waitForTimeout(T(800));
+        },
+        // Het nummer dat het uitgeven trok: bestaat pas daarna.
+        merk: /F-ZB-2026-\d{4}/,
+        nl: 'Uitgeven geeft de factuur haar nummer, per vestiging en per jaar. Ze krijgt een vervaldatum volgens de betaaltermijn van de opdrachtgever, een gestructureerde mededeling en een betaal-QR.',
+        fr: 'Émettre donne à la facture son numéro, par site et par année. Elle reçoit une échéance selon le délai de paiement du donneur d’ordre, une communication structurée et un QR de paiement.',
+        en: 'Issuing gives the invoice its number, per office and per year. It gets a due date from the principal’s payment term, a structured payment reference and a payment QR code.',
+        de: 'Ausstellen gibt der Rechnung ihre Nummer, pro Niederlassung und Jahr. Sie erhält ein Fälligkeitsdatum nach dem Zahlungsziel des Auftraggebers, einen strukturierten Verwendungszweck und einen Zahlungs-QR-Code.' },
+
+      { naam: 'vast', kop: { nl: 'Vast, met vingerafdruk', fr: 'Figée, avec son empreinte', en: 'Fixed, with a fingerprint', de: 'Fest, mit Fingerabdruck' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText(/^[0-9a-f]{64}$/).first());
+          await p.waitForTimeout(T(1500));
+        },
+        // De SHA-256 van de vastgelegde PDF.
+        merk: /[0-9a-f]{64}/,
+        nl: 'De PDF ligt vast met haar vingerafdruk. Een uitgegeven factuur verandert niet meer. Een fout zet u recht met een creditnota.',
+        fr: 'Le PDF est figé avec son empreinte. Une facture émise ne change plus. Une erreur se corrige par une note de crédit.',
+        en: 'The PDF is fixed with its fingerprint. An issued invoice no longer changes. You correct a mistake with a credit note.',
+        de: 'Die PDF ist mit ihrem Fingerabdruck festgelegt. Eine ausgestellte Rechnung ändert sich nicht mehr. Einen Fehler berichtigen Sie mit einer Gutschrift.' },
+
+      { naam: 'versturen', kop: { nl: 'Versturen', fr: 'Envoyer', en: 'Sending', de: 'Versenden' },
+        doe: async (p) => {
+          await beweegNaar(p, knop(p, 'peppol_versturen').first());
+          await p.waitForTimeout(T(1500));
+          await beweegNaar(p, knop(p, 'factuur_mail_versturen').first());
+          await p.waitForTimeout(T(1000));
+        },
+        merk: /F-ZB-2026-\d{4}/,
+        nl: 'Dan verstuurt u ze: via Peppol naar de boekhouding van de klant, of per mail met de PDF als bijlage. Elke verzending blijft op de factuur staan.',
+        fr: 'Ensuite, vous l’envoyez : via Peppol vers la comptabilité du client, ou par e-mail avec le PDF en pièce jointe. Chaque envoi reste visible sur la facture.',
+        en: 'Then you send it: via Peppol to the client’s accounting, or by email with the PDF attached. Every sending stays on the invoice.',
+        de: 'Dann versenden Sie sie: über Peppol an die Buchhaltung des Kunden oder per E-Mail mit der PDF im Anhang. Jeder Versand bleibt auf der Rechnung sichtbar.' },
+
+      { naam: 'lijst', kop: { nl: 'Openstaand', fr: 'En attente de paiement', en: 'Outstanding', de: 'Offen' },
+        doe: async (p) => {
+          await klik(p, menu(p, 'facturen'));
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
+          await beweegNaar(p, p.getByRole('row').filter({ hasText: /F-ZB-2026-\d{4}/ }).first());
+          await p.waitForTimeout(T(1000));
+        },
+        // De nieuwe factuur in de lijst, met haar status Open erachter.
+        merk: /F-ZB-2026-\d{4}[\s\S]{0,300}(Open|Ouverte|Offen)/,
+        nl: 'In de lijst Facturen staat ze op Open tot ze betaald is. Een betaling koppelt u onder Betalingen, en dan staat ze op Betaald.',
+        fr: 'Dans la liste des factures, elle reste Ouverte jusqu’à son paiement. Vous liez un paiement sous Paiements, et elle passe alors à Payée.',
+        en: 'In the Invoices list, it stays Open until it is paid. You match a payment under Payments, and it then shows Paid.',
+        de: 'In der Liste Rechnungen steht sie auf Offen, bis sie bezahlt ist. Eine Zahlung ordnen Sie unter Zahlungen zu, dann steht sie auf Bezahlt.' },
+    ],
+  }],
+  // ── VAN DIEPGANG TOT LADING (26/11/2026, op vraag van Dominique: "Ja, dat pakket" — één van drie nieuwe films) ─────────────────────────────
+  // De keten van de Hoe-doe-ik-pagina "Hoe doe ik een draft survey": het tabblad met begin- en eindmeting → een meting openen (diepgangen, schip,
+  // water) → de hydrostatische waarden uit de tabellen van het schip → de berekening die meerekent → de hydrometer met zijn kalibratie → het
+  // gewicht van de lading → het draft survey report uitgeven. Op HQ-2026-0004 (POLDERWIND, Antwerpen), met beide metingen volledig in de proefklant.
+  //
+  // ⚠️ DEZE FILM SCHRIJFT ENKEL IN DE LAATSTE SCÈNE: het report uitgeven (een document met vingerafdruk, enkel toe te voegen). De meting zelf wordt
+  // NIET bewaard: de film verlaat ze met Annuleren. Vóór elke taal de proefklant terugzetten (zoals bij factureren), anders zegt de tweede taal
+  // dat het report al uitgegeven is.
+  // ⚠️ GEEN invoer in de meting: een decimaal getal typen verschilt per schermtaal (komma of punt), en een film die dat fout doet, toont een
+  // verkeerde berekening zonder dat iets faalt. De stem zegt dat de berekening meerekent; het beeld toont haar.
+  ['draft-survey', {
+    pagina: 'hoe/draft-survey',
+    titel: {
+      nl: 'Van diepgang tot lading: een draft survey in Quaymark',
+      fr: 'Du tirant d’eau à la cargaison : un draft survey dans Quaymark',
+      en: 'From draft to cargo: a draft survey in Quaymark',
+      de: 'Vom Tiefgang zur Ladung: ein Draft Survey in Quaymark',
+    },
+    omschrijving: {
+      nl: 'Een draft survey van begin tot report: de begin- en eindmeting naast elkaar, de diepgangen, het schip en het water, de hydrostatische waarden '
+        + 'uit de tabellen, de berekening die meerekent, de hydrometer met zijn kalibratie, het gewicht van de lading en het report met vingerafdruk.',
+      fr: 'Un draft survey du début au rapport : les mesures initiale et finale côte à côte, les tirants d’eau, le navire et l’eau, les valeurs '
+        + 'hydrostatiques des tables, le calcul qui suit, l’hydromètre et son étalonnage, le poids de la cargaison et le rapport avec son empreinte.',
+      en: 'A draft survey from start to report: the initial and final surveys side by side, the drafts, the vessel and the water, the hydrostatic values '
+        + 'from the tables, the calculation that follows along, the hydrometer and its calibration, the cargo weight and the report with its fingerprint.',
+      de: 'Ein Draft Survey vom Anfang bis zum Report: Anfangs- und Endmessung nebeneinander, die Tiefgänge, das Schiff und das Wasser, die hydrostatischen '
+        + 'Werte aus den Tabellen, die mitlaufende Berechnung, das Hydrometer mit seiner Kalibrierung, das Gewicht der Ladung und der Report mit Fingerabdruck.',
+    },
+    uitvoeringen: { handleiding: { stem: true } },
+    scenes: [
+      { naam: 'tabblad', kop: { nl: 'Begin en eind', fr: 'Début et fin', en: 'Initial and final', de: 'Anfang und Ende' },
+        doe: async (p) => {
+          await openDossier(p, 'HQ-2026-0004');
+          await naarTab(p, 'berekeningen');
+          await beweegNaar(p, p.locator('a[href$="/draft/begin"]').first());
+          await p.waitForTimeout(T(1000));
+          await beweegNaar(p, p.locator('a[href$="/draft/eind"]').first());
+        },
+        // Het gewicht van de lading (49.706,234 t), in elke schrijfwijze: het resultaat van de twee metingen in de proefklant.
+        merk: /49\D?706\D234/,
+        nl: 'Bij een draft survey heeft het dossier onder Berekeningen het tabblad Draft survey. De beginmeting vóór het laden, de eindmeting erna, naast elkaar.',
+        fr: 'Pour un draft survey, le dossier a l’onglet Draft survey sous Calculs. La mesure initiale avant le chargement, la mesure finale après, côte à côte.',
+        en: 'For a draft survey, the file has the Draft survey tab under Calculations. The initial survey before loading, the final survey after, side by side.',
+        de: 'Bei einem Draft Survey hat die Akte unter Berechnungen die Registerkarte Draft Survey. Die Anfangsmessung vor dem Laden, die Endmessung danach, nebeneinander.' },
+
+      { naam: 'meting', kop: { nl: 'Een meting', fr: 'Une mesure', en: 'A survey', de: 'Eine Messung' },
+        doe: async (p) => {
+          await klik(p, p.locator('a[href$="/draft/begin"]').first());
+          await p.waitForURL(/\/draft\/begin/, { timeout: 15000 });
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
+          // De groepen Diepgangen, Schip en Water (DxFormLayoutGroup), in die volgorde op de pagina.
+          const blokken = p.locator('.dxbl-fl-group:visible');
+          await beweegNaar(p, blokken.nth(0));
+          await p.waitForTimeout(T(1500));
+          await beweegNaar(p, blokken.nth(1));
+          await p.waitForTimeout(T(1000));
+          await beweegNaar(p, blokken.nth(2));
+        },
+        // De netto waterverplaatsing van de beginmeting in de berekening (26.977,059 t): staat enkel op deze pagina en op het tabblad.
+        merk: /26\D?977\D059/,
+        nl: 'Een klik op Beginmeting opent de meting. U vult de zes diepgangen in: voor, midden en achter, aan bakboord en stuurboord. Daaronder het schip, met de afstanden van de merken, en het water.',
+        fr: 'Un clic sur Mesure initiale ouvre la mesure. Vous saisissez les six tirants d’eau : avant, milieu et arrière, à bâbord et à tribord. En dessous, le navire, avec les distances des marques, et l’eau.',
+        en: 'A click on Initial survey opens the survey. You enter the six drafts: forward, midships and aft, port and starboard. Below them the vessel, with the distances of the marks, and the water.',
+        de: 'Ein Klick auf Anfangsmessung öffnet die Messung. Sie geben die sechs Tiefgänge ein: vorn, Mitte und achtern, an Backbord und Steuerbord. Darunter das Schiff, mit den Abständen der Marken, und das Wasser.' },
+
+      { naam: 'tabellen', kop: { nl: 'De tabellen van het schip', fr: 'Les tables du navire', en: 'The vessel’s tables', de: 'Die Tabellen des Schiffs' },
+        doe: async (p) => {
+          const kop = p.getByText(/(Hydrostatische waarden bij|Valeurs hydrostatiques à|Hydrostatic values at|Hydrostatische Werte bei) 6[.,]062 m/).first();
+          await beweegNaar(p, kop);
+          await p.waitForTimeout(T(1500));
+          await beweegNaar(p, p.locator('.draft-lcf-vanaf').first());
+        },
+        // De kop van het blok noemt de gemiddelde diepgang van DEZE meting (quarter mean 6,062 m): een gegeven, berekend uit de diepgangen.
+        merk: /(Hydrostatische waarden bij|Valeurs hydrostatiques à|Hydrostatic values at|Hydrostatische Werte bei) 6[.,]062 m/,
+        nl: 'Bij de gemiddelde diepgang leest u uit de tabellen van het schip de waterverplaatsing, de TPC, de LCF en de MTC af. Quaymark zegt bij welke diepgang. De LCF neemt u over zoals de tabel ze geeft.',
+        fr: 'Au tirant d’eau moyen, vous relevez dans les tables du navire le déplacement, le TPC, le LCF et le MTC. Quaymark indique à quel tirant d’eau. Vous reprenez le LCF tel que la table le donne.',
+        en: 'At the mean draft, you read the displacement, the TPC, the LCF and the MTC from the vessel’s tables. Quaymark tells you at which draft. You enter the LCF as the table gives it.',
+        de: 'Beim mittleren Tiefgang lesen Sie aus den Tabellen des Schiffs die Verdrängung, den TPC, den LCF und den MTC ab. Quaymark sagt, bei welchem Tiefgang. Den LCF übernehmen Sie so, wie die Tabelle ihn angibt.' },
+
+      { naam: 'berekening', kop: { nl: 'De berekening', fr: 'Le calcul', en: 'The calculation', de: 'Die Berechnung' },
+        doe: async (p) => {
+          // Het label uit QText (het Duits schrijft Quarter Mean, met een hoofdletter: gemeten 26/11/2026).
+          await beweegNaar(p, p.getByRole('row').filter({ hasText: Q('draft_quarter_mean') }).first());
+          await p.waitForTimeout(T(1500));
+          await beweegNaar(p, p.getByText(/26\D?977\D059/).first());
+          await p.waitForTimeout(T(800));
+        },
+        merk: /26\D?977\D059/,
+        nl: 'Rechts rekent Quaymark mee bij elke wijziging: de trim, de doorbuiging, de quarter mean, de trimcorrecties, de densiteit, de aftrek en de netto waterverplaatsing. Elke stap afgerond, zoals op papier.',
+        fr: 'À droite, Quaymark recalcule à chaque modification : l’assiette, la flexion, le quarter mean, les corrections d’assiette, la densité, les déductions et le déplacement net. Chaque étape arrondie, comme sur papier.',
+        en: 'On the right, Quaymark recalculates with every change: the trim, the hog or sag, the quarter mean, the trim corrections, the density, the deductions and the net displacement. Each step rounded, as on paper.',
+        de: 'Rechts rechnet Quaymark bei jeder Änderung mit: der Trimm, die Durchbiegung, der Quarter Mean, die Trimmkorrekturen, die Dichte, die Abzüge und die Nettoverdrängung. Jeder Schritt gerundet, wie auf Papier.' },
+
+      { naam: 'hydrometer', kop: { nl: 'De hydrometer', fr: 'L’hydromètre', en: 'The hydrometer', de: 'Das Hydrometer' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText(/DH3-10427/).first());
+          await p.waitForTimeout(T(1500));
+        },
+        // Het serienummer van de hydrometer van de proefklant, met zijn kalibratie: een gegeven van het register Meetapparatuur.
+        merk: /DH3-10427/,
+        nl: 'Onderaan staat de hydrometer waarmee u de densiteit mat, met de kalibratie die gold op de dag van de meting. Was ze vervallen, dan waarschuwt Quaymark.',
+        fr: 'En bas figure l’hydromètre avec lequel vous avez mesuré la densité, avec l’étalonnage valable le jour de la mesure. S’il était expiré, Quaymark vous avertit.',
+        en: 'At the bottom is the hydrometer you used to measure the density, with the calibration that applied on the day of the survey. If it had expired, Quaymark warns you.',
+        de: 'Unten steht das Hydrometer, mit dem Sie die Dichte gemessen haben, mit der Kalibrierung, die am Tag der Messung galt. War sie abgelaufen, warnt Quaymark.' },
+
+      { naam: 'lading', kop: { nl: 'Het gewicht van de lading', fr: 'Le poids de la cargaison', en: 'The cargo weight', de: 'Das Gewicht der Ladung' },
+        doe: async (p) => {
+          // Annuleren: niets bewaard, terug naar het tabblad (?tab=draft).
+          await klik(p, knop(p, 'annuleren').last());
+          await p.waitForURL(/\/dossiers\/[0-9a-f-]{36}\?tab=draft/, { timeout: 15000 });
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(1500));
+          await beweegNaar(p, p.getByText(/49\D?706\D234/).first());
+          await p.waitForTimeout(T(1000));
+        },
+        merk: /49\D?706\D234/,
+        nl: 'Terug op het tabblad staat het gewicht van de lading: het verschil van de netto waterverplaatsing tussen begin en eind. Meer aan het eind is geladen, minder is gelost.',
+        fr: 'De retour sur l’onglet figure le poids de la cargaison : la différence du déplacement net entre le début et la fin. Davantage à la fin, c’est chargé ; moins, c’est déchargé.',
+        en: 'Back on the tab is the cargo weight: the difference in net displacement between the initial and final surveys. More at the end means loaded, less means discharged.',
+        de: 'Zurück auf der Registerkarte steht das Gewicht der Ladung: der Unterschied der Nettoverdrängung zwischen Anfang und Ende. Mehr am Ende heißt geladen, weniger heißt gelöscht.' },
+
+      { naam: 'report', kop: { nl: 'Het draft survey report', fr: 'Le draft survey report', en: 'The draft survey report', de: 'Der Draft Survey Report' },
+        doe: async (p) => {
+          await beweegNaar(p, p.getByText(QX('draft_voorbeeld')).first());
+          await p.waitForTimeout(T(1200));
+          await klik(p, knop(p, 'draft_uitgeven').first());
+          await p.waitForTimeout(T(1200));
+          // De bevestiging (onomkeerbaar) draagt dezelfde tekst als de knop: de LAATSTE zichtbare.
+          await klik(p, knop(p, 'draft_uitgeven').last());
+          await p.waitForLoadState('networkidle'); await p.waitForTimeout(T(2000));
+          await beweegNaar(p, p.locator('[data-draft-uitgegeven]').first());
+          await p.waitForTimeout(T(1000));
+        },
+        // De regel Uitgegeven op … door …, met de vingerafdruk erachter: bestaat pas na het uitgeven.
+        merk: /(Uitgegeven op|Émis le|Issued on|Ausgegeben am)[\s\S]{0,300}[0-9a-f]{12}/,
+        nl: 'Het draft survey report heeft plaats voor de handtekening van de kapitein. Uitgeven legt het vast met zijn vingerafdruk, bij de brieven en certificaten van het dossier en in het bewijspakket.',
+        fr: 'Le draft survey report prévoit la signature du capitaine. Émettre le fige avec son empreinte, parmi les lettres et certificats du dossier et dans le dossier de preuves.',
+        en: 'The draft survey report has room for the master’s signature. Issuing fixes it with its fingerprint, with the letters and certificates of the file and in the evidence package.',
+        de: 'Der Draft Survey Report hat Platz für die Unterschrift des Kapitäns. Herausgeben legt ihn mit seinem Fingerabdruck fest, bei den Schreiben und Bescheinigungen der Akte und im Beweispaket.' },
     ],
   }],
 ];
