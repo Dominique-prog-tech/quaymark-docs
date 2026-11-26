@@ -62,6 +62,10 @@ hoe/dossier-plannen.de.md
 hoe/dossier-plannen.en.md
 hoe/dossier-plannen.fr.md
 hoe/dossier-plannen.md
+hoe/draft-survey.de.md
+hoe/draft-survey.en.md
+hoe/draft-survey.fr.md
+hoe/draft-survey.md
 hoe/freelancer-afrekenen.de.md
 hoe/freelancer-afrekenen.en.md
 hoe/freelancer-afrekenen.fr.md
