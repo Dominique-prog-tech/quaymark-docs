@@ -56,10 +56,11 @@ jobs:
         run: python3 tools/check-beelden.py site
       # Staat elke gepubliceerde film direct onder de titel van zijn pagina, met een volledig VideoObject (miniatuur, datum, duur)?
       # Aan sinds de eerste film (19/11/2026: rapport-uitgeven in vier talen); 12 sinds Aan de slag en Van aanvraag tot ingepland dossier
-      # (dezelfde dag: drie films in vier talen). --min-paginas en --min-talen zijn de bodem: trek ze
-      # op wanneer er films bijkomen, verlaag ze nooit om een melding weg te krijgen. Deze mag de uitrol TEGENHOUDEN.
+      # (dezelfde dag: drie films in vier talen); 24 sinds Bewijspakket, Factureren en Draft survey (26/11/2026). --min-paginas en
+      # --min-talen zijn de bodem: trek ze op wanneer er films bijkomen, verlaag ze nooit om een melding weg te krijgen. Deze mag de
+      # uitrol TEGENHOUDEN.
       - name: Films controleren (plaatsing + videogegevens)
-        run: python3 _appkit/tools/filmgenerator/check-films.py --min-paginas=12 --min-talen=4
+        run: python3 _appkit/tools/filmgenerator/check-films.py --min-paginas=24 --min-talen=4
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

@@ -37,36 +37,36 @@
     },
     "rapport-uitgeven": {
       "nl": {
-        "guid": "93ccdc2c-3e58-4596-a982-af8a03706006",
-        "lengte": 44.12,
+        "guid": "4195dd02-9e43-4dc4-817e-1ab72502b995",
+        "lengte": 44.76,
         "titel": "Van vaststelling tot uitgegeven rapport in Quaymark",
         "omschrijving": "Vaststellingen ter plaatse, met foto’s die tijdstip, GPS-positie en vingerafdruk dragen. Het rapport volgt uw eigen Word-sjabloon, wordt uitgegeven als versie met vingerafdruk en gaat in één klik naar de opdrachtgever.",
-        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/93ccdc2c-3e58-4596-a982-af8a03706006/thumbnail.jpg",
-        "gepubliceerdOp": "2026-11-19T16:56:08.426Z"
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/4195dd02-9e43-4dc4-817e-1ab72502b995/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-26T19:47:13.304Z"
       },
       "fr": {
-        "guid": "f8b6f22e-6a9a-43ed-b9f4-8410fad58658",
-        "lengte": 42.6,
+        "guid": "c2af17c4-6e23-470a-b234-da7f756d9263",
+        "lengte": 45.68,
         "titel": "De la constatation au rapport émis dans Quaymark",
         "omschrijving": "Des constatations sur place, avec des photos qui portent l’heure, la position GPS et une empreinte. Le rapport suit votre propre modèle Word, est émis en version avec empreinte et part en un clic chez le donneur d’ordre.",
-        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/f8b6f22e-6a9a-43ed-b9f4-8410fad58658/thumbnail.jpg",
-        "gepubliceerdOp": "2026-11-19T17:06:20.299Z"
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/c2af17c4-6e23-470a-b234-da7f756d9263/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-26T19:47:24.922Z"
       },
       "en": {
-        "guid": "3aa352c3-3844-430c-8684-de9063051859",
-        "lengte": 41.56,
+        "guid": "660405ae-835d-45af-ace1-485623d8c65a",
+        "lengte": 41.44,
         "titel": "From finding to issued report in Quaymark",
         "omschrijving": "Findings on site, with photos that carry the time, GPS position and fingerprint. The report follows your own Word template, is issued as a version with a fingerprint and reaches the principal in one click.",
-        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/3aa352c3-3844-430c-8684-de9063051859/thumbnail.jpg",
-        "gepubliceerdOp": "2026-11-19T17:15:24.578Z"
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/660405ae-835d-45af-ace1-485623d8c65a/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-26T19:47:31.036Z"
       },
       "de": {
-        "guid": "82e16246-b829-4eb6-9f1a-7faae22d8996",
-        "lengte": 40.72,
+        "guid": "bbf5dfd3-c3d5-4c0c-8e78-1d48f2bdcde6",
+        "lengte": 46.6,
         "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
         "omschrijving": "Feststellungen vor Ort, mit Fotos, die Uhrzeit, GPS-Position und Fingerabdruck tragen. Der Bericht folgt Ihrer eigenen Word-Vorlage, wird als Version mit Fingerabdruck herausgegeben und ist mit einem Klick beim Auftraggeber.",
-        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/82e16246-b829-4eb6-9f1a-7faae22d8996/thumbnail.jpg",
-        "gepubliceerdOp": "2026-11-19T18:27:15.254Z"
+        "miniatuur": "https://vz-11fa6718-bbd.b-cdn.net/bbf5dfd3-c3d5-4c0c-8e78-1d48f2bdcde6/thumbnail.jpg",
+        "gepubliceerdOp": "2026-11-26T19:47:42.461Z"
       }
     }
   }
