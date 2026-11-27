@@ -267,89 +267,88 @@
     "film": "rapport-uitgeven",
     "taal": "de-BE",
     "pagina": "hoe/rapport-uitgeven",
-    "lengte": 200.2,
+    "lengte": 201.88,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
-      "vuil": true
+      "sha": "6203fe9768ec8ce7ec9632b0ffc2aa274fd1569d",
+      "vuil": false
     },
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Der Weg einer Akte zu ihrem Bericht: die Feststellungen mit ihren Fotos, die Akte im Status Berichterstellung, der Text je Abschnitt mit einer Sprachnotiz und einem Standardtext, die Berichtsprüfung, das Herausgeben mit einem Fingerabdruck und das Senden.",
-    "hash": "e76ada40412988c2",
+    "hash": "b0e986466cfc0cd5",
     "guid": "2962f3aa-41e7-433d-90c6-6c938fbf3e74",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
-        "start": 6.75,
-        "eind": 17.06
+        "start": 6.87,
+        "eind": 18.94
       },
       {
         "titel": "Fotos mit Beweiskraft",
-        "start": 20.83,
-        "eind": 32.72
+        "start": 22.72,
+        "eind": 34.61
       },
       {
         "titel": "Die Akte auf Berichterstellung",
-        "start": 41.84,
-        "eind": 51.31
+        "start": 43.69,
+        "eind": 53.16
       },
       {
         "titel": "Der Text je Abschnitt",
-        "start": 55.6,
-        "eind": 66.47
+        "start": 57.42,
+        "eind": 68.28
       },
       {
         "titel": "Eine Sprachnotiz",
-        "start": 72.34,
-        "eind": 80.33
+        "start": 74.13,
+        "eind": 82.12
       },
       {
         "titel": "Ein Standardtext",
-        "start": 86,
-        "eind": 94.91
+        "start": 87.78,
+        "eind": 96.7
       },
       {
         "titel": "Speichern und prüfen",
-        "start": 99.52,
-        "eind": 109.45
+        "start": 101.27,
+        "eind": 111.21
       },
       {
         "titel": "Die Berichtsprüfung",
-        "start": 113.75,
-        "eind": 127.82
+        "start": 115.46,
+        "eind": 129.53
       },
       {
         "titel": "Ein Fenster zum Herausgeben",
-        "start": 134.07,
-        "eind": 141.78
+        "start": 135.74,
+        "eind": 143.45
       },
       {
         "titel": "Ohne Auftragsbestätigung",
-        "start": 146,
-        "eind": 155.06
+        "start": 147.65,
+        "eind": 156.7
       },
       {
         "titel": "Die Hinweise der Prüfung",
-        "start": 159.16,
-        "eind": 166.17
+        "start": 160.81,
+        "eind": 167.83
       },
       {
         "titel": "Version 1, mit Fingerabdruck",
-        "start": 171.82,
-        "eind": 180.04
+        "start": 173.49,
+        "eind": 181.71
       },
       {
         "titel": "Senden",
-        "start": 183.53,
-        "eind": 197.79
+        "start": 185.22,
+        "eind": 199.47
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/2962f3aa-41e7-433d-90c6-6c938fbf3e74/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-26T19:46:51.309",
     "embed": "https://iframe.mediadelivery.net/embed/814490/2962f3aa-41e7-433d-90c6-6c938fbf3e74",
     "vorigeGuid": "414a48ac-3299-4006-abcd-d19423ffdd26",
-    "gepubliceerdeHash": "e76ada40412988c2",
     "opTeRuimen": [
       "c36f5745-b709-4f44-8929-6709f0a65c16"
     ]
@@ -1871,54 +1870,53 @@
     "film": "bewijspakket",
     "taal": "de-BE",
     "pagina": "hoe/bewijspakket",
-    "lengte": 107.12,
+    "lengte": 107.32,
     "uitvoering": "handleiding",
     "routes": [
       "/dossiers/{id}"
     ],
     "app": {
-      "sha": "2c7aa08992ed76b6de082e29669f4c66af9ffd51",
-      "vuil": true
+      "sha": "6203fe9768ec8ce7ec9632b0ffc2aa274fd1569d",
+      "vuil": false
     },
     "titel": "Ein Beweispaket in Quaymark zusammenstellen",
     "omschrijving": "Ein ZIP für einen Schadensfall: die Originalfotos mit ihrem Fingerabdruck, der herausgegebene Bericht, das Paket erstellen, was es enthält, die Prüfung ohne Quaymark und der Fingerabdruck des Pakets im Journal.",
-    "hash": "7f9bbc0dcd007afa",
+    "hash": "7b2b68236b4fe46f",
     "guid": "67b6f7c1-0a78-4e69-a76c-a50953c088da",
     "hoofdstukken": [
       {
         "titel": "Die Originalfotos",
-        "start": 5.12,
-        "eind": 20.54
+        "start": 5.09,
+        "eind": 20.74
       },
       {
         "titel": "Der herausgegebene Bericht",
-        "start": 27.57,
-        "eind": 37.97
+        "start": 27.75,
+        "eind": 38.16
       },
       {
         "titel": "Das Paket erstellen",
-        "start": 46.61,
-        "eind": 58.78
+        "start": 46.68,
+        "eind": 58.85
       },
       {
         "titel": "Was es enthält",
-        "start": 62.57,
-        "eind": 75.06
+        "start": 62.73,
+        "eind": 75.22
       },
       {
         "titel": "Prüfen ohne Quaymark",
-        "start": 78.83,
-        "eind": 90.39
+        "start": 78.99,
+        "eind": 90.55
       },
       {
         "titel": "Im Journal festgehalten",
-        "start": 95.83,
-        "eind": 104.79
+        "start": 96.01,
+        "eind": 104.98
       }
     ],
     "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/67b6f7c1-0a78-4e69-a76c-a50953c088da/thumbnail.jpg",
     "gepubliceerdOp": "2026-11-26T19:49:57.793",
-    "gepubliceerdeHash": "7f9bbc0dcd007afa",
     "embed": "https://iframe.mediadelivery.net/embed/814490/67b6f7c1-0a78-4e69-a76c-a50953c088da"
   },
   "factureren-de": {

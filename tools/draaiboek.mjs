@@ -205,8 +205,7 @@ export const FILMS = [
         nl: 'Ter plaatse legt de surveyor zijn vaststellingen vast in de veldapp, per plaats aan boord, met de ernst en een foto. Op kantoor vindt u ze terug onder Veldwerk.',
         fr: 'Sur place, l’expert consigne ses constatations dans l’application de terrain, par emplacement à bord, avec leur gravité et une photo. Au bureau, vous les retrouvez sous Travail de terrain.',
         en: 'On site, the surveyor records the findings in the field app, per location on board, with their severity and a photo. At the office, you find them under Fieldwork.',
-        // ⚠️ Duits: zegt nog Feld-App, zoals de GEPUBLICEERDE film (stem). Beslist 26/11/2026: Außendienst-App. Pas het woord hier aan bij de VOLGENDE opname, niet eerder.
-        de: 'Vor Ort hält der Sachverständige seine Feststellungen in der Feld-App fest, je Ort an Bord, mit dem Schweregrad und einem Foto. Im Büro finden Sie sie unter Feldarbeit.' },
+        de: 'Vor Ort hält der Sachverständige seine Feststellungen in der Außendienst-App fest, je Ort an Bord, mit dem Schweregrad und einem Foto. Im Büro finden Sie sie unter Feldarbeit.' },
 
       { naam: 'foto', kop: { nl: 'Foto’s met bewijswaarde', fr: 'Des photos qui font foi', en: 'Photos as evidence', de: 'Fotos mit Beweiskraft' },
         doe: async (p) => {
@@ -784,8 +783,7 @@ export const FILMS = [
         nl: 'Een bewijspakket bundelt wat u voor een claim nodig hebt. Het begint bij de foto’s van de veldapp. Quaymark bewaart ze zoals het toestel ze nam, met het tijdstip, de positie en een vingerafdruk.',
         fr: 'Un dossier de preuves rassemble ce qu’il vous faut pour une réclamation. Tout commence par les photos de l’application de terrain. Quaymark les conserve telles que l’appareil les a prises, avec l’heure, la position et une empreinte.',
         en: 'An evidence package bundles what you need for a claim. It starts with the photos from the field app. Quaymark keeps them as the device took them, with the time, the position and a fingerprint.',
-        // ⚠️ Duits: zegt nog Feld-App, zoals de GEPUBLICEERDE film (stem). Beslist 26/11/2026: Außendienst-App. Pas het woord hier aan bij de VOLGENDE opname, niet eerder.
-        de: 'Ein Beweispaket bündelt, was Sie für einen Schadensfall brauchen. Es beginnt mit den Fotos der Feld-App. Quaymark bewahrt sie so auf, wie das Gerät sie aufgenommen hat, mit der Uhrzeit, der Position und einem Fingerabdruck.' },
+        de: 'Ein Beweispaket bündelt, was Sie für einen Schadensfall brauchen. Es beginnt mit den Fotos der Außendienst-App. Quaymark bewahrt sie so auf, wie das Gerät sie aufgenommen hat, mit der Uhrzeit, der Position und einem Fingerabdruck.' },
 
       { naam: 'rapport', kop: { nl: 'Het uitgegeven rapport', fr: 'Le rapport émis', en: 'The issued report', de: 'Der herausgegebene Bericht' },
         doe: async (p) => {
