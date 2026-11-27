@@ -47,13 +47,13 @@ Akten, Feststellungen vor Ort mit Beweiskraft, Schreiben, Bescheinigungen und da
 
     [Akten](dossiers.md) · [Planung](planning.md)
 
--   :material-cellphone: **Feld-App**
+-   :material-cellphone: **Außendienst-App**
 
     ---
 
     An Bord, auch offline: Ihre Akten nach Tag, Feststellungen mit Fotos, die Checkliste, unterschreiben lassen und Ihre Zeit.
 
-    [Erste Schritte mit der Feld-App](veldapp/aan-de-slag.md) · [Offline](veldapp/zonder-bereik.md)
+    [Erste Schritte mit der Außendienst-App](veldapp/aan-de-slag.md) · [Offline](veldapp/zonder-bereik.md)
 
 -   :material-ferry: **Beziehungen und Schiffe**
 

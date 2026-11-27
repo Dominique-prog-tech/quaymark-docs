@@ -1,10 +1,10 @@
 ---
-description: "Eine Akte in der Feld-App: eine Seite mit Karten, vom Kopf mit dem Schiff bis zu den Besichtigungsdaten, und die Arbeit beginnen und abschließen."
+description: "Eine Akte in der Außendienst-App: eine Seite mit Karten, vom Kopf mit dem Schiff bis zu den Besichtigungsdaten, und die Arbeit beginnen und abschließen."
 ---
 
 # Die Akte
 
-Eine Akte ist in der Feld-App eine Seite mit Karten, in der Reihenfolge der Arbeit an Bord. Jede Karte hat rechts in ihrem Kopf ihre eigene Schaltfläche.
+Eine Akte ist in der Außendienst-App eine Seite mit Karten, in der Reihenfolge der Arbeit an Bord. Jede Karte hat rechts in ihrem Kopf ihre eigene Schaltfläche.
 
 ![Die Akte HQ-2026-0003 oben: der Kopf mit dem Schiff KAAIMEEUW, Zeitpunkt, Hafen, Auftraggeber, dem Etikett In Bearbeitung und der Schaltfläche Vor Ort fertig → Bericht, die Karte Umstände und Anwesende mit Ausfüllen, Wetter, See, Sicht, Liegeplatz und zwei Anwesenden, und die Karte Zeitablauf mit Ereignis.](../images/app-dossier-de.png "Die Akte"){ width="320" }
 

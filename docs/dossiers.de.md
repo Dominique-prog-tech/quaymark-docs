@@ -64,11 +64,11 @@ Der **Sachverständige** der Akte erhält am letzten Arbeitstag davor und nach A
 
 ### Feststellungen
 
-Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** unter **⋯** am Ende der Zeile und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat. Ging die Uhr des Geräts vor, zählt die Empfangszeit, und die Zeit des Geräts bleibt gespeichert: Das Label **Uhr des Geräts ging vor** sagt es, mit beiden Zeiten. Das gilt auch für Fotos und die anderen Stücke aus der Feld-App.
+Eine **Feststellung** wird hinzugefügt, nie geändert oder gelöscht. Einen Fehler berichtigen Sie mit **Berichtigen** unter **⋯** am Ende der Zeile und einem Grund: die alte Fassung bleibt durchgestrichen sichtbar. Ihre Fotos gehen zur neuen Fassung mit, auf dem Bildschirm und im Bericht. Beim Zeigen auf ein Foto erscheinen Zeitpunkt, GPS-Position und Fingerabdruck (SHA-256), die das Gerät bei der Aufnahme festgehalten hat. Ging die Uhr des Geräts vor, zählt die Empfangszeit, und die Zeit des Geräts bleibt gespeichert: Das Label **Uhr des Geräts ging vor** sagt es, mit beiden Zeiten. Das gilt auch für Fotos und die anderen Stücke aus der Außendienst-App.
 
-Hat die Feld-App begonnen, ein Foto hochzuladen, das noch nicht vollständig angekommen ist, steht oben **Noch unterwegs von der Feld-App**: die Datei, wie viel angekommen ist, der Sachverständige mit seinem Gerät und wann es begann. Die Feld-App schließt es ab, sobald das Gerät Verbindung hat; ein inzwischen herausgegebener Bericht enthält das Foto nicht.
+Hat die Außendienst-App begonnen, ein Foto hochzuladen, das noch nicht vollständig angekommen ist, steht oben **Noch unterwegs von der Außendienst-App**: die Datei, wie viel angekommen ist, der Sachverständige mit seinem Gerät und wann es begann. Die Außendienst-App schließt es ab, sobald das Gerät Verbindung hat; ein inzwischen herausgegebener Bericht enthält das Foto nicht.
 
-Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Feld-App. Was schon da ist, bleibt sichtbar. Auch die Berechnungen (Draft Survey, Eichaufnahme, Bunker Survey, Zeitleiste und Laytime) können dann nur noch gelesen werden.
+Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: keine Feststellungen, Checklistenantworten, Fotos oder Unterschriften, auch nicht aus der Außendienst-App. Was schon da ist, bleibt sichtbar. Auch die Berechnungen (Draft Survey, Eichaufnahme, Bunker Survey, Zeitleiste und Laytime) können dann nur noch gelesen werden.
 
 ![Feststellungen je Ort mit Kategorie, Schweregrad, Beschreibung und Neue Feststellung](images/dossier-vaststellingen-de.png "Feststellungen mit Foto")
 
@@ -78,11 +78,11 @@ Eine **abgeschlossene** oder **stornierte** Akte erhält keine Feldarbeit mehr: 
 
 ### Fotos aus dem Büro
 
-Ohne Feld-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** unter **⋯** am Ende der Zeile oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
+Ohne Außendienst-App fügen Sie die Fotos im Büro einer Feststellung hinzu: **Fotos hinzufügen** unter **⋯** am Ende der Zeile oder direkt nach **Neue Feststellung**. JPEG oder PNG, bis zu 40 auf einmal.
 
 - **Aufnahmezeit** und **GPS** stammen aus dem Foto selbst. Die Bildunterschrift im Bericht sagt dann „laut Kamera“.
 - Ohne Aufnahmezeit nennt der Bericht **hochgeladen am** mit dem Zeitpunkt des Hochladens.
-- Auch diese Fotos erhalten einen Fingerabdruck und werden nur hinzugefügt. Sie sind aber schwächerer Beweis als ein Foto aus der Feld-App: Die Zeit stammt von der Uhr der Kamera.
+- Auch diese Fotos erhalten einen Fingerabdruck und werden nur hinzugefügt. Sie sind aber schwächerer Beweis als ein Foto aus der Außendienst-App: Die Zeit stammt von der Uhr der Kamera.
 
 ### Fotos annotieren
 
@@ -98,9 +98,9 @@ Die **Checkliste** zeigt pro Punkt die letzte Antwort, von wem und wann. Die Bes
 
 Eine gute Antwort speichern Sie mit einem Klick. Bei einem Mangel (**Nicht in Ordnung**, **Mangelhaft** oder **Schlecht**) füllen Sie die **Feststellung**, die **Empfehlung** und die **Priorität** aus: **Sofort, vor dem Auslaufen**, **Innerhalb von 3 Monaten**, **Bei der nächsten Wartung** oder **Zur Information**. **Standardbefund einfügen** füllt die drei Felder mit einem Standardtext der Besichtigungsart, in der Sprache der Akte; passen Sie sie danach an. **Neue Feststellung** macht daraus eine Feststellung.
 
-Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Sachverständige in der Feld-App, mit derselben Skala und denselben Standardbefunden, und nimmt Fotos zu einem beantworteten Punkt auf ([Die Checkliste](veldapp/checklist.md#ein-foto-bei-einem-punkt)). Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
+Jede Antwort bleibt unter **Frühere Antworten** erhalten. Vor Ort antwortet der Sachverständige in der Außendienst-App, mit derselben Skala und denselben Standardbefunden, und nimmt Fotos zu einem beantworteten Punkt auf ([Die Checkliste](veldapp/checklist.md#ein-foto-bei-einem-punkt)). Die Mängel erscheinen im Bericht mit der Markierung `{{aanbevelingen}}` (siehe [Vorlagen](sjablonen.md)).
 
-Ein zweiter Klick auf eine gute Antwort, die schon dasteht, speichert nichts; bei einem Mangel öffnet er den Befund zum Anpassen. Gibt es für den Punkt schon eine Feststellung, zeigt der Mangel diese statt **Neue Feststellung**. Die letzte Antwort ist die zuletzt gegebene, auch wenn eine Antwort aus der Feld-App erst später eintrifft.
+Ein zweiter Klick auf eine gute Antwort, die schon dasteht, speichert nichts; bei einem Mangel öffnet er den Befund zum Anpassen. Gibt es für den Punkt schon eine Feststellung, zeigt der Mangel diese statt **Neue Feststellung**. Die letzte Antwort ist die zuletzt gegebene, auch wenn eine Antwort aus der Außendienst-App erst später eintrifft.
 
 Die Fotos eines Punktes stehen darunter, auch die einer früheren Antwort, und so kommen sie in den Bericht. Mit **⋯** neben einem Foto nehmen Sie es aus dem Bericht oder annotieren es, wie bei einer Feststellung. **Foto Pflicht** wird rot, solange das Foto fehlt. Im Büro fügen Sie Fotos mit **Fotos hinzufügen** unter **⋯** am Ende der Zeile hinzu.
 
@@ -137,7 +137,7 @@ Ein Klick auf den Titel einer Besichtigung öffnet sie zum Bearbeiten. Danach ä
 
 ### Unterschriften
 
-Vor Ort lässt der Sachverständige den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Feld-App mit **Unterschreiben** auf der Karte **Unterschriften** ([Unterschreiben lassen](veldapp/laten-tekenen.md)), oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
+Vor Ort lässt der Sachverständige den Kapitän, den Ersten Offizier oder das Terminal eine Erklärung unterschreiben: in der Außendienst-App mit **Unterschreiben** auf der Karte **Unterschriften** ([Unterschreiben lassen](veldapp/laten-tekenen.md)), oder im Büro in der Registerkarte **Unterschriften** mit **Unterschreiben lassen** (zum Beispiel auf einem Tablet am Empfang).
 
 1. Geben Sie den **Name des Unterzeichners** ein, wählen Sie die **Funktion** und gegebenenfalls die Partei, in deren Namen er unterschreibt.
 2. Wählen Sie die **Klausel**: **Zum Empfang, ohne Anerkennung einer Haftung** (Standard), **Einverstanden** oder **Gesehen**. Die Erklärung steht in der Sprache der Akte dabei, mit den Feststellungen dieses Moments.
@@ -147,7 +147,7 @@ Verlassen Sie die Seite, nachdem schon unterschrieben oder etwas eingegeben wurd
 
 ![Unterschreiben lassen mit Erklärung und Feststellungen](images/dossier-tekenen-de.png "Unterschreiben lassen")
 
-Eine Unterschrift wird nur hinzugefügt, nie geändert. Quaymark bewahrt, was unterschrieben wurde: die Erklärung und die Liste der Feststellungen dieses Moments (die **Momentaufnahme**, mit ihrem Fingerabdruck), das Bild der Unterschrift mit der Uhrzeit und, auf dem Gerät, die Position. Eine später hinzugefügte oder berichtigte Feststellung ändert eine gegebene Unterschrift nicht. In der Feld-App funktioniert es ohne Netz: die Unterschrift wird gesendet, sobald eine Verbindung besteht.
+Eine Unterschrift wird nur hinzugefügt, nie geändert. Quaymark bewahrt, was unterschrieben wurde: die Erklärung und die Liste der Feststellungen dieses Moments (die **Momentaufnahme**, mit ihrem Fingerabdruck), das Bild der Unterschrift mit der Uhrzeit und, auf dem Gerät, die Position. Eine später hinzugefügte oder berichtigte Feststellung ändert eine gegebene Unterschrift nicht. In der Außendienst-App funktioniert es ohne Netz: die Unterschrift wird gesendet, sobald eine Verbindung besteht.
 
 Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweigerung. Unter **Feststellungen zum Zeitpunkt der Unterschrift** steht die Momentaufnahme, auch als Datei. Eine seither berichtigte Feststellung steht durchgestrichen, und **Seit der Unterzeichnung** zählt die berichtigten und die neuen: Dann bitten Sie vielleicht um eine neue Unterschrift. Quaymark rechnet den Fingerabdruck von Bild und Momentaufnahme nach; stimmt einer nicht mehr, erscheint eine rote Meldung. Zeigen Sie auf das Bild für Zeitpunkt, GPS-Position und Fingerabdruck. Im Bericht erscheinen sie mit der Markierung `{{handtekeningen}}` (siehe [Vorlagen](sjablonen.md)), und sie gehören zum Beweispaket.
 
@@ -155,9 +155,9 @@ Die Registerkarte **Unterschriften** zeigt alle, mit dem Bild oder der Verweiger
 
 ### Bordunterlagen
 
-An Bord erfasst der Sachverständige den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Feld-App, mit **Hinzufügen** auf der Karte **Bordunterlagen** ([An Bord erfassen](veldapp/aan-boord.md#bordunterlagen)). Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
+An Bord erfasst der Sachverständige den Stauplan, das Ladungsmanifest, das Logbuch, einen Lieferschein oder ein Zertifikat in der Außendienst-App, mit **Hinzufügen** auf der Karte **Bordunterlagen** ([An Bord erfassen](veldapp/aan-boord.md#bordunterlagen)). Er wählt die Art, fotografiert die Seiten, wählt ein PDF oder eine Datei vom Gerät oder nimmt ein kurzes Video auf (ein Foto oder PDF höchstens 50 MB, ein Video höchstens 200 MB). Jede Datei wird zum Beweis wie ein Foto: mit Zeit, Ort und Fingerabdruck (SHA-256) des Moments des Hinzufügens, und sie kommt auch ohne Netz in die Warteschlange.
 
-Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest. Ein Dokument, das die Feld-App noch nicht vollständig geliefert hat, steht oben unter **Noch unterwegs von der Feld-App**.
+Im Büro stehen sie auf der Registerkarte **Bordunterlagen**, mit der Art, wer und wann. Ein Foto zeigt eine Miniatur, ein PDF öffnet sich, ein Video spielt im Browser ab. Sie werden nie geändert oder gelöscht. Sie kommen nicht in den Fotoanhang des Berichts, wohl aber in das Beweispaket, mit ihrer Art im Manifest. Ein Dokument, das die Außendienst-App noch nicht vollständig geliefert hat, steht oben unter **Noch unterwegs von der Außendienst-App**.
 
 Kam eine Unterlage per E-Mail, fügen Sie sie im Büro mit **Dokument hinzufügen** hinzu: Wählen Sie die Art, gegebenenfalls eine Beschreibung und die Dateien (Fotos der Seiten, ein PDF oder ein Video). Bis 50 MB pro Datei, ein Video bis 200 MB. Auch das ist ein Nachweis mit Fingerabdruck; Reiter, Beweispaket und Nachweisdaten vermerken **im Büro**. Zeigen Sie auf eine Datei für Zeitpunkt, GPS-Position und Fingerabdruck.
 
@@ -165,7 +165,7 @@ Kam eine Unterlage per E-Mail, fügen Sie sie im Büro mit **Dokument hinzufüge
 
 ### Codes
 
-Der Sachverständige scannt in der Feld-App Barcodes und QR-Codes: **Scannen** auf der Karte **Codes** ([An Bord erfassen](veldapp/aan-boord.md#codes)). Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
+Der Sachverständige scannt in der Außendienst-App Barcodes und QR-Codes: **Scannen** auf der Karte **Codes** ([An Bord erfassen](veldapp/aan-boord.md#codes)). Er wählt die Art (Container, Plombe, Probe oder anderer Code) und scannt mit der Kamera, lässt den Code aus einem Foto lesen oder tippt ihn ein. Er kann den Code mit einer Feststellung verknüpfen oder bei der Akte lassen. Ohne Netz wartet er auf dem Gerät.
 
 - Eine **Containernummer** (ISO 6346) besteht aus 4 Buchstaben, der letzte U, J oder Z, und 7 Ziffern; die App schreibt sie in Großbuchstaben ohne Leerzeichen. Stimmt die Prüfziffer nicht, warnt die App, und der Sachverständige darf trotzdem speichern: Der Code erhält die Markierung **Stimmt nicht**.
 - Wer einen gescannten Code korrigiert, macht daraus einen getippten Code: Die Spalte **Quelle** sagt ehrlich, wie er hereinkam.
@@ -199,7 +199,7 @@ Die Prüfung verweigert nichts. Geben Sie mit Befunden heraus, zeigt das Fenster
 
 ### Bericht herausgeben und senden
 
-**Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) öffnet ein einziges Fenster mit allem, was das Herausgeben verlangt. Oben steht, was es verhindert (eine offene Stelle in einem Standardsatz, die Freigabe durch einen zweiten Sachverständigen, ein fehlendes Bild, nicht gespeicherte Abschnitte), alles auf einmal: Beheben Sie es und öffnen Sie das Fenster erneut. Sie wählen die **Berichtsart**: vorläufiger Bericht, Zwischenbericht oder Abschlussbericht; Quaymark schlägt die Art der vorigen Version vor, beim ersten Mal den Abschlussbericht. Bei einer Überarbeitung fragt das Fenster nach dem Grund, ohne angenommene Auftragsbestätigung nach einer Begründung und bei Befunden der Prüfung nach dem Häkchen, dass Sie sie gesehen haben. Hat die Feld-App noch ein Foto oder Dokument unterwegs, sagt das Fenster es ebenfalls. Das Herausgeben legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**. Die Art steht in der Liste der Versionen, im Namen des PDF, im Betreff der E-Mail und im Auftraggeberportal; im Bericht selbst fügen Sie das Feld **RapportSoort** ein (siehe [Vorlagen](sjablonen.md)). **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Ist die Version unterschrieben, wird das unterschriebene PDF angehängt, wie im Auftraggeberportal; das Fenster sagt, welches PDF hinausgeht, und warnt, wenn Sie eine durch eine neuere ersetzte Version senden. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.
+**Bericht herausgeben** (Registerkarte Bericht, ab dem Status Berichterstellung) öffnet ein einziges Fenster mit allem, was das Herausgeben verlangt. Oben steht, was es verhindert (eine offene Stelle in einem Standardsatz, die Freigabe durch einen zweiten Sachverständigen, ein fehlendes Bild, nicht gespeicherte Abschnitte), alles auf einmal: Beheben Sie es und öffnen Sie das Fenster erneut. Sie wählen die **Berichtsart**: vorläufiger Bericht, Zwischenbericht oder Abschlussbericht; Quaymark schlägt die Art der vorigen Version vor, beim ersten Mal den Abschlussbericht. Bei einer Überarbeitung fragt das Fenster nach dem Grund, ohne angenommene Auftragsbestätigung nach einer Begründung und bei Befunden der Prüfung nach dem Häkchen, dass Sie sie gesehen haben. Hat die Außendienst-App noch ein Foto oder Dokument unterwegs, sagt das Fenster es ebenfalls. Das Herausgeben legt den Bericht als Version 1 fest, mit seinem Fingerabdruck (SHA-256): Er ändert sich danach nie mehr. Korrigieren = **Neue Version herausgeben**. Die Art steht in der Liste der Versionen, im Namen des PDF, im Betreff der E-Mail und im Auftraggeberportal; im Bericht selbst fügen Sie das Feld **RapportSoort** ein (siehe [Vorlagen](sjablonen.md)). **Senden** schickt eine herausgegebene Version als PDF an den Auftraggeber; die Mail wird im Journal gespeichert. Ist die Version unterschrieben, wird das unterschriebene PDF angehängt, wie im Auftraggeberportal; das Fenster sagt, welches PDF hinausgeht, und warnt, wenn Sie eine durch eine neuere ersetzte Version senden. Speichern Sie zuerst die Abschnitte: Eine Version übernimmt nur gespeicherten Text.
 
 ### Bericht unterschreiben lassen
 
@@ -240,7 +240,7 @@ Unter der Schaltfläche steht, worauf sich der Vorschlag stützte. Ihr eigener T
 
 ### Sprachnotizen
 
-An Bord sprechen Sie eine Notiz ein, statt sie zu tippen. Tippen Sie in der Feld-App auf **Diktieren** auf der Karte **Notizen** ([An Bord erfassen](veldapp/aan-boord.md#sprachnotizen)): Das Gerät schreibt die Sprache sofort um. Wählen Sie die Sprache, in der Sie sprechen, und auf Wunsch den Abschnitt des Berichts. Korrigieren Sie danach den Text und speichern Sie. Ohne Verbindung wartet die Notiz auf dem Gerät, wie eine Feststellung. Nur der Text geht an Quaymark, mit Uhrzeit und Ort der Aufnahme; der Ton wird nicht gespeichert. Die Karte **Notizen** in der Feld-App zeigt auch, was schon gesendet ist.
+An Bord sprechen Sie eine Notiz ein, statt sie zu tippen. Tippen Sie in der Außendienst-App auf **Diktieren** auf der Karte **Notizen** ([An Bord erfassen](veldapp/aan-boord.md#sprachnotizen)): Das Gerät schreibt die Sprache sofort um. Wählen Sie die Sprache, in der Sie sprechen, und auf Wunsch den Abschnitt des Berichts. Korrigieren Sie danach den Text und speichern Sie. Ohne Verbindung wartet die Notiz auf dem Gerät, wie eine Feststellung. Nur der Text geht an Quaymark, mit Uhrzeit und Ort der Aufnahme; der Ton wird nicht gespeichert. Die Karte **Notizen** in der Außendienst-App zeigt auch, was schon gesendet ist.
 
 Im Büro stehen die Notizen in der Registerkarte **Bericht**, über den Abschnitten.
 
@@ -340,7 +340,7 @@ Bei einer Besichtigungsart mit dem Haken **Bunkerbesichtigung** (siehe [Besichti
 
 ![Bunkerbesichtigung · Nachher von HQ-2026-0007 mit Tank, Volumen (m³) und Temp. (°C)](images/dossier-bunker-peilingen-de.png "Peilungen")
 
-Vor Ort peilt der Sachverständige in der Feld-App: Die Karte **Bunkerbesichtigung** der Akte zeigt die Tanks je Zeitpunkt ([An Bord erfassen](veldapp/aan-boord.md#bunkerbesichtigung)), mit einer Schätzung in Tonnen. Einen Tank, den das Schiff noch nicht hatte, fügt er dort hinzu. Ohne Verbindung warten die Peilungen auf dem Gerät.
+Vor Ort peilt der Sachverständige in der Außendienst-App: Die Karte **Bunkerbesichtigung** der Akte zeigt die Tanks je Zeitpunkt ([An Bord erfassen](veldapp/aan-boord.md#bunkerbesichtigung)), mit einer Schätzung in Tonnen. Einen Tank, den das Schiff noch nicht hatte, fügt er dort hinzu. Ohne Verbindung warten die Peilungen auf dem Gerät.
 
 Unter den Peilungen steht der Block **Messgeräte**, für **Peilungen vorher** und **Peilungen nachher**: Wählen Sie das Thermometer und das Peilband, mit denen Sie gepeilt haben. Quaymark speichert sie mit ihrer Kalibrierung am Tag dieser Peilungen; eine abgelaufene Kalibrierung gibt eine Warnung. Sie stehen im Bericht unter der Bunkerbesichtigung, und ihre Zertifikate kommen ins Beweispaket. → [Messgeräte](meetapparatuur.md#bei-einer-messung)
 
@@ -373,7 +373,7 @@ Das Ergebnis rechnet beim Tippen mit: erlaubt, verbraucht, Liegegeld oder Despat
 
 In der Registerkarte **Zeit und Kosten** erfassen Sie die **Leistungen** (wer, von wann bis wann, in der Zeit der Niederlassung) und die **Kosten** (Reise, Unterkunft, Labor, Dritte) der Akte, mit dem Beleg aus den Anhängen. Kosten auf **Weiterberechnen** kommen auf die Rechnung. **Bearbeiten** und **Löschen** stehen unter **⋯** neben einer Zeile, die noch auf keiner Rechnung oder Abrechnung steht. **Rechnung vorschlagen** macht daraus einen Rechnungsentwurf; siehe [Rechnungen](facturen.md). Was auf einer Rechnung steht, steht fest. Die Spalte **Geschätzt (EUR)** ist eine Schätzung: Stunden × Stundensatz × Zuschlag (Wochenende, Nacht oder ein Feiertag des Landes der Niederlassung), wie die Rechnung rechnet; die Tarife stehen in EUR, und die Rechnung rechnet in die Währung der Akte um. Unten stehen die Summen; jede Rechnung zeigt ihre eigene Währung.
 
-In der Feld-App erfasst der Sachverständige seine Zeit auf der Karte **Zeit** der Akte ([Zeit erfassen](veldapp/tijd.md)): **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
+In der Außendienst-App erfasst der Sachverständige seine Zeit auf der Karte **Zeit** der Akte ([Zeit erfassen](veldapp/tijd.md)): **Uhr starten** mit einer Art der Arbeit (**An Bord**, **Reisezeit**, **Wartezeit**, **Berichterstellung**), und **Uhr stoppen** öffnet das Fenster, um Beginn und Ende zu prüfen, mit einer Bemerkung. **Zeit erfassen** tut dasselbe von Hand. Es läuft immer nur eine Uhr; sie läuft weiter, wenn die App geschlossen wird. Nach dem Speichern erscheint die Leistung hier, mit der Art in der Sprache der Akte als Beschreibung. Lief die Uhr mehr als 12 Stunden, fragt die App zuerst nach einer Prüfung.
 
 ![Zeit und Kosten von ZB-2026-0003 mit Rechnung vorschlagen, Leistungen und Kosten](images/dossier-tijd-kosten-de.png "Zeit und Kosten")
 

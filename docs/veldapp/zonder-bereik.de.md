@@ -1,10 +1,10 @@
 ---
-description: "Offline arbeiten mit der Feld-App: was auf dem Gerät wartet, wann es gesendet wird, und was Sie mit einer abgelehnten Aktion tun."
+description: "Offline arbeiten mit der Außendienst-App: was auf dem Gerät wartet, wann es gesendet wird, und was Sie mit einer abgelehnten Aktion tun."
 ---
 
 # Offline
 
-An Bord fällt die Verbindung oft weg: im Laderaum, im Maschinenraum, vor Anker. Die Feld-App arbeitet dann weiter. Was Sie tun, speichert sie zuerst auf dem Gerät. Sobald wieder eine Verbindung besteht, geht es an Quaymark.
+An Bord fällt die Verbindung oft weg: im Laderaum, im Maschinenraum, vor Anker. Die Außendienst-App arbeitet dann weiter. Was Sie tun, speichert sie zuerst auf dem Gerät. Sobald wieder eine Verbindung besteht, geht es an Quaymark.
 
 ## Was Sie offline sehen
 

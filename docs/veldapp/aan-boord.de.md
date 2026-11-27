@@ -1,5 +1,5 @@
 ---
-description: "An Bord erfassen mit der Feld-App: Umstände und Anwesende, der Zeitablauf, Sprachnotizen, gescannte Codes, Bordunterlagen und die Peilungen einer Bunkerbesichtigung."
+description: "An Bord erfassen mit der Außendienst-App: Umstände und Anwesende, der Zeitablauf, Sprachnotizen, gescannte Codes, Bordunterlagen und die Peilungen einer Bunkerbesichtigung."
 ---
 
 # An Bord erfassen

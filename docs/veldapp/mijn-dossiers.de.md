@@ -1,10 +1,10 @@
 ---
-description: "Meine Akten in der Feld-App: Ihre offenen Akten nach Tag, die laufende Uhr, die Navigation zum Hafen und das Synchronisieren."
+description: "Meine Akten in der Außendienst-App: Ihre offenen Akten nach Tag, die laufende Uhr, die Navigation zum Hafen und das Synchronisieren."
 ---
 
 # Meine Akten
 
-Der erste Bildschirm der Feld-App: die offenen Akten, deren Sachverständiger Sie sind, nach Tag. Die Liste steht auf dem Gerät, sie funktioniert also auch offline.
+Der erste Bildschirm der Außendienst-App: die offenen Akten, deren Sachverständiger Sie sind, nach Tag. Die Liste steht auf dem Gerät, sie funktioniert also auch offline.
 
 ![Meine Akten: oben der Balken Uhr läuft für HQ-2026-0003, An Bord, darunter die Gruppen Früher (noch offen), Heute und Morgen, pro Akte Nummer, Besichtigungsart, Zeitpunkt, Schiff, Hafen und Terminal, und rechts die Schaltfläche zum Navigieren.](../images/app-dossiers-de.png "Meine Akten"){ width="320" }
 
@@ -52,7 +52,7 @@ Oben in der Liste kann eine Meldung stehen:
 
 Auf einem Tablet stehen Liste und Akte nebeneinander: links die Liste, rechts die gewählte Akte. Solange Sie nichts gewählt haben, steht rechts *Wählen Sie links eine Akte.*
 
-![Die Feld-App auf einem iPad: links Meine Akten mit den Gruppen Früher (noch offen), Heute, Morgen, Später und Nicht geplant, rechts die Akte HQ-2026-0003 mit ihren Karten.](../images/app-tablet-de.png "Auf einem Tablet"){ width="560" }
+![Die Außendienst-App auf einem iPad: links Meine Akten mit den Gruppen Früher (noch offen), Heute, Morgen, Später und Nicht geplant, rechts die Akte HQ-2026-0003 mit ihren Karten.](../images/app-tablet-de.png "Auf einem Tablet"){ width="560" }
 
 ## Häufige Fehler
 

@@ -1,5 +1,5 @@
 ---
-description: "Feststellungen und Fotos in der Feld-App: was das Gerät bei der Aufnahme festhält, und warum eine Feststellung nur hinzugefügt wird."
+description: "Feststellungen und Fotos in der Außendienst-App: was das Gerät bei der Aufnahme festhält, und warum eine Feststellung nur hinzugefügt wird."
 ---
 
 # Feststellungen und Fotos

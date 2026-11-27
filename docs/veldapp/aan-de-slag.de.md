@@ -1,14 +1,14 @@
 ---
-description: "Die Feld-App von Quaymark: installieren, anmelden, das Menü, Ihr Profil und aktualisieren."
+description: "Die Außendienst-App von Quaymark: installieren, anmelden, das Menü, Ihr Profil und aktualisieren."
 ---
 
-# Erste Schritte mit der Feld-App
+# Erste Schritte mit der Außendienst-App
 
-Mit der Feld-App **Quaymark** arbeitet der Sachverständige an Bord: Er sieht die ihm zugewiesenen Akten, erfasst Feststellungen mit Fotos, beantwortet die Checkliste, lässt unterschreiben und erfasst seine Zeit. Was er tut, steht zuerst auf dem Gerät und geht ans Büro, sobald eine Verbindung besteht. Die App läuft auf einem Telefon und einem Tablet, unter iOS und Android, auf Niederländisch, Französisch, Englisch und Deutsch.
+Mit der Außendienst-App **Quaymark** arbeitet der Sachverständige an Bord: Er sieht die ihm zugewiesenen Akten, erfasst Feststellungen mit Fotos, beantwortet die Checkliste, lässt unterschreiben und erfasst seine Zeit. Was er tut, steht zuerst auf dem Gerät und geht ans Büro, sobald eine Verbindung besteht. Die App läuft auf einem Telefon und einem Tablet, unter iOS und Android, auf Niederländisch, Französisch, Englisch und Deutsch.
 
 ## Zugang
 
-Jeder Benutzer des Büros kann sich in der Feld-App anmelden, mit demselben Benutzernamen oder derselben E-Mail-Adresse und demselben Passwort wie in der Web-App. Auch ein Freiberufler mit der Rolle Freiberufler kann das. → [Freiberufler](../freelancers.md#die-rolle-freiberufler)
+Jeder Benutzer des Büros kann sich in der Außendienst-App anmelden, mit demselben Benutzernamen oder derselben E-Mail-Adresse und demselben Passwort wie in der Web-App. Auch ein Freiberufler mit der Rolle Freiberufler kann das. → [Freiberufler](../freelancers.md#die-rolle-freiberufler)
 
 Die App zeigt nur die **offenen Akten, deren Sachverständiger Sie sind**. Das Büro weist Ihnen eine Akte zu, in der Akte oder in der [Planung](../planning.md).
 
@@ -20,7 +20,7 @@ Installieren Sie die App **Quaymark** aus dem App Store oder von Google Play. Es
 
 ## Anmelden
 
-![Der Anmeldebildschirm der Feld-App: oben das blaue Markenfeld mit Quaymark und Eine Plattform für maritime Sachverständigenbüros, darunter Anmelden mit den Feldern Benutzername oder E-Mail und Passwort und der Schaltfläche Anmelden.](../images/app-aanmelden-de.png "Anmelden in der Feld-App"){ width="320" }
+![Der Anmeldebildschirm der Außendienst-App: oben das blaue Markenfeld mit Quaymark und Eine Plattform für maritime Sachverständigenbüros, darunter Anmelden mit den Feldern Benutzername oder E-Mail und Passwort und der Schaltfläche Anmelden.](../images/app-aanmelden-de.png "Anmelden in der Außendienst-App"){ width="320" }
 
 1. Öffnen Sie die App.
 2. Geben Sie unter **Benutzername oder E-Mail** und **Passwort** Ihre Zugangsdaten ein. Das Auge neben dem Passwort zeigt, was Sie getippt haben.
@@ -34,7 +34,7 @@ Passwort vergessen? Fordern Sie auf dem Anmeldebildschirm der Web-App mit **Pass
 
 ## Das Menü
 
-![Das Seitenmenü der Feld-App: oben Name und E-Mail-Adresse des Sachverständigen, darunter Meine Akten, Noch zu senden, Profil und Datenschutz, unten die Versionsnummer und Abmelden.](../images/app-zijmenu-de.png "Das Menü"){ width="320" }
+![Das Seitenmenü der Außendienst-App: oben Name und E-Mail-Adresse des Sachverständigen, darunter Meine Akten, Noch zu senden, Profil und Datenschutz, unten die Versionsnummer und Abmelden.](../images/app-zijmenu-de.png "Das Menü"){ width="320" }
 
 Oben links öffnet ☰ das Menü:
 

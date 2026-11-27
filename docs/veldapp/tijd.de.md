@@ -1,5 +1,5 @@
 ---
-description: "Zeit erfassen in der Feld-App: die Uhr starten und stoppen oder Zeit von Hand eingeben, pro Akte."
+description: "Zeit erfassen in der Außendienst-App: die Uhr starten und stoppen oder Zeit von Hand eingeben, pro Akte."
 ---
 
 # Zeit erfassen

@@ -1,5 +1,5 @@
 ---
-description: "Die Checkliste in der Feld-App: eine Antwort pro Punkt und bei einem Mangel der Befund, die Empfehlung und die Priorität."
+description: "Die Checkliste in der Außendienst-App: eine Antwort pro Punkt und bei einem Mangel der Befund, die Empfehlung und die Priorität."
 ---
 
 # Die Checkliste

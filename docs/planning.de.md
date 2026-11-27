@@ -71,9 +71,9 @@ Der Block warnt, wenn nur Sie etwas lösen können:
 
 **Trennen** leert zuerst den Kalender Quaymark und trennt dann die Verbindung. Den leeren Kalender löschen Sie selbst in Google oder Outlook.
 
-## In der Feld-App
+## In der Außendienst-App
 
-Der Sachverständige sieht seine Planung in der Feld-App, auch ohne Netz: die ihm zugewiesenen offenen Akten, pro Tag (**Früher (noch offen)**, **Heute**, **Morgen**, **Diese Woche**, **Später**, **Nicht geplant**). Bei jeder Akte stehen das Zeitfenster in der Zeit der Niederlassung, das Schiff, der Hafen und das Terminal. **Navigieren** öffnet die Karten-App des Geräts auf Terminal und Hafen. → [Meine Akten in der Feld-App](veldapp/mijn-dossiers.md)
+Der Sachverständige sieht seine Planung in der Außendienst-App, auch ohne Netz: die ihm zugewiesenen offenen Akten, pro Tag (**Früher (noch offen)**, **Heute**, **Morgen**, **Diese Woche**, **Später**, **Nicht geplant**). Bei jeder Akte stehen das Zeitfenster in der Zeit der Niederlassung, das Schiff, der Hafen und das Terminal. **Navigieren** öffnet die Karten-App des Geräts auf Terminal und Hafen. → [Meine Akten in der Außendienst-App](veldapp/mijn-dossiers.md)
 
 ## Siehe auch
 

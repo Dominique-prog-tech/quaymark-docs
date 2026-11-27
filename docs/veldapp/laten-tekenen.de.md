@@ -1,5 +1,5 @@
 ---
-description: "Unterschreiben lassen in der Feld-App: Der Kapitän oder der Erste Offizier unterschreibt eine Erklärung mit den Feststellungen dieses Moments oder verweigert mit einem Grund."
+description: "Unterschreiben lassen in der Außendienst-App: Der Kapitän oder der Erste Offizier unterschreibt eine Erklärung mit den Feststellungen dieses Moments oder verweigert mit einem Grund."
 ---
 
 # Unterschreiben lassen
