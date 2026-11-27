@@ -277,7 +277,7 @@
     "titel": "Von der Feststellung zum herausgegebenen Bericht in Quaymark",
     "omschrijving": "Der Weg einer Akte zu ihrem Bericht: die Feststellungen mit ihren Fotos, die Akte im Status Berichterstellung, der Text je Abschnitt mit einer Sprachnotiz und einem Standardtext, die Berichtsprüfung, das Herausgeben mit einem Fingerabdruck und das Senden.",
     "hash": "b0e986466cfc0cd5",
-    "guid": "2962f3aa-41e7-433d-90c6-6c938fbf3e74",
+    "guid": "c934b8d8-e28b-4d93-a13e-66338e604f33",
     "hoofdstukken": [
       {
         "titel": "Die Feststellungen",
@@ -345,13 +345,11 @@
         "eind": 199.47
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/2962f3aa-41e7-433d-90c6-6c938fbf3e74/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-26T19:46:51.309",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/2962f3aa-41e7-433d-90c6-6c938fbf3e74",
-    "vorigeGuid": "414a48ac-3299-4006-abcd-d19423ffdd26",
-    "opTeRuimen": [
-      "c36f5745-b709-4f44-8929-6709f0a65c16"
-    ]
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/c934b8d8-e28b-4d93-a13e-66338e604f33/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-27T06:52:21.684",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/c934b8d8-e28b-4d93-a13e-66338e604f33",
+    "vorigeGuid": "2962f3aa-41e7-433d-90c6-6c938fbf3e74",
+    "gepubliceerdeHash": "b0e986466cfc0cd5"
   },
   "aan-de-slag-nl": {
     "film": "aan-de-slag",
@@ -1882,7 +1880,7 @@
     "titel": "Ein Beweispaket in Quaymark zusammenstellen",
     "omschrijving": "Ein ZIP für einen Schadensfall: die Originalfotos mit ihrem Fingerabdruck, der herausgegebene Bericht, das Paket erstellen, was es enthält, die Prüfung ohne Quaymark und der Fingerabdruck des Pakets im Journal.",
     "hash": "7b2b68236b4fe46f",
-    "guid": "67b6f7c1-0a78-4e69-a76c-a50953c088da",
+    "guid": "0759ff09-3fc4-4189-aca9-11170dc99652",
     "hoofdstukken": [
       {
         "titel": "Die Originalfotos",
@@ -1915,9 +1913,11 @@
         "eind": 104.98
       }
     ],
-    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/67b6f7c1-0a78-4e69-a76c-a50953c088da/thumbnail.jpg",
-    "gepubliceerdOp": "2026-11-26T19:49:57.793",
-    "embed": "https://iframe.mediadelivery.net/embed/814490/67b6f7c1-0a78-4e69-a76c-a50953c088da"
+    "thumbnail": "https://vz-11fa6718-bbd.b-cdn.net/0759ff09-3fc4-4189-aca9-11170dc99652/thumbnail.jpg",
+    "gepubliceerdOp": "2026-11-27T06:52:35.411",
+    "embed": "https://iframe.mediadelivery.net/embed/814490/0759ff09-3fc4-4189-aca9-11170dc99652",
+    "gepubliceerdeHash": "7b2b68236b4fe46f",
+    "vorigeGuid": "67b6f7c1-0a78-4e69-a76c-a50953c088da"
   },
   "factureren-de": {
     "film": "factureren",
